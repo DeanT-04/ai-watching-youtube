@@ -34,10 +34,11 @@ func TestFormatTimestamp(t *testing.T) {
 }
 
 func TestParseWhisperJSON(t *testing.T) {
+	// whisper.cpp reports offsets in milliseconds.
 	data := []byte(`{"transcription":[
-		{"offsets":{"from":1.5,"to":2.1},"text":" hello "},
-		{"offsets":{"from":2.1,"to":3.0},"text":"   "},
-		{"offsets":{"from":3,"to":4},"text":"world"}
+		{"offsets":{"from":1500,"to":2100},"text":" hello "},
+		{"offsets":{"from":2100,"to":3000},"text":"   "},
+		{"offsets":{"from":3000,"to":4000},"text":"world"}
 	]}`)
 	segs, err := parseWhisperJSON(data)
 	if err != nil {
@@ -50,7 +51,7 @@ func TestParseWhisperJSON(t *testing.T) {
 		t.Errorf("segment 0 = %+v", segs[0])
 	}
 	if segs[1].From != 3 || segs[1].To != 4 {
-		t.Errorf("int offsets not handled: %+v", segs[1])
+		t.Errorf("int offsets not converted to seconds: %+v", segs[1])
 	}
 }
 
@@ -135,11 +136,11 @@ func TestRunEndToEnd(t *testing.T) {
 	}
 	work := setupWork(t, "vid", chunks)
 
-	// Segments are already absolute (audio track starts at 0).
+	// Segments are already absolute on the timeline; offsets are ms.
 	jsonBody := `{"transcription":[
-		{"offsets":{"from":1.5,"to":2.0},"text":"first"},
-		{"offsets":{"from":6.5,"to":7.0},"text":"second"},
-		{"offsets":{"from":99.0,"to":100.0},"text":"later"}
+		{"offsets":{"from":1500,"to":2000},"text":"first"},
+		{"offsets":{"from":6500,"to":7000},"text":"second"},
+		{"offsets":{"from":99000,"to":100000},"text":"later"}
 	]}`
 	var calls []string
 	oldCmd := command
@@ -220,7 +221,7 @@ func TestRunRepartitionsWhenTranscriptMissing(t *testing.T) {
 	}
 	// full.json exists but the chunk transcript was deleted → re-partition,
 	// no whisper re-run.
-	jsonBody := `{"transcription":[{"offsets":{"from":1.0,"to":2.0},"text":"hi"}]}`
+	jsonBody := `{"transcription":[{"offsets":{"from":1000,"to":2000},"text":"hi"}]}`
 	if err := os.WriteFile(filepath.Join(transcriptsDir, "full.json"), []byte(jsonBody), 0o644); err != nil {
 		t.Fatal(err)
 	}

@@ -97,18 +97,15 @@ func Run(opts Options) error {
 	// Partition the full pass into per-chunk transcripts. Segments are
 	// assigned to the chunk containing their start time; a segment spanning
 	// a boundary belongs to the earlier chunk (timestamps make it precise).
+	// Partitioning is milliseconds of work, so it always runs — the whisper
+	// pass is the expensive part and that is what resume skips.
 	segs, err := parseWhisperJSONFile(fullJSON)
 	if err != nil {
 		return err
 	}
 
-	missing := 0
 	for _, c := range chunks {
 		path := transcriptPath(transcriptsDir, c.ID)
-		if _, err := os.Stat(path); err == nil {
-			continue
-		}
-		missing++
 		var b strings.Builder
 		for _, s := range segmentsForRange(segs, c.Start, c.End) {
 			b.WriteString(transcriptLine(s))
@@ -117,10 +114,6 @@ func Run(opts Options) error {
 		if err := os.WriteFile(path, []byte(b.String()), 0o644); err != nil {
 			return fmt.Errorf("transcribe: write %s: %w", path, err)
 		}
-	}
-	if missing == 0 {
-		fmt.Printf("transcribe: all %d transcripts already present, skipping\n", len(chunks))
-		return nil
 	}
 	fmt.Printf("transcribe: partitioned %d segments into %d chunk transcripts\n", len(segs), len(chunks))
 	return nil
@@ -182,8 +175,9 @@ func parseWhisperJSONFile(path string) ([]segment, error) {
 }
 
 // parseWhisperJSON decodes whisper-cli's -oj JSON into segments, skipping
-// entries with no text. offsets.from/to are float seconds; JSON numbers may
-// be ints or floats, both handled by float64.
+// entries with no text. whisper.cpp reports offsets.from/to in milliseconds
+// (confirmed against real output: 1216480 → 1216.48 s); we convert to
+// seconds on the video timeline (the audio track starts at 0).
 func parseWhisperJSON(data []byte) ([]segment, error) {
 	var out whisperOutput
 	if err := json.Unmarshal(data, &out); err != nil {
@@ -195,7 +189,7 @@ func parseWhisperJSON(data []byte) ([]segment, error) {
 		if text == "" {
 			continue
 		}
-		segs = append(segs, segment{From: t.Offsets.From, To: t.Offsets.To, Text: text})
+		segs = append(segs, segment{From: t.Offsets.From / 1000, To: t.Offsets.To / 1000, Text: text})
 	}
 	return segs, nil
 }
