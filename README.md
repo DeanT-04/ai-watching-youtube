@@ -8,17 +8,24 @@ A small, local-first CLI for that one job. No cloud APIs, no GPU required: every
 
 ## How it works
 
-```
-download → chunk → dedupe ∥ transcribe → manifest
+```mermaid
+flowchart LR
+    URL["YouTube URL<br/>or local file"] --> DL["download"]
+    DL --> CH["chunk"]
+    CH -->|frames| DE["dedupe"]
+    CH -->|audio| TR["transcribe"]
+    DE --> MA["manifest"]
+    TR --> MA
+    MA --> OUT["output/"]
 ```
 
-| Stage | Command | Produces |
-|---|---|---|
-| 1. Download | wraps `yt-dlp` + `ffmpeg` | `work/<id>/video.mp4`, `audio.wav` (16 kHz mono) |
-| 2. Chunk | `ffmpeg scdet` scene detection | `work/<id>/chunks.json` + `chunks_raw/NNNN/{frame.png, audio.wav}` |
-| 3. Dedupe | perceptual hash (dHash) of frames | `work/<id>/chunks_deduped.json` — visually-static consecutive chunks merged (time ranges extended, **no audio/transcript data dropped**) |
-| 4. Transcribe | local `whisper-cli`, **one pass over the full audio track** | `work/<id>/transcripts/full.json` + per-chunk `NNNN.txt` with absolute-timeline timestamps |
-| 5. Manifest | assembles the deliverable | `output/<id>/chunks/NNNN/{frame.png, transcript.txt, meta.json}`, `manifest.json`, `reconstruction.md`, `instructions.md` |
+What each stage produces (paths relative to `work/<id>/`; `manifest` writes to `output/<id>/`):
+
+- `download` → `video.mp4` + `audio.wav` (16 kHz mono) — wraps `yt-dlp` + `ffmpeg`
+- `chunk` → `chunks.json` + `chunks_raw/NNNN/{frame.png, audio.wav}` — `ffmpeg scdet` scene detection
+- `dedupe` → `chunks_deduped.json` — visually-static consecutive chunks merged (time ranges extended, **no audio/transcript data dropped**)
+- `transcribe` → `transcripts/full.json` + per-chunk `NNNN.txt` with absolute-timeline timestamps — local `whisper-cli`, **one pass over the full audio track**
+- `manifest` → `chunks/NNNN/{frame.png, transcript.txt, meta.json}` + `manifest.json` + `reconstruction.md` + `instructions.md` — assembles the ordered deliverable
 
 `dedupe` and `transcribe` are independent (frames vs audio) and run concurrently. Every stage is individually idempotent, so re-running `ytreconstruct all` resumes from the furthest completed stage instead of redoing expensive work.
 
