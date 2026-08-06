@@ -2,6 +2,7 @@ package transcribe
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"os"
@@ -239,6 +240,12 @@ func TestRunMissingChunksJSON(t *testing.T) {
 }
 
 func TestRunMissingModel(t *testing.T) {
+	// Stub lookPath so the test is hermetic regardless of whether
+	// whisper-cli happens to be installed on the machine.
+	oldLook := lookPath
+	lookPath = func(bin string) (string, error) { return bin, nil }
+	defer func() { lookPath = oldLook }()
+
 	work := t.TempDir()
 	model := filepath.Join(work, "nope.bin")
 	err := Run(Options{VideoID: "abc", WorkDir: work, Model: model})
@@ -247,6 +254,20 @@ func TestRunMissingModel(t *testing.T) {
 	}
 	if err == nil || !strings.Contains(err.Error(), "huggingface.co") {
 		t.Errorf("error should point at a model download location, got: %v", err)
+	}
+}
+
+func TestRunMissingWhisperBinary(t *testing.T) {
+	oldLook := lookPath
+	lookPath = func(string) (string, error) { return "", errors.New("not found") }
+	defer func() { lookPath = oldLook }()
+
+	err := Run(Options{VideoID: "abc", WorkDir: t.TempDir(), Model: filepath.Join(t.TempDir(), "m.bin")})
+	if err == nil {
+		t.Fatal("expected error for missing whisper-cli")
+	}
+	if !strings.Contains(err.Error(), "whisper-cli") {
+		t.Errorf("error should name whisper-cli, got: %v", err)
 	}
 }
 

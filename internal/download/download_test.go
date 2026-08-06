@@ -206,6 +206,39 @@ func TestRunLocalFile(t *testing.T) {
 	}
 }
 
+// TestRunLocalFileDoesNotRequireYtDlp: --file mode must not demand yt-dlp
+// (it is only needed for URL downloads).
+func TestRunLocalFileDoesNotRequireYtDlp(t *testing.T) {
+	oldLook := lookPath
+	lookPath = func(bin string) (string, error) {
+		if bin == "yt-dlp" {
+			return "", errors.New("yt-dlp not installed")
+		}
+		return bin, nil
+	}
+	defer func() { lookPath = oldLook }()
+
+	work := t.TempDir()
+	src := filepath.Join(t.TempDir(), "clip.mp4")
+	if err := os.WriteFile(src, []byte("video bytes"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	oldCmd := command
+	command = func(name string, args ...string) *exec.Cmd {
+		if name == "ffmpeg" {
+			if err := os.WriteFile(args[len(args)-1], []byte("audio"), 0o644); err != nil {
+				t.Fatal(err)
+			}
+		}
+		return testexec.Command("", "", 0)(name, args...)
+	}
+	defer func() { command = oldCmd }()
+
+	if err := Run(Options{File: src, WorkDir: work}); err != nil {
+		t.Fatalf("--file mode should not require yt-dlp: %v", err)
+	}
+}
+
 func TestRunResumeSkipsExisting(t *testing.T) {
 	work := t.TempDir()
 	dir := filepath.Join(work, "BL8TfsLk3WM")

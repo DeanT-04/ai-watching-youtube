@@ -94,6 +94,9 @@ func fakeChunkCmd(t *testing.T, scdLines, duration string) func(string, ...strin
 			}
 			// Extraction call: last arg is the output file.
 			out := args[len(args)-1]
+			if out == "-" { // the -f null - detection call must not create a file
+				return testexec.Command("", "", 0)(name, args...)
+			}
 			if err := os.WriteFile(out, []byte("out"), 0o644); err != nil {
 				t.Fatalf("fake ffmpeg write %s: %v", out, err)
 			}
@@ -148,12 +151,12 @@ func TestRunFullFlow(t *testing.T) {
 		if list.Chunks[i].Start != w[0] || list.Chunks[i].End != w[1] {
 			t.Errorf("chunk %d = [%v,%v], want [%v,%v]", i, list.Chunks[i].Start, list.Chunks[i].End, w[0], w[1])
 		}
-		wantDir := filepath.Join("chunks_raw", fmt.Sprintf("%04d", i+1))
-		if list.Chunks[i].Frame != filepath.Join(wantDir, "frame.png") {
-			t.Errorf("chunk %d frame path = %q, want %q", i, list.Chunks[i].Frame, filepath.Join(wantDir, "frame.png"))
+		wantDir := filepath.ToSlash(filepath.Join("chunks_raw", fmt.Sprintf("%04d", i+1)))
+		if list.Chunks[i].Frame != filepath.ToSlash(filepath.Join(wantDir, "frame.png")) {
+			t.Errorf("chunk %d frame path = %q, want %q", i, list.Chunks[i].Frame, filepath.ToSlash(filepath.Join(wantDir, "frame.png")))
 		}
-		if list.Chunks[i].Audio != filepath.Join(wantDir, "audio.wav") {
-			t.Errorf("chunk %d audio path = %q, want %q", i, list.Chunks[i].Audio, filepath.Join(wantDir, "audio.wav"))
+		if list.Chunks[i].Audio != filepath.ToSlash(filepath.Join(wantDir, "audio.wav")) {
+			t.Errorf("chunk %d audio path = %q, want %q", i, list.Chunks[i].Audio, filepath.ToSlash(filepath.Join(wantDir, "audio.wav")))
 		}
 	}
 

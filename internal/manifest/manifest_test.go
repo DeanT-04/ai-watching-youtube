@@ -191,6 +191,25 @@ func TestRunMissingTranscript(t *testing.T) {
 	}
 }
 
+func TestRunSkippedTranscribeWritesPlaceholders(t *testing.T) {
+	base := t.TempDir()
+	seedWorkDir(t, base, true)
+	// Simulate --skip-transcribe: no transcripts at all.
+	if err := os.RemoveAll(filepath.Join(base, "work", "vid123", "transcripts")); err != nil {
+		t.Fatal(err)
+	}
+	if err := Run(Options{VideoID: "vid123", WorkDir: filepath.Join(base, "work"), OutputDir: filepath.Join(base, "output")}); err != nil {
+		t.Fatalf("Run with no transcripts should succeed with placeholders: %v", err)
+	}
+	b, err := os.ReadFile(filepath.Join(base, "output", "vid123", "chunks", "0001", "transcript.txt"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(b), "unavailable") {
+		t.Errorf("expected placeholder transcript, got %q", b)
+	}
+}
+
 func TestRunResume(t *testing.T) {
 	base := t.TempDir()
 	seedWorkDir(t, base, true)

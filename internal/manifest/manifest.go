@@ -8,9 +8,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math"
 	"os"
 	"path/filepath"
-	"sort"
 	"strings"
 	"time"
 
@@ -82,6 +82,15 @@ func Run(opts Options) error {
 		return fmt.Errorf("manifest: %s contains no chunks", listPath)
 	}
 
+	// Distinguish "transcription was skipped entirely" from "transcription
+	// is partial": with zero transcripts we write placeholders (the user
+	// passed --skip-transcribe); with some missing we fail loudly rather
+	// than silently drop audio content.
+	noTranscripts := countTranscripts(workDir) == 0
+	if noTranscripts {
+		fmt.Printf("manifest: no transcripts found in %s — writing placeholders (was --skip-transcribe used?)\n", filepath.Join(workDir, "transcripts"))
+	}
+
 	outDir := filepath.Join(opts.OutputDir, opts.VideoID)
 	manifestPath := filepath.Join(outDir, "manifest.json")
 	if _, err := os.Stat(manifestPath); err == nil {
@@ -122,7 +131,7 @@ func Run(opts Options) error {
 
 		// Transcript: concatenate the source chunks' transcripts in order.
 		transcriptDst := filepath.Join(sub, "transcript.txt")
-		if err := mergeTranscripts(workDir, sources, transcriptDst); err != nil {
+		if err := mergeTranscripts(workDir, sources, transcriptDst, noTranscripts); err != nil {
 			return fmt.Errorf("manifest: chunk %d: %w", outID, err)
 		}
 
@@ -135,22 +144,23 @@ func Run(opts Options) error {
 			Frame:      "frame.png",
 			Transcript: "transcript.txt",
 		}
-		metaRel := filepath.Join("chunks", fmt.Sprintf("%04d", outID), "meta.json")
+		metaRel := filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID), "meta.json"))
 		if err := writeJSON(filepath.Join(outDir, metaRel), meta); err != nil {
 			return err
 		}
 
+		entryRel := filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID)))
 		m.Chunks = append(m.Chunks, ManifestEntry{
 			ID:         outID,
 			Start:      c.Start,
 			End:        c.End,
 			Duration:   c.End - c.Start,
-			Frame:      filepath.Join("chunks", fmt.Sprintf("%04d", outID), "frame.png"),
-			Transcript: filepath.Join("chunks", fmt.Sprintf("%04d", outID), "transcript.txt"),
+			Frame:      entryRel + "/frame.png",
+			Transcript: entryRel + "/transcript.txt",
 			Meta:       metaRel,
 			SourceIDs:  sources,
 		})
-		index = append(index, fmt.Sprintf("- %02d:00:%06.3f → %02d:00:%06.3f  (source chunk(s) %v)", int(c.Start)/60, c.Start, int(c.End)/60, c.End, sources))
+		index = append(index, fmt.Sprintf("- [%s → %s]  (source chunk(s) %v)", formatTimestamp(c.Start), formatTimestamp(c.End), sources))
 		totalD += c.End - c.Start
 	}
 	m.TotalChunks = len(m.Chunks)
@@ -182,15 +192,19 @@ func readChunkList(path string) (chunk.ChunkList, error) {
 }
 
 // mergeTranscripts concatenates the transcripts of the given raw chunk ids
-// in order into dst. A missing transcript is a hard error: the deliverable
-// must not silently drop audio content.
-func mergeTranscripts(workDir string, sourceIDs []int, dst string) error {
-	sort.Ints(sourceIDs)
+// in order into dst. A missing transcript is a hard error (the deliverable
+// must not silently drop audio content), unless transcription was skipped
+// entirely — then a placeholder line is written instead.
+func mergeTranscripts(workDir string, sourceIDs []int, dst string, skipped bool) error {
 	out, err := os.Create(dst)
 	if err != nil {
 		return err
 	}
 	defer out.Close()
+	if skipped {
+		_, err := io.WriteString(out, "[transcript unavailable — transcription was skipped]\n")
+		return err
+	}
 	last := byte(0)
 	for _, id := range sourceIDs {
 		src := filepath.Join(workDir, "transcripts", fmt.Sprintf("%04d.txt", id))
@@ -227,6 +241,15 @@ func mergeTranscripts(workDir string, sourceIDs []int, dst string) error {
 		f.Close()
 	}
 	return nil
+}
+
+// countTranscripts returns how many transcripts/*.txt files exist.
+func countTranscripts(workDir string) int {
+	matches, err := filepath.Glob(filepath.Join(workDir, "transcripts", "*.txt"))
+	if err != nil {
+		return 0
+	}
+	return len(matches)
 }
 
 // writeSeed writes reconstruction.md with a header for the consuming agent
@@ -267,6 +290,20 @@ func copyInstructions(outDir string) error {
 		return nil
 	}
 	return copyFile(src, filepath.Join(outDir, "instructions.md"))
+}
+
+// formatTimestamp renders seconds as HH:MM:SS.mmm (e.g. 83.456 → "00:01:23.456").
+func formatTimestamp(seconds float64) string {
+	if seconds < 0 {
+		seconds = 0
+	}
+	totalMs := int64(math.Round(seconds * 1000))
+	ms := totalMs % 1000
+	totalSec := totalMs / 1000
+	sec := totalSec % 60
+	min := (totalSec / 60) % 60
+	hr := totalSec / 3600
+	return fmt.Sprintf("%02d:%02d:%02d.%03d", hr, min, sec, ms)
 }
 
 func writeJSON(path string, v any) error {

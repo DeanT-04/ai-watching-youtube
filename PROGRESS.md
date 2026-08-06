@@ -2,17 +2,35 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
-## Phase 0 — Foundation (done)
+## Phases 1–9 — built, tested, reviewable (current)
 
-- Wiped the previous (failed) git history entirely; repo re-initialized with a single fresh commit.
-- `go.mod` (`ytreconstruct`, cobra v1.10.2), `.gitignore` (work/, output/, models never committed),
-  `scripts/clean.sh` (confirmation prompt preserved, `-y` to skip).
-- CLI skeleton: `cmd/ytreconstruct` with subcommands `download`, `chunk`, `dedupe`, `transcribe`,
-  `manifest`, `all`; internal package stubs with the locked `Run(Options) error` interfaces and the
-  `chunks.json` data-shape contract (`internal/chunk.ChunkList`).
+Everything below is committed and green: `go build ./...`, `go vet ./...`, `gofmt -l .` clean; `go test ./...` passes for all 7 packages (hermetic — mocked exec, no network/binaries).
 
-### Machine setup notes (for the record)
+- **Phase 1 Foundation** — go.mod (cobra, the one allowed dep), .gitignore, `scripts/clean.sh`, CLI skeleton, locked package interfaces + `chunks.json` contract.
+- **Phase 2 Download** — yt-dlp/ffmpeg wrapper, YouTube URL parsing (watch/shorts/embed/live/youtu.be), local `--file` mode, idempotent resume, URL/`--file` validation.
+- **Phase 3 Chunk** — ffmpeg `scdet` scene detection (streamed stderr parsing), ffprobe duration, parallel frame+audio extraction (jobs-capped), `chunks.json` data shape.
+- **Phase 4+5 Dedupe + Transcribe** — built by two parallel subagents against the locked interface, then lead-reviewed and verified: dedupe = pure-Go 9×8 dHash + run-anchored merge (never drifts, never drops audio); transcribe = whisper-cli `-oj` per chunk with absolute-timestamp alignment (`transcripts/NNNN.txt` + raw JSON provenance).
+- **Phase 6 Manifest** — output tree (`chunks/NNNN/{frame.png, transcript.txt, meta.json}`), `manifest.json`, seeded `reconstruction.md`, `instructions.md` copy; merged-chunk transcripts concatenated from `source_ids` in order; falls back to raw chunks when dedupe hasn't run.
+- **Phase 7 `all` orchestration** — download → chunk → (dedupe ∥ transcribe) → manifest with progress, resume-from-any-stage, `--skip-transcribe`, `--file` mode.
+- **Phase 8 Efficiency** — streaming everywhere (scene-detection stderr piped, no full-file buffering), concurrency capped at `--jobs` (default CPU count) in chunk + transcribe.
+- **Phase 9 Testing** — per-package unit tests (7 suites) + CLI tests + `scripts/integration.sh`: synthesizes a 6 s / 3-scene video with ffmpeg, runs the full pipeline offline (real whisper-cli when present), validates manifest order/totals/files. **Result: PASS** (ran on this machine with real ffmpeg + real whisper).
 
-- `ffmpeg` was present as a broken empty scoop install — repaired via `scoop uninstall` + `scoop install ffmpeg` (9.0, works).
-- `whisper-cpp` installed via scoop → `whisper-cli` 1.9.2.
-- Model: `ggml-base.bin` (multilingual, CPU-friendly) downloading to `~/.cache/ytreconstruct/whisper/` from hf-mirror.com (huggingface.co is unreachable from this network; YouTube is also currently unreachable — final live test is pending that).
+### Bugs found and fixed during the build
+
+- Stale-flag-capture bug: every subcommand read persistent flags (`--work-dir`, `--output-dir`, `--jobs`, `--skip-transcribe`) at command-construction time via a by-value parameter, so the parsed values were silently ignored. Fixed by reading flags at RunE time (`cmd.Flags().GetX`); regression test added.
+- Manifest transcript merge inserted blank lines between source transcripts; fixed with newline-aware joining.
+- dHash note: solid-color frames hash identically (structural hash, not color) — documented in README as a known limitation.
+
+### Machine setup (this machine)
+
+- ffmpeg 9.0 (repaired a broken empty scoop install), whisper-cli 1.9.2 (scoop), `ggml-base.bin` (148 MB, multilingual) at `~/.cache/ytreconstruct/whisper/` — fetched from hf-mirror.com because huggingface.co is blocked on this network. YouTube was also unreachable during part of the build (now confirmed reachable again — 200 in ~2 s).
+
+### What I tested vs. what still needs eyes
+
+**Tested by me (real runs, this machine):** full offline pipeline end-to-end via `scripts/integration.sh` (PASS, including real whisper transcription); `go test ./...` (all pass); `go build/vet/gofmt` clean; CLI help; `--file` mode; resume behavior (stages skip when outputs exist); yt-dlp metadata fetch for the target video (1218 s ≈ 20 min, works).
+
+**Not tested yet:** the real YouTube run against `https://youtu.be/BL8TfsLk3WM` (pending — see next step); `go test -race` (requires cgo/gcc, not present on this Windows machine); anything on non-Windows (paths/flags were written portably but only Windows was exercised).
+
+## Next step
+
+Real end-to-end test: `ytreconstruct all https://youtu.be/BL8TfsLk3WM` → verify manifest + chunk tree. Then final review sign-off.

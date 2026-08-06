@@ -18,8 +18,11 @@ import (
 	"ytreconstruct/internal/chunk"
 )
 
-// command is an indirection so tests can fake os/exec.
-var command = exec.Command
+// command and lookPath are indirections so tests can fake os/exec.
+var (
+	command  = exec.Command
+	lookPath = exec.LookPath
+)
 
 // Options configures a transcribe run.
 type Options struct {
@@ -58,6 +61,9 @@ type whisperOutput struct {
 func Run(opts Options) error {
 	if opts.Model == "" {
 		return fmt.Errorf("transcribe: no model specified (path to a ggml whisper model)")
+	}
+	if _, err := lookPath("whisper-cli"); err != nil {
+		return fmt.Errorf("transcribe: required binary %q not found in PATH — install whisper.cpp and retry (https://github.com/ggml-org/whisper.cpp): %w", "whisper-cli", err)
 	}
 	if _, err := os.Stat(opts.Model); err != nil {
 		return fmt.Errorf("transcribe: model not found at %s — download a ggml model from https://huggingface.co/ggerganov/whisper.cpp/tree/main", opts.Model)

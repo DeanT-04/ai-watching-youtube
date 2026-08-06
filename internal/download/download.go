@@ -102,10 +102,15 @@ func Run(opts Options) error {
 		opts.WorkDir = "work"
 	}
 
-	for _, bin := range []string{"yt-dlp", "ffmpeg"} {
-		if _, err := lookPath(bin); err != nil {
-			return fmt.Errorf("download: required binary %q not found in PATH — install it and retry (yt-dlp: https://github.com/yt-dlp/yt-dlp, ffmpeg: https://ffmpeg.org): %w", bin, err)
+	// Check binaries: yt-dlp only when actually downloading; ffmpeg always
+	// (audio extraction runs for both URL and local-file mode).
+	if opts.URL != "" {
+		if _, err := lookPath("yt-dlp"); err != nil {
+			return fmt.Errorf("download: required binary %q not found in PATH — install it and retry (https://github.com/yt-dlp/yt-dlp): %w", "yt-dlp", err)
 		}
+	}
+	if _, err := lookPath("ffmpeg"); err != nil {
+		return fmt.Errorf("download: required binary %q not found in PATH — install it and retry (https://ffmpeg.org): %w", "ffmpeg", err)
 	}
 
 	// Determine the video id and target paths.
@@ -171,30 +176,38 @@ func Run(opts Options) error {
 		return fmt.Errorf("download: %s was not produced; is the URL valid and the video public?", videoPath)
 	}
 
-	// Phase B: extract 16 kHz mono PCM audio.
+	// Phase B: extract 16 kHz mono PCM audio. Written to a .part file and
+	// renamed on success so a killed run never leaves a partial audio.wav
+	// that the resume gate would treat as complete.
 	if fileExists(audioPath) {
 		fmt.Printf("download: %s already present, skipping\n", audioPath)
 		return nil
 	}
+	partPath := audioPath + ".part"
 	cmd := command("ffmpeg",
 		"-y", "-i", videoPath,
 		"-vn", "-ac", "1", "-ar", "16000", "-c:a", "pcm_s16le",
-		audioPath,
+		"-f", "wav", // explicit muxer: the .part suffix must not drive format detection
+		partPath,
 	)
 	cmd.Stdout = os.Stderr
 	cmd.Stderr = os.Stderr
 	if err := runCmd("ffmpeg", cmd); err != nil {
 		return err
 	}
-	if !fileExists(audioPath) {
+	if !fileExists(partPath) {
 		return fmt.Errorf("download: %s was not produced by ffmpeg", audioPath)
+	}
+	if err := os.Rename(partPath, audioPath); err != nil {
+		return fmt.Errorf("download: finalize %s: %w", audioPath, err)
 	}
 	fmt.Printf("download: audio extracted -> %s\n", audioPath)
 	return nil
 }
 
-// renameToVideoMP4 finds the single video.* file yt-dlp produced and
-// renames it to video.mp4.
+// renameToVideoMP4 finds the single final video.* file yt-dlp produced and
+// renames it to video.mp4. yt-dlp's in-progress format parts (video.f401.mp4
+// and similar) are ignored.
 func renameToVideoMP4(dir, videoPath string) error {
 	matches, err := filepath.Glob(filepath.Join(dir, "video.*"))
 	if err != nil {
@@ -202,9 +215,15 @@ func renameToVideoMP4(dir, videoPath string) error {
 	}
 	var produced []string
 	for _, m := range matches {
-		if m != videoPath {
-			produced = append(produced, m)
+		if m == videoPath {
+			continue
 		}
+		// Part files from an interrupted merge contain a dot in their base
+		// name (video.f401.mp4); the final file's base is exactly "video".
+		if strings.Contains(filepath.Base(m), ".") {
+			continue
+		}
+		produced = append(produced, m)
 	}
 	if len(produced) == 0 {
 		return nil // video.mp4 already exists

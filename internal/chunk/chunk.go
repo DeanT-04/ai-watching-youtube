@@ -19,8 +19,11 @@ import (
 	"sync"
 )
 
-// command is an indirection so tests can fake os/exec.
-var command = exec.Command
+// command and lookPath are indirections so tests can fake os/exec.
+var (
+	command  = exec.Command
+	lookPath = exec.LookPath
+)
 
 // Chunk is one scene segment. Paths are relative to work/<video_id>/.
 type Chunk struct {
@@ -61,6 +64,11 @@ func Run(opts Options) error {
 	if opts.Jobs < 1 {
 		opts.Jobs = 1
 	}
+	for _, bin := range []string{"ffmpeg", "ffprobe"} {
+		if _, err := lookPath(bin); err != nil {
+			return fmt.Errorf("chunk: required binary %q not found in PATH — install it and retry (https://ffmpeg.org): %w", bin, err)
+		}
+	}
 	dir := filepath.Join(opts.WorkDir, opts.VideoID)
 	videoPath := filepath.Join(dir, "video.mp4")
 	audioPath := filepath.Join(dir, "audio.wav")
@@ -95,8 +103,8 @@ func Run(opts Options) error {
 	}
 	for i := range chunks {
 		sub := fmt.Sprintf("chunks_raw/%04d", chunks[i].ID)
-		chunks[i].Frame = filepath.Join(sub, "frame.png")
-		chunks[i].Audio = filepath.Join(sub, "audio.wav")
+		chunks[i].Frame = filepath.ToSlash(filepath.Join(sub, "frame.png"))
+		chunks[i].Audio = filepath.ToSlash(filepath.Join(sub, "audio.wav"))
 	}
 	fmt.Printf("chunk: %d scene chunk(s) from %.2fs video\n", len(chunks), total)
 
