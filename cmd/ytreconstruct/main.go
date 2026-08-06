@@ -240,12 +240,14 @@ func defaultJobs() int {
 }
 
 // defaultModelPath returns the conventional whisper model location. The
-// q8_0 quantized model runs ~2x faster than the fp16 base on CPU with
-// near-identical accuracy (whisper.cpp quantization).
+// small q8_0 quantized model is the default: roughly half the word-error
+// rate of base on technical content (verified A/B on the real video), at
+// ~3x the CPU time (14 min vs 4 min for a 20-min video) — an acceptable
+// trade for the transcription quality the downstream agent depends on.
 func defaultModelPath() string {
 	home, err := os.UserHomeDir()
 	if err != nil {
 		return ""
 	}
-	return filepath.Join(home, ".cache", "ytreconstruct", "whisper", "ggml-base-q8_0.bin")
+	return filepath.Join(home, ".cache", "ytreconstruct", "whisper", "ggml-small-q8_0.bin")
 }

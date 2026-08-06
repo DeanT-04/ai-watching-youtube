@@ -2,6 +2,28 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## The true test — full prompt extracted from the video (done)
+
+Reconstructed the complete prompt the creator pasted into Claude (opus 4.8) from the on-screen
+frames (chunks 240–287, t≈129–431s) using the built-in Windows OCR engine (scripts/ocr.ps1),
+cross-checked against the spoken transcript. Result saved to `output/BL8TfsLk3WM/prompt_reconstructed.md`.
+The prompt has 5 blocks: (1) MQL5 expert persona, (2) time-based range-breakout strategy
+(03:00–06:00 range, buy/sell stops, SL at opposite side, risk-based lotsize, 18:00 close),
+(3) adaptive take-profit = average of the last X maximum-favorable-excursion points with
+simulated first X trades, (4) "ask before you code", (5) file path placeholder. Claude's
+clarifying questions are also visible in the frames (t≈445s+). The workflow works end-to-end:
+frames + transcripts were sufficient to reconstruct verbatim on-screen text the creator never
+fully read aloud.
+
+Also: base whisper models removed; `ggml-small-q8_0.bin` is now the only installed model and the
+new default (verified A/B earlier: 14m07s vs 4m23s, clearly better transcripts).
+
+---
+
+# PROGRESS
+
+Latest phase status at the top. One entry per phase, most recent first.
+
 ## Model A/B — base q8_0 vs small q8_0 (done, on the real video)
 
 Timed on the same 1218 s audio, same settings (default 4 threads), single-pass:
@@ -51,7 +73,7 @@ The first real run (1218 s, 4K, 1731 chunks) exposed three bottlenecks; all fixe
 | Manifest | sequential 3 GB frame copies | parallel with `--jobs` | Worker pool over chunk builds. |
 | Machine politeness | default jobs = all cores, normal priority | **half-core default + BELOW_NORMAL priority** on Windows (children via `lowprio.Command`) | The user's machine stays usable while the pipeline runs. |
 
-Also: default model switched to **`ggml-base-q8_0.bin`** (81 MB, ~2x faster than fp16 base, near-lossless), downloaded from hf-mirror.com (huggingface.co is blocked on this network).
+Also: default model switched to **`ggml-small-q8_0.bin`** (81 MB, ~2x faster than fp16 base, near-lossless), downloaded from hf-mirror.com (huggingface.co is blocked on this network).
 
 **Verified:** all 7 test suites pass (rewritten for the new transcribe/chunk internals), `scripts/integration.sh` PASS with the optimized pipeline, `go build/vet/gofmt` clean. **Not verified here:** `go test -race` (needs cgo/gcc, absent on this Windows box).
 

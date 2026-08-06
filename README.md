@@ -30,7 +30,7 @@ This tool is deliberately engineered to be fast and polite to your machine:
 - **Buffer-fast dHash.** The perceptual hash reads raw pixel buffers instead of per-pixel interface calls (~30x faster on 4K frames) and hashes in parallel.
 - **Parallel frame copies** in the manifest stage.
 - **Polite CPU usage:** children run at BELOW_NORMAL priority (Windows), and the default `--jobs` is half your CPU count — your machine stays usable while the pipeline grinds.
-- **Quantized whisper model by default** (`ggml-base-q8_0.bin`): near-lossless quality at roughly 2x the speed of the fp16 model.
+- **Quantized whisper model by default** (`ggml-small-q8_0.bin`): near-lossless quality at roughly 2x the speed of the fp16 model.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ Local binaries — the tool checks for them at startup and fails with a clear me
 - [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) — video download
 - [`ffmpeg`](https://ffmpeg.org/) ≥ 6.0 — scene detection (`scdet` filter), frame/audio extraction
 - [`whisper-cli`](https://github.com/ggml-org/whisper.cpp) — local CPU-only transcription (whisper.cpp; picked over faster-whisper because it is a single small native binary with no Python runtime dependency)
-- a ggml whisper model, e.g. `ggml-base-q8_0.bin` (quantized: ~2x faster than fp16 on CPU, near-identical accuracy) from <https://huggingface.co/ggerganov/whisper.cpp/tree/main>, saved at `~/.cache/ytreconstruct/whisper/ggml-base-q8_0.bin` (the `--model` default; override with `--model`; `ggml-tiny.bin` is faster/rougher, `ggml-small.bin` is slower/better)
+- a ggml whisper model, e.g. `ggml-small-q8_0.bin` (quantized: ~2x faster than fp16 on CPU, near-identical accuracy) from <https://huggingface.co/ggerganov/whisper.cpp/tree/main>, saved at `~/.cache/ytreconstruct/whisper/ggml-small-q8_0.bin` (the `--model` default; override with `--model`; `ggml-tiny.bin` is faster/rougher, `ggml-small.bin` is slower/better)
 
 ## Install
 
@@ -78,7 +78,7 @@ Every subcommand accepts `--work-dir` (default `work`) and `--output-dir` (defau
 | `--skip-transcribe` | all | false | skip the transcription stage |
 | `--scene-threshold` | all, chunk | 0.4 | ffmpeg scene-change threshold, 0..1 (higher = fewer cuts) |
 | `--hash-threshold` | all, dedupe | 5 | max dHash Hamming distance to treat frames as identical |
-| `--model` | all, transcribe | `~/.cache/ytreconstruct/whisper/ggml-base-q8_0.bin` | whisper model path |
+| `--model` | all, transcribe | `~/.cache/ytreconstruct/whisper/ggml-small-q8_0.bin` | whisper model path |
 | `--threads` | all, transcribe | 4 | whisper inference threads |
 | `--language` | all, transcribe | auto | whisper language hint (e.g. `ja`; default is auto-detect — never whisper-cli's English default) |
 
@@ -112,7 +112,7 @@ Every subcommand accepts `--work-dir` (default `work`) and `--output-dir` (defau
 
 - dHash compares structure, not color: solid-color frames (e.g. flat color slides) hash identically and may be merged even when colors differ. Real screen content (text, UI) is not affected.
 - Representative frames are the keyframe at/after each cut; on encoders with sparse keyframes a frame can land up to one GOP interval late (the tool falls back to an exact seek when no keyframe exists after the target).
-- Whisper accuracy is model-dependent; `ggml-base-q8_0.bin` is the balanced default, `ggml-tiny.bin` is faster/rougher, `ggml-small.bin` is slower/better.
+- Whisper accuracy is model-dependent; `ggml-small-q8_0.bin` is the balanced default, `ggml-tiny.bin` is faster/rougher, `ggml-small.bin` is slower/better.
 - Scene detection decodes the full video once (unavoidable for frame-accurate cuts); on 4K content that is the single most expensive step.
 
 ## Layout
