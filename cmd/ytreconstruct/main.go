@@ -55,7 +55,7 @@ Everything runs offline after the video is downloaded. No cloud APIs.`,
 
 	root.AddCommand(
 		newDownloadCmd(workDir),
-		newChunkCmd(workDir),
+		newChunkCmd(workDir, jobs),
 		newDedupeCmd(workDir),
 		newTranscribeCmd(workDir, jobs),
 		newManifestCmd(workDir, outputDir),
@@ -86,7 +86,7 @@ func newDownloadCmd(workDir string) *cobra.Command {
 	return cmd
 }
 
-func newChunkCmd(workDir string) *cobra.Command {
+func newChunkCmd(workDir string, jobs int) *cobra.Command {
 	var sceneThreshold float64
 	cmd := &cobra.Command{
 		Use:   "chunk <video_id>",
@@ -97,7 +97,7 @@ func newChunkCmd(workDir string) *cobra.Command {
 				VideoID:        args[0],
 				WorkDir:        workDir,
 				SceneThreshold: sceneThreshold,
-				Jobs:           1, // wired to --jobs in Phase 7
+				Jobs:           jobs,
 			})
 		},
 	}
