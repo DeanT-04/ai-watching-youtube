@@ -38,7 +38,7 @@ Engineered to be fast and polite to your machine:
 - **Polite CPU usage:** children run at `BELOW_NORMAL` priority on Windows, and the default `--jobs` is half your CPU count — the machine stays usable while the pipeline grinds.
 - **Quantized whisper model by default** (`ggml-small-q8_0.bin`): roughly 2× faster than the fp16 build of the same model, with near-identical accuracy.
 
-Validated on a real 20-minute / 4K video: 1731 raw scenes deduped to 165 meaningful chunks, full pipeline in ~23 minutes (details in `PROGRESS.md`).
+Validated on a real 20-minute / 4K video: 1731 raw scenes deduped to 165 meaningful chunks, full pipeline in ~23 minutes (details in `docs/progress.md`).
 
 ## Layout
 
@@ -54,6 +54,7 @@ internal/testexec/      hermetic exec.Command fake for tests
 scripts/clean.sh        safe wipe of work/ + output/
 scripts/integration.sh  offline end-to-end test
 scripts/ocr.ps1         Windows OCR over extracted frames
+docs/                   architecture, instructions, build brief, progress log
 work/                   scratch (gitignored)
 output/                 deliverables (gitignored)
 ```

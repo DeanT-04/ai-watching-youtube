@@ -2,7 +2,7 @@
 
 Read `AGENTS.md` first if you haven't already — it defines who you are and the hard boundaries you work within. This document is your build plan. You're starting from a genuinely blank project: nothing exists yet except `AGENTS.md`, this file, and `scripts/clean.sh`. Everything else — `go.mod`, source, tests, docs — you're creating from nothing.
 
-Your job is to take this project from blank to built, tested, and reviewed, working through the phases below in order, without needing me to check in after every step. Ask only when you hit a genuine fork in the road as described in AGENTS.md. Otherwise, keep moving, commit as you go, and leave a short note at the top of `PROGRESS.md` after each phase so I can see where you are at a glance without reading your whole history.
+Your job is to take this project from blank to built, tested, and reviewed, working through the phases below in order, without needing me to check in after every step. Ask only when you hit a genuine fork in the road as described in AGENTS.md. Otherwise, keep moving, commit as you go, and leave a short note at the top of `docs/progress.md` after each phase so I can see where you are at a glance without reading your whole history.
 
 ## The non-negotiables
 
@@ -28,7 +28,7 @@ yt-reconstruct/
 ├── scripts/clean.sh              already exists — don't break its contract
 ├── work/                         scratch (gitignored)
 ├── output/                       deliverable for the downstream reconstruction agent (gitignored)
-├── instructions.md               prompt template for the agent that will consume output/
+├── docs/instructions.md          prompt template for the agent that will consume output/
 ├── go.mod / go.sum
 ├── README.md
 └── AGENTS.md                     already exists

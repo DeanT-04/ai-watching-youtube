@@ -51,7 +51,7 @@ can't apply — and say so if you deviate.
    short bullets *next to* the diagram — the diagram must supplement text, never be the only
    carrier of critical info.
 6. **Move internals out.** Architecture, performance design, and repo layout do **not** belong in
-   the README. Put them in `ARCHITECTURE.md` and link it once ("Details: [ARCHITECTURE.md](ARCHITECTURE.md)").
+   the README. Put them in `docs/architecture.md` and link it once ("Details: [docs/architecture.md](docs/architecture.md)").
    A README tells what the project does, why useful, and how to get started — nothing more.
 7. **License last.** Always end with a `## License` section. Ask for the license if none is
    detectable (see Process step 3).
@@ -105,7 +105,7 @@ processes/flows, not a table.
 ### Step 5 — Verify before delivery
 - Every code block copy-pasteable and real (sourced from manifest/tests/--help)
 - Every badge URL resolves (HTTP 200)
-- Every relative link points at a file that exists (banner, ARCHITECTURE.md, CONTRIBUTING.md)
+- Every relative link points at a file that exists (banner, docs/architecture.md, CONTRIBUTING.md)
 - Mermaid block syntax valid; if the project uses a theme, `%%{init}%%` matches the banner palette
 - `gofmt`-style check: consistent heading levels, no broken anchors, License is last
 
@@ -116,6 +116,6 @@ End by offering: adjust tone, length, or add FAQ/Roadmap/Contributing. Don't ass
 - Write for a reader with zero context, in their first 30 seconds on the page.
 - Every code block real and copy-pasteable.
 - No unearned claims. No invented badges. No fabricated numbers.
-- Relative links for everything inside the repo (images, ARCHITECTURE.md, CONTRIBUTING.md).
+- Relative links for everything inside the repo (images, docs/architecture.md, CONTRIBUTING.md).
 - Match existing tone/visual conventions; only invent style when there's nothing to match.
-- Keep it short. When in doubt, cut — move detail to ARCHITECTURE.md or a wiki, don't keep it in the README.
+- Keep it short. When in doubt, cut — move detail to docs/architecture.md or a wiki, don't keep it in the README.

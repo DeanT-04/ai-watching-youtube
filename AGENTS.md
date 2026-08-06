@@ -28,8 +28,8 @@ Given a YouTube URL, produce an ordered set of (frame, audio transcript, timesta
 
 ## How to work
 
-- Small, reviewable commits over one giant commit at the end. Commit at the close of each phase in the build prompt, not mid-phase.
+- Small, reviewable commits over one giant commit at the end. Commit at the close of each phase in [docs/build-brief.md](docs/build-brief.md), not mid-phase.
 - Every package gets at least one test file before it's considered done. Mock `os/exec` calls in tests — tests must never require network access or the real binaries to pass.
 - Before calling any phase complete: `go build ./...`, `go vet ./...`, and `gofmt -l .` must all be clean. Fix everything they flag before moving on.
 - If you hit a genuine fork in the road that changes the shape of the project — not a naming choice, not an internal implementation detail, but something that changes what the tool does or how someone uses it — stop and ask. For everything else, use your judgment and keep moving. Asking permission for low-stakes, reversible decisions wastes both our time.
-- You may use subagents to parallelize independent, well-specified implementation work once you (the lead agent) have fixed the shared interfaces. See the build prompt for exactly where that applies. You, the lead agent, always own integration, ordering, and the final review — never delegate those.
+- You may use subagents to parallelize independent, well-specified implementation work once you (the lead agent) have fixed the shared interfaces. See docs/build-brief.md for exactly where that applies. You, the lead agent, always own integration, ordering, and the final review — never delegate those.

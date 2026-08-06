@@ -67,7 +67,7 @@ ytreconstruct manifest <video_id>
 }
 ```
 
-`source_ids` lists the raw scene chunks merged into a deduped chunk (>1 for static periods). Transcript lines carry absolute timestamps: `[00:01:23.456 --> 00:01:25.000] text`. See `instructions.md` for the reconstruction agent's playbook.
+`source_ids` lists the raw scene chunks merged into a deduped chunk (>1 for static periods). Transcript lines carry absolute timestamps: `[00:01:23.456 --> 00:01:25.000] text`. See [docs/instructions.md](docs/instructions.md) for the reconstruction agent's playbook.
 
 ## How it works
 
@@ -89,13 +89,15 @@ flowchart LR
 - `transcribe` — one `whisper-cli` pass over the full audio track → per-chunk transcripts with absolute timestamps
 - `manifest` — assembles `output/<id>/chunks/NNNN/{frame.png, transcript.txt, meta.json}` + `manifest.json` + `reconstruction.md` + `instructions.md`
 
-`dedupe` and `transcribe` run concurrently. Every stage is idempotent, so re-running `all` resumes from the furthest completed stage. Details on the pipeline, performance, and package layout: [ARCHITECTURE.md](ARCHITECTURE.md).
+`dedupe` and `transcribe` run concurrently. Every stage is idempotent, so re-running `all` resumes from the furthest completed stage. Details on the pipeline, performance, and package layout: [docs/architecture.md](docs/architecture.md).
 
 ## Development
 
 - Tests: `go test ./...` — hermetic (mocked exec, no network, no real binaries).
 - Integration: `scripts/integration.sh` — synthesizes a 6 s / 3-scene video offline, runs the full pipeline, validates the manifest and chunk tree.
 - Cleanup: `scripts/clean.sh` — wipes `work/` + `output/` (asks for confirmation unless `-y`).
+- CI: `.github/workflows/ci.yml` runs build/vet/format/test on Linux + Windows (tests are hermetic, so no external services needed).
+- Structure, package responsibilities, and on-disk contracts: [docs/architecture.md](docs/architecture.md). Build history: [docs/progress.md](docs/progress.md). Agent playbook for the output: [docs/instructions.md](docs/instructions.md).
 
 ## Known limitations
 
@@ -105,4 +107,4 @@ flowchart LR
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).

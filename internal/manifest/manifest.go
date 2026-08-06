@@ -326,11 +326,21 @@ func writeSeed(outDir string, m Manifest, index []string) error {
 	return os.WriteFile(filepath.Join(outDir, "reconstruction.md"), []byte(b.String()), 0o644)
 }
 
-// copyInstructions copies the repo-root instructions.md into the output
-// dir when present (it is authored in the docs phase).
+// copyInstructions copies the repo's docs/instructions.md into the output
+// dir when present (it is authored in the docs phase). Looks in docs/
+// first (production layout), then next to the binary (legacy layout).
 func copyInstructions(outDir string) error {
-	src := filepath.Join("instructions.md")
-	if _, err := os.Stat(src); err != nil {
+	var src string
+	for _, candidate := range []string{
+		filepath.Join("docs", "instructions.md"),
+		filepath.Join("instructions.md"),
+	} {
+		if _, err := os.Stat(candidate); err == nil {
+			src = candidate
+			break
+		}
+	}
+	if src == "" {
 		fmt.Printf("manifest: instructions.md not found next to the binary — skipping copy\n")
 		return nil
 	}

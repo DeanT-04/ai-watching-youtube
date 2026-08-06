@@ -226,8 +226,11 @@ func TestRunResume(t *testing.T) {
 func TestRunCopiesInstructions(t *testing.T) {
 	base := t.TempDir()
 	seedWorkDir(t, base, true)
-	// instructions.md lives next to the working dir (repo root in production).
-	if err := os.WriteFile(filepath.Join(base, "instructions.md"), []byte("# Instructions\n"), 0o644); err != nil {
+	// instructions.md lives at docs/instructions.md (repo-root layout in production).
+	if err := os.MkdirAll(filepath.Join(base, "docs"), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(base, "docs", "instructions.md"), []byte("# Instructions\n"), 0o644); err != nil {
 		t.Fatal(err)
 	}
 	t.Chdir(base)
