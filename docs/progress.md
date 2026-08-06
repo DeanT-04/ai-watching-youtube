@@ -2,6 +2,24 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## Repo refactor + clean end-to-end re-run (done)
+
+- Repo restructured to industry standard: root-level docs moved to `docs/`
+  (`architecture.md`, `build-brief.md`, `instructions.md`, `progress.md`);
+  added `LICENSE` (MIT), `CONTRIBUTING.md`, `.github/workflows/ci.yml`
+  (hermetic build/vet/gofmt/test on Linux + Windows); `manifest` stage now
+  copies `docs/instructions.md` (legacy root fallback + test).
+- Universal `/setup` agent skill (global) installs all dependencies
+  (Go, yt-dlp, ffmpeg, whisper-cli, model) — idempotent, cross-platform.
+- **Clean end-to-end run** on the same URL after wiping `work/` + `output/`:
+  identical results — 1731 raw scenes → 165 chunks, 1217.9 s, 186 whisper
+  segments, zero missing files, `instructions.md` copied from its new `docs/`
+  home. Full prompt re-OCR'd from fresh frames (chunks 240–302) and
+  cross-checked against the fresh transcript; reconstruction written to
+  `output/BL8TfsLk3WM/prompt_reconstructed.md`.
+
+---
+
 ## The true test — full prompt extracted from the video (done)
 
 Reconstructed the complete prompt the creator pasted into Claude (opus 4.8) from the on-screen
