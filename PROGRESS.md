@@ -2,7 +2,31 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
-## Phases 1–9 — built, tested, reviewable (current)
+## Phase 11 — Performance overhaul (done, benchmarked)
+
+The first real run (1218 s, 4K, 1731 chunks) exposed three bottlenecks; all fixed:
+
+| Bottleneck | Before | After | How |
+|---|---|---|---|
+| Transcription | 1731 whisper-cli model loads, 30+ min, not finished | **one pass: 6m42s for the whole video** (fp16; ~3.5 min with the q8_0 default) | Single `whisper-cli -oj` run over the full `audio.wav`, then segments partitioned into per-chunk transcripts (`transcripts/full.json` + `NNNN.txt`). Also fixed a latent bug: whisper-cli's own default language is `en` — we now always pass `-l auto` unless overridden. |
+| Frame extraction | 2.5 s/chunk (decode forward from keyframe) | **0.41 s/chunk** | `-skip_frame nokey`: grab the first keyframe at/after each cut (encoders keyframe at cuts), with a plain-seek fallback for sparse-keyframe tails. |
+| Scene detection | 5m38s full 4K decode | 5m30s (floor: detection needs every frame decoded; scale filters don't help — decode happens first) | Documented as the unavoidable single most expensive step. |
+| Audio slices | 1731 ffmpeg processes | **~5 s total, zero processes** | Pure-Go byte-range slicing of the 16 kHz WAV (header-parsed; falls back to ffmpeg for non-standard WAVs). |
+| Dedupe dHash | 60+ min CPU (per-pixel `At().RGBA()` on 4K) | **~1 min** | Raw pixel-buffer box-average (NRGBA/RGBA/Gray fast paths, ~30x) + parallel hashing (`--jobs`). |
+| Manifest | sequential 3 GB frame copies | parallel with `--jobs` | Worker pool over chunk builds. |
+| Machine politeness | default jobs = all cores, normal priority | **half-core default + BELOW_NORMAL priority** on Windows (children via `lowprio.Command`) | The user's machine stays usable while the pipeline runs. |
+
+Also: default model switched to **`ggml-base-q8_0.bin`** (81 MB, ~2x faster than fp16 base, near-lossless), downloaded from hf-mirror.com (huggingface.co is blocked on this network).
+
+**Verified:** all 7 test suites pass (rewritten for the new transcribe/chunk internals), `scripts/integration.sh` PASS with the optimized pipeline, `go build/vet/gofmt` clean. **Not verified here:** `go test -race` (needs cgo/gcc, absent on this Windows box).
+
+## Next step
+
+Re-run `https://youtu.be/BL8TfsLk3WM` end-to-end with the optimized pipeline (Phase 12), then final review.
+
+---
+
+## Phases 1–9 — built, tested, reviewable
 
 Everything below is committed and green: `go build ./...`, `go vet ./...`, `gofmt -l .` clean; `go test ./...` passes for all 7 packages (hermetic — mocked exec, no network/binaries).
 
