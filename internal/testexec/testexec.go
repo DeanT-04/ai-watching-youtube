@@ -36,6 +36,14 @@ func Command(stdout, stderr string, code int) func(name string, args ...string) 
 	}
 }
 
+// LookPath is a hermetic fake for exec.LookPath: every binary is
+// considered installed, so a package's startup binary check never touches
+// the real PATH during tests. The returned path is discarded by the
+// callers (they only check the error), so it does not need to be real.
+// Pair it with Command when a test exercises Run on a machine without
+// ffmpeg/yt-dlp/whisper-cli installed (e.g. CI runners).
+func LookPath(name string) (string, error) { return "/fake/" + name, nil }
+
 // HelperProcess is the body of the TestHelperProcess test each package
 // defines. It replays the canned output and exit code from the env vars
 // and exits the child process. As a normal test it is a no-op.

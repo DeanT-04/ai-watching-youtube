@@ -13,6 +13,14 @@ import (
 
 func TestHelperProcess(t *testing.T) { testexec.HelperProcess(t) }
 
+// TestMain makes the startup binary check hermetic by default: Run tests
+// must pass on machines with no ffmpeg/yt-dlp installed (e.g. CI runners),
+// so LookPath resolves every binary unless a test overrides it on purpose.
+func TestMain(m *testing.M) {
+	LookPath = testexec.LookPath
+	os.Exit(m.Run())
+}
+
 func TestVideoID(t *testing.T) {
 	cases := []struct {
 		url     string
@@ -67,9 +75,9 @@ func TestFileID(t *testing.T) {
 }
 
 func TestRunMissingBinary(t *testing.T) {
-	oldLook := lookPath
-	lookPath = func(string) (string, error) { return "", errors.New("not found") }
-	defer func() { lookPath = oldLook }()
+	oldLook := LookPath
+	LookPath = func(string) (string, error) { return "", errors.New("not found") }
+	defer func() { LookPath = oldLook }()
 
 	err := Run(Options{URL: "https://youtu.be/BL8TfsLk3WM", WorkDir: t.TempDir()})
 	if err == nil {
@@ -209,14 +217,14 @@ func TestRunLocalFile(t *testing.T) {
 // TestRunLocalFileDoesNotRequireYtDlp: --file mode must not demand yt-dlp
 // (it is only needed for URL downloads).
 func TestRunLocalFileDoesNotRequireYtDlp(t *testing.T) {
-	oldLook := lookPath
-	lookPath = func(bin string) (string, error) {
+	oldLook := LookPath
+	LookPath = func(bin string) (string, error) {
 		if bin == "yt-dlp" {
 			return "", errors.New("yt-dlp not installed")
 		}
 		return bin, nil
 	}
-	defer func() { lookPath = oldLook }()
+	defer func() { LookPath = oldLook }()
 
 	work := t.TempDir()
 	src := filepath.Join(t.TempDir(), "clip.mp4")

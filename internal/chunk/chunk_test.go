@@ -15,6 +15,14 @@ import (
 
 func TestHelperProcess(t *testing.T) { testexec.HelperProcess(t) }
 
+// TestMain makes the startup binary check hermetic by default: Run tests
+// must pass on machines with no ffmpeg/ffprobe installed (e.g. CI runners),
+// so LookPath resolves every binary unless a test overrides it on purpose.
+func TestMain(m *testing.M) {
+	LookPath = testexec.LookPath
+	os.Exit(m.Run())
+}
+
 func TestSceneBoundaries(t *testing.T) {
 	old := command
 	scd := "[Parsed_scdet_0 @ 0x1] lavfi.scd.score: 0.50\n" +

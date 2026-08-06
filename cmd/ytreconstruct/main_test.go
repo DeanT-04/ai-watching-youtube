@@ -1,9 +1,27 @@
 package main
 
 import (
+	"os"
 	"strings"
 	"testing"
+
+	"ytreconstruct/internal/chunk"
+	"ytreconstruct/internal/download"
+	"ytreconstruct/internal/testexec"
+	"ytreconstruct/internal/transcribe"
 )
+
+// TestMain makes the CLI hermetic: subcommands invoke the packages' startup
+// binary checks, which must not depend on ffmpeg/yt-dlp/whisper-cli being
+// installed on the machine running the tests (e.g. CI runners).
+func TestMain(m *testing.M) {
+	// Subcommands invoke the packages' startup binary checks; fake them so
+	// the CLI tests run without ffmpeg/yt-dlp/whisper-cli installed.
+	chunk.LookPath = testexec.LookPath
+	download.LookPath = testexec.LookPath
+	transcribe.LookPath = testexec.LookPath
+	os.Exit(m.Run())
+}
 
 // execute runs the CLI with the given args, returning the error (nil on success).
 func execute(args ...string) error {

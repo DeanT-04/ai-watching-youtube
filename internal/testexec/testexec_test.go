@@ -19,6 +19,14 @@ func TestCommandFakeEmitsAndExits(t *testing.T) {
 	}
 }
 
+func TestLookPathFakeSucceedsForAnyBinary(t *testing.T) {
+	for _, name := range []string{"ffmpeg", "ffprobe", "yt-dlp", "whisper-cli"} {
+		if _, err := LookPath(name); err != nil {
+			t.Errorf("LookPath(%q) = %v, want success", name, err)
+		}
+	}
+}
+
 func TestCommandFakeExitCode(t *testing.T) {
 	cmd := Command("", "boom", 3)("yt-dlp")
 	_, err := cmd.Output()

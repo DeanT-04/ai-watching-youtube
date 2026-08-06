@@ -20,10 +20,13 @@ import (
 	"ytreconstruct/internal/lowprio"
 )
 
-// command and lookPath are indirections so tests can fake os/exec.
+// command and LookPath are indirections so tests can fake os/exec.
+// LookPath is exported for tests only (the CLI's own tests live in
+// package main and cannot touch an unexported var) — production code
+// must treat it as read-only.
 var (
 	command  = lowprio.Command
-	lookPath = exec.LookPath
+	LookPath = exec.LookPath
 )
 
 // Options configures a transcribe run.
@@ -66,7 +69,7 @@ func Run(opts Options) error {
 	if opts.Model == "" {
 		return fmt.Errorf("transcribe: no model specified (path to a ggml whisper model)")
 	}
-	if _, err := lookPath("whisper-cli"); err != nil {
+	if _, err := LookPath("whisper-cli"); err != nil {
 		return fmt.Errorf("transcribe: required binary %q not found in PATH — install whisper.cpp and retry (https://github.com/ggml-org/whisper.cpp): %w", "whisper-cli", err)
 	}
 	if _, err := os.Stat(opts.Model); err != nil {

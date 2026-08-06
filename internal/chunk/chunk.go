@@ -22,12 +22,15 @@ import (
 	"ytreconstruct/internal/lowprio"
 )
 
-// command and lookPath are indirections so tests can fake os/exec.
+// command and LookPath are indirections so tests can fake os/exec.
 // command defaults to lowprio.Command so child processes run at
 // BELOW_NORMAL priority and never starve the user's interactive apps.
+// LookPath is exported for tests only (the CLI's own tests live in
+// package main and cannot touch an unexported var) — production code
+// must treat it as read-only.
 var (
 	command  = lowprio.Command
-	lookPath = exec.LookPath
+	LookPath = exec.LookPath
 )
 
 // Chunk is one scene segment. Paths are relative to work/<video_id>/.
@@ -70,7 +73,7 @@ func Run(opts Options) error {
 		opts.Jobs = 1
 	}
 	for _, bin := range []string{"ffmpeg", "ffprobe"} {
-		if _, err := lookPath(bin); err != nil {
+		if _, err := LookPath(bin); err != nil {
 			return fmt.Errorf("chunk: required binary %q not found in PATH — install it and retry (https://ffmpeg.org): %w", bin, err)
 		}
 	}

@@ -15,6 +15,14 @@ import (
 
 func TestHelperProcess(t *testing.T) { testexec.HelperProcess(t) }
 
+// TestMain makes the startup binary check hermetic by default: Run tests
+// must pass on machines with no whisper-cli installed (e.g. CI runners),
+// so LookPath resolves every binary unless a test overrides it on purpose.
+func TestMain(m *testing.M) {
+	LookPath = testexec.LookPath
+	os.Exit(m.Run())
+}
+
 func TestFormatTimestamp(t *testing.T) {
 	cases := []struct {
 		in   float64
@@ -270,9 +278,9 @@ func TestRunMissingAudio(t *testing.T) {
 }
 
 func TestRunMissingModel(t *testing.T) {
-	oldLook := lookPath
-	lookPath = func(bin string) (string, error) { return bin, nil }
-	defer func() { lookPath = oldLook }()
+	oldLook := LookPath
+	LookPath = func(bin string) (string, error) { return bin, nil }
+	defer func() { LookPath = oldLook }()
 
 	work := t.TempDir()
 	model := filepath.Join(work, "nope.bin")
@@ -286,9 +294,9 @@ func TestRunMissingModel(t *testing.T) {
 }
 
 func TestRunMissingWhisperBinary(t *testing.T) {
-	oldLook := lookPath
-	lookPath = func(string) (string, error) { return "", errors.New("not found") }
-	defer func() { lookPath = oldLook }()
+	oldLook := LookPath
+	LookPath = func(string) (string, error) { return "", errors.New("not found") }
+	defer func() { LookPath = oldLook }()
 
 	err := Run(Options{VideoID: "abc", WorkDir: t.TempDir(), Model: filepath.Join(t.TempDir(), "m.bin")})
 	if err == nil {
@@ -308,9 +316,12 @@ func TestRunWhisperFailure(t *testing.T) {
 	}
 	defer func() { command = oldCmd }()
 
-	err := Run(Options{VideoID: "vid", WorkDir: work, Model: filepath.Join(work, "m.bin")})
+	err := Run(Options{VideoID: "vid", WorkDir: work, Model: filepath.Join(work, "model.bin")})
 	if err == nil {
 		t.Fatal("expected error when whisper-cli fails")
+	}
+	if !strings.Contains(err.Error(), "whisper-cli failed") {
+		t.Errorf("error should report the whisper-cli failure, got: %v", err)
 	}
 }
 
@@ -323,8 +334,8 @@ func TestRunWhisperNoJSON(t *testing.T) {
 	}
 	defer func() { command = oldCmd }()
 
-	err := Run(Options{VideoID: "vid", WorkDir: work, Model: filepath.Join(work, "m.bin")})
-	if err == nil || !strings.Contains(err.Error(), "no") {
+	err := Run(Options{VideoID: "vid", WorkDir: work, Model: filepath.Join(work, "model.bin")})
+	if err == nil || !strings.Contains(err.Error(), "produced no") {
 		t.Errorf("expected no-JSON error, got: %v", err)
 	}
 }
