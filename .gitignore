@@ -1,6 +1,7 @@
-# Scratch and deliverable directories — never commit these.
+# Scratch, deliverable, and Q&A archive directories — never commit these.
 work/
 output/
+results/
 
 # Build artifacts
 /ytreconstruct.exe

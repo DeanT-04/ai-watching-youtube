@@ -2,6 +2,27 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## Question log + answer archive (`results/`) (done)
+
+- New persistent Q&A archive at `results/<video_id>/`: `video.yaml` (metadata)
+  + one `NNN.yaml` per question (zero-padded counter) holding question, answer,
+  process log, evidence paths, status. Gitignored; deliberately not wiped by
+  `scripts/clean.sh` (only `work/` + `output/` are).
+- Same video URL (any form, `?si=` stripped) reuses the same folder — no
+  duplicates. Same or similar question (normalized token-overlap, generous on
+  rephrases) → "already answered" + exact YAML path + stored answer printed; no
+  new file. Genuinely new question → next `NNN.yaml` written.
+- Implemented as the `/ask` agent skill (project scope, `.reasonix/skills/ask/`,
+  gitignored); the convention is versioned in `docs/instructions.md` (new
+  "Answering questions about a video" section), README, and `docs/architecture.md`.
+- Verified: skill mechanics (video-ID extraction, counter, similarity) tested
+  against real inputs; all three workflow paths exercised against the real
+  archive; archive seeded with the existing full-prompt answer as `001.yaml`
+  plus a fresh take-profit answer as `002.yaml`; `go build/vet/gofmt/test` and
+  `scripts/integration.sh` still green (no Go changes).
+
+---
+
 ## Repo refactor + clean end-to-end re-run (done)
 
 - Repo restructured to industry standard: root-level docs moved to `docs/`

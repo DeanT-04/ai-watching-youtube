@@ -51,10 +51,11 @@ internal/transcribe/    whisper-cli wrapper, absolute-timestamp alignment
 internal/manifest/      output tree + manifest.json + reconstruction.md seed
 internal/lowprio/       BELOW_NORMAL priority for child processes (Windows)
 internal/testexec/      hermetic exec.Command fake for tests
-scripts/clean.sh        safe wipe of work/ + output/
+scripts/clean.sh        safe wipe of work/ + output/ (results/ archive survives)
 scripts/integration.sh  offline end-to-end test
 scripts/ocr.ps1         Windows OCR over extracted frames
 docs/                   architecture, instructions, build brief, progress log
 work/                   scratch (gitignored)
 output/                 deliverables (gitignored)
+results/                persistent Q&A archive — results/<video_id>/{video.yaml, NNN.yaml} (gitignored)
 ```

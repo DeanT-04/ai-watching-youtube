@@ -73,6 +73,10 @@ ytreconstruct manifest <video_id>
 
 `source_ids` lists the raw scene chunks merged into a deduped chunk (>1 for static periods). Transcript lines carry absolute timestamps: `[00:01:23.456 --> 00:01:25.000] text`. See [docs/instructions.md](docs/instructions.md) for the reconstruction agent's playbook.
 
+### Question log (`results/`)
+
+Questions asked about a video are answered and logged to a persistent archive at `results/<video_id>/` — one `NNN.yaml` per question (question, answer, process log, evidence) plus a `video.yaml` metadata file. Same video URL (any form) reuses the same folder; the same or a similar question reuses the stored answer instead of duplicating it. The archive survives `scripts/clean.sh` and is gitignored.
+
 ## How it works
 
 ```mermaid

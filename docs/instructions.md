@@ -46,3 +46,39 @@ concatenation of the source transcripts in order).
    what changes there.
 7. When you finish, `reconstruction.md` must read like a linear, timestamped
    retelling of the video with every on-screen artifact captured.
+
+## Answering questions about a video (the `results/` archive)
+
+When someone asks a question about this video, answer it and **log it to the
+persistent Q&A archive** so it never needs to be answered twice. The archive
+lives at `results/<video_id>/` in the repo root — it is *not* part of the
+per-video `output/` tree and survives `scripts/clean.sh`.
+
+```
+results/<video_id>/
+├── video.yaml     ← metadata: video_id, url, title, first_seen, last_asked, question_count
+├── 001.yaml       ← one file per question, zero-padded counter (001, 002, …)
+├── 002.yaml
+└── …
+```
+
+### The rules
+
+1. **Locate or create the video folder** by the canonical video ID, never the
+   raw URL — `youtu.be/BL8TfsLk3WM?si=…`, `youtube.com/watch?v=BL8TfsLk3WM`,
+   `/shorts/…` and `/embed/…` all map to `results/BL8TfsLk3WM/`. If the folder
+   already exists, **reuse it** — never create a duplicate.
+2. **Check for an existing answer first.** Read every `NNN.yaml` in the folder
+   and compare the new question against their `question` field: normalize both
+   (lowercase, strip punctuation and filler words), then compare tokens. If the
+   new question is the same or close enough to an existing one, **do not create
+   a new file** — tell the user it was already answered, point them to the exact
+   `results/<video_id>/NNN.yaml` path, and print the stored answer.
+3. **Otherwise answer the question** from `output/<video_id>/` (chunks, frames,
+   transcripts, OCR) using the rules above, then write the next `NNN.yaml` with:
+   `video_id`, `video_url`, `question_id`, `asked_at`, `question`, `answer`,
+   `process_log` (a short account of how you reached the answer: which chunks,
+   frames, OCR files and transcript timestamps you used, and any corrections you
+   made), `evidence` (file paths), and `status: answered`.
+4. **Update `video.yaml`** on every interaction (`last_asked`, `question_count`).
+5. Never commit `results/` — it is gitignored by design.
