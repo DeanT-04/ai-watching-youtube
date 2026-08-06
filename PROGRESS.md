@@ -2,6 +2,28 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## Phase 12 — Real run on https://youtu.be/BL8TfsLk3WM (done)
+
+**Full pipeline wall time: 22m42s** (1218 s / 4K / 1731 raw chunks), down from 60+ minutes and never-finishing before the overhaul. Breakdown:
+
+- download: skipped (resumed from the earlier run's video.mp4/audio.wav)
+- chunk (detection + 1731 keyframe frames + Go audio slices): ~12 min, of which scene detection (full 4K decode) is ~5.5 min
+- dedupe (fast dHash, parallel): under a minute — **1731 raw chunks → 165 meaningful chunks** (keyframe-sharing runs merged; max 72 sources in one run)
+- transcribe (single whisper pass, q8_0 model, `-l auto`): ~5 min — 183 segments
+- manifest (parallel builds): ~3 min
+
+**Deliverable verified:** `output/BL8TfsLk3WM/manifest.json` — 165 ordered chunks, total_duration 1217.9 s, all frame/transcript/meta files present, reconstruction.md + instructions.md seeded. Transcripts carry correct absolute timestamps (e.g. `[00:00:07.120 --> 00:00:13.040] take profit machine learning algorithm...`). 86/165 chunks contain speech; the rest are music/ambient passages with no whisper segments.
+
+**Bug found by the real run:** whisper.cpp's `-oj` JSON reports `offsets` in **milliseconds**, not seconds — the first version dropped 182/183 segments (they fell outside every chunk range) and rendered a bogus `01:50:40` timestamp. Fixed with a /1000 conversion + regression test; transcribe now always re-partitions from `full.json` (the whisper pass is what resume skips).
+
+**Machine politeness verified:** child processes (ffmpeg, whisper-cli, yt-dlp) confirmed running at BELOW_NORMAL priority (PriorityClass 16384 = 0x4000) on Windows; default `--jobs` = half the cores. The machine stays usable while the pipeline grinds.
+
+## Next step
+
+None — project complete. Remaining caveats for a human: `go test -race` needs cgo/gcc (absent here); non-Windows paths untested; whisper accuracy is base-model quality (swap `--model` for small/medium if better transcripts are needed).
+
+---
+
 ## Phase 11 — Performance overhaul (done, benchmarked)
 
 The first real run (1218 s, 4K, 1731 chunks) exposed three bottlenecks; all fixed:
