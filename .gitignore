@@ -1,0 +1,16 @@
+# Scratch and deliverable directories — never commit these.
+work/
+output/
+
+# Build artifacts
+/ytreconstruct.exe
+/ytreconstruct
+/bin/
+
+# Editor / OS cruft
+.reasonix/
+.DS_Store
+Thumbs.db
+
+# Local whisper models are fetched by the user, never committed
+*.bin
