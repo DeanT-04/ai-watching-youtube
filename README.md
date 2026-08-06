@@ -23,6 +23,10 @@ Requires `yt-dlp`, `ffmpeg` ≥ 6.0, and [`whisper-cli`](https://github.com/ggml
 go build -o bin/ytreconstruct ./cmd/ytreconstruct
 ```
 
+Prefer automating it: invoke the `/setup` agent skill and it detects your OS,
+installs whatever is missing (Go, yt-dlp, ffmpeg, whisper-cli, the default model)
+and builds the binary for you. Idempotent — safe to re-run anytime.
+
 ## Usage
 
 ```sh
