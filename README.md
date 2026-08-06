@@ -2,7 +2,14 @@
   <img src="docs/images/banner.png" alt="ytreconstruct banner" width="100%">
 </p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-31916e?style=flat&labelColor=161b1e" alt="License: MIT"></a>
+  <a href="https://go.dev"><img src="https://img.shields.io/badge/Go-1.26.5-9d6a4e?style=flat&logo=go&logoColor=fff&labelColor=161b1e" alt="Go 1.26.5"></a>
+  <a href="https://github.com/spf13/cobra"><img src="https://img.shields.io/badge/CLI-cobra-2f574b?style=flat&labelColor=161b1e" alt="CLI: cobra"></a>
+  <img src="https://img.shields.io/badge/offline--first-%E2%9C%93-31916e?style=flat&labelColor=161b1e" alt="offline-first ✓">
+  <img src="https://img.shields.io/badge/CPU--only-no%20GPU-9d6a4e?style=flat&labelColor=161b1e" alt="CPU only, no GPU">
+  <img src="https://img.shields.io/badge/stack-yt--dlp%20%C2%B7%20ffmpeg%20%C2%B7%20whisper.cpp-2f574b?style=flat&labelColor=161b1e" alt="yt-dlp · ffmpeg · whisper.cpp">
+</p>
 
 Turn a YouTube video into an ordered set of **(frame, audio transcript, timestamp)** chunks on disk, so a coding agent can later "watch" the video in the correct order and reconstruct exactly what appeared on screen — code, prompts, configs — without jumbling the sequence.
 
@@ -65,6 +72,7 @@ ytreconstruct manifest <video_id>
 ## How it works
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"background": "#161b1e", "primaryColor": "#2f574b", "primaryTextColor": "#ffe2c5", "primaryBorderColor": "#9d6a4e", "lineColor": "#9d6a4e", "fontSize": "16px", "edgeLabelBackground": "#161b1e"}}}%%
 flowchart LR
     URL["YouTube URL<br/>or local file"] --> DL["download"]
     DL --> CH["chunk"]
