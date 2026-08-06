@@ -341,7 +341,7 @@ func copyInstructions(outDir string) error {
 		}
 	}
 	if src == "" {
-		fmt.Printf("manifest: instructions.md not found next to the binary — skipping copy\n")
+		fmt.Printf("manifest: instructions.md not found in docs/ or repo root — skipping copy\n")
 		return nil
 	}
 	return copyFile(src, filepath.Join(outDir, "instructions.md"))

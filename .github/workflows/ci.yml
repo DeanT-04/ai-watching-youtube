@@ -28,6 +28,7 @@ jobs:
         run: go vet ./...
 
       - name: Format check
+        shell: bash
         run: |
           files="$(gofmt -l .)"
           if [ -n "$files" ]; then

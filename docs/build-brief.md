@@ -123,6 +123,6 @@ Don't consider this finished until every one of these is true:
 - [ ] `README.md` documents install requirements (yt-dlp, ffmpeg, the Whisper binary) and every subcommand
 - [ ] Every constraint in `AGENTS.md` was actually held, not just noted — no cloud deps, no GPU assumption, nothing under `work/` or `output/` committed
 - [ ] `scripts/clean.sh` still matches the real directory structure you ended up building
-- [ ] You can describe, in the final `PROGRESS.md` entry, what you tested yourself versus what still needs a human's eyes
+- [ ] You can describe, in the final `docs/progress.md` entry, what you tested yourself versus what still needs a human's eyes
 
 Work through this now, starting at Phase 0.

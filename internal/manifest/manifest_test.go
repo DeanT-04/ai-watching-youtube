@@ -246,6 +246,26 @@ func TestRunCopiesInstructions(t *testing.T) {
 	}
 }
 
+func TestRunCopiesInstructionsLegacyRoot(t *testing.T) {
+	base := t.TempDir()
+	seedWorkDir(t, base, true)
+	// Legacy layout: instructions.md at the repo root, no docs/ dir.
+	if err := os.WriteFile(filepath.Join(base, "instructions.md"), []byte("# Legacy\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	t.Chdir(base)
+	if err := Run(Options{VideoID: "vid123", WorkDir: filepath.Join(base, "work"), OutputDir: filepath.Join(base, "output")}); err != nil {
+		t.Fatalf("Run: %v", err)
+	}
+	b, err := os.ReadFile(filepath.Join(base, "output", "vid123", "instructions.md"))
+	if err != nil {
+		t.Fatalf("instructions.md not copied: %v", err)
+	}
+	if string(b) != "# Legacy\n" {
+		t.Errorf("instructions content = %q", b)
+	}
+}
+
 func intsEqual(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
