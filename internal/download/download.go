@@ -11,13 +11,17 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+
 	"regexp"
 	"strings"
+	"ytreconstruct/internal/lowprio"
 )
 
 // command and lookPath are indirections so tests can fake os/exec.
+// command defaults to lowprio.Command so child processes run at
+// BELOW_NORMAL priority and never starve the user's interactive apps.
 var (
-	command  = exec.Command
+	command  = lowprio.Command
 	lookPath = exec.LookPath
 )
 

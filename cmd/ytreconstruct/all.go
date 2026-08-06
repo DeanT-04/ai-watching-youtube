@@ -108,6 +108,7 @@ func runAll(o allOptions) error {
 		WorkDir:   o.workDir,
 		OutputDir: o.outputDir,
 		SourceURL: o.url,
+		Jobs:      o.jobs,
 	}); err != nil {
 		return err
 	}

@@ -41,10 +41,12 @@ Everything runs offline after the video is downloaded. No cloud APIs.`,
 
 	// Persistent flags shared by every subcommand. Values are read inside
 	// each RunE via cmd.Flags() — never captured at construction time.
+	// Default jobs leave half the cores free so the machine stays usable
+	// while the pipeline grinds; children additionally run BELOW_NORMAL.
 	pf := root.PersistentFlags()
 	pf.String("work-dir", "work", "scratch directory (never committed)")
 	pf.String("output-dir", "output", "deliverable directory (never committed)")
-	pf.IntP("jobs", "j", runtime.NumCPU(), "parallel workers (default: CPU count)")
+	pf.IntP("jobs", "j", defaultJobs(), "parallel workers (default: half the CPU count)")
 	pf.Bool("skip-transcribe", false, "skip the transcription stage")
 
 	root.AddCommand(
@@ -110,6 +112,7 @@ func newDedupeCmd() *cobra.Command {
 				VideoID:       args[0],
 				WorkDir:       flagString(cmd, "work-dir"),
 				HashThreshold: hashThreshold,
+				Jobs:          flagInt(cmd, "jobs"),
 			})
 		},
 	}
@@ -157,6 +160,7 @@ func newManifestCmd() *cobra.Command {
 				VideoID:   args[0],
 				WorkDir:   flagString(cmd, "work-dir"),
 				OutputDir: flagString(cmd, "output-dir"),
+				Jobs:      flagInt(cmd, "jobs"),
 			})
 		},
 	}
@@ -226,11 +230,22 @@ func flagBool(cmd *cobra.Command, name string) bool {
 	return v
 }
 
-// defaultModelPath returns the conventional whisper model location.
+// defaultJobs leaves half the cores free: the machine stays responsive
+// while the pipeline runs, and children are BELOW_NORMAL priority anyway.
+func defaultJobs() int {
+	if n := runtime.NumCPU() / 2; n >= 1 {
+		return n
+	}
+	return 1
+}
+
+// defaultModelPath returns the conventional whisper model location. The
+// q8_0 quantized model runs ~2x faster than the fp16 base on CPU with
+// near-identical accuracy (whisper.cpp quantization).
 func defaultModelPath() string {
 	home, err := os.UserHomeDir()
 	if err != nil {
 		return ""
 	}
-	return filepath.Join(home, ".cache", "ytreconstruct", "whisper", "ggml-base.bin")
+	return filepath.Join(home, ".cache", "ytreconstruct", "whisper", "ggml-base-q8_0.bin")
 }

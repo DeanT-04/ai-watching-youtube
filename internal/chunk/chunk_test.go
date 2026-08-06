@@ -107,17 +107,26 @@ func fakeChunkCmd(t *testing.T, scdLines, duration string) func(string, ...strin
 	}
 }
 
+// makeWAV writes a minimal 16 kHz mono s16le WAV of the given duration.
+func makeWAV(t *testing.T, path string, seconds float64) {
+	t.Helper()
+	pcm := make([]byte, int(seconds*32000))
+	writeWAVSlice(path, pcm, wavInfo{})
+	if _, err := os.Stat(path); err != nil {
+		t.Fatalf("makeWAV: %v", err)
+	}
+}
+
 func TestRunFullFlow(t *testing.T) {
 	work := t.TempDir()
 	dir := filepath.Join(work, "abc123")
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		t.Fatal(err)
 	}
-	for _, f := range []string{"video.mp4", "audio.wav"} {
-		if err := os.WriteFile(filepath.Join(dir, f), []byte("x"), 0o644); err != nil {
-			t.Fatal(err)
-		}
+	if err := os.WriteFile(filepath.Join(dir, "video.mp4"), []byte("x"), 0o644); err != nil {
+		t.Fatal(err)
 	}
+	makeWAV(t, filepath.Join(dir, "audio.wav"), 7.0)
 
 	scd := "[Parsed_scdet_0 @ 0x1] lavfi.scd.time: 0.000000\n" +
 		"[Parsed_scdet_0 @ 0x1] lavfi.scd.time: 2.500000\n" +
@@ -215,5 +224,82 @@ func TestRunResume(t *testing.T) {
 	}
 	if len(calls) != 0 {
 		t.Errorf("resume run should not invoke commands, got %v", calls)
+	}
+}
+
+func TestSliceAudioWAVGoPath(t *testing.T) {
+	rawDir := t.TempDir()
+	for i := 1; i <= 2; i++ {
+		if err := os.MkdirAll(filepath.Join(rawDir, fmt.Sprintf("%04d", i)), 0o755); err != nil {
+			t.Fatal(err)
+		}
+	}
+	audio := filepath.Join(rawDir, "audio.wav")
+	makeWAV(t, audio, 4.0)
+	chunks := []Chunk{
+		{ID: 1, Start: 0, End: 1, Frame: "f", Audio: "a"},
+		{ID: 2, Start: 1, End: 4, Frame: "f", Audio: "a"},
+	}
+
+	old := command
+	command = func(name string, args ...string) *exec.Cmd {
+		t.Fatalf("Go slicing must not spawn processes, got %q", name)
+		return nil
+	}
+	defer func() { command = old }()
+
+	if err := sliceAudioWAV(audio, rawDir, chunks); err != nil {
+		t.Fatalf("sliceAudioWAV: %v", err)
+	}
+	// Chunk 1: exactly 1s of 16k mono s16le = 32000 bytes of PCM.
+	c1, err := os.ReadFile(filepath.Join(rawDir, "0001", "audio.wav"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(c1) != 44+32000 {
+		t.Errorf("chunk 1 wav size = %d, want %d", len(c1), 44+32000)
+	}
+	// Chunk 2: 3s = 96000 bytes.
+	c2, err := os.ReadFile(filepath.Join(rawDir, "0002", "audio.wav"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(c2) != 44+96000 {
+		t.Errorf("chunk 2 wav size = %d, want %d", len(c2), 44+96000)
+	}
+}
+
+func TestSliceAudioWAVFfmpegFallback(t *testing.T) {
+	rawDir := t.TempDir()
+	for i := 1; i <= 1; i++ {
+		if err := os.MkdirAll(filepath.Join(rawDir, fmt.Sprintf("%04d", i)), 0o755); err != nil {
+			t.Fatal(err)
+		}
+	}
+	audio := filepath.Join(rawDir, "audio.wav")
+	if err := os.WriteFile(audio, []byte("not a wav"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	chunks := []Chunk{{ID: 1, Start: 0, End: 2, Frame: "f", Audio: "a"}}
+
+	old := command
+	command = func(name string, args ...string) *exec.Cmd {
+		if name == "ffmpeg" {
+			out := args[len(args)-1]
+			if out != "-" {
+				if err := os.WriteFile(out, []byte("slice"), 0o644); err != nil {
+					t.Fatal(err)
+				}
+			}
+		}
+		return testexec.Command("", "", 0)(name, args...)
+	}
+	defer func() { command = old }()
+
+	if err := sliceAudioWAV(audio, rawDir, chunks); err != nil {
+		t.Fatalf("sliceAudioWAV fallback: %v", err)
+	}
+	if _, err := os.Stat(filepath.Join(rawDir, "0001", "audio.wav")); err != nil {
+		t.Errorf("fallback slice not produced: %v", err)
 	}
 }

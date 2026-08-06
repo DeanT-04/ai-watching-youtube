@@ -12,6 +12,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"ytreconstruct/internal/chunk"
@@ -23,6 +24,7 @@ type Options struct {
 	WorkDir   string
 	OutputDir string
 	SourceURL string // original URL, recorded in manifest.json when known
+	Jobs      int    // parallel chunk-build workers
 }
 
 // ChunkMeta is the per-chunk meta.json payload.
@@ -103,65 +105,76 @@ func Run(opts Options) error {
 		return fmt.Errorf("manifest: mkdir %s: %w", chunksDir, err)
 	}
 
+	m := Manifest{
+		VideoID:   opts.VideoID,
+		SourceURL: opts.SourceURL,
+		CreatedAt: time.Now().UTC().Format(time.RFC3339),
+	}
+	if opts.Jobs < 1 {
+		opts.Jobs = 1
+	}
+
+	// Build each output chunk independently in parallel (frame copy +
+	// transcript merge + meta.json are all per-chunk), then assemble the
+	// manifest strictly in order.
+	type built struct {
+		entry ManifestEntry
+		index string
+		dur   float64
+	}
 	var (
-		m      Manifest
 		index  []string // reconstruction.md index lines
 		totalD float64
 	)
-	m.VideoID = opts.VideoID
-	m.SourceURL = opts.SourceURL
-	m.CreatedAt = time.Now().UTC().Format(time.RFC3339)
-
-	for i, c := range list.Chunks {
-		sources := c.SourceIDs
-		if len(sources) == 0 {
-			sources = []int{c.ID}
-		}
-		outID := i + 1
-		sub := filepath.Join(chunksDir, fmt.Sprintf("%04d", outID))
-		if err := os.MkdirAll(sub, 0o755); err != nil {
-			return fmt.Errorf("manifest: mkdir %s: %w", sub, err)
-		}
-
-		// Frame: copy the representative raw frame.
-		frameDst := filepath.Join(sub, "frame.png")
-		if err := copyFile(filepath.Join(workDir, c.Frame), frameDst); err != nil {
-			return fmt.Errorf("manifest: chunk %d frame: %w", outID, err)
-		}
-
-		// Transcript: concatenate the source chunks' transcripts in order.
-		transcriptDst := filepath.Join(sub, "transcript.txt")
-		if err := mergeTranscripts(workDir, sources, transcriptDst, noTranscripts); err != nil {
-			return fmt.Errorf("manifest: chunk %d: %w", outID, err)
-		}
-
-		meta := ChunkMeta{
-			ID:         outID,
-			Start:      c.Start,
-			End:        c.End,
-			Duration:   c.End - c.Start,
-			SourceIDs:  sources,
-			Frame:      "frame.png",
-			Transcript: "transcript.txt",
-		}
-		metaRel := filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID), "meta.json"))
-		if err := writeJSON(filepath.Join(outDir, metaRel), meta); err != nil {
+	results := make([]built, len(list.Chunks))
+	ids := make(chan int)
+	errCh := make(chan error, len(list.Chunks))
+	var wg sync.WaitGroup
+	for w := 0; w < opts.Jobs; w++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for i := range ids {
+				c := list.Chunks[i]
+				outID := i + 1
+				if err := buildChunk(outDir, workDir, c, outID, noTranscripts); err != nil {
+					errCh <- fmt.Errorf("manifest: chunk %d: %w", outID, err)
+					continue
+				}
+				results[i] = built{
+					entry: ManifestEntry{
+						ID:         outID,
+						Start:      c.Start,
+						End:        c.End,
+						Duration:   c.End - c.Start,
+						Frame:      filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID), "frame.png")),
+						Transcript: filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID), "transcript.txt")),
+						Meta:       filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID), "meta.json")),
+						SourceIDs:  sourceIDs(c),
+					},
+					index: fmt.Sprintf("- [%s → %s]  (source chunk(s) %v)", formatTimestamp(c.Start), formatTimestamp(c.End), sourceIDs(c)),
+					dur:   c.End - c.Start,
+				}
+			}
+		}()
+	}
+	for i := range list.Chunks {
+		ids <- i
+	}
+	close(ids)
+	wg.Wait()
+	close(errCh)
+	for err := range errCh {
+		if err != nil {
 			return err
 		}
+	}
 
-		entryRel := filepath.ToSlash(filepath.Join("chunks", fmt.Sprintf("%04d", outID)))
-		m.Chunks = append(m.Chunks, ManifestEntry{
-			ID:         outID,
-			Start:      c.Start,
-			End:        c.End,
-			Duration:   c.End - c.Start,
-			Frame:      entryRel + "/frame.png",
-			Transcript: entryRel + "/transcript.txt",
-			Meta:       metaRel,
-			SourceIDs:  sources,
-		})
-		index = append(index, fmt.Sprintf("- [%s → %s]  (source chunk(s) %v)", formatTimestamp(c.Start), formatTimestamp(c.End), sources))
-		totalD += c.End - c.Start
+	m.Chunks = make([]ManifestEntry, len(results))
+	for i, r := range results {
+		m.Chunks[i] = r.entry
+		index = append(index, r.index)
+		totalD += r.dur
 	}
 	m.TotalChunks = len(m.Chunks)
 	m.TotalDuration = totalD
@@ -189,6 +202,38 @@ func readChunkList(path string) (chunk.ChunkList, error) {
 		return chunk.ChunkList{}, fmt.Errorf("manifest: %s is not a valid chunk list: %w", path, err)
 	}
 	return list, nil
+}
+
+// sourceIDs returns the raw chunk ids merged into a (possibly deduped) chunk.
+func sourceIDs(c chunk.Chunk) []int {
+	if len(c.SourceIDs) > 0 {
+		return c.SourceIDs
+	}
+	return []int{c.ID}
+}
+
+// buildChunk writes one output chunk's frame, transcript and meta.json.
+func buildChunk(outDir, workDir string, c chunk.Chunk, outID int, noTranscripts bool) error {
+	sub := filepath.Join(outDir, "chunks", fmt.Sprintf("%04d", outID))
+	if err := os.MkdirAll(sub, 0o755); err != nil {
+		return fmt.Errorf("mkdir %s: %w", sub, err)
+	}
+	if err := copyFile(filepath.Join(workDir, c.Frame), filepath.Join(sub, "frame.png")); err != nil {
+		return fmt.Errorf("frame: %w", err)
+	}
+	if err := mergeTranscripts(workDir, sourceIDs(c), filepath.Join(sub, "transcript.txt"), noTranscripts); err != nil {
+		return err
+	}
+	meta := ChunkMeta{
+		ID:         outID,
+		Start:      c.Start,
+		End:        c.End,
+		Duration:   c.End - c.Start,
+		SourceIDs:  sourceIDs(c),
+		Frame:      "frame.png",
+		Transcript: "transcript.txt",
+	}
+	return writeJSON(filepath.Join(sub, "meta.json"), meta)
 }
 
 // mergeTranscripts concatenates the transcripts of the given raw chunk ids

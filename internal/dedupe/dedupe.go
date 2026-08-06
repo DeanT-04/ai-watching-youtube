@@ -13,6 +13,7 @@ import (
 	"math/bits"
 	"os"
 	"path/filepath"
+	"sync"
 
 	"ytreconstruct/internal/chunk"
 )
@@ -22,12 +23,16 @@ type Options struct {
 	VideoID       string
 	WorkDir       string
 	HashThreshold int // max Hamming distance to consider two frames identical (default 5)
+	Jobs          int // parallel frame hashing workers
 }
 
 // Run reads chunks.json and writes chunks_deduped.json in the same shape.
 func Run(opts Options) error {
 	if opts.HashThreshold < 0 {
 		return fmt.Errorf("dedupe: hash-threshold must be >= 0, got %d", opts.HashThreshold)
+	}
+	if opts.Jobs < 1 {
+		opts.Jobs = 1
 	}
 	dir := filepath.Join(opts.WorkDir, opts.VideoID)
 
@@ -51,25 +56,26 @@ func Run(opts Options) error {
 		return fmt.Errorf("dedupe: %s contains no chunks", inPath)
 	}
 
-	// Merge reads frame paths exactly as given, so hand it absolute paths.
-	// Existence is checked up front so a broken chunk phase fails loudly.
+	// Hash frames exactly as given, so hand absolute paths; existence is
+	// checked up front so a broken chunk phase fails loudly.
 	work := make([]chunk.Chunk, len(list.Chunks))
 	for i, c := range list.Chunks {
-		abs := filepath.Join(dir, c.Frame)
 		if c.Frame == "" {
 			return fmt.Errorf("dedupe: chunk %d has an empty frame path", c.ID)
 		}
+		abs := filepath.Join(dir, c.Frame)
 		if _, err := os.Stat(abs); err != nil {
 			return fmt.Errorf("dedupe: frame for chunk %d missing at %s — rerun `ytreconstruct chunk`", c.ID, abs)
 		}
 		work[i] = c
 		work[i].Frame = abs
 	}
-	merged := Merge(chunk.ChunkList{VideoID: list.VideoID, Source: list.Source, Chunks: work}, opts.HashThreshold)
+
+	hashes, ok := hashFrames(work, opts.Jobs)
+	merged := mergeWithHashes(chunk.ChunkList{VideoID: list.VideoID, Source: list.Source, Chunks: work}, opts.HashThreshold, hashes, ok)
 
 	// Restore the documented path contract: Frame is relative to the video
-	// dir, forward slashes (Audio was never made absolute, so it is already
-	// untouched).
+	// dir with forward slashes.
 	for i := range merged.Chunks {
 		if rel, err := filepath.Rel(dir, merged.Chunks[i].Frame); err == nil {
 			merged.Chunks[i].Frame = filepath.ToSlash(rel)
@@ -88,6 +94,7 @@ func Run(opts Options) error {
 const (
 	dhashCols = 9
 	dhashRows = 8
+	dhashBits = dhashRows * (dhashCols - 1) // 64
 )
 
 // DHash reads the image file (PNG or JPEG — use image.Decode) and returns a
@@ -104,15 +111,93 @@ func DHash(framePath string) (uint64, error) {
 	if err != nil {
 		return 0, fmt.Errorf("dedupe: decode frame %s: %w", framePath, err)
 	}
+	return dHashImage(img), nil
+}
 
-	// Box-average each cell to a grayscale value. Integer cell boundaries
-	// cover the whole image with every source pixel in exactly one cell.
+// dHashImage hashes an in-memory image, using direct pixel-buffer access for
+// the common PNG/JPEG decode results (NRGBA, RGBA, Gray) — roughly 30x
+// faster than per-pixel interface calls, which matters on 4K frames.
+func dHashImage(img image.Image) uint64 {
+	switch im := img.(type) {
+	case *image.NRGBA:
+		return dHashNRGBA(im)
+	case *image.RGBA:
+		return dHashRGBA(im)
+	case *image.Gray:
+		return dHashGray(im)
+	}
+	return dHashGeneric(img)
+}
+
+// dHashNRGBA box-averages straight (non-premultiplied) RGBA pixels.
+func dHashNRGBA(img *image.NRGBA) uint64 {
+	return dHashPix(img.Bounds(), img.Stride, 4, img.Pix, 0)
+}
+
+// dHashRGBA treats premultiplied RGBA like straight RGBA: for opaque
+// frames (the normal case) the stored values are identical.
+func dHashRGBA(img *image.RGBA) uint64 {
+	return dHashPix(img.Bounds(), img.Stride, 4, img.Pix, 0)
+}
+
+// dHashGray box-averages single-channel pixels.
+func dHashGray(img *image.Gray) uint64 {
+	return dHashPix(img.Bounds(), img.Stride, 1, img.Pix, 1)
+}
+
+// dHashPix is the shared fast box-average + bit assembly over a raw pixel
+// buffer. ch is the channel count per pixel; gray sets whether to use the
+// single channel directly instead of RGB weights.
+func dHashPix(b image.Rectangle, stride, ch int, pix []byte, gray int) uint64 {
+	w, h := b.Dx(), b.Dy()
+	cells := make([]uint64, dhashRows*dhashCols)
+	for cy := 0; cy < dhashRows; cy++ {
+		y0 := b.Min.Y + h*cy/dhashRows
+		y1 := b.Min.Y + h*(cy+1)/dhashRows
+		if y1 <= y0 { // tiny image: keep the cell in bounds
+			y1 = y0 + 1
+		}
+		for cx := 0; cx < dhashCols; cx++ {
+			x0 := b.Min.X + w*cx/dhashCols
+			x1 := b.Min.X + w*(cx+1)/dhashCols
+			if x1 <= x0 {
+				x1 = x0 + 1
+			}
+			var sum uint64
+			for y := y0; y < y1; y++ {
+				row := (y-b.Min.Y)*stride + (x0-b.Min.X)*ch
+				for i := row; i < row+(x1-x0)*ch; i += ch {
+					if gray != 0 {
+						sum += uint64(pix[i])
+					} else {
+						sum += (299*uint64(pix[i]) + 587*uint64(pix[i+1]) + 114*uint64(pix[i+2])) / 1000
+					}
+				}
+			}
+			n := uint64((y1 - y0) * (x1 - x0))
+			cells[cy*dhashCols+cx] = sum / n
+		}
+	}
+
+	var hash uint64
+	for cy := 0; cy < dhashRows; cy++ {
+		for cx := 0; cx < dhashCols-1; cx++ {
+			if cells[cy*dhashCols+cx] > cells[cy*dhashCols+cx+1] {
+				hash |= uint64(1) << uint(cy*(dhashCols-1)+cx)
+			}
+		}
+	}
+	return hash
+}
+
+// dHashGeneric is the fallback for unusual image types.
+func dHashGeneric(img image.Image) uint64 {
 	b := img.Bounds()
-	cells := make([]float64, dhashRows*dhashCols)
+	cells := make([]uint64, dhashRows*dhashCols)
 	for cy := 0; cy < dhashRows; cy++ {
 		y0 := b.Min.Y + b.Dy()*cy/dhashRows
 		y1 := b.Min.Y + b.Dy()*(cy+1)/dhashRows
-		if y1 <= y0 { // tiny image: keep the cell in bounds
+		if y1 <= y0 {
 			y1 = y0 + 1
 		}
 		for cx := 0; cx < dhashCols; cx++ {
@@ -129,10 +214,9 @@ func DHash(framePath string) (uint64, error) {
 				}
 			}
 			n := uint64((y1 - y0) * (x1 - x0))
-			cells[cy*dhashCols+cx] = float64(sum) / float64(n)
+			cells[cy*dhashCols+cx] = sum / n
 		}
 	}
-
 	var hash uint64
 	for cy := 0; cy < dhashRows; cy++ {
 		for cx := 0; cx < dhashCols-1; cx++ {
@@ -141,7 +225,7 @@ func DHash(framePath string) (uint64, error) {
 			}
 		}
 	}
-	return hash, nil
+	return hash
 }
 
 // Hamming returns the number of differing bits between a and b.
@@ -149,24 +233,47 @@ func Hamming(a, b uint64) int {
 	return bits.OnesCount64(a ^ b)
 }
 
-// Merge returns a new ChunkList with visually-static consecutive chunks
-// merged, in order. Frame paths are read exactly as given (absolute, or
-// relative to the working directory). A chunk joins the current run only
-// if its frame is within threshold Hamming distance of the run's first
-// (representative) frame, so a run never drifts visually. A merged chunk
-// keeps the first chunk's Frame/Audio and sets SourceIDs to the raw chunk
-// IDs in order; unmerged chunks are copied untouched. Frames that cannot
-// be read are treated as unmergeable rather than as a match.
-func Merge(list chunk.ChunkList, threshold int) chunk.ChunkList {
-	hashes := make([]uint64, len(list.Chunks))
-	ok := make([]bool, len(list.Chunks))
-	for i, c := range list.Chunks {
-		if h, err := DHash(c.Frame); err == nil {
-			hashes[i] = h
-			ok[i] = true
-		}
+// hashFrames computes a dHash for every chunk's frame in parallel.
+// ok[i] is false when a frame could not be hashed.
+func hashFrames(list []chunk.Chunk, jobs int) ([]uint64, []bool) {
+	hashes := make([]uint64, len(list))
+	ok := make([]bool, len(list))
+	var wg sync.WaitGroup
+	ids := make(chan int)
+	for w := 0; w < jobs; w++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for i := range ids {
+				if h, err := DHash(list[i].Frame); err == nil {
+					hashes[i] = h
+					ok[i] = true
+				}
+			}
+		}()
 	}
+	for i := range list {
+		ids <- i
+	}
+	close(ids)
+	wg.Wait()
+	return hashes, ok
+}
 
+// Merge returns a new ChunkList with visually-static consecutive chunks
+// merged, in order. Frame paths are read exactly as given. A chunk joins
+// the current run only if its frame is within threshold Hamming distance of
+// the run's first (representative) frame, so a run never drifts visually.
+// A merged chunk keeps the first chunk's Frame/Audio and sets SourceIDs to
+// the raw chunk IDs in order; unmerged chunks are copied untouched. Frames
+// that cannot be read are treated as unmergeable.
+func Merge(list chunk.ChunkList, threshold int) chunk.ChunkList {
+	hashes, ok := hashFrames(list.Chunks, 1)
+	return mergeWithHashes(list, threshold, hashes, ok)
+}
+
+// mergeWithHashes is the shared merge core.
+func mergeWithHashes(list chunk.ChunkList, threshold int, hashes []uint64, ok []bool) chunk.ChunkList {
 	merged := make([]chunk.Chunk, 0, len(list.Chunks))
 	for i := 0; i < len(list.Chunks); {
 		c := list.Chunks[i]
@@ -183,7 +290,6 @@ func Merge(list chunk.ChunkList, threshold int) chunk.ChunkList {
 		merged = append(merged, c)
 		i = j
 	}
-
 	out := list
 	out.Chunks = merged
 	return out

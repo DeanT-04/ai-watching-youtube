@@ -1,6 +1,8 @@
 // Package transcribe wraps the local whisper.cpp binary (whisper-cli).
-// For each raw chunk's audio slice it produces transcripts/<id>.txt whose
-// lines carry absolute timestamps aligned to the video timeline.
+// The full audio track is transcribed ONCE (one model load, one inference
+// pass — no per-chunk process storm), then segments are partitioned into
+// per-chunk transcripts/<id>.txt with absolute timestamps on the video
+// timeline.
 package transcribe
 
 import (
@@ -13,14 +15,14 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
-	"sync"
 
 	"ytreconstruct/internal/chunk"
+	"ytreconstruct/internal/lowprio"
 )
 
 // command and lookPath are indirections so tests can fake os/exec.
 var (
-	command  = exec.Command
+	command  = lowprio.Command
 	lookPath = exec.LookPath
 )
 
@@ -30,21 +32,19 @@ type Options struct {
 	WorkDir  string
 	Model    string // path to a ggml whisper model
 	Threads  int    // whisper inference threads
-	Jobs     int    // parallel chunk transcription
+	Jobs     int    // unused by the single-pass design, kept for the CLI contract
 	Language string // "" = auto-detect, "en" etc.
 }
 
-// segment is one spoken phrase from whisper-cli, in seconds relative to the
-// audio slice it was transcribed from.
+// segment is one spoken phrase from whisper-cli, in seconds on the video
+// timeline (the audio track starts at 0, so slice-relative == absolute).
 type segment struct {
 	From float64
 	To   float64
 	Text string
 }
 
-// whisperOutput mirrors the JSON schema whisper-cli -oj writes per slice.
-// Only the numeric offsets (float seconds) and text are needed; the string
-// "timestamps" fields are redundant with offsets.
+// whisperOutput mirrors the JSON schema whisper-cli -oj writes.
 type whisperOutput struct {
 	Transcription []struct {
 		Offsets struct {
@@ -55,9 +55,13 @@ type whisperOutput struct {
 	} `json:"transcription"`
 }
 
-// Run reads work/<video_id>/chunks.json and transcribes every chunk whose
-// transcripts/<NNNN>.txt is missing, then writes aligned transcripts. It is
-// idempotent: chunks with an existing transcript are skipped.
+// fullName is the single-whisper-pass JSON (raw provenance + partition source).
+const fullName = "full.json"
+
+// Run transcribes work/<video_id>/audio.wav once and writes per-chunk
+// transcripts/<NNNN>.txt. Idempotent: if the full pass exists and every
+// chunk transcript exists, it skips (partition is cheap, so it re-runs
+// whenever full.json is present).
 func Run(opts Options) error {
 	if opts.Model == "" {
 		return fmt.Errorf("transcribe: no model specified (path to a ggml whisper model)")
@@ -68,15 +72,14 @@ func Run(opts Options) error {
 	if _, err := os.Stat(opts.Model); err != nil {
 		return fmt.Errorf("transcribe: model not found at %s — download a ggml model from https://huggingface.co/ggerganov/whisper.cpp/tree/main", opts.Model)
 	}
-	jobs := opts.Jobs
-	if jobs < 1 {
-		jobs = 1
-	}
 
 	dir := filepath.Join(opts.WorkDir, opts.VideoID)
 	chunks, err := readChunks(dir)
 	if err != nil {
 		return err
+	}
+	if len(chunks) == 0 {
+		return fmt.Errorf("transcribe: %s contains no chunks", filepath.Join(dir, "chunks.json"))
 	}
 
 	transcriptsDir := filepath.Join(dir, "transcripts")
@@ -84,52 +87,42 @@ func Run(opts Options) error {
 		return fmt.Errorf("transcribe: mkdir %s: %w", transcriptsDir, err)
 	}
 
-	// Resume / idempotency: skip chunks that already have a transcript.
-	missing := make([]chunk.Chunk, 0, len(chunks))
-	for _, c := range chunks {
-		if _, err := os.Stat(transcriptPath(transcriptsDir, c.ID)); err != nil {
-			missing = append(missing, c)
-		}
-	}
-	if len(missing) == 0 {
-		fmt.Printf("transcribe: all %d transcripts already present, skipping\n", len(chunks))
-		return nil
-	}
-
-	total := len(chunks)
-	ids := make(chan chunk.Chunk)
-	errCh := make(chan error, len(missing))
-	var (
-		wg   sync.WaitGroup
-		mu   sync.Mutex
-		done int
-	)
-	for w := 0; w < jobs; w++ {
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			for c := range ids {
-				if err := transcribeChunk(opts, dir, transcriptsDir, c); err != nil {
-					errCh <- err
-				}
-				mu.Lock()
-				done++
-				fmt.Printf("transcribe: %d/%d done\n", done, total)
-				mu.Unlock()
-			}
-		}()
-	}
-	for _, c := range missing {
-		ids <- c
-	}
-	close(ids)
-	wg.Wait()
-	close(errCh)
-	for err := range errCh {
-		if err != nil {
+	fullJSON := filepath.Join(transcriptsDir, fullName)
+	if _, err := os.Stat(fullJSON); err != nil {
+		if err := runWhisperFull(opts, dir, fullJSON); err != nil {
 			return err
 		}
 	}
+
+	// Partition the full pass into per-chunk transcripts. Segments are
+	// assigned to the chunk containing their start time; a segment spanning
+	// a boundary belongs to the earlier chunk (timestamps make it precise).
+	segs, err := parseWhisperJSONFile(fullJSON)
+	if err != nil {
+		return err
+	}
+
+	missing := 0
+	for _, c := range chunks {
+		path := transcriptPath(transcriptsDir, c.ID)
+		if _, err := os.Stat(path); err == nil {
+			continue
+		}
+		missing++
+		var b strings.Builder
+		for _, s := range segmentsForRange(segs, c.Start, c.End) {
+			b.WriteString(transcriptLine(s))
+			b.WriteByte('\n')
+		}
+		if err := os.WriteFile(path, []byte(b.String()), 0o644); err != nil {
+			return fmt.Errorf("transcribe: write %s: %w", path, err)
+		}
+	}
+	if missing == 0 {
+		fmt.Printf("transcribe: all %d transcripts already present, skipping\n", len(chunks))
+		return nil
+	}
+	fmt.Printf("transcribe: partitioned %d segments into %d chunk transcripts\n", len(segs), len(chunks))
 	return nil
 }
 
@@ -148,38 +141,15 @@ func readChunks(dir string) ([]chunk.Chunk, error) {
 	return list.Chunks, nil
 }
 
-// transcribeChunk runs whisper-cli on one chunk's audio slice, aligns the
-// returned segments to the absolute video timeline, and writes
-// transcripts/<NNNN>.txt.
-func transcribeChunk(opts Options, dir, transcriptsDir string, c chunk.Chunk) error {
-	audio := filepath.Join(dir, c.Audio)
+// runWhisperFull transcribes the whole audio track in one whisper-cli
+// process: one model load, one inference pass over the entire video.
+func runWhisperFull(opts Options, dir, fullJSON string) error {
+	audio := filepath.Join(dir, "audio.wav")
 	if _, err := os.Stat(audio); err != nil {
-		return fmt.Errorf("chunk %04d: audio slice missing at %s", c.ID, audio)
+		return fmt.Errorf("transcribe: %s missing — run `ytreconstruct download` first", audio)
 	}
-	prefix := filepath.Join(transcriptsDir, fmt.Sprintf("%04d", c.ID))
-	if err := runWhisper(opts, audio, prefix); err != nil {
-		return fmt.Errorf("chunk %04d: %w", c.ID, err)
-	}
-	segs, err := parseWhisperJSONFile(prefix + ".json")
-	if err != nil {
-		return fmt.Errorf("chunk %04d: %w", c.ID, err)
-	}
-	var b strings.Builder
-	for _, s := range segs {
-		b.WriteString(transcriptLine(c, s))
-		b.WriteByte('\n')
-	}
-	path := transcriptPath(transcriptsDir, c.ID)
-	if err := os.WriteFile(path, []byte(b.String()), 0o644); err != nil {
-		return fmt.Errorf("chunk %04d: write %s: %w", c.ID, path, err)
-	}
-	return nil
-}
-
-// runWhisper invokes whisper-cli once for one audio slice. stdout/stderr are
-// discarded; success is exit code 0 plus the <prefix>.json it writes.
-func runWhisper(opts Options, audio, prefix string) error {
-	args := []string{"-m", opts.Model, "-f", audio, "-oj", "-of", prefix}
+	prefix := strings.TrimSuffix(fullJSON, ".json")
+	args := []string{"-m", opts.Model, "-f", audio, "-oj", "-of", prefix, "-l", "auto"}
 	if opts.Threads > 0 {
 		args = append(args, "-t", strconv.Itoa(opts.Threads))
 	}
@@ -189,12 +159,12 @@ func runWhisper(opts Options, audio, prefix string) error {
 	cmd := command("whisper-cli", args...)
 	cmd.Stdout = io.Discard
 	cmd.Stderr = io.Discard
+	fmt.Printf("transcribe: transcribing full audio track (one pass)...\n")
 	if err := cmd.Run(); err != nil {
-		return fmt.Errorf("whisper-cli failed (exit %v) for %s", err, audio)
+		return fmt.Errorf("transcribe: whisper-cli failed (exit %v) — check the model and audio", err)
 	}
-	jsonPath := prefix + ".json"
-	if _, err := os.Stat(jsonPath); err != nil {
-		return fmt.Errorf("whisper-cli exited 0 but produced no JSON at %s", jsonPath)
+	if _, err := os.Stat(fullJSON); err != nil {
+		return fmt.Errorf("transcribe: whisper-cli exited 0 but produced no %s", fullJSON)
 	}
 	return nil
 }
@@ -202,18 +172,18 @@ func runWhisper(opts Options, audio, prefix string) error {
 func parseWhisperJSONFile(path string) ([]segment, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("read whisper output %s: %w", path, err)
+		return nil, fmt.Errorf("transcribe: read whisper output %s: %w", path, err)
 	}
 	segs, err := parseWhisperJSON(data)
 	if err != nil {
-		return nil, fmt.Errorf("parse whisper output %s: %w", path, err)
+		return nil, fmt.Errorf("transcribe: parse whisper output %s: %w", path, err)
 	}
 	return segs, nil
 }
 
 // parseWhisperJSON decodes whisper-cli's -oj JSON into segments, skipping
-// entries with no text. offsets.from/to are float seconds relative to the
-// slice; JSON numbers may be ints or floats, both handled by float64.
+// entries with no text. offsets.from/to are float seconds; JSON numbers may
+// be ints or floats, both handled by float64.
 func parseWhisperJSON(data []byte) ([]segment, error) {
 	var out whisperOutput
 	if err := json.Unmarshal(data, &out); err != nil {
@@ -230,12 +200,23 @@ func parseWhisperJSON(data []byte) ([]segment, error) {
 	return segs, nil
 }
 
-// transcriptLine renders one segment with timestamps aligned to the absolute
-// video timeline (the chunk start offset is added to the slice-relative
-// offsets).
-func transcriptLine(c chunk.Chunk, s segment) string {
+// segmentsForRange returns the segments whose start falls in [start, end).
+// A segment spanning a boundary belongs to the earlier chunk; its absolute
+// timestamps keep it precise for the downstream agent.
+func segmentsForRange(segs []segment, start, end float64) []segment {
+	var out []segment
+	for _, s := range segs {
+		if s.From >= start && s.From < end {
+			out = append(out, s)
+		}
+	}
+	return out
+}
+
+// transcriptLine renders one segment with absolute timestamps.
+func transcriptLine(s segment) string {
 	return fmt.Sprintf("[%s --> %s] %s",
-		formatTimestamp(s.From+c.Start), formatTimestamp(s.To+c.Start), s.Text)
+		formatTimestamp(s.From), formatTimestamp(s.To), s.Text)
 }
 
 // formatTimestamp renders seconds as HH:MM:SS.mmm (e.g. 83.456 → "00:01:23.456").
