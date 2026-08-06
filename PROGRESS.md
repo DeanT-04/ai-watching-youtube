@@ -2,6 +2,19 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## Model A/B — base q8_0 vs small q8_0 (done, on the real video)
+
+Timed on the same 1218 s audio, same settings (default 4 threads), single-pass:
+
+| Model | Wall time | Segments | Words | Verdict |
+|---|---|---|---|---|
+| `ggml-base-q8_0` (default) | **4m23s** | 183 | 3432 | readable, meaning-accurate; stutters/fillers ("should should should we only need one"), mis-heard opener ("Here's the scenario I can make" vs actual "Hey, welcome back") |
+| `ggml-small-q8_0` | **14m07s** (3.2x slower) | 186 | 3405 | fixes every visible base artifact: clean opener, no stutter duplication, cleaner function words |
+
+No ground truth available for a true WER number; the comparison is qualitative side-by-side on matched segments. Base remains the speed default; small is one `--model` flag away (`~/.cache/ytreconstruct/whisper/ggml-small-q8_0.bin`, 264 MB — downloaded, verified). Deliverable rebuilt with small transcripts.
+
+---
+
 ## Phase 12 — Real run on https://youtu.be/BL8TfsLk3WM (done)
 
 **Full pipeline wall time: 22m42s** (1218 s / 4K / 1731 raw chunks), down from 60+ minutes and never-finishing before the overhaul. Breakdown:
