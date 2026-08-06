@@ -1,0 +1,6 @@
+# Go source must always be checked out with LF line endings: gofmt's
+# output uses LF, so a CRLF working tree (the default on Windows runners
+# via core.autocrlf) makes `gofmt -l .` flag every file and fail CI.
+*.go text eol=lf
+# Shell scripts must stay LF so they run correctly on Linux runners.
+*.sh text eol=lf
