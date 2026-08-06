@@ -27,13 +27,6 @@ func main() {
 }
 
 func newRootCmd() *cobra.Command {
-	var (
-		workDir        string
-		outputDir      string
-		jobs           int
-		skipTranscript bool
-	)
-
 	root := &cobra.Command{
 		Use:   "ytreconstruct",
 		Short: "Turn a YouTube video into ordered (frame, transcript, timestamp) chunks",
@@ -46,25 +39,26 @@ Everything runs offline after the video is downloaded. No cloud APIs.`,
 		SilenceUsage: true,
 	}
 
-	// Persistent flags shared by every subcommand.
+	// Persistent flags shared by every subcommand. Values are read inside
+	// each RunE via cmd.Flags() — never captured at construction time.
 	pf := root.PersistentFlags()
-	pf.StringVar(&workDir, "work-dir", "work", "scratch directory (never committed)")
-	pf.StringVar(&outputDir, "output-dir", "output", "deliverable directory (never committed)")
-	pf.IntVarP(&jobs, "jobs", "j", runtime.NumCPU(), "parallel workers (default: CPU count)")
-	pf.BoolVar(&skipTranscript, "skip-transcribe", false, "skip the transcription stage")
+	pf.String("work-dir", "work", "scratch directory (never committed)")
+	pf.String("output-dir", "output", "deliverable directory (never committed)")
+	pf.IntP("jobs", "j", runtime.NumCPU(), "parallel workers (default: CPU count)")
+	pf.Bool("skip-transcribe", false, "skip the transcription stage")
 
 	root.AddCommand(
-		newDownloadCmd(workDir),
-		newChunkCmd(workDir, jobs),
-		newDedupeCmd(workDir),
-		newTranscribeCmd(workDir, jobs),
-		newManifestCmd(workDir, outputDir),
-		newAllCmd(workDir, outputDir, jobs, skipTranscript),
+		newDownloadCmd(),
+		newChunkCmd(),
+		newDedupeCmd(),
+		newTranscribeCmd(),
+		newManifestCmd(),
+		newAllCmd(),
 	)
 	return root
 }
 
-func newDownloadCmd(workDir string) *cobra.Command {
+func newDownloadCmd() *cobra.Command {
 	var file string
 	cmd := &cobra.Command{
 		Use:   "download <url>",
@@ -78,7 +72,7 @@ func newDownloadCmd(workDir string) *cobra.Command {
 			return download.Run(download.Options{
 				URL:     url,
 				File:    file,
-				WorkDir: workDir,
+				WorkDir: flagString(cmd, "work-dir"),
 			})
 		},
 	}
@@ -86,7 +80,7 @@ func newDownloadCmd(workDir string) *cobra.Command {
 	return cmd
 }
 
-func newChunkCmd(workDir string, jobs int) *cobra.Command {
+func newChunkCmd() *cobra.Command {
 	var sceneThreshold float64
 	cmd := &cobra.Command{
 		Use:   "chunk <video_id>",
@@ -95,9 +89,9 @@ func newChunkCmd(workDir string, jobs int) *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return chunk.Run(chunk.Options{
 				VideoID:        args[0],
-				WorkDir:        workDir,
+				WorkDir:        flagString(cmd, "work-dir"),
 				SceneThreshold: sceneThreshold,
-				Jobs:           jobs,
+				Jobs:           flagInt(cmd, "jobs"),
 			})
 		},
 	}
@@ -105,7 +99,7 @@ func newChunkCmd(workDir string, jobs int) *cobra.Command {
 	return cmd
 }
 
-func newDedupeCmd(workDir string) *cobra.Command {
+func newDedupeCmd() *cobra.Command {
 	var hashThreshold int
 	cmd := &cobra.Command{
 		Use:   "dedupe <video_id>",
@@ -114,7 +108,7 @@ func newDedupeCmd(workDir string) *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return dedupe.Run(dedupe.Options{
 				VideoID:       args[0],
-				WorkDir:       workDir,
+				WorkDir:       flagString(cmd, "work-dir"),
 				HashThreshold: hashThreshold,
 			})
 		},
@@ -123,7 +117,7 @@ func newDedupeCmd(workDir string) *cobra.Command {
 	return cmd
 }
 
-func newTranscribeCmd(workDir string, jobs int) *cobra.Command {
+func newTranscribeCmd() *cobra.Command {
 	var (
 		model    string
 		threads  int
@@ -139,10 +133,10 @@ func newTranscribeCmd(workDir string, jobs int) *cobra.Command {
 			}
 			return transcribe.Run(transcribe.Options{
 				VideoID:  args[0],
-				WorkDir:  workDir,
+				WorkDir:  flagString(cmd, "work-dir"),
 				Model:    model,
 				Threads:  threads,
-				Jobs:     jobs,
+				Jobs:     flagInt(cmd, "jobs"),
 				Language: language,
 			})
 		},
@@ -153,7 +147,7 @@ func newTranscribeCmd(workDir string, jobs int) *cobra.Command {
 	return cmd
 }
 
-func newManifestCmd(workDir, outputDir string) *cobra.Command {
+func newManifestCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "manifest <video_id>",
 		Short: "Write the final ordered output tree + manifest.json",
@@ -161,15 +155,15 @@ func newManifestCmd(workDir, outputDir string) *cobra.Command {
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return manifest.Run(manifest.Options{
 				VideoID:   args[0],
-				WorkDir:   workDir,
-				OutputDir: outputDir,
+				WorkDir:   flagString(cmd, "work-dir"),
+				OutputDir: flagString(cmd, "output-dir"),
 			})
 		},
 	}
 	return cmd
 }
 
-func newAllCmd(workDir, outputDir string, jobs int, skipTranscribe bool) *cobra.Command {
+func newAllCmd() *cobra.Command {
 	var (
 		file           string
 		sceneThreshold float64
@@ -193,10 +187,10 @@ func newAllCmd(workDir, outputDir string, jobs int, skipTranscribe bool) *cobra.
 			return runAll(allOptions{
 				url:            url,
 				file:           file,
-				workDir:        workDir,
-				outputDir:      outputDir,
-				jobs:           jobs,
-				skipTranscribe: skipTranscribe,
+				workDir:        flagString(cmd, "work-dir"),
+				outputDir:      flagString(cmd, "output-dir"),
+				jobs:           flagInt(cmd, "jobs"),
+				skipTranscribe: flagBool(cmd, "skip-transcribe"),
 				sceneThreshold: sceneThreshold,
 				hashThreshold:  hashThreshold,
 				model:          model,
@@ -213,6 +207,23 @@ func newAllCmd(workDir, outputDir string, jobs int, skipTranscribe bool) *cobra.
 	f.IntVar(&threads, "threads", 4, "whisper inference threads")
 	f.StringVar(&language, "language", "", "whisper language hint ('' = auto-detect)")
 	return cmd
+}
+
+// flag helpers read inherited persistent flags at run time (never cached
+// at command-construction time, which would go stale).
+func flagString(cmd *cobra.Command, name string) string {
+	v, _ := cmd.Flags().GetString(name)
+	return v
+}
+
+func flagInt(cmd *cobra.Command, name string) int {
+	v, _ := cmd.Flags().GetInt(name)
+	return v
+}
+
+func flagBool(cmd *cobra.Command, name string) bool {
+	v, _ := cmd.Flags().GetBool(name)
+	return v
 }
 
 // defaultModelPath returns the conventional whisper model location.
