@@ -108,14 +108,57 @@ Questions asked about a video are answered and logged to a persistent archive at
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"background": "#161b1e", "primaryColor": "#2f574b", "primaryTextColor": "#ffe2c5", "primaryBorderColor": "#9d6a4e", "lineColor": "#9d6a4e", "fontSize": "16px", "edgeLabelBackground": "#161b1e"}}}%%
 flowchart LR
-    URL["YouTube URL<br/>or local file"] --> DL["download"]
-    DL --> CH["chunk"]
-    CH -->|frames| DE["dedupe"]
-    CH -->|audio| TR["transcribe"]
-    DE --> MA["manifest"]
-    TR --> MA
-    MA --> OUT["output/"]
-    MA --> ST["store/<id>.ytr"]
+    %% nodes
+    URL["YouTube URL or local file"]
+    DL["download<br/>yt-dlp + ffmpeg"]
+    CH["chunk<br/>scdet scene detection<br/>frame + audio per scene"]
+    DE["dedupe<br/>dHash merge static"]
+    TR["transcribe<br/>whisper-cli one pass"]
+    MA["manifest"]
+    OUT["output/video_id/<br/>chunks · manifest.json<br/>reconstruction.md"]
+    PK["store pack<br/>auto at end of all"]
+    YTR["store/video_id.ytr<br/>zip container"]
+    IDX["ytr/spec.json<br/>ordered chunks<br/>transcripts · segments"]
+    FRM["frames/NNNN.webp<br/>WebP lossless"]
+    LIB["store/library.json<br/>index across videos"]
+    LST["store list / verify"]
+    DMP["store dump<br/>watch the whole video"]
+    QRY["store query<br/>grep + time range"]
+    FRA["store frame<br/>pixel-identical PNG"]
+    OCR["ocr.ps1<br/>Windows OCR"]
+    REC["reconstruction.md<br/>ordered notes"]
+    QA["results/video_id/<br/>Q&amp;A archive"]
+
+    subgraph BP["backend — pipeline (local, offline)"]
+        direction TB
+        URL --> DL --> CH
+        CH -->|frames| DE
+        CH -->|audio| TR
+        DE --> MA
+        TR --> MA
+        MA --> OUT
+        MA --> PK
+    end
+
+    subgraph YS["the .ytr store — one queryable file per video"]
+        direction LR
+        PK --> YTR
+        YTR --> IDX
+        YTR --> FRM
+        PK --> LIB
+    end
+
+    subgraph AG["agent interface — watch + answer"]
+        direction LR
+        IDX --> DMP
+        IDX --> QRY
+        FRM --> FRA
+        FRA --> OCR
+        DMP --> REC
+        DMP --> QA
+        QRY --> QA
+        LIB --> LST
+    end
 ```
 
 - `download` — `yt-dlp` + `ffmpeg` → `work/<id>/video.mp4`, `audio.wav` (16 kHz mono)
@@ -123,6 +166,9 @@ flowchart LR
 - `dedupe` — dHash of frames → `chunks_deduped.json` (visually-static chunks merged; **no audio/transcript data dropped**)
 - `transcribe` — one `whisper-cli` pass over the full audio track → per-chunk transcripts with absolute timestamps
 - `manifest` — assembles `output/<id>/chunks/NNNN/{frame.png, transcript.txt, meta.json}` + `manifest.json` + `reconstruction.md` + `instructions.md`
+- `store` — packs `output/<id>/` (+ whisper segment provenance) into the single-file `store/<id>.ytr`: a zip holding a `ytr/spec.json` index and WebP-**lossless** frames (~35–40% smaller than the PNGs, pixel-identical round trip), plus `store/library.json`; auto-run as the final stage of `all` (`--no-store` skips), idempotent
+- `store dump / query / frame / verify / list` — the agent's query surface: dump prints the whole ordered story, query greps transcripts with a time range, frame materializes a pixel-identical PNG for OCR/vision, verify checks CRCs + schema + members, list shows the library
+- `results/` — persistent Q&A archive: every question asked about a video is answered from the store/output and logged to `results/<video_id>/` (`video.yaml` + `NNN.yaml` per question); reuses folders and stored answers, survives `scripts/clean.sh`
 - `store` — packs `output/<id>/` (+ whisper segment provenance) into the single-file `store/<id>.ytr`; auto-run at the end of `all`, skip with `--no-store`
 
 `dedupe` and `transcribe` run concurrently. Every stage is idempotent, so re-running `all` resumes from the furthest completed stage. Details on the pipeline, performance, and package layout: [docs/architecture.md](docs/architecture.md).
