@@ -102,10 +102,6 @@ new default (verified A/B earlier: 14m07s vs 4m23s, clearly better transcripts).
 
 ---
 
-# PROGRESS
-
-Latest phase status at the top. One entry per phase, most recent first.
-
 ## Model A/B — base q8_0 vs small q8_0 (done, on the real video)
 
 Timed on the same 1218 s audio, same settings (default 4 threads), single-pass:
