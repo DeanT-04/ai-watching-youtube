@@ -147,6 +147,8 @@ func Run(opts Options) (*Report, error) {
 					// library.go for the fix).
 					fmt.Fprintf(os.Stderr, "store: warning: library update skipped: %v\n", err)
 				}
+			} else {
+				fmt.Fprintf(os.Stderr, "store: warning: could not read existing store for reconciliation: %v (run `store verify %s`)\n", err, opts.VideoID)
 			}
 			return &Report{VideoID: opts.VideoID, StorePath: storePath, Skipped: true}, nil
 		}
