@@ -395,6 +395,31 @@ func TestLibraryRoundTrip(t *testing.T) {
 	}
 }
 
+// TestLibraryNoRewriteWhenUnchanged: an identical upsert must not rewrite
+// library.json (idempotent re-runs leave the index untouched).
+func TestLibraryNoRewriteWhenUnchanged(t *testing.T) {
+	dir := t.TempDir()
+	entry := LibraryEntry{VideoID: "AAAA", TotalChunks: 1, TotalDuration: 6.0}
+	if err := updateLibrary(dir, entry); err != nil {
+		t.Fatal(err)
+	}
+	path := filepath.Join(dir, "library.json")
+	before, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := updateLibrary(dir, entry); err != nil {
+		t.Fatal(err)
+	}
+	after, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Equal(before, after) {
+		t.Fatal("identical upsert must not rewrite library.json")
+	}
+}
+
 func TestListSorted(t *testing.T) {
 	dir := t.TempDir()
 	if err := updateLibrary(dir, LibraryEntry{VideoID: "BBBB"}); err != nil {

@@ -141,7 +141,12 @@ func Run(opts Options) (*Report, error) {
 			// index in case the entry is missing/stale (e.g. library.json was
 			// deleted) — a skip must never require ffmpeg.
 			if spec, err := Read(opts); err == nil {
-				_ = updateLibrary(opts.StoreDir, entryFromSpec(spec, storePath))
+				if err := updateLibrary(opts.StoreDir, entryFromSpec(spec, storePath)); err != nil {
+					// A skip must not fail, but a broken index deserves a
+					// visible signal (see the corrupt-index message in
+					// library.go for the fix).
+					fmt.Fprintf(os.Stderr, "store: warning: library update skipped: %v\n", err)
+				}
 			}
 			return &Report{VideoID: opts.VideoID, StorePath: storePath, Skipped: true}, nil
 		}

@@ -94,7 +94,7 @@ ytreconstruct store query <video_id> --grep "take profit" --range 60,120
 #   [00:01:02.100 --> 00:01:05.800] so the take profit goes right below the entry
 
 ytreconstruct store list                 # every packed video
-nytreconstruct store verify <video_id>   # CRC + schema + member integrity
+ytreconstruct store verify <video_id>   # CRC + schema + member integrity
 ```
 
 The store is a pure transform of `output/` — the folder tree stays the primary deliverable — and is wiped by `scripts/clean.sh`. Format spec: [docs/storage-format.md](docs/storage-format.md).

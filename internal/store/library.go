@@ -68,23 +68,24 @@ func SaveLibrary(storeDir string, lib Library) error {
 	return nil
 }
 
-// updateLibrary upserts one video's entry and saves.
+// updateLibrary upserts one video's entry and saves — unless the entry is
+// already exactly what's on disk, in which case nothing is rewritten (so
+// idempotent re-runs leave library.json untouched).
 func updateLibrary(storeDir string, entry LibraryEntry) error {
 	lib, err := LoadLibrary(storeDir)
 	if err != nil {
 		return err
 	}
-	replaced := false
 	for i := range lib.Videos {
 		if lib.Videos[i].VideoID == entry.VideoID {
+			if lib.Videos[i] == entry {
+				return nil // unchanged — do not rewrite the index
+			}
 			lib.Videos[i] = entry
-			replaced = true
-			break
+			return SaveLibrary(storeDir, lib)
 		}
 	}
-	if !replaced {
-		lib.Videos = append(lib.Videos, entry)
-	}
+	lib.Videos = append(lib.Videos, entry)
 	return SaveLibrary(storeDir, lib)
 }
 
