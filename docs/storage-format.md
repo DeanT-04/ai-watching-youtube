@@ -58,11 +58,14 @@ Validation on 5 real 4K frames from `output/BL8TfsLk3WM` (2026-08-07):
 
 - **Pixel-identity:** PNG → WebP lossless → PNG round-trip compared as raw RGBA
   is pixel-identical for all 5 frames (ffmpeg rawvideo + `cmp`).
-- **OCR:** a WinRT OCR spot check could not run in this shell (the engine fails
-  on the *original* PNGs too — environmental). It is also unnecessary:
-  pixel-identity means any OCR engine receives byte-identical input and must
-  return identical text. `store frame` decodes to PNG (pixel-identical) so
-  `scripts/ocr.ps1` and agent image tools work unchanged.
+- **OCR:** verified empirically — `scripts/ocr.ps1` on real frames reads the
+  on-screen text (e.g. chunk 0021: "Market Watch: 11:45:54", prices), and
+  store-extracted frames OCR **byte-identically** to the originals (chunks
+  0009: 199 lines, 0021: 309 lines, 0165: 0 lines, all identical). Note:
+  `ocr.ps1` needs a real Windows path — an MSYS-style `/c/...` path from
+  git-bash makes `GetFileFromPathAsync` throw (use `C:\...` or `cygpath -w`).
+  Pixel-identity already guarantees OCR equivalence; this is the empirical
+  confirmation.
 - Decode cost ~0.2 s/frame on CPU; pack-time encode cost ~0.2 s/frame.
 
 ## `ytr/spec.json` schema (v1)

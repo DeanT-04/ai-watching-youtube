@@ -36,9 +36,12 @@ Latest phase status at the top. One entry per phase, most recent first.
   idempotent). `store/` is gitignored (root-anchored), wiped by `scripts/clean.sh`,
   and added to the AGENTS.md never-commit list. Docs updated: README,
   `docs/instructions.md` (2-command workflow), `docs/architecture.md`, AGENTS.md.
-- **Not verified here**: OCR spot check (WinRT OCR engine unavailable in this
-  shell — it fails on original PNGs too; pixel-identity makes OCR equivalence
-  logical), `go test -race` (needs cgo/gcc, absent), non-Windows behavior.
+- **Not verified here**: `go test -race` (needs cgo/gcc, absent), non-Windows behavior. OCR *was* verified
+  (see below) — the earlier "OCR unavailable in this shell" note was wrong: `scripts/ocr.ps1`
+  works fine; the failures came from passing MSYS-style paths (`/c/...`) from git-bash, which
+  `GetFileFromPathAsync` cannot open. With a proper Windows path (`C:\...` or `cygpath -w`),
+  OCR reads real frame text, and store-extracted frames OCR **identically** to the originals
+  (chunks 0009: 199 lines, 0021: 309 lines, 0165: 0 lines — byte-identical output).
 
 ---
 
