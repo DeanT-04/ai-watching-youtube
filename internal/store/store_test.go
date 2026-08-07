@@ -514,3 +514,53 @@ func TestRunWithoutFullJSON(t *testing.T) {
 		t.Fatal("transcript text must still be embedded")
 	}
 }
+
+// TestRunSkipReconcilesLibrary: a skip (store file already exists) must
+// restore a missing library index entry without re-packing.
+func TestRunSkipReconcilesLibrary(t *testing.T) {
+	opts := fixture(t)
+	fakeFFmpeg(t)
+	oldLP := LookPath
+	LookPath = testexec.LookPath
+	t.Cleanup(func() { LookPath = oldLP })
+	if _, err := Run(opts); err != nil {
+		t.Fatalf("first pack: %v", err)
+	}
+	if err := os.Remove(filepath.Join(opts.StoreDir, "library.json")); err != nil {
+		t.Fatal(err)
+	}
+
+	rep, err := Run(opts)
+	if err != nil {
+		t.Fatalf("skip pack: %v", err)
+	}
+	if !rep.Skipped {
+		t.Fatal("second pack must be skipped")
+	}
+	lib, err := LoadLibrary(opts.StoreDir)
+	if err != nil || len(lib.Videos) != 1 || lib.Videos[0].VideoID != opts.VideoID {
+		t.Fatalf("library not reconciled on skip: %+v, %v", lib, err)
+	}
+}
+
+// TestRunSkipWithoutFFmpeg: skipping must not require ffmpeg on PATH — the
+// binary is only needed when actually converting frames.
+func TestRunSkipWithoutFFmpeg(t *testing.T) {
+	opts := fixture(t)
+	fakeFFmpeg(t)
+	oldLP := LookPath
+	LookPath = testexec.LookPath
+	t.Cleanup(func() { LookPath = oldLP })
+	if _, err := Run(opts); err != nil {
+		t.Fatalf("first pack: %v", err)
+	}
+
+	LookPath = func(string) (string, error) { return "", os.ErrNotExist }
+	rep, err := Run(opts)
+	if err != nil {
+		t.Fatalf("skip must not require ffmpeg: %v", err)
+	}
+	if !rep.Skipped {
+		t.Fatal("second pack must be skipped")
+	}
+}

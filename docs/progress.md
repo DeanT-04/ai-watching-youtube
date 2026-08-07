@@ -2,6 +2,46 @@
 
 Latest phase status at the top. One entry per phase, most recent first.
 
+## `.ytr` storage-base (`store/`) — done (branch `feature/storage-base`)
+
+- New single-file, queryable deliverable: after every successful `all` run, the
+  output tree is packed into **one `.ytr` file per video** (`store/<video_id>.ytr`)
+  plus a tiny `store/library.json` index — so an agent can "watch" the whole
+  video in **2 commands**: `ytreconstruct store dump <id>` (ordered chunks +
+  transcripts) and `ytreconstruct store frame <id> <NNNN> out.png` (pixel-identical
+  PNG for OCR/vision). Plus `store query --grep [--range t1,t2]`, `store list`,
+  `store verify`.
+- **Format** (spec in `docs/storage-format.md`): our own schema on a stdlib zip
+  container — `ytr/spec.json` index (metadata, ordered chunk spine, transcripts
+  with absolute timestamps, whisper segment provenance, reconstruction/instructions
+  seeds) + frames as **WebP lossless** stored byte-exact (zip `Store`, no
+  recompression, so quality cannot degrade). Frames decode back to pixel-identical
+  PNGs. Zero new dependencies (stdlib only).
+- **Frames**: PNG → WebP lossless. Validated on 5 real 4K frames: round trip is
+  pixel-identical (raw-RGBA `cmp`) and ~38% smaller (35–43%/frame). Encode is
+  ~4.4 s/frame single-threaded (ffmpeg libwebp, no multithreading in this build);
+  pack of the real 165-frame video took ~3 min, parallelized via `--jobs`.
+- **Real-data validation** (`BL8TfsLk3WM`, 165 chunks, 1217.9 s):
+  - `store pack` → `store/BL8TfsLk3WM.ytr` = **177.2 MiB** vs 292.9 MiB output
+    tree / 292.7 MiB PNG frames → **-39.5%** in one file.
+  - `store verify` OK: 165 chunks, 165 frames, all CRCs + members checked.
+  - `store dump --json` cross-checked against `manifest.json`: all 165 chunk
+    ids/starts/ends/source_ids identical; **165/165 transcripts byte-identical**
+    to the tree's `transcript.txt`.
+  - `store frame 0001` → pixel-identical to `output/.../chunks/0001/frame.png`.
+  - `store query --grep "take profit" --range 60,120` → correct timestamped hits.
+  - `scripts/integration.sh` PASS (auto-pack + verify + dump + list + frame on the
+    synthetic video); `go build/vet/gofmt/test` clean.
+- **Ergonomics**: `all` auto-packs as stage [6/6] (`--no-store` skips; pack is
+  idempotent). `store/` is gitignored (root-anchored), wiped by `scripts/clean.sh`,
+  and added to the AGENTS.md never-commit list. Docs updated: README,
+  `docs/instructions.md` (2-command workflow), `docs/architecture.md`, AGENTS.md.
+- **Not verified here**: OCR spot check (WinRT OCR engine unavailable in this
+  shell — it fails on original PNGs too; pixel-identity makes OCR equivalence
+  logical), `go test -race` (needs cgo/gcc, absent), non-Windows behavior.
+
+---
+
 ## Question log + answer archive (`results/`) (done)
 
 - New persistent Q&A archive at `results/<video_id>/`: `video.yaml` (metadata)

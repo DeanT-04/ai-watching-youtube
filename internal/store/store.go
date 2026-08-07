@@ -134,15 +134,21 @@ func Run(opts Options) (*Report, error) {
 		return nil, err
 	}
 
-	if _, err := LookPath("ffmpeg"); err != nil {
-		return nil, fmt.Errorf("store: required binary %q not found in PATH — install ffmpeg and retry: %w", "ffmpeg", err)
-	}
-
 	storePath := filepath.Join(opts.StoreDir, opts.VideoID+"."+FileExt)
 	if !opts.Force {
 		if _, err := os.Stat(storePath); err == nil {
+			// Skip path: the store file already exists. Reconcile the library
+			// index in case the entry is missing/stale (e.g. library.json was
+			// deleted) — a skip must never require ffmpeg.
+			if spec, err := Read(opts); err == nil {
+				_ = updateLibrary(opts.StoreDir, entryFromSpec(spec, storePath))
+			}
 			return &Report{VideoID: opts.VideoID, StorePath: storePath, Skipped: true}, nil
 		}
+	}
+
+	if _, err := LookPath("ffmpeg"); err != nil {
+		return nil, fmt.Errorf("store: required binary %q not found in PATH — install ffmpeg and retry: %w", "ffmpeg", err)
 	}
 
 	// Convert every frame PNG → WebP lossless into a scratch dir in parallel
@@ -170,15 +176,7 @@ func Run(opts Options) (*Report, error) {
 		return nil, err
 	}
 
-	entry := LibraryEntry{
-		VideoID:       spec.VideoID,
-		SourceURL:     spec.SourceURL,
-		CreatedAt:     spec.CreatedAt,
-		PackedAt:      spec.PackedAt,
-		TotalChunks:   spec.TotalChunks,
-		TotalDuration: spec.TotalDuration,
-		StoreFile:     filepath.Base(storePath),
-	}
+	entry := entryFromSpec(spec, storePath)
 	if err := updateLibrary(opts.StoreDir, entry); err != nil {
 		return nil, err
 	}
@@ -194,6 +192,19 @@ func Run(opts Options) (*Report, error) {
 		Frames:     len(webps),
 		TotalBytes: fi.Size(),
 	}, nil
+}
+
+// entryFromSpec builds the library row for a packed store.
+func entryFromSpec(spec *Spec, storePath string) LibraryEntry {
+	return LibraryEntry{
+		VideoID:       spec.VideoID,
+		SourceURL:     spec.SourceURL,
+		CreatedAt:     spec.CreatedAt,
+		PackedAt:      spec.PackedAt,
+		TotalChunks:   spec.TotalChunks,
+		TotalDuration: spec.TotalDuration,
+		StoreFile:     filepath.Base(storePath),
+	}
 }
 
 // readManifest loads and validates output/<video_id>/manifest.json.
