@@ -46,6 +46,7 @@ Everything runs offline after the video is downloaded. No cloud APIs.`,
 	pf := root.PersistentFlags()
 	pf.String("work-dir", "work", "scratch directory (never committed)")
 	pf.String("output-dir", "output", "deliverable directory (never committed)")
+	pf.String("store-dir", "store", "single-file .ytr store directory (never committed)")
 	pf.IntP("jobs", "j", defaultJobs(), "parallel workers (default: half the CPU count)")
 	pf.Bool("skip-transcribe", false, "skip the transcription stage")
 
@@ -55,6 +56,7 @@ Everything runs offline after the video is downloaded. No cloud APIs.`,
 		newDedupeCmd(),
 		newTranscribeCmd(),
 		newManifestCmd(),
+		newStoreCmd(),
 		newAllCmd(),
 	)
 	return root
