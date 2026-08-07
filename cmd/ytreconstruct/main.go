@@ -177,6 +177,7 @@ func newAllCmd() *cobra.Command {
 		model          string
 		threads        int
 		language       string
+		noStore        bool
 	)
 	cmd := &cobra.Command{
 		Use:   "all <url>",
@@ -195,6 +196,7 @@ func newAllCmd() *cobra.Command {
 				file:           file,
 				workDir:        flagString(cmd, "work-dir"),
 				outputDir:      flagString(cmd, "output-dir"),
+				storeDir:       flagString(cmd, "store-dir"),
 				jobs:           flagInt(cmd, "jobs"),
 				skipTranscribe: flagBool(cmd, "skip-transcribe"),
 				sceneThreshold: sceneThreshold,
@@ -202,6 +204,7 @@ func newAllCmd() *cobra.Command {
 				model:          model,
 				threads:        threads,
 				language:       language,
+				noStore:        noStore,
 			})
 		},
 	}
@@ -212,6 +215,7 @@ func newAllCmd() *cobra.Command {
 	f.StringVar(&model, "model", defaultModelPath(), "path to a ggml whisper model")
 	f.IntVar(&threads, "threads", 4, "whisper inference threads")
 	f.StringVar(&language, "language", "", "whisper language hint ('' = auto-detect)")
+	f.BoolVar(&noStore, "no-store", false, "skip packing the .ytr store after the manifest stage")
 	return cmd
 }
 

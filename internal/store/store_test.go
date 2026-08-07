@@ -411,3 +411,106 @@ func TestListSorted(t *testing.T) {
 		t.Fatalf("list order = %+v", entries)
 	}
 }
+
+func TestQueryGrepRangeOrder(t *testing.T) {
+	opts := fixture(t)
+	fakeFFmpeg(t)
+	oldLP := LookPath
+	LookPath = testexec.LookPath
+	t.Cleanup(func() { LookPath = oldLP })
+	if _, err := Run(opts); err != nil {
+		t.Fatalf("pack: %v", err)
+	}
+
+	// Grep hits chunk 1's structured segment, with formatted timestamps.
+	res, err := Query(opts, "hello", nil, nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(res) != 1 || res[0].Chunk.ID != 1 || len(res[0].Matches) != 1 {
+		t.Fatalf("grep 'hello' = %+v", res)
+	}
+	if !strings.Contains(res[0].Matches[0], "[00:00:01.000 --> 00:00:04.000] Hello there") {
+		t.Fatalf("match line wrong: %q", res[0].Matches[0])
+	}
+
+	// Case-insensitive.
+	res, err = Query(opts, "HELLO", nil, nil)
+	if err != nil || len(res) != 1 {
+		t.Fatalf("case-insensitive grep failed: %+v, %v", res, err)
+	}
+
+	// Range window [6,10] excludes chunk 1, includes chunk 2.
+	t1, t2 := 6.0, 10.0
+	res, err = Query(opts, "hello", &t1, &t2)
+	if err != nil || len(res) != 0 {
+		t.Fatalf("range must exclude chunk 1: %+v, %v", res, err)
+	}
+	res, err = Query(opts, "second", &t1, &t2)
+	if err != nil || len(res) != 1 || res[0].Chunk.ID != 2 {
+		t.Fatalf("range must include chunk 2: %+v, %v", res, err)
+	}
+
+	// Transcript fallback: the timestamp prefix exists only in the merged
+	// transcript text, not in the structured segment (segment starts at 1000ms).
+	res, err = Query(opts, "00:00:00.000", nil, nil)
+	if err != nil || len(res) != 1 || len(res[0].Matches) != 1 {
+		t.Fatalf("transcript fallback failed: %+v, %v", res, err)
+	}
+
+	// No matches anywhere.
+	res, err = Query(opts, "zzz-no-such-term", nil, nil)
+	if err != nil || len(res) != 0 {
+		t.Fatalf("no-match query = %+v, %v", res, err)
+	}
+}
+
+func TestFramePNG(t *testing.T) {
+	opts := fixture(t)
+	fakeFFmpeg(t)
+	oldLP := LookPath
+	LookPath = testexec.LookPath
+	t.Cleanup(func() { LookPath = oldLP })
+	if _, err := Run(opts); err != nil {
+		t.Fatalf("pack: %v", err)
+	}
+
+	dst := filepath.Join(t.TempDir(), "frame.png")
+	if err := FramePNG(opts, 1, dst); err != nil {
+		t.Fatalf("FramePNG: %v", err)
+	}
+	data, err := os.ReadFile(dst)
+	if err != nil || string(data) != "fake-webp" {
+		t.Fatalf("decoded frame = %q, %v (want the fake ffmpeg output)", data, err)
+	}
+}
+
+// TestRunWithoutFullJSON: when transcription was skipped there is no
+// transcripts/full.json — the store must still pack (segments are absent).
+func TestRunWithoutFullJSON(t *testing.T) {
+	opts := fixture(t)
+	fakeFFmpeg(t)
+	oldLP := LookPath
+	LookPath = testexec.LookPath
+	t.Cleanup(func() { LookPath = oldLP })
+	if err := os.Remove(filepath.Join(opts.WorkDir, opts.VideoID, "transcripts", "full.json")); err != nil {
+		t.Fatal(err)
+	}
+	rep, err := Run(opts)
+	if err != nil {
+		t.Fatalf("pack without full.json: %v", err)
+	}
+	if rep.Skipped {
+		t.Fatal("pack must not be skipped")
+	}
+	spec, err := Read(opts)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(spec.Chunks[0].Segments) != 0 || len(spec.Chunks[1].Segments) != 0 {
+		t.Fatalf("segments must be empty without full.json: %+v", spec.Chunks[0].Segments)
+	}
+	if spec.Chunks[0].Transcript == "" {
+		t.Fatal("transcript text must still be embedded")
+	}
+}

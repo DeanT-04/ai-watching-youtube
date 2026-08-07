@@ -1,6 +1,8 @@
-# Scratch, deliverable, and Q&A archive directories — never commit these.
+# Scratch, deliverable, store, and Q&A archive directories — never commit these.
+# (anchored to the repo root so internal/store/ is never matched)
 work/
 output/
+/store/
 results/
 
 # Build artifacts

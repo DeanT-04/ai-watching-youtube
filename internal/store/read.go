@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"os"
 	"path/filepath"
 	"strings"
 )
@@ -90,6 +91,38 @@ func FrameBytes(opts Options, chunkID int) ([]byte, error) {
 		return nil, fmt.Errorf("store: chunk %04d frame: %w", chunkID, err)
 	}
 	return data, nil
+}
+
+// FramePNG extracts a chunk's frame and re-encodes it as lossless PNG into
+// dst. The WebP lossless round trip is pixel-identical, so OCR (e.g.
+// scripts/ocr.ps1) and agent image tools see exactly the original frame.
+func FramePNG(opts Options, chunkID int, dst string) error {
+	if _, err := LookPath("ffmpeg"); err != nil {
+		return fmt.Errorf("store: required binary %q not found in PATH — install ffmpeg and retry: %w", "ffmpeg", err)
+	}
+	webp, err := FrameBytes(opts, chunkID)
+	if err != nil {
+		return err
+	}
+	tmp, err := os.CreateTemp("", "ytreconstruct-frame-*.webp")
+	if err != nil {
+		return fmt.Errorf("store: temp file: %w", err)
+	}
+	tmpPath := tmp.Name()
+	defer os.Remove(tmpPath)
+	if _, err := tmp.Write(webp); err != nil {
+		tmp.Close()
+		return fmt.Errorf("store: write temp: %w", err)
+	}
+	if err := tmp.Close(); err != nil {
+		return fmt.Errorf("store: close temp: %w", err)
+	}
+	cmd := command("ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+		"-i", tmpPath, "-frames:v", "1", dst)
+	if out, err := cmd.CombinedOutput(); err != nil {
+		return fmt.Errorf("store: frame decode to %s: %w\n%s", dst, err, out)
+	}
+	return nil
 }
 
 // Verify checks a store's integrity: schema version, every member's CRC

@@ -14,7 +14,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-DIRS=(work output)
+DIRS=(work output store)
 
 ask() {
   printf '%s\n' "This will permanently delete:"

@@ -57,7 +57,7 @@ fi
 # --- 3. run the full pipeline ------------------------------------------------
 printf 'integration: running ytreconstruct all --file ...\n'
 "$TMP/ytreconstruct" all --file "$WIN_TMP/test.mp4" \
-  --work-dir "$WIN_TMP/work" --output-dir "$WIN_TMP/output" \
+  --work-dir "$WIN_TMP/work" --output-dir "$WIN_TMP/output" --store-dir "$WIN_TMP/store" \
   --jobs 2 --model "$WHISPER_MODEL" $SKIP \
   || fail "pipeline run exited nonzero"
 
@@ -113,6 +113,22 @@ if [ -z "$SKIP" ]; then
     || fail "whisper single-pass provenance transcripts/full.json missing"
   pass "transcripts + full.json present (empty is fine for a tone-only test video)"
 fi
+
+# --- 6. store round-trip ------------------------------------------------------
+# `all` auto-packs the .ytr store; verify/dump/list/frame exercise the agent's
+# query surface end-to-end on the tiny 3-chunk test video.
+STORE_DIR="$WIN_TMP/store"
+[ -f "$STORE_DIR/test.ytr" ] || fail 'auto-pack after `all` did not produce the store file'
+"$TMP/ytreconstruct" store verify test --store-dir "$STORE_DIR" \
+  || fail "store verify failed"
+"$TMP/ytreconstruct" store dump test --store-dir "$STORE_DIR" >/dev/null \
+  || fail "store dump failed"
+"$TMP/ytreconstruct" store list --store-dir "$STORE_DIR" >/dev/null \
+  || fail "store list failed"
+"$TMP/ytreconstruct" store frame test 0001 "$TMP/frame-out.png" --store-dir "$STORE_DIR" \
+  || fail "store frame failed"
+[ -f "$TMP/frame-out.png" ] || fail "store frame did not write the PNG"
+pass "store round-trip OK (auto-pack, verify, dump, list, frame)"
 
 pass "full pipeline produced a valid deliverable"
 printf 'integration: PASS\n'

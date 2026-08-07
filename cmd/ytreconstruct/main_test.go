@@ -7,6 +7,7 @@ import (
 
 	"ytreconstruct/internal/chunk"
 	"ytreconstruct/internal/download"
+	"ytreconstruct/internal/store"
 	"ytreconstruct/internal/testexec"
 	"ytreconstruct/internal/transcribe"
 )
@@ -19,6 +20,7 @@ func TestMain(m *testing.M) {
 	// the CLI tests run without ffmpeg/yt-dlp/whisper-cli installed.
 	chunk.LookPath = testexec.LookPath
 	download.LookPath = testexec.LookPath
+	store.LookPath = testexec.LookPath
 	transcribe.LookPath = testexec.LookPath
 	os.Exit(m.Run())
 }
@@ -50,6 +52,21 @@ func TestSubcommandsRequireVideoID(t *testing.T) {
 		if err := execute(sub); err == nil {
 			t.Errorf("%s with no video_id should fail", sub)
 		}
+	}
+	for _, args := range [][]string{
+		{"store", "pack"}, {"store", "verify"}, {"store", "dump"},
+		{"store", "query"}, {"store", "frame"},
+	} {
+		if err := execute(args...); err == nil {
+			t.Errorf("%v with no video_id should fail", args)
+		}
+	}
+}
+
+func TestStoreQueryRequiresGrep(t *testing.T) {
+	err := execute("store", "query", "somevideo")
+	if err == nil || !strings.Contains(err.Error(), "--grep") {
+		t.Errorf("store query without --grep should fail, got %v", err)
 	}
 }
 

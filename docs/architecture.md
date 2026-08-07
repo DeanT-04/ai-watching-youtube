@@ -23,6 +23,7 @@ The pipeline is a set of small packages connected by JSON contracts on disk — 
 | `internal/dedupe` | 64-bit dHash of frames (parallel, buffer-fast), run-anchored merging of visually-static consecutive chunks |
 | `internal/transcribe` | one `whisper-cli -oj` pass over the full audio track, then segment partitioning into per-chunk transcripts with absolute timestamps |
 | `internal/manifest` | assembles the ordered output tree, `manifest.json`, seeded `reconstruction.md`, copied `instructions.md` |
+| `internal/store` | packs `output/<id>/` (+ whisper segment provenance) into the single-file `.ytr` store — zip container, `ytr/spec.json` index, WebP-lossless frames; auto-run at the end of `all`; `dump`/`query`/`frame`/`verify` agent surface + `store/library.json` |
 | `internal/lowprio` | `BELOW_NORMAL` priority for child processes (Windows); no-op elsewhere |
 | `internal/testexec` | hermetic `exec.Command` fake used by every test suite |
 
@@ -57,5 +58,6 @@ scripts/ocr.ps1         Windows OCR over extracted frames
 docs/                   architecture, instructions, build brief, progress log
 work/                   scratch (gitignored)
 output/                 deliverables (gitignored)
+store/                  single-file .ytr store per video + library.json (gitignored)
 results/                persistent Q&A archive — results/<video_id>/{video.yaml, NNN.yaml} (gitignored)
 ```

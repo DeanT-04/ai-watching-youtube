@@ -9,6 +9,7 @@ import (
 	"ytreconstruct/internal/dedupe"
 	"ytreconstruct/internal/download"
 	"ytreconstruct/internal/manifest"
+	"ytreconstruct/internal/store"
 	"ytreconstruct/internal/transcribe"
 )
 
@@ -18,6 +19,7 @@ type allOptions struct {
 	file           string
 	workDir        string
 	outputDir      string
+	storeDir       string
 	jobs           int
 	skipTranscribe bool
 	sceneThreshold float64
@@ -25,6 +27,7 @@ type allOptions struct {
 	model          string
 	threads        int
 	language       string
+	noStore        bool
 }
 
 // runAll orchestrates download → chunk → (dedupe ∥ transcribe) → manifest.
@@ -38,7 +41,7 @@ func runAll(o allOptions) error {
 		return fmt.Errorf("all: URL and --file are mutually exclusive")
 	}
 
-	fmt.Printf("==> [1/5] download\n")
+	fmt.Printf("==> [1/6] download\n")
 	if err := download.Run(download.Options{URL: o.url, File: o.file, WorkDir: o.workDir}); err != nil {
 		return err
 	}
@@ -48,7 +51,7 @@ func runAll(o allOptions) error {
 		return err
 	}
 
-	fmt.Printf("==> [2/5] chunk\n")
+	fmt.Printf("==> [2/6] chunk\n")
 	if err := chunk.Run(chunk.Options{
 		VideoID:        id,
 		WorkDir:        o.workDir,
@@ -60,7 +63,7 @@ func runAll(o allOptions) error {
 
 	// Phases 3 and 4 are independent: dedupe needs only the frames,
 	// transcribe needs only the audio slices. Run them concurrently.
-	fmt.Printf("==> [3/5] dedupe  +  [4/5] transcribe\n")
+	fmt.Printf("==> [3/6] dedupe  +  [4/6] transcribe\n")
 	var wg sync.WaitGroup
 	errCh := make(chan error, 2)
 	wg.Add(2)
@@ -102,7 +105,7 @@ func runAll(o allOptions) error {
 		}
 	}
 
-	fmt.Printf("==> [5/5] manifest\n")
+	fmt.Printf("==> [5/6] manifest\n")
 	if err := manifest.Run(manifest.Options{
 		VideoID:   id,
 		WorkDir:   o.workDir,
@@ -111,6 +114,27 @@ func runAll(o allOptions) error {
 		Jobs:      o.jobs,
 	}); err != nil {
 		return err
+	}
+
+	fmt.Printf("==> [6/6] store\n")
+	if o.noStore {
+		fmt.Println("store: skipped (--no-store)")
+	} else {
+		rep, err := store.Run(store.Options{
+			VideoID:   id,
+			WorkDir:   o.workDir,
+			OutputDir: o.outputDir,
+			StoreDir:  o.storeDir,
+			Jobs:      o.jobs,
+		})
+		if err != nil {
+			return err
+		}
+		if rep.Skipped {
+			fmt.Printf("store: %s already present, skipping\n", rep.StorePath)
+		} else {
+			fmt.Printf("store: packed %s (%d chunks, %d frames, %s)\n", rep.StorePath, rep.Chunks, rep.Frames, humanBytes(rep.TotalBytes))
+		}
 	}
 
 	fmt.Printf("done. Deliverable: %s\n", filepath.Join(o.outputDir, id))

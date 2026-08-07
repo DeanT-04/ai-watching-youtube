@@ -310,9 +310,14 @@ func buildSpec(opts Options, outDir string, m *manifest.Manifest) (*Spec, error)
 }
 
 // loadSegments parses work/<id>/transcripts/full.json, dropping empty entries.
+// A missing file is not an error: when transcription was skipped there is no
+// segment provenance, and the store simply carries no segments for that video.
 func loadSegments(workDir, videoID string) ([]Segment, error) {
 	data, err := os.ReadFile(filepath.Join(workDir, videoID, "transcripts", "full.json"))
 	if err != nil {
+		if os.IsNotExist(err) {
+			return nil, nil
+		}
 		return nil, fmt.Errorf("store: transcripts/full.json: %w — run `ytreconstruct transcribe` first", err)
 	}
 	var w whisperFull

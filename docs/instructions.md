@@ -26,6 +26,32 @@ timeline), its files, and `source_ids` — the raw scene chunks that were
 merged into it (merged chunks have multiple sources; their transcript is the
 concatenation of the source transcripts in order).
 
+## Watching via the store (`.ytr`) instead of the tree
+
+Every successful run also packs the output tree into **one queryable file per
+video**, `store/<video_id>.ytr`, plus a tiny `store/library.json` across
+videos (see [storage-format.md](storage-format.md)). It is a pure transform
+of `output/` — same chunks, same strict order, same transcripts — so you can
+watch the whole video with two commands instead of walking the folder tree:
+
+```sh
+ytreconstruct store dump <video_id>                   # the whole story: metadata + every chunk's timespan + transcript
+ytreconstruct store frame <video_id> <NNNN> out.png   # one frame as a pixel-identical PNG (for OCR / vision)
+```
+
+Targeted lookups and integrity:
+
+```sh
+ytreconstruct store query <video_id> --grep <text> [--range t1,t2]   # ordered, timestamped matches
+ytreconstruct store list                 # every packed video
+ytreconstruct store verify <video_id>    # CRC + schema + member check
+```
+
+The rules below apply unchanged: `store dump` prints chunks in strict
+playback order (never reorder), timestamps stay absolute seconds, and
+`store frame` output is pixel-identical to `chunks/<NNNN>/frame.png` — so
+`scripts/ocr.ps1` and image tools behave exactly as they do on the tree.
+
 ## Rules
 
 1. **Never reorder.** Process chunks in the order they appear in

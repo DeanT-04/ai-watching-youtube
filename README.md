@@ -41,9 +41,13 @@ ytreconstruct chunk <video_id>
 ytreconstruct dedupe <video_id>
 ytreconstruct transcribe <video_id>
 ytreconstruct manifest <video_id>
+
+# the .ytr store — the agent's single-file, queryable deliverable
+ytreconstruct store pack <video_id>       # pack output/<id>/ → store/<id>.ytr (auto-run by `all`)
+ytreconstruct store list                  # packed videos
 ```
 
-`--work-dir`, `--output-dir`, and `--jobs` are persistent flags on every subcommand (defaults: `work`, `output`, half the CPU count). See `ytreconstruct <cmd> --help` for the full flag list.
+`--work-dir`, `--output-dir`, `--store-dir`, and `--jobs` are persistent flags on every subcommand (defaults: `work`, `output`, `store`, half the CPU count). See `ytreconstruct <cmd> --help` for the full flag list.
 
 | Flag | Applies to | Default | Meaning |
 |---|---|---|---|
@@ -73,6 +77,28 @@ ytreconstruct manifest <video_id>
 
 `source_ids` lists the raw scene chunks merged into a deduped chunk (>1 for static periods). Transcript lines carry absolute timestamps: `[00:01:23.456 --> 00:01:25.000] text`. See [docs/instructions.md](docs/instructions.md) for the reconstruction agent's playbook.
 
+### Store (`.ytr`) — the agent's 2-command interface
+
+Every successful `all` run also packs the deliverable into **one queryable file per video**: `store/<video_id>.ytr` (a zip holding a `ytr/spec.json` index plus WebP-**lossless** frames — pixel-identical, ~35–40% smaller than the PNGs) and a tiny `store/library.json` across videos. An agent can then "watch" the whole video without walking the folder tree:
+
+```sh
+ytreconstruct store dump <video_id>                  # the whole story: ordered chunks + transcripts
+ytreconstruct store frame <video_id> 0042 out.png    # one frame, pixel-identical PNG (for OCR/vision)
+```
+
+Plus targeted search and integrity checks:
+
+```sh
+ytreconstruct store query <video_id> --grep "take profit" --range 60,120
+#   == Chunk 0017  [62.100s → 66.400s]
+#   [00:01:02.100 --> 00:01:05.800] so the take profit goes right below the entry
+
+ytreconstruct store list                 # every packed video
+nytreconstruct store verify <video_id>   # CRC + schema + member integrity
+```
+
+The store is a pure transform of `output/` — the folder tree stays the primary deliverable — and is wiped by `scripts/clean.sh`. Format spec: [docs/storage-format.md](docs/storage-format.md).
+
 ### Question log (`results/`)
 
 Questions asked about a video are answered and logged to a persistent archive at `results/<video_id>/` — one `NNN.yaml` per question (question, answer, process log, evidence) plus a `video.yaml` metadata file. Same video URL (any form) reuses the same folder; the same or a similar question reuses the stored answer instead of duplicating it. The archive survives `scripts/clean.sh` and is gitignored.
@@ -89,6 +115,7 @@ flowchart LR
     DE --> MA["manifest"]
     TR --> MA
     MA --> OUT["output/"]
+    MA --> ST["store/<id>.ytr"]
 ```
 
 - `download` — `yt-dlp` + `ffmpeg` → `work/<id>/video.mp4`, `audio.wav` (16 kHz mono)
@@ -96,6 +123,7 @@ flowchart LR
 - `dedupe` — dHash of frames → `chunks_deduped.json` (visually-static chunks merged; **no audio/transcript data dropped**)
 - `transcribe` — one `whisper-cli` pass over the full audio track → per-chunk transcripts with absolute timestamps
 - `manifest` — assembles `output/<id>/chunks/NNNN/{frame.png, transcript.txt, meta.json}` + `manifest.json` + `reconstruction.md` + `instructions.md`
+- `store` — packs `output/<id>/` (+ whisper segment provenance) into the single-file `store/<id>.ytr`; auto-run at the end of `all`, skip with `--no-store`
 
 `dedupe` and `transcribe` run concurrently. Every stage is idempotent, so re-running `all` resumes from the furthest completed stage. Details on the pipeline, performance, and package layout: [docs/architecture.md](docs/architecture.md).
 
@@ -103,7 +131,7 @@ flowchart LR
 
 - Tests: `go test ./...` — hermetic (mocked exec, no network, no real binaries).
 - Integration: `scripts/integration.sh` — synthesizes a 6 s / 3-scene video offline, runs the full pipeline, validates the manifest and chunk tree.
-- Cleanup: `scripts/clean.sh` — wipes `work/` + `output/` (asks for confirmation unless `-y`).
+- Cleanup: `scripts/clean.sh` — wipes `work/` + `output/` + `store/` (asks for confirmation unless `-y`; the `results/` archive survives).
 - CI: `.github/workflows/ci.yml` runs build/vet/format/test on Linux + Windows (tests are hermetic, so no external services needed).
 - Structure, package responsibilities, and on-disk contracts: [docs/architecture.md](docs/architecture.md). Build history: [docs/progress.md](docs/progress.md). Agent playbook for the output: [docs/instructions.md](docs/instructions.md).
 

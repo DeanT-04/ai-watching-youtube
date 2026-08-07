@@ -14,6 +14,7 @@ Given a YouTube URL, produce an ordered set of (frame, audio transcript, timesta
 
 - Everything inside this repository.
 - `work/` and `output/` — created, written, and read freely during normal operation. These are scratch and deliverable directories, not source.
+- `store/` — the single-file `.ytr` store (one file per packed video + `library.json`). Created, written, and read freely; a pure transform of `output/`, wiped by `scripts/clean.sh` like `work/` + `output/`. Not source.
 - `results/` — the persistent Q&A archive (`results/<video_id>/video.yaml` + `NNN.yaml` per question). Created, read, and appended freely during normal operation; it is deliberately *not* wiped by `scripts/clean.sh` (only `work/` + `output/` are), so answers survive across videos. Not source.
 - Local system binaries via `os/exec`: `yt-dlp`, `ffmpeg`, and a local Whisper binary (`whisper.cpp` / `whisper-cli` / `faster-whisper`, whichever you settle on — pick one and document why). Assume they are already installed. Check for them at startup and fail with a clear, specific error message if missing. Do not attempt to install them yourself.
 
@@ -22,7 +23,7 @@ Given a YouTube URL, produce an ordered set of (frame, audio transcript, timesta
 - No dependency on Google Cloud, AWS, Azure, or any paid or metered API of any kind. This tool must run fully offline once the video is downloaded.
 - No GPU-only dependency, ever. Everything must run acceptably on CPU alone. This is a hard constraint, not a preference — assume the target machine has no GPU.
 - No heavyweight dependency where the standard library or a small, widely-used package does the job. If you add anything to `go.mod` beyond a CLI flag/command library, leave a one-line comment explaining why it earned its place.
-- Never commit anything under `work/`, `output/`, or `results/` — downloaded video, extracted frames, audio, transcripts, manifests, question logs and answers. These are gitignored and must stay that way.
+- Never commit anything under `work/`, `output/`, `store/`, or `results/` — downloaded video, extracted frames, audio, transcripts, manifests, `.ytr` stores and library index, question logs and answers. These are gitignored and must stay that way.
 - Never push to a remote, and never force-push, under any circumstance.
 - Never weaken `scripts/clean.sh`'s confirmation prompt as the default behavior — a `-y` flag to skip it is fine, but the default must stay safe.
 - Never fabricate a test result, a benchmark number, or a "this works" claim you haven't actually run. Say what you tested and what you didn't.
