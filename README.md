@@ -125,7 +125,11 @@ are not fabricated — each will be re-run when connectivity returns:
   config-driven); returns timestamped segments; 100% coverage with the Whisper
   call fully faked. Real inference is exercised only via the integration tier /
   Phase 9 e2e run (pending connectivity).
-- Phase 4 — Keyframe selection: not started.
+- **Phase 4 — Keyframe selection: done** — `sample_frames()` (OpenCV at a
+  configurable sample rate) + `select_keyframes()` (pixel-diff/SSIM grouping
+  into stable runs, last frame per run kept); selection logic tested with
+  synthetic frame arrays, cv2 fully faked; 100% coverage.
+- Phase 5 — Crop & preprocessing: not started.
 - Phase 5 — Crop & preprocessing: not started.
 - Phase 6 — OCR ensemble: not started.
 - Phase 7 — Syntax-validated repair: not started.
