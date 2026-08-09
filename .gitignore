@@ -1,0 +1,39 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test / tooling artifacts
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Downloaded / generated media and outputs (never committed)
+data/raw/
+data/output/
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.m4a
+*.wav
+
+# Model caches (faster-whisper / PaddleOCR download models on first use)
+.cache/
+models/
+~/.cache/huggingface/
+~/.paddleocr/
+
+# Secrets / local overrides
+.env
+
+# IDE folders
+.vscode/
+.idea/
+
+# Reasonix agent tooling
+.reasonix/
