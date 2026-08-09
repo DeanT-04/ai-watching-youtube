@@ -52,6 +52,12 @@ def _fake_ocr(*args, **kwargs):
     return OcrResult("paddle+tesseract", [OcrText("x = 1", 0.9), OcrText("y = 2", 0.8)])
 
 
+def _fake_eng():
+    eng = mock.Mock()
+    eng.name = "fake"
+    return eng
+
+
 def test_build_parser_requires_url():
     parser = build_parser()
     with pytest.raises(SystemExit):
@@ -67,7 +73,7 @@ def test_to_code_block_runs_repair():
     assert block.text == "x = 1\ny = 2"
     assert block.language == OCR_LANGUAGE
     assert block.source == "paddle+tesseract"
-    assert block.repaired is True
+    assert block.valid is True
     assert block.issues == []
 
 
@@ -84,6 +90,9 @@ def test_pipeline_wires_all_phases(tmp_path, no_dotenv):
         mock.patch("ytextract.cli.transcribe", return_value=transcript) as tr,
         mock.patch("ytextract.cli.sample_and_select", return_value=_frames()) as kf,
         mock.patch("ytextract.cli.run_ocr", side_effect=_fake_ocr) as ocr,
+        mock.patch(
+            "ytextract.cli.create_engine", side_effect=[_fake_eng(), _fake_eng()]
+        ) as ce,
     ):
         result = pipeline(URL, cfg)
 
@@ -100,6 +109,8 @@ def test_pipeline_wires_all_phases(tmp_path, no_dotenv):
     tr.assert_called_once()
     kf.assert_called_once_with(str(Path("vdir/v.mp4")), cfg)
     assert ocr.call_count == 2
+    # Engines are built once (one per name), not once per keyframe.
+    assert ce.call_count == 2
 
     # Storage was really written (tmp data dir).
     outdir = cfg.output_dir / "abc123def45"

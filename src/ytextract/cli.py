@@ -16,7 +16,7 @@ from .crop import preprocess
 from .downloader import download_video
 from .keyframes import Frame, sample_and_select
 from .logging_setup import setup_logging
-from .ocr import OcrResult, run_ocr
+from .ocr import OcrEngine, OcrResult, create_engine, run_ocr
 from .repair import repair
 from .storage import CodeBlock, VideoResult, save_result
 from .transcriber import transcribe
@@ -38,10 +38,10 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _ocr_keyframe(frame: Frame, cfg: Config) -> OcrResult:
+def _ocr_keyframe(frame: Frame, cfg: Config, engines: list[OcrEngine]) -> OcrResult:
     """Crop/upscale one keyframe, then run the OCR ensemble over it."""
     prepared = preprocess(frame.image, cfg)
-    return run_ocr(prepared, cfg)
+    return run_ocr(prepared, cfg, engines=engines)
 
 
 def _to_code_block(frame: Frame, ocr: OcrResult) -> CodeBlock:
@@ -53,7 +53,7 @@ def _to_code_block(frame: Frame, ocr: OcrResult) -> CodeBlock:
         text=checked.code,
         language=OCR_LANGUAGE,
         source=ocr.engine,
-        repaired=bool(checked.valid),
+        valid=bool(checked.valid),
         issues=checked.issues,
     )
 
@@ -72,8 +72,13 @@ def pipeline(url: str, cfg: Config) -> VideoResult:
 
     logger.info("phase 5-6/8: OCR over %d keyframes", len(frames))
     code_blocks: list[CodeBlock] = []
+    # Engines are built once and reused across frames: constructing PaddleOCR
+    # per frame would redo graph init (and re-trigger model downloads) each time.
+    ocr_engines = [create_engine(name) for name in ("paddle", "tesseract")]
     for frame in frames:
-        code_blocks.append(_to_code_block(frame, _ocr_keyframe(frame, cfg)))
+        code_blocks.append(
+            _to_code_block(frame, _ocr_keyframe(frame, cfg, ocr_engines))
+        )
 
     logger.info("phase 7/8: validating %d code blocks", len(code_blocks))
     result = VideoResult(

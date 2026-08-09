@@ -60,3 +60,17 @@ def test_tesseract_engine_uses_run_command_and_parses():
     assert "tsv" in argv
     assert Path(argv[1]).suffix == ".png"
     assert run.call_args.kwargs["check"] is False
+
+
+def test_tesseract_engine_warns_on_nonzero_exit():
+    engine = TesseractEngine()
+    image = np.full((20, 20), 255, dtype=np.uint8)
+    with (
+        mock.patch(
+            "ytextract.ocr.tesseract_engine.run_command",
+            return_value=CommandResult(stdout="", stderr="lang error", returncode=1),
+        ),
+        mock.patch("ytextract.ocr.tesseract_engine.logger") as logger,
+    ):
+        engine.ocr(image)
+    logger.warning.assert_called_once()

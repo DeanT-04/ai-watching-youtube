@@ -109,7 +109,7 @@ def test_local_video_pipeline(tmp_path, local_media, no_dotenv):
                 text=checked.code,
                 language="python",
                 source=ocr.engine,
-                repaired=bool(checked.valid),
+                valid=bool(checked.valid),
                 issues=checked.issues,
             )
         )

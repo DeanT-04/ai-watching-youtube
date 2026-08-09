@@ -47,7 +47,9 @@ def run_command(
         proc = subprocess.run(
             list(argv),
             capture_output=True,
-            text=True,
+            text=False,  # bytes; decoded below with errors="replace" so that
+            # non-ASCII output from yt-dlp/ffmpeg never crashes the CLI on
+            # Windows locale encodings (cp1252/cp437).
             timeout=timeout,
             cwd=cwd,
             env=env,
@@ -58,7 +60,11 @@ def run_command(
     except subprocess.TimeoutExpired as exc:
         raise CommandError(f"command timed out after {timeout:g}s: {argv[0]}") from exc
 
-    result = CommandResult(proc.stdout, proc.stderr, proc.returncode)
+    result = CommandResult(
+        stdout=proc.stdout.decode("utf-8", errors="replace"),
+        stderr=proc.stderr.decode("utf-8", errors="replace"),
+        returncode=proc.returncode,
+    )
     if check and proc.returncode != 0:
         detail = (proc.stderr or proc.stdout).strip()
         suffix = f": {detail}" if detail else ""
