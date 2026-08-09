@@ -96,9 +96,12 @@ hand-picked public tutorials) — the unit-test tier never touches the network.
 
 ## Status
 
-- **Phase 0 — Scaffolding: in progress** (skeleton, `.gitignore`, README,
-  pinned requirements, venv, `pytest` green).
-- Phase 1 — Foundation utilities: not started.
+- **Phase 0 — Scaffolding: done** (skeleton, `.gitignore`, README, pinned
+  requirements, venv, `pytest` green).
+- **Phase 1 — Foundation utilities: done** (central logging via
+  `setup_logging()`, env-driven `Config`, safe subprocess wrapper
+  `run_command()` with timeouts + clean errors, CPU throttle `wait_if_busy()`
+  and `bounded_map()`; 100% coverage, ruff clean).
 - Phase 2 — Download module: not started.
 - Phase 3 — Audio transcription: not started.
 - Phase 4 — Keyframe selection: not started.
