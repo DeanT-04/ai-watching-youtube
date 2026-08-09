@@ -67,4 +67,9 @@ class TesseractEngine:
                 ["tesseract", str(png), "stdout", "--psm", self._psm, "tsv"],
                 check=False,
             )
+            if result.returncode != 0:
+                logger.warning(
+                    "tesseract exited with status %d (output may be incomplete)",
+                    result.returncode,
+                )
         return parse_tsv(result.stdout)

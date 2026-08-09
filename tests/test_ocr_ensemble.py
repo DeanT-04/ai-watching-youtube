@@ -128,6 +128,20 @@ def test_run_ocr_no_engines_raises():
         run_ocr(np.zeros((4, 4), dtype=np.uint8), CFG, engines=())
 
 
+def test_run_ocr_accepts_engine_instances():
+    paddle = FakeEngine("paddle", _lines(("x = 1", 0.9)))
+    tess = FakeEngine("tesseract", _lines(("import os", 0.8)))
+    with (
+        mock.patch("ytextract.ocr.ensemble.create_engine") as create,
+        mock.patch("ytextract.ocr.ensemble.wait_if_busy"),
+    ):
+        result = run_ocr(np.zeros((4, 4), dtype=np.uint8), CFG, engines=[paddle, tess])
+    assert result.engine == "paddle+tesseract"
+    assert [l.text for l in result.lines] == ["x = 1", "import os"]
+    create.assert_not_called()  # instances passed through, no re-construction
+    assert paddle.calls == 1 and tess.calls == 1
+
+
 def test_run_ocr_single_engine_is_primary():
     tess = FakeEngine("tesseract", _lines(("hello", 0.9)))
     with (

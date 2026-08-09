@@ -30,13 +30,17 @@ class StorageError(RuntimeError):
 
 @dataclass(frozen=True)
 class CodeBlock:
-    """One OCR'd code region with its on-screen timestamp."""
+    """One OCR'd code region with its on-screen timestamp.
+
+    ``valid`` is True when the block parses as its language (Phase 7), False
+    when validation found issues, None when no validator is registered.
+    """
 
     timestamp: float
     text: str
     language: str
     source: str
-    repaired: bool
+    valid: bool | None
     issues: list[RepairIssue] = field(default_factory=list)
 
 
@@ -82,7 +86,7 @@ def _block_to_dict(block: CodeBlock) -> dict:
         "text": block.text,
         "language": block.language,
         "source": block.source,
-        "repaired": block.repaired,
+        "valid": block.valid,
         "issues": [asdict(issue) for issue in block.issues],
     }
 
@@ -97,7 +101,7 @@ def _block_from_dict(data: dict) -> CodeBlock:
         text=str(data["text"]),
         language=str(data["language"]),
         source=str(data["source"]),
-        repaired=bool(data["repaired"]),
+        valid=data.get("valid", data.get("repaired")),  # tolerate pre-rename files
         issues=issues,
     )
 
@@ -143,19 +147,19 @@ class LocalStorage:
             code_blocks = json.loads(
                 (outdir / _CODE_BLOCKS_FILE).read_text(encoding="utf-8")
             )
-        except (FileNotFoundError, json.JSONDecodeError) as exc:
+            return VideoResult(
+                video_id=str(transcript["video_id"]),
+                title=str(transcript.get("title", "")),
+                uploader=str(transcript.get("uploader", "")),
+                webpage_url=str(transcript.get("webpage_url", "")),
+                transcript_language=transcript.get("language"),
+                segments=[_segment_from_dict(s) for s in transcript["segments"]],
+                code_blocks=[_block_from_dict(b) for b in code_blocks["blocks"]],
+            )
+        except (FileNotFoundError, json.JSONDecodeError, KeyError) as exc:
             raise StorageError(
                 f"no readable result for video {video_id!r} in {outdir}"
             ) from exc
-        return VideoResult(
-            video_id=str(transcript["video_id"]),
-            title=str(transcript.get("title", "")),
-            uploader=str(transcript.get("uploader", "")),
-            webpage_url=str(transcript.get("webpage_url", "")),
-            transcript_language=transcript.get("language"),
-            segments=[_segment_from_dict(s) for s in transcript["segments"]],
-            code_blocks=[_block_from_dict(b) for b in code_blocks["blocks"]],
-        )
 
 
 def save_result(result: VideoResult, cfg: Config) -> Path:

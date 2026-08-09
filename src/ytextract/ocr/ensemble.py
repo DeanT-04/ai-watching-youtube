@@ -68,17 +68,23 @@ def merge_results(
 def run_ocr(
     image: np.ndarray,
     cfg: Config,
-    engines: Sequence[str] = ("paddle", "tesseract"),
+    engines: Sequence[str | OcrEngine] = ("paddle", "tesseract"),
 ) -> OcrResult:
-    """Run the named engines over ``image`` and merge their outputs.
+    """Run the configured engines over ``image`` and merge their outputs.
 
-    Engine failures are logged and skipped; if every engine fails an
-    :class:`OcrError` is raised.
+    ``engines`` accepts engine names (a fresh instance is built per name) or
+    already-constructed :class:`OcrEngine` instances — pass instances when
+    calling this in a loop so heavy engines (PaddleOCR) are built once, not
+    per frame. Engine failures are logged and skipped; if every engine fails
+    an :class:`OcrError` is raised.
     """
     by_engine: dict[str, list[OcrText]] = {}
     errors: list[str] = []
-    for name in engines:
-        engine = create_engine(name)
+    names: list[str] = []
+    for item in engines:
+        engine = create_engine(item) if isinstance(item, str) else item
+        name = engine.name
+        names.append(name)
         wait_if_busy(cfg)
         try:
             by_engine[name] = engine.ocr(image)
@@ -89,12 +95,9 @@ def run_ocr(
     if not by_engine:
         raise OcrError(f"all OCR engines failed: {'; '.join(errors)}")
 
-    primary = by_engine.get(engines[0], [])
+    primary = by_engine.get(names[0], [])
     secondary = [
-        line
-        for name, lines in by_engine.items()
-        if name != engines[0]
-        for line in lines
+        line for name, lines in by_engine.items() if name != names[0] for line in lines
     ]
     merged = merge_results(primary, secondary, cfg.ocr_confidence_threshold)
     return OcrResult(engine="+".join(by_engine), lines=merged)

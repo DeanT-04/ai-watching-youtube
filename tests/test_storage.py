@@ -37,7 +37,7 @@ def _result(video_id="abc"):
                 text="def main():\n    pass",
                 language="python",
                 source="paddle+tesseract",
-                repaired=True,
+                valid=True,
                 issues=[],
             ),
             CodeBlock(
@@ -45,7 +45,7 @@ def _result(video_id="abc"):
                 text="x =",
                 language="python",
                 source="paddle",
-                repaired=False,
+                valid=False,
                 issues=[RepairIssue(line=1, message="invalid syntax (line 1)")],
             ),
         ],
@@ -112,6 +112,18 @@ def test_load_missing_code_blocks_raises(tmp_path, no_dotenv):
     (outdir / "transcript.json").write_text(
         json.dumps({"video_id": "abc", "segments": []}), encoding="utf-8"
     )
+    with pytest.raises(StorageError, match="no readable result"):
+        load_result("abc", cfg)
+
+
+def test_load_missing_key_raises(tmp_path, no_dotenv):
+    cfg = Config.load(env={"YTEXTRACT_DATA_DIR": str(tmp_path)})
+    outdir = cfg.output_dir / "abc"
+    outdir.mkdir(parents=True)
+    (outdir / "transcript.json").write_text(
+        json.dumps({"no": "segments key"}), encoding="utf-8"
+    )
+    (outdir / "code_blocks.json").write_text("{}", encoding="utf-8")
     with pytest.raises(StorageError, match="no readable result"):
         load_result("abc", cfg)
 
