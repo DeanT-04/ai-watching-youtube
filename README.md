@@ -117,6 +117,9 @@ are not fabricated — each will be re-run when connectivity returns:
 - Phase 2 real-download sanity check against a URL from `yt-urls.txt`.
 - Phase 9 real end-to-end run (download → transcribe → keyframes → OCR → repair
   → store) against a URL from `yt-urls.txt`, with timing + accuracy noted here.
+  `scripts/pending-e2e.sh` automates both (waits for youtube.com, installs the
+  pinned paddle versions from the downloaded wheel, runs the checks, logs to
+  the console).
 - Push of the phase branches + main to `origin` (commits are local-only since
   the outage began).
 
