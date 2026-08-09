@@ -45,6 +45,7 @@ Consequences of the profile:
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 .venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.venv\Scripts\python.exe -m pip install -e . --no-deps   # console script `ytextract` + `python -m ytextract`
 ```
 
 Never activate the venv in scripts (PowerShell execution policy can silently
@@ -52,6 +53,7 @@ block `Activate.ps1`); always call the venv interpreter directly:
 
 ```powershell
 .venv\Scripts\python.exe -m ytextract <youtube-url>
+ytextract <youtube-url>
 .venv\Scripts\python.exe -m pytest
 ```
 
@@ -62,11 +64,16 @@ no hardcoded magic numbers.
 
 ## Running the CLI
 
-Phase 9 wires Phases 2–8 into one command; until then there is no end-to-end CLI.
+One command runs Phases 2–8 in order (download → transcribe → keyframes → OCR
+→ repair → store):
 
 ```powershell
 .venv\Scripts\python.exe -m ytextract <youtube-url>
 ```
+
+or the installed console script `ytextract <youtube-url>`. Output lands in
+`data/output/<video_id>/` (`transcript.json` + `code_blocks.json`); the
+downloaded media sits in `data/raw/<video_id>/`.
 
 ## Testing
 
@@ -147,5 +154,11 @@ are not fabricated — each will be re-run when connectivity returns:
   `LocalStorage` writing `data/output/<video_id>/{transcript.json,
   code_blocks.json}`; round-trip, corrupt/missing-file and UTF-8 cases tested
   on tmp_path; 100% coverage.
-- Phase 9 — CLI orchestration: not started.
-- Phase 9 — CLI orchestration: not started.
+- **Phase 9 — CLI orchestration: done (unit tier)** — `ytextract <url>` (or
+  `python -m ytextract`) runs Phases 2–8 with progress logging; full pipeline
+  wiring verified end-to-end with every external call mocked; entry points
+  smoke-tested via subprocess; 100% coverage. **Real e2e run (one URL from
+  `yt-urls.txt`) blocked by the network outage (youtube.com unreachable at
+  build time); to be re-run — see "Pending checks".**
+- **All phases built; the only remaining gates are the real-network checks**
+  (see "Pending checks").
