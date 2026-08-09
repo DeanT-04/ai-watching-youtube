@@ -132,7 +132,13 @@ are not fabricated — each will be re-run when connectivity returns:
 - **Phase 5 — Crop & preprocessing: done** — `crop_region()` (bounds-checked,
   config-driven region) + `upscale()` (Lanczos); tested with synthetic images;
   100% coverage.
-- Phase 6 — OCR ensemble: not started.
+- **Phase 6 — OCR ensemble: done (unit tier)** — PaddleOCR (primary) +
+  Tesseract (secondary, via `run_command` + TSV parsing) behind one
+  `OcrEngine` interface; `merge_results()` policy (keep all primary, add
+  high-confidence unmatched secondary) and fallback-on-engine-failure fully
+  tested with faked engines; 100% coverage. Real OCR needs the paddle model
+  download (installing in background) + the Phase 9 e2e run.
+- Phase 7 — Syntax-validated repair: not started.
 - Phase 7 — Syntax-validated repair: not started.
 - Phase 8 — Local storage layer: not started.
 - Phase 9 — CLI orchestration: not started.
