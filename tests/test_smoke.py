@@ -2,6 +2,6 @@
 
 
 def test_package_imports() -> None:
-    import ytextract  # noqa: F401
+    import ytextract
 
     assert ytextract.__version__
