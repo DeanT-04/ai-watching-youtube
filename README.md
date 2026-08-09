@@ -138,7 +138,10 @@ are not fabricated — each will be re-run when connectivity returns:
   high-confidence unmatched secondary) and fallback-on-engine-failure fully
   tested with faked engines; 100% coverage. Real OCR needs the paddle model
   download (installing in background) + the Phase 9 e2e run.
-- Phase 7 — Syntax-validated repair: not started.
-- Phase 7 — Syntax-validated repair: not started.
+- **Phase 7 — Syntax-validated repair: done** — `repair()` validates OCR'd code
+  with `ast.parse` (Python) behind a `VALIDATORS` registry so more languages
+  plug in via `register_validator()`; failures reported with line/column;
+  most-thorough test file of the project incl. malformed, unindented, deeply
+  nested and unregistered-language inputs; 100% coverage.
 - Phase 8 — Local storage layer: not started.
 - Phase 9 — CLI orchestration: not started.
