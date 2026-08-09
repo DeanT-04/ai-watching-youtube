@@ -143,5 +143,9 @@ are not fabricated — each will be re-run when connectivity returns:
   plug in via `register_validator()`; failures reported with line/column;
   most-thorough test file of the project incl. malformed, unindented, deeply
   nested and unregistered-language inputs; 100% coverage.
-- Phase 8 — Local storage layer: not started.
+- **Phase 8 — Local storage layer: done** — `Storage` protocol +
+  `LocalStorage` writing `data/output/<video_id>/{transcript.json,
+  code_blocks.json}`; round-trip, corrupt/missing-file and UTF-8 cases tested
+  on tmp_path; 100% coverage.
+- Phase 9 — CLI orchestration: not started.
 - Phase 9 — CLI orchestration: not started.
