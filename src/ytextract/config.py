@@ -86,6 +86,8 @@ class Config:
     whisper_compute_type: str
     whisper_language: str | None
     ocr_confidence_threshold: float
+    ytdlp_timeout_seconds: float
+    ffmpeg_timeout_seconds: float
     log_level: str
     data_dir: Path
     raw_dir: Path
@@ -117,6 +119,8 @@ class Config:
             ocr_confidence_threshold=_env_float(
                 "YTEXTRACT_OCR_CONFIDENCE_THRESHOLD", 0.5, e
             ),
+            ytdlp_timeout_seconds=_env_float("YTEXTRACT_YTDLP_TIMEOUT", 3600.0, e),
+            ffmpeg_timeout_seconds=_env_float("YTEXTRACT_FFMPEG_TIMEOUT", 600.0, e),
             log_level=_env_str("YTEXTRACT_LOG_LEVEL", "INFO", e),
             data_dir=data_dir,
             raw_dir=raw_dir,

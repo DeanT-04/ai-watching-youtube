@@ -94,6 +94,18 @@ hand-picked public tutorials) — the unit-test tier never touches the network.
 - One video at a time; multi-video batch processing is explicitly future work.
 - Windows-only code paths tested; macOS/Linux are not covered.
 
+## Pending checks (blocked by the build-time network outage)
+
+These gates exist in the build plan but could not be completed during the build
+session because the machine could not reach github.com / www.youtube.com. They
+are not fabricated — each will be re-run when connectivity returns:
+
+- Phase 2 real-download sanity check against a URL from `yt-urls.txt`.
+- Phase 9 real end-to-end run (download → transcribe → keyframes → OCR → repair
+  → store) against a URL from `yt-urls.txt`, with timing + accuracy noted here.
+- Push of the phase branches + main to `origin` (commits are local-only since
+  the outage began).
+
 ## Status
 
 - **Phase 0 — Scaffolding: done** (skeleton, `.gitignore`, README, pinned
@@ -102,7 +114,13 @@ hand-picked public tutorials) — the unit-test tier never touches the network.
   `setup_logging()`, env-driven `Config`, safe subprocess wrapper
   `run_command()` with timeouts + clean errors, CPU throttle `wait_if_busy()`
   and `bounded_map()`; 100% coverage, ruff clean).
-- Phase 2 — Download module: not started.
+- **Phase 2 — Download module: done (unit tier)** — `download_video()` via the
+  `run_command` wrapper: yt-dlp merge + `--write-info-json`, ffmpeg 16 kHz mono
+  WAV extraction, metadata parsing; 100% coverage with yt-dlp/ffmpeg fully
+  mocked. **Real-world sanity check (one URL from `yt-urls.txt`) blocked by a
+  network outage during the build (github.com + www.youtube.com both
+  unreachable); to be re-run when connectivity returns — see "Pending checks".**
+- Phase 3 — Audio transcription: not started.
 - Phase 3 — Audio transcription: not started.
 - Phase 4 — Keyframe selection: not started.
 - Phase 5 — Crop & preprocessing: not started.

@@ -8,12 +8,6 @@ import pytest
 from ytextract.config import Config, ConfigError, default_max_workers
 
 
-@pytest.fixture
-def no_dotenv():
-    with mock.patch("ytextract.config.load_dotenv"):
-        yield
-
-
 def test_defaults(no_dotenv):
     with mock.patch("ytextract.config.os.cpu_count", return_value=8):
         cfg = Config.load(env={})
@@ -30,6 +24,8 @@ def test_defaults(no_dotenv):
     assert cfg.whisper_compute_type == "int8"
     assert cfg.whisper_language is None
     assert cfg.ocr_confidence_threshold == 0.5
+    assert cfg.ytdlp_timeout_seconds == 3600.0
+    assert cfg.ffmpeg_timeout_seconds == 600.0
     assert cfg.log_level == "INFO"
     assert cfg.data_dir.name == "data"
     assert cfg.raw_dir.name == "raw"
@@ -52,6 +48,8 @@ def test_env_overrides(no_dotenv):
             "YTEXTRACT_WHISPER_COMPUTE_TYPE": "float32",
             "YTEXTRACT_WHISPER_LANGUAGE": "en",
             "YTEXTRACT_OCR_CONFIDENCE_THRESHOLD": "0.7",
+            "YTEXTRACT_YTDLP_TIMEOUT": "7200",
+            "YTEXTRACT_FFMPEG_TIMEOUT": "120",
             "YTEXTRACT_LOG_LEVEL": "DEBUG",
             "YTEXTRACT_DATA_DIR": "C:/tmp/data",
         }
@@ -67,6 +65,8 @@ def test_env_overrides(no_dotenv):
     assert cfg.whisper_model_size == "base"
     assert cfg.whisper_language == "en"
     assert cfg.ocr_confidence_threshold == 0.7
+    assert cfg.ytdlp_timeout_seconds == 7200.0
+    assert cfg.ffmpeg_timeout_seconds == 120.0
     assert cfg.log_level == "DEBUG"
     assert cfg.data_dir == Path("C:/tmp/data")
     assert cfg.raw_dir == Path("C:/tmp/data/raw")
