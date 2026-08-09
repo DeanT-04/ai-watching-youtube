@@ -120,8 +120,11 @@ are not fabricated — each will be re-run when connectivity returns:
   mocked. **Real-world sanity check (one URL from `yt-urls.txt`) blocked by a
   network outage during the build (github.com + www.youtube.com both
   unreachable); to be re-run when connectivity returns — see "Pending checks".**
-- Phase 3 — Audio transcription: not started.
-- Phase 3 — Audio transcription: not started.
+- **Phase 3 — Audio transcription: done (unit tier)** — `transcribe()` wraps
+  faster-whisper (CPU + int8, model size / device / compute type / language all
+  config-driven); returns timestamped segments; 100% coverage with the Whisper
+  call fully faked. Real inference is exercised only via the integration tier /
+  Phase 9 e2e run (pending connectivity).
 - Phase 4 — Keyframe selection: not started.
 - Phase 5 — Crop & preprocessing: not started.
 - Phase 6 — OCR ensemble: not started.
