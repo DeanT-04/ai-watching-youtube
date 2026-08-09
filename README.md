@@ -83,12 +83,19 @@ Default run (mocked, no network, no real binaries — this is the coverage gate)
 .venv\Scripts\python.exe -m pytest --cov=src --cov-report=term-missing --cov-fail-under=100
 ```
 
-Manual integration tests (real download / real OCR / real Whisper) are marked
-`@pytest.mark.integration` and excluded from the default run. Run them explicitly with:
+Manual integration tests (real OCR / real Whisper / local synthetic media) are
+marked `@pytest.mark.integration` and excluded from the default run. Run them
+explicitly with:
 
 ```powershell
 .venv\Scripts\python.exe -m pytest -m integration -o addopts=""
 ```
+
+Current integration tier: real tesseract OCR on a rendered-code fixture, and a
+full local-media pipeline run (real cv2 frame extraction + real tesseract OCR +
+real faster-whisper `tiny.en` inference on the cached model + repair + storage
+on synthetic video/audio). The real-YouTube download e2e is still blocked by the
+network outage (see "Pending checks").
 
 Sanity checks against real videos use the URLs in `yt-urls.txt` (three
 hand-picked public tutorials) — the unit-test tier never touches the network.
