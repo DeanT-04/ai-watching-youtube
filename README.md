@@ -129,8 +129,9 @@ are not fabricated — each will be re-run when connectivity returns:
   configurable sample rate) + `select_keyframes()` (pixel-diff/SSIM grouping
   into stable runs, last frame per run kept); selection logic tested with
   synthetic frame arrays, cv2 fully faked; 100% coverage.
-- Phase 5 — Crop & preprocessing: not started.
-- Phase 5 — Crop & preprocessing: not started.
+- **Phase 5 — Crop & preprocessing: done** — `crop_region()` (bounds-checked,
+  config-driven region) + `upscale()` (Lanczos); tested with synthetic images;
+  100% coverage.
 - Phase 6 — OCR ensemble: not started.
 - Phase 7 — Syntax-validated repair: not started.
 - Phase 8 — Local storage layer: not started.
