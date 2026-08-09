@@ -1,9 +1,10 @@
 # Runtime dependencies (pinned top-level; transitive deps are pip-resolved).
-# NOTE: paddleocr + paddlepaddle pins are added here when their install completes
-# (Phase 6 OCR); they are listed in requirements.in only until then.
+# PaddleOCR is pinned to the 2.x line: the engine targets its classic
+# `PaddleOCR(...).ocr(img, cls=True)` API (see src/ytextract/ocr/paddle_engine.py).
+paddleocr==2.7.3
+paddlepaddle==2.6.2
 yt-dlp==2026.7.4
 faster-whisper==1.2.1
 opencv-python-headless==5.0.0.93
-pytesseract==0.3.13
 psutil==7.2.2
 python-dotenv==1.2.2
