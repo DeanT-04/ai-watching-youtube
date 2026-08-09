@@ -1,10 +1,17 @@
 # Runtime dependencies (pinned top-level; transitive deps are pip-resolved).
 # PaddleOCR is pinned to the 2.x line: the engine targets its classic
 # `PaddleOCR(...).ocr(img, cls=True)` API (see src/ytextract/ocr/paddle_engine.py).
+# numpy is pinned <2 because paddlepaddle 2.6.2's compiled extensions use the
+# numpy 1.x C ABI (numpy 2.x raises "module compiled against ABI version ...").
+# opencv-python (not headless) is pinned because paddleocr 2.7.3 hard-requires it.
+# scipy is pinned to 1.13.x because scipy 1.18.0 references the removed numpy
+# `np.long` under numpy 1.26 (paddle 2.6.2 requires numpy < 2).
 paddleocr==2.7.3
 paddlepaddle==2.6.2
+numpy==1.26.4
+scipy==1.13.1
+opencv-python==4.6.0.66
 yt-dlp==2026.7.4
 faster-whisper==1.2.1
-opencv-python-headless==5.0.0.93
 psutil==7.2.2
 python-dotenv==1.2.2
