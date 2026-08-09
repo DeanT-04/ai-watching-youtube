@@ -119,9 +119,13 @@ are not fabricated — each will be re-run when connectivity returns:
   → store) against a URL from `yt-urls.txt`, with timing + accuracy noted here.
   `scripts/pending-e2e.sh` automates both (waits for youtube.com, installs the
   pinned paddle versions from the downloaded wheel, runs the checks, logs to
-  the console).
-- Push of the phase branches + main to `origin` (commits are local-only since
-  the outage began).
+  the console). First orchestrator run (build session, 18:13–20:34 local)
+  gave up after youtube.com never became reachable; re-run
+  `bash scripts/pending-e2e.sh` when connectivity returns. Everything that
+  could be verified offline **was** verified: real tesseract OCR, real
+  faster-whisper `tiny.en` inference (cached model), real PaddleOCR inference
+  (2.6.2 + 2.7.3, models cached under `~/.paddleocr`), and a full local-media
+  pipeline run — see "Testing".
 
 ## Status
 
