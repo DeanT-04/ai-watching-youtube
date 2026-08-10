@@ -25,6 +25,7 @@ tests/                unit tier (100% coverage gate, fully mocked) + integration
 data/raw/<id>/        downloaded media (gitignored)
 data/output/<id>/     results: transcript.json + code_blocks.json (gitignored)
 frames/<id>/          sampled frames (tracked; e.g. first 10 min at 1 frame / 5 s)
+results/<id>/         tracked copies of pipeline output for review (RUN.md + JSON)
 scripts/pending-e2e.sh  re-runs the real-network checks when connectivity returns
 ```
 
@@ -128,6 +129,14 @@ Scratch (Full Code), Part 2", 82.5 min, uploader Mr. CapFree):
   751 segments / `en` ~9 min → 166 keyframes from 248 sampled frames ~13 min →
   OCR (PaddleOCR+Tesseract ensemble) over all 166 keyframes ~32 min → validate
   → save to `data/output/aDWDJrACs7s/`.
+- **Crop-enabled re-run (2026-08-10, same URL, `YTEXTRACT_CROP=0,90,1382,380`,
+  ~39 min):** code-carrying blocks went from ~0% to **64% (104/162)** —
+  the MQL5 file header (`#property copyright "Mr CapFree"` …) and the
+  `SymbolInformation` struct are readable in the 3:43–8:43 window. Remaining
+  noise: glued line numbers, per-field fragmentation, `O/l/1` confusions.
+  Tracked copies for review: `results/aDWDJrACs7s/` (+ matching frames in
+  `frames/aDWDJrACs7s/`). 0/162 blocks parse as Python — the validator is
+  Python-only by design and this video is MQL5.
 - **Rough accuracy impression (honest):** transcript quality is high (clean,
   coherent English). Code extraction with the *default* (no crop) is poor —
   0/165 non-empty blocks parse as Python, because (a) the video is MQL5

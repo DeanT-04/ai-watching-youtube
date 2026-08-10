@@ -1,0 +1,2143 @@
+{
+  "video_id": "aDWDJrACs7s",
+  "blocks": [
+    {
+      "timestamp": 0.0,
+      "text": "eae ee 2\ngee Artin eo q =",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid syntax (line 1, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 20.0,
+      "text": "C\nmql5.com/en/market/product/66317?source=External#description\nDiscord\nEAs\ni.YouTubeVideoDo...\nAR Ivermectin Combine...\nActivating your Digi...\nDigiDApplication\nFree Demo\nFeatures:\nDemo downloaded:\n13 398\nOne Chart Setup: you only need one chart to trade all symbols\n-Multiple currency pairs support\nPublished:\n19August 2021\nSolid backtest and live performance\nCurrent version:\n4.59\n-Noneed to adjust GMT\nVery easy to use:just read 3 lines of instructions below\nMuch cheaper than available high-quality alternatives\nMore from author\nHow toinstall",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "invalid decimal literal (line 16, column 2)"
+        }
+      ]
+    },
+    {
+      "timestamp": 40.0,
+      "text": "7 = . \\ Se . —s",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "cannot assign to literal (line 1, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 60.0,
+      "text": "2 ee *\n~— _ =\n+ o a LS >",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 2,
+          "message": "invalid character '—' (U+2014) (line 2, column 2)"
+        }
+      ]
+    },
+    {
+      "timestamp": 80.0,
+      "text": "=~\n: | Le : i",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid syntax (line 1, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 100.0,
+      "text": "a\n\\ See ,_——\n: ¥ 5 | ,",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 2,
+          "message": "unexpected character after line continuation character (line 2, column 2)"
+        }
+      ]
+    },
+    {
+      "timestamp": 120.0,
+      "text": "",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "timestamp": 140.0,
+      "text": "=\\ Sek = ~~\n44\nJ & re hs 4",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid syntax (line 1, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 160.0,
+      "text": "",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "timestamp": 180.0,
+      "text": "WAKA\nTime\nIn\n03:00\n3d3h\nWAKA\n03:00\n3d3h\n3d3h\n03:30\nExpected lot 0.01\n03:30\n3d3h\nCurrencypairs\n15:30\n3d15h\nLeverage:\n1:500\n15:30\n3d15h\nLots opened:0.00\n00:45\n4dOh\nFloating PnL:0.00\n01:00\n4d1h\n* bag\n. ‘ %\né ; ‘",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (line 4, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 200.0,
+      "text": "Compile\nHistory\nDeepSeek EA\nHigh Frequency EA\nMulti-TF Momentum\nP Scalping EA\n2 _ : ja Vv Vv Vv\neg zis\n%\nPN Scalping EA |\nGen) GRalint-= FA Deceficcn ff",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 11,
+          "message": "unmatched ')' (line 11, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 220.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5\n1//+\n2//l\nWakaWaka by MrCapFree.mq5\n3//\nMr CapFree\n4//1\nhttps://www.MrCapFree.com\n5//+\n6 #property copyright\n\"Mr CapFree!\n7#property link\n\"https://www.MrCapFree.com\"\n8#property version\n\"1.00\"\nP DeepSeek EA\n9//+\nHigh Frequency EA\n10//| Expert initialization function\n11//+-\nP Multi-TF Momentum\n12 int OnInit()\nScalping EA\n13\n{\nun \\| 1 fife ae eee Se ae es ee SS ee\n| | > ~ BE Multi-TF Momentum a — OnInit() .\nae ee eee ee wan / fon",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unterminated string literal (detected at line 14) (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 240.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n4//1\nhttps://www.MrCapFree.com\n5//+\n6#property copyright \"Mr CapFree'\n7#property link\n\"https://www.MrCapFree.com\"\n8#property version\n\"1.00\"\n9\n10\n11int OnInit() {\nDeepSeek EA\n12\nHigh Frequency EA\n13\n14\nMulti-TF Momentum\n15\nreturn(INIT_SUCCEEDED);\nP Scalping EA\n16\n177\nWakaWaka by MrCapFree.mq5 * *\n4//| https: //www.MrCapFree.com |\n5 / /+---------------------------- +--+ +--+ - 2-2 == == += ----------------4\n6#property copyright “Mr CapFree\"\n’ 7 #property link \"https: //www.MrCapFree.com\"\n8 #property version \"1.66\"\n; | 2 11 int OnInit() {\nPoE Bm Seedecem CA Denfieen 17}",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 30,
+          "message": "invalid character '’' (U+2019) (line 30, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 260.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5 *\n1//+\n2//\nWakaWakaby MrCapFree.mq5\n3//1\nMr CapFree\n4//1\nhttps://www.MrCapFree.com\n5//+\n6#property copyright\n\"Mr CapFree\n7#property link\n\"https://www.MrCapFree.com\"\n8#property version\n\"1.00\"\nDeepSeek EA\n9#property strict\nHigh Frequency EA\n10#property description \"Waka Waka EA\"\n11\nMulti-TF Momentum\n12\nScalping EA\n13\n14\n: rt Ll / [$a wewins ccs scesecsscccsssessenscecccencescsssnscssssccsesessenscessc}\n7 ae ee ee",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unterminated string literal (detected at line 14) (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 280.0,
+      "text": "Compile\n: History\nRe\nWakaWaka by MrCapFree.mq5 *\n1//+\n2//|\nWakaWakaby MrCapFree.mq5\n3//l\nMr CapFree\n4//|\nhttps://www.MrCapFree.com\n5//+\n6 #property copyright.\n\"Mr CapFree\n7 #property link\n\"https://www.MrCapFree. com\"\n8#property version\n\"1.00\"\n5 MakeEqual TPSL.mq5\n9#property strict\n5 Open Position.mq5\n10#property description \"Waka Waka EA\"\n11\n5 Starting Template.mq5\n12 #include <Trade\\Trade.mqh>\n5TimeRange with Filters.mq5\n13\nCTrade\nTrade;\n14\nnosInfo\n1 / /+---------------- ~~~ -------- 2-22-22 22222222222 22222222 e 22-4\n4 DA fee cancensecsenesscesesqnsasepsqssssessessedessasesouseadancatearces",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unterminated string literal (detected at line 14) (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 340.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *\n1//\n2//|\nWakaWaka by MrCapFree.mq5\n3//\nMr CapFreeo\n4//|\nhttps://www.MrCapFree.com\n5//+\n6#property copyright\n\"Mr CapFree'\n7 #property link\n\"https://www.MrCapFree. com\"\n8#property version\n\"1.00\"\nOpenCL\n9 #property strict\nPanels\n10#property description \"Waka Waka EA\"\n11\nStrings\n12 #include <Trade\\Trade.mqh>\nTools\n13\nCTrade\nTrade;\n14\ncPositionTnfo\nnosInfo\nMl ffs o Soe cos ece kis tones ese csee sews esse doeseseessesscesdesseseesewessess$\n. See ee ee eee\n> ~ BB Openct 9#property strict",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unterminated string literal (detected at line 14) (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 380.0,
+      "text": "Algo Trading\n+\nNew Order\nM1\nM5\nM15 M30\nEURUSDH1:Euro vs US Dollar\nVaka Waka byMr.CapFree:www.youtube.com/@MrCapFree)\nTime In\nCurrencyImpact\nNews Event\nWAKA\n22:13\n2d10h\nCAD\nMed\nBoC SeniorDeputy GovernprPogers Speech\n18:00\n3d 6h\nCAD\nWAKA\nBudget Batance\n00\n3d 6h\nCAD\nLOW\nBudget Balance\nExpected lot0.01\n3d.1gh\nAUD\nMed\nCFTCAUD Non\nstions\n3d10h\nCAD\nLow\nCFTC CAD\nLeverage\n1:500\nFCommercialNet\nNZD\nLOW\nLots opened:0.00\n00\nNZD\nContidence\nLow\nANZBusiness\nFloating PnL: 0.00\n03:00\n6d.15h\nNZD\nLow\nANZ Activity Putlook\nSymbols\nComment:\nWaka Waka\n03:30\n6d15h\nAUD\nLOW\nRBAHo\nMT.offset\n+3Updated)\n03:30\n6d15h\nAUD\nLOW\nSector Credit m/m\nound:10\nLabel\nLabe\nLabel\nLabel\nLabell\nNavigator\n13m\nLabe\nLabe\nLabel\nLabel\nLabell\nLabe\nLabel\nLabel\nLabe\nMulti-TF Momentum\nLabe\nLabel\nLabe\nLabel\nLabel\nLabel\nLabe\nFabel\nScalping EA\nV.\nscalping propfirn\ncg ——o oo 0» EE Eeeeeeeeeawawaaawa0 =m Ss —mes\n* r — $ bed EvRUSD,H1: Euro vs US Dollar",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched ')' (line 8, column 50)"
+        }
+      ]
+    },
+    {
+      "timestamp": 400.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n4//1\nhttps://www.MrCapFree.com\n5//+\n6#property copyright \"Mr CapFree'\n7 #property link\n\"https://www.MrCapFree.com\"\n8 #property version.\n\"1.00\"\n9 #property strict.\n10#property description \"Waka Waka EA'\n11\nOpenCL\n12 #include <Trade\\Trade.mqh>\nPanels\n13\ncTrade\nTrade;\n14\ncPositionInfo\nposInfo;\nStrings\n15\nordInfo;\ncOrderInfo\nTools\n16\n17\nr",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 440.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n17\nenum LotsizingEnum\n18\nLowRiskPreset = 5.\n//Low Risk Set 20% annual (0.25% load)\n19\nMidRiskPreset = 4,\n//Mid Risk Set 40% annual (0.5% load)\n20\nHighRiskPreset = 3,\n//Significant Risk Set 80% annual (1.0%\n21\nExtremeRiskPreset = 7,\n//High Risk Set 120% annual (1.5% load)\n22\nLotsEquity = 2,\n//Dynamic Lot based on Equity\n23\nLotsBalance = 1,\n//Dynamic Lot based on Balance\n24\nLotsDepositLoad = 6,\n//Lots based on Deposit load\nOpenCL\n25\nFixedLots = 0\n//Fixed Lot\nPanels\n26\n};\n27\nStrings\n28\nenum A11owBuySe11Enum {\nTools\nAllowSell2 = 2,\n29\n//Sel1 only\n30\nA1lowBuv1\n/Buy only",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 35,
+          "message": "closing parenthesis '}' does not match opening parenthesis '(' on line 16 (line 35, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 460.0,
+      "text": "",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "timestamp": 480.0,
+      "text": "Compile\nE> History\nJX\nRe\nWakaWaka by MrCapFree.mq5 *X\n23\nLotsBalance = 1,\n//Dynamic Lot based on Balance\n24\nLotsDepositLoad = 6,\n//Lots based on Deposit load\n25\nFixedLots = 0\n//Fixed Lot\n26\n};\n27\n28\nenum A11owBuySe11Enum {\n29\n//Sell only\nAllowSell2 = 2,\n30\nAllowBuy1 = 1,\n//Buy only\nP OpenCL\n31\nAllowBuySell = 0\n//Buy and Sel1\n32\nPanels\n};\n33\nStrings\n34\nenum eMaxDrawdownAction {\nTools\n35\nIgnoreNewUnti1Restart = 3,\n//Prohibit opening new grids until resta\n36",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "unmatched '}' (line 16, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 520.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n44\n};\n45\n46\nstruct SymbolInformation\n47\nstring\nSymbolName;\n48\ndatetime\nLastMainTFUpdate;\n49\nLastoPotFUpdate;\ndatetime\n50\nint\nUpdateCounter;\n1111515\nboo1\nCanBuy;\nOpenCL\nboo1\nCanSell;\nPanels\ndatetime\nCurrentBarTime;\ndatetime\nPreviousBarTime;\nStrings\ndouble\nclosePrice;\nTools\n56\nboo1\nGridOpened;\nbool",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 560.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n44\n};\n45\n46\nstruct SymbolInformation\n47\nstring\nSymbo1Name;\n48\ndatetime\nLastMainTFUpdate;\n49\ndatetime\nLastoPotFUpdate;\n50\nint\nUpdateCounter;\nCanBuy;\n51\nbool\nOpenCL\n52\nboo1\nCanSell;\nPanels\n53\ndatetime\nCurrentBarTime;\n54\ndatetime\nPreviousBarTime;\nStrings\n55\ndouble\nclosePrice;\nTools\n56\nboo1\nGridOpened;\nbool\n“ior » i hs",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 580.0,
+      "text": "Compile\nRe\nWakaWaka by MrCapFree.mq5 * X\n44\n};\n45\n46\nstruct SymbolInformation\n47\nstring\nSymbo1Name;\n48\ndatetime\nLastMainTFUpdate;\n49\nLastOPoTFUpdate;\ndatetime\n50\nint\nUpdateCounter;\nbool\nCanBuy;\nOpenCL\nboo1\nCanSell;\nPanels\ndatetime\nCurrentBarTime;\ndatetime\nPreviousBarTime;\n1 Strings\ndouble\nClosePrice;\nTools\n56\nboo1\nGridOpened;\nbool",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "unmatched '}' (line 5, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 600.0,
+      "text": "JX\nCancel\nHistory\nCompile\nthe currently open fille,F\nWakaWaka by MrCapFree.mq5\n66\nboo1\nPreviousDayTradingAllowed;\n67\nint\nLastDayOfWeek;\n68\ndouble\nMaxGridLotMultiplier;\n69\ndouble\nLastBuyAvgPrice;\n70\ndouble\nLastSe1lAvgPrice;\ndouble\nLastBuyTP;\n71\n72\ndouble\nLastSelltp;\n73\ndatetime\nLastBuyGridTime;\nOpenCL\n74\ndatetime\nLastSellGridTime;\n75\n};\nPanels\n76\nStrings\n77 input group\n>>>.\nSelect the risk settings\n==>>>>\"\nPTools\n78\n79\ninput\nbool\nAllowOneningNewGrid",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 36,
+          "message": "unmatched '}' (line 36, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 620.0,
+      "text": "Algo Trading\n+New Order\nM1\nM5\nM15 M30\nEURUSDH1:Euro vs US Dolar\nVaka Waka by Mr.CapFree:www.youtube.com/@MrCapFree)\nWAKA\nTime In\nCurrencylmpact News Event\n22:13\n2d10h\nCAD\nMed\nBoC Senior Deputy GovernorPogers Speech\nWAKA\n18:00\n3d6h\nCAD\nLow\nBudget Balance\n:00\n8d6h\nCAD\nLoW\nBudget BalangeFisco\nExpected lot0.01\n3d10h\nAUD\nMed\n3d10h\nCAD\n1:500\nLow\nLeverage\n3d.10h\nNZD\nLOw\nLots opened:0.00\n6d.15h\nNZD\nLow\nFloating PnL0.00\n03:00\n6d15h\nNZD\nANZActivitOutlook\nWaka Waka\nLow\nSymbols\nComment:\n03:30\n6d15h\nAUD\nLOW\nGMToffset\n+3Updated\n03:30\n6d15h\nAUD\nLOW\nBRA\nvate Sector Credit m/m\nnts fpund:10\nLabe\nLabe\nLabel\nLabel\nabel\nNavigator\nextentin8h 9m\nx\nLabe\nLabe\nLabel\nLabe\nLabe\nLabel\nLabel\nLabe\nLabel\nTimeRange\nLabel\nLabel\nLabel\nLabe\nLabel Label\nLabel\nLabel\nLabel\nWakaWaka by MrCap\nwakaWaka by M\nRn . ee, eee\n<—_\" 3 bed EvVRUSD, H1: Euro vs US Dollar\nAS ( =",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched ')' (line 7, column 51)"
+        }
+      ]
+    },
+    {
+      "timestamp": 640.0,
+      "text": "Algo Trading\n+\nNew Order\nM1\nM5\nM15M30\nEURUSDH1Euro vs US Dollar\nVaka Waka byMr.CapFree:www.youtube.com/@MrCapFree)\nTime In\nCurrencylmpact News Event\nWAKA\n22:13\n2d10h\nCAD\nMed\nBoC Senior Deputy Governor Rogers Speech\nWAKA\n18:00\n3d 6h\nCAD\nLow\nBudget Balance\nCAD\n:00\n8d6h\nLow\nExpected lot0.01\n3d.1gh\nMed\nAUD\n3d10h\nCAD\nLow\nLeverage\n1:500\nNZD\nLOW\nLots opened:0.00\n00\nNZD\nLOw\nFloating PnL0.00\n03:00\n6d.15h\nNZD\nANZ ActivtOutlook\nWaka Waka\nLow\nSymbols\nComment:\n03:30\n6d15h\nAUD\nLOW\nRBA Hotsing Credit m/m\nGMToffset\n+3Updated\n03:30\n6d15h\nAUD\nLOW\nRBA\nvate Sector Credit m/m\nntsfpund:10\nLabel\nLabe\nLabel\nLabel\nLabel\nNavigator\nHextntin8h 8m\nX\nLabe\nLabe\nLabel\nLabe\nLabel\nLabel\nLabe\nLabel\nLabe\nTimeRange\nLabel\nLabe\nLabel\nLabe\nLabe\nLabel Label\nLabel\nLabel\nLabel\nWakaWaka by MrCap\n. wWakaWaka by MI\nor ooo ooo aaa a a ooo ss — —oe—o™n—«—oaoanmamaenwmwmwmwmnmaa>»\na — hed EURUSD, H1: Euro vs US Dollar",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched ')' (line 8, column 50)"
+        }
+      ]
+    },
+    {
+      "timestamp": 680.0,
+      "text": "TX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5\nX\n73\ndatetime\nLastBuyGridTime;\n74\ndatetime\nLastSellgridTime;\n75\n};\n76\n77 input group\n== Select the risk settings ========>>>>\"\n78\n79\ninput\nbool\nA1lowOpeningNewGrid\ntrue\n//A\n80\ninput\nLotSizingEnum\nLotSizingMethod\n5\n:\n//L\nPOpenCL\n81\ninput\ndouble\nLotSizingValueFixed\n0.01\n//F\n:\n82\ninput\ndouble\nLotSizingValueDynamic\nPanels\n10000\n//D\n83\ninput\ndouble\nLotSizingDepositLoadPercent\n0.25\n//D\nStrings\n84\ninput\nboo1\nFixedInitialDeposit\nfalse\n//F\nTools\n85\ninput\ndouble\nMaximumLot\n100\n//M\n=\n86\ninput\nboo1\nAutoSplit",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unmatched '}' (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 700.0,
+      "text": ": ‘ mY |\nG t <o ( r, me _—",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid character '‘' (U+2018) (line 1, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 720.0,
+      "text": "i — onl yh ¥d\nte ~~ jae Ss .\n— (76 ?\na |\n4 @ gy\n' ° >.\n| \" me 2",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid character '—' (U+2014) (line 1, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 740.0,
+      "text": "TX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5\nX\n73\ndatetime\nLastBuyGridTime;\n74\ndatetime\nLastSellGridTime;\n75\n};\n76\n77 input group.\n>>>\n== Select the risk settings ========>>>>\"\n78\n79\ninput\nbool\nA11owOpeningNewGrid\ntrue\n//A\n80\ninput\nLotSizingEnum\nLotSizingMethod\n5\n:\n//L\nOpenCL\n81\ninput\ndouble\nLotSizingValueFixed\n0.01\n//F\n82\ninput\ndouble\nLotSizingValueDynamic\nPanels\n10000\n//D\n83\ninput\ndouble\nLotSizingDepositLoadPercent\n0.25\n//D\nI Strings\n84\ninput\nboo1\nFixedInitialDeposit\nfalse\n//F\n-\nTools\n85\ninput\ndouble\nMaximumLot\n100\n//M\n86\ninput\nboo1\nAutoSnlit\nFals\nA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unmatched '}' (line 14, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 760.0,
+      "text": "om\nWakaWaka by MrCapFree.mq5\nX\n73\ndatetime\nLastBuyGridTi\n74\ndatetime\nLastSellGridT\n75\n};\n76\n77input group\n>>\nSelect the\n78\n79\ninput\nboo1\n80\ninput\nLotSizingEnum\n81\ninput\ndouble\n82\ninput\ndouble\n83\ninput\ndouble\n84\ninput\nbool\nE\n85\ninput\ndouble\nM\n86\nbool\n* = : ay",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 11,
+          "message": "unmatched '}' (line 11, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 780.0,
+      "text": "JX\ncom\nWakaWaka by MrCapFree.mq5\nX\n73\ndatetime\nLastBuyGridTi\n74\ndatetime\nLastSellGridT\n75\n};\n76\n77input group\n>>>\nSelect the\n78\n79\ninput\nboo1\n4\n80\ninput\nLotSizingEnum\n81\ninput\ndouble\n82\ninput\ndouble\n83\ninput\ndouble\n84\ninput\nbool\n85\ninput\ndouble\nM\n86\ninput\nbool",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 12,
+          "message": "unmatched '}' (line 12, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 840.0,
+      "text": "JX\nCompile\n0\nHistory\nRe\nO\nWakaWaka by MrCapFree.mq5\nX\n73\ndatetime\nLastBuyGridTime;\n74\ndatetime\nLastSellgridTime;\n75\n};\n76\n77 input group\n= Select the risk settings ===-====>>>>\"\n78\n79\ninput\nboo1\nAllowOpeningNewGrid\ntrue\n//A\n80\ninput\nLotSizingEnum\nLotSizingMethod\n5\n:\n//L\nOpenCL\n81\ninput\ndouble\nLotSizingValueFixed\n0.01\n//F\n:\n82\ninput\ndouble\nLotSizingValueDynamic\nPanels\n10000\n//D\n83\ninput\ndouble\nLotSizingDepositLoadPercent\n0.25\n//D\nI Strings\n84\ninput\nbool\nFixedInitialDeposit\nfalse\n//F\n-\nTools\n85\ninput\ndouble\nMaximumLot\n100\n//M\n-\n86\ninnut\nbool\nAutoSplit",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "unmatched '}' (line 16, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 860.0,
+      "text": "Compile\nED\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5 X\n76\n77 input group \"<<<=\n-= Select the risk settings\n78\n79\ninput\nbool\nA11owOpeningNewGrid\ntrue\n//A\nLotSizingEnum\n80\ninput\nLotSizingMethod\n5.\n//L\n81\ninput\ndouble\nLotSizingValueFixed\n0.01\n1/F\n82\ninput\ndouble\nLotSizingValueDynamic\n10000\n//D\n83\ninput\ndouble\nLotSizingDepositLoadPercent\n0.25\n//D\nOpenCL\n84\ninput\nbool\nFixedInitialDeposit\nfalse\n//F\nPanels\n85\ninput\ndouble\nMaximumLot\n100\n//M\n86\ninput\nbool\nAutoSplit\nfalse ;\n=\n//A\nStrings\n87\ninput\ndouble\nMaximumSpread\n10\n//M\n:\nTools\n88\ninput\nint\nMaximumslippage\n=\n10\n//M\n:\n89\ninput\nint\nMaximumSwmbol\n/M",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unterminated string literal (detected at line 8) (line 8, column 16)"
+        }
+      ]
+    },
+    {
+      "timestamp": 880.0,
+      "text": "JX\nCompile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n85\ninput\ndouble\nMaximumLot\n100\n1/M\n86\ninput\nboo1\nAutoSplit\nfalse ;\n//A\n87\ninput\ndouble\n88\ninput\nint\n89\nint\ninput\n90\ninput\nboo1\nWAKA\nWAK\n91\ninput\nbool\n92\ninput\nAllowBuySel1Enum\nOpenCL\n93\ninput\ndouble\nPanels\n94\ninput\ndouble\n95\ninput\ndouble\nI Strings\n96\ninput\neMaxDrawdownAction\nTools\n97\ninput\neDrawdownCalculation\n98\na ae OR",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 900.0,
+      "text": "JX.\nCom\nWakaWaka by MrCapFree.mq5 * X\n85\ninput\ndouble\nM\n86\ninput\nboo1\n4\n87\ninput\ndouble\nM\n88\ninput\nint\nM\n89\ninput\nint\nM\n90\ninput\nboo1\n4\n91\ninput\nboo1\n4\n92\ninput\nA1lowBuySe11Enum\n4\n93\ninput\ndouble\nM\n94\ninput\ndouble\nM\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\nM\n97\ninput\neDrawdowncalculation\nD\n98",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid syntax (line 1, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 940.0,
+      "text": "JX\nCompile\no\nRe\nWakaWaka by MrCapFree.mq5 * X\n93\ninput\ndouble\nMinimumFreeMargin\n0\n//M\n:\n94\ninput\ndouble\nMaximumDrawdown\n100\n1/M\n95\ninput\ndouble\nMaximumDrawdownMoney\n0\n//M\n:\n96\ninput\neMaxDrawdownAction\nMaximumDrawdownAction\n0\n//M\n=\n:\n97\ninput\neDrawdownCalculation\nDrawdownCalculation\n1\n//M\n=\n:\n98\n99input group\n\"<<<===== Select the strategy settings and symbols used\n=====>>>\"\n100\nOpenCL\n101\ninput\nstring\nSymbols\n\"AUDNZD, AUDCAD, NZDCAD\n=\n102\ninput\nint\nHourToStartTrading\nPanels\n0\n:\n103\ninput\nint\nHourToStopTrading\n=\n23\nStrings\n..\n104\ninput\nint\nBollingerBandsPeriod\n=\n35\n:\nTools\n105\ninput\nint\nRSI_Period\n=\n20\n:\n106\ninput\nint\nRSt Value\n15",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 44,
+          "message": "unterminated string literal (detected at line 44) (line 44, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 980.0,
+      "text": "TX\nCom\nWakaWaka by MrCapFree.mq5 * X\n93\ninput\ndouble\nM\n94\ninput\ndouble\nM\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\nM\nL6\ninput\neDrawdownCalculation\nD\n98\n99input group\n\"<<<===== Select the stra\n100\n101\ninput\nstring\nSIIB\n102\ninput\nint\n103\ninput\nint\n104\ninput\nint\n105\ninput\nint\n106\ninput\nint\n4 ; pS",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 26,
+          "message": "unterminated string literal (detected at line 26) (line 26, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1000.0,
+      "text": "JX\nCom\nWakaWaka by MrCapFree.mq5 * X\n93\ninput\ndouble\nM\n94\ninput\ndouble\nM\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\nM\n97\ninput\neDrawdownCalculation\nD\n98\n99input group\n\"<<<===== Select the stra\n100\n101\ninput\nstring\n102\ninput\nint\n103\ninput\nint\n104\nint\ninput\n105\ninput\nint\ninput\nint\n106\na son es Pe\n\\ - a",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 26,
+          "message": "unterminated string literal (detected at line 26) (line 26, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1040.0,
+      "text": "JX\nCom\nWakaWaka by MrCapFree.mq5 *X\n93\ninput\ndouble\nM\n94\ninput\ndouble\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\n97\ninput\neDrawdownCalculation\nD\n98\n99input group\n\"<<<===== Select the stra\n100\n101\ninput\nstring\n102\ninput\nint\n103\ninput\nint\n104\ninput\nint\n105\ninput\nint\n106\ninput\nint\n, ~\\ 10¢\n— . 5 2) rh >I + F - >)",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 24,
+          "message": "unterminated string literal (detected at line 24) (line 24, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1060.0,
+      "text": "JX\nCom\nWakaWaka by MrCapFree.mq5* X\n93\ninput\ndouble\nM\n94\ninput\ndouble\nM\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\nM\n97\ninput\neDrawdownCalculation\nD\n98\n99input group\n\"<<<===== Select the stra\n100\n101\ninput\nstring\nSII\n102\ninput\nint\n103\ninput\nint\n104\ninput\nint\n105\ninput\nint\ninput\nint\n106\n. “ : “~' A 180",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 26,
+          "message": "unterminated string literal (detected at line 26) (line 26, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1080.0,
+      "text": "Com\nWakaWaka by MrCapFree.mq5 *X\n93\ninput\ndouble\nM\n94\ninput\ndouble\nM\n95\ninput\ndouble\nM\n96\ninput\neMaxDrawdownAction\nM\n97\ninput\neDrawdownCalculation\nD\n98\n99input group\n\"<<<===== Select the stra\n100\n101\ninput\nstring\n102\ninput\nint\n103\ninput\nint\n104\ninput\nint\n105\ninput\nint\n106\ninput\nint\n‘ - j1c¢",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 25,
+          "message": "unterminated string literal (detected at line 25) (line 25, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1100.0,
+      "text": "JX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5* X\n99 input group \"<<<===\nSelect the strategy settings and symbols used =-=-=>>>\"\n100\n101\ninput\nstring\nSymbols\n\"AUDNZD, AUDCAD, NZDCAD\n102\ninput\nint\nHourToStartTrading\n0\n103\ninput\nint\nHourToStopTrading\n23\n:\n104\ninput\nint\nBollingerBandsPeriod\n35\n5.\n105\ninput\nint\nRSI_Period\n=\n20\n:\n106\ninput\nint\nRSI. Value\n15\n:.\nOpenCL\n107\nPanels\n109\nStrings\n110\ninput\ndouble\nInitialtp\n10\n//Ta\nTools\n111\ninput\nbool\nWeightedTP\ntrue\n1/W\n112\ninnut\ndouble\nGridte\n0",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unterminated string literal (detected at line 6) (line 6, column 16)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1120.0,
+      "text": "com\nWakaWaka by MrCapFree.mq5 * X\n109\n110\ninput\ndouble\n111\ninput\nboo1\n112\ninput\ndouble\n113\ninput\nint\n114\ninput\nboo1\n115\ninput\nbool\n116\ninput\nENUM_TIMEFRAMES\n117\ninput\nbool\n118\ninput\nboo1\n119\n120input group\n=>>>.\n-== Select SL sett\n121\n132\ninput\ndouble\n~ .\n. WakaWaka by MrCapFree.mq5 * * Pe\n“ / 199\n6 “ . band\ni ave 419",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 41,
+          "message": "invalid character '“' (U+201C) (line 41, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1180.0,
+      "text": "TX\nCompile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n112\ninput\ndouble\nGridTP\n0\n//T\n:\n113\ninput\nint\nBreakEvenAfterThisLevel\n0\n:\n//B\n114\ninput\nboo1\nHideTP\nfalse\n//H\n115\ninput\nbool\nUse_OPO_Method\nfalse\n//U\n116\ninput\nENUM_TIMEFRAMES\nOPO_TimeFrame\n15\n//T\n:\n117\ninput\nbool\nSmartTP\nfalse\n//S\ninput\nbool\nfalse\n118\nDoNotAdjustTPUn1essNewGrid\n=\n//D\n119\nP OpenCL\n120 input group\n\"<<<===== Select SL settings =====>>>\"\nPanels\n121\n122\ninput\ndouble\nGridSL\n0\n//S\n=\n:\nStrings\n123\ninput\nboo1\nHideSL\nfalse ;\n//H\n=\nTools\n124\n125 innut",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1200.0,
+      "text": "",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "timestamp": 1220.0,
+      "text": "ra’ J) we 2 ve\ny “3 } nf",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 1,
+          "message": "invalid character '’' (U+2019) (line 1, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1240.0,
+      "text": "JX\ncom\nWakaWaka by MrCapFree.mq5 *\n112\ninput\ndouble\nG\n113\ninput\nint\n114\ninput\nboo1\nH\n115\ninput\nbool\n116\ninput\nENUM_TIMEFRAMES\n117\ninput\nboo1\nS\n118\ninput\nbool\n119\n120input group\n\"<<<===== Select SL sett\n121\n122\ninput\ndouble\nG\n123\ninput\nboo1\nH\n124\n; : | a 421",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 30,
+          "message": "unterminated string literal (detected at line 30) (line 30, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1280.0,
+      "text": "JX\ncom\nWakaWaka by MrCapFree.mq5 *\n112\ninput\ndouble\nG\n113\ninput\nint\n114\ninput\nboo1\nH\n115\ninput\nbool\n116\ninput\nENUM_TIMEFRAMES\nO\n117\ninput\nboo1\nS\n118\ninput\nboo1\n119\n120input group\n\"<<<===== Select SL sett\n121\n122\ninput\ndouble\nG\n123\ninput\nbool\nH\n124",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 31,
+          "message": "unterminated string literal (detected at line 31) (line 31, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1300.0,
+      "text": "Compile\nD\nHistory\nRe\nWakaWaka by MrCapFree.mq5* X\ninput\nbool\nfalse ;\n118\nDoNotAdjustTPUn1essNewGrid\n=\n//D\n119\n120 input group\n\"<<<===== Select SL settings =====>>>\"\n121\n122\ninput\ndouble\nGridSL\n0\n//S\n:\n123\ninput\nbool\nHidesL\nfalse ;\n//H\n124\n125 input group\n\"<<<===s= Adjust the grid distance and multipliers ===-=>>>\"\nOpenCL\n126\n127\ninput\nint\nTradeDistance\n35\n//T\nPanels\n128\ninput\nboo1\nSmartDistance\n=\ntrue\n//S\nStrings\n129\ninput\ndouble\nTradeMultiplier_2nd\n1\n//2\n=\n:\nTools\n130\ninput\ndouble\nTradeMultiplier_3rd\n2\n//3\n=\n:\n131\ninnut\ndouble\n1/6",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "invalid syntax (line 5, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1340.0,
+      "text": "JX\nCompile\nRe\nO\nWakaWaka by MrCapFree.mg5 * X\n128\ninput\nboo1\nSmartDistance\ntrue\nI/S\n129\ninput\ndouble\nTradeMultiplier_2nd\n1\n//2\n-\n:\n130\ninput\ndouble\nTradeMultiplier_3rd\n2\n//3\n:\n131\n1.5\ninput\ndouble\nTradeMultiplier_6th\n//6\n132\ninput\nint\nMaximumTrades\n9\n//M\n:\n133\ninput\nint\nGridLevelToStart\n1\n//G\n=\n:\n134\ninput\nboo1\nKeepOriginalProfitLotSize\nfalse ;\n//K\n135\nPOpenCL\n136input group \"<<<===-= Change the comment and UID if needed ===-=>>>\"\nPanels\n137\n138\ninput\nstring\nTradeComment\n\"Waka Waka by Mr. Cap\n=\nStrings\n139\ninput\nint\nUID\n0\n;\n//U\nI Tools\n140\ninput\nboo1\nShowPanel\ntrue\n//S\n=\n141",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 63,
+          "message": "unterminated string literal (detected at line 63) (line 63, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1360.0,
+      "text": "Compile\nE> History\nJX\nRe\nWakaWaka by MrCapFree.mq5 *\n131\ninput\ndouble\nTradeMultiplier_6th\n1.5\n:\n//6\n132\ninput\nint\nMaximumTrades\n6\n1/M\n:\n133\ninput\nint\nGridLevelToStart\n1\n//G\n:\n134\ninput\nboo1\nKeepOriginalProfitLotSize\nfalse\n//K\n135\n136input group \"<<<==ss= Change the comment and UID if needed =-=s=>>>\"\n137\n138\ninput\nstring\nTradeComment\n\"Waka Waka by Mr. Cap\nOpenCL\ninput\nint\n0 ;\n139\nUID\n//U\n140\ninput\nboo1\nShowPane1\ntrue\n1/S\nPanels\n141\nI Strings\n142//\nGlobal Variables\nTools\n143\nint\nTickcounter\n144",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 40,
+          "message": "unterminated string literal (detected at line 40) (line 40, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1440.0,
+      "text": "Compile\nE> History\nO\nRe\nWakaWaka by MrCapFree.mq5 * X\n140\ninput\nbool\nShowPanel\ntrue\n//S\n:\n141\n142//\nGlobal Variables\n143\n144\nint\nTickCounter\n0;\n145\nENUM_TIMEFRAMES\nMainTimeframe\n= PERIOD_M15;\n146\nSymbolInformation\nSymbolsArray[];\nMagicNumberBase\n= 84570;\n147\nint\nP OpenCL\n148\ndouble\nEpsilon\n= 0.0000001;\n149\nint\nLastUpdateMinute\n= -1;\nPanels\n150\nlong\nLastTimerCheck\n= 0;\nStrings\nint\nCurrentHour\n= 0;\n151\nTools\n= false;\n152\nboo1\nDrawdownTriggered\n153\nint\n0:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "invalid syntax (line 5, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1480.0,
+      "text": "JX\nCompile\no\nHistory\nRe\nWakaWaka by MrCapFree.mq5* X\n146\nSymbolInformation\nSymbolsArray[];\n147\nint\nMagicNumberBase\n= 84570;\n148\nEpsilon\n= 0.0000001;\ndouble\n149\nint\nLastUpdateMinute\n-1;\n=\n150\nlong\nLastTimerCheck\n= 0;\n151\nint\nCurrentHour\n= 0;\n152\nbool\nDrawdownTriggered\n= false;\nint\n153\nDrawdownCooldownHours\n= 0;\nOpenCL\nboo1\n= false;\n154\nStopTradingUnti1Restart\n155\nint\nPanels\nLastProcessedHour\n= -1;\n156\nbool\n= false;\nSymbolsListError\nStrings\n157\ndouble\nInitialBalance\n= 0.0;\nP Tools\nboo1\n= true;\n158\nInitialized\n159",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1500.0,
+      "text": "Algo Trading\n+\nNew Order\nM1\nM5\nM15 M30\nEURUSDH1EurO vS US Dollar\nVaka Waka by Mr.CapFree:www.youtube.com/@MrCapFree)\nTime In\nCurrencylmpact News Event\nWAKA\n22:13\n2d10h\nCAD\nMed\nBoC Senior Deputy Governor Rogers Speech\n18:00\nCAD\nWAKA\n3d 6h\nLow\nBudget Balance\n18:00\nd6h\nCAD\nLOW\nExpected lot0.01\n3d.18h\nAUD\nved\nCFTC AUDNon-Commercial Ne'Po\n3d10h\nCAD\nLow\nLeverage\n1:500\nNZD\nLOW\nLots opened:0.00\n0\nNZD\nLow\nFloating PnL0.00\n03:00\n6d.15h\nNZD\nANZ ActivtyOutlook\nWaka Waka\nLow\nSymbols\nrading4\nComment:\n03:30\n6d15h\nAUD\nLow\nRBA Hotsing Credit m/m\nGMToffset\n+3Updated\n03:30\n6d15h\nAUD\nLOW\nRBA\nrvate Sector Credit m/m\nnts fpund:10\nLabel\nLabe\nLabel\nLabel\nLabel\nNavigator\n57h49m\nLabe\nLabel\nLabel\nLabe\nLaber\nLabe\nLabel\nLabe\nLabe\nLabel\nTimeRange\nLabel\nLabe\nLabel\nLabel\nLabe\nLabel Label\nLabel\nLabel\nLabel\nWakaWaka by MrCap\n.. WakaWaka by Mi\nee\" Fo . £ oer, x ore xp >sesze sw as (sou saan aq\" O_ '\\qaoq sb \"U5 no] waoeomoeeoeoroooss so _q’'”Q\na: te 3S bd EvRUSD, H1: Euro vs US Dollar",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched ')' (line 8, column 51)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1560.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n161\nint handle_Std[];\nint handle_RSI[];\n162\n163\nint handle_ATR96[];\n164\nint handle_ATR672[];\n165\n166\n167\n168int OnInit() {\nOpenCL\n169\n170\nPrint(TradeComment + \" -> Initializing...\");\nPanels\n171\nStrings\n172\nChartSetInteger(0,CHARt_SHOW_GRID,false);\nTools\n173\n174\n2° 168 int OnInit() §\n_ il ChartSetInteger(@,CHART_SHOW_GRID, false);",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 29,
+          "message": "invalid character '°' (U+00B0) (line 29, column 2)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1580.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5* X\n176\nComment(\"Waka Waka by Mr. CapFree: www.youtube.com/@MrCapFree)\");\n177\n178\nDrawdownCooldownHours = 0;\n179\nStopTradingUntilRestart = false;\n180\nDrawdownTriggered = false;\n181\n182\nif(!MQLInfoInteger(MQL_TESTER) && !MQLInfoInteger(MQL_OPTIMIZATION))\n183\nEventSetTimer(5);\nOpenCL\n184\n185\nLastTimerCheck = TimeCurrent();\nPanels\n186\nI Strings\n187\nif(!ParseAndInitializeSymbols())\nTools\n188\n{\n189\nPrint(TradeComment +\n77,\n> ~ BB Openct 134\n>- Strings Tee a ae\nOS pee 129 Print(TradefCommant + \" Error: Failed to initialize cvumhoic\"):",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1600.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n173\n174\nTesterHideIndicators(true);\n175\n176\nComment(\"Waka Waka by Mr. CapFree: www.youtube.com/@MrCapFree)\");\n177\n178\nDrawdownCooldownHours = 0;\n179\nStopTradingUntilRestart = false;\n180\nDrawdownTriggered = false;\nOpenCL\n181\n182\nif(!MQLInfoInteger(MQL_TESTER) && !MQLInfoInteger(MQL_OPTIMIZATION))\nPanels\n183\nEventSetTimer(5);\nStrings\n184\nTools\n185\nLastTimerCheck = TimeCurrent();\n186\ni oo) Bm sea. 126",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 31,
+          "message": "unmatched ')' (line 31, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1620.0,
+      "text": "Compile\nED\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n184\n185\nLastTimerCheck = TimeCurrent();\n186\n187\nif(!ParseAndInitializeSymbols())\n188\nY\n189\nPrint(Tradecomment + \" Error: Failed to initialize symbols\");\n190\nreturn INIT_FAILED;\n191\n{\nOpenCL\n192\n193\nPanels\nArrayResize(handle_MA,\nArraySize(SymbolsArray));\n194\nArrayResize(handle_Std,.\nArraySize(SymbolsArray));\nStrings\n195\nArrayResize(handle_RSI,\nArraySize(SymbolsArray));\n-\nTools\n196\nArrayResize(handle_ATR96\nArraySize(SymbolsArray));\n197",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1660.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n193\nArrayResize(handle_MA,\nArraySize(SymbolsArray));\n194\nArrayResize(handle_Std,\nArraySize(SymbolsArray));\n195\nArrayResize(handle_RSI,\nArraySize(SymbolsArray));\n196\nArrayResize(handle_ATR96,\nArraySize(SymbolsArray));\n197\nArrayResize(handle_ATR672, ArraySize(SymbolsArray));\n198\n199\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\n200\nhandle_MA[i]\n= iMA(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBandsPeri.\nOpenCL\n201\nhandle_Std[i]\n= iStdDev(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBands\nPanels\n202\nhandle_RSI[i]\n= iRsI(SymbolsArray[i].SymbolName, MainTimeframe, RsI_Period, PRIce.\n203\nhandle_ATR96[i] = iATR(SymbolsArray[i].SymbolName, MainTimeframe, 96);\nI Strings\n204\nhandle_ATR672[i]= iATR(Symbo1sArray[i].SymbolName, MainTimeframe, 672);\nI Tools\n205\n206\n- 20e handle MA[i] = iMA(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBandsPeri\nOS pee [0c]!",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 42,
+          "message": "invalid decimal literal (line 42, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1680.0,
+      "text": "JX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n193\nArrayResize(handle_MA,\nArraySize(SymbolsArray));\n194\nArrayResize(handle_Std,\nArraySize(SymbolsArray));\n195\nArrayResize(handle_RSI,\nArraySize(SymbolsArray));\n196\nArrayResize(handle_ATr96,\nArraySize(SymbolsArray));\n197\nArrayResize(hand1e_ATR672, ArraySize(Symbo1sArray));\n198\n199\nfor(int i = 0; i < ArraySize(SymbolsArray); i++) {\n200\nhand1e_MA[i]\n= iMA(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBandsPeri.\nOpenCL\n201\nhandle_Std[i]\n= iStdDev(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBands\n202\nhandle_RsI[i]\nPanels\n= iRsI(SymbolsArray[i].SymbolName, MainTimeframe, RsI_Period, PRIce\n203\nhandle_ATR96[i] = iATR(SymbolsArray[i].SymbolName, MainTimeframe, 96);\nI Strings\n204\nhandle_ATR672[i]= iATR(SymbolsArray[i].SymbolName, MainTimeframe, 672);\nTools\n205\n206\nif(handle mali1\nInvaitd. handie il\nhandlestdri1\nOS pee 906 3£(handle MASI7 -— TNVAI TD HANDIE |! handle ¢Ctdlfijl -—= TNVAITD HANDIE |!",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 45,
+          "message": "invalid character '£' (U+00A3) (line 45, column 13)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1700.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n217\nreturn(INIT_SUCCEEDED);\n218\n219 }\n220\n221\n222void OnDeinit(const int reason) {\n223\n224\nOpenCL\n225 }\nPanels\n226\n227\nI Strings\n228 void OnTick() {\nTools\n229\n230\noe WakaWaka by MrCapFree.mq5 * *\nS 222 void OnDeinit(const int reason) {",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched '}' (line 7, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1720.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n230\n231\n232 }\n233//\n234\n235\n236/*\n237\nSymbol Related Functions\nOpenCL\n238=\nPanels\n239\n240\nStrings\n241\nP Tools\n242\n243\n' Besa | [pon a =o asec asc csaeesasesasssasssssssesssscssscssscesssssscsssssssssssy\ni CU Se ee ee\nSo pee 7A2",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched '}' (line 7, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1760.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *\n281\n282\n283\n284/\n285\nTP and SL\nRelated Functions\n286\n287\n288\nOpenCL\n289\n290\nPanels\n291\nP Strings\n292\nTools\n293\n294\nOS pee 504",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1780.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n224\n225}\n226\n227\n228void OnTick() {\n229\n230\n231\nOpenCL\n232}\nPanels\n233//+\n234\nPStrings\n235\nTools\n236/\n225 }\n228 void OnTick() {\nee: Cae 927 SCyvmhol Ralated Finctiogone",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1800.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n80\ninput\nLotsizingEnum\nLotSizingMethod\n5\n//L\n:\n81\ninput\ndouble\nLotSizingValueFixed\n0.01\n//F\n-\n82\ninput\ndouble\nLotSizingValueDynamic\n10000\n//D\n83\ninput\ndouble\nLotSizingDepositLoadPercent\n0.25\n//D\n3\n84\ninput\nbool\nFixedInitialDeposit\nfalse\n//F\n85\ninput\ndouble\nMaximumLot\n100\n//M\nI\n3\n86\ninput\nboo1\nAutoSplit\nfalse\n//A\n87\ninput\ndouble\nMaximumSpread\n=\n10\n1/M\n:\nDeepSeek EA\n88\ninput\nint\nMaximumslippage\n=\n10\n:\n//M\nHigh Frequency EA\n89\ninput\nint\nMaximumSymbo1s\n=\n2.\n:\n//M\n06\ninput\nbool\nAllowHedging\n=\ntrue\n//A\nMulti-TF Momentum\n91\ninput\nbool\nAllowTradingOnHolidays\nfalse\n//A\n=\nScalping EA\n92\ninput\nA1lowBuySe11Enum\nAllowToBuySel1\n0\n//A\n=\n:\nEA\n93\ninput\ndouble\nMinimumEreeMargin\n0\n/M",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 79,
+          "message": "leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (line 79, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1840.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5*>\n230\n231\n232 }\n233//\n234\n235\n236/*\n237\nSymbol Related Functions\nDeepSeek EA\n238=\nHigh Frequency EA\n239\n240bool ParseAndInitializeSymbols(){\nMulti-TF Momentum\n241\nScalping EA\n242\nstring symbols[];\n243\noincsn13+/swm\nymhels.\nWakaWaka by MrCapFree.mq5 * *\n232}\n’ 233 | [mmm rr nn cnn cn enn cnc ncn nt\n| | > «ll Multi-TE Momentum = bool ParseAndInitializeSymbols(){\nPP 0 Bm eis A pene fin %A2 Int evmholCoiunt — StrinscSnlit(Svmhole StrinesGetCharactear(™ \" GB). evmhole):",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1860.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n224\n225}\n226\n227\n228 void OnTick() {\n229\n230\n231\nDeepSeek EA\n232 }\nP High Frequency EA\n233//+\n234\nMulti-TF Momentum\n235\nP Scalping EA\n236/\n225 }\n> «BE High Frequency EA Ee si tte titi sails Chih in i nl fa ca ae\ni PS Bee en pe i he ber J Symhol Ralated Fiinctionc",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "unmatched '}' (line 5, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1880.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n232 }\n233//\n234\n235\n236\n237\nSymbol Related Functions\n238=\n239\nDeepSeek EA\n240 bool ParseAndInitializeSymbols(){\nHigh Frequency EA\n241\n242\nstring symbols[];\nMulti-TF Momentum\n243\nint symbolCount = StringSplit(Symbols, StringGetCharacter(\",\",0), symbols);\nP Scalping EA\n244\n245\n232}\ni 238 SSS SSS SSS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SS SSS SSS ===",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "unmatched '}' (line 5, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1900.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n94\ninput\ndouble\nMaximumDrawdown\n100\n1/M\n:\n95\ninput\ndouble\nMaximumDrawdownMoney\nI\n0\n//M\n:\n96\ninput\neMaxDrawdownAction\nMaximumDrawdownAction\n0\n:\n//M\ninput\neDrawdownCalculation\nDrawdownCalculation\n=\n1\n//M\n:\n98\n99 input group\n\"<<<sssss\nSelect the strategy settings and symbols used\nsssss>>>\"\n100\n101\ninput\nstring\nSymbols\n\"AUDNZD,AUDCAD,NZDCAD\nDeepSeek EA\n102\ninput\nint\nHourToStartTrading\n0\n;\nHigh Frequency EA\n103\ninput\nint\nHourToStopTrading\n=\n23.\n;\n104\ninput\nint\nBollingerBandsPeriod\n=\n35\nMulti-TF Momentum\n:\n105\ninput\nint\nRSI_Period\n=\n20\nScalping EA\nRSI_Value\n106\ninput\nint\n15\n:\nEA\n107",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 37,
+          "message": "unterminated string literal (detected at line 37) (line 37, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1940.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n238\n239\n240 bool ParseAndInitializeSymbols(){\n241\n242\nstring symbols[];\n243\nint symbolCount = StringSplit(Symbols, StringGetCharacter(\",\",0), symbols);\n244\n245\nif(symbo1Count > 0 && !MQLInfoInteger(MQL_TEsTER))\nDeepSeek EA\n246\nHigh Frequency EA\n247\nArrayResize(SymbolsArray, symbo1Count);\n248\nMulti-TF Momentum\n249\nfor(int i = 0; i < symbolCount; i++)\nScalping EA\n250\nY\nsymbols[i1\nood © Biiencrcs— EA Benccfann 951 etrings evmholName —- ecvmhole<[j7°",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 28,
+          "message": "invalid character '©' (U+00A9) (line 28, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 1980.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n246\n{\n247\nArrayResize(SymbolsArray, symbolCount);\n248\n249\nfor(int i = 0; i < symbolCount; i++)\n250\n251\nstring symbolName = symbols[i];\n252\nStringTrimLeft(symbolName);\n253\nStringTrimRight(symbolName);\nDeepSeek EA\n254\n255\nif(symbolName =- \")\nHigh Frequency EA\n256\nMulti-TF Momentum\n257\nPrint(TradeComment + \": List of Symbols is incorrect! Check it for extra\nScalping EA\n258\nSymbolsListError = true;\n259\nEA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 22,
+          "message": "unterminated string literal (detected at line 22) (line 22, column 18)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2000.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 *\n240 boo1 ParseAndInitializeSymbols(){\n241\n242\nstring symbols[];\n243\nint symbolCount = StringSplit(Symbols, StringGetCharacter(\",\",0), symbols);\n244\n245\nif(symbo1Count > 0 && !MQLInfoInteger(MQL_TEsTER))\n246\n247\nArrayResize(SymbolsArray, symbolCount);\nDeepSeek EA\n248\nHigh Frequency EA\n249\nfor(int i = 0; i < symbolCount; i++)\n250\nP Multi-TF Momentum\n251\nstring symbolName = symbols[i];\nP Scalping EA\n252\nStringTrimLeft(symbo1Name);\n; ‘~ 24@ bool ParseAndInitializeSymbols(){\nPb 0 Bm eis ea pt SIR) CHpinoTrimes chtlevmholName):",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 29,
+          "message": "invalid character '‘' (U+2018) (line 29, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2020.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 X\n217\nreturn(INIT_SUCCEEDED);\n218\n219}\n220\n221\n222 void OnDeinit(const int reason) {\n223\n224\nDeepSeek EA\n225}\nHigh Frequency EA\n226\n227\nMulti-TF Momentum\n228void OnTick() {\nScalping EA\n229\n230\n; a. 219\nPot Be i GA pen een 520",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched '}' (line 8, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2040.0,
+      "text": "JX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n196\nArrayResize(handle_Atr96,\nArraySize(SymbolsArray));\n197\nArrayResize(hand1e_ATR672, ArraySize(Symbo1sArray));\n198\n199\nfor(int i = 0; i < ArraySize(SymbolsArray); i++) {\n200\nhand1e_MA[i]\n= iMA(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBandsPeri\n201\nhandle_Std[i]\n= iStdDev(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBands\n202\nhandle_RSI[i]\n= iRsI(SymbolsArray[i].SymbolName, MainTimeframe, RsI_Period, PRIcE\n203\nhandle_ATR96[i] = iATR(SymbolsArray[i].SymbolName, MainTimeframe, 96);\nDeepSeek EA\n204\nhandle_ATR672[i]= iAtR(SymbolsArray[i].SymbolName, MainTimeframe, 672);\nHigh Frequency EA\n205\n206\nifhandle_MA[i]\n== INVALID_HANDLE I hand1e_Std[i]\n== INVALID_HANDLE\nP Multi-TF Momentum\n207\nhandle_RSI[i]\n== INVALID_HANDLE\n1I hand1e_ATR96[i] == INVALID_HANDLE\nScalping EA\n208\nhand1e_ATR672[i]== INVALID_HANDLE) {\n209\nPrintCTra",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 38,
+          "message": "invalid decimal literal (line 38, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2060.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 X\n244\nArrayResize(SymbolsArray, symbolCount);\n245\n246\nfor(int i = 0; i < symbolCount; i++)\n247\n248\nstring symbolName = symbols[i];\n249\nStringTrimLeft(symbolName);\n250\nStringTrimRight(symbolName);\n251\nDeepSeek EA\n252\nif(symbo1Name == \")\nHigh Frequency EA\n253\n254\nP Multi-TF Momentum\n255\nSymbolsListError = true;\nP Scalping EA\n256\nreturn false;\n> » BE Multi-TF Momentum ;\nPb 0 Bm elie ean pg Sirs aa",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 20,
+          "message": "unterminated string literal (detected at line 20) (line 20, column 18)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2080.0,
+      "text": "Cancel\nHistory\nWakaWaka by MrCapFree.mq5\nX\n256\nreturn false;.\n257\n258\nInitializeSymbolData(i, symbolName);\n259\n260\n}\n261\nelse\n262\n{\n263\nArrayResize(SymbolsArray, 1);\nP DeepSeek EA\n264\nstring symbolName = Symbol();\nHigh Frequency EA\n265\nInitializeSymbolData(0, symbolName);\n266\n}\nMulti-TF Momentum\n267\nP Scalping EA\n268\nreturn true;\n2697\ni = . Bo ecuepee CA Denn fier 560 1",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 12,
+          "message": "unmatched '}' (line 12, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2100.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * X\n234\nSymbol Related Functions\n235\n236\n237 boo1 ParseAndInitializeSymbols(){\n238\n239\nstring symbols[];\n240\nint symbolCount = StringSplit(Symbols, StringGetCharacter(\",\",0), symbols);\n241\nPDeepSeek EA\n242\nif(symbo1Count > 0 && !MQLInfoInteger(MQL_TESTER))\nHigh Frequency EA\n243\n244\nArrayResize(SymbolsArray, symbolCount);\nP Multi-TF Momentum\n245\nScalping EA\n246\nfor(int i = 0; i < symbolCount; i++)\n247\n, _.,.\n' ; ™~ 237 bool ParseAndInitializeSymbols(){\n| | ; BB Multi-TE Momentum aa ArrayResize(SymbolsArray, symbolCount) ;\nPP 0 Bm eine FA Dene finn 5A7 if",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 29,
+          "message": "unterminated string literal (detected at line 29) (line 29, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2120.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * >\n270\n271void InitializeSymbolData(int index, string symbolName){\n272\n273\nSymbo1sArray[index].Symbo1Name = symbo1Name;\n274\nSymbolsArray[index].LastMainTFUpdate = 0;\n275\nSymbolsArray[index].LastopotFUpdate = 0;\n276\nSymbo1sArray[index].UpdateCounter = 0;\n277\nSymbolsArray[index].CanBuy = false;\nDeepSeek EA\n278\nSymbolsArray[index].CanSel1 = false;\nP High Frequency EA\n279\nSymbolsArray[index].CurrentBarTime = 0;\n280\nSymbolsArray[index].PreviousBarTime = 0;\nP Multi-TF Momentum\n281\nSymbolsArray[index].closePrice = 0.0;\nP Scalping EA\n282\nSymbolsArray[index].GrjdOpened = false;\n283\n271 void InitializeSymbolData(int index, string symbolName){",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid decimal literal (line 6, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2140.0,
+      "text": "JX\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n273\nSymbolsArray[index].SymbolName = symbolName;\n274\nSymbolsArray[index].LastMainTFUpdate = 0;\n275\nSymbo1sArray[index].LastopotFUpdate = 0;\n276\nSymbolsArray[index].UpdateCounter = 0;\n277\nSymbolsArray[index].CanBuy = false;\n278\nSymbolsArray[index].CanSel1 = false;\n279\nSymbolsArray[index].CurrentBarTime = 0;\n280\nSymbolsArray[index].PreviousBarTime = 0;\nDeepSeek EA\n281\nSymbolsArray[index].closePrice = 0.0;\nHigh Frequency EA\n282\nSymbolsArray[index].GridOpened = false;\n283\nSymbolsArray[index].OpoTriggered = false;\nMulti-TF Momentum\n284\nSymbolsArray[index].SmartDistanceMultiplier = 1.0;\nP Scalping EA\n285\nSymbolsArray[index].BBwidth = 0.0;\n286",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2160.0,
+      "text": "Compile\nED\n> History\nJX\nRe\nWakaWaka by MrCapFree.mq5 * X\n189\n190\nreturn INIT_FAILED;\n191\n}\n192\n193\nArrayResize(handle_MA,\nArraySize(SymbolsArray));\n194\nArrayResize(handle_Std,\nArraySize(SymbolsArray));\n195\nArrayResize(handle RsI,.\nArraySize(SymbolsArray));\n196\nArrayResize(handle_ATR96,\nArraySize(SymbolsArray));\nDeepSeek EA\n197\nArrayResize(handle_Atr672, ArraySize(SymbolsArray));\nHigh Frequency EA\n198\n199\nfor(int i = 0; i < ArraySize(SymbolsArray); i++) {.\nP Multi-TF Momentum\n200\nhandle_MA[i]\n= iMA(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBandsPeri\nScalping EA\n201\nhandle_Std[i]\niStdDev(SymbolsArray[i].SymbolName, MainTimeframe, BollingerBands\n3\nEA\n202\nPRTCI",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 11,
+          "message": "unmatched '}' (line 11, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2180.0,
+      "text": "IDE\n((0))\nAlgo Trading\n+\nNew Order\nM1\nM5\nM15 M30\nMarket Watch: 12:45:37\nX\nEURUSDH1:Euro vS USDollar\nWaka Waka by Mr.CapFree:www.youtube.com/@MrCapFree\nSymbol\nBid\nAsk\nDai...\n7 USDCAD\n1.37...\n1.37... 0.11...\nWAKA\nTime\nIn\nCurrencyImpact\nNews Event\n22:13\n2d9h\nCAD\nMed\n18:00\n3d 5h\nCAD\nWAKA\nLow\nBudget Balange\n00\nCAD\nLoW\nBudget Balange\nNZDCAD0.80...0.80...-0.4...\nExpected lot0.01\n3d.1gh\nAUD\nved\nCFTCAUDNan-\n-Commercial\nnstiong\n3d10h\nCAD\nLow\nCFTC CAD\n+ click tbsadd..\n17 / 2404\nLeverage\n1:500\n30\nNZD\nLOW\nCFTCNZD\nNon-Commercial Net Postions\nLots opened:0.00\n00\n14h\nNZD\nLow\nFloating PnL0.00\n6d.14h\nNZD\nLow\nANZAotiyit Outlook\nSymbols\nDetails\nTrading\n4\nComment:\n03:30\n6d15h\nAUD\nLOW\nRBAHous\nsing Credit m/m\n+3 Updated)\n03:30\n6d15h\nAUD\nLOW\nREA\nPrlvate Sector Credit m/m\nImo\nLabel\nLabe\nLabel\nLabel\nLabell\nLabe\nLabel\nNavigator\nX\nNext eventlin\n7h27m\nLabel\nLabe\nLabel\nITrading Dis\nbled\nLabe\nLabe\nLabe\nabe\nTimeRange\nLabel Label\nLabel\nCabel\nLabel\nabe\nLabel\nWakaWaka by MrCap\nWakaWaka by M\n|",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 26,
+          "message": "invalid decimal literal (line 26, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2200.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n216\nreturn(INIT_SUcCEEDED);\n217\n218 }\n219\n220\n221 void OnDeinit(const int reason) {\n222\n223\nDeepSeek EA\n224}\nHigh Frequency EA\n225\n226\nMulti-TF Momentum\n227 void OnTick() {\nP Scalping EA\n228\n229\n' - hes j WakaWaka by MrCapFree.mq5 * * .\n“7 ) ef de li\nPP 0 Bm elie A pn fin 9990",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched '}' (line 7, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2220.0,
+      "text": "Compile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n222\n223\n224}\n225\n226\n227void OnTick() {\n228\n229\nbool isNewBarMainTF;\nP DeepSeek EA\n230\nP High Frequency EA\n231\nfor (int i = 0 ; i < ArraySize(SymbolsArray) ; i++)\n232\n{\nMulti-TF Momentum\n233\nP Scalping EA\n234\n235\n; 4 224 }\nPoE Sf Biiecns.. GA Ben€enn Gioia",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched '}' (line 8, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2300.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n222\n223\n224}\n225\n226\n227void OnTick() {\n228\n229\nbool isNewBarMainTF;\nDeepSeek EA\n230\nHigh Frequency EA\n231\nfor (int i = 0 ; i < ArraySize(SymbolsArray) ; i++)\n232\nMulti-TF Momentum\n233\nif ( iTime(SymbolsArray[i].SymbolName,MainTimeframe,0) <= SymbolsArray[i].LastMainTF\nScalping EA\n234\n235\nisNewBarMainTE\nin? se” 224 }\n| 227 void OnTick() {\nPoE Biienntck. GA Bemm@oe 925 JcNewRarMainTe —- faleca:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched '}' (line 7, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2320.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5* X\n273\nPrint(Tradecomment + \": List of Symbols is incorrect! Check it for extra\n274\nSymbolsListError = true;\n275\nreturn false;\n276\n277\nInitializeSymbolData(i, symbolName);\n278\n}\n279\n}\nelse\n280\nDeepSeek EA\n281\n{\nHigh Frequency EA\n282\nArrayResize(SymbolsArray, 1);\n283\nstring symbolName = Symbol();\nMulti-TF Momentum\n284\nInitializeSymbolData(0, symbolName);\nScalping EA\n285\n}\nEA\n286\nORS i ee i Bg IR2E",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unterminated string literal (detected at line 6) (line 6, column 22)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2340.0,
+      "text": "JX\nCompile\nEL\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n306\nSymbolsArray[index].CurrentBarIndex = 0;\n307\nSymbolsArray[index].PatternValue = 0;\n308\nSymbolsArray[index].PatternPrice = 0.0;\n309\nSymbolsArray[index].PatternSearchActive = true;\n310\nSymbolsArray[index].TradingAllowedToday = true;\n311\nSymbolsArray[index].PreviousDayTradingAllowed = true;\n312\nSymbolsArray[index].LastDayOfWeek = 0;\n313\nSymbo1sArray[index].LastBuyAvgPrice = 0.0;\nDeepSeek EA\n314\nSymbolsArray[index].LastSel1AvgPrice = 0.0;\nHigh Frequency EA\n315\nSymbolsArray[index].LastBuytp = 0.0;\n316\nSymbolsArray[index].LastSel1tp = 0.0;\nMulti-TF Momentum\n317\nScalping EA\n318 }\nEA\n319",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 34,
+          "message": "unmatched '}' (line 34, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2380.0,
+      "text": "JX\nCompile\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n309\nSymbolsArray[index].PatternSearchActive = true;\n310\nSymbolsArray[index].TradingAllowedToday = true;\n311\nSymbolsArray[index].PreviousDayTradingAllowed = true;\n312\nSymbolsArray[index].LastDayOfWeek = 0;\n313\nSymbo1sArray[index].LastBuyAvgPrice = 0.0;\n314\nSymbo1sArray[index].LastSe11AvgPrice = 0.0;\n315\nSymbolsArray[index].LastBuytP = 0.0;\n316\nSymbolsArray[index].LastSel1tp = 0.0;\nPDeepSeek EA\n317\nHigh Frequency EA\n318}\n319\nP Multi-TF Momentum\n320void UpdateSymbolInfo(int symbolIndex){\nP Scalping EA\n321\n322\nEA\ntring symbol.\nSymbolsArrayisymbolTndexl.SymbolName:\n. - PI) Multi-TF Momentum a1? F i\nPoE 4 32@ void UpdateSymbolInfo(int symbolIndex){\nPoE Be Sn GA pen fenn 299 etrpings evmhol —- SvmholcArravleyvmhol Tndey] SvmholName:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 25,
+          "message": "unmatched '}' (line 25, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2400.0,
+      "text": "Compile\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5* X\n312\nSymbolsArray[index].LastDayOfWeek = 0;\n313\nSymbo1sArray[index].LastBuyAvgPrice = 0.0;\n314\nSymbolsArray[index].LastSellAvgPrice = 0.0;\n315\nSymbolsArray[index].LastBuytP = 0.0;\n316\nSymbolsArray[index].LastSel1tp = 0.0;\n317\n318 }\n319\nPDeepSeek EA\n320 void UpdateSymbolInfo(int symbolIndex){\nP High Frequency EA\n321\n322\nstring symbol = SymbolsArray[symbolIndex].SymbolName;\nMulti-TF Momentum\n323\nSymbolsArray[symbolIndex].UpdateCounter++;\nScalping EA\n324\nEA\n325\n| | 2 -RbMigh equenqets 328 tri bol = SymbolsArray[symbolIndex].Symbo1N",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 17,
+          "message": "unmatched '}' (line 17, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2420.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n322\nstring symbol = SymbolsArray[symbolIndex].SymbolName;\n323\nSymbo1sArray[symbo1Index].UpdateCounter++;\n324\n325\nMqlDateTime tmCurrent;\n326\nTimeToStruct(TimeCurrent(), tmCurrent);\n327\nint currentHour = tmCurrent.hour;.\n328\nint currentMinute = tmCurrent.min;.\n329\nDeepSeek EA\n330\nSymbolsArray[symbolIndex].CurrentBarTime = iTime(symbol, MainTimeframe, 0);\nHigh Frequency EA\n331\nSymbolsArray[symbolIndex].PreviousBarTime = SymbolsArray[symbolIndex].CurrentBarTime;\n332\nMulti-TF Momentum\n333\nboo1 canTrade = IsTradingA1lowed() && Al1owOpeningNewGrid;\nScalping EA\n334\nboo1 canBuy = canTrade;\nEA\n335\nP £ . —Bmm cues CA Denefiern 220 hoonl canSell -—- canTrade:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 34,
+          "message": "invalid character '£' (U+00A3) (line 34, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2440.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n402\n403\n404\n405\n406\n407/*\n408\nGeneral Helping Functions\n409=\nDeepSeek EA\n410\nHigh Frequency EA\n411 bool IsTradingAllowed(){\n412\nMulti-TF Momentum\n413\nif(MQLInfoInteger(MQL_TESTER) I]MQLInfoInteger(MQL_OPTIMIZATION))\nP Scalping EA\n414\nreturn true;\n415\n493\n? : Pee = SSS SSS SS SSS Se SSS SSS aS SS SaaS a SaaS SSS Sa SSE Sa SaaS aaa SaaS Sea SaaS SSS SSSSSSSS=S==S=SS======\nPb) Bm chee: CA Dene fern ais",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 21,
+          "message": "closing parenthesis ']' does not match opening parenthesis '(' (line 21, column 32)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2500.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n405\n406\n407\n408\nGeneral Helping Functions\n409\n410\n411 bool IsTradingAllowed(){\n412\nP DeepSeek EA\n413\nif(MQLInfoInteger(MQL_TESTER) I MQLInfoInteger(MQL_OPTIMIZATION))\nP High Frequency EA\n414\nreturn true;\n415\nMulti-TF Momentum\n416\nint allowed = (int)TerminalInfoInteger(TERMINAL_TRADE_ALLOWED);\nScalping EA\n417\nif(allowed == 0)\n418\nPb 0 Bm eis fA pet A182 ratiirn faleca:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2540.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n318 }\n319\n320void UpdateSymbolInfo(int symbolIndex){\n321\n322\nstring symbol = SymbolsArray[symbolIndex].SymbolName;\n323\nSymbolsArray[symbolIndex].UpdateCounter++;\n324\n325\nMqlDateTime tmCurrent;\nDeepSeek EA\n326\nTimeToStruct(TimeCurrent(), tmCurrent);\nHigh Frequency EA\n327\nint currentHour = tmCurrent.hour;.\n328\nint currentMinute = tmCurrent.min;.\nMulti-TF Momentum\n329\nScalping EA\n330\nSymbolsArray[symbolIndex].CurrentBarTime = iTime(symbol, MainTimeframe, 0);\n331\n, : Ss, 32@ void UpdateSymbolInfo(int symbolIndex){\nPP 0 Bm eis ea pg 221 SCymholecArravleyvmhol Tnday] PravionicRarTime —- SvmholcArravlevmholTndeyl] CiurrentRartTime:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "unmatched '}' (line 4, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2600.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n334\nbool canBuy = canTrade;\n335\nbool canSell = canTrade;\n336\n337\n// Check historical data\n338\n339\nif(iBars(symbol, MainTimeframe) < 10ee)\n340\n341\nPrint(TradeComment + \" \" + symbol, \": Not enough historical data\");\nPDeepSeek EA\n342\ncanBuy = canSell = false;\nHigh Frequency EA\n343\n}\n344\nP Multi-TF Momentum\n345\n// Check account balance\nP Scalping EA\n346\nif(AccountInfoDoub1e(ACcOuNT_MARgIN_FREE) < 10.0)\n347\nPE Bm cheese CA Dene fiers 2A7 i",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 15,
+          "message": "invalid decimal literal (line 15, column 36)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2640.0,
+      "text": "Compile\nED\n> History\nRe\nWakaWaka by MrCapFree.mq5 *\n344\n345\n// Check account balance\n346\nif(AccountInfoDoub1e(AccouNT_MARgIN_FREe) < 10.0)\n347\nY\n348\nstatic datetime lastMarginMsg = 0;\n349\nif(TimeCurrent() - 1astMarginMsg > 3600)\n350\n351\nDeepSeek EA\n352\n1astMarginMsg = TimeCurrent();\nHigh Frequency EA\n353\n354\ncanBuy = canSell = false;\nP Multi-TF Momentum\n355\n2\nScalping EA\n356",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "invalid decimal literal (line 16, column 20)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2660.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *\n356\n357\n// Check UID\n358\nif(UID< 0 || UID > 9)\n359\nY\n360\nstatic bool uidMsgPrinted = false;\n361\nif(!uidMsgPrinted)\n362\nPrint(TradeComment + \" \" + symbol, \": UID must be 0-9\");\n363\nDeepSeek EA\n364\nuidMsgPrinted = true;\nHigh Frequency EA\n365\n}\n366\ncanBuy = canSel1 = false;\nMulti-TF Momentum\n367\n}\nP Scalping EA\n368\n369",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 24,
+          "message": "unmatched '}' (line 24, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2720.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n365\n366\ncanBuy = canSel1 = false;\n367\n}\n368\n369\n// Need at least 2 Bars updates before trading.\n370\nif(SymbolsArray[symbolIndex].UpdateCounter < 2)\n371\ncanBuy = canSel1 = false;\n372\nDeepSeek EA\n373\n// Check symbol trading mode\nHigh Frequency EA\n374\nint tradeMode = (int)SymbolInfoInteger(symbol, SyMBoL_TRADe_MoDe);\n375\nswitch(tradeMode)\nP Multi-TF Momentum\n376\n{\nScalping EA\n377\ncase SYMBOL_TRADE_MODE_DISABLED: canBuy = canSel1 = false; break;\n378",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 9,
+          "message": "unmatched '}' (line 9, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2760.0,
+      "text": ".ompile\nHistory\nWakaWaka by MrCapFree.mq5 *\n374\nint tradeMode = (int)SymbolInfoInteger(symbol, SyMBoL_TRADE_MODE);\n375\nswitch(tradeMode)\n376\n377\ncase SyMbol_TraDe_mode_DIsAbLeD: canBuy = canSel1 = false; break;\n378\ncase Symbol_trade_mode_Longonly: canSel1 = fa1se; break;\n379\ncase SymBOL_TrADe_MOde_ShORTOnLY: canBuy = fa1se; break;\n380\n}\n381\nDeepSeek EA\n382\n// Apply user buy/sel1 restrictions\nHigh Frequency EA\n383\nif(AllowToBuySell == 1) canSell = false;\n384\nif(AllowToBuySell == 2) canBuy = false;\nP Multi-TF Momentum\n385\nP Scalping EA\n386\n// Get bar times\n387\nPoE Bm Seer CA Dennfiemn 2Q27 datetime harTime — SvmholcArravlevmhol Tndeyl] CiurrentRartTime:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "unmatched '}' (line 16, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2880.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n384\nif(AllowToBuySell == 2) canBuy = false;\n385\n386\n// Get bar times\n387\ndatetime barTime = SymbolsArray[symbolIndex].CurrentBarTime;\n388\n389\nMqlDateTime tmBar;\n390\nTimeToStruct(barTime, tmBar);\n391\nint barHour = tmBar.hour;.\nDeepSeek EA\n392\nint barMinute = tmBar.min;.\nHigh Frequency EA\n393\nint barDay = tmBar.day;\n394\nint barMonth = tmBar.mon;.\nP Multi-TF Momentum\n395\nint barYear = tmBar.year;.\nScalping EA\n396\n397",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2900.0,
+      "text": "JX\nCompile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n390\nTimeToStruct(barTime, tmBar);\n391\nint barHour = tmBar.hour;\n392\nint barMinute = tmBar.min;\n393\nint barDay = tmBar.day;\n394\nint barMonth = tmBar.mon;\n395\nint barYear = tmBar.year;\n396\n397\n// Trading hours check\nPDeepSeek EA\n398\nHigh Frequency EA\n399\nint currentTimeCode = barMinute + barHour * 100;\n// 14:30 becomes 1430\n400\nint startTimeCode = HourToStartTrading * 100;\n// 1 => 100\nP Multi-TF Momentum\n401\nint stopTimeCode = HourToStopTrading * 100 + 59;\n// 23 => 2359\nP Scalping EA\n402\n403\nbool time0k:\nEA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2920.0,
+      "text": "Compile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n396\n397\n// Trading hours check.\n398\n399\nint currentTimeCode = barMinute + barHour * 100;\n// 14:30 becomes 1430\n400\nint startTimeCode = HourToStartTrading * 100;\n// 1 => 100\n401\nint stopTimeCode = HourToStopTrading * 100 + 59;\n// 23 => 2359\n402\n403\nbool timeOk;\nDeepSeek EA\n404\nif(stopTimeCode >= startTimeCode)\nHigh Frequency EA\n405\ntimeOk = (currentTimeCode >= startTimeCode && currentTimeCode <= stopTimeCode);\n406\ne1se\nP Multi-TF Momentum\n407\ntime0k = (currentTimeCode >= startTimeCode I currentTimeCode <= stopTimeCode);\nP Scalping EA\n408\nEA\n409\n. - PB) Multi-TF Momentum a8 ane : ‘ i : i",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 37,
+          "message": "unmatched ')' (line 37, column 7)"
+        }
+      ]
+    },
+    {
+      "timestamp": 2960.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n402\n403\nbool timeOk;\n404\nif(stopTimeCode >= startTimeCode)\n405\ntimeOk = (currentTimeCode >= startTimeCode && currentTimeCode <= stopTimeCode);\n406\nelse\n407\ntimeOk = (currentTimeCode >= startTimeCode I currentTimeCode <= stopTimeCode);\n408\n409\n// Holiday check - more realistic holiday dates\nDeepSeek EA\n410\nif(!AllowTradingOnHolidays)\nHigh Frequency EA\n411\n412\n// Christmas toNew Year week (Dec 25 - Jan 3)\nMulti-TF Momentum\n413\nif((barMonth == 12 && barDay >= 25) II (barMonth == 1 && barDay <= 3))\nP Scalping EA\n414\ntime0k = false;\n415\ni 498\nP £ . —Bm cuales CA Denefiern ais bY",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 34,
+          "message": "invalid character '£' (U+00A3) (line 34, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3040.0,
+      "text": "Compile\nEL\n> History\nWakaWaka by MrCapFree.mq5 * X\n414\ntimeOk = false;\n415\n}\n416\n417\n// Only trade at 15-min boundaries.\n418\ntime0k = time0k && (barMinute == 0 II barMinute == 15 I barMinute == 30 II barMinute\n419\n420\ncanBuy = canBuy && timeOk;\n421\ncanSel1 = canSel1 && time0k;\nDeepSeek EA\n422\nHigh Frequency EA\n423\n// Get close price\n424\nSymbolsArray[symbolIndex].closePrice = iclose(symbol, MainTimeframe, 1);\nP Multi-TF Momentum\n425\nP Scalping EA\n426\n// Calculate indicators for trading signals\n. ? 4 WakaWaka by MrCapFree.mq5 * *\nPP Bw eine CA Den fieen A7 douhle maRutfarl11]) etdRuffarlil:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched '}' (line 8, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3060.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5 *X\n417\n// Only trade at 15-min boundaries\n418\ntime0k = time0k && (barMinute == 0 I barMinute == 15 1I barMinute == 30 II barMinute\n419\n420\ncanBuy = canBuy && timeOk;\n421\ncanSe1l = canSel1 && timeOk;\n422\n423\n// Get close price\n424\nSymbolsArray[symbolIndex].ClosePrice = iclose(symbol, MainTimeframe, 1);\nDeepSeek EA\n425\nHigh Frequency EA\n426\n// Calculate indicators for trading signals\n427\ndouble maBuffer[1], stdBuffer[1];\nMulti-TF Momentum\n428\nCopyBuffer(handle_MA[symbolIndex],\n0, 1, 1, maBuffer);\nScalping EA\n429\nCopyBuffer(handle_Std[symbolIndex], 0, 1, 1, stdBuffer);\n430",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "invalid decimal literal (line 8, column 54)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3080.0,
+      "text": "Algo Trading\n+\nNew Order\nM1\nM5\nM15 M30\nEURUSDH1Euro vs US Dollar\nVaka Waka by Mr.CapFree:www.youtube.com/@MrCapFree)\nTime In\nCurrencyImpact\ntNews Event\nWAKA\n2d9h\nCAD\nMed\n18:00\nCAD\nWAKA\n3d 5h\nLow\n00\nCAD\nLOW\nExpectedlot0.01\nAUD\nMed\n3d 9h\nCAD\nCFTCOA\nLeverage\n1:500\nEU\nNZD\nLOW\nCFTCNzDNon-Commercial Net Postions\nLots opened:0.00\n14h\nNZD\nLow\nFloating PnL: 0.00\n03:00\n6d14h\nNZD\nLow\nANZctivityOutlook\nSymbols\nComment\nWakaWaka\n03:30\n6d14h\nAUD\nLOW\n+3Updated\n03:30\nAUD\nLOW\nLabe\nLabel\nLabel\nNexteven\nn57h5m\nNavigator\nX\nLabel\nLabel\nLabel\nLabe\nLabel\nLabe\nLabel\nTrading\nabled\nLabe\nLabe\nTimeRange\nLabel.Label\nLabe\nLabe\nLabel\nabel\nLabe\nLabe\nLabel\nWakaWaka by MrCap\nwakaWaka by M\nte -—o5 - . ee SS ———————————————o\n* | -",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched ')' (line 8, column 51)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3100.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n417\n// Only trade at 15-min boundaries.\n418\ntime0k = time0k && (barMinute == 0 II barMinute == 15 I barMinute == 30 II barMinute\n419\n420\ncanBuy = canBuy && timeOk;\n421\ncanSell = canSel1 && timeOk;\n422\n423\n// Get close price\n424\nSymbolsArray[symbolIndex].ClosePrice = iclose(symbol, MainTimeframe, 1);\nDeepSeek EA\n425\nHigh Frequency EA\n426\n// Calculate indicators for trading signals\n427\ndouble maBuffer[1], stdBuffer[1];]\nMulti-TF Momentum\n428\nCopyBuffer(handle_MA[symbolIndex],\n0, 1, 1, maBuffer);\nP Scalping EA\n429\nCopyBuffer(handle_Std[symbolIndex], 0, 1, 1, stdBuffer);\n430",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 25,
+          "message": "closing parenthesis ']' does not match opening parenthesis '(' on line 8 (line 25, column 34)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3140.0,
+      "text": "Compile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mg5 * X\n426\n// Calculate indicators for trading signals\ndouble maBuffer[1], stdBuffer[1];\n427\n428\nCopyBuffer(handle_MA[symbolIndex],\n0, 1, 1, maBuffer);\n429\nCopyBuffer(handle_Std[symbolIndex], 0, 1, 1, stdBuffer);\n430\n431\ndouble bbMA\n= maBuffer[0];\n432\ndouble bbStd\n= stdBuffer[e];\n433\ndoub1e bbUpper = bbMA + 2 * bbStd;\nDeepSeek EA\n434\ndouble bbLower = bbMA - 2 * bbStd;\nHigh Frequency EA\n435\n436\nint highestBar = iHighest(symbol, MainTimeframe, Mode_HIgh, BollingerBandsPeriod + 1,\nMulti-TF Momentum\n437\nint lowestBar = iLowest(symbol, MainTimeframe, Mode_LOw, BollingerBandsPeriod + 1, 2);\nScalping EA\n438\ndouble recentHigh = iHigh(symbol, MainTimeframe, highestBar);\n439\nEA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "invalid syntax (line 5, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3200.0,
+      "text": "Compile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n430\n431\ndouble bbMA\n= maBuffer[0];\n432\ndouble bbstd\n= stdBuffer[e];\n433\ndoub1e bbUpper = bbMA + 2 * bbStd;\n434\ndoub1e bbLower = bbMA - 2 * bbStd;\n435\n436\nint highestBar = iHighest(symbol, MainTimeframe, Mode_HIgH, BollingerBandsPeriod + 1,\n437\nint 1owestBar = iLowest(symbol, MainTimeframe, Mode_LOw, BollingerBandsPeriod + 1, 2);\nDeepSeek EA\n438\ndouble recentHigh = iHigh(symbol, MainTimeframe, highestBar);\nHigh Frequency EA\n439\ndouble recentLow = iLow(symbol, MainTimeframe, lowestBar);\n440\nMulti-TF Momentum\n441\nint digits = (int)SymbolInfoInteger(symbol, SymBol_DIgIts);\nScalping EA\n442\nSymbolsArray[symbolIndex].BBwidth = NormalizeDouble(bbUpper - bbLower, digits);\nEA\n443",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 21,
+          "message": "invalid decimal literal (line 21, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3220.0,
+      "text": "JX\nCompile\nRe\nWakaWaka by MrCapFree.mq5 * X\n89\ninput\nint\nMaximumSymbo1s\n2\n//M\n:\n06\ninput\nboo1\nAllowHedging\ntrue\n//A\n-\n91\ninput\nboo1\nA1lowTradingOnHolidays\nfalse\n//A\n-\n92\ninput\nA11owBuySe11Enum\nAllowToBuySel1\n0\n//A\n:\n93\ninput\ndouble\nMinimumFreeMargin\n0\n//M\n:\n94\ninput\ndouble\nMaximumDrawdown\n100\n1/M\n95\ninput\ndouble\nMaximumDrawdownMoney\n=\n0\n//M\n;\n96\ninput\neMaxDrawdownAction\nMaximumDrawdownAction\n=\n0\n:\n1/M\nDeepSeek EA\nL6\ninput\neDrawdownCalculation\nDrawdownCalculation\n=\n1\n//M\n:\nHigh Frequency EA\n98\n99 input group\n<<<=====\nSelect the strategy settings and symbols used\n=====>>>\"\nP Multi-TF Momentum\n100\nScalping EA\n101\ninput\nstring\nSymbols\n=\n\"AUDNZD, AUDCAD,NZDCAD\nEA\n102\ninput\nint\nHourTostartTrading.",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 12,
+          "message": "leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (line 12, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3240.0,
+      "text": "JX\nCompile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mg5 * X\n431\ndouble bbMA\n= maBuffer[0];\n432\ndouble bbStd\n= stdBuffer[0];\n433\ndoub1e bbUpper = bbMA + 2 * bbStd;\n434\ndouble bbLower = bbMA - 2 * bbStd;\n435\n436\nint highestBar = iHighest(symbol, MainTimeframe, Mode_HIgH, BollingerBandsPeriod + 1,\n437\nint lowestBar = iLowest(symbol, MainTimeframe, Mode_LOw, BollingerBandsPeriod + 1, 2).\n438\ndouble recentHigh = iHigh(symbol, MainTimeframe, highestBar);\nDeepSeek EA\n439\ndouble recentLow = iLow(symbol, MainTimeframe, lowestBar);\nHigh Frequency EA\n440\n441\nint digits = (int)SymbolInfoInteger(symbol, Symbol_Digits);\nMulti-TF Momentum\n442\nSymbolsArray[symbolIndex].BBwidth = NormalizeDouble(bbUpper - bbLower, digits);\nP Scalping EA\n443\nEA\n444",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3260.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n434\ndoub1e bbLower = bbMA - 2 * bbStd;\n435\n436\nint highestBar = iHighest(symbol, MainTimeframe, Mode_HIgH, BollingerBandsPeriod + 1,\n437\nint lowestBar = iLowest(symbol, MainTimeframe, Mode_LOw, BollingerBandsPeriod + 1, 2)j\n438\ndouble recentHigh = iHigh(symbol, MainTimeframe, highestBar);\n439\ndouble recentLow = iLow(symbol, MainTimeframe, lowestBar);\n440\n441\nint digits = (int)SymbolInfoInteger(symbol, SyMBol_DIgIts);\nP DeepSeek EA\n442\nSymbolsArray[symbolIndex].BBwidth = NormalizeDouble(bbUpper - bbLower, digits);\nHigh Frequency EA\n443\n444\n// RSI filter\nMulti-TF Momentum\n445\nif(RsI_Period > 0 && RsI_Value > 0)\nP Scalping EA\n446\n{\nEA\n447\ndouble rsiBufferl11:.",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3280.0,
+      "text": "Compile\nEL\n> History\nWakaWaka by MrCapFree.mq5 * X\n443\n444\n// RsI filter\n445\nif(RsI_Period > 0 && RsI_Value > 0)\n446\n{\ndouble rsiBuffer[1];\n447\n448\nCopyBuffer(handle_RsI[symbolIndex], 0, 1, 1, rsiBuffer);\n449\ndouble rsi = rsiBuffer[0];\n450\ncanBuy = canBuy && (rsi < 50 - RsI_Value);\nDeepSeek EA\n451\ncanSell = canSel1 && (rsi > 50 + RsI_Value);\n452\nHigh Frequency EA\n{\n453\nMulti-TF Momentum\n454\n// Price breakout signals\nP Scalping EA\n455\ndouble close = SymbolsArray[symbolIndex].closePrice;\nWakaWaka by MrCapFree.mq5 * *\nPf . Bo ecu. CA Denn fen AS6 canRiiv —- canRiiv && (cloce < reacrantl ow && rarantl ow »s 4):",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 34,
+          "message": "invalid character '—' (U+2014) (line 34, column 38)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3300.0,
+      "text": "Compile\nEL\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n446\n{\n447\ndouble rsiBuffer[1];\n448\nCopyBuffer(handle_Rsi[symbolIndex], 0, 1, 1, rsiBuffer);\n449\ndouble rsi = rsiBuffer[e];\n450\ncanBuy = canBuy && (rsi < 50 - RSI_Value);\n451\ncanSell = canSel1 && (rsi > 50 + RsI_Value);\n452\n}\n453\nP DeepSeek EA\n454\n// Price breakout signals\nHigh Frequency EA\n455\ndouble close = SymbolsArray[symbolIndex].closePrice;\n456\ncanBuy = canBuy && (close < recentLow && recentLow > 0);\nP Multi-TF Momentum\n457\ncanSell = canSel1 && (close > recentHigh && recentHigh > 0);\nScalping EA\n458\n459\nPoE SS Bens GA Bemnfienan Aso J// Max evmhole chack",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3320.0,
+      "text": "JX\nCompile\nE> Re\nWakaWaka by MrCapFree.mq5 *X\n06\ninput\nbool\nAllowHedging\ntrue\n//A\n91\ninput\nboo1\nAllowTradingOnHolidays\nfalse\n//A\n:\n92\ninput\nAllowBuySellEnum\nAllowToBuySell\n0\n//A\n-\n;\n93\ninput\ndouble\nMinimumFreeMargin\n0\n;\n//M\n94\ninput\ndouble\nMaximumDrawdown\n100\n//M\n95\ninput\ndouble\nMaximumDrawdownMoney\n0\n//M\n;\n96\ninput\neMaxDrawdownAction\nMaximumDrawdownAction\n=\n0\n;\n1/M\n97\ninput\neDrawdownCalculation\nDrawdownCalculation\n1\n:\n//M\nDeepSeek EA\n98\nHigh Frequency EA\n99 input group\nSelect the strategy settings and symbols used\nss===>>>\n100\nMulti-TF Momentum\n101\ninput\nstring\nSymbols\n=\nAUDNZD,AUDCAD, NZDCAD\nScalping EA\n102\nint\nHourToStartTrading\ninput\n0\n;\nEA\n103\ninput\nint\n23\nWakaWaka by MrCapFree.mq5 * *",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (line 5, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3380.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n483\n484\n485\n486\n487\n488\n489\n490\nDeepSeek EA\n491\nHigh Frequency EA\n492\n493\nMulti-TF Momentum\n494\nP Scalping EA\n495\n496\naa 498",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3420.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * X\n444\n// RSI filter\n445\nif(RsI_Period > 0 && RSI_Value > 0)\n446\n{\n447\ndouble rsiBuffer[1];\n448\nCopyBuffer(handle_RsI[symbolIndex], 0, 1, 1, rsiBuffer);\n449\ndouble rsi = rsiBuffer[e];\n450\n(ange^ Isy - 0s > Tsu) 88 Angue? = Angue.\n451\ncanSell = canSel1 && (rsi > 50 + RsI_Value);\nDeepSeek EA\n452\n}\nP High Frequency EA\n453\n454\n// Price breakout signals.\nP Multi-TF Momentum\n455\ndouble close = SymbolsArray[symbolIndex].closePrice;\nScalping EA\n456\ncanBuy = canBuy && (close < recentLow && recentLow > 0);\n457\nntHigh.\nWakaWaka by MrCapFree.mq5 * *\n> BID High Frequency EA te i ppd / Rout. <4 :\n: : 3 rice reakou signals\nP $ . fhm cues CA Denefiern AS7 cransSell —- cranSell &8& (rlonca s rareantHich && racrantHich »s @)-",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 17,
+          "message": "invalid decimal literal (line 17, column 14)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3440.0,
+      "text": "JX\nCompile\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n455\ndouble close = SymbolsArray[symbolIndex].closePrice;\n456\ncanBuy = canBuy && (close < recentLow && recentLow > 0);\n457\ncanSell = canSel1 && (close > recenthigh && recentHigh > 0);\n458\n459\n// Max symbols check\n460\nint activeSymbols = 0;\n461\nfor(int i = 0; i < Arraysize(SymbolsArray); i++)\n462\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\nDeepSeek EA\n463\nactiveSymbols++;\nHigh Frequency EA\n464\n465\nif(activeSymbols >= MaximumSymbols)\nP Multi-TF Momentum\n466\ncanBuy = canSell = false;\nScalping EA\n467\nEA\n468\nfo: oS Simienn2s. BA Benn fen AGR // Smart dictance miltinijver",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3460.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * X\n458\n459\n// Max symbols check\n460\nint activeSymbols = 0;\n461\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\n462\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\n463\nactiveSymbols++;\n464\n465\nif(activeSymbols >= MaximumSymbols)\nDeepSeek EA\n466\ncanBuy = canSell = false;\nHigh Frequency EA\n467\n468\n// Smart distance multiplier\nMulti-TF Momentum\n469\nif(SmartDistance)\nP Scalping EA\n470\n471\n& f WakaWaka by MrCapFree.mq5 * *\n: : . . mar istance mu ipiier\nPoP SO Bi ene GA Benfica A711 doiuhle atrOGRiiftfar!1)] atr6e7?Ritferli1:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 33,
+          "message": "unmatched ')' (line 33, column 54)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3480.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mg5* X\n116\ninput\nENUM_TIMEFRAMES\nOPO_TimeFrame\n//T\n=\n117\ninput\nbool\nSmartTP\nfalse ;\n1/S\n=\n118\ninput\nbool\nfalse ;\nDoNotAdjustTPUnlessNewGrid\n//D\n119\n120input group\n\"<<<===== Select SL settings =====>>>\"\n121\n122\ninput\ndouble\nGridSL\n0 ;\nI/S\n123\ninput\nbool\nHideSL\nfalse ;\n//H\nDeepSeek EA\n124\nHigh Frequency EA\n125 input group\n\"<<<==s== Adjust the grid distance and multipliers =====>>>\"\n126\nMulti-TF Momentum\n127\ninput\nint\nTradeDistance\n35\n1//\nScalping EA\n128\ninput\nbool\nSmartDistance\ntrue\n//S\n:\nEA\n129\ninput\ndouble\nTradeMultinlier\n2nd.",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 67,
+          "message": "invalid decimal literal (line 67, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3600.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n464\n465\nif(activeSymbols >= MaximumSymbols)\n466\ncanBuy = canSell = false;\n467\n468\n// Smart distance multiplier\n469\nif(SmartDistance)\n470\nY\n471\ndouble atr96Buffer[1], atr672Buffer[1];\nDeepSeek EA\n472\nCopyBuffer(handle_ATR96[symbolIndex], 0, 1, 1, atr96Buffer);\nP High Frequency EA\n473\nCopyBuffer(handle_ATR672[symbolIndex], 0, 1, 1, atr672Buffer);\n474\ndouble atr96 = atr96Buffer[0];\nP Multi-TF Momentum\n475\ndouble atr672 = atr672Buffer[0];\nScalping EA\n476\nEA\n477",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3660.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * >\n476\n477\nif(atr672 > Epsi1on)\n478\nSymbolsArray[symbolIndex].SmartDistanceMultiplier = atr96 / atr672;\n479\n480\n// clamp multiplier\n481\nSymbolsArray[symbolIndex].SmartDistanceMultiplier = MathMin(1.5, MathMax(1.0, Symb\n482\n}\n483\nI DeepSeek EA\n484\n// Day tracking\nHigh Frequency EA\n485\nint dayOfWeek = tmBar.day_of_week;.\n486\nif(dayOfWeek != SymbolsArray[symbolIndex].LastDayOfWeek && SymbolsArray[symbolIndex].L\nMulti-TF Momentum\n487\nY\nScalping EA\n488\nSymbolsArray[symbolIndex].TradingAllowedToday = SymbolsArray[symbolIndex].Previous\n489",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 15,
+          "message": "closing parenthesis '}' does not match opening parenthesis '(' on line 13 (line 15, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3680.0,
+      "text": "ompile\nHistory\nWakaWaka by MrCapFree.mq5* X\n473\nCopyBuffer(handle_ATR672[symbolIndex], 0, 1, 1, atr672Buffer);\n474\ndouble atr96 = atr96Buffer[0];\n475\ndoub1e atr672 = atr672Buffer[0];\n476\n477\nif(atr672 > Epsi1on)\n478\nSymbolsArray[symbolIndex].SmartDistanceMultiplier = atr96 / atr672;\n479\n480\n// clamp multiplier\nDeepSeek EA\n481\nSymbolsArray[symbolIndex].SmartDistanceMultiplier = MathMin(1.5, MathMax(1.0, Symt\n482\nP High Frequency EA\n}\n483\nMulti-TF Momentum\n484\n// Day tracking\nP Scalping EA\n485\nint dayOfweek = tmBar.day_of_week;.\n486\nWakaWaka by MrCapFree.mq5 * *\nPP Bw eine FA Den fieen ARG 34£(davOFflveaek |= SvmholecArravlevmhol Tndexyl] | actNavOfleak 2&2 SvmholcArravlevmholTndey] |",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 23,
+          "message": "closing parenthesis '}' does not match opening parenthesis '(' on line 20 (line 23, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3700.0,
+      "text": "JX\nCompile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n86\ninput\nboo1\nAutoSplit\nfalse ;\n//A\n87\ninput\ndouble\nMaximumSpread\nI\n10\n//M\n88\ninput\nint\nMaximums1ippage\n10\n:\n1/M\n89\ninput\nint\nMaximumSymbo1s\n2\n//M\n:\nbool\nAllowHedging\n90\ninput\ntrue\n//A\n91\ninput\nbool\nAllowTradingOnHolidays\nfalse\n//A\n92\ninput\nA11owBuySe1lEnum\nAllowToBuySel1\n//A\n:\n93\ninput\ndouble\nMinimumFreeMargin\n0\n//M\n;\nDeepSeek EA\n94\ninput\ndouble\nMaximumDrawdown\n100\n//M\nHigh Frequency EA\n95\ninput\ndouble\nMaximumDrawdownMoney\n=\n0\n:\n//M\n96\ninput\neMaxDrawdownAction\nMaximumDrawdownAction\n=\n0\n//M\nMulti-TF Momentum\n;\n97\ninput\neDrawdownCalculation\nDrawdownCalculation\n1\n//M\n:\nScalping EA\n98\nEA\n99 innut\nJsed",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 5,
+          "message": "invalid syntax (line 5, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3740.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n486\nif(dayOfWeek != SymbolsArray[symbolIndex].LastDayOfWeek && Symbo1sArray[symbo1Index].!\n487\nI.\n488\nSymbolsArray[symbolIndex].TradingAllowedToday = SymbolsArray[symbolIndex].Previous\n489\nSymbolsArray[symbolIndex].PreviousDayTradingA1lowed = true;\n490\n491\nSymbo1sArray[symbolIndex].LastDayOfWeek = dayOfWeek;\n492\n493\ncanBuy = canBuy && SymbolsArray[symbolIndex].TradingAllowedToday;\nDeepSeek EA\n494\ncanSel1 = canSe11 && SymbolsArray[symbolIndex].TradingAllowedToday;\nHigh Frequency EA\n495\n496\n// Margin level check\nMulti-TF Momentum\n497\nif(MinimumFreeMargin > Epsi1on && AccountInfoDouble(AccouNT_MARgIN_LEVeL) < MinimumFre\nScalping EA\n498\n{\n499\nFatic datetime lastMarginlevelMsg",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3760.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * >\n495\n496\n// Margin level check\n497\nif(MinimumFreeMargin > Epsilon && AccountInfoDoub1e(AccouNT_MARgIN_LEVEL) < MinimumFre\n498\nY\n499\nstatic datetime lastMarginLevelMsg = 0;\n500\nif(TimeCurrent() - 1astMarginLevelMsg > 1800)\n501\n502\nPrint(TradeComment + \": Low margin level: \", AccountInfoDouble(AccouNT_MARgIN\nDeepSeek EA\n503\nlastMarginLevelMsg = TimeCurrent();\nHigh Frequency EA\n504\n{\n505\ncanBuy = canSell = false;\nMulti-TF Momentum\n506\n{\nScalping EA\n507\n508\nPod S Benne GA Benen. cea // Drawdown checke",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 15,
+          "message": "invalid decimal literal (line 15, column 20)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3800.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka byMrCapFree.mq5 * X\n505\ncanBuy = canSell = false;\n506\n}\n507\n508\n// Drawdown checks.\n509\nCheckMaxDrawdown();\n510\n511\n// Apply drawdown restrictions\n512\nif(DrawdownTriggered I| StopTradingUnti1Restart I DrawdownCooldownHours > 0)\nP DeepSeek EA\n513\n1\nHigh Frequency EA\n514\nstatic datetime 1astDDMsg = 0;\n515\nif(TimeCurrent() - 1astDDMsg > 3600)\nMulti-TF Momentum\n516\nScalping EA\n517\nstring reason;.\nEA\n518\n:, : % y 307\n| | > «ll MulticTE Momentum ee “iainailiiains - lastDDMsg > 3600)",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "unmatched '}' (line 8, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3820.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n586\n587\n588\n589\n590\n591\n592\n593/*\nDeepSeek EA\n594\nclosing the Grids / Trades / Drawdowns\nP High Frequency EA\n595\n596\nMulti-TF Momentum\n597\nP Scalping EA\n598\n599",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3860.0,
+      "text": "Compile\nED\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5 * X\n514\nstatic datetime 1astDDMsg = 0;\n515\nif(TimeCurrent() - 1astDDMsg > 3600)\n516\nY\n517\nstring reason;\n518\nif(DrawdownTriggered)\n519\nreason = \"drawdown triggered\";\n520\nelse if(StopTradingUnti1Restart)\n521\nreason = \"drawdown - restart required\";\nDeepSeek EA\n522\nelse\nHigh Frequency EA\n523\nreason = \"drawdown cooldown \" + IntegerToString(DrawdownCooldownHours) +\n524\nPMulti-TF Momentum\n525\nPrint(TradeComment + \"  + symbol, \": Trading blocked - \", reason);\nScalping EA\n526\nlastDDMsg = TimeCurrent();\nEA\n537",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 8,
+          "message": "invalid decimal literal (line 8, column 17)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3920.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n524\n525\nPrint(TradeComment + \"\n'+ symbol, \": Trading blocked - \", reason);\n526\n1astDDMsg = TimeCurrent();\n527\n528\ncanBuy = canSell = false;\n529\nY\n530\n531\n// Update cooldown counter.\nPDeepSeek EA\n532\nif(LastProcessedHour != currentHour).\nHigh Frequency EA\n533\nDrawdownCooldownHours--;\n534\nif(DrawdownCooldownHours < 0) DrawdownCoo1downHours = 0;\nMulti-TF Momentum\n535\nScalping EA\n536\n// clear drawdown flag if no positions.",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unterminated string literal (detected at line 7) (line 7, column 22)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3940.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n563\n564\n565\n566\n567\n568\n569\n570\nDeepSeek EA\n571\nHigh Frequency EA\n572\n573/*\nMulti-TF Momentum\n574\nGrid Related Functions\nP Scalping EA\n575\n> -_ Scalping EA Bg SS SSS SESS SSS HSS SaaS SSS aaa SaaHaSaSaaaSaHSaSaaaaaaaaSaaaSSaaaaSaaaaHaSaSaaSaaaaSaaaaSaaaaSa===",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3960.0,
+      "text": "JX\nCompile\nRe\nWakaWaka by MrCapFree.mq5*X\n113\ninput\nint\nBreakEvenAfterThisLevel\n0\n//B\n114\ninput\nboo1\nHidetp\nfalse ;\n//H\n115\ninput\nbool\nfalse ;\nUse_OPO_Method\n//U\n116\ninput\nENUM_TIMEFRAMES\nOPO_TimeFrame\n15\n//T\n:\nbool\nSmartTP\nfalse\n117\ninput\n//S\n118\ninput\nbool\nDoNotAdjustTPUn1essNewGrid\nfalse\n//D\n119\n120input group\n\"<<<==-s= Select SL settings =====>>>\"\nDeepSeek EA\n121\nHigh Frequency EA\n122\ninput\ndouble\nGridSL\n0 ;\n1/S\n123\ninput\nbool\nHideSL\nfalse ;\n//H\nMulti-TF Momentum\n124\nP Scalping EA\n125 input group.\n=>>>\nAdjust the grid distance and multipliers\n=====>>>\nEA\n126\nPb Bm eine A Dene fie 196",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 3980.0,
+      "text": "Compile\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5* X\n532\nif(LastProcessedHour != currentHour)\n533\nDrawdownCooldownHours--;\n534\nif(DrawdownCoo1downHours < 0) DrawdownCoo1downHours = 0;\n535\n536\n// clear drawdown flag if no positions\n537\nif(DrawdownTriggered)\n538\n539\ndouble totLots = 0;\nDeepSeek EA\n540\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\nHigh Frequency EA\n541\ntotLots += GetTotalLotsInGrid(SymbolsArray[i].SymbolName, -1, 0, false);\n542\nP Multi-TF Momentum\n543\nif(totLots < Epsilon)\nP Scalping EA\n544\nDrawdownTriggered = false;\n545\nEA\nP £ . —B cpnpnsnm CA Denner SAS 7",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 35,
+          "message": "invalid character '£' (U+00A3) (line 35, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4000.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n529\n}\n530\n531\n// Update cooldown counter.\n532\nif(LastProcessedHour != currentHour)\n533\nDrawdownCooldownHours--;.\n534\nif(DrawdownCooldownHours < 0) DrawdownCooldownHours = 0;.\n535\n536\n// clear drawdown flag if no positions\nP DeepSeek EA\n537\nif(DrawdownTriggered)\nHigh Frequency EA\n538\n{\n539\ndouble totLots = 0;\nP Multi-TF Momentum\n540\nfor(int i = 0; i < ArraySize(SymbolsArray); i++).\nP Scalping EA\n541\ntotLots += GetTotalLotsInGrid(SymbolsArray[i].SymbolName, -1, 0, false);\nE42\n. - PH Multi-TF Momentum ae double EOULOES = e; i P\nPE Bm cheese CA Dene fiers SA?",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4020.0,
+      "text": "JX\nCompile\n> History\nRe\nWakaWaka by MrCapFree.mq5*X\n539\ndouble totLots = 0;\n540\nfor(int i = 0; i < ArraySize(SymbolsArray); i++).\n541\ntotLots += GetTotalLotsInGrid(SymbolsArray[i].SymbolName, -1, 0, false);\n542\n543\nif(totLots < Epsilon)\n544\nDrawdownTriggered = false;\n545\n{\n546\nDeepSeek EA\n547\n// Update symbol state\nHigh Frequency EA\n548\nSymbolsArray[symbolIndex].CanBuy = canBuy;\n549\nSymbolsArray[symbolIndex].CanSe11 = canSe11;\nMulti-TF Momentum\n550\nSymbolsArray[symbolIndex].GridOpened = false;\nScalping EA\n551\nEA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 3,
+          "message": "invalid syntax (line 3, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4040.0,
+      "text": "Compile\nED\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5 X\n536\n// clear drawdown flag if no positions.\n537\nif(DrawdownTriggered)\n538\n{\n539\ndouble totLots = 0;\n540\nfor(int i = 0; i < Arraysize(SymbolsArray); i++)\n541\ntotLots += GetTotalLotsInGrid(SymbolsArray[i].SymbolName, -1, 0, false);\n542\n543\nif(totLots < Epsilon)\nDeepSeek EA\n544\nDrawdownTriggered = false;\n545\nHigh Frequency EA\n}\n546\nP Multi-TF Momentum\n547\n// Update symbol state\nP Scalping EA\n548\nSymbolsArray[symbolIndex].CanBuy = canBuy;\n549\nEA",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "invalid syntax (line 6, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4060.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n542\n543\nif(totLots < Epsilon)\n544\nDrawdownTriggered = false;\n545\n}\n546\n547\n// Update symbol state\n548\nSymbolsArray[symbolIndex].CanBuy = canBuy;\n549\nSymbolsArray[symbolIndex].CanSell = canSe11;\nDeepSeek EA\n550\nSymbolsArray[symbolIndex].GridOpened = false;\nHigh Frequency EA\n551\n552\nTickCounter++;\nP Multi-TF Momentum\n553\nLastProcessedHour = currentHour;\nScalping EA\n554\n555\nWakaWaka by MrCapFree.mq5 * *\nPope ! ickCounter++;\nea ee ee eee [={=| = // Tey #o anen initial ordar",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 10,
+          "message": "unmatched '}' (line 10, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4080.0,
+      "text": "Compile\n> History\nRe\nWakaWaka by MrCapFree.mq5 *\n545\n}\n546\n547\n// Update symbo1 state\n548\nSymbolsArray[symbolIndex].CanBuy = canBuy;\n549\nSymbolsArray[symbolIndex].CanSe11 = canSe11;\n550\nSymbolsArray[symbolIndex].GridOpened = false;\n551\n552\nTickCounter++;\nP DeepSeek EA\n553\nLastProcessedHour = currentHour;\nHigh Frequency EA\n554\n555\n// Try to open initial order\nP Multi-TF Momentum\n556\nSendInitialOrder(symbolIndex);\nScalping EA\n557\nEA\n5587\na ar ; / Try to open initial order",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched '}' (line 6, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4120.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * X\n549\nSymbolsArray[symbolIndex].CanSel1 = canSe11;\n550\nSymbolsArray[symbolIndex].GridOpened = false;\n551\n552\nTickCounter++;\n553\nLastProcessedHour = currentHour;.\n554\n555\n// Try to open initial order\n556\nSendInitialOrder(symbolIndex);\nDeepSeek EA\n557\nHigh Frequency EA\n558}\n559\nMulti-TF Momentum\n560void SendInitialOrder(int symbolIndex){.\nScalping EA\n561\ntring symbol\n-— oe WakaWaka by MrCapFree.mq5 * *\nPo4 4 56@ void SendInitialOrder(int symbolIndex){\nfob Sf iene) EW ben¥een [= =p } etrings evmhol =—- SvmholcArravlevmhol Tndey] SvmholName:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 21,
+          "message": "unmatched '}' (line 21, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4140.0,
+      "text": "ompile\nHistory\nRE\nWakaWaka by MrCapFree.mq5 *\n552\nTickCounter++;\n553\nLastProcessedHour = currentHour;\n554\n555\n// Try to open initial order\n556\nSendInitialOrder(symbolIndex);\n557\n558}\n559\nDeepSeek EA\n560 void SendInitialOrder(int symbolIndex){\nHigh Frequency EA\n561\n562\nstring symbo1 = SymbolsArray[symbolIndex].SymbolName;\nMulti-TF Momentum\n563\nScalping EA\n564\n// Quick permission check\n| | , «Aig Multi-TE Momentum ee string symbol = SymbolsArray[symbolIndex].SymbolName;",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 15,
+          "message": "unmatched '}' (line 15, column 4)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4160.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n561\n562\nstring symbo1 = SymbolsArray[symbolIndex].Symbo1Name;\n563\n564\n// Quick permission check\n565\nif(!IsTradingAllowed() I| (!SymbolsArray[symbolIndex].CanBuy && !SymbolsArray[symbolIr\n566\nreturn;\n567\n568\n// Check max symbols limit.\nDeepSeek EA\n569\nint activeSymbols = 0;\nHigh Frequency EA\n570\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\n571\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\nP Multi-TF Momentum\n572\nactiveSymbo1s++;\nScalping EA\n573\nMaximuimSymbelsy\nWakaWaka by MrCapFree.mq5 * *\nPod Benne BA. Benen C74 Sf l(activasvmhole s—- MayimimSvmhol<) ratirn:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 32,
+          "message": "invalid character '—' (U+2014) (line 32, column 45)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4180.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 * X\n564\n// Quick permission check\n565\nif(!IsTradingAllowed() I] (!SymbolsArray[symbolIndex].CanBuy && !SymbolsArray[symbolIr\n566\nreturn;\n567\n568\n// Check max symbols 1imit\n569\nint activeSymbols = 0;\n570\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\n571\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\nDeepSeek EA\n572\nactiveSymbols++;\n573\nHigh Frequency EA\n574\nif(activeSymbols >= MaximumSymbo1s) return;\nP Multi-TF Momentum\n575\nScalping EA\n576\n// Check spread\niouble\nCdeuiblelSvmbelTnfeTntegerlsvmbel\nSYMBOL\nSPread) :\nWakaWaka by MrCapFree.mq5 * *\nPP Bm eu FA Dene fieen C77 double enreaad —- (douhle)Svumhol Tnfotntaecer(evmhol] SVYMRO!I SPREAD):",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "closing parenthesis ']' does not match opening parenthesis '(' (line 7, column 25)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4220.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n668\nif(allowed == 0)\n699\nreturn false;\n670\n671\na11owed = (int)AccountInfoInteger(Account_TraDe_ExPeRt);\n672\nif(allowed == 0)\n673\nreturn false;\n674\n675\na11owed = MQLInfoInteger(MQL_TRADe_ALLOWED);\nDeepSeek EA\n676\nif(allowed == 0)\nHigh Frequency EA\n677\nreturn false;\n678\nMulti-TF Momentum\n679\nreturn true;\nP Scalping EA\n680 }\n681\nPod S Bi Sn GA. bene GR1",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 30,
+          "message": "unmatched '}' (line 30, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4240.0,
+      "text": "Compile\nED\nHistory\nJX\nRe\nWakaWaka by MrCapFree.mq5 * X\n570\nfor(int i = 0; i < Arraysize(SymbolsArray); i++)\n571\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\n572\nactiveSymbo1s++;\n573\n574\nif(activeSymbols >= MaximumSymbols) return;\n575\n576\n// Check spread\n577\ndouble spread = (double)SymbolInfoInteger(symbol, Symbol_SpreaD);\nDeepSeek EA\n578\nif(spread > MaximumSpread * GetPipMultiplier(symbol) && MaximumSpread > Epsilon)\nHigh Frequency EA\n579\n{\n580\nPrint(TradeComment + \" \" + symbol, \": Spread too high: \", spread);\nP Multi-TF Momentum\n581\nreturn;\nP Scalping EA\n582\n}\n583\nPod © i Sennen BA Ben fenn CR2",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 36,
+          "message": "invalid character '©' (U+00A9) (line 36, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4260.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n561\n562\nstring symbol = SymbolsArray[symbolIndex].SymbolName;\n563\n564\n// Quick permission check\n565\nif(!IsTradingAllowed() I (!SymbolsArray[symbolIndex].CanBuy && !SymbolsArray[symbolIr\n566\nreturn;\n567\n568\n// Check max symbols limit\nDeepSeek EA\n569\nint activeSymbols = 0;\nHigh Frequency EA\n570\nfor(int i = 0; i < ArraySize(SymbolsArray); i++)\n571\nif(GridExists(SymbolsArray[i].SymbolName, 0, 0))\nMulti-TF Momentum\n572\nactiveSymbols++;\nScalping EA\n573\n574\nif(activeSymbols\nMaximuimSvmhels)\n=, >i ! -\nbob Bil ecto EA Beannfenn S7A Sf l(activasvmhole s—- MayimimSvmhbolc) ratirn:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 35,
+          "message": "invalid character '—' (U+2014) (line 35, column 51)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4340.0,
+      "text": "Compile\nED\nHistory\nWakaWaka by MrCapFree.mq5 * X\n573\n574\nif(activeSymbols >= MaximumSymbols) return;\n575\n576\n// Check spread\n577\ndouble spread = (double)SymbolInfoInteger(symbol, SymBOL_SPREAD);\n578\n579\n580\nDeepSeek EA\n581\nreturn;\nHigh Frequency EA\n582\n}\n583\nPMulti-TF Momentum\n584\n// Try to open buy order\nP Scalping EA\n585\nif(SymbolsArray[symbolIndex].CanBuy)\n586\nWakaWaka by MrCapFree.mq5 * *\nPoP Bm eine ea pg BRe £",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 21,
+          "message": "unmatched '}' (line 21, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4360.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n576\n// Check spread\n577\ndouble spread = (double)SymbolInfoInteger(symbol, Symbol_SpreaD);\n578\n579\nY\n580\nPrint(TradeComment + \" \" + symbol, \": Spread too high: \", spread);.\n581\nreturn;\n582\n}\n583\nDeepSeek EA\n584\n// Try to open buy order.\nHigh Frequency EA\n585\nif(SymbolsArray[symbolIndex].CanBuy)\n586\nP Multi-TF Momentum\n587\nbool hasPosition = AllowHedging ? !GridExists(symbol, -1, 1) : !GridExists(symbol\nScalping EA\n588\n589\nif(hasPosition).\nob Bien nncs.) Gab Benfica BRoq 3£(hacPoncition)",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 16,
+          "message": "unmatched '}' (line 16, column 1)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4380.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 * X\n579\n{\n580\nPrint(TradeComment +  \" + symbol, \": Spread too high: \", spread);\n581\nreturn;\n582\n}\n583\n584\n// Try to open buy order\n585\nif(Symbo1sArray[symbolIndex].CanBuy)\n586\n{\nDeepSeek EA\n587\nbool hasPosition = AllowHedging ? !GridExists(symbol, -1, 1) : !GridExists(symbol.\nHigh Frequency EA\n588\n589\nif(hasPosition)\nP Multi-TF Momentum\n590\nOpenMarketOrder(symbo1Index, ORDER_TYPE_BUY);\nP Scalping EA\n591\nWakaWaka by MrCapFree.mq5 * *\n> - PB) Multi-TF Momentum 238 paltiasPostescn)\nPood Bie nnrns— GA Benfeen S99 // Try ton oannen call order",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unterminated string literal (detected at line 7) (line 7, column 55)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4420.0,
+      "text": "Compile\nHistory\nRE\nWakaWaka by MrCapFree.mq5 *\n593\nif(SymbolsArray[symbolIndex].CanSe11)\n594\n595\nbool hasPosition = AllowHedging ? !GridExists(symbol, -1, -1) : !GridExists(symbol\n596\n597\nif(hasPosition)\n598\nOpenMarketOrder(symbo1Index, ORDER_TYPE_SELL);\n599\n{\n600}\nDeepSeek EA\n601\nHigh Frequency EA\n602void OpenMarketOrder(int symbolIndex, ENuM_ORDER_TYPE orderType){\n603\nMulti-TF Momentum\n604\nstring symbo1 = SymbolsArray[symbolIndex].SymbolName;\nScalping EA\n605\nint maxAttempts = 10;\n606\nne 600 }",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 21,
+          "message": "invalid decimal literal (line 21, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4460.0,
+      "text": "Compile\n> History\nWakaWaka by MrCapFree.mq5 *\n602void OpenMarketOrder(int symbo1Index, ENUM_ORDER_TYPE orderType){\n603\n604\nstring symbol = SymbolsArray[symbolIndex].SymbolName;\n605\nint maxAttempts = 10;\n606\n607\nfor(int attempt = 0; attempt < maxAttempts; attempt++)\n608\n609\ndouble lotsize = CalculateLotsize(symbol, true);.\nDeepSeek EA\n610\nif(lotSize < Epsilon)\nHigh Frequency EA\n611\n612\nPrint(TradeComment + \" \" + symbol, \": Lot size too small\");.\nP Multi-TF Momentum\n613\nreturn;\nScalping EA\n614\n}\n615\n602 void OpenMarketOrder(int symbolIndex, ENUM_ORDER_TYPE orderType){\n> » BD Multi-TF Momentum",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid decimal literal (line 4, column 3)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4480.0,
+      "text": "Compile\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *\n611\n{\n612\nPrint(TradeComment + \"\n\" + symbol, \": Lot size too small\");\n613\nreturn;\n614\n}\n615\n616\ndouble margin = 0;.\n617\nif(!OrderCalcMargin(orderType, symbol, lotSize,.\n618\n(orderType == ORDER_TYPE_BUY) ? SymbolInfoDoub1e(symbol, SyMBOL_ASK) : Symbo1\nDeepSeek EA\n619\nmargin) II\nHigh Frequency EA\n620\nmargin <= 0 II\n621\nmargin > AccountInfoDoub1e(AccouNT_MARgIN_FREe))\nMulti-TF Momentum\n622\nScalping EA\n623\nPrint(TradeComment +\n+ symbol, \": Not enough money\");.\n624\nPf. Be cheese CA Dene fern 674 3fl(ardarTyvne -- ORDER TYPE RIV)",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 9,
+          "message": "unterminated string literal (detected at line 9) (line 9, column 22)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4500.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n632\n633\n634\n635\n636\n637\n638\n639\nDeepSeek EA\n640 }\n641\nP High Frequency EA\n642\nP Multi-TF Momentum\n643/*\nP Scalping EA\n644\nLot Size Functions\nEA\n> «BID Multi-TF Momentum oe ee",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unmatched '}' (line 14, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4520.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *X\n11\n12#include <Trade\\Trade.mqh>\n13\ncTrade\nTrade;\n14\nCPositionInfo\nposInfo;\n15\nCOrderInfo\nordInfo;\n16\n17\nenum LotsizingEnum\n{\n18\nLowRiskPreset= 5,\n//LowRisk Set 20% annua10.25%1oad\nDeepSeek EA\n19\nMidRiskPreset =4,\nA/Mid R1sk Set 40%annual(0.5%loa4)\nHigh Frequency EA\n20\nHighRiskPreset =3,\n//signifacant Risk Set 8e% annua1.0%\n21\nExtremeRiskPreset =7\n/Hgh Risk Set 120%annual (1.5%1oad\nMulti-TF Momentum\n22\nLotsEquity = 2,\n//Dynamic Lot based on Equity\nScalping EA\n23\nLotsBalance = 1,\n//Dynamic Lot based on Balance\nEA\n24\n° € 12 #include <Trade\\Trade.mgh>",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 22,
+          "message": "invalid decimal literal (line 22, column 30)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4660.0,
+      "text": "Compile\nED\n> History\nRe\nWakaWaka by MrCapFree.mq5 * X\n612\nPrint(TradeComment + \" \" + symbol, \": Lot size too small\");\n613\nreturn;\n614\n{\n615\n616\ndouble margin = 0;\n617\nif(!OrderCalcMargin(orderType, symbol, lotSize,\n618\n(orderType == ORDER_TYPE_BUy) ? SymbolInfoDoub1e(symbol, SYMBOL_ASK) : Symbol\n619\nmargin) 1T\nP DeepSeek EA\n620\nmargin <= e II\nHigh Frequency EA\n621\nmargin > AccountInfoDoub1e(AccOunt_MArgIN_FRee))\n622\nP Multi-TF Momentum\n623\nPrint(TradeComment + \" \" + symbol, \": Not enough money\");.\nP Scalping EA\n624\nif(orderType == ORDER_TYPE_BUY)\n625\nPb. Be chee: CA Dene fier 6G CyumholeArravleyvmholTndeay] CanRiv —- falca:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 20,
+          "message": "invalid decimal literal (line 20, column 9)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4680.0,
+      "text": "JX\nCompile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 *\n(orderType ==\n618\nORDER_TYPE_BUY) ? Symbo1InfoDoub1e(symbol, SyMBOL_ASK) : SymbolI\n619\nmargin) 1I\n620\nmargin <= 0 II\n621\nmargin > AccountInfoDoub1e(AccOUNT_MARGIN_FREE))\n622\n623\nPrint(TradeComment +  \" + symbol, \": Not enough money\");.\n624\nif(orderType == ORDER_TYPE_BUY)\n625\nSymbolsArray[symbolIndex].CanBuy = false;\nDeepSeek EA\n626\nelse\nHigh Frequency EA\n627\nSymbolsArray[symbolIndex].CanSel1 = false;\n628\nreturn;\nP Multi-TF Momentum\n629\n{\n-\nScalping EA\n630\n631",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 10,
+          "message": "unmatched ')' (line 10, column 7)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4700.0,
+      "text": "ompile\nED\n> History\nRe\nWakaWaka by MrCapFree.mq5 *\n621\nmargin > AccountInfoDoub1e(AccouNT_MARgIN_FRee))\n622\n623\nPrint(TradeComment + \" \" + symbol, \": Not enough money\");\n624\nif(orderType == ORDER_TYPE_BUY)\n625\nSymbolsArray[symbolIndex].CanBuy = false;\n626\nelse\n627\nSymbolsArray[symbolIndex].CanSell = false;\n628\nreturn;\nDeepSeek EA\n629\n{\nHigh Frequency EA\n630\n631\n// Calculate magic number\nMulti-TF Momentum\n632\nint magicBase = MagicNumberBase + UID;\n// 845\nScalping EA\n633\nint digits = StringLen(IntegerToString(magicBase));\n// 5\n634\nL/Buv\nPoP ; 3 alculate magic number",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched ')' (line 7, column 48)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4720.0,
+      "text": "Compile\n0\nED\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * >\n629\n{\n630\n631\n// Calculate magic number\n632\nint magicBase = MagicNumberBase + UID;\n// 845\n633\nint digits = StringLen(IntegerToString(magicBase));\n// 5\n634\nint direction = (orderType == ORDeR_TYPe_BUy) ? 1 : 2;\n// Buy\n635\neet * asegagsew + uogaaaatp * ( + sastp et)modygew(aut) = ngsew au!\n// 10r\n636\n// 184\nDeepSeek EA\n637\n// 284\nHigh Frequency EA\n638\n639\nstring comment = TradeComment;\nP Multi-TF Momentum\n640\nScalping EA\n641\nPrint(TradeComment + \"\n+ symbol, \": Sending \" +(orderType == ORDeR_Type_Buy ?\nEA\n642\nii >",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 23,
+          "message": "invalid decimal literal (line 23, column 5)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4760.0,
+      "text": "Compile\nE> History\nRe\nWakaWaka by MrCapFree.mq5 *\n637\n// 284\n638\n639\nstring comment = TradeComment;\n640\n641\nPrint(TradeComment + \" \" + symbol, \": Sending \" + (orderType == ORDER_TYPE_BUy ?\n642\norder, attempt \" + IntegerToString(attempt + 1));\n643\n644\nTrade.SetExpertMagicNumber(magic);\nDeepSeek EA\n645\nHigh Frequency EA\n646\n647\nbool success = (orderType == ORDeR_type_Buy) ? Trade.Buy(lotsize, symbol, 0, 0, 0,\nMulti-TF Momentum\n648\nTrade.Sell(lotSize, symbol, 0, 0, 0,\nScalping EA\n649\n650",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 14,
+          "message": "unterminated string literal (detected at line 14) (line 14, column 16)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4780.0,
+      "text": "Compile\nHistory\nWakaWaka by MrCapFree.mq5 *\n643\n644\nTrade.SetExpertMagicNumber(magic);\n645\nTrade.SetDeviationInPoints(Maximumslippage * GetPipMultiplier(symbol));\n646\n647\nbool success = (orderType == ORDeR_type_Buy) ? Trade.Buy(lotsize, symbol, 0, 0, 0,\n648\nTrade.Sell(lotsize, symbol, 0, 0, 0,.\n649\n650\nif(success) {\nDeepSeek EA\n651\nPrint(TradeComment + \" \" + symbol, \": Order opened, id: \", Trade.Resultorder().\nP High Frequency EA\n652\n653\n// Update state\nMulti-TF Momentum\n654\nif(orderType == 0RDER_TYPE_BUY)\nScalping EA\n655\nod Sf (Bimien nics EA ben Senn Pm == CymholeArravl evmholTndeyl CanRiv — falca:",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 26,
+          "message": "invalid decimal literal (line 26, column 17)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4800.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n646\n647\nbool success = (orderType == OrDer_type_Buy) ? Trade.Buy(lotsize, symbol, 0, 0, 0,\n648\nTrade.Sell(lotsize, symbol, 0, 0, 0,\n649\n650\nif(success) {\n651\n652\n653\n// Update state\nDeepSeek EA\n654\nif(orderType == ORDER_TYPE_BUY)\nHigh Frequency EA\n655\n{\n656\nSymbolsArray[symbolIndex].CanBuy = false;\nP Multi-TF Momentum\n657\nSymbolsArray[symbolIndex].LastBuyGridTime = TimeCurrent();\nScalping EA\n658\n}\n659\nelse",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4840.0,
+      "text": "Compile\nO\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\n664\nSymbolsArray[symbolIndex].Grid0pened = true;\n665\nSymbolsArray[symbolIndex].OPoTriggered = true;\n666\n667\nreturn;\n668\nY\n669\nelse\n670\n671\nuint retcode = Trade.ResultRetcode();.\nDeepSeek EA\n672\nHigh Frequency EA\n673\nTrade.ResultRetcodeDescription());\n674\n// Fatal errors - stop trying.\nPMulti-TF Momentum\n675\nif(retcode == TraDe_RetcoDe_InvaLID\nScalping EA\n676\nretcode\nTRADE_RETCODE_INVALID_VOLUME\nEA\n677\ncetcode",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 24,
+          "message": "unmatched ')' (line 24, column 33)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4860.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 X\n663\n664\nSymbolsArray[symbolIndex].GridOpened = true;\n665\nSymbolsArray[symbolIndex].OpoTriggered = true;\n666\n667\nreturn;\n668\n669\nelse\n670\n{\nDeepSeek EA\n671\nuint retcode = Trade.ResultRetcode();\nHigh Frequency EA\n672\n673\nTrade.ResultRetcodeDescription());\nP Multi-TF Momentum\n674\n// Fatal errors - stop trying\nP Scalping EA\n675\nif(retcode == TRADe_ReTCODe_INVALID\nEA\n676\n/ > « BD Multi-TF Momentum F",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 24,
+          "message": "closing parenthesis ')' does not match opening parenthesis '{' on line 17 (line 24, column 33)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4880.0,
+      "text": "Compile\nHistory\nRe\nWakaWaka by MrCapFree.mq5 * X\nStart/Resume debugging onhistory data, Ctrl+F5\n162\nint handle_RsI[];\nint handle_ATR96[];\n163\n164\nint hand1e_ATR672[];\n165\n166\n167\n168int OnInit(){\n169\nDeepSeek EA\n170\nPrint(TradeComment + \" -> Initializing...\");\nHigh Frequency EA\n171\n172\nChartSetInteger(0,CHARt_SHOW_GRID,false);\nP Multi-TF Momentum\n173\nScalping EA\n174/\nTesterHideIndicators(true);\n175\n4 $$\n_ 168 int OnInit() {\n| | > Rl MultiTE Momentum ee ChartSetInteger(@,CHART_SHOW_GRID, false);",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "invalid syntax (line 4, column 10)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4900.0,
+      "text": "6 Skip to\n2025.06.09 00:00\n503370.921370.921370.92137\nwaka Waka by Mr.CapFree:www.youtube.com/@MrCapFree)\nAsk\n0.92140\n0.66776\n1.37990\nStdDev3610.00059\n: a =. Z x oes ad 7.0,92137.0.92132.0,92132\nqh he fs, SF, Waka Waka by Mr. CapFree: www. youtube.com#@MrCapFree)\nSy : AM A id Wy | d ee,\nSs { 4 Meg Te si i 4 ii a hat 1\ni AY, t\nh StdDev(36) 0.000597",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 4,
+          "message": "unmatched ')' (line 4, column 51)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4920.0,
+      "text": "44\n6% Skip to\n2025.06.09 00:00\nX\nAUDCADM150.923790.924070.923760.92388\n.CapFree:www.youtube.com/@MrCapFree)\nMr.\nAsk\n9++\n1.92391\n*+++00407\n0.67159\n1.37579\nStdDev360.001434\n9 ban) AUDCAD,M15 0.92379 0.92407 0.92376 0.92388\nUw, . . Waka aia CapFree: wale om #@MrCapFree)\na a7 rag \" Mansy Alot lly\nN StdDev(36) 0.001434 —™",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 6,
+          "message": "unmatched ')' (line 6, column 36)"
+        }
+      ]
+    },
+    {
+      "timestamp": 4940.0,
+      "text": "Compile\nL\n> History\nRe\nWakaWaka by MrCapFree.mq5 X\n663\n}\n664\nSymbolsArray[symbolIndex].GridOpened = true;\n665\nSymbolsArray[symbolIndex].OpoTriggered = true;\n666\n667\nreturn;\n668\n669\nelse\n670\nf\nDeepSeek EA\n671\nuint.retcode = Trade.ResultRetcode();\nHigh Frequency EA\n672\nPrint(TradeComment + \" \" + symbol, *\": Failed to send order. Retcode: \", Trade.\n673\nTrade.ResultRetcodeDeseription());\nPMulti-TF Momentum\n674\n//Fata1 errors -stop trying\nScalping EA\n675\nif(retcode == TraDe_RetCODE_InVaLID\nEA\n676\naaa 678 {",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [
+        {
+          "line": 7,
+          "message": "unmatched '}' (line 7, column 1)"
+        }
+      ]
+    }
+  ]
+}

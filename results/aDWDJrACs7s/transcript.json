@@ -1,0 +1,3764 @@
+{
+  "video_id": "aDWDJrACs7s",
+  "title": "Build This $2800 Forex Trading Bot From Scratch (Full Code) – Part 2 || Structure and First Trade",
+  "uploader": "Mr. CapFree",
+  "webpage_url": "https://www.youtube.com/watch?v=aDWDJrACs7s",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.28,
+      "text": " We're building the trading robot. It's a multi-currency grid management system with quite a lot"
+    },
+    {
+      "start": 5.28,
+      "end": 9.44,
+      "text": " of advanced features. It's been there on MQL marketplace for quite some time now."
+    },
+    {
+      "start": 10.4,
+      "end": 16.4,
+      "text": " It sells for $2,800. It boasts a very strong performance, consecutive months in profit,"
+    },
+    {
+      "start": 16.4,
+      "end": 20.8,
+      "text": " and it comes with full documentation, including features, how to install, requirement,"
+    },
+    {
+      "start": 20.8,
+      "end": 25.28,
+      "text": " risk settings, strategy, and all that good stuff. But we will build it ourselves,"
+    },
+    {
+      "start": 25.28,
+      "end": 29.28,
+      "text": " a step-by-step with all the functionality and this pretty looking panel."
+    },
+    {
+      "start": 29.28,
+      "end": 33.04,
+      "text": " This will be a series of videos, as the trading robot is quite advanced,"
+    },
+    {
+      "start": 33.04,
+      "end": 37.68,
+      "text": " and we need to build a lot of functionality. And it seems to have been very intelligently built."
+    },
+    {
+      "start": 37.68,
+      "end": 42.0,
+      "text": " In the first video, we try to dissect the functionality of the year. We try to figure out"
+    },
+    {
+      "start": 42.0,
+      "end": 47.6,
+      "text": " how does the year work, how's the initial trade open, how are the grids formed and maintained,"
+    },
+    {
+      "start": 47.6,
+      "end": 53.52,
+      "text": " how's the TPs in a stop-loss calculated, and some other really cool features like starting the grid"
+    },
+    {
+      "start": 53.6,
+      "end": 60.080000000000005,
+      "text": " from a certain level, placing both marked trades in the beginning. It's smart TPs, smart stop-losses."
+    },
+    {
+      "start": 60.080000000000005,
+      "end": 64.72,
+      "text": " It's smart distancing of the grid depending on the volatility in the market at that point in time."
+    },
+    {
+      "start": 64.72,
+      "end": 69.92,
+      "text": " And then also looked at some additional features like news filter, draw down controls, additional"
+    },
+    {
+      "start": 69.92,
+      "end": 74.32000000000001,
+      "text": " restrictions, and a lot more. If you're joining us from this video, I would strongly urge you to"
+    },
+    {
+      "start": 74.32000000000001,
+      "end": 78.80000000000001,
+      "text": " start from the first video, because building what we are trying to build without understanding"
+    },
+    {
+      "start": 78.80000000000001,
+      "end": 83.44,
+      "text": " what it is that we are trying to build is like getting into calculus without first understanding"
+    },
+    {
+      "start": 83.44,
+      "end": 87.67999999999999,
+      "text": " or mathematics. I would not recommend. We don't want trauma of logging in the end. Now like"
+    },
+    {
+      "start": 87.67999999999999,
+      "end": 92.16,
+      "text": " always, I will make the chords available in the store for anybody who wants to download it for"
+    },
+    {
+      "start": 92.16,
+      "end": 98.8,
+      "text": " reference, but please understand this. I am making the code file available for reference. I am in"
+    },
+    {
+      "start": 98.8,
+      "end": 102.72,
+      "text": " no way saying that you're going to make Elon must look like a breaker from the third century,"
+    },
+    {
+      "start": 102.72,
+      "end": 107.28,
+      "text": " by simply downloading and applying it on the year. I don't suppose this is going to make multi-million"
+    },
+    {
+      "start": 107.28,
+      "end": 112.64,
+      "text": " as overnight. In the same breath, it is a very good year as long as you know how to use it properly."
+    },
+    {
+      "start": 112.64,
+      "end": 117.76,
+      "text": " An year is like a two, just like a hammer is a two. Now if you don't know how to use it, evolution"
+    },
+    {
+      "start": 117.76,
+      "end": 122.24,
+      "text": " is not going to be happy with its generosity of blessing us with thumbs. With that out of the way,"
+    },
+    {
+      "start": 122.24,
+      "end": 127.2,
+      "text": " let's start building first the backbone of the year. Then we're going to put a skeleton and some"
+    },
+    {
+      "start": 127.2,
+      "end": 132.4,
+      "text": " meat around it and eventually a very pretty is smooth skin all over. In today's video, we're going to"
+    },
+    {
+      "start": 132.4,
+      "end": 137.04,
+      "text": " write the fundamental structure on which the entire year is going to be built. And we're going to"
+    },
+    {
+      "start": 137.04,
+      "end": 142.0,
+      "text": " get to a position where we open up the first trade. Then in the later videos, we will open up"
+    },
+    {
+      "start": 142.0,
+      "end": 146.88,
+      "text": " grids. We will do the smart distancing. Then we're going to do all the lot sizing methods,"
+    },
+    {
+      "start": 146.88,
+      "end": 152.0,
+      "text": " different types of calculations for the lot sizes for the grid based on various different ways"
+    },
+    {
+      "start": 152.0,
+      "end": 155.84,
+      "text": " that you can manage the grid. Then we're going to look at the piece and the stop losses."
+    },
+    {
+      "start": 155.84,
+      "end": 160.32,
+      "text": " And also additional functionalities, like not sending the tps and a stop loss to the broker,"
+    },
+    {
+      "start": 160.32,
+      "end": 165.12,
+      "text": " but managing it internally. Then we're going to put some really cool flavors and colors on the"
+    },
+    {
+      "start": 165.6,
+      "end": 172.0,
+      "text": " in terms of drawdown controls, FTMO stuff, news filters, other sorts of restrictions, margins,"
+    },
+    {
+      "start": 172.64000000000001,
+      "end": 178.0,
+      "text": " safety measures, and this extremely pretty looking panel. Once again, I'm not going to build it"
+    },
+    {
+      "start": 178.0,
+      "end": 182.56,
+      "text": " with a green pack man. I'm going to build it with a yellow pack man because I just couldn't find"
+    },
+    {
+      "start": 182.56,
+      "end": 187.6,
+      "text": " a green pack man. In the end, it's going to be a journey. So buckle up. And for the faint of heart,"
+    },
+    {
+      "start": 187.6,
+      "end": 193.20000000000002,
+      "text": " user discretion is advised. Now with no motion angles, let's start. Okay, so we start here. And in"
+    },
+    {
+      "start": 193.20000000000002,
+      "end": 205.04000000000002,
+      "text": " the YouTube folder, I'm going to create another folder. And let's call it Waka Waka by Mr. Capfree."
+    },
+    {
+      "start": 206.96,
+      "end": 215.20000000000002,
+      "text": " Now copy the name. And then within this folder, we're going to create a new MQL5 file. Waka Waka"
+    },
+    {
+      "start": 215.20000000000002,
+      "end": 221.60000000000002,
+      "text": " by Mr. Capfree. Next, next and next. And here we have the opening template. I'll clean it up."
+    },
+    {
+      "start": 222.56,
+      "end": 227.35999999999999,
+      "text": " So here we are with the clean template. We have the initialization function, which is going to be"
+    },
+    {
+      "start": 227.35999999999999,
+      "end": 233.12,
+      "text": " done on every time the EA is initialized. Then the de initialization, which is the opposite. So when"
+    },
+    {
+      "start": 233.12,
+      "end": 238.07999999999998,
+      "text": " the EA is de initialized or it's removed from the chart, that's what all the codes here are going to"
+    },
+    {
+      "start": 238.07999999999998,
+      "end": 243.76,
+      "text": " be done at. And then you have the on take function, which is every time there is a price change or"
+    },
+    {
+      "start": 243.76,
+      "end": 248.95999999999998,
+      "text": " a new price data arrives, all the codes which we are going to write here are going to be triggered."
+    },
+    {
+      "start": 249.92000000000002,
+      "end": 255.12,
+      "text": " So we're going to start at the top. And we're going to add a few properties. So we're going to add"
+    },
+    {
+      "start": 255.12,
+      "end": 259.84000000000003,
+      "text": " a strict property and a description property, the description property, self-explanatory,"
+    },
+    {
+      "start": 259.84000000000003,
+      "end": 267.2,
+      "text": " the strict property basically asks when we compile, we ask the MQL to do a very strict compilation."
+    },
+    {
+      "start": 267.2,
+      "end": 274.8,
+      "text": " So go through the codes and properly look through for any errors or warnings and stuff like that."
+    },
+    {
+      "start": 275.68,
+      "end": 281.2,
+      "text": " Then we are going to include a trade dot MQH file, which is the file that you have here in the"
+    },
+    {
+      "start": 281.2,
+      "end": 289.2,
+      "text": " include folder, trade, trade dot MQH. And these are all the codes which are which come pre-written"
+    },
+    {
+      "start": 289.2,
+      "end": 296.40000000000003,
+      "text": " with MQL, which help us with all the trading operations. So in terms of opening trades, modifying"
+    },
+    {
+      "start": 296.40000000000003,
+      "end": 300.96000000000004,
+      "text": " trades, getting information on the positions, getting information on the order and things like those."
+    },
+    {
+      "start": 301.68,
+      "end": 306.56,
+      "text": " So for trading operations, we're going to use the class C trade and we are linking it to a variable"
+    },
+    {
+      "start": 306.56,
+      "end": 313.35999999999996,
+      "text": " trade. For position information, we're going to create, we're linking this class to a variable"
+    },
+    {
+      "start": 313.35999999999996,
+      "end": 318.32,
+      "text": " by the name position info. So we're going to use position info to get all the position related"
+    },
+    {
+      "start": 318.32,
+      "end": 324.32,
+      "text": " information. And then see order info class, which we're linking to order information variable,"
+    },
+    {
+      "start": 324.88,
+      "end": 328.56,
+      "text": " which I think we are not going to use within this year, but this is just my general practice"
+    },
+    {
+      "start": 328.56,
+      "end": 333.28000000000003,
+      "text": " to create this. So I have all the trading operations in trade, all the position information"
+    },
+    {
+      "start": 333.28000000000003,
+      "end": 338.08,
+      "text": " in position and all the order information, which are the self-stop, biased, or limited cell limits"
+    },
+    {
+      "start": 338.08,
+      "end": 343.68,
+      "text": " and those kind of things in this variable. And then we're going to create a few enums."
+    },
+    {
+      "start": 345.6,
+      "end": 350.56,
+      "text": " So the first enum that we're going to create is the lot sizing enum. And enums are basically,"
+    },
+    {
+      "start": 350.56,
+      "end": 357.44,
+      "text": " if for example, I go back to my scalping here and I put and I pull down here, if I go to my scalping"
+    },
+    {
+      "start": 358.08,
+      "end": 361.92,
+      "text": " and go to the input, what you can see is for example, here, the trading system applied,"
+    },
+    {
+      "start": 362.64,
+      "end": 368.71999999999997,
+      "text": " you can select from this dropdown of fixed payps or percentage. So that's an enum that we're using"
+    },
+    {
+      "start": 368.71999999999997,
+      "end": 373.92,
+      "text": " or here, for example, you can choose fixed laws, percentage of balance equity or free margin,"
+    },
+    {
+      "start": 373.92,
+      "end": 379.68,
+      "text": " but that's only because to this variable, I have assigned an enum, which has these four values."
+    },
+    {
+      "start": 380.64,
+      "end": 385.84,
+      "text": " So that's what we're doing here. We're going to creating an enum, which is going to have these"
+    },
+    {
+      "start": 386.16,
+      "end": 394.40000000000003,
+      "text": " members. So low risk, 20% mid-risk, significant risk, high risk, dynamic lots based on equity,"
+    },
+    {
+      "start": 394.40000000000003,
+      "end": 398.96000000000004,
+      "text": " dynamic lot based on balance, lot based on deposit load and fixed lots. So these are the"
+    },
+    {
+      "start": 398.96000000000004,
+      "end": 403.36,
+      "text": " options that we're going to give to our user. We're creating the enum by the name,"
+    },
+    {
+      "start": 403.36,
+      "end": 408.96000000000004,
+      "text": " lot sizing enum and we're going to assign this enum to a variable, which then in turn,"
+    },
+    {
+      "start": 408.96000000000004,
+      "end": 413.52000000000004,
+      "text": " we'll make all of this available in the dropdown. So that's the first enum,"
+    },
+    {
+      "start": 413.52,
+      "end": 419.35999999999996,
+      "text": " then I'm going to create three more enums, which is allow by sell enum, where we're going to give"
+    },
+    {
+      "start": 419.35999999999996,
+      "end": 428.79999999999995,
+      "text": " the user the ability to select only sell only buy or allow both by himself. And then in case the"
+    },
+    {
+      "start": 428.79999999999995,
+      "end": 434.88,
+      "text": " dropdown is hit, it's triggered. What action do we want? So we're giving four different possibilities"
+    },
+    {
+      "start": 434.88,
+      "end": 442.08,
+      "text": " to the user. So to prohibit the new grade until restart, prohibit opening up a new grade."
+    },
+    {
+      "start": 443.68,
+      "end": 450.15999999999997,
+      "text": " Close all the trades and stop trading until we start and close the trade and stop trading for 24 hours."
+    },
+    {
+      "start": 450.15999999999997,
+      "end": 455.35999999999996,
+      "text": " So these are the options that we're giving. And then how are we going to calculate the dropdown?"
+    },
+    {
+      "start": 455.35999999999996,
+      "end": 460.71999999999997,
+      "text": " Is it going to be only for this strategy? So not calculate the dropdown for the entire account,"
+    },
+    {
+      "start": 460.71999999999997,
+      "end": 466.4,
+      "text": " but only for trades, which are opened by this strategy because you can also have somebody who"
+    },
+    {
+      "start": 466.40000000000003,
+      "end": 473.92,
+      "text": " applies this in the charts, but then also open manual trades or on the same account that are"
+    },
+    {
+      "start": 473.92,
+      "end": 479.28000000000003,
+      "text": " multiple years. So do we want to calculate the dropdown for the entire account or only for the"
+    },
+    {
+      "start": 479.28000000000003,
+      "end": 483.92,
+      "text": " strategy? So these are the enums I'm creating. And then I'm going to create a structure."
+    },
+    {
+      "start": 487.12,
+      "end": 491.36,
+      "text": " And we're creating a structure by the name symbol information. So we can assign the symbol"
+    },
+    {
+      "start": 491.36,
+      "end": 497.92,
+      "text": " information structure to a variable. And then within that variable, you will have all of these"
+    },
+    {
+      "start": 497.92,
+      "end": 504.96000000000004,
+      "text": " sub variable available. So you can, for example, if we create a variable by the name array size."
+    },
+    {
+      "start": 506.16,
+      "end": 512.4,
+      "text": " And then we assign to it this, then we can use array size dot symbol name, array size dot last"
+    },
+    {
+      "start": 512.4,
+      "end": 519.6,
+      "text": " main time frame update, array size dot opo time frame update. So all of these then become"
+    },
+    {
+      "start": 519.6,
+      "end": 527.4399999999999,
+      "text": " available as a dot later on, which we can use to assign different properties of that variable."
+    },
+    {
+      "start": 528.3199999999999,
+      "end": 531.92,
+      "text": " I'm not going to go through all of them, but just a few main ones, for example,"
+    },
+    {
+      "start": 531.92,
+      "end": 538.4,
+      "text": " the main time frame, the last time frame updating this. So what is the time? Then can buy and"
+    },
+    {
+      "start": 538.4,
+      "end": 545.04,
+      "text": " can sell as a bull, which is true or false. And this is we're going to use to see whether or not we"
+    },
+    {
+      "start": 545.04,
+      "end": 553.04,
+      "text": " buy or we place a sell order. And then various properties like has the grid open, has the opi open"
+    },
+    {
+      "start": 553.04,
+      "end": 559.4399999999999,
+      "text": " triggered. What's the smart multiplier? What is the pull into bandwidth on this symbol? Other things"
+    },
+    {
+      "start": 559.4399999999999,
+      "end": 565.12,
+      "text": " like days of the week, average price, last buy average price, last sell average price, last buy"
+    },
+    {
+      "start": 565.12,
+      "end": 573.36,
+      "text": " TP, last sell TP, last time the grid was open on buy, last time the grid was open on sell. And"
+    },
+    {
+      "start": 573.36,
+      "end": 579.12,
+      "text": " those kind of properties, we can store in one variable, then using a dot and using all of these"
+    },
+    {
+      "start": 579.12,
+      "end": 585.12,
+      "text": " sub members of those variables. So we create this. And now we can go ahead and actually create"
+    },
+    {
+      "start": 585.12,
+      "end": 590.48,
+      "text": " variables, which are going to be available for the user to select from. So these are all input"
+    },
+    {
+      "start": 590.72,
+      "end": 596.08,
+      "text": " variables. We start by saying input groups. So as a header, select the risk setting. And here"
+    },
+    {
+      "start": 596.08,
+      "end": 603.6,
+      "text": " we are creating all of these variables. So for example, if I compile now and hit the play button,"
+    },
+    {
+      "start": 604.72,
+      "end": 610.32,
+      "text": " you start. Then I can see here now our EA has been created."
+    },
+    {
+      "start": 610.72,
+      "end": 619.9200000000001,
+      "text": " What a walker by Mr. Cathry. And within that EA, now we have the select the risk setting"
+    },
+    {
+      "start": 620.72,
+      "end": 629.2,
+      "text": " and all of these. And now because we assigned this lot size enum to lot sizing method,"
+    },
+    {
+      "start": 630.0,
+      "end": 638.24,
+      "text": " this enum. Therefore, now we have this dropdown available to select the lotus setting, medium,"
+    },
+    {
+      "start": 638.32,
+      "end": 645.44,
+      "text": " significant, high dynamic lots, fixed lots and those kind of things. And here we allowed"
+    },
+    {
+      "start": 645.44,
+      "end": 651.6800000000001,
+      "text": " allowed to buy and sell this enum. So allowed to buy sell has now, sell only,"
+    },
+    {
+      "start": 652.96,
+      "end": 660.48,
+      "text": " buy only, or buy and sell. So these enums are also populated. So we ask the user if we can allow"
+    },
+    {
+      "start": 660.48,
+      "end": 667.12,
+      "text": " opening a new grid, true or false. And then the lot sizing, depending on what method is chosen,"
+    },
+    {
+      "start": 667.2,
+      "end": 672.4,
+      "text": " now if it is fixed lots, then what is the value of the fixed lots? If he has chosen dynamic value"
+    },
+    {
+      "start": 672.4,
+      "end": 677.2,
+      "text": " based on equity or balance, then what is that don't dynamic lot size?"
+    },
+    {
+      "start": 679.04,
+      "end": 685.68,
+      "text": " Then if he has chosen load percentage of deposit load, then what is that percentage?"
+    },
+    {
+      "start": 685.68,
+      "end": 691.76,
+      "text": " Then the fixed initial deposit, which is only for tester, because what can happen with the grid,"
+    },
+    {
+      "start": 691.76,
+      "end": 696.4,
+      "text": " if, I mean, one way to use the grid strategies is you start with the 5000 balance."
+    },
+    {
+      "start": 697.04,
+      "end": 702.0,
+      "text": " And as it makes profit, you take that profit out. So you always keep the initial balance at 5000."
+    },
+    {
+      "start": 703.28,
+      "end": 708.64,
+      "text": " Because one day, I mean, it's not a question of when, it's not a question of if it's a question of when"
+    },
+    {
+      "start": 708.64,
+      "end": 715.2,
+      "text": " the grid is going to like bite the dust and the strategy is going to blow. So what you're banking"
+    },
+    {
+      "start": 715.2,
+      "end": 720.56,
+      "text": " on is that you make enough profit and take it out before the account is blown. So if you have a"
+    },
+    {
+      "start": 720.5600000000001,
+      "end": 724.5600000000001,
+      "text": " starting balance of 1000 euros and you're constantly taking the profit out, keeping the initial"
+    },
+    {
+      "start": 724.5600000000001,
+      "end": 732.5600000000001,
+      "text": " balance at 1000. So that is all that 1000 is all that you're risking on the strategy."
+    },
+    {
+      "start": 733.2,
+      "end": 738.72,
+      "text": " And if you want to test it like this, then the user can select here a true. And in that case,"
+    },
+    {
+      "start": 738.72,
+      "end": 743.12,
+      "text": " we will keep the fixed initial deposit for lot size calculation and instead of using"
+    },
+    {
+      "start": 744.0000000000001,
+      "end": 749.9200000000001,
+      "text": " the equity or the current balance after the profit, we're always going to revert back to"
+    },
+    {
+      "start": 749.92,
+      "end": 755.36,
+      "text": " fixed initial deposit. Then what's the maximum lot? Do we allow auto is split,"
+    },
+    {
+      "start": 756.24,
+      "end": 762.4799999999999,
+      "text": " which basically means an on larger accounts, let's suppose if the lot size calculation is giving us"
+    },
+    {
+      "start": 762.4799999999999,
+      "end": 771.52,
+      "text": " 200 lots. But the broker is only allowing 100 lot size. So in that case, do we allow auto is split"
+    },
+    {
+      "start": 771.52,
+      "end": 778.16,
+      "text": " so that 200 calculation is then auto is split into two trades and we open two trades instead of one."
+    },
+    {
+      "start": 778.9599999999999,
+      "end": 783.76,
+      "text": " Or do we revert back to if it is false then we revert back to whatever is the maximum allowed by the"
+    },
+    {
+      "start": 783.76,
+      "end": 790.0799999999999,
+      "text": " broker. So even though our calculation is giving us 200 lot size, we still go with the 100 instead"
+    },
+    {
+      "start": 790.0799999999999,
+      "end": 795.92,
+      "text": " of dividing it into two. Then the max is spread and slippage. And then how many symbols the user is"
+    },
+    {
+      "start": 795.92,
+      "end": 800.24,
+      "text": " allowing the grids to open ads. So even though there might be four currency that you're applying"
+    },
+    {
+      "start": 800.24,
+      "end": 806.24,
+      "text": " it on, but as soon as there are two grids on two currencies, you don't allow opening of the grids"
+    },
+    {
+      "start": 806.24,
+      "end": 812.64,
+      "text": " on more currencies. So how many maximum symbols at one time can have grids? Then allow"
+    },
+    {
+      "start": 812.64,
+      "end": 819.04,
+      "text": " hedging meaning if there is a by grid open, do you allow a cell grid to open as well or if there"
+    },
+    {
+      "start": 819.04,
+      "end": 824.88,
+      "text": " is a by grid that you don't allow a cell grid. Do you allow trading on holidays and holidays"
+    },
+    {
+      "start": 824.88,
+      "end": 829.28,
+      "text": " here basically mean between the 25th or December and the 3rd of January. So do you allow trading"
+    },
+    {
+      "start": 829.28,
+      "end": 835.44,
+      "text": " during that time? Then allow to best buy sells like we have already seen, buy only sell only in"
+    },
+    {
+      "start": 836.32,
+      "end": 845.6800000000001,
+      "text": " minimum three margin in percentage. Zero is disabled. Maximum drawdown in percentage and maximum"
+    },
+    {
+      "start": 845.6800000000001,
+      "end": 852.72,
+      "text": " drawdown in money. So that we triggered a drawdown once that level of maximum drawdown is hit"
+    },
+    {
+      "start": 854.0,
+      "end": 856.72,
+      "text": " and then what's the action which is out of these four."
+    },
+    {
+      "start": 860.4000000000001,
+      "end": 863.6,
+      "text": " And then how do we calculate based on strategy or on account?"
+    },
+    {
+      "start": 864.32,
+      "end": 868.88,
+      "text": " Then we go to the strategy settings which is how many symbols, what are the symbols separated by"
+    },
+    {
+      "start": 868.88,
+      "end": 877.0400000000001,
+      "text": " comma? The time to start trading, time to stop trading, what's the hour? Then Bollinger Man period"
+    },
+    {
+      "start": 877.0400000000001,
+      "end": 882.64,
+      "text": " as we saw in the strategy testing, the Bollinger bands are going to be used primarily for"
+    },
+    {
+      "start": 882.64,
+      "end": 888.5600000000001,
+      "text": " TP setting, but we need to create the Bollinger bands. So what's the period for Bollinger band?"
+    },
+    {
+      "start": 889.44,
+      "end": 895.2,
+      "text": " And then the RSI period and the RSI value. And as we saw in the actual year, the RSI value is what"
+    },
+    {
+      "start": 895.2,
+      "end": 903.6,
+      "text": " determined from 50 the middle RSI? How much higher and lower do we place the buy and the sell order?"
+    },
+    {
+      "start": 903.6,
+      "end": 910.1600000000001,
+      "text": " So the default position is 15. So that's going to give you 65 and 35 as the ranges for RSI"
+    },
+    {
+      "start": 910.1600000000001,
+      "end": 915.2800000000001,
+      "text": " where the trades are going to open. And then you have the TP settings. So what's the initial TP?"
+    },
+    {
+      "start": 916.0799999999999,
+      "end": 923.92,
+      "text": " Which is the TP that's initiated on the first trade? Then do you use weighted TP? And by weighted TP"
+    },
+    {
+      "start": 923.92,
+      "end": 929.1999999999999,
+      "text": " it will mean that once there is a grade and it's going to open at different lot sizes,"
+    },
+    {
+      "start": 929.8399999999999,
+      "end": 936.48,
+      "text": " do we weigh the lot sizes as well from the average price? Then the grade TP meaning initial"
+    },
+    {
+      "start": 936.48,
+      "end": 942.48,
+      "text": " TP was 10, but for the grade TP, do you want to set a different value? Break even after this."
+    },
+    {
+      "start": 942.48,
+      "end": 948.96,
+      "text": " So ignore all the TP settings of how much TP do we want after a certain level. So grade opens"
+    },
+    {
+      "start": 948.96,
+      "end": 953.28,
+      "text": " level one grade trade and the level two grade trade and maybe you say that after level three"
+    },
+    {
+      "start": 953.28,
+      "end": 959.2,
+      "text": " enough is enough. Let's set it to break even so that at least we can get out. Hide TP which is like"
+    },
+    {
+      "start": 959.2,
+      "end": 962.88,
+      "text": " a lot of people want to diagnose. I don't want to send the TP to the broker because there's"
+    },
+    {
+      "start": 962.88,
+      "end": 969.36,
+      "text": " going to be a TP or stop loss hunt. So no, I'm going to just calculate it and keep it inside."
+    },
+    {
+      "start": 969.36,
+      "end": 976.64,
+      "text": " So that's the Hide TP. Use the OPO method which is as if you have sent the TP to the broker"
+    },
+    {
+      "start": 976.64,
+      "end": 980.88,
+      "text": " then it doesn't really matter because as soon as the price gets there the TP is going to be triggered."
+    },
+    {
+      "start": 982.32,
+      "end": 988.24,
+      "text": " But if you have chosen the Hide TP then you're keeping the TPs and the stop loss is internally."
+    },
+    {
+      "start": 989.44,
+      "end": 995.12,
+      "text": " In which case we can have the OPO method which is on only on open price only"
+    },
+    {
+      "start": 995.6,
+      "end": 1003.52,
+      "text": " which means that we're only going to close the trade once a full candle has closed above the TP."
+    },
+    {
+      "start": 1004.48,
+      "end": 1009.92,
+      "text": " I don't know why you would want to do that because if the TP is hit the TP is hit."
+    },
+    {
+      "start": 1009.92,
+      "end": 1016.24,
+      "text": " I mean on the stop loss I understand but on the TP to use the OPO method for me just doesn't make any"
+    },
+    {
+      "start": 1016.24,
+      "end": 1022.32,
+      "text": " sense. But because this is part of the year so I'll build it and I'll explain it but I'll not"
+    },
+    {
+      "start": 1022.32,
+      "end": 1029.04,
+      "text": " spend too much time on that. Then the OPO timeframe which can be different because you want to see"
+    },
+    {
+      "start": 1029.04,
+      "end": 1037.1200000000001,
+      "text": " a candle closing above the TP in order to close the position then do we want to do it on the 15-minute"
+    },
+    {
+      "start": 1037.1200000000001,
+      "end": 1044.0800000000002,
+      "text": " charge itself which the year is going to run at or do you want to use a 5-minute charge or 10-minute"
+    },
+    {
+      "start": 1044.0800000000002,
+      "end": 1050.48,
+      "text": " charge or become you know like defensey about it. Then a smart TP is going to be based on"
+    },
+    {
+      "start": 1050.48,
+      "end": 1056.8,
+      "text": " Bollinger Mans instead of these initial TP situation we're going to calculate TP based on Bollinger"
+    },
+    {
+      "start": 1056.8,
+      "end": 1062.72,
+      "text": " Mans because that gives us a dynamic TP. So when the Bollinger Mans expand our TP also expand"
+    },
+    {
+      "start": 1063.52,
+      "end": 1068.4,
+      "text": " because the market is volatile and then we want to have a higher TP but when the market is"
+    },
+    {
+      "start": 1068.4,
+      "end": 1074.56,
+      "text": " ranging and it's very dull then the Bollinger Mans is going to shrink and so our TP also"
+    },
+    {
+      "start": 1074.56,
+      "end": 1082.32,
+      "text": " shins down and comes closer to the actual trade to give us more chances of hitting the TP"
+    },
+    {
+      "start": 1083.04,
+      "end": 1088.0,
+      "text": " in a less volatile market as well. Do not change or adjust the TP unless there is a new"
+    },
+    {
+      "start": 1088.0,
+      "end": 1093.84,
+      "text": " grid level that opens and only when a new grid level opens then you do the calculation of the TP"
+    },
+    {
+      "start": 1093.84,
+      "end": 1099.9199999999998,
+      "text": " and then adjust the TP. Then you have the stop-loss setting again hide and grid stop-loss is like"
+    },
+    {
+      "start": 1099.92,
+      "end": 1105.1200000000001,
+      "text": " do you want to set a stop-loss if nothing then we're going to use a thousand pips. Then we look at"
+    },
+    {
+      "start": 1105.1200000000001,
+      "end": 1110.8000000000002,
+      "text": " the grid settings and multiplier so what is the distance between the grid? So it's 35 points"
+    },
+    {
+      "start": 1110.8000000000002,
+      "end": 1116.0800000000002,
+      "text": " or 35 pips. So if the initial trade is here and the next trade is going to open as a distance"
+    },
+    {
+      "start": 1116.0800000000002,
+      "end": 1121.52,
+      "text": " of 35 pips but because we're going to be opening trade only on new candles so it might not be"
+    },
+    {
+      "start": 1121.52,
+      "end": 1128.96,
+      "text": " exactly 35 pips but it's a minimum of 35 pips. Then a smart distance and then the lot multiplier"
+    },
+    {
+      "start": 1129.76,
+      "end": 1136.08,
+      "text": " so the first slot is going to be whatever the lot size calculation gives based on the risk that we"
+    },
+    {
+      "start": 1136.08,
+      "end": 1145.76,
+      "text": " have chosen here lot sizing method but then the second one is going to be the same for example"
+    },
+    {
+      "start": 1145.76,
+      "end": 1151.3600000000001,
+      "text": " multiplied by 1 but then for the third to fifth trade you might want to apply a different"
+    },
+    {
+      "start": 1151.3600000000001,
+      "end": 1158.88,
+      "text": " multiplier so we start increasing and martingaling. If you set it to 1 then it's not a martingale"
+    },
+    {
+      "start": 1159.1200000000001,
+      "end": 1164.0,
+      "text": " it's just a grid if you set it to a value higher than 1 then you're martingaling so you're"
+    },
+    {
+      "start": 1164.0,
+      "end": 1170.56,
+      "text": " increasing the size every time by a factor of 2 and then from the sixth trade onward you apply"
+    },
+    {
+      "start": 1170.56,
+      "end": 1178.4,
+      "text": " 1.5 these are the default values and then what are the maximum number of trades and then the"
+    },
+    {
+      "start": 1178.4,
+      "end": 1184.4,
+      "text": " question is grid level to start and this is these two are the complex settings which basically means"
+    },
+    {
+      "start": 1184.4,
+      "end": 1189.68,
+      "text": " that the first trade is going to open here for example but do you want to open it already"
+    },
+    {
+      "start": 1189.68,
+      "end": 1194.3200000000002,
+      "text": " I mean if you're expecting that the price is going to go against you and then you want to open"
+    },
+    {
+      "start": 1194.3200000000002,
+      "end": 1198.3200000000002,
+      "text": " the first level and then it's going to go against you again and you're going to open the second"
+    },
+    {
+      "start": 1198.3200000000002,
+      "end": 1206.3200000000002,
+      "text": " level in the third level then if you're already expecting that why not start from the level 3"
+    },
+    {
+      "start": 1206.3200000000002,
+      "end": 1212.4,
+      "text": " so in that case you place a very small minimum 0.01 trade at the base level at the 1 0 level"
+    },
+    {
+      "start": 1212.8000000000002,
+      "end": 1218.72,
+      "text": " second level at the first level and then only from level 2 we start to go it's like okay now we"
+    },
+    {
+      "start": 1218.72,
+      "end": 1223.76,
+      "text": " actually enter the full lot side and let's just place a marker so that we can actually calculate"
+    },
+    {
+      "start": 1223.76,
+      "end": 1229.68,
+      "text": " the lot sizing but let's just put minimum lot minimum lot minimum lot and then go from level 3"
+    },
+    {
+      "start": 1230.4,
+      "end": 1234.96,
+      "text": " the actual lot sizing and then we have the last one which is the trade comment"
+    },
+    {
+      "start": 1235.76,
+      "end": 1242.72,
+      "text": " and a UID which is a unique identifier for this particular instance of the EA because we're going to"
+    },
+    {
+      "start": 1242.72,
+      "end": 1249.1200000000001,
+      "text": " create magic numbers based on a base magic number that we're going to not ask the user for"
+    },
+    {
+      "start": 1252.48,
+      "end": 1258.72,
+      "text": " and then we're going to create and then we're going to change that magic number or base magic"
+    },
+    {
+      "start": 1258.72,
+      "end": 1265.84,
+      "text": " number add to it a direction so it can tell us whether it's a buy or a sell and then also the"
+    },
+    {
+      "start": 1265.84,
+      "end": 1271.2,
+      "text": " levels at the end which is well is it the first trade is it the second trade is it the third trade"
+    },
+    {
+      "start": 1271.2,
+      "end": 1277.52,
+      "text": " is it the fourth trade within the grid so we're going to create a separate magic number for every trade"
+    },
+    {
+      "start": 1278.48,
+      "end": 1284.88,
+      "text": " but then if the user wants to apply the same EA on the same account twice"
+    },
+    {
+      "start": 1285.7600000000002,
+      "end": 1291.2,
+      "text": " that's where the UID comes into place which is a different instance so that you're going to change this"
+    },
+    {
+      "start": 1291.2,
+      "end": 1296.48,
+      "text": " if you're going to change if you're going to apply more than one instance on the same account"
+    },
+    {
+      "start": 1298.16,
+      "end": 1306.0,
+      "text": " so these are our input variables if I compile now and we go back now we have all of this"
+    },
+    {
+      "start": 1307.0400000000002,
+      "end": 1312.96,
+      "text": " appearing in the input step these are all the variables which we are asking the user to provide us"
+    },
+    {
+      "start": 1312.96,
+      "end": 1319.1200000000001,
+      "text": " information on and then come global variables so we're going to create a tick counter variable"
+    },
+    {
+      "start": 1319.1200000000001,
+      "end": 1324.0,
+      "text": " what is the mean time frame that we're going to apply this EA on we're not giving this to the user"
+    },
+    {
+      "start": 1324.0,
+      "end": 1331.1200000000001,
+      "text": " to decide it is fixed within the EA and this is a similar variable so it's an array because it's"
+    },
+    {
+      "start": 1331.1200000000001,
+      "end": 1337.76,
+      "text": " going to have more than one currency you could call it currency array I'm calling it symbols array"
+    },
+    {
+      "start": 1338.4,
+      "end": 1345.2,
+      "text": " so symbols array so it's going to store all these symbols one two three and this is a symbol where"
+    },
+    {
+      "start": 1345.2,
+      "end": 1351.36,
+      "text": " we are using the structure so this symbol array is going to have the sub members by clicking"
+    },
+    {
+      "start": 1351.36,
+      "end": 1359.36,
+      "text": " by using the dot and then you can choose one of these properties within that so this is a very dynamic"
+    },
+    {
+      "start": 1359.36,
+      "end": 1365.28,
+      "text": " variable that we're creating not only that it can have these three currencies so it can be"
+    },
+    {
+      "start": 1365.36,
+      "end": 1370.6399999999999,
+      "text": " Australian New Zealand or Australian Canadian dollar or New Zealand Canadian dollar but within"
+    },
+    {
+      "start": 1370.6399999999999,
+      "end": 1378.24,
+      "text": " within that currency with the dot then you can access all of these members of the variable as well"
+    },
+    {
+      "start": 1380.3999999999999,
+      "end": 1385.36,
+      "text": " and then the magic number base so this is the actual magic number we're going to be using this"
+    },
+    {
+      "start": 1385.36,
+      "end": 1390.6399999999999,
+      "text": " base to convert it into a different magic number for every single trade so we can find the direction"
+    },
+    {
+      "start": 1390.64,
+      "end": 1398.8000000000002,
+      "text": " of the trade and also the level of the trade within that period then epsilon is just a value 0.01 which"
+    },
+    {
+      "start": 1398.8000000000002,
+      "end": 1403.44,
+      "text": " is just above the zeroth and this we're going to use throughout the idea to check whether or not"
+    },
+    {
+      "start": 1403.44,
+      "end": 1410.96,
+      "text": " the value is a valid value so it's bigger than one and then you have the current hour I mean we're"
+    },
+    {
+      "start": 1410.96,
+      "end": 1415.76,
+      "text": " just creating these variables and we're setting it to an initial value whether or not there is a"
+    },
+    {
+      "start": 1415.76,
+      "end": 1421.2,
+      "text": " simple error list whether or not the drawdown has been triggered so it falls whether we want to stop"
+    },
+    {
+      "start": 1421.2,
+      "end": 1428.32,
+      "text": " trading until we start it falls how many cool down hours in case the drawdown has triggered 0 initial"
+    },
+    {
+      "start": 1428.32,
+      "end": 1435.6,
+      "text": " balance 0 and initializes so these are the global variables that we're going to use and then the"
+    },
+    {
+      "start": 1435.6,
+      "end": 1440.56,
+      "text": " indicators that we're going to use within the year are the moving average and the standard deviation"
+    },
+    {
+      "start": 1440.56,
+      "end": 1445.2,
+      "text": " which we're going to use to create the Bollinger Man calculation and we're going to do manual"
+    },
+    {
+      "start": 1445.28,
+      "end": 1452.16,
+      "text": " calculations of Bollinger Man because on multi currency years MQL struggles with updating the Bollinger"
+    },
+    {
+      "start": 1452.16,
+      "end": 1457.68,
+      "text": " Man value for every currency so we're going to manually calculate it and then RSI because our"
+    },
+    {
+      "start": 1457.68,
+      "end": 1465.28,
+      "text": " e-agreding is based on RSI and then the ATR 96 and 672 which we are going to use to determine"
+    },
+    {
+      "start": 1465.28,
+      "end": 1472.96,
+      "text": " whether there is more volatility in the market by dividing the faster ATR divided by the slower"
+    },
+    {
+      "start": 1473.6000000000001,
+      "end": 1479.1200000000001,
+      "text": " to see whether or not there is more volatility in the market right now because then the value is going"
+    },
+    {
+      "start": 1479.1200000000001,
+      "end": 1484.64,
+      "text": " to be above 1 then we go to initialization and here we're going to start by printing trade"
+    },
+    {
+      "start": 1484.64,
+      "end": 1490.72,
+      "text": " comment initializing so when the year is loaded we're going to get a message then I'm going to"
+    },
+    {
+      "start": 1490.72,
+      "end": 1498.88,
+      "text": " set the chart integer the grid to false because I like to see no grid on my this just looks"
+    },
+    {
+      "start": 1498.88,
+      "end": 1508.16,
+      "text": " cleaner if you want to see the grid like this then then you can skip this or set it to true"
+    },
+    {
+      "start": 1509.2800000000002,
+      "end": 1513.7600000000002,
+      "text": " then tester height indicator I want to hide all the indicators I don't want to see it on the chart"
+    },
+    {
+      "start": 1514.5600000000002,
+      "end": 1521.3600000000001,
+      "text": " in the tester and then a comment which is going to be printed here and then as a start we say"
+    },
+    {
+      "start": 1521.3600000000001,
+      "end": 1527.6000000000001,
+      "text": " the draw down cool down our is 0 stop trading until we start his false and draw down triggered"
+    },
+    {
+      "start": 1527.6000000000001,
+      "end": 1533.2,
+      "text": " is false so there is no draw down at the initialization of the year I mean hopefully"
+    },
+    {
+      "start": 1534.0800000000002,
+      "end": 1540.0800000000002,
+      "text": " and then we're going to be using the on timer function so unless so if not mql tester and not"
+    },
+    {
+      "start": 1540.0800000000002,
+      "end": 1545.5200000000002,
+      "text": " optimization so it's not a tester and it's not we're not in the optimization mode or testing mode"
+    },
+    {
+      "start": 1546.16,
+      "end": 1552.16,
+      "text": " back testing so we are in the real live environment in which case the event side timer is five"
+    },
+    {
+      "start": 1552.16,
+      "end": 1557.1200000000001,
+      "text": " seconds because we're going to be using the on timer to refresh the data every five seconds"
+    },
+    {
+      "start": 1557.1200000000001,
+      "end": 1562.8000000000002,
+      "text": " and then we're going to set the last check timer check to current time so initializing"
+    },
+    {
+      "start": 1563.44,
+      "end": 1568.0800000000002,
+      "text": " this variable and then we get to our first function so we're going to call this function and"
+    },
+    {
+      "start": 1568.0800000000002,
+      "end": 1573.92,
+      "text": " if this function fails then in that case we say well we fail to initialize the symbols"
+    },
+    {
+      "start": 1574.8000000000002,
+      "end": 1578.88,
+      "text": " and in that case the entire initialization fails we're going to write this function but here"
+    },
+    {
+      "start": 1578.88,
+      "end": 1584.3200000000002,
+      "text": " we're calling the function and we're saying if not then print then we created these five handles"
+    },
+    {
+      "start": 1584.32,
+      "end": 1592.24,
+      "text": " so we need to resize them and we're going to resize them to the array size in the parsing"
+    },
+    {
+      "start": 1592.24,
+      "end": 1597.84,
+      "text": " and initialization of the symbol we will create the symbol arrays for these currencies so it's"
+    },
+    {
+      "start": 1597.84,
+      "end": 1604.6399999999999,
+      "text": " going to be 1, 2, and 3 so then now we can resize the array to the number of members within the"
+    },
+    {
+      "start": 1604.6399999999999,
+      "end": 1610.08,
+      "text": " symbols array which is going to happen here in this function so it's going to be 3 because there are"
+    },
+    {
+      "start": 1610.08,
+      "end": 1617.28,
+      "text": " three currencies and then we initialize all of the handles but for every single currency"
+    },
+    {
+      "start": 1617.28,
+      "end": 1623.28,
+      "text": " in the symbol array so we're going to loop through all the currencies starting at zero going through"
+    },
+    {
+      "start": 1623.28,
+      "end": 1628.72,
+      "text": " zero 1 and 2 because there are three currencies and for every one of them we're going to create"
+    },
+    {
+      "start": 1628.72,
+      "end": 1636.48,
+      "text": " an instant of instance of the MA standard deviation RSI 96 ATR and 672 ATR for that particular"
+    },
+    {
+      "start": 1636.48,
+      "end": 1641.28,
+      "text": " symbol index so there are going to be three handles of MA3 handles of a standard deviation"
+    },
+    {
+      "start": 1641.28,
+      "end": 1645.76,
+      "text": " three standards of RSI and so on and so forth. Now because they're going to be using the"
+    },
+    {
+      "start": 1645.76,
+      "end": 1651.04,
+      "text": " MSN deviation to create or calculate the Bollinger bands and this is why we're sending here the"
+    },
+    {
+      "start": 1651.04,
+      "end": 1657.76,
+      "text": " Bollinger band period to get the standard deviation and MA. Now guys I have to go a little bit quicker"
+    },
+    {
+      "start": 1657.76,
+      "end": 1662.88,
+      "text": " because if I explain every single line in detail this video is probably going to be like seven"
+    },
+    {
+      "start": 1662.88,
+      "end": 1668.0,
+      "text": " hours long and nobody's going to watch it then so that kills the entire purpose if you have written"
+    },
+    {
+      "start": 1668.0,
+      "end": 1671.7600000000002,
+      "text": " the other years with me then you probably are at a level where you can understand these."
+    },
+    {
+      "start": 1673.2800000000002,
+      "end": 1677.6000000000001,
+      "text": " Now we're going to check if the RSI handle fails or the standard deviation handle fail if"
+    },
+    {
+      "start": 1677.6000000000001,
+      "end": 1682.64,
+      "text": " any of them fail then we just print that we fail to create the indicator for this symbol"
+    },
+    {
+      "start": 1683.6000000000001,
+      "end": 1690.72,
+      "text": " and the initialization fails them. So now we have called this function so let's go and create this"
+    },
+    {
+      "start": 1691.2,
+      "end": 1697.92,
+      "text": " I'm going to create a few sections so the first section is I'm going to call it symbol related"
+    },
+    {
+      "start": 1699.84,
+      "end": 1700.32,
+      "text": " functions"
+    },
+    {
+      "start": 1710.96,
+      "end": 1717.68,
+      "text": " then let's have another section which we're going to be using for let's say"
+    },
+    {
+      "start": 1718.4,
+      "end": 1720.0,
+      "text": " lot size functions"
+    },
+    {
+      "start": 1725.1200000000001,
+      "end": 1726.8,
+      "text": " then let's have one for"
+    },
+    {
+      "start": 1729.92,
+      "end": 1732.64,
+      "text": " great related functions"
+    },
+    {
+      "start": 1735.6000000000001,
+      "end": 1737.1200000000001,
+      "text": " then let's have one for"
+    },
+    {
+      "start": 1737.1200000000001,
+      "end": 1745.0400000000002,
+      "text": " TP and SL related functions"
+    },
+    {
+      "start": 1750.0800000000002,
+      "end": 1757.0400000000002,
+      "text": " one for closing the grades and trades"
+    },
+    {
+      "start": 1759.7600000000002,
+      "end": 1761.1200000000001,
+      "text": " slash draw downs"
+    },
+    {
+      "start": 1761.1200000000001,
+      "end": 1774.64,
+      "text": " and then at the end some general helping functions so that we have sort of a structure"
+    },
+    {
+      "start": 1776.0800000000002,
+      "end": 1783.92,
+      "text": " so now this parse and initialize symbol we're going to put it here under symbol related functions"
+    },
+    {
+      "start": 1783.92,
+      "end": 1791.44,
+      "text": " so we created here okay so let's first create a symbol a variable by the name symbols and"
+    },
+    {
+      "start": 1791.44,
+      "end": 1797.8400000000001,
+      "text": " it's an array and then we're going to get the symbols from this symbols variable that we created here"
+    },
+    {
+      "start": 1799.68,
+      "end": 1806.24,
+      "text": " symbols so there are three of them so we're going to take that and we're going to split it"
+    },
+    {
+      "start": 1806.24,
+      "end": 1813.68,
+      "text": " by using the character comma and store these values into this symbol array that we have created"
+    },
+    {
+      "start": 1813.68,
+      "end": 1817.92,
+      "text": " so they're going to be three members here and that's going to return the count of three which we"
+    },
+    {
+      "start": 1817.92,
+      "end": 1823.28,
+      "text": " are going to store in this variable symbol count and then we say if the symbol count"
+    },
+    {
+      "start": 1823.28,
+      "end": 1828.0,
+      "text": " turns out to be greater than zero so there is a value which is coming back and it is not the tester"
+    },
+    {
+      "start": 1829.2,
+      "end": 1834.64,
+      "text": " then in that case we resize the array of the symbol array to symbol count"
+    },
+    {
+      "start": 1835.1200000000001,
+      "end": 1841.28,
+      "text": " the symbol array remember the variable which has all the sub members from the structure"
+    },
+    {
+      "start": 1841.28,
+      "end": 1848.0,
+      "text": " we resize that here to the symbol count and this is why in our initialization after doing the"
+    },
+    {
+      "start": 1848.0,
+      "end": 1855.84,
+      "text": " parsing we could resize the moving average standard deviation RSI arrays to the symbol arrays"
+    },
+    {
+      "start": 1855.84,
+      "end": 1863.12,
+      "text": " because here we have already resize the symbols array to the number of symbols which are available"
+    },
+    {
+      "start": 1863.12,
+      "end": 1869.52,
+      "text": " or what the user has inputted in the symbols variable and then we're going to loop through"
+    },
+    {
+      "start": 1869.52,
+      "end": 1874.56,
+      "text": " all of the symbol counts so starting at zero going all the way up to two so three zero one two"
+    },
+    {
+      "start": 1875.92,
+      "end": 1881.44,
+      "text": " and then we say symbol name is equal to whatever is the symbol's eye get the value of the index"
+    },
+    {
+      "start": 1881.44,
+      "end": 1886.72,
+      "text": " from because this is where we stored all the symbols so we take this we loop through it"
+    },
+    {
+      "start": 1886.72,
+      "end": 1892.4,
+      "text": " and for every index we create the symbol name and then we trim it left and right because somebody"
+    },
+    {
+      "start": 1892.4,
+      "end": 1904.4,
+      "text": " might have put a blank like eye space so in that case we need to trim it so we trim it left"
+    },
+    {
+      "start": 1904.4,
+      "end": 1911.52,
+      "text": " and we trim it light right and then if it is if it comes back to be blank then we print that the"
+    },
+    {
+      "start": 1911.52,
+      "end": 1917.2,
+      "text": " symbols if incorrect check for extra commas and shit like that and the symbol error list is true"
+    },
+    {
+      "start": 1917.68,
+      "end": 1924.0800000000002,
+      "text": " and we return false that we are not able to parse it otherwise we run a function by the name"
+    },
+    {
+      "start": 1924.0800000000002,
+      "end": 1931.68,
+      "text": " initialized symbol data for this index in the symbol and send to it the symbol name which is"
+    },
+    {
+      "start": 1931.68,
+      "end": 1939.6000000000001,
+      "text": " coming out of here and then we close this if that if the count was greater than zero and it wasn't"
+    },
+    {
+      "start": 1939.6000000000001,
+      "end": 1946.72,
+      "text": " the tester well otherwise if it wasn't tester here then we are in a tester and in that case"
+    },
+    {
+      "start": 1948.0,
+      "end": 1953.1200000000001,
+      "text": " the tester is only going to run it on whatever pair is selected here so it's the single"
+    },
+    {
+      "start": 1953.1200000000001,
+      "end": 1961.6000000000001,
+      "text": " condensate then so in that case the symbol array becomes one the symbol name becomes symbol"
+    },
+    {
+      "start": 1961.6000000000001,
+      "end": 1969.2,
+      "text": " so whatever is the symbol selected here and then initialize the symbol data but what we are"
+    },
+    {
+      "start": 1969.2,
+      "end": 1973.44,
+      "text": " doing here as well but here we are sending the index in the symbol name right here we said"
+    },
+    {
+      "start": 1973.44,
+      "end": 1981.1200000000001,
+      "text": " just zero as the index and the symbol name which is the symbol which is selected here and for"
+    },
+    {
+      "start": 1981.1200000000001,
+      "end": 1986.88,
+      "text": " now I am deleting this and we are going to come back to this so only this and then we just return"
+    },
+    {
+      "start": 1986.88,
+      "end": 1992.64,
+      "text": " true so we have initialized the symbols we have parsed it we have put them into this array"
+    },
+    {
+      "start": 1993.3600000000001,
+      "end": 1999.04,
+      "text": " we have populated the array of the symbols array so now the symbols array variable has all"
+    },
+    {
+      "start": 1999.04,
+      "end": 2006.8799999999999,
+      "text": " of the the currencies and therefore all of these are now available to be updated by"
+    },
+    {
+      "start": 2006.8799999999999,
+      "end": 2016.0,
+      "text": " currency as well let's compile and we have to want two errors which is the unexpected end of program"
+    },
+    {
+      "start": 2016.0,
+      "end": 2028.0,
+      "text": " and unbalanced parentheses let's check here did we close yeah properly let's go back on initialization"
+    },
+    {
+      "start": 2028.8,
+      "end": 2035.36,
+      "text": " we're not closing it properly because we did not close this fall loop so we need to close this fall loop"
+    },
+    {
+      "start": 2036.96,
+      "end": 2044.8,
+      "text": " so if I close it and now if I compile still of fucking error"
+    },
+    {
+      "start": 2044.8,
+      "end": 2068.24,
+      "text": " because we have created this so now we are in this simulated function so let's create this"
+    },
+    {
+      "start": 2068.2400000000002,
+      "end": 2075.76,
+      "text": " function so we're going to create this function and to this we're going to be sending the index"
+    },
+    {
+      "start": 2075.76,
+      "end": 2082.7200000000003,
+      "text": " and the symbol name to initialize the data let's hit compile and now we are okay it was just missing"
+    },
+    {
+      "start": 2082.7200000000003,
+      "end": 2093.0400000000004,
+      "text": " the initialization of the symbol data so let's just initialize all of the values that we have created"
+    },
+    {
+      "start": 2093.04,
+      "end": 2099.7599999999998,
+      "text": " in the structure in this structure so what we're doing here is in the parsing we're going through"
+    },
+    {
+      "start": 2099.7599999999998,
+      "end": 2105.2799999999997,
+      "text": " the symbol count and for every one of them we're getting the symbol name and then we're passing"
+    },
+    {
+      "start": 2105.2799999999997,
+      "end": 2110.64,
+      "text": " that symbol name index and the symbol name here so it's going to be done three times for each"
+    },
+    {
+      "start": 2110.64,
+      "end": 2116.72,
+      "text": " of the currencies which is going to store the symbol name the last time frame I mean currently"
+    },
+    {
+      "start": 2116.7200000000003,
+      "end": 2123.6800000000003,
+      "text": " we're just storing 00 and false and truth but now we're able to for example for can buy and"
+    },
+    {
+      "start": 2123.6800000000003,
+      "end": 2129.76,
+      "text": " can sell for every individual currency within the symbol array the three currencies we can set"
+    },
+    {
+      "start": 2129.76,
+      "end": 2136.4800000000005,
+      "text": " the can buy a can sell and other parameters separately for all three of them so all of these variables"
+    },
+    {
+      "start": 2136.4800000000005,
+      "end": 2143.36,
+      "text": " are available three times because there are three currencies compile once again no issues okay so"
+    },
+    {
+      "start": 2143.36,
+      "end": 2149.92,
+      "text": " let's go back up and on the initialization I want to make one change which is here instead of printing"
+    },
+    {
+      "start": 2149.92,
+      "end": 2156.2400000000002,
+      "text": " that command fail to indicator I'm gonna add this part as well which is checked that all the input"
+    },
+    {
+      "start": 2156.2400000000002,
+      "end": 2163.44,
+      "text": " currencies are visible within the market of what window because the most common reason that this"
+    },
+    {
+      "start": 2163.44,
+      "end": 2171.28,
+      "text": " these handles can fail for different currencies is that you have here these three currencies input"
+    },
+    {
+      "start": 2172.1600000000003,
+      "end": 2177.76,
+      "text": " but these are not available here so if our CAD wasn't here MQL is not going to be able to load"
+    },
+    {
+      "start": 2177.76,
+      "end": 2182.8,
+      "text": " the indicators if Australian New Zealand and New Zealand CAD are not here in the market watch"
+    },
+    {
+      "start": 2183.6800000000003,
+      "end": 2189.0400000000004,
+      "text": " you will get the error message that it fails because it's not going to be able to load the indicators"
+    },
+    {
+      "start": 2189.0400000000004,
+      "end": 2193.6000000000004,
+      "text": " this is the most common reason that these can fail so let's say that check all the input"
+    },
+    {
+      "start": 2193.6,
+      "end": 2201.8399999999997,
+      "text": " currencies are available in the market watch window let's hit compile once again no issues and"
+    },
+    {
+      "start": 2201.8399999999997,
+      "end": 2206.96,
+      "text": " then we go to the on tick function here we're gonna start by creating a boot variable where we're"
+    },
+    {
+      "start": 2206.96,
+      "end": 2214.96,
+      "text": " gonna check if it's a new bar on the main timeframe and then we're gonna loop through"
+    },
+    {
+      "start": 2216.16,
+      "end": 2220.56,
+      "text": " all of the symbol arrays so all three currencies is starting at zero then going one and then"
+    },
+    {
+      "start": 2220.56,
+      "end": 2226.72,
+      "text": " two so loop through the three currencies and then we're gonna check that if we sent the symbol array"
+    },
+    {
+      "start": 2226.72,
+      "end": 2238.72,
+      "text": " symbol name once again we're using these sub members of the currencies so if I'm sending the first"
+    },
+    {
+      "start": 2238.72,
+      "end": 2245.44,
+      "text": " currency the zero index currency and dot symbol name it is getting the value from that structure"
+    },
+    {
+      "start": 2246.08,
+      "end": 2254.08,
+      "text": " for the main timeframe current candle get the i-time and if the i-time is lower than or equal to"
+    },
+    {
+      "start": 2254.08,
+      "end": 2262.56,
+      "text": " wherever we had updated before in that currency symbol array as last main timeframe update time"
+    },
+    {
+      "start": 2262.56,
+      "end": 2270.32,
+      "text": " then in that case the time it's it's not a new candle so we set the new time frame a new bar for"
+    },
+    {
+      "start": 2270.32,
+      "end": 2276.1600000000003,
+      "text": " the name main time frame variable to false otherwise it's a new candle and then we set this variable"
+    },
+    {
+      "start": 2276.8,
+      "end": 2284.32,
+      "text": " to the time of the current candle opening time and we set it to true so the next time it's"
+    },
+    {
+      "start": 2284.32,
+      "end": 2290.0,
+      "text": " gonna come then unless there is a new candle this is gonna fail and then it's gonna be false"
+    },
+    {
+      "start": 2290.56,
+      "end": 2296.96,
+      "text": " and then if it is true the new time frame then we're gonna update symbol information"
+    },
+    {
+      "start": 2296.96,
+      "end": 2302.7200000000003,
+      "text": " be initialized the symbols and now we're gonna update the symbol information and then we closed"
+    },
+    {
+      "start": 2302.7200000000003,
+      "end": 2307.68,
+      "text": " the fall loop and this is our own tick function for now now if I compile I'm gonna get an error"
+    },
+    {
+      "start": 2307.68,
+      "end": 2312.64,
+      "text": " because I haven't created the update symbol information sending in the index value so let's go"
+    },
+    {
+      "start": 2312.64,
+      "end": 2318.56,
+      "text": " down here and create this function so this function we're gonna send the symbol index"
+    },
+    {
+      "start": 2318.56,
+      "end": 2326.16,
+      "text": " from this looping on on tick because we're looping through so we're gonna send the index value"
+    },
+    {
+      "start": 2326.16,
+      "end": 2333.7599999999998,
+      "text": " to this update symbol info and if I close and compile everything is fine so far so let's start updating"
+    },
+    {
+      "start": 2333.7599999999998,
+      "end": 2340.56,
+      "text": " it we get the value of the symbol name and store it into the symbol and then we go for that"
+    },
+    {
+      "start": 2340.56,
+      "end": 2346.64,
+      "text": " symbol array update the counter plus plus so increase it by one so we're increasing the value which"
+    },
+    {
+      "start": 2346.64,
+      "end": 2351.92,
+      "text": " we initiated here as zero will now become one so now this is keeping track of how many times"
+    },
+    {
+      "start": 2352.88,
+      "end": 2361.04,
+      "text": " the counter has updated and then we're gonna create an MQL daytime variable by the name TM current"
+    },
+    {
+      "start": 2361.04,
+      "end": 2365.84,
+      "text": " and within the TM current we're gonna store the value of the current time by using the time to start"
+    },
+    {
+      "start": 2365.84,
+      "end": 2371.44,
+      "text": " so we're storing the value of the current time into the TM current and what the TM current basically"
+    },
+    {
+      "start": 2371.44,
+      "end": 2377.04,
+      "text": " does is now with TM current you can hit the dot and for the time current that you've restored"
+    },
+    {
+      "start": 2377.04,
+      "end": 2381.52,
+      "text": " here you can get the value of the day the day of the week the day of the year hour so it creates"
+    },
+    {
+      "start": 2381.7599999999998,
+      "end": 2389.6,
+      "text": " full structure and this is why we are putting the current time into this structured time variables so"
+    },
+    {
+      "start": 2389.6,
+      "end": 2395.36,
+      "text": " we can get the value of the current hour and the current minute and then we're gonna store the value"
+    },
+    {
+      "start": 2395.36,
+      "end": 2402.16,
+      "text": " of the time into the current bar time and also into the previous bar time we update this"
+    },
+    {
+      "start": 2402.8,
+      "end": 2408.16,
+      "text": " and then we update the value of the current bar time into the previous bar time and this is on"
+    },
+    {
+      "start": 2408.16,
+      "end": 2412.72,
+      "text": " update of the simple information and then we create a bool variable by the name can trade"
+    },
+    {
+      "start": 2413.3599999999997,
+      "end": 2418.16,
+      "text": " and we're gonna check if the trading is allowed and if the user has allowed opening new grades"
+    },
+    {
+      "start": 2418.7999999999997,
+      "end": 2422.7999999999997,
+      "text": " and we're gonna store the value into candidate so if trading is allowed and the user has allowed"
+    },
+    {
+      "start": 2422.7999999999997,
+      "end": 2428.96,
+      "text": " the opening of the new grid then candidate becomes true otherwise it's false and then we apply"
+    },
+    {
+      "start": 2428.96,
+      "end": 2435.2,
+      "text": " this value to can buy and can sell so if it is allowed then can buy is true and can sell is also true"
+    },
+    {
+      "start": 2435.2000000000003,
+      "end": 2440.88,
+      "text": " now let's go down to our general helping function and here we're gonna write this function"
+    },
+    {
+      "start": 2440.88,
+      "end": 2446.6400000000003,
+      "text": " is trading allowed and here we're basically gonna be checking four things first of all if it's"
+    },
+    {
+      "start": 2446.6400000000003,
+      "end": 2452.4800000000005,
+      "text": " mql tester or is mql optimization then return to because in tester and optimization trading is"
+    },
+    {
+      "start": 2452.4800000000005,
+      "end": 2461.1200000000003,
+      "text": " always allowed otherwise if it's live environment we create a variable allowed and we store in"
+    },
+    {
+      "start": 2461.44,
+      "end": 2469.52,
+      "text": " this the value of the terminal trade allowed meaning here is that turned on or is that turned off"
+    },
+    {
+      "start": 2469.52,
+      "end": 2476.4,
+      "text": " if it is not allowed if allowed is zero so if it's not allowed then return false for the trading"
+    },
+    {
+      "start": 2476.4,
+      "end": 2483.12,
+      "text": " allowed otherwise check account rate expert is allowed and if it's not allowed then return false"
+    },
+    {
+      "start": 2483.7599999999998,
+      "end": 2493.44,
+      "text": " which is here check if this is allowed if it's not allowed then return false because the trading"
+    },
+    {
+      "start": 2493.44,
+      "end": 2499.92,
+      "text": " is not allowed and then the third thing is check that the broker site trading is allowed the"
+    },
+    {
+      "start": 2499.92,
+      "end": 2506.4,
+      "text": " broker is allowing trade and then if it's not allowed then return false and if none of them"
+    },
+    {
+      "start": 2507.36,
+      "end": 2514.32,
+      "text": " then just return true compile and we're fine so let's go back up so here we're checking"
+    },
+    {
+      "start": 2514.32,
+      "end": 2519.76,
+      "text": " that everything is allowed and the grid opening is allowed so this is allowed and then can buy"
+    },
+    {
+      "start": 2519.76,
+      "end": 2524.56,
+      "text": " is allowed and can sell is true as well and now we're gonna run through a lot of different conditions"
+    },
+    {
+      "start": 2525.6,
+      "end": 2532.88,
+      "text": " so we're gonna check if the main time frame has less than 1000 symbols then in that case"
+    },
+    {
+      "start": 2532.88,
+      "end": 2539.04,
+      "text": " is not enough historical data and can buy and can sell about false so we were true here but"
+    },
+    {
+      "start": 2539.04,
+      "end": 2545.12,
+      "text": " if this happens then set it to false let's put a comment check historical data"
+    },
+    {
+      "start": 2548.96,
+      "end": 2553.6,
+      "text": " and then we're gonna check the account balance of re margin which is we go over get the free"
+    },
+    {
+      "start": 2553.6,
+      "end": 2561.04,
+      "text": " margin and if it's less than 10 then in that case we say it's low margin print their margin value"
+    },
+    {
+      "start": 2562.0,
+      "end": 2570.0,
+      "text": " and because we don't want to print the message is many like every single tick so we're gonna start"
+    },
+    {
+      "start": 2570.0,
+      "end": 2576.96,
+      "text": " with last message at a date time variable 0 and then here we're gonna print and then we're gonna set"
+    },
+    {
+      "start": 2576.96,
+      "end": 2582.32,
+      "text": " the last print message to time current and then the next time we're gonna check that the time"
+    },
+    {
+      "start": 2582.32,
+      "end": 2588.08,
+      "text": " current minus of last time message is greater than 60 minutes so we're only printing it every 60"
+    },
+    {
+      "start": 2588.08,
+      "end": 2595.2799999999997,
+      "text": " minutes this 3,600 is in seconds so we only print this message every 60 minutes and because the"
+    },
+    {
+      "start": 2595.2799999999997,
+      "end": 2601.92,
+      "text": " margin was lower so we set the can buy and can sell to false so if this is true then can false"
+    },
+    {
+      "start": 2601.92,
+      "end": 2608.64,
+      "text": " if this happens can false and then we're gonna check the UID remember the user can select the UID"
+    },
+    {
+      "start": 2608.64,
+      "end": 2617.92,
+      "text": " between 0 and 9 so we check here that if the UID is less than 0 or greater than 9 so it's not"
+    },
+    {
+      "start": 2617.92,
+      "end": 2624.0,
+      "text": " in between then in that case again we print this message and we only printed once so we start with"
+    },
+    {
+      "start": 2624.0,
+      "end": 2630.32,
+      "text": " the false value for UID printed and then if it's false then we print but then we set it to true"
+    },
+    {
+      "start": 2630.96,
+      "end": 2636.4,
+      "text": " in which case the message is not gonna be printed again because it's never gonna be false again"
+    },
+    {
+      "start": 2636.4,
+      "end": 2642.32,
+      "text": " once we have printed and then can buy and can sell becomes false so we're not allowed to sell"
+    },
+    {
+      "start": 2643.2000000000003,
+      "end": 2648.6400000000003,
+      "text": " and then we don't want to start trading on the very first bar when the initialization happens so"
+    },
+    {
+      "start": 2648.6400000000003,
+      "end": 2654.88,
+      "text": " we're gonna go through if the symbol array update counter is less than 2 remember we were updating"
+    },
+    {
+      "start": 2654.88,
+      "end": 2659.6800000000003,
+      "text": " the counter the update counter plus plus so starting from 0 is gonna get updated but it's"
+    },
+    {
+      "start": 2659.6800000000003,
+      "end": 2669.1200000000003,
+      "text": " happening on every new bar so at least two bars after the initialization before we can start to"
+    },
+    {
+      "start": 2669.68,
+      "end": 2674.48,
+      "text": " and this is why if it is less than 2 then can buy and can sell becomes false and then we're gonna"
+    },
+    {
+      "start": 2674.48,
+      "end": 2679.92,
+      "text": " check at the broker level we're getting the trade mode for this symbol and asking for trade mode"
+    },
+    {
+      "start": 2680.88,
+      "end": 2687.12,
+      "text": " and trade mode is whether or not the trading is allowed now if the trade mode comes back to be disabled"
+    },
+    {
+      "start": 2688.16,
+      "end": 2693.2,
+      "text": " then we're gonna say can buy and can sell at both false if the trade mode comes back that"
+    },
+    {
+      "start": 2693.2000000000003,
+      "end": 2699.92,
+      "text": " long only are allowed then can sell becomes false and if short only is allowed on the broker"
+    },
+    {
+      "start": 2699.92,
+      "end": 2705.76,
+      "text": " for this symbol then can buy is false after checking at the broker level we are gonna check"
+    },
+    {
+      "start": 2706.4800000000005,
+      "end": 2713.0400000000004,
+      "text": " user level because remember we had the possibility to select allow buy allow sell or buy both"
+    },
+    {
+      "start": 2713.0400000000004,
+      "end": 2721.28,
+      "text": " or allow both so we're gonna check if we allow to buy sell is one then only buy is allowed"
+    },
+    {
+      "start": 2721.28,
+      "end": 2727.76,
+      "text": " so can sell is false and if it is two then only can sell is allowed then can buy is false"
+    },
+    {
+      "start": 2727.76,
+      "end": 2732.2400000000002,
+      "text": " if it is zero then both are allowed so we don't need to do anything and then we're gonna get bar"
+    },
+    {
+      "start": 2732.2400000000002,
+      "end": 2739.28,
+      "text": " times after doing all of these checks so we'll start by creating a variable date bar time"
+    },
+    {
+      "start": 2739.28,
+      "end": 2743.6000000000004,
+      "text": " and we're gonna get the current bar time from the symbol index which we just updated"
+    },
+    {
+      "start": 2744.3199999999997,
+      "end": 2751.8399999999997,
+      "text": " with the current bar and then we create a variable by the name t m bar and then we put this time"
+    },
+    {
+      "start": 2751.8399999999997,
+      "end": 2757.8399999999997,
+      "text": " which is in the regular time format into this mql date time format t m bar so that now we can get"
+    },
+    {
+      "start": 2757.8399999999997,
+      "end": 2764.3199999999997,
+      "text": " the dot hour dot minute dot day dot month and dot year and assign it to hour minute day month and"
+    },
+    {
+      "start": 2764.3199999999997,
+      "end": 2771.7599999999998,
+      "text": " the year for the bar and now we can check the trading hours check which is we're gonna first get"
+    },
+    {
+      "start": 2771.76,
+      "end": 2782.0,
+      "text": " the bar minute and bar hour and multiplied by 100 so for example 1430 becomes 1430 like this"
+    },
+    {
+      "start": 2782.6400000000003,
+      "end": 2790.1600000000003,
+      "text": " and then we can take the start hour multiplied by 100 so if the user has selected one that becomes"
+    },
+    {
+      "start": 2790.1600000000003,
+      "end": 2800.0800000000004,
+      "text": " 100 and stop trading which becomes so for example if the user has selected 23 then that is gonna become"
+    },
+    {
+      "start": 2800.4,
+      "end": 2808.7999999999997,
+      "text": " 2350 9 because we take 23 multiplied by 100 and then add 25 and 59 and if the user for example"
+    },
+    {
+      "start": 2808.7999999999997,
+      "end": 2819.36,
+      "text": " had selected one so one will become 100 so one hour becomes 100 so now we can check"
+    },
+    {
+      "start": 2820.3199999999997,
+      "end": 2825.6,
+      "text": " we start with the time okay boot variable creating it and then we check if the stop time is"
+    },
+    {
+      "start": 2825.68,
+      "end": 2830.48,
+      "text": " greater than the start time then it's a normal day so because this is greater than this so the"
+    },
+    {
+      "start": 2830.48,
+      "end": 2837.6,
+      "text": " trading starts earlier and finishes later so in that case we're gonna check that if the current time"
+    },
+    {
+      "start": 2839.04,
+      "end": 2846.08,
+      "text": " here is greater than or equal to the start time and the current time is smaller than or equal"
+    },
+    {
+      "start": 2846.08,
+      "end": 2857.44,
+      "text": " to the end time so in that case time is okay but if this is not true meaning the time is start time"
+    },
+    {
+      "start": 2857.44,
+      "end": 2864.08,
+      "text": " is bigger than the stop time which means the user is starting at 1700 hours in the evening and"
+    },
+    {
+      "start": 2864.08,
+      "end": 2870.56,
+      "text": " finishing at 600 hours in the morning in that case we need to check that the start time that the"
+    },
+    {
+      "start": 2870.56,
+      "end": 2877.92,
+      "text": " current time is bigger than the start time or the current time is smaller than the stop time"
+    },
+    {
+      "start": 2877.92,
+      "end": 2883.2799999999997,
+      "text": " because we're starting at 1700 and going until 6 o'clock in the morning so we cannot check for the"
+    },
+    {
+      "start": 2883.2799999999997,
+      "end": 2890.0,
+      "text": " end we check for the ore so we get the time okay and then we do a holiday check which is to say"
+    },
+    {
+      "start": 2890.0,
+      "end": 2900.88,
+      "text": " if the month is 12 and the day is greater than 25 or the month is 1 January and the day bar"
+    },
+    {
+      "start": 2900.88,
+      "end": 2909.36,
+      "text": " is equal to or less than 3 so it's from 25th or December until the 23rd in that case time okay"
+    },
+    {
+      "start": 2909.36,
+      "end": 2914.64,
+      "text": " is false so even though if it was okay here it becomes false and then we do one more validation"
+    },
+    {
+      "start": 2914.64,
+      "end": 2919.6,
+      "text": " check for the 15 minute boundaries because our main time frame is 15 minutes and time okay"
+    },
+    {
+      "start": 2919.6,
+      "end": 2925.44,
+      "text": " and the bar minute is either 0 or 15 or 30 or 45 that's just an additional check that we have"
+    },
+    {
+      "start": 2925.44,
+      "end": 2932.16,
+      "text": " the correct bar minute coming back from this current bar time and then we can integrate"
+    },
+    {
+      "start": 2932.16,
+      "end": 2936.96,
+      "text": " the can buy and can sell by saying if can buy was true and can time is true then can buy"
+    },
+    {
+      "start": 2936.96,
+      "end": 2944.24,
+      "text": " it stays true but if can buy was true but the time okay is false then also can buy becomes false"
+    },
+    {
+      "start": 2944.32,
+      "end": 2950.8,
+      "text": " and same for the can sell so we combine these two together to see whether or not both are true"
+    },
+    {
+      "start": 2950.8,
+      "end": 2957.44,
+      "text": " in which case can buy is true otherwise if either of them is false then can buy becomes false"
+    },
+    {
+      "start": 2957.44,
+      "end": 2962.4,
+      "text": " we're not allowed to buy or sell then we're going to update the value of within the symbol array"
+    },
+    {
+      "start": 2962.4,
+      "end": 2969.76,
+      "text": " for whatever is the current index the closing price and we assign to it the i close for the current"
+    },
+    {
+      "start": 2969.76,
+      "end": 2976.32,
+      "text": " symbol because that is the index symbol for the main time frame last candle okay that done now we"
+    },
+    {
+      "start": 2976.32,
+      "end": 2981.76,
+      "text": " can go ahead with the indicators so we're going to calculate the indicators we create two buffer"
+    },
+    {
+      "start": 2981.76,
+      "end": 2987.28,
+      "text": " variables which size one because we're only going to store one value in them then we get from the"
+    },
+    {
+      "start": 2987.28,
+      "end": 2994.2400000000002,
+      "text": " moving average for the current index symbol index so whether 3 currency so it's 0 currency or the"
+    },
+    {
+      "start": 2994.2400000000002,
+      "end": 3001.6000000000004,
+      "text": " one currency or the second currency get the moving average the main line 0 because it's moving"
+    },
+    {
+      "start": 3001.6000000000004,
+      "end": 3008.6400000000003,
+      "text": " average so main line is starting position 1 meaning the previous candle and only get one value"
+    },
+    {
+      "start": 3009.84,
+      "end": 3013.92,
+      "text": " and then the same for the standard deviation as well and copy these values into these buffers"
+    },
+    {
+      "start": 3013.92,
+      "end": 3021.1200000000003,
+      "text": " that we had created so get from these and copy into these once we have this populated and it's"
+    },
+    {
+      "start": 3021.12,
+      "end": 3026.48,
+      "text": " only one value so we can now take that value and assign it to a variable by the name Bollinger band"
+    },
+    {
+      "start": 3026.48,
+      "end": 3032.64,
+      "text": " moving average and then Bollinger band instant deviation assigning this value here 0 index because"
+    },
+    {
+      "start": 3032.64,
+      "end": 3041.7599999999998,
+      "text": " there is only one value and offers always start with 0 1 2 so if it's only one value then it's"
+    },
+    {
+      "start": 3041.7599999999998,
+      "end": 3047.2799999999997,
+      "text": " going to be at index 0 and then we can calculate the Bollinger band upper which is going to be the"
+    },
+    {
+      "start": 3047.28,
+      "end": 3054.1600000000003,
+      "text": " moving average plus 2 times the standard deviation that's the Bollinger band upper and minus 2 times"
+    },
+    {
+      "start": 3054.1600000000003,
+      "end": 3059.2000000000003,
+      "text": " the standard deviation is going to be the Bollinger band local if you understand the Bollinger band"
+    },
+    {
+      "start": 3059.2000000000003,
+      "end": 3064.48,
+      "text": " you understand this logic as well and then we have the highest bar check let's first get the"
+    },
+    {
+      "start": 3064.48,
+      "end": 3070.2400000000002,
+      "text": " count of the highest bar where is it by getting the highest function sending it the symbol"
+    },
+    {
+      "start": 3070.2400000000002,
+      "end": 3077.76,
+      "text": " mean time frame mode high for the Bollinger band period and the lowest bar so now the year is"
+    },
+    {
+      "start": 3077.76,
+      "end": 3083.28,
+      "text": " going to go back like 1 2 3 4 5 6 7 8 and then for example if this was the high it will go"
+    },
+    {
+      "start": 3083.28,
+      "end": 3091.2000000000003,
+      "text": " like 5 10 whatever 15 so let's say this is bar number 19 and this is the lowest which is bar number"
+    },
+    {
+      "start": 3091.2000000000003,
+      "end": 3099.36,
+      "text": " I don't know 23 so it's going to return the value of 19 and 23 year and then using that we can get"
+    },
+    {
+      "start": 3099.36,
+      "end": 3105.04,
+      "text": " the value of the actual high in price by using the high function and high low function by sending"
+    },
+    {
+      "start": 3105.04,
+      "end": 3113.36,
+      "text": " to it the value of 19 and 23 to get the recent high price value of this candle and this candle"
+    },
+    {
+      "start": 3115.1200000000003,
+      "end": 3120.88,
+      "text": " so we get the recent high and recent low and then we create a digits variable where we store the"
+    },
+    {
+      "start": 3120.88,
+      "end": 3127.6,
+      "text": " value of the digits for the current symbol and then we say we update the value of the Bollinger band"
+    },
+    {
+      "start": 3127.6,
+      "end": 3136.24,
+      "text": " width for the symbols all three of them one after the other by saying Pp upper minus Bp lower"
+    },
+    {
+      "start": 3137.2,
+      "end": 3140.96,
+      "text": " and normalizing it to the level number of digits for the symbol so we update"
+    },
+    {
+      "start": 3143.04,
+      "end": 3149.2799999999997,
+      "text": " this value for all three symbols so these members are going to be updated and then we're going to"
+    },
+    {
+      "start": 3149.2799999999997,
+      "end": 3154.96,
+      "text": " use the RSI filter to see whether or not we should place the trade so if RSI period is"
+    },
+    {
+      "start": 3154.96,
+      "end": 3161.04,
+      "text": " educated and 0 and RSI values greater than 0 so the user has input proper values then we create a"
+    },
+    {
+      "start": 3161.04,
+      "end": 3168.88,
+      "text": " buffer for RSI and then we copy from RSI handle for the current symbol index only one value"
+    },
+    {
+      "start": 3168.88,
+      "end": 3175.36,
+      "text": " and put it into this buffer and then take that value from thing to x0 and assign it to an RSI"
+    },
+    {
+      "start": 3176.16,
+      "end": 3183.52,
+      "text": " variable so that we have the RSI value for the last bar and then we say if can buy whatever was"
+    },
+    {
+      "start": 3183.6,
+      "end": 3192.72,
+      "text": " can buy so if it was true now you need to also check that the RSI is less than 15 minus the RSI value"
+    },
+    {
+      "start": 3192.72,
+      "end": 3202.8,
+      "text": " because for our buy we want to have the value of the RSI below 35 or below 40 so if the user has"
+    },
+    {
+      "start": 3202.8,
+      "end": 3210.0,
+      "text": " selected 15 and it's 15 minus that 15 and for the cell is the opposite so it's 50 plus the RSI value"
+    },
+    {
+      "start": 3210.0,
+      "end": 3217.04,
+      "text": " whatever the user has input here the RSI value if he puts 20 then it's 30 and 70 if it's"
+    },
+    {
+      "start": 3217.04,
+      "end": 3224.8,
+      "text": " if he puts 15 then it's 35 and 65 and that is what we are checking here that for the can buy"
+    },
+    {
+      "start": 3224.8,
+      "end": 3232.16,
+      "text": " RSI needs to be lower than 35 and for the cell it needs to be higher than 65 and then we create"
+    },
+    {
+      "start": 3232.16,
+      "end": 3237.28,
+      "text": " a variable by the name close and we update the value of the close price from the symbol index"
+    },
+    {
+      "start": 3237.28,
+      "end": 3243.36,
+      "text": " again remember that array and then that structure so we get the value for the current array member"
+    },
+    {
+      "start": 3244.0800000000004,
+      "end": 3251.44,
+      "text": " but for the sub member close be the price that we updated up here we get the close price"
+    },
+    {
+      "start": 3251.44,
+      "end": 3255.84,
+      "text": " and then we're going to do the that the close I mean if the can buy is still true then check"
+    },
+    {
+      "start": 3256.6400000000003,
+      "end": 3265.36,
+      "text": " that if close is below the recent low and the recent low has a value and for itself the close is"
+    },
+    {
+      "start": 3265.36,
+      "end": 3272.4,
+      "text": " above the recent high and the reason why high has a value so it's not an invalid recent high"
+    },
+    {
+      "start": 3272.4,
+      "end": 3277.44,
+      "text": " so we check that again and update the can buy in Gensil and then we're going to do a maximum"
+    },
+    {
+      "start": 3277.44,
+      "end": 3284.48,
+      "text": " symbol check so we're going to start with active symbol as 0 and then we're going to check"
+    },
+    {
+      "start": 3285.2000000000003,
+      "end": 3290.96,
+      "text": " by looping through the symbol arrays all three symbols that we have in the currencies looping"
+    },
+    {
+      "start": 3290.96,
+      "end": 3296.4,
+      "text": " through all of them and we're going to check whether or not a grid exists and if the grid"
+    },
+    {
+      "start": 3296.4,
+      "end": 3302.96,
+      "text": " exists we need to write this function and if the grid exists then we're going to make the active"
+    },
+    {
+      "start": 3302.96,
+      "end": 3309.84,
+      "text": " symbol increase it by one so there is a grid on one symbol or two symbol or three symbol and if the"
+    },
+    {
+      "start": 3309.84,
+      "end": 3315.44,
+      "text": " active symbols become more than the maximum symbol that the user has allowed then in that case the"
+    },
+    {
+      "start": 3315.44,
+      "end": 3325.04,
+      "text": " can buy in Gensil becomes false as well remember here we had this maximum symbols so how many"
+    },
+    {
+      "start": 3325.04,
+      "end": 3331.04,
+      "text": " symbols can have active grid at one point in time we're going to write this function but for now"
+    },
+    {
+      "start": 3331.84,
+      "end": 3338.56,
+      "text": " let's go down to grid related functions and we're just going to stop it so we're just going to say"
+    },
+    {
+      "start": 3338.56,
+      "end": 3345.6,
+      "text": " for now just return false and what we're going to be sending to this grid is the symbol"
+    },
+    {
+      "start": 3346.32,
+      "end": 3351.7599999999998,
+      "text": " the level and the direction because what we might want to check so you can you can use this"
+    },
+    {
+      "start": 3353.36,
+      "end": 3361.44,
+      "text": " function in different ways so you can send it for buy direction does a grid exist"
+    },
+    {
+      "start": 3362.16,
+      "end": 3369.84,
+      "text": " for buy does a cell grid exist or does any grid exist so this is what we're going to control from here"
+    },
+    {
+      "start": 3370.88,
+      "end": 3379.52,
+      "text": " and then we can say level so we can also check has this grid now got into level two or has this"
+    },
+    {
+      "start": 3379.52,
+      "end": 3386.0,
+      "text": " grid now gotten to level three so we can differentiate and the third one is of course symbol"
+    },
+    {
+      "start": 3386.0,
+      "end": 3390.4,
+      "text": " so for which symbol are we checking so these are the three values we're going to send to this"
+    },
+    {
+      "start": 3390.4,
+      "end": 3397.76,
+      "text": " grid exist what we are checking here is send the symbol of whatever is the current symbol in this"
+    },
+    {
+      "start": 3397.76,
+      "end": 3406.0,
+      "text": " iteration by sending the name but then zero and zero meaning we don't care about levels and we don't"
+    },
+    {
+      "start": 3406.0,
+      "end": 3413.6,
+      "text": " care about the direction the buy and sell so if it's buy or sell we don't care if it's level"
+    },
+    {
+      "start": 3413.6,
+      "end": 3419.52,
+      "text": " if the grid has opened up to level two or three or four or five don't care as long as the grid"
+    },
+    {
+      "start": 3419.52,
+      "end": 3426.7999999999997,
+      "text": " exist we say that the active symbol goes up by one and then based on the ATR values we're going to"
+    },
+    {
+      "start": 3426.7999999999997,
+      "end": 3434.88,
+      "text": " apply a smart distance which is basically we're going to get the ATR buffer again from the ATR"
+    },
+    {
+      "start": 3434.88,
+      "end": 3441.12,
+      "text": " handles we're going to copy the values into ATR buffer 96 and ATR 672 so we can assign it to the"
+    },
+    {
+      "start": 3441.3599999999997,
+      "end": 3450.24,
+      "text": " ATR 96 and ATR 672 and then if it is a valid value so ATR 672 is greater than epsilon if it is a valid"
+    },
+    {
+      "start": 3450.24,
+      "end": 3460.56,
+      "text": " value then we're going to update the symbols a smart distance multiplier with ATR 96 divide by"
+    },
+    {
+      "start": 3460.56,
+      "end": 3467.44,
+      "text": " ATR 672 which means that if the current volatility is bigger than the longer term volatility"
+    },
+    {
+      "start": 3468.2400000000002,
+      "end": 3473.2000000000003,
+      "text": " then in that case the value of this is going to turn out to be more than one and we store then"
+    },
+    {
+      "start": 3473.2000000000003,
+      "end": 3479.6,
+      "text": " into smart distance multiplier so that even though the user has said the distance of the grid is"
+    },
+    {
+      "start": 3479.6,
+      "end": 3486.4,
+      "text": " to be 35 but if he selects a smart distance then that 35 is now going to be multiplied by this"
+    },
+    {
+      "start": 3486.4,
+      "end": 3491.68,
+      "text": " volatility factor as well now this is a question mark I mean you might want to write it you might"
+    },
+    {
+      "start": 3491.6800000000003,
+      "end": 3497.92,
+      "text": " not want to write it which is the clamping of that multiplier between 1 and 1.5 so if this"
+    },
+    {
+      "start": 3497.92,
+      "end": 3506.0800000000004,
+      "text": " turns out to be less than one value meaning it's more volatile in 672 than in 96 in that case"
+    },
+    {
+      "start": 3506.0800000000004,
+      "end": 3510.88,
+      "text": " we don't really want to do a smaller multiplier we don't want to reduce the grid size from 35"
+    },
+    {
+      "start": 3510.88,
+      "end": 3519.6800000000003,
+      "text": " downwards so we clamp it to 1 by saying choose between whichever is the higher 1 or the multiplier"
+    },
+    {
+      "start": 3519.6800000000003,
+      "end": 3526.32,
+      "text": " which is here which we have stored here so if the multiplier turns out to be 0.9 for example"
+    },
+    {
+      "start": 3526.32,
+      "end": 3534.2400000000002,
+      "text": " then which one is bigger 1 or 0.9 1 is bigger so use 1 but if this is bigger than 1 if it is"
+    },
+    {
+      "start": 3534.2400000000002,
+      "end": 3543.76,
+      "text": " 1.3 then use 1.3 for using mathematics we have clamped the lower value down to 1 and then this is"
+    },
+    {
+      "start": 3544.4800000000005,
+      "end": 3548.7200000000003,
+      "text": " the value which is going to come here so for example it might come back to for example if this was"
+    },
+    {
+      "start": 3548.7200000000003,
+      "end": 3557.84,
+      "text": " 1.8 then the math max is going to be 1.8 and then we use math mean to say choose between 1.5"
+    },
+    {
+      "start": 3557.84,
+      "end": 3564.7200000000003,
+      "text": " and if this turns out to be higher 1.8 then it's math minimum so take 1.5 and this where we are"
+    },
+    {
+      "start": 3564.7200000000003,
+      "end": 3570.96,
+      "text": " clamping the value of this is smart distance multiplier between 1 and 1.5 so it never becomes"
+    },
+    {
+      "start": 3570.96,
+      "end": 3576.0800000000004,
+      "text": " like 2.3 because we don't want to increase the distance of the grid to like the ridiculous levels"
+    },
+    {
+      "start": 3577.04,
+      "end": 3582.4,
+      "text": " so here we had calculated and here we are clamping it by updating the value of the smart"
+    },
+    {
+      "start": 3582.4,
+      "end": 3591.2,
+      "text": " distance multiplier by of whatever turns out to be if it is between 1 and 1.5 then the smart"
+    },
+    {
+      "start": 3591.2,
+      "end": 3597.04,
+      "text": " distance multiplier will become or will stay that value but if it is bigger than 1.5 then it's"
+    },
+    {
+      "start": 3597.04,
+      "end": 3602.3199999999997,
+      "text": " going to become 1.5 and if it turns out to be less than 1.5 then it's going to become 1."
+    },
+    {
+      "start": 3602.4,
+      "end": 3607.44,
+      "text": " So we are clamping and then we're going to do a date tracking which is we're going to get the"
+    },
+    {
+      "start": 3607.44,
+      "end": 3616.7200000000003,
+      "text": " day of the week from the TM bar variable that we had created before the TM bar so we get the day of"
+    },
+    {
+      "start": 3616.7200000000003,
+      "end": 3625.28,
+      "text": " the week and then if day of the week is not equal to the last day of the week so we check again"
+    },
+    {
+      "start": 3625.76,
+      "end": 3635.52,
+      "text": " and the symbol day is not 0 so it's not a first update then in that case we change the trading"
+    },
+    {
+      "start": 3635.52,
+      "end": 3640.48,
+      "text": " day allowed today to whatever was the previous day so if it was allowed to trade yesterday we"
+    },
+    {
+      "start": 3640.48,
+      "end": 3646.96,
+      "text": " allow it to to to today so we roll it over and then we change the previous day to true as well"
+    },
+    {
+      "start": 3646.96,
+      "end": 3655.6,
+      "text": " so we're basically rolling over the period allowed from one day to another day so if it is"
+    },
+    {
+      "start": 3655.6,
+      "end": 3661.2,
+      "text": " can so later on if can buy was true on one day then it is can true on the next day as well"
+    },
+    {
+      "start": 3662.88,
+      "end": 3668.88,
+      "text": " and then can buy becomes whatever is whatever Indian comes out to be trading day allowed today"
+    },
+    {
+      "start": 3668.88,
+      "end": 3674.0,
+      "text": " versus this so if it is allowed today and can buy is also true from all the previous conditions"
+    },
+    {
+      "start": 3674.08,
+      "end": 3680.0,
+      "text": " then it remains true if it wasn't allowed today then can buy even though all the previous conditions"
+    },
+    {
+      "start": 3680.0,
+      "end": 3686.48,
+      "text": " were true but because of the drawdown for example if this becomes false with this becomes false"
+    },
+    {
+      "start": 3686.48,
+      "end": 3692.72,
+      "text": " as well then we do a margin level check that if the minimum free margin that the user has set"
+    },
+    {
+      "start": 3692.72,
+      "end": 3700.4,
+      "text": " is greater than epsilon so there is a value that the user has selected here is minimum free margin"
+    },
+    {
+      "start": 3701.28,
+      "end": 3707.2000000000003,
+      "text": " it's greater than epsilon and remember the epsilon value is 0.00006 greater than that so it is a valid"
+    },
+    {
+      "start": 3707.2000000000003,
+      "end": 3712.7200000000003,
+      "text": " value and the account margin level is less than whatever the user has put"
+    },
+    {
+      "start": 3714.7200000000003,
+      "end": 3720.48,
+      "text": " so the margin level has dropped below so in that case we will also set the can buy in can"
+    },
+    {
+      "start": 3720.48,
+      "end": 3729.12,
+      "text": " solve for false but before that we print this message once every 60 minutes or I don't know 180"
+    },
+    {
+      "start": 3729.12,
+      "end": 3736.64,
+      "text": " seconds so we say this is 0 first time because a static variable so the first time when we're"
+    },
+    {
+      "start": 3736.64,
+      "end": 3743.8399999999997,
+      "text": " creating it is 0 then if the current time minus this is greater than 1,800 seconds then print"
+    },
+    {
+      "start": 3743.8399999999997,
+      "end": 3750.3199999999997,
+      "text": " this and then set this to time current so the next time when we come back at less the time"
+    },
+    {
+      "start": 3750.3199999999997,
+      "end": 3756.64,
+      "text": " current has now become again greater than 1,800 we don't print it again and then we're going to"
+    },
+    {
+      "start": 3756.64,
+      "end": 3761.68,
+      "text": " check for the maximum drawdowns and we're going to create that function but let's suppose if the"
+    },
+    {
+      "start": 3761.68,
+      "end": 3769.8399999999997,
+      "text": " drawdown is triggered then we say if drawdown is triggered or the stop trading until we start"
+    },
+    {
+      "start": 3769.8399999999997,
+      "end": 3776.8799999999997,
+      "text": " has triggered or cooldown hours is greater than 0 then we're going to print a message and we're"
+    },
+    {
+      "start": 3776.8799999999997,
+      "end": 3782.48,
+      "text": " going to look through the reason so if the drawdown is triggered then the reason is drawdown triggered"
+    },
+    {
+      "start": 3783.12,
+      "end": 3789.84,
+      "text": " if this is true then the reason is drawdown restart required and if this is true then drawdown"
+    },
+    {
+      "start": 3789.84,
+      "end": 3796.32,
+      "text": " cooldown period these many number of hours and then we print this the trading is blocked and the"
+    },
+    {
+      "start": 3796.32,
+      "end": 3804.64,
+      "text": " reason is whatever one of these three and then again we set this in a way like before so that"
+    },
+    {
+      "start": 3804.64,
+      "end": 3810.96,
+      "text": " this message is only printed every 60 minutes and then the can buy and can sell becomes false so"
+    },
+    {
+      "start": 3810.96,
+      "end": 3817.28,
+      "text": " this is the drawdown check and we're actually going to create this separately but for now let's go"
+    },
+    {
+      "start": 3817.28,
+      "end": 3824.64,
+      "text": " down to drawdowns greater states and drawdowns section and I'm going to just stop it for now"
+    },
+    {
+      "start": 3826.0,
+      "end": 3834.96,
+      "text": " so for now I don't know return false well in fact it's a void so it doesn't have to return anything"
+    },
+    {
+      "start": 3834.96,
+      "end": 3840.64,
+      "text": " so I'm just going to stop it for now we come back and we are going to look at the last process"
+    },
+    {
+      "start": 3840.64,
+      "end": 3847.2799999999997,
+      "text": " however if the last process hour is less than the current hour then the cooldown hours which"
+    },
+    {
+      "start": 3847.2799999999997,
+      "end": 3854.72,
+      "text": " once it has been triggered we drop it down by 1 and then if the cooldown hour becomes less than 0"
+    },
+    {
+      "start": 3855.3599999999997,
+      "end": 3861.2,
+      "text": " because once it gets to 0 on the next turn by saying mine fine is going to become minus 1 in that"
+    },
+    {
+      "start": 3861.2,
+      "end": 3869.3599999999997,
+      "text": " case we reset it back to 0 and then if the drawdown was triggered but now when we're looping through"
+    },
+    {
+      "start": 3869.44,
+      "end": 3878.96,
+      "text": " the array size and getting the total lots in the grid and that turns out to be 0 so less than"
+    },
+    {
+      "start": 3878.96,
+      "end": 3884.6400000000003,
+      "text": " epsilon then in that case drawdown trigger becomes false again so this is just resetting that"
+    },
+    {
+      "start": 3884.6400000000003,
+      "end": 3890.2400000000002,
+      "text": " and we're going to write this function but what we're basically doing here is that if the drawdown"
+    },
+    {
+      "start": 3890.2400000000002,
+      "end": 3897.52,
+      "text": " was triggered during the check of the max drawdown then we are rechecking or because in the next one"
+    },
+    {
+      "start": 3897.52,
+      "end": 3905.92,
+      "text": " in the next one in the next loop we're going to get the total lots on the current by looking through"
+    },
+    {
+      "start": 3905.92,
+      "end": 3912.32,
+      "text": " all the currencies the total lots in grids and then if the total lots come back as a smaller than"
+    },
+    {
+      "start": 3912.32,
+      "end": 3918.4,
+      "text": " epsilon so it's 0 then in that case well there is no position so there is no drawdown"
+    },
+    {
+      "start": 3919.04,
+      "end": 3923.04,
+      "text": " and this can happen because we close all the position or something like this and because we will"
+    },
+    {
+      "start": 3923.04,
+      "end": 3928.16,
+      "text": " be calling this function so let's go down to the grid related function and for now I'm just"
+    },
+    {
+      "start": 3928.16,
+      "end": 3936.08,
+      "text": " going to stop it we can get the total lots in a grid for only buy for only sell or both for levels"
+    },
+    {
+      "start": 3936.08,
+      "end": 3943.2,
+      "text": " above 2 or above 3 or all the levels and use original lot size that we're going to come back to"
+    },
+    {
+      "start": 3943.2000000000003,
+      "end": 3954.6400000000003,
+      "text": " with when I'm going to explain to you this setting of grid level to start because I don't know"
+    },
+    {
+      "start": 3954.6400000000003,
+      "end": 3960.32,
+      "text": " if you remember grid level to start meaning like we put dummy trades 0.01 minimum loss until a"
+    },
+    {
+      "start": 3960.32,
+      "end": 3966.2400000000002,
+      "text": " certain level and then we go proper locking so do we use original and that this is related to that one"
+    },
+    {
+      "start": 3967.2000000000003,
+      "end": 3973.36,
+      "text": " but you will understand this as we go down through the functions and write this function"
+    },
+    {
+      "start": 3973.36,
+      "end": 3981.1200000000003,
+      "text": " but let's come back here to where we were and now we can actually update the symbol array"
+    },
+    {
+      "start": 3981.1200000000003,
+      "end": 3989.92,
+      "text": " for this currency the some member can buy to whatever now is the value of the coin can buy after"
+    },
+    {
+      "start": 3989.92,
+      "end": 3995.76,
+      "text": " all of these checks if it is still true then it's true otherwise false and for the cancel"
+    },
+    {
+      "start": 3995.84,
+      "end": 4000.2400000000002,
+      "text": " and then we set the value of the grid open for the currency as false"
+    },
+    {
+      "start": 4002.96,
+      "end": 4008.6400000000003,
+      "text": " we update the tick counter which these are the global variables which we created here"
+    },
+    {
+      "start": 4010.5600000000004,
+      "end": 4015.44,
+      "text": " loss of date minute last time check and those kind of things so we update it by one"
+    },
+    {
+      "start": 4017.2000000000003,
+      "end": 4022.1600000000003,
+      "text": " and the last process however becomes current hour and then we send the initial order"
+    },
+    {
+      "start": 4023.1200000000003,
+      "end": 4029.36,
+      "text": " and we're sending the initial order not the grid levels the initial order by sending the symbol"
+    },
+    {
+      "start": 4029.36,
+      "end": 4035.2000000000003,
+      "text": " in this because if can buy is true and can sell is true then we send the initial order"
+    },
+    {
+      "start": 4036.4800000000005,
+      "end": 4045.2000000000003,
+      "text": " if I compile now I have this send initial order let's remove this line for now and if I compile"
+    },
+    {
+      "start": 4045.2000000000003,
+      "end": 4050.0800000000004,
+      "text": " everything is fine and because now we are calling this function which we're going to write next"
+    },
+    {
+      "start": 4051.04,
+      "end": 4056.96,
+      "text": " uh this is why we got decided so everything is fine for now we compiled and now we're going to"
+    },
+    {
+      "start": 4056.96,
+      "end": 4062.56,
+      "text": " go ahead and try and send the initial order so let's create it and it's avoid so it's not"
+    },
+    {
+      "start": 4062.56,
+      "end": 4067.7599999999998,
+      "text": " going to return any value and then what we're going to be sending to it is just the symbol index"
+    },
+    {
+      "start": 4067.7599999999998,
+      "end": 4072.72,
+      "text": " so that's the only thing we send to it now from that symbol index we can get the name of the"
+    },
+    {
+      "start": 4072.72,
+      "end": 4079.04,
+      "text": " symbol by using symbol array symbol index dot so the member sub members and assign it to symbol"
+    },
+    {
+      "start": 4079.68,
+      "end": 4084.08,
+      "text": " and then we're going to do a very quick check if trading is allowed that is the function we wrote"
+    },
+    {
+      "start": 4084.08,
+      "end": 4091.36,
+      "text": " here and then we're going to also check this condition which is can buy is false because we're checking"
+    },
+    {
+      "start": 4091.36,
+      "end": 4098.16,
+      "text": " for not and can sell is also false which basically means that you cannot buy you can not sell"
+    },
+    {
+      "start": 4098.16,
+      "end": 4103.36,
+      "text": " so what the fuck are we doing here so we just return we exit the function and if not trading"
+    },
+    {
+      "start": 4104.08,
+      "end": 4110.4,
+      "text": " then also return because if trading is not allowed what's the point of continuing forward"
+    },
+    {
+      "start": 4110.4,
+      "end": 4116.639999999999,
+      "text": " but if trading is allowed and either can buy is true or can sell is true or both are true"
+    },
+    {
+      "start": 4117.36,
+      "end": 4125.04,
+      "text": " then we're going to check the total number of active symbols which we also did here I know"
+    },
+    {
+      "start": 4126.24,
+      "end": 4132.719999999999,
+      "text": " just like before coming here we did this but by the time we come here it might also be that you"
+    },
+    {
+      "start": 4132.72,
+      "end": 4139.280000000001,
+      "text": " have another symbol which opens up the trade and in that case the maximum the active number of"
+    },
+    {
+      "start": 4139.280000000001,
+      "end": 4145.360000000001,
+      "text": " active symbols might change so we do a check quick check here as well then we do a check for the spreads"
+    },
+    {
+      "start": 4145.360000000001,
+      "end": 4151.04,
+      "text": " so let's get the spread as symbol is spread and then if the spread is greater than the maximum"
+    },
+    {
+      "start": 4151.04,
+      "end": 4156.4800000000005,
+      "text": " spread that the user has provided but the user has provided the spread in pitch while the spreads"
+    },
+    {
+      "start": 4156.4800000000005,
+      "end": 4161.92,
+      "text": " here are in points so we need to get a multiplier for the symbol so that we can convert it into"
+    },
+    {
+      "start": 4162.72,
+      "end": 4168.64,
+      "text": " we can convert both into the same apple to apple comparison and then if the maximum spread is"
+    },
+    {
+      "start": 4169.2,
+      "end": 4173.84,
+      "text": " bigger than epsilon so the user has provided a value then if the spread is bigger"
+    },
+    {
+      "start": 4175.04,
+      "end": 4180.16,
+      "text": " current spreads then we basically spreads are too high so we're not going to open up a trade"
+    },
+    {
+      "start": 4180.8,
+      "end": 4185.6,
+      "text": " and we're going to write this function so let's go down to the bottom where we have the"
+    },
+    {
+      "start": 4185.6,
+      "end": 4191.84,
+      "text": " helper functions and here let's just write get quick multiplier and it's a very simple one"
+    },
+    {
+      "start": 4191.84,
+      "end": 4197.68,
+      "text": " you get the digits from the broker and if the digit is five or three then return 10"
+    },
+    {
+      "start": 4198.4800000000005,
+      "end": 4204.0,
+      "text": " because five basically means let's say u.s your u.s d gppt usd they have five decimals"
+    },
+    {
+      "start": 4205.2,
+      "end": 4208.32,
+      "text": " and the last decimal is a point and the paper value is actually 10"
+    },
+    {
+      "start": 4209.12,
+      "end": 4215.28,
+      "text": " 10 points so this is why we're returning 10 in case of 5 and 3 and 3 because of the jp y pairs"
+    },
+    {
+      "start": 4215.28,
+      "end": 4221.68,
+      "text": " so you have u s d jp y gp jp y and they have three digits but in all other cases return one because"
+    },
+    {
+      "start": 4221.68,
+      "end": 4228.320000000001,
+      "text": " on all other cases your pip and your points are exactly the same so that's our pip multiplier"
+    },
+    {
+      "start": 4228.320000000001,
+      "end": 4234.72,
+      "text": " so we check the spread so we try to open the buy order we check the symbol array can buy so"
+    },
+    {
+      "start": 4234.72,
+      "end": 4241.6,
+      "text": " whatever is the symbol array symbol index can buy meaning on the current currency if the can buy is"
+    },
+    {
+      "start": 4241.6,
+      "end": 4247.4400000000005,
+      "text": " true so we can buy for all of the conditions that we wrote are basically all of them are met"
+    },
+    {
+      "start": 4247.4400000000005,
+      "end": 4251.52,
+      "text": " then we're going to check very quickly allow hedging and we're going to create a"
+    },
+    {
+      "start": 4251.52,
+      "end": 4256.8,
+      "text": " bull variable so true or false and we're going to check for allow hedging if the user has selected"
+    },
+    {
+      "start": 4256.8,
+      "end": 4263.92,
+      "text": " allow hedging as true which means you can trade both buy and sell direction at the same time"
+    },
+    {
+      "start": 4264.88,
+      "end": 4271.68,
+      "text": " then if it is true then we're going to check if the grid exists by sending the value of one"
+    },
+    {
+      "start": 4271.68,
+      "end": 4275.76,
+      "text": " which is the value of the buy we're going to write this function but what we're going to write"
+    },
+    {
+      "start": 4275.76,
+      "end": 4280.96,
+      "text": " in this function is three things symbol level and direction so we can specify what we're checking"
+    },
+    {
+      "start": 4280.96,
+      "end": 4286.96,
+      "text": " so we're checking for buys then and minus one basically here for the level means we don't care"
+    },
+    {
+      "start": 4286.96,
+      "end": 4291.68,
+      "text": " we don't care about levels but we do care about buy so if hedging is allowed then we check if"
+    },
+    {
+      "start": 4291.68,
+      "end": 4299.84,
+      "text": " there is already a buy grid existing and if hedging is not allowed then we check if there is any"
+    },
+    {
+      "start": 4299.84,
+      "end": 4306.96,
+      "text": " grid at all for the has position that if hedging is allowed then check that the grid doesn't exist"
+    },
+    {
+      "start": 4306.96,
+      "end": 4312.8,
+      "text": " for buys because they're saying not grid exists and if the grid doesn't exist for buy that means has"
+    },
+    {
+      "start": 4312.8,
+      "end": 4319.68,
+      "text": " position is true and if hedging is not allowed then we are going to look for anything at all"
+    },
+    {
+      "start": 4319.68,
+      "end": 4325.4400000000005,
+      "text": " then in that case we check if no grid is available because they're saying not grid exists"
+    },
+    {
+      "start": 4325.4400000000005,
+      "end": 4330.000000000001,
+      "text": " so if no grid exists at all if either by yourself then has position becomes true"
+    },
+    {
+      "start": 4330.64,
+      "end": 4335.280000000001,
+      "text": " and if has position becomes has position comes out to be true then we send the order"
+    },
+    {
+      "start": 4335.280000000001,
+      "end": 4339.68,
+      "text": " by using the function open market order which we will write sending it again the symbol index so"
+    },
+    {
+      "start": 4339.68,
+      "end": 4344.400000000001,
+      "text": " that it knows which symbol and then telling it that we're going to open the buy order"
+    },
+    {
+      "start": 4344.400000000001,
+      "end": 4348.320000000001,
+      "text": " and then we say try to open the sell order which is the reverse logic so has position if"
+    },
+    {
+      "start": 4348.32,
+      "end": 4355.92,
+      "text": " allow hedging we now we're going to check for sell grids and all of the grids so if hedging"
+    },
+    {
+      "start": 4355.92,
+      "end": 4361.04,
+      "text": " is allowed then we check that the sell doesn't exist if the sell doesn't exist and has position"
+    },
+    {
+      "start": 4361.04,
+      "end": 4368.88,
+      "text": " is true and if hedging is not allowed then any grid at all if it exists and it falls and if it"
+    },
+    {
+      "start": 4368.88,
+      "end": 4373.759999999999,
+      "text": " doesn't exist then it's true and then we're going to open the market order by sending it the order"
+    },
+    {
+      "start": 4374.24,
+      "end": 4380.88,
+      "text": " sell and now we're going to go to open the market order so what we are sending to the open market order"
+    },
+    {
+      "start": 4380.88,
+      "end": 4388.56,
+      "text": " is symbol index and order type as in a motor type and then once again we convert the index"
+    },
+    {
+      "start": 4388.56,
+      "end": 4394.0,
+      "text": " into the name of the symbol and then we start with a max attempt of 10 so this is for every order"
+    },
+    {
+      "start": 4394.0,
+      "end": 4398.400000000001,
+      "text": " we're only going to try at 10 times and if it fails off at 10 times we give up and then what we're"
+    },
+    {
+      "start": 4398.400000000001,
+      "end": 4404.240000000001,
+      "text": " going to do is we're going to start at M0 going all the way to as long as attempt is less than max"
+    },
+    {
+      "start": 4404.240000000001,
+      "end": 4410.160000000001,
+      "text": " attempts and attempt plus plus so 10 times we're going to do this loop we're going to start by"
+    },
+    {
+      "start": 4410.160000000001,
+      "end": 4415.4400000000005,
+      "text": " saying well the lot size is going to be calculated lot size and then if lot size from here"
+    },
+    {
+      "start": 4415.4400000000005,
+      "end": 4420.400000000001,
+      "text": " turns out to be less than epsilon so it's less than 0.00001 so then it's too small so we print this"
+    },
+    {
+      "start": 4421.040000000001,
+      "end": 4426.64,
+      "text": " and then we're going to check for margins so we're going to start by saying double margin"
+    },
+    {
+      "start": 4426.64,
+      "end": 4430.88,
+      "text": " creating a variable assigning it the value 0 and then we're going to check a few things"
+    },
+    {
+      "start": 4431.4400000000005,
+      "end": 4437.6,
+      "text": " the first one is run the order calculate margin sending the order type which we know from here"
+    },
+    {
+      "start": 4438.64,
+      "end": 4443.68,
+      "text": " the symbol the lot size which we're going to calculate here and then we're going to say if it's"
+    },
+    {
+      "start": 4443.68,
+      "end": 4451.84,
+      "text": " order by order type by then use ask otherwise use debate and copy paste the value into this margin"
+    },
+    {
+      "start": 4452.8,
+      "end": 4459.6,
+      "text": " variable now if this function fails and this is what we're saying if not if this function fails"
+    },
+    {
+      "start": 4461.12,
+      "end": 4467.6,
+      "text": " or if the margin that we stored here comes out to be less than or equal to 0 or if the margin"
+    },
+    {
+      "start": 4467.6,
+      "end": 4472.88,
+      "text": " that comes out here is bigger than what is available as free margin then in that case we say not enough"
+    },
+    {
+      "start": 4472.88,
+      "end": 4479.84,
+      "text": " money and then if the order type was order type by then we change the can by two falls and can"
+    },
+    {
+      "start": 4480.0,
+      "end": 4487.4400000000005,
+      "text": " sell to false otherwise for the symbol index that we have currently sent here so for that currency"
+    },
+    {
+      "start": 4487.4400000000005,
+      "end": 4493.12,
+      "text": " we change the can by and can sell to false because there's not enough money by the way we are here"
+    },
+    {
+      "start": 4493.12,
+      "end": 4500.08,
+      "text": " calling this function so let's go down and for now we're just going to stop it to return 0.01"
+    },
+    {
+      "start": 4501.2,
+      "end": 4507.2,
+      "text": " coming back we're going to calculate the unique magic number for that particular trade"
+    },
+    {
+      "start": 4508.08,
+      "end": 4513.44,
+      "text": " and this is what we are going to do here is we're going to start with the base magic number"
+    },
+    {
+      "start": 4514.08,
+      "end": 4520.639999999999,
+      "text": " which is 84 570 in our case which is hardcoded in the year we don't ask the user to provide it"
+    },
+    {
+      "start": 4521.12,
+      "end": 4530.88,
+      "text": " 84 570 and then let's suppose the user has selected the UID as 0 so it's the very first instance"
+    },
+    {
+      "start": 4531.12,
+      "end": 4540.8,
+      "text": " he's running so this is going to become 84 570 plus 0 so it will remain as 84 570 then what we're"
+    },
+    {
+      "start": 4540.8,
+      "end": 4548.88,
+      "text": " going to do is we're going to get the number of digits in this magic case so 12345 so it has five"
+    },
+    {
+      "start": 4548.88,
+      "end": 4555.28,
+      "text": " digits and then we're going to say if the order type is by then one otherwise two so let's say in"
+    },
+    {
+      "start": 4555.28,
+      "end": 4564.0,
+      "text": " case of by it's going to be one in case of cell it's going to be two and then we create the magic"
+    },
+    {
+      "start": 4564.0,
+      "end": 4572.719999999999,
+      "text": " number by saying take 10 raise to the power digits plus two so 10 raise to the power seven"
+    },
+    {
+      "start": 4573.92,
+      "end": 4580.4,
+      "text": " five digits plus two so raise to the power seven which is going to be equal to 10 million"
+    },
+    {
+      "start": 4580.72,
+      "end": 4591.84,
+      "text": " without the commas or 10 million then multiply it with the direction so for by it's going to be one"
+    },
+    {
+      "start": 4593.280000000001,
+      "end": 4605.4400000000005,
+      "text": " and then add to it the magic number 84 570 but multiplied by 100 so it's actually going to be 84 570"
+    },
+    {
+      "start": 4605.4400000000005,
+      "end": 4612.72,
+      "text": " double 0 so for the cell for the by it's going to turn out to be one eight four five seven zero"
+    },
+    {
+      "start": 4613.4400000000005,
+      "end": 4621.040000000001,
+      "text": " and then zero zero and this is where this is the magic number for the EA this one is the direction"
+    },
+    {
+      "start": 4622.56,
+      "end": 4628.8,
+      "text": " and this zero zero is the grid so this is the zero zero level so base level then level one"
+    },
+    {
+      "start": 4628.8,
+      "end": 4635.84,
+      "text": " level two level three level four level five and in the same breath for the cell order because for"
+    },
+    {
+      "start": 4635.84,
+      "end": 4642.72,
+      "text": " the cell order the direction equals two so when we multiply it by two it will become this value"
+    },
+    {
+      "start": 4642.72,
+      "end": 4650.64,
+      "text": " is going to be multiplied by two instead of one so in that case the value which is going to come"
+    },
+    {
+      "start": 4650.64,
+      "end": 4658.160000000001,
+      "text": " out to be is two four five seven zero double zero so our by is going to be one and our cell is"
+    },
+    {
+      "start": 4658.160000000001,
+      "end": 4664.96,
+      "text": " going to be two so this is going to be the unique id for that trade which has the magic number"
+    },
+    {
+      "start": 4664.96,
+      "end": 4670.64,
+      "text": " which has the direction and which has the level so this is how we will create the magic numbers"
+    },
+    {
+      "start": 4671.52,
+      "end": 4675.200000000001,
+      "text": " and this is how we will read them as well and here we are doing the base trade we're not"
+    },
+    {
+      "start": 4675.200000000001,
+      "end": 4680.0,
+      "text": " opening up a grid yet and then let's prepare a comment so we say comment equals a trade comment"
+    },
+    {
+      "start": 4680.0,
+      "end": 4686.08,
+      "text": " and then we print that we are sending a buy or the cell order an attempt number whatever is the"
+    },
+    {
+      "start": 4686.08,
+      "end": 4691.52,
+      "text": " attempt number plus one because the loop is starts at zero and then we're going to set the trade"
+    },
+    {
+      "start": 4691.52,
+      "end": 4697.36,
+      "text": " expert magic number to the magic number that we are just created and set the standard deviation to"
+    },
+    {
+      "start": 4697.36,
+      "end": 4702.08,
+      "text": " whatever is the max slippage get the multiplier so get the max slippage that the user has provided"
+    },
+    {
+      "start": 4702.08,
+      "end": 4708.0,
+      "text": " and use our get pip multiplier at the bottom to do the multiplication get it at the right"
+    },
+    {
+      "start": 4708.0,
+      "end": 4713.44,
+      "text": " hit value for that symbol and then we actually send the trade so we create a success variable"
+    },
+    {
+      "start": 4713.44,
+      "end": 4719.2,
+      "text": " boot and then we send if the order type check if the order type is by if it is by then trade"
+    },
+    {
+      "start": 4719.2,
+      "end": 4727.84,
+      "text": " got by send the lot size symbol no tp no SL and comment and if the trades is cell then trade"
+    },
+    {
+      "start": 4727.84,
+      "end": 4735.6,
+      "text": " got cell lot size symbol well no price no stop loss and no tp current price no stop loss no tp"
+    },
+    {
+      "start": 4736.08,
+      "end": 4740.72,
+      "text": " and the comment and then we're going to check if success meaning like if the order went through"
+    },
+    {
+      "start": 4741.200000000001,
+      "end": 4746.320000000001,
+      "text": " then in that case we print the comment this order has opened and in that case we update the status"
+    },
+    {
+      "start": 4747.200000000001,
+      "end": 4753.76,
+      "text": " that if the order type was by then the for the current its symbol index can buy becomes false"
+    },
+    {
+      "start": 4753.76,
+      "end": 4758.4800000000005,
+      "text": " because we have already bought and the last great time becomes current time so that we're updating"
+    },
+    {
+      "start": 4758.4800000000005,
+      "end": 4764.72,
+      "text": " when was a last trade taken otherwise can sell so this was for order type buy so if this is for"
+    },
+    {
+      "start": 4764.72,
+      "end": 4769.6,
+      "text": " order type cell so we change the can cell to false because we have already sold and we update"
+    },
+    {
+      "start": 4769.6,
+      "end": 4775.68,
+      "text": " the last cell great time to time current meaning this was when the last trade in the grid for this"
+    },
+    {
+      "start": 4775.68,
+      "end": 4782.8,
+      "text": " symbol was taken and then we change the grid open value to true because now there is a grid open"
+    },
+    {
+      "start": 4782.8,
+      "end": 4788.88,
+      "text": " an opiate rigor is also true an opiate rigor is open price only and this we are going to use in the"
+    },
+    {
+      "start": 4788.88,
+      "end": 4795.52,
+      "text": " closing when we when we're going to look at the closing so here we close this function of if"
+    },
+    {
+      "start": 4796.32,
+      "end": 4801.84,
+      "text": " if it's successful then do this but if the trade was not successful so if it was successful do"
+    },
+    {
+      "start": 4801.84,
+      "end": 4807.6,
+      "text": " this but if it was not successful then we print that fail to open this get the description and"
+    },
+    {
+      "start": 4807.6,
+      "end": 4813.68,
+      "text": " the result code but remember we were going to do this 10 times this entire thing we're going to do"
+    },
+    {
+      "start": 4813.68,
+      "end": 4820.88,
+      "text": " 10 attempts but in case if it's a fatal error meaning if the red code is invalid or invalid"
+    },
+    {
+      "start": 4820.88,
+      "end": 4826.72,
+      "text": " volume or no money or market closed or trade disabled if one of these come back from the broker"
+    },
+    {
+      "start": 4826.72,
+      "end": 4832.8,
+      "text": " then there is no point in doing a retrial so in that case we just set the can buy to false and"
+    },
+    {
+      "start": 4832.8,
+      "end": 4838.400000000001,
+      "text": " can sell to false and return meaning exit the function and then just sleep for 5000 seconds"
+    },
+    {
+      "start": 4838.64,
+      "end": 4846.4800000000005,
+      "text": " and here we close this else because this so if it failed sleep for 5000 before attempting again"
+    },
+    {
+      "start": 4847.040000000001,
+      "end": 4855.200000000001,
+      "text": " and then we close this entire for loop as well and then we close the function okay if we compile"
+    },
+    {
+      "start": 4856.080000000001,
+      "end": 4863.84,
+      "text": " I don't have any errors now there are some step functions so we're going to get a 0.01 calculate"
+    },
+    {
+      "start": 4863.92,
+      "end": 4871.6,
+      "text": " lot size so things like those but at least now we have of working EA let's go back to the top"
+    },
+    {
+      "start": 4872.24,
+      "end": 4877.12,
+      "text": " initialization function and here we're going to remove or we're going to comment out the tester"
+    },
+    {
+      "start": 4878.08,
+      "end": 4882.400000000001,
+      "text": " so don't hide the test don't hide the indicators and then if I run"
+    },
+    {
+      "start": 4884.56,
+      "end": 4886.32,
+      "text": " now we're going to see the indicators as well"
+    },
+    {
+      "start": 4886.48,
+      "end": 4898.5599999999995,
+      "text": " so when we get our first rate here we get our first rate and we can see the value of the"
+    },
+    {
+      "start": 4898.5599999999995,
+      "end": 4908.639999999999,
+      "text": " RSI has gone up to 65 I think let's run it a little bit more yeah so here the value of RSI went"
+    },
+    {
+      "start": 4908.639999999999,
+      "end": 4916.16,
+      "text": " above 65 and this is why the first rate was opened here now we still haven't built the grid"
+    },
+    {
+      "start": 4916.32,
+      "end": 4919.92,
+      "text": " logic so it's just going to continue to open trades after trades after trades"
+    },
+    {
+      "start": 4922.48,
+      "end": 4928.4,
+      "text": " on every new candle every time there RSI is greater than 70 but at least this is working"
+    },
+    {
+      "start": 4929.12,
+      "end": 4936.5599999999995,
+      "text": " so we have a working EA now on the lot size 0.01 and now we can start to work on the volume"
+    },
+    {
+      "start": 4936.5599999999995,
+      "end": 4941.2,
+      "text": " or lot sizes and then we're going to work on the greeting system this is all the rationale of"
+    },
+    {
+      "start": 4941.2,
+      "end": 4952.639999999999,
+      "text": " opening the trades and now we come down to lot-siting functions"
+    }
+  ]
+}
