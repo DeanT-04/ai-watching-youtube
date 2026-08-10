@@ -1,195 +1,158 @@
-# ytextract — YouTube Tutorial Code Extractor
+# ytextract
 
-A local, CPU-only Python tool that takes a YouTube tutorial URL and produces two
-things saved to disk:
+<p align="center">
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat&labelColor=1f2328&logo=python&logoColor=white">
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-97CA00?style=flat&labelColor=1f2328">
+  <img alt="offline-first" src="https://img.shields.io/badge/offline--first-3EAAAF?style=flat&labelColor=1f2328">
+  <img alt="CPU-only" src="https://img.shields.io/badge/CPU--only-E27152?style=flat&labelColor=1f2328">
+  <img alt="Stack" src="https://img.shields.io/badge/stack-yt--dlp%20%C2%B7%20faster--whisper%20%C2%B7%20OpenCV%20%C2%B7%20PaddleOCR%20%C2%B7%20Tesseract-8250DF?style=flat&labelColor=1f2328">
+</p>
 
-1. an accurate **transcript** of the spoken audio, and
-2. accurately extracted, **near-verbatim code** shown on screen during the video.
+**Local, CPU-only YouTube tutorial code extractor: given a video URL, produce a
+timestamped transcript of the audio and the code shown on screen, saved to disk
+as JSON.**
 
-No YouTube Data API is used — video/audio access goes through `yt-dlp` only.
-This is a personal productivity tool, not a public redistribution service.
-Everything runs offline once the video is downloaded; nothing is uploaded.
+A personal productivity tool for anyone who wants to "watch" a coding tutorial
+as text: the transcript for what was said, and near-verbatim code blocks for
+what appeared on screen — without ever uploading anything. No YouTube Data API:
+media access goes through `yt-dlp` only, and everything runs offline once the
+video is downloaded.
 
-Built from the [master build prompt](docs/master-build-prompt.md) in ordered,
-individually-merged phases (see Status).
+## Install
 
-## Machine profile
-
-Recorded from the Phase 0 system audit (Section 4 of the build prompt) on the
-development machine:
-
-| Item | Value |
-| --- | --- |
-| OS | Windows (no WSL); PowerShell 5.1+; git-bash for agent tooling |
-| Python | 3.12.4 (`python` on PATH) |
-| pip | 24.0 |
-| git | 2.52.0.windows.1 |
-| ffmpeg | `C:\Users\Deano\scoop\shims\ffmpeg.exe` (scoop) |
-| tesseract | `C:\Users\Deano\scoop\shims\tesseract.exe` (scoop) |
-| gh | installed, **not authenticated** → local-merge mode, no PRs |
-| Logical CPUs | 8 → worker cap defaults to `max(1, 8 - 1) = 7` |
-| RAM | 13.9 GB |
-| GPU | AMD Radeon(TM) Vega 10 Graphics — present but **not used**; pipeline is CPU-only by design |
-| Disk (C:) | 138.6 GB used / 337.5 GB free |
-
-Consequences of the profile:
-
-- Default `max_workers` is 7 (never the full core count).
-- Whisper runs CPU + int8 (`tiny` model by default; override via config).
-- Merge mode is **local `git merge --no-ff`** because `gh` is not logged in;
-  if `gh auth login` is done later, the workflow switches to PRs.
-
-## Setup
+Requires Python 3.10+, plus `ffmpeg` and `tesseract` on your `PATH` (the OCR
+engines: `yt-dlp` and Whisper are installed via pip; PaddleOCR downloads its
+models on first use).
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
-.venv\Scripts\python.exe -m pip install -e . --no-deps   # console script `ytextract` + `python -m ytextract`
+.venv\Scripts\python.exe -m pip install -e . --no-deps   # adds the `ytextract` command
 ```
 
 Never activate the venv in scripts (PowerShell execution policy can silently
-block `Activate.ps1`); always call the venv interpreter directly:
+block `Activate.ps1`) — call the venv interpreter directly.
+
+## Usage
 
 ```powershell
 .venv\Scripts\python.exe -m ytextract <youtube-url>
+# or, after the editable install:
 ytextract <youtube-url>
-.venv\Scripts\python.exe -m pytest
 ```
 
-Runtime vs. dev dependencies are split into `requirements.txt` and
-`requirements-dev.txt`, both pinned. Configuration lives in `src/ytextract/config.py`
-with overrides via `.env` (see `.env.example`); all values are environment-driven,
-no hardcoded magic numbers.
+The pipeline runs one video at a time: download → transcribe → keyframes →
+crop → OCR → repair → store. Results land in `data/output/<video_id>/`
+(`transcript.json` + `code_blocks.json`); downloaded media stays in
+`data/raw/<video_id>/`.
 
-## Running the CLI
+Configuration is environment-driven (`YTEXTRACT_` prefix, optional `.env` — see
+`.env.example`). The levers that matter most:
 
-One command runs Phases 2–8 in order (download → transcribe → keyframes → OCR
-→ repair → store):
+| Variable | Default | What it controls |
+| --- | --- | --- |
+| `YTEXTRACT_CROP` | *(none)* | `x,y,width,height` crop region — the main code-accuracy lever; point it at the code pane |
+| `YTEXTRACT_WHISPER_MODEL_SIZE` | `tiny` | Whisper model (`tiny`/`base`/…); smaller = faster on CPU |
+| `YTEXTRACT_SAMPLE_RATE_FPS` | `0.5` | frames per second sampled for keyframes |
+| `YTEXTRACT_LOG_LEVEL` | `INFO` | logging verbosity |
 
-```powershell
-.venv\Scripts\python.exe -m ytextract <youtube-url>
+### Output
+
+`transcript.json` — timestamped speech:
+
+```json
+{
+  "video_id": "aDWDJrACs7s",
+  "title": "Build This $2800 Forex Trading Bot From Scratch (Full Code) \u2013 Part 2",
+  "uploader": "Mr. CapFree",
+  "language": "en",
+  "segments": [
+    { "start": 0.0, "end": 5.28, "text": " We're building the trading robot. It's a multi-currency grid..." }
+  ]
+}
 ```
 
-or the installed console script `ytextract <youtube-url>`. Output lands in
-`data/output/<video_id>/` (`transcript.json` + `code_blocks.json`); the
-downloaded media sits in `data/raw/<video_id>/`.
+`code_blocks.json` — one block per stable on-screen run, with validation status
+(text truncated with `…`; this is a real block — the full-frame OCR noise is
+exactly why `YTEXTRACT_CROP` matters):
 
-## Testing
+```json
+{
+  "video_id": "aDWDJrACs7s",
+  "blocks": [
+    {
+      "timestamp": 1700.0,
+      "text": "View\nBuild\nDebug\nIools\n…",
+      "language": "python",
+      "source": "paddle+tesseract",
+      "valid": false,
+      "issues": [{ "line": 21, "message": "unmatched '}' (line 21, column 4)" }]
+    }
+  ]
+}
+```
 
-Default run (mocked, no network, no real binaries — this is the coverage gate):
+## How it works
+
+```mermaid
+flowchart LR
+  A["YouTube URL"] --> B["Download<br/>(yt-dlp + ffmpeg)"]
+  B --> C["Transcribe<br/>(faster-whisper, CPU int8)"]
+  B --> D["Select keyframes<br/>(OpenCV + stability grouping)"]
+  D --> E["Crop & upscale<br/>(configurable region)"]
+  E --> F["OCR ensemble<br/>(PaddleOCR + Tesseract)"]
+  F --> G["Repair<br/>(ast.parse validation)"]
+  C --> H["data/output/&lt;video_id&gt;/<br/>transcript.json + code_blocks.json"]
+  G --> H
+```
+
+- **Download** — `yt-dlp` merges the best H.264 ≤1080p stream (AV1 excluded:
+  OpenCV can't decode it) with audio; `ffmpeg` extracts 16 kHz mono PCM.
+- **Transcript** — faster-whisper on CPU with int8 quantization; model size,
+  device, language are all configurable.
+- **Keyframes** — frames are sampled at a configurable rate and grouped into
+  "stable runs" by a similarity metric; the last frame of each run is kept, so
+  a code block that stays on screen yields exactly one OCR pass.
+- **OCR** — PaddleOCR (primary) + Tesseract (secondary) behind one interface;
+  results are merged (every primary line kept, high-confidence unmatched
+  secondary lines added) and engines fall back if one fails.
+- **Repair** — OCR'd text is validated with `ast.parse`; failures are reported
+  with line numbers. Python is the built-in validator; more languages plug in
+  via a registry.
+- **Storage** — a repository-style interface writes one folder per video.
+
+Details, machine profile, dependency rationale and build history:
+[ARCHITECTURE.md](ARCHITECTURE.md).
+
+## Development
+
+Coverage-gated test suite (mocked, no network, no real binaries):
 
 ```powershell
 .venv\Scripts\python.exe -m pytest --cov=src --cov-report=term-missing --cov-fail-under=100
 ```
 
-Manual integration tests (real OCR / real Whisper / local synthetic media) are
-marked `@pytest.mark.integration` and excluded from the default run. Run them
-explicitly with:
+Manual integration tests (real OCR / real Whisper on synthetic media) are
+marked `integration` and excluded from the default run:
 
 ```powershell
 .venv\Scripts\python.exe -m pytest -m integration -o addopts=""
 ```
 
-Current integration tier: real tesseract OCR on a rendered-code fixture, and a
-full local-media pipeline run (real cv2 frame extraction + real tesseract OCR +
-real faster-whisper `tiny.en` inference on the cached model + repair + storage
-on synthetic video/audio). The real-YouTube download e2e is still blocked by the
-network outage (see "Pending checks").
-
-Sanity checks against real videos use the URLs in `yt-urls.txt` (three
-hand-picked public tutorials) — the unit-test tier never touches the network.
+Lint/format: `ruff check src tests` and `ruff format --check src tests`.
 
 ## Known limitations
 
-- CPU-only: long videos transcribe slowly; keep the Whisper model small (`tiny`/`base`).
-- OCR accuracy on low-resolution / stylized code is imperfect; Phase 7 repair
-  validates Python syntax but cannot fix every OCR artifact.
-- One video at a time; multi-video batch processing is explicitly future work.
-- Windows-only code paths tested; macOS/Linux are not covered.
-- Code extraction accuracy depends on configuring `YTEXTRACT_CROP` to the code
-  region: full-frame OCR reads UI chrome (menus/status bars) and misses small
-  code text. Demonstrated on the e2e video: with a crop over the editor pane,
-  tesseract read real code lines at 67–96% confidence.
-- Validation is Python-only (`repair.VALIDATORS`); non-Python tutorials (e.g.
-  MQL5) are flagged as invalid by design.
+- **Code accuracy depends on `YTEXTRACT_CROP`.** With no crop, full-frame OCR
+  reads editor chrome (menus, status bars) instead of the code pane. Point the
+  crop at the code region and real code lines come through at 67–96% confidence
+  (verified on a live tutorial).
+- **Validation is Python-only** (`repair.VALIDATORS`); tutorials in other
+  languages (e.g. MQL5) are flagged as invalid by design.
+- **CPU-only** — long videos transcribe slowly; keep the Whisper model small.
+- **One video at a time**; batch processing is explicitly future work.
+- **Windows-only code paths tested**; macOS/Linux are not covered.
 
-## Real-network checks (executed 2026-08-10 after connectivity returned)
+## License
 
-Both gates from the build plan ran against the first URL in `yt-urls.txt`
-(`https://youtu.be/aDWDJrACs7s` — "Build This $2800 Forex Trading Bot From
-Scratch (Full Code), Part 2", 82.5 min, uploader Mr. CapFree):
-
-- **Phase 2 real-download sanity check: PASSED** (~105 s). Produced
-  `data/raw/aDWDJrACs7s/{aDWDJrACs7s.mp4, aDWDJrACs7s.wav, aDWDJrACs7s.info.json}`
-  with correct title/uploader metadata. One real bug was found and fixed here:
-  the default format string picked an AV1 stream, which OpenCV cannot decode —
-  the downloader now prefers H.264 (`vcodec^=avc1`) and excludes AV1.
-- **Phase 9 real end-to-end run: PASSED** (~57 min total wall; config: Whisper
-  `tiny.en` cached model, sample rate 0.05 fps). Download ~3 min →
-  transcribe 751 segments / `en` ~9 min → 166 keyframes from 248 sampled frames
-  ~13 min → OCR (PaddleOCR+Tesseract ensemble) over all 166 keyframes ~32 min →
-  validate → save to `data/output/aDWDJrACs7s/`.
-- **Rough accuracy impression (honest):** transcript quality is high (clean,
-  coherent English). Code extraction with the *default* (no crop) is poor —
-  0/165 non-empty blocks parse as Python, because (a) the video is MQL5
-  (C-like), which the Python-only validator flags by design, and (b) full-frame
-  OCR captures UI chrome rather than the editor's small code text. With a crop
-  region over the code pane (Phase 5 config), tesseract read genuine code lines
-  (`return(INIT_SUCCEEDED);`, `void OnDeinit(const int reason) {`, `void
-  OnTick() {`) at 67–96% confidence — the configurable crop is the intended
-  accuracy lever, per the build prompt.
-
-Note: the first build-session attempt at these checks was blocked by the
-youtube.com outage (18:13–20:34 local); `scripts/pending-e2e.sh` automates a
-re-run for any other URL in `yt-urls.txt`.
-
-## Status
-
-- **Phase 0 — Scaffolding: done** (skeleton, `.gitignore`, README, pinned
-  requirements, venv, `pytest` green).
-- **Phase 1 — Foundation utilities: done** (central logging via
-  `setup_logging()`, env-driven `Config`, safe subprocess wrapper
-  `run_command()` with timeouts + clean errors, CPU throttle `wait_if_busy()`
-  and `bounded_map()`; 100% coverage, ruff clean).
-- **Phase 2 — Download module: done** — `download_video()` via the
-  `run_command` wrapper: yt-dlp merge (H.264 preferred, AV1 excluded) +
-  `--write-info-json`, ffmpeg 16 kHz mono WAV extraction, metadata parsing;
-  100% coverage with yt-dlp/ffmpeg fully mocked; **real-download sanity check
-  passed** against a URL from `yt-urls.txt` (~105 s, correct files + metadata).
-- **Phase 3 — Audio transcription: done** — `transcribe()` wraps
-  faster-whisper (CPU + int8, model size / device / compute type / language all
-  config-driven); returns timestamped segments; 100% coverage with the Whisper
-  call fully faked. Real inference exercised in the integration tier (cached
-  `tiny.en`) and in the real e2e (751 segments on the 82.5-min tutorial).
-- **Phase 4 — Keyframe selection: done** — `sample_frames()` (OpenCV at a
-  configurable sample rate) + `select_keyframes()` (pixel-diff/SSIM grouping
-  into stable runs, last frame per run kept); selection logic tested with
-  synthetic frame arrays, cv2 fully faked; 100% coverage.
-- **Phase 5 — Crop & preprocessing: done** — `crop_region()` (bounds-checked,
-  config-driven region) + `upscale()` (Lanczos); tested with synthetic images;
-  100% coverage.
-- **Phase 6 — OCR ensemble: done (unit tier)** — PaddleOCR (primary) +
-  Tesseract (secondary, via `run_command` + TSV parsing) behind one
-  `OcrEngine` interface; `merge_results()` policy (keep all primary, add
-  high-confidence unmatched secondary) and fallback-on-engine-failure fully
-  tested with faked engines; 100% coverage. Real OCR needs the paddle model
-  download (installing in background) + the Phase 9 e2e run.
-- **Phase 7 — Syntax-validated repair: done** — `repair()` validates OCR'd code
-  with `ast.parse` (Python) behind a `VALIDATORS` registry so more languages
-  plug in via `register_validator()`; failures reported with line/column;
-  most-thorough test file of the project incl. malformed, unindented, deeply
-  nested and unregistered-language inputs; 100% coverage.
-- **Phase 8 — Local storage layer: done** — `Storage` protocol +
-  `LocalStorage` writing `data/output/<video_id>/{transcript.json,
-  code_blocks.json}`; round-trip, corrupt/missing-file and UTF-8 cases tested
-  on tmp_path; 100% coverage.
-- **Phase 9 — CLI orchestration: done** — `ytextract <url>` (or
-  `python -m ytextract`) runs Phases 2–8 with progress logging; full pipeline
-  wiring verified end-to-end with every external call mocked; entry points
-  smoke-tested via subprocess; 100% coverage. **Real e2e run against a URL from
-  `yt-urls.txt` passed** (~57 min: download → 751-segment transcript → 166
-  keyframes → OCR ensemble → repair → storage); results + honest accuracy
-  assessment under "Real-network checks".
-- **All phases complete.** See "Real-network checks" for the e2e evidence and
-  the accuracy caveats (crop configuration, Python-only validation).
+[MIT](LICENSE) © 2026 DeanT-04
