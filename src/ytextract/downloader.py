@@ -27,8 +27,10 @@ _URL_RE = re.compile(
     rf"youtube\.com/(?:watch\?v=|embed/|shorts/|v/){_ID_PATTERN})"
 )
 
-# Prefer <=1080p video + audio, merged; falls back to whatever single file exists.
-_YTDLP_FORMAT = "bv*[height<=1080]+ba/b"
+# Prefer H.264 (avc1) <=1080p + audio, merged; falls back to whatever single
+# file exists. AV1 (av01) is deliberately excluded: OpenCV's bundled ffmpeg
+# cannot decode AV1, so keyframe extraction would yield zero frames.
+_YTDLP_FORMAT = "bv*[height<=1080][vcodec^=avc1]+ba/b"
 
 
 class DownloadError(RuntimeError):

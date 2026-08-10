@@ -56,6 +56,9 @@ def test_ytdlp_cmd_shape():
     assert argv[0] == "yt-dlp"
     assert "--write-info-json" in argv
     assert "--no-playlist" in argv
+    # H.264 preferred, AV1 excluded (OpenCV cannot decode AV1).
+    assert "avc1" in argv[argv.index("-f") + 1]
+    assert "av01" not in argv[argv.index("-f") + 1]
     assert argv[argv.index("-o") + 1] == r"C:\out\abc123.%(ext)s"
     assert argv[-1] == "https://youtu.be/abc123"
 
