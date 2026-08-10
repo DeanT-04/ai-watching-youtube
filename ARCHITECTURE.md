@@ -24,6 +24,7 @@ src/ytextract/
 tests/                unit tier (100% coverage gate, fully mocked) + integration tier
 data/raw/<id>/        downloaded media (gitignored)
 data/output/<id>/     results: transcript.json + code_blocks.json (gitignored)
+frames/<id>/          sampled frames (tracked; e.g. first 10 min at 1 frame / 5 s)
 scripts/pending-e2e.sh  re-runs the real-network checks when connectivity returns
 ```
 
