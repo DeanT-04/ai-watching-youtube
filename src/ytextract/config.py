@@ -81,6 +81,7 @@ class Config:
     similarity_threshold: float
     crop: tuple[int, int, int, int] | None
     upscale_scale: int
+    consensus_max_frames_per_group: int
     whisper_model_size: str
     whisper_device: str
     whisper_compute_type: str
@@ -112,6 +113,9 @@ class Config:
             similarity_threshold=_env_float("YTEXTRACT_SIMILARITY_THRESHOLD", 0.98, e),
             crop=_env_crop("YTEXTRACT_CROP", e),
             upscale_scale=_env_int("YTEXTRACT_UPSCALE_SCALE", 2, e),
+            consensus_max_frames_per_group=_env_int(
+                "YTEXTRACT_CONSENSUS_MAX_FRAMES_PER_GROUP", 8, e
+            ),
             whisper_model_size=_env_str("YTEXTRACT_WHISPER_MODEL_SIZE", "tiny", e),
             whisper_device=_env_str("YTEXTRACT_WHISPER_DEVICE", "cpu", e),
             whisper_compute_type=_env_str("YTEXTRACT_WHISPER_COMPUTE_TYPE", "int8", e),

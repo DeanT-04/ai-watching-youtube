@@ -11,6 +11,8 @@ from ytextract.keyframes import (
     Frame,
     KeyframeError,
     frame_similarity,
+    group_stable_runs,
+    sample_and_group,
     sample_and_select,
     sample_frames,
     select_keyframes,
@@ -137,3 +139,67 @@ def test_sample_and_select_combines():
         result = sample_and_select("video.mp4", CFG)
     sample.assert_called_once_with("video.mp4", CFG.sample_rate_fps)
     assert [f.timestamp for f in result] == [9.0]
+
+
+def test_group_stable_runs_empty():
+    assert group_stable_runs([], CFG) == []
+
+
+def test_group_stable_runs_keeps_every_frame_of_one_run():
+    """This is the whole point of the function: unlike select_keyframes,
+    a stable run's frames are NOT collapsed to one -- they're preserved so
+    consensus reconstruction has multiple reads to merge across."""
+    frames = [Frame(float(ts), BLACK.copy()) for ts in range(5)]
+    groups = group_stable_runs(frames, CFG)
+    assert len(groups) == 1
+    assert [f.timestamp for f in groups[0]] == [0.0, 1.0, 2.0, 3.0, 4.0]
+
+
+def test_group_stable_runs_splits_on_scene_change():
+    frames = [
+        Frame(0.0, np.full((4, 4), 10, dtype=np.uint8)),
+        Frame(1.0, np.full((4, 4), 10, dtype=np.uint8)),
+        Frame(2.0, np.full((4, 4), 200, dtype=np.uint8)),
+        Frame(3.0, np.full((4, 4), 200, dtype=np.uint8)),
+        Frame(4.0, np.full((4, 4), 250, dtype=np.uint8)),
+    ]
+    groups = group_stable_runs(frames, CFG)
+    assert [[f.timestamp for f in g] for g in groups] == [
+        [0.0, 1.0],
+        [2.0, 3.0],
+        [4.0],
+    ]
+
+
+def test_group_stable_runs_subsamples_long_runs():
+    cfg = Config.load(
+        env={
+            "YTEXTRACT_MAX_WORKERS": "2",
+            "YTEXTRACT_CONSENSUS_MAX_FRAMES_PER_GROUP": "3",
+        }
+    )
+    frames = [Frame(float(ts), BLACK.copy()) for ts in range(20)]
+    groups = group_stable_runs(frames, cfg)
+    assert len(groups) == 1
+    assert len(groups[0]) == 3
+    # Keeps the ends of the run, not an arbitrary prefix.
+    assert groups[0][0].timestamp == 0.0
+    assert groups[0][-1].timestamp == 19.0
+
+
+def test_group_stable_runs_default_cap_is_eight():
+    frames = [Frame(float(ts), BLACK.copy()) for ts in range(100)]
+    groups = group_stable_runs(frames, CFG)
+    assert len(groups[0]) == 8
+
+
+def test_sample_and_group_combines():
+    frames = [Frame(ts, BLACK.copy()) for ts in range(10)]
+    with mock.patch("ytextract.keyframes.sample_frames", return_value=frames) as sample:
+        result = sample_and_group("video.mp4", CFG)
+    sample.assert_called_once_with("video.mp4", CFG.sample_rate_fps)
+    assert len(result) == 1
+    # Default cap is 8, so a run of 10 is subsampled -- but the ends are kept.
+    assert len(result[0]) == 8
+    assert result[0][0].timestamp == 0
+    assert result[0][-1].timestamp == 9

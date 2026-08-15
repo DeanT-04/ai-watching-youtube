@@ -80,3 +80,37 @@ Single frame, old crop: **~37% field recovery**, several character errors.
 Six frames, fixed crop, consensus: **~93% field recovery** (28/30), text
 matching ground truth exactly. This is on one real struct from the real
 video, not a synthetic benchmark — re-run the command above to reproduce.
+
+## Follow-up: wiring into the actual pipeline (`feature/consensus-pipeline-integration`)
+
+The above proved the merge logic works; it didn't make the real pipeline
+*use* it, because `select_keyframes` (Phase 4) deliberately collapses every
+stable run down to **one** frame before OCR ever runs — by design, to keep
+OCR cost down. That means consensus had nothing to consume: there was only
+ever one reading per region.
+
+Fixed by adding `keyframes.group_stable_runs` alongside (not replacing)
+`select_keyframes`: same run-boundary detection, but keeps every frame in
+the run (subsampled to `YTEXTRACT_CONSENSUS_MAX_FRAMES_PER_GROUP`, default
+8, evenly across the run) instead of just the last one. `cli.pipeline` now
+calls `sample_and_group` + `_to_code_block_group` per run instead of one
+frame at a time. A run of size 1 is byte-for-byte identical to the old
+single-frame path — verified via `test_to_code_block_group_size_one_matches_single_frame_path`.
+
+Re-ran the real frames through the *actual* `cli._to_code_block_group`
+(not a standalone script) with `create_engine('tesseract')` — same clean
+28/30-field result as the standalone consensus test, confirming the wiring
+itself, not just the merge algorithm, works against real data.
+
+### Mistake caught during this verification, fixed before commit
+
+First version of `_to_code_block_group` appended `merged.unanchored` (OCR
+lines that never got paired with a gutter number) to the output text, on
+the theory that they might still be genuine code. Running it against the
+real frames showed this was wrong: unanchored text is overwhelmingly
+repeated UI-chrome OCR noise (toolbar labels like "Compile", "History",
+misread once per frame), and appending it turned a clean 28-line
+reconstruction into a wall of garbage. Fixed to use only the anchored
+consensus text; `unanchored` stays available on `ReconstructedSource` for
+a future caller that wants it, but isn't included in the code block by
+default.
