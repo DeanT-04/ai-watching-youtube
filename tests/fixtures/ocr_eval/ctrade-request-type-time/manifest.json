@@ -1,0 +1,16 @@
+{
+  "condition": "short-dwell",
+  "frames": [
+    "t_0291.png",
+    "t_0292.png",
+    "t_0293.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "CTrade library methods (RequestTypeTimeDescription, Result), only 3 frames."
+}

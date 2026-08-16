@@ -1,0 +1,20 @@
+{
+  "condition": "long-static",
+  "frames": [
+    "t_0223.png",
+    "t_0224.png",
+    "t_0225.png",
+    "t_0226.png",
+    "t_0227.png",
+    "t_0228.png",
+    "t_0229.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "EARLIER file state: header + OnInit/OnDeinit/OnTick with empty bodies, no includes yet. 7 frames."
+}

@@ -1,0 +1,21 @@
+{
+  "condition": "scrolling",
+  "frames": [
+    "t_0452.png",
+    "t_0453.png",
+    "t_0454.png",
+    "t_0455.png",
+    "t_0456.png",
+    "t_0457.png",
+    "t_0458.png",
+    "t_0459.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "Same enums, scrolled ~3 lines down (line 20 at top instead of 17). Tests a scrolled view."
+}

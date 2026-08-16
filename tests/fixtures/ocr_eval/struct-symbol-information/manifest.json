@@ -1,0 +1,21 @@
+{
+  "condition": "long-static",
+  "frames": [
+    "t_0486.png",
+    "t_0491.png",
+    "t_0496.png",
+    "t_0501.png",
+    "t_0507.png",
+    "t_0512.png",
+    "t_0517.png",
+    "t_0522.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "SymbolInformation struct, 8 frames spanning 36s. The documented hand-verified region."
+}
