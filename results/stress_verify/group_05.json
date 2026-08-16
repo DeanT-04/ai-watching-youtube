@@ -1,0 +1,366 @@
+{
+ "group": 5,
+ "n_frames": 1,
+ "t_start": 287.0,
+ "t_end": 287.0,
+ "consensus_lines": {
+  "32": {
+   "text": "void SatDeviationiInPoants(tons\u2019 wlohg deviation) { m_deviation=deviation; }",
+   "votes": 1
+  },
+  "35": {
+   "text": "double CheckResultMargin( void) const { return(m_check_result.margan) ; }",
+   "votes": 1
+  },
+  "39": {
+   "text": "a si 5 : :",
+   "votes": 1
+  },
+  "85": {
+   "text": "string CheckResultComment (void) const { return(m_check_result.comment) ; -}b",
+   "votes": 1
+  },
+  "86": {
+   "text": "double \u20acheckResultMarginFree(void) const { return(m_check_result.margin_free);. }",
+   "votes": 1
+  },
+  "87": {
+   "text": "double CheckResultMarginLevel(void) const { return(m_check_result.margin_level); } '",
+   "votes": 1
+  },
+  "90": {
+   "text": "boat SetTypehilhingBySymbol{osnet string-symbol):",
+   "votes": 1
+  },
+  "92": {
+   "text": "vord SeeTyperilding(censt ENUM ORDER. TYPE FILLING filling) { m_type_filling=filling; }",
+   "votes": 1
+  },
+  "95": {
+   "text": "ian o-4--\"S--~\"=-ngenstrdoabtenprice,nonst double sl,const double tp,const string comm\u00e9nt= \");",
+   "votes": 2
+  },
+  "96": {
+   "text": "bool RositionModit;tcoost.string symbol,const double sl,conmst double tp);",
+   "votes": 1
+  },
+  "98": {
+   "text": "bigs =a \u2018ur Mastize wits Beerrabpe , ;",
+   "votes": 1
+  },
+  "99": {
+   "text": "void SathtyneModef const bedl mode), { m_async_mode=mode; }",
+   "votes": 1
+  },
+  "102": {
+   "text": "bool PositionClasefontiat(consr ulong, trokst,conet devale wolume,const ulong deviatian=ll| ONG NMA);",
+   "votes": 1
+  },
+  "103": {
+   "text": "\u2018'\u2014 metrou: Tor Rovltosewicn oeneinw orderss ; c",
+   "votes": 1
+  },
+  "104": {
+   "text": "bool PosetiohClosefertial(icanttistring symbol,const double volume,eanst ulong deviation=JLONG Max),",
+   "votes": 1
+  },
+  "119": {
+   "text": "stolons OrctenDeletefcnsstlbinng t\u00e9cket); ' _im_ 2=YPE3 7 1 ( cafe; mee oF a = MN eres",
+   "votes": 1
+  },
+  "122": {
+   "text": "bool OrderMadify(conssthulagg\u00e9tickat (coastromoublecbraite, canst inouble b1.const iriouble.ity, . . =P",
+   "votes": 1
+  },
+  "148": {
+   "text": "bayches \u201c yf 3) cosehstestrangsZombent=!*)gcoun -",
+   "votes": 1
+  },
+  "166": {
+   "text": "-ENUM_OBB22STRPE TIME, type_time-ORPER_TIME_GTC, const datetime expiration=a, t=\" |",
+   "votes": 1
+  },
+  "168": {
+   "text": "E yl \\ccosstddssble limit _pnic\u00e9,copst dnsblia priee,oansr donble sl, const dondie te, t a",
+   "votes": 2
+  },
+  "195": {
+   "text": "bool Pos2tiloniiose(constiuleng\u2019 tistet,const ulagg deviatron=ULOHG MAK);",
+   "votes": 1
+  }
+ },
+ "support": {
+  "32": [
+   {
+    "frame": 0,
+    "text": "void SatDeviationiInPoants(tons\u2019 wlohg deviation) { m_deviation=deviation; }"
+   }
+  ],
+  "35": [
+   {
+    "frame": 0,
+    "text": "double CheckResultMargin( void) const { return(m_check_result.margan) ; }"
+   }
+  ],
+  "39": [
+   {
+    "frame": 0,
+    "text": "a si 5 : :"
+   }
+  ],
+  "85": [
+   {
+    "frame": 0,
+    "text": "string CheckResultComment (void) const { return(m_check_result.comment) ; -}b"
+   }
+  ],
+  "86": [
+   {
+    "frame": 0,
+    "text": "double \u20acheckResultMarginFree(void) const { return(m_check_result.margin_free);. }"
+   }
+  ],
+  "87": [
+   {
+    "frame": 0,
+    "text": "double CheckResultMarginLevel(void) const { return(m_check_result.margin_level); } '"
+   }
+  ],
+  "90": [
+   {
+    "frame": 0,
+    "text": "boat SetTypehilhingBySymbol{osnet string-symbol):"
+   }
+  ],
+  "92": [
+   {
+    "frame": 0,
+    "text": "vord SeeTyperilding(censt ENUM ORDER. TYPE FILLING filling) { m_type_filling=filling; }"
+   }
+  ],
+  "95": [
+   {
+    "frame": 0,
+    "text": "void SetherginMoael voind! {cmisargia!modes(ENUM_ACCOUNT_MARGIN_MODE JAccountInfoInteger({ ACCOUNT _MARGIN_MODE); }"
+   },
+   {
+    "frame": 0,
+    "text": "ian o-4--\"S--~\"=-ngenstrdoabtenprice,nonst double sl,const double tp,const string comm\u00e9nt= \");"
+   }
+  ],
+  "96": [
+   {
+    "frame": 0,
+    "text": "bool RositionModit;tcoost.string symbol,const double sl,conmst double tp);"
+   }
+  ],
+  "98": [
+   {
+    "frame": 0,
+    "text": "bigs =a \u2018ur Mastize wits Beerrabpe , ;"
+   }
+  ],
+  "99": [
+   {
+    "frame": 0,
+    "text": "void SathtyneModef const bedl mode), { m_async_mode=mode; }"
+   }
+  ],
+  "102": [
+   {
+    "frame": 0,
+    "text": "bool PositionClasefontiat(consr ulong, trokst,conet devale wolume,const ulong deviatian=ll| ONG NMA);"
+   }
+  ],
+  "103": [
+   {
+    "frame": 0,
+    "text": "\u2018'\u2014 metrou: Tor Rovltosewicn oeneinw orderss ; c"
+   }
+  ],
+  "104": [
+   {
+    "frame": 0,
+    "text": "bool PosetiohClosefertial(icanttistring symbol,const double volume,eanst ulong deviation=JLONG Max),"
+   }
+  ],
+  "119": [
+   {
+    "frame": 0,
+    "text": "stolons OrctenDeletefcnsstlbinng t\u00e9cket); ' _im_ 2=YPE3 7 1 ( cafe; mee oF a = MN eres"
+   }
+  ],
+  "122": [
+   {
+    "frame": 0,
+    "text": "bool OrderMadify(conssthulagg\u00e9tickat (coastromoublecbraite, canst inouble b1.const iriouble.ity, . . =P"
+   }
+  ],
+  "148": [
+   {
+    "frame": 0,
+    "text": "bayches \u201c yf 3) cosehstestrangsZombent=!*)gcoun -"
+   }
+  ],
+  "166": [
+   {
+    "frame": 0,
+    "text": "-ENUM_OBB22STRPE TIME, type_time-ORPER_TIME_GTC, const datetime expiration=a, t=\" |"
+   }
+  ],
+  "168": [
+   {
+    "frame": 0,
+    "text": "bool PositionCiosebysroast/ulong ticket, const vlone ticket_by))"
+   },
+   {
+    "frame": 0,
+    "text": "E yl \\ccosstddssble limit _pnic\u00e9,copst dnsblia priee,oansr donble sl, const dondie te, t a"
+   }
+  ],
+  "195": [
+   {
+    "frame": 0,
+    "text": "bool Pos2tiloniiose(constiuleng\u2019 tistet,const ulagg deviatron=ULOHG MAK);"
+   }
+  ],
+  "393": [
+   {
+    "frame": 0,
+    "text": "bool PositionMpdity (const Tiing tigket,const double sl, const dduble tp);"
+   }
+  ]
+ },
+ "unanchored_count": 7,
+ "per_frame": [
+  {
+   "t": 287.0,
+   "raw": [
+    [
+     "=f} | Urey + | A ax =| <n, | |=] Compile Ine] Fe WD S& | 0 6|Ufo~\u2014ClO | > History = Realtime | wy) | SE \u201cSp (aay | > Welcome",
+     48.587
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5* * | Trade.mqh X",
+     74.024
+    ],
+    [
+     "35 double CheckResultMargin( void) const { return(m_check_result.margan) ; }",
+     63.923
+    ],
+    [
+     "86 double \u20acheckResultMarginFree(void) const { return(m_check_result.margin_free);. }",
+     70.95
+    ],
+    [
+     "87 double CheckResultMarginLevel(void) const { return(m_check_result.margin_level); } '",
+     80.422
+    ],
+    [
+     "85 string CheckResultComment (void) const { return(m_check_result.comment) ; -}b",
+     70.097
+    ],
+    [
+     "39 a si 5 : :",
+     32.953
+    ],
+    [
+     "99 void SathtyneModef const bedl mode), { m_async_mode=mode; }",
+     64.906
+    ],
+    [
+     "gt void SetExpertMdgtcNumber(obost ulong: magic) { .m_magic=magic; }",
+     61.099
+    ],
+    [
+     "32 void SatDeviationiInPoants(tons\u2019 wlohg deviation) { m_deviation=deviation; }",
+     71.192
+    ],
+    [
+     "92 vord SeeTyperilding(censt ENUM ORDER. TYPE FILLING filling) { m_type_filling=filling; }",
+     65.11
+    ],
+    [
+     "90 boat SetTypehilhingBySymbol{osnet string-symbol):",
+     40.917
+    ],
+    [
+     "95 void SetherginMoael voind! {cmisargia!modes(ENUM_ACCOUNT_MARGIN_MODE JAccountInfoInteger({ ACCOUNT _MARGIN_MODE); }",
+     31.16
+    ],
+    [
+     "98 bigs =a \u2018ur Mastize wits Beerrabpe , ;",
+     25.828
+    ],
+    [
+     "oT bool FeritionOpeni chest stciag symbol ,canst ENUM_GRUBR_TYPE order_type,const double volume,",
+     64.041
+    ],
+    [
+     "95 ian o-4--\"S--~\"=-ngenstrdoabtenprice,nonst double sl,const double tp,const string comm\u00e9nt= \");",
+     58.066
+    ],
+    [
+     "96 bool RositionModit;tcoost.string symbol,const double sl,conmst double tp);",
+     76.006
+    ],
+    [
+     "393 bool PositionMpdity (const Tiing tigket,const double sl, const dduble tp);",
+     42.204
+    ],
+    [
+     "igs baal PosLtionClosel,const ctbiae syotel,oastt iulone deslatingauLONG_MAx);",
+     34.768
+    ],
+    [
+     "195 bool Pos2tiloniiose(constiuleng\u2019 tistet,const ulagg deviatron=ULOHG MAK);",
+     55.157
+    ],
+    [
+     "168 bool PositionCiosebysroast/ulong ticket, const vlone ticket_by))",
+     32.332
+    ],
+    [
+     "104 bool PosetiohClosefertial(icanttistring symbol,const double volume,eanst ulong deviation=JLONG Max),",
+     55.293
+    ],
+    [
+     "102 bool PositionClasefontiat(consr ulong, trokst,conet devale wolume,const ulong deviatian=ll| ONG NMA);",
+     45.404
+    ],
+    [
+     "103 \u2018'\u2014 metrou: Tor Rovltosewicn oeneinw orderss ; c",
+     37.991
+    ],
+    [
+     "1a% bool BederOpantconstietrigexsymbal, comst ENLI_ORDER_TYPE order_tyre,catst oouble volume, gc \"Tt",
+     33.639
+    ],
+    [
+     "168 E yl \\ccosstddssble limit _pnic\u00e9,copst dnsblia priee,oansr donble sl, const dondie te, t a",
+     42.61
+    ],
+    [
+     "166 -ENUM_OBB22STRPE TIME, type_time-ORPER_TIME_GTC, const datetime expiration=a, t=\" |",
+     53.324
+    ],
+    [
+     "148 bayches \u201c yf 3) cosehstestrangsZombent=!*)gcoun -",
+     15.534
+    ],
+    [
+     "122 bool OrderMadify(conssthulagg\u00e9tickat (coastromoublecbraite, canst inouble b1.const iriouble.ity, . . =P",
+     47.217
+    ],
+    [
+     "Le ri ae 2rEeonst hENUM GREER _TrebsTINEvtypeet ine, const; decetima, szpineciompoanacadouble: seoplimit=) 8 )scl= te-=",
+     21.911
+    ],
+    [
+     "119 stolons OrctenDeletefcnsstlbinng t\u00e9cket); ' _im_ 2=YPE3 7 1 ( cafe; mee oF a = MN eres",
+     24.855
+    ]
+   ]
+  }
+ ]
+}

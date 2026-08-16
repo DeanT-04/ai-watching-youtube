@@ -1,0 +1,11 @@
+{
+  "group": 14,
+  "n_frames": 2,
+  "t_start": 358.0,
+  "t_end": 359.0,
+  "source": "paddle+tesseract (consensus x2)",
+  "valid": false,
+  "text": "\"al 1.14505\nLVL\nPaleGreen\nMar 22:00\nMar 22:00\nMar 06:00\n22:30\n\u00a9 _H Ol ao]",
+  "error": null,
+  "secs": 25.4
+}

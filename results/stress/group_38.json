@@ -1,0 +1,11 @@
+{
+  "group": 38,
+  "n_frames": 2,
+  "t_start": 483.0,
+  "t_end": 484.0,
+  "source": "paddle+tesseract (consensus x2)",
+  "valid": false,
+  "text": "b\nenum eDrawdownCalculation {\nThisStrategy = 1,\nTheAccount = 0\n};\n46|\n48int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n54}\n}\n57void OnDeinit(const int reason) {\nvoid OnDeinit(const int reason) {\n60}\n}\n63void OnTick() {\nvoid OnTick() {\n67}\n}\n//+-------------------- 2-2 - o-oo nn nnn nen nnn net\nWakaWaka by MrCapFree.mq5 * * fi",
+  "error": null,
+  "secs": 12.3
+}

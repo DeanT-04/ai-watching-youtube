@@ -1,0 +1,1985 @@
+{
+ "group": 40,
+ "n_frames": 8,
+ "t_start": 486.0,
+ "t_end": 522.0,
+ "consensus_lines": {
+  "44": {
+   "text": "}s",
+   "votes": 3
+  },
+  "46": {
+   "text": "struct SymbolInformation {",
+   "votes": 8
+  },
+  "47": {
+   "text": "string SymbolName;",
+   "votes": 8
+  },
+  "48": {
+   "text": "datetime LastMainTFUpdate;",
+   "votes": 8
+  },
+  "49": {
+   "text": "datetime LastOPOTFUpdate;",
+   "votes": 7
+  },
+  "50": {
+   "text": "int UpdateCounter;",
+   "votes": 1
+  },
+  "51": {
+   "text": "bool CanBuy;",
+   "votes": 6
+  },
+  "52": {
+   "text": "bool CanSell;",
+   "votes": 7
+  },
+  "53": {
+   "text": "datetime CurrentBarTime;",
+   "votes": 7
+  },
+  "54": {
+   "text": "datetime PreviousBarTime;",
+   "votes": 8
+  },
+  "55": {
+   "text": "double ClosePrice;",
+   "votes": 7
+  },
+  "56": {
+   "text": "bool GridOpened;",
+   "votes": 7
+  },
+  "57": {
+   "text": "bool OPOTriggered;",
+   "votes": 5
+  },
+  "58": {
+   "text": "double SmartDistanceMultiplier;",
+   "votes": 15
+  },
+  "59": {
+   "text": "double BBWidth;",
+   "votes": 8
+  },
+  "60": {
+   "text": "int LastBarIndex;",
+   "votes": 1
+  },
+  "61": {
+   "text": "int CurrentBariIndex;",
+   "votes": 7
+  },
+  "62": {
+   "text": "long PatternValue;",
+   "votes": 9
+  },
+  "63": {
+   "text": "double PatternPrice;",
+   "votes": 8
+  },
+  "64": {
+   "text": "bool PatternSearchActive;",
+   "votes": 8
+  },
+  "65": {
+   "text": "bool TradingAllowedToday;",
+   "votes": 7
+  },
+  "66": {
+   "text": "bool PreviousDayTradingAllowed;",
+   "votes": 8
+  },
+  "67": {
+   "text": "int LastDayOfWeek;",
+   "votes": 7
+  },
+  "68": {
+   "text": "double MaxGridLotMultiplier;",
+   "votes": 8
+  },
+  "69": {
+   "text": "double LastBuyAvgPrice;",
+   "votes": 9
+  },
+  "70": {
+   "text": "double LastSellAvgPrice;",
+   "votes": 4
+  },
+  "72": {
+   "text": "double LastSellTP;",
+   "votes": 5
+  },
+  "73": {
+   "text": "datetime LastBuyGridTime;",
+   "votes": 7
+  },
+  "78": {
+   "text": "double LastSellAvgPrice;",
+   "votes": 3
+  }
+ },
+ "support": {
+  "7": [
+   {
+    "frame": 1,
+    "text": "double LastBuyTP;"
+   }
+  ],
+  "44": [
+   {
+    "frame": 1,
+    "text": "}s"
+   },
+   {
+    "frame": 3,
+    "text": "}s"
+   },
+   {
+    "frame": 7,
+    "text": "}3"
+   }
+  ],
+  "46": [
+   {
+    "frame": 0,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 1,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 2,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 3,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 4,
+    "text": "struct SymbolInfofmation {"
+   },
+   {
+    "frame": 5,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 6,
+    "text": "struct SymbolInformation {"
+   },
+   {
+    "frame": 7,
+    "text": "struct SymbolInformation {"
+   }
+  ],
+  "47": [
+   {
+    "frame": 0,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 1,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 2,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 3,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 4,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 5,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 6,
+    "text": "string SymbolName;"
+   },
+   {
+    "frame": 7,
+    "text": "string SymbolName;"
+   }
+  ],
+  "48": [
+   {
+    "frame": 0,
+    "text": "datetime LastMainTFUpdate;"
+   },
+   {
+    "frame": 1,
+    "text": "datetime LastMainTFUpdate;"
+   },
+   {
+    "frame": 2,
+    "text": "datetime LastMainTFUpdate;"
+   },
+   {
+    "frame": 3,
+    "text": "datetime LastMpinTFUpdate;"
+   },
+   {
+    "frame": 4,
+    "text": "datetime LastMainTFUpdate;"
+   },
+   {
+    "frame": 5,
+    "text": "datetime LastMainTFUpdatk;"
+   },
+   {
+    "frame": 6,
+    "text": "datetime LastMainTFUpdate;"
+   },
+   {
+    "frame": 7,
+    "text": "atetime LastMainTFUpdate"
+   }
+  ],
+  "49": [
+   {
+    "frame": 0,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 1,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 2,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 3,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 4,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 5,
+    "text": "datetime LastOPOTFUpdate;"
+   },
+   {
+    "frame": 6,
+    "text": "datetime LastOPOTFUpdate;"
+   }
+  ],
+  "50": [
+   {
+    "frame": 3,
+    "text": "int UpdateCounter;"
+   }
+  ],
+  "51": [
+   {
+    "frame": 0,
+    "text": "bool CanBuy;"
+   },
+   {
+    "frame": 2,
+    "text": "bool CanBuy;"
+   },
+   {
+    "frame": 3,
+    "text": "bool CanBuy;"
+   },
+   {
+    "frame": 4,
+    "text": "bool CanBuy;"
+   },
+   {
+    "frame": 5,
+    "text": "bool CanBuy;"
+   },
+   {
+    "frame": 6,
+    "text": "bool CanBuy;"
+   }
+  ],
+  "52": [
+   {
+    "frame": 0,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 1,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 2,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 3,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 4,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 5,
+    "text": "bool CanSell;"
+   },
+   {
+    "frame": 6,
+    "text": "bool CanSell;"
+   }
+  ],
+  "53": [
+   {
+    "frame": 0,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 1,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 2,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 3,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 4,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 5,
+    "text": "datetime CurrentBarTime;"
+   },
+   {
+    "frame": 6,
+    "text": "datetime CurrentBarTime;"
+   }
+  ],
+  "54": [
+   {
+    "frame": 0,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 1,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 2,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 3,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 4,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 5,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 6,
+    "text": "datetime PreviousBarTime;"
+   },
+   {
+    "frame": 7,
+    "text": "atetime reviousBarTime"
+   }
+  ],
+  "55": [
+   {
+    "frame": 0,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 1,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 2,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 3,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 4,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 5,
+    "text": "double ClosePrice;"
+   },
+   {
+    "frame": 6,
+    "text": "double ClosePrice;"
+   }
+  ],
+  "56": [
+   {
+    "frame": 0,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 1,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 2,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 3,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 4,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 5,
+    "text": "bool GridOpened;"
+   },
+   {
+    "frame": 6,
+    "text": "bool GridOpened;"
+   }
+  ],
+  "57": [
+   {
+    "frame": 0,
+    "text": "bool OPOTriggered;"
+   },
+   {
+    "frame": 1,
+    "text": "bool OPOTriggered;"
+   },
+   {
+    "frame": 2,
+    "text": "bool OPOTriggered;"
+   },
+   {
+    "frame": 3,
+    "text": "bool OPOTriggered;"
+   },
+   {
+    "frame": 6,
+    "text": "bool OPOTriggered;"
+   }
+  ],
+  "58": [
+   {
+    "frame": 0,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 0,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 1,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 1,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 2,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 2,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 3,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 4,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 4,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 5,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 5,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 6,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 6,
+    "text": "double SmartDistanceMultiplier;"
+   },
+   {
+    "frame": 7,
+    "text": "int UpdateCounter:"
+   },
+   {
+    "frame": 7,
+    "text": "ouble SmartDistanceMultiplier:"
+   }
+  ],
+  "59": [
+   {
+    "frame": 0,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 1,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 2,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 3,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 4,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 5,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 6,
+    "text": "double BBWidth;"
+   },
+   {
+    "frame": 7,
+    "text": "double BBWidth:"
+   }
+  ],
+  "60": [
+   {
+    "frame": 2,
+    "text": "int LastBarIndex;"
+   }
+  ],
+  "61": [
+   {
+    "frame": 0,
+    "text": "int CurrentBarIndex;"
+   },
+   {
+    "frame": 1,
+    "text": "int CurrentBarIndex;"
+   },
+   {
+    "frame": 2,
+    "text": "int CurrentBariIndex;"
+   },
+   {
+    "frame": 3,
+    "text": "int CurrentBariIndex;"
+   },
+   {
+    "frame": 4,
+    "text": "int CurrentBariIndex;"
+   },
+   {
+    "frame": 5,
+    "text": "int CurrentBariIndex;"
+   },
+   {
+    "frame": 6,
+    "text": "int CurrentBarIndex;"
+   }
+  ],
+  "62": [
+   {
+    "frame": 0,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 1,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 2,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 3,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 4,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 5,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 6,
+    "text": "int LastBariIndex;"
+   },
+   {
+    "frame": 6,
+    "text": "long PatternValue;"
+   },
+   {
+    "frame": 7,
+    "text": "long PatternValue;"
+   }
+  ],
+  "63": [
+   {
+    "frame": 0,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 1,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 2,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 3,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 4,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 5,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 6,
+    "text": "double PatternPrice;"
+   },
+   {
+    "frame": 7,
+    "text": "iouble PatternPrice;"
+   }
+  ],
+  "64": [
+   {
+    "frame": 0,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 1,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 2,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 3,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 4,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 5,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 6,
+    "text": "bool PatternSearchActive;"
+   },
+   {
+    "frame": 7,
+    "text": "0] atternSearchActive:"
+   }
+  ],
+  "65": [
+   {
+    "frame": 0,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 1,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 2,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 3,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 4,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 5,
+    "text": "bool TradingAllowedToday;"
+   },
+   {
+    "frame": 6,
+    "text": "bool TradingAllowedToday;"
+   }
+  ],
+  "66": [
+   {
+    "frame": 0,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 1,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 2,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 3,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 4,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 5,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 6,
+    "text": "bool PreviousDayTradingAllowed;"
+   },
+   {
+    "frame": 7,
+    "text": "00] >reviousDayTradingAl lowed;"
+   }
+  ],
+  "67": [
+   {
+    "frame": 0,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 1,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 2,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 3,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 4,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 5,
+    "text": "int LastDayOfWeek;"
+   },
+   {
+    "frame": 6,
+    "text": "int LastDayOfWeek;"
+   }
+  ],
+  "68": [
+   {
+    "frame": 0,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 1,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 2,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 3,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 4,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 5,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 6,
+    "text": "double MaxGridLotMultiplier;"
+   },
+   {
+    "frame": 7,
+    "text": "ole MaxGri {LotMultipkier;"
+   }
+  ],
+  "69": [
+   {
+    "frame": 0,
+    "text": "int LastBarIndex;"
+   },
+   {
+    "frame": 0,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 1,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 2,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 3,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 4,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 5,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 6,
+    "text": "double LastBuyAvgPrice;"
+   },
+   {
+    "frame": 7,
+    "text": "Jouble LastBuyAvgPrice;"
+   }
+  ],
+  "70": [
+   {
+    "frame": 2,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 3,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 4,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 6,
+    "text": "double LastSellAvgPrice;"
+   }
+  ],
+  "72": [
+   {
+    "frame": 1,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 1,
+    "text": "double LastSellTP;"
+   },
+   {
+    "frame": 2,
+    "text": "double LastSellTP;"
+   },
+   {
+    "frame": 3,
+    "text": "double LastSellTP;"
+   },
+   {
+    "frame": 6,
+    "text": "double LastSellTP;"
+   }
+  ],
+  "73": [
+   {
+    "frame": 0,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 1,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 2,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 3,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 4,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 5,
+    "text": "datetime LastBuyGridTime;"
+   },
+   {
+    "frame": 6,
+    "text": "datetime LastBuyGridTime;"
+   }
+  ],
+  "78": [
+   {
+    "frame": 0,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 5,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 7,
+    "text": "ble LastSellAvgPrice;"
+   }
+  ]
+ },
+ "unanchored_count": 37,
+ "per_frame": [
+  {
+   "t": 486.0,
+   "raw": [
+    [
+     "_| | Urv + | -~A Ixy | GS | \\\u00a5=} Compile | v | oO & | | =P History => Realtime | | eae | YS Welcome",
+     65.182
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     86.564
+    ],
+    [
+     "at }3",
+     17.219
+    ],
+    [
+     "45",
+     96.313
+    ],
+    [
+     "46 struct SymbolInformation {",
+     90.839
+    ],
+    [
+     "47 string SymbolName;",
+     90.125
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     95.1
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     94.779
+    ],
+    [
+     "58 int UpdateCounter;",
+     84.074
+    ],
+    [
+     "51 bool CanBuy;",
+     94.832
+    ],
+    [
+     "52 bool CanSell;",
+     91.204
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.582
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.929
+    ],
+    [
+     "55 double ClosePrice;",
+     95.071
+    ],
+    [
+     "56 bool GridOpened;",
+     94.799
+    ],
+    [
+     "57 bool OPOTriggered;",
+     93.372
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     94.915
+    ],
+    [
+     "59 double BBWidth;",
+     95.151
+    ],
+    [
+     "69 int LastBarIndex;",
+     68.314
+    ],
+    [
+     "61 int CurrentBarIndex;",
+     88.939
+    ],
+    [
+     "62 long PatternValue;",
+     94.814
+    ],
+    [
+     "63 double PatternPrice;",
+     94.905
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.609
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     95.076
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.792
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     87.709
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.695
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     95.086
+    ],
+    [
+     "78 double LastSellAvgPrice;",
+     87.12
+    ],
+    [
+     "7iAl double LastBuyTP;",
+     62.988
+    ],
+    [
+     "Ti? double LastSellTP;",
+     65.245
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.141
+    ]
+   ]
+  },
+  {
+   "t": 491.0,
+   "raw": [
+    [
+     "__| | ry + | -~A Ixy | S | \\\u00a5=} Compile | v | oO & | | = History =|\\> Realtime | | KS RP tah | \\S Welcome",
+     56.257
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 *",
+     84.858
+    ],
+    [
+     "44 }s",
+     41.334
+    ],
+    [
+     "45",
+     96.931
+    ],
+    [
+     "46 struct SymbolInformation {",
+     79.543
+    ],
+    [
+     "47 string SymbolName;",
+     90.754
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     94.993
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     94.995
+    ],
+    [
+     "58 int UpdateCounter;",
+     76.075
+    ],
+    [
+     "Sul bool CanBuy;",
+     72.795
+    ],
+    [
+     "52 bool CanSell;",
+     89.783
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.976
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     95.069
+    ],
+    [
+     "55 double ClosePrice;",
+     94.952
+    ],
+    [
+     "56 bool GridOpened;",
+     94.331
+    ],
+    [
+     "57 bool OPOTriggered;",
+     93.306
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     91.45
+    ],
+    [
+     "59 double BBWidth;",
+     95.092
+    ],
+    [
+     "6e int LastBarIndex;",
+     46.218
+    ],
+    [
+     "61 int CurrentBarIndex;",
+     91.899
+    ],
+    [
+     "62 long PatternValue;",
+     94.832
+    ],
+    [
+     "63 double PatternPrice;",
+     94.804
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.759
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     94.882
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.578
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     84.743
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.507
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     94.91
+    ],
+    [
+     "72 double LastSellAvgPrice;",
+     80.621
+    ],
+    [
+     "7 double LastBuyTP;",
+     79.837
+    ],
+    [
+     "72 double LastSellTP;",
+     92.225
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.092
+    ]
+   ]
+  },
+  {
+   "t": 496.0,
+   "raw": [
+    [
+     "=i) | Gry Vv | -~A Ixy | S | \\\u00a5=} Compile | v | Ww & | | =P History => Realtime | | FS Pp tah | YS Welcome",
+     60.265
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     88.051
+    ],
+    [
+     "aa }s",
+     25.313
+    ],
+    [
+     "45",
+     96.554
+    ],
+    [
+     "46 struct SymbolInformation {",
+     91.279
+    ],
+    [
+     "47 string SymbolName;",
+     82.027
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     95.229
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     94.742
+    ],
+    [
+     "58 int UpdateCounter;",
+     84.077
+    ],
+    [
+     "51 bool CanBuy;",
+     93.725
+    ],
+    [
+     "52 bool CanSell;",
+     88.966
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.994
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.666
+    ],
+    [
+     "55 double ClosePrice;",
+     94.742
+    ],
+    [
+     "56 bool GridOpened;",
+     94.81
+    ],
+    [
+     "57 bool OPOTriggered;",
+     93.027
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     91.238
+    ],
+    [
+     "59 double BBWidth;",
+     95.101
+    ],
+    [
+     "60 int LastBarIndex;",
+     71.099
+    ],
+    [
+     "61 int CurrentBariIndex;",
+     81.643
+    ],
+    [
+     "62 long PatternValue;",
+     94.835
+    ],
+    [
+     "63 double PatternPrice;",
+     94.972
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.789
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     94.842
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.794
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     92.631
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.39
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     95.06
+    ],
+    [
+     "70 double LastSellAvgPrice;",
+     81.489
+    ],
+    [
+     "7a double LastBuyTP;",
+     72.104
+    ],
+    [
+     "72 double LastSellTP;",
+     92.936
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     94.968
+    ]
+   ]
+  },
+  {
+   "t": 501.0,
+   "raw": [
+    [
+     "| | Urv + | 27 Ixy | SS | \\\u00a5=} Compile | v | oO & | | =P History =l> Realtime | | FS Pp ah | SS Welcome",
+     60.192
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     88.988
+    ],
+    [
+     "44 }s",
+     45.695
+    ],
+    [
+     "45",
+     96.922
+    ],
+    [
+     "46 struct SymbolInformation {",
+     92.488
+    ],
+    [
+     "47 string SymbolName;",
+     90.221
+    ],
+    [
+     "48 datetime LastMpinTFUpdate;",
+     94.823
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     95.373
+    ],
+    [
+     "50 int UpdateCounter;",
+     89.992
+    ],
+    [
+     "51 bool CanBuy;",
+     95.156
+    ],
+    [
+     "52 bool CanSell;",
+     87.173
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.943
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.604
+    ],
+    [
+     "55 double ClosePrice;",
+     94.562
+    ],
+    [
+     "56 bool GridOpened;",
+     94.663
+    ],
+    [
+     "57 bool OPOTriggered;",
+     94.518
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     91.603
+    ],
+    [
+     "59 double BBWidth;",
+     95.092
+    ],
+    [
+     "6e int LastBarIndex;",
+     70.014
+    ],
+    [
+     "61 int CurrentBariIndex;",
+     77.548
+    ],
+    [
+     "62 long PatternValue;",
+     94.919
+    ],
+    [
+     "63 double PatternPrice;",
+     95.025
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.708
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     94.961
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.706
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     84.151
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.835
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     95.241
+    ],
+    [
+     "70 double LastSellAvgPrice;",
+     81.184
+    ],
+    [
+     "7al double LastBuyTP;",
+     70.936
+    ],
+    [
+     "72 double LastSellTP;",
+     91.329
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.182
+    ]
+   ]
+  },
+  {
+   "t": 507.0,
+   "raw": [
+    [
+     "=] | ry Y\u2014 | -~A Ixy | ae | \\\u00a5=} Compile | v | eS & | | = History =\\~ Realtime | | FS HP ah | \\S Welcome",
+     56.269
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 *",
+     80.41
+    ],
+    [
+     "sb! }3",
+     5.318
+    ],
+    [
+     "45",
+     96.877
+    ],
+    [
+     "46 struct SymbolInfofmation {",
+     63.573
+    ],
+    [
+     "47 string SymbolName;",
+     88.894
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     95.159
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     95.196
+    ],
+    [
+     "58 int UpdateCounter;",
+     84.341
+    ],
+    [
+     "51 bool CanBuy;",
+     94.881
+    ],
+    [
+     "52 bool CanSell;",
+     89.492
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.897
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.984
+    ],
+    [
+     "55 double ClosePrice;",
+     94.891
+    ],
+    [
+     "56 bool GridOpened;",
+     94.59
+    ],
+    [
+     "Ey bool OPOTriggered;",
+     79.719
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     92.111
+    ],
+    [
+     "59 double BBWidth;",
+     94.904
+    ],
+    [
+     "6e int LastBarIndex;",
+     63.342
+    ],
+    [
+     "61 int CurrentBariIndex;",
+     79.701
+    ],
+    [
+     "62 long PatternValue;",
+     94.703
+    ],
+    [
+     "63 double PatternPrice;",
+     94.969
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     95.281
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     95.02
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.842
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     89.69
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.397
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     94.61
+    ],
+    [
+     "70 double LastSellAvgPrice;",
+     75.552
+    ],
+    [
+     "Zak double LastBuyTP;",
+     81.694
+    ],
+    [
+     "7/72 double LastSellTP;",
+     69.541
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.042
+    ]
+   ]
+  },
+  {
+   "t": 512.0,
+   "raw": [
+    [
+     "=] | ry + | ~A Ixy | ae | \\\u00a5=} Compile | v | eS & | | = History =\\~ Realtime | | FS HP ah | \\S Welcome",
+     56.87
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 *",
+     83.031
+    ],
+    [
+     "sb! }3",
+     5.318
+    ],
+    [
+     "45",
+     96.903
+    ],
+    [
+     "46 struct SymbolInformation {",
+     92.811
+    ],
+    [
+     "47 string SymbolName;",
+     91.468
+    ],
+    [
+     "48 datetime LastMainTFUpdatk;",
+     92.999
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     95.193
+    ],
+    [
+     "58 int UpdateCounter;",
+     84.341
+    ],
+    [
+     "51 bool CanBuy;",
+     94.881
+    ],
+    [
+     "52 bool CanSell;",
+     89.492
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.503
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.984
+    ],
+    [
+     "55 double ClosePrice;",
+     94.891
+    ],
+    [
+     "56 bool GridOpened;",
+     94.696
+    ],
+    [
+     "Ey bool OPOTriggered;",
+     78.51
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     92.111
+    ],
+    [
+     "59 double BBWidth;",
+     94.89
+    ],
+    [
+     "6e int LastBarIndex;",
+     64.371
+    ],
+    [
+     "61 int CurrentBariIndex;",
+     79.668
+    ],
+    [
+     "62 long PatternValue;",
+     94.646
+    ],
+    [
+     "63 double PatternPrice;",
+     94.941
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     95.281
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     95.02
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.842
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     89.406
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.707
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     94.654
+    ],
+    [
+     "78 double LastSellAvgPrice;",
+     77.178
+    ],
+    [
+     "Zak double LastBuyTP;",
+     81.512
+    ],
+    [
+     "7/72 double LastSellTP;",
+     69.599
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.042
+    ]
+   ]
+  },
+  {
+   "t": 517.0,
+   "raw": [
+    [
+     "=| | ry + | PZ Ix vy | GS | =) Compile | v | BO & | | = History =\\~ Realtime | | FS Pp tah | \\S Welcome",
+     61.838
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     89.447
+    ],
+    [
+     "ae }5",
+     21.386
+    ],
+    [
+     "45",
+     96.86
+    ],
+    [
+     "46 struct SymbolInformation {",
+     92.726
+    ],
+    [
+     "47 string SymbolName;",
+     87.402
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     94.815
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     94.941
+    ],
+    [
+     "58 int UpdateCounter;",
+     82.34
+    ],
+    [
+     "51 bool CanBuy;",
+     94.903
+    ],
+    [
+     "52 bool CanSell;",
+     88.822
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.386
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     94.972
+    ],
+    [
+     "55 double ClosePrice;",
+     94.425
+    ],
+    [
+     "56 bool GridOpened;",
+     94.572
+    ],
+    [
+     "57 bool OPOTriggered;",
+     93.041
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     93.613
+    ],
+    [
+     "59 double BBWidth;",
+     94.897
+    ],
+    [
+     "62 int LastBariIndex;",
+     64.558
+    ],
+    [
+     "61 int CurrentBarIndex;",
+     90.403
+    ],
+    [
+     "62 long PatternValue;",
+     95.106
+    ],
+    [
+     "63 double PatternPrice;",
+     95.224
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.982
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     94.746
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.878
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     82.668
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.331
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     94.991
+    ],
+    [
+     "70 double LastSellAvgPrice;",
+     81.064
+    ],
+    [
+     "ZAl double LastBuyTP;",
+     65.858
+    ],
+    [
+     "72 double LastSellTP;",
+     92.43
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.028
+    ]
+   ]
+  },
+  {
+   "t": 522.0,
+   "raw": [
+    [
+     "| Gy = @ al Ix. \u00a5 || S 7 | & Compile |~ | @ y) W & | oe \u2018en 6 | ~\u2122 History = Realtime S| a | NP GE | San Welcome",
+     51.416
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * 4 >",
+     79.433
+    ],
+    [
+     "44 }3",
+     57.654
+    ],
+    [
+     "45",
+     96.511
+    ],
+    [
+     "46 struct SymbolInformation {",
+     92.207
+    ],
+    [
+     "47 string SymbolName;",
+     91.357
+    ],
+    [
+     "48 atetime LastMainTFUpdate",
+     92.774
+    ],
+    [
+     "58 int UpdateCounter:",
+     79.597
+    ],
+    [
+     "54 atetime reviousBarTime",
+     93.651
+    ],
+    [
+     "58 ouble SmartDistanceMultiplier:",
+     68.977
+    ],
+    [
+     "59 double BBWidth:",
+     73.685
+    ],
+    [
+     "62 long PatternValue;",
+     94.923
+    ],
+    [
+     "63 iouble PatternPrice;",
+     80.397
+    ],
+    [
+     "64 0] atternSearchActive:",
+     73.771
+    ],
+    [
+     "66 00] >reviousDayTradingAl lowed;",
+     79.74
+    ],
+    [
+     "68 ole MaxGri {LotMultipkier;",
+     64.209
+    ],
+    [
+     "69 Jouble LastBuyAvgPrice;",
+     74.919
+    ],
+    [
+     "78 ble LastSellAvgPrice;",
+     87.029
+    ]
+   ]
+  }
+ ]
+}

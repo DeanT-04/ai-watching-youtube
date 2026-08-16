@@ -1,0 +1,11 @@
+{
+  "group": 1,
+  "n_frames": 8,
+  "t_start": 230.0,
+  "t_end": 249.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "Compile\nWakaWaka by MrCapFree.mq5 * * (>\n#property link \u201chttps: //www.MrCapFree.com\"\n11int OnInit() {.\nint OnInit() {\n14I\nreturn(INIT_SUCCEEDED);\n17}\n}\nvoid OnDeinit(const int reason) {\n23}\n}\n26void OnTick() {\nvoid OnTick()\n30}\n}\nWakaWaka by MrCapFree.mq5 * * \u20180",
+  "error": null,
+  "secs": 79.0
+}

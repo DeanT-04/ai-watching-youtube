@@ -1,0 +1,11 @@
+{
+  "group": 9,
+  "n_frames": 8,
+  "t_start": 294.0,
+  "t_end": 344.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "//+----------- 2-2-2 nn nn nn nnn nn en nn nn nee eet\nCompile\n2i/ / | WakaWaka by MrCapFree.mg5 |\n/ [t---- nnn nn nnn nnn nnn nnn nn nnn rn rn nnn rn nnn nnn nn nn nn nnn enon t\n#property 1ink\n#property version \"1.606\"\n#property description \u201cWaka Waka EA\"\n#include <Trade\\Trade.mqh>\ncTrade\nCPositionInfo\ncOrderInfo\n20int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n26}\n}\n29void OnDeinit(const int reason) {\nvoid OnDeinit(const int reason) {",
+  "error": null,
+  "secs": 66.2
+}

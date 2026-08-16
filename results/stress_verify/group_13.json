@@ -1,0 +1,293 @@
+{
+ "group": 13,
+ "n_frames": 2,
+ "t_start": 356.0,
+ "t_end": 357.0,
+ "consensus_lines": {
+  "3": {
+   "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+   "votes": 2
+  }
+ },
+ "support": {
+  "3": [
+   {
+    "frame": 0,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 1,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   }
+  ]
+ },
+ "unanchored_count": 62,
+ "per_frame": [
+  {
+   "t": 356.0,
+   "raw": [
+    [
+     "&> &\u00ae) U AlgotTrading (3%) New Order WU Ae A fp 4 WIS | t\u00a2ey M1 MS M15 M30} H1 H4 D1 Wi MN: \\V U JS mi",
+     50.204
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     73.468
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) Il 1.16230",
+     71.766
+    ],
+    [
+     "tT; ; Time In Currencylmpact News Event I Lu",
+     77.159
+    ],
+    [
+     "Wiattes 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | | | | a",
+     62.945
+    ],
+    [
+     "\u2014 4) -18:08-Set- Gh CAB \u2018Lew Budget Balancee\u2014-c ge} | +a} Pett tH }- \u2014eetayis)",
+     28.894
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, ibchl Mode | | a | \u00bb ll CT .",
+     58.771
+    ],
+    [
+     "xpected lot: 0.07 22:30 3d10h AUD Med CFTCAUD Non-Commercial N tions at i; ie",
+     61.753
+    ],
+    [
+     "urrency pairs: 22:30 3d 10h =CAD = Low = CFTC CAD Nor} Gommercial Net PSH ee Pee (] toe,",
+     42.186
+    ],
+    [
+     "everage: 1:500 22:30 3410h NZD Low \u2014CFTCNZD Nontommercial NetPositione-b []T RU] TO a poe HL 1.15540",
+     32.401
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NZD Low ANZ Business|Confidence | | a. Pa | 5",
+     72.352
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook aie | I ,",
+     63.601
+    ],
+    [
+     "comment = Waka Waka! 93:30 6d15h AUD Low RBA Lola redit m/m a \u00bb! -",
+     41.212
+    ],
+    [
+     "MT offpet: +3 (Updated|] 93:30 6d15h AUD Low RBAPrivete Sector Credit m/m mc",
+     57.51
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Labell | | ' 1.15195",
+     69.393
+    ],
+    [
+     "lesen oe 14m Label Label Label Label Label T\u00b0",
+     54.24
+    ],
+    [
+     "i Label Label Label Label Label]",
+     75.492
+    ],
+    [
+     "Label Label Label Label Label \u2014",
+     78.485
+    ],
+    [
+     "Label Label Label Label Label |",
+     79.786
+    ],
+    [
+     "a on ae il \u2014 1.14850",
+     35.667
+    ],
+    [
+     "a 3 a | Pl | gl)",
+     43.867
+    ],
+    [
+     "1.0 LL ] : ] |",
+     46.298
+    ],
+    [
+     "EE 1.14505",
+     44.685
+    ],
+    [
+     "urr Pair Trading time NextPrice/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     77.591
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. ses seve 01 0.00 0.00%",
+     50.317
+    ],
+    [
+     "DCAD Q0:00/2359 uf. ee seve 0) 0.90 0.00%",
+     51.994
+    ],
+    [
+     "ADAD OOP 5A H Oi 0 in ana",
+     17.146
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     94.063
+    ],
+    [
+     "v | M15 Vv ($s)",
+     53.228
+    ],
+    [
+     "| Y | 12026.03.05",
+     83.822
+    ],
+    [
+     "eal execution Y| > select a delay to emulate slippage and requotes during trade execution",
+     82.492
+    ],
+    [
+     "J on real ticks Y _ {_) profit in pips for faster calculations",
+     76.736
+    ]
+   ]
+  },
+  {
+   "t": 357.0,
+   "raw": [
+    [
+     "&> &\u00ae) U AlgotTrading (3%) New Order WU Ae A fp 4 WIS | t\u00a2ey M1 MS M15 M30} H1 H4 D1 Wi MN: \\V U JS mi",
+     50.204
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     73.468
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) Il 1.16230",
+     71.13
+    ],
+    [
+     "tT; ; Time In Currencylmpact News Event I Lu",
+     77.159
+    ],
+    [
+     "Wiattes 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | | | | a",
+     62.945
+    ],
+    [
+     "\u2014 4) -18:08-Set- Gh CAB \u2018Lew Budget Balancee\u2014-c ge} | +a} Pett tH }- \u2014eetayis)",
+     28.86
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, ibchl Mode | | a | \u00bb ll CT .",
+     58.892
+    ],
+    [
+     "xpected lot: 0.07 22:30 3d10h AUD Med CFTCAUD Non-Commercial N tions at i; ie",
+     61.644
+    ],
+    [
+     "urrency pairs: 22:30 3d 10h =CAD = Low = CFTC CAD Nor} Gommercial Net PSH ee Pee (] toe,",
+     42.384
+    ],
+    [
+     "everage: \u2014 1:500 22:30 3410h NZD Low \u2014CFTCNZD Nontommercial NetPositione-b []T RU] TO a poe HL 1.15540",
+     33.126
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NZD Low ANZ Business|Confidence | | a. Pa | 5",
+     72.352
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook aie | I ,",
+     64.038
+    ],
+    [
+     "comment = Waka Wakall 93:30 6d15h AUD Low RBA Lola redit m/m a \u00bb! -",
+     40.964
+    ],
+    [
+     "MT offpet: +3 (Updated}] 93:30 6d15h AUD Low RBAPrivete Sector Credit m/m mc",
+     62.182
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Labell | | ' 1.15195",
+     70.657
+    ],
+    [
+     "lesen oe 14m Label Label Label Label Label) T\u00b0",
+     55.952
+    ],
+    [
+     "i Label Label Label Label Label]",
+     75.492
+    ],
+    [
+     "Label Label Label Label Label \u2014",
+     78.485
+    ],
+    [
+     "Label Label Label Label Label |",
+     78.185
+    ],
+    [
+     "a on ae il \u2014 1.14850",
+     38.08
+    ],
+    [
+     "a 3 a | Pl | aU)",
+     46.317
+    ],
+    [
+     "1.0 LL ] : ] |",
+     43.62
+    ],
+    [
+     "\u2014\u2014\u2014\u2014\u2014\u2014\u2014 EEF 1.14505",
+     34.164
+    ],
+    [
+     "urr Pair Trading time NextPrice/Lot Bars Held Open/Start Lot Floating Pn Dep load",
+     73.582
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. ses seve 01 0.00 0.00%",
+     50.891
+    ],
+    [
+     "DCAD Q0:00/2359 uf. ee seve 0) 0.90 0.00%",
+     52.096
+    ],
+    [
+     "ADAD OOP 5A H Oi 0 in ana",
+     17.146
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.882
+    ],
+    [
+     "v | M15 Vv ($s)",
+     53.228
+    ],
+    [
+     "Y | 12026.03.05",
+     82.861
+    ],
+    [
+     "al execution Y| > select a delay to emulate slippage and requotes during trade execution",
+     82.977
+    ],
+    [
+     "J on real ticks Y _ {_) profit in pips for faster calculations",
+     75.85
+    ]
+   ]
+  }
+ ]
+}

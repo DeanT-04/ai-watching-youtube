@@ -1,0 +1,11 @@
+{
+  "group": 27,
+  "n_frames": 1,
+  "t_start": 466.0,
+  "t_end": 466.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "ad 4\n\u2014) :\n| : <4 I\nVw @",
+  "error": null,
+  "secs": 2.8
+}

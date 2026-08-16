@@ -1,0 +1,11 @@
+{
+  "group": 24,
+  "n_frames": 1,
+  "t_start": 463.0,
+  "t_end": 463.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "i> < \\\n. . \u00a5\n? Pi \u2018= 7 M 7",
+  "error": null,
+  "secs": 2.2
+}

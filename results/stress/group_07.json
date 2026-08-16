@@ -1,0 +1,11 @@
+{
+  "group": 7,
+  "n_frames": 1,
+  "t_start": 290.0,
+  "t_end": 290.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "Compile\nHistory\nRealtime\nWelcome\nWakaWaka by MrCapFree.mq5 *X\nTrade.mqh X\n211\n212//+-\n213//l Get the order type as string\n214//+\n215 string CTrade::RequestTypeDescription(void) const\n216\n217\nstring str;\n218//--\n219\nFormatOrderType(str,(uint)m_request.order);\n220//\n221\nreturn(str);\n222\n223//+\n224//| Get the order type filling as string\n225//+\n226 string CTrade::RequestTypeFillingDescription(void) const\n227\nf\n228\nstring str;\n229//\n230\nFormatOrderTypeFi1ling(str,m_request.type_filling);\n231//-\n232\nreturn(str);\n233\n}\n234//\n235//| Get the order type time as string\n236//\n237 string CTrade::RequestTypeTimeDescription(void) const\n238\n239\nstring str;\n213 //| Get the order type as string |\n214 //+------------------------------------------------ +--+ +--+ = +--+\n215 string CTrade: :RequestTypeDescription(void) const |\n218 //---\n226) //---\n2a7, {\nBe: | / ===\nBate //---\n234 / /+-------------------------------------------------------------- +--+\n235 //| Get the order type time as string |",
+  "error": null,
+  "secs": 9.5
+}

@@ -1,0 +1,633 @@
+{
+ "group": 6,
+ "n_frames": 2,
+ "t_start": 288.0,
+ "t_end": 289.0,
+ "consensus_lines": {
+  "160": {
+   "text": "m_type_filling(ORDER_FILLING_FOK),",
+   "votes": 2
+  },
+  "161": {
+   "text": "m_log_level(LOG_LEVEL_ERRORS)",
+   "votes": 2
+  },
+  "162": {
+   "text": "{",
+   "votes": 3
+  },
+  "163": {
+   "text": "SetMarginMode(); i",
+   "votes": 2
+  },
+  "164": {
+   "text": "//--- initialize protected data",
+   "votes": 2
+  },
+  "165": {
+   "text": "ClearStructures();",
+   "votes": 2
+  },
+  "166": {
+   "text": "//--- check programm mode",
+   "votes": 2
+  },
+  "167": {
+   "text": "if (MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_TESTER))",
+   "votes": 2
+  },
+  "168": {
+   "text": "m_log_level=LOG_LEVEL_ALL;",
+   "votes": 2
+  },
+  "169": {
+   "text": "if(MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_OPTIMIZATION) )",
+   "votes": 2
+  },
+  "172": {
+   "text": "//+------------------------------------------------------------------+",
+   "votes": 2
+  },
+  "173": {
+   "text": "//| Destructor |",
+   "votes": 2
+  },
+  "174": {
+   "text": "/ /+------------------------------------ +--+ = 2-2 oot",
+   "votes": 2
+  },
+  "175": {
+   "text": "CTrade: :~CTrade(void)",
+   "votes": 2
+  },
+  "176": {
+   "text": "{",
+   "votes": 2
+  },
+  "178": {
+   "text": "m_log_level=LOG_LEVEL_NO;",
+   "votes": 4
+  },
+  "179": {
+   "text": "//| Get the request structure |",
+   "votes": 2
+  },
+  "180": {
+   "text": "//+------------------------------------------------------------------+",
+   "votes": 2
+  },
+  "181": {
+   "text": "void CTrade: :Request(MqlTradeRequest &request) const",
+   "votes": 2
+  },
+  "183": {
+   "text": "request.action =m_request.action;",
+   "votes": 2
+  },
+  "184": {
+   "text": "request.magic =m_request.magic;",
+   "votes": 2
+  },
+  "185": {
+   "text": "request.order =m_request.order;",
+   "votes": 2
+  },
+  "186": {
+   "text": "request.symbol =m_request.symbol;",
+   "votes": 2
+  },
+  "187": {
+   "text": "request.volume =m_request.volume;",
+   "votes": 2
+  },
+  "188": {
+   "text": "request.price =m_request.price;",
+   "votes": 2
+  }
+ },
+ "support": {
+  "160": [
+   {
+    "frame": 0,
+    "text": "m_type_filling(ORDER_FILLING_FOK),"
+   },
+   {
+    "frame": 1,
+    "text": "m_type_filling(ORDER_FILLING_FOK),"
+   }
+  ],
+  "161": [
+   {
+    "frame": 0,
+    "text": "m_log_level(LOG_LEVEL_ERRORS)"
+   },
+   {
+    "frame": 1,
+    "text": "m_log_level(LOG_LEVEL_ERRORS)"
+   }
+  ],
+  "162": [
+   {
+    "frame": 0,
+    "text": "{"
+   },
+   {
+    "frame": 0,
+    "text": "{"
+   },
+   {
+    "frame": 1,
+    "text": "{"
+   }
+  ],
+  "163": [
+   {
+    "frame": 0,
+    "text": "SetMarginMode(); {"
+   },
+   {
+    "frame": 1,
+    "text": "SetMarginMode(); i"
+   }
+  ],
+  "164": [
+   {
+    "frame": 0,
+    "text": "//--- initialize protected data"
+   },
+   {
+    "frame": 1,
+    "text": "//--- initialize protected data"
+   }
+  ],
+  "165": [
+   {
+    "frame": 0,
+    "text": "ClearStructures();"
+   },
+   {
+    "frame": 1,
+    "text": "ClearStructures();"
+   }
+  ],
+  "166": [
+   {
+    "frame": 0,
+    "text": "//--- check programm mode"
+   },
+   {
+    "frame": 1,
+    "text": "//--- check programm mode"
+   }
+  ],
+  "167": [
+   {
+    "frame": 0,
+    "text": "if (MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_TESTER))"
+   },
+   {
+    "frame": 1,
+    "text": "if (MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_TESTER))"
+   }
+  ],
+  "168": [
+   {
+    "frame": 0,
+    "text": "m_log_level=LOG_LEVEL_ALL;"
+   },
+   {
+    "frame": 1,
+    "text": "m_log_level=LOG_LEVEL_ALL;"
+   }
+  ],
+  "169": [
+   {
+    "frame": 0,
+    "text": "if(MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_OPTIMIZATION) )"
+   },
+   {
+    "frame": 1,
+    "text": "if(MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_OPTIMIZATION) )"
+   }
+  ],
+  "172": [
+   {
+    "frame": 0,
+    "text": "//+------------------------------------------------------------------+"
+   },
+   {
+    "frame": 1,
+    "text": "/ /+------------------------ == = on nn ent"
+   }
+  ],
+  "173": [
+   {
+    "frame": 0,
+    "text": "//| Destructor"
+   },
+   {
+    "frame": 1,
+    "text": "//| Destructor |"
+   }
+  ],
+  "174": [
+   {
+    "frame": 0,
+    "text": "//+---------------------------------------- +--+ = = ot"
+   },
+   {
+    "frame": 1,
+    "text": "/ /+------------------------------------ +--+ = 2-2 oot"
+   }
+  ],
+  "175": [
+   {
+    "frame": 0,
+    "text": "CTrade: :~CTrade(void)"
+   },
+   {
+    "frame": 1,
+    "text": "CTrade: :~CTrade(void)"
+   }
+  ],
+  "176": [
+   {
+    "frame": 0,
+    "text": "{"
+   },
+   {
+    "frame": 1,
+    "text": "{"
+   }
+  ],
+  "178": [
+   {
+    "frame": 0,
+    "text": "m_log_level=LOG_LEVEL_NO;"
+   },
+   {
+    "frame": 0,
+    "text": "//+-------------------------------------------- +--+ === == += Ht"
+   },
+   {
+    "frame": 1,
+    "text": "m_log level=LOG_LEVEL_NO;"
+   },
+   {
+    "frame": 1,
+    "text": "/ /+------------------------------------------- +--+ - += 2-2 t"
+   }
+  ],
+  "179": [
+   {
+    "frame": 0,
+    "text": "//| Get the request structure |"
+   },
+   {
+    "frame": 1,
+    "text": "//| Get the request structure |"
+   }
+  ],
+  "180": [
+   {
+    "frame": 0,
+    "text": "//+------------------------------------------------------------------+"
+   },
+   {
+    "frame": 1,
+    "text": "//+-------------------------------------------------------- +--+ --- === +"
+   }
+  ],
+  "181": [
+   {
+    "frame": 0,
+    "text": "void CTrade: :Request(MglTradeRequest &request) const"
+   },
+   {
+    "frame": 1,
+    "text": "void CTrade: :Request(MqlTradeRequest &request) const"
+   }
+  ],
+  "183": [
+   {
+    "frame": 0,
+    "text": "request.action =m_request.action;"
+   },
+   {
+    "frame": 1,
+    "text": "request.action =m_request.action;"
+   }
+  ],
+  "184": [
+   {
+    "frame": 0,
+    "text": "request.magic =m_request.magic;"
+   },
+   {
+    "frame": 1,
+    "text": "request.magic =m_request.magic;"
+   }
+  ],
+  "185": [
+   {
+    "frame": 0,
+    "text": "request.order =m_request.order;"
+   },
+   {
+    "frame": 1,
+    "text": "request.order =m_request.order;"
+   }
+  ],
+  "186": [
+   {
+    "frame": 0,
+    "text": "request.symbol =m_request.symbol;"
+   },
+   {
+    "frame": 1,
+    "text": "request.symbol =m_request.symbol;"
+   }
+  ],
+  "187": [
+   {
+    "frame": 0,
+    "text": "request.volume =m_request.volume;"
+   },
+   {
+    "frame": 1,
+    "text": "request.volume =m_request.volume;"
+   }
+  ],
+  "188": [
+   {
+    "frame": 0,
+    "text": "request.price =m_request.price;"
+   },
+   {
+    "frame": 1,
+    "text": "request.price =m_request.price;"
+   }
+  ]
+ },
+ "unanchored_count": 9,
+ "per_frame": [
+  {
+   "t": 288.0,
+   "raw": [
+    [
+     "=i] | Urry | 7 IX | \u2014\u2014 | |=] Compile |* | b) \u00a9 a | 5 fo | History => Realtime UI | LY) d | FE SP teh} | Y> Welcome",
+     55.833
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * | Trade.mqh X a",
+     70.861
+    ],
+    [
+     "160 m_type_filling(ORDER_FILLING_FOK),",
+     91.745
+    ],
+    [
+     "161 m_log_level(LOG_LEVEL_ERRORS)",
+     87.726
+    ],
+    [
+     "162 {",
+     79.01
+    ],
+    [
+     "163 SetMarginMode(); {",
+     68.784
+    ],
+    [
+     "164 //--- initialize protected data",
+     92.899
+    ],
+    [
+     "165 ClearStructures();",
+     94.36
+    ],
+    [
+     "166 //--- check programm mode",
+     91.48
+    ],
+    [
+     "167 if (MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_TESTER))",
+     44.355
+    ],
+    [
+     "168 m_log_level=LOG_LEVEL_ALL;",
+     77.335
+    ],
+    [
+     "169 if(MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_OPTIMIZATION) )",
+     60.426
+    ],
+    [
+     "178 m_log_level=LOG_LEVEL_NO;",
+     70.258
+    ],
+    [
+     "171}",
+     44.26
+    ],
+    [
+     "172 //+------------------------------------------------------------------+",
+     81.618
+    ],
+    [
+     "173 //| Destructor",
+     84.596
+    ],
+    [
+     "174 //+---------------------------------------- +--+ = = ot",
+     21.722
+    ],
+    [
+     "175 CTrade: :~CTrade(void)",
+     89.989
+    ],
+    [
+     "176 {",
+     4.782
+    ],
+    [
+     "177}",
+     23.134
+    ],
+    [
+     "178 //+-------------------------------------------- +--+ === == += Ht",
+     25.367
+    ],
+    [
+     "179 //| Get the request structure |",
+     86.855
+    ],
+    [
+     "180 //+------------------------------------------------------------------+",
+     39.773
+    ],
+    [
+     "181 void CTrade: :Request(MglTradeRequest &request) const",
+     78.583
+    ],
+    [
+     "162 {",
+     88.413
+    ],
+    [
+     "183 request.action =m_request.action;",
+     93.499
+    ],
+    [
+     "184 request.magic =m_request.magic;",
+     93.006
+    ],
+    [
+     "185 request.order =m_request.order;",
+     92.554
+    ],
+    [
+     "186 request.symbol =m_request.symbol;",
+     92.348
+    ],
+    [
+     "187 request.volume =m_request.volume;",
+     93.449
+    ],
+    [
+     "188 request.price =m_request.price;",
+     90.571
+    ]
+   ]
+  },
+  {
+   "t": 289.0,
+   "raw": [
+    [
+     "S;tsry wi Zz Ix =| Se \u00e9 | \\Z=} Compile I~] b>) \u00a9 ~ | fa ifs | P History = Realtime | Sy | A OD | Tim Welcome",
+     47.984
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * X | Trade.mqh X a!",
+     72.053
+    ],
+    [
+     "160 m_type_filling(ORDER_FILLING_FOK),",
+     92.161
+    ],
+    [
+     "161 m_log_level(LOG_LEVEL_ERRORS)",
+     86.47
+    ],
+    [
+     "162 {",
+     73.179
+    ],
+    [
+     "163 SetMarginMode(); i",
+     79.851
+    ],
+    [
+     "164 //--- initialize protected data",
+     91.808
+    ],
+    [
+     "165 ClearStructures();",
+     94.325
+    ],
+    [
+     "166 //--- check programm mode",
+     91.396
+    ],
+    [
+     "167 if (MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_TESTER))",
+     43.816
+    ],
+    [
+     "168 m_log_level=LOG_LEVEL_ALL;",
+     78.214
+    ],
+    [
+     "169 if(MQLInfoInteger(ENUM_MQL_INFO_INTEGER: :MQL_OPTIMIZATION) )",
+     63.932
+    ],
+    [
+     "178 m_log level=LOG_LEVEL_NO;",
+     46.865
+    ],
+    [
+     "171}",
+     40.867
+    ],
+    [
+     "172 / /+------------------------ == = on nn ent",
+     29.297
+    ],
+    [
+     "173 //| Destructor |",
+     87.182
+    ],
+    [
+     "174 / /+------------------------------------ +--+ = 2-2 oot",
+     24.552
+    ],
+    [
+     "175 CTrade: :~CTrade(void)",
+     87.998
+    ],
+    [
+     "176 {",
+     85.167
+    ],
+    [
+     "177) }",
+     51.729
+    ],
+    [
+     "178 / /+------------------------------------------- +--+ - += 2-2 t",
+     32.404
+    ],
+    [
+     "179 //| Get the request structure |",
+     89.336
+    ],
+    [
+     "180 //+-------------------------------------------------------- +--+ --- === +",
+     20.041
+    ],
+    [
+     "181 void CTrade: :Request(MqlTradeRequest &request) const",
+     79.204
+    ],
+    [
+     "te) {",
+     51.677
+    ],
+    [
+     "183 request.action =m_request.action;",
+     91.926
+    ],
+    [
+     "184 request.magic =m_request.magic;",
+     89.959
+    ],
+    [
+     "185 request.order =m_request.order;",
+     93.27
+    ],
+    [
+     "186 request.symbol =m_request.symbol;",
+     91.264
+    ],
+    [
+     "187 request.volume =m_request.volume;",
+     93.421
+    ],
+    [
+     "188 request.price =m_request.price;",
+     90.522
+    ]
+   ]
+  }
+ ]
+}

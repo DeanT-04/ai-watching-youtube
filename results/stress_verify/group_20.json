@@ -1,0 +1,1957 @@
+{
+ "group": 20,
+ "n_frames": 8,
+ "t_start": 452.0,
+ "t_end": 459.0,
+ "consensus_lines": {
+  "4": {
+   "text": ">",
+   "votes": 4
+  },
+  "20": {
+   "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+   "votes": 8
+  },
+  "21": {
+   "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+   "votes": 4
+  },
+  "22": {
+   "text": "LotsEquity = 2, //Dynamic Lot based on Equity",
+   "votes": 8
+  },
+  "23": {
+   "text": "LotsBalance = 1, //Dynamic Lot based on Balance",
+   "votes": 8
+  },
+  "24": {
+   "text": "LotsDepositLoad = 6, //Lots based on Deposit load",
+   "votes": 8
+  },
+  "25": {
+   "text": "FixedLots = @ //Fixed Lot",
+   "votes": 8
+  },
+  "26": {
+   "text": "33",
+   "votes": 8
+  },
+  "28": {
+   "text": "enum AllowBuySellEnum {",
+   "votes": 8
+  },
+  "29": {
+   "text": "AllowSell2 = 2, //Sell only",
+   "votes": 8
+  },
+  "30": {
+   "text": "AllowBuy1 = 1, //Buy only",
+   "votes": 8
+  },
+  "31": {
+   "text": "AllowBuySell = @ //Buy and Sell",
+   "votes": 8
+  },
+  "32": {
+   "text": "33",
+   "votes": 8
+  },
+  "34": {
+   "text": "enum eMaxDrawdownAction {",
+   "votes": 8
+  },
+  "35": {
+   "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+   "votes": 8
+  },
+  "36": {
+   "text": "IgnoreNewSignals = 2, //Prohibit opening new grids",
+   "votes": 8
+  },
+  "37": {
+   "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+   "votes": 8
+  },
+  "38": {
+   "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+   "votes": 8
+  },
+  "39": {
+   "text": "33",
+   "votes": 8
+  },
+  "41": {
+   "text": "enum eDrawdownCalculation {",
+   "votes": 8
+  },
+  "42": {
+   "text": "ThisStrategy = 1, //This strategy",
+   "votes": 8
+  },
+  "43": {
+   "text": "TheAccount = @ //The account",
+   "votes": 8
+  },
+  "44": {
+   "text": "};",
+   "votes": 8
+  },
+  "48": {
+   "text": "int OnInit() {",
+   "votes": 8
+  }
+ },
+ "support": {
+  "4": [
+   {
+    "frame": 4,
+    "text": ">"
+   },
+   {
+    "frame": 5,
+    "text": ">"
+   },
+   {
+    "frame": 6,
+    "text": ">"
+   },
+   {
+    "frame": 7,
+    "text": ">"
+   }
+  ],
+  "20": [
+   {
+    "frame": 0,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 1,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 2,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 3,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 4,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 5,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 6,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 7,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   }
+  ],
+  "21": [
+   {
+    "frame": 0,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 1,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 2,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 3,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   }
+  ],
+  "22": [
+   {
+    "frame": 0,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 1,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 2,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 3,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 4,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 5,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 6,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 7,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   }
+  ],
+  "23": [
+   {
+    "frame": 0,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 1,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 2,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 3,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 4,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 5,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 6,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 7,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 1,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 2,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 3,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 4,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 5,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 6,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 7,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   }
+  ],
+  "25": [
+   {
+    "frame": 0,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 1,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 2,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 3,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 4,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 5,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 6,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 7,
+    "text": "FixedLots = @ //Fixed Lot"
+   }
+  ],
+  "26": [
+   {
+    "frame": 0,
+    "text": "33"
+   },
+   {
+    "frame": 1,
+    "text": "33"
+   },
+   {
+    "frame": 2,
+    "text": "33"
+   },
+   {
+    "frame": 3,
+    "text": "33"
+   },
+   {
+    "frame": 4,
+    "text": "33"
+   },
+   {
+    "frame": 5,
+    "text": "le"
+   },
+   {
+    "frame": 6,
+    "text": "le"
+   },
+   {
+    "frame": 7,
+    "text": "33"
+   }
+  ],
+  "28": [
+   {
+    "frame": 0,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 1,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 2,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 3,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 4,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 5,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 6,
+    "text": "enum AllowBuySellEnum {"
+   },
+   {
+    "frame": 7,
+    "text": "enum AllowBuySellEnum {"
+   }
+  ],
+  "29": [
+   {
+    "frame": 0,
+    "text": "AllowSell2 = 2, //Sell only"
+   },
+   {
+    "frame": 1,
+    "text": "AllowSell2 = 2, //Sell only"
+   },
+   {
+    "frame": 2,
+    "text": "AllowSell2 = 2, //Sell only"
+   },
+   {
+    "frame": 3,
+    "text": "AllowSell2 = 2, //Sell only"
+   },
+   {
+    "frame": 4,
+    "text": "AllowSell12 = 2, //Sel1l only"
+   },
+   {
+    "frame": 5,
+    "text": "AllowSell12 = 2, //Sel1l only"
+   },
+   {
+    "frame": 6,
+    "text": "AllowSell12 = 2, //Sel1l only"
+   },
+   {
+    "frame": 7,
+    "text": "AllowSell12 = 2, //Sel1l only"
+   }
+  ],
+  "30": [
+   {
+    "frame": 0,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 1,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 2,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 3,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 4,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 5,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 6,
+    "text": "AllowBuy1 = 1, //Buy only"
+   },
+   {
+    "frame": 7,
+    "text": "AllowBuy1 = 1, //Buy only"
+   }
+  ],
+  "31": [
+   {
+    "frame": 0,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 1,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 2,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 3,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 4,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 5,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 6,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   },
+   {
+    "frame": 7,
+    "text": "AllowBuySell = @ //Buy and Sell"
+   }
+  ],
+  "32": [
+   {
+    "frame": 0,
+    "text": "33"
+   },
+   {
+    "frame": 1,
+    "text": "33"
+   },
+   {
+    "frame": 2,
+    "text": "33"
+   },
+   {
+    "frame": 3,
+    "text": "33"
+   },
+   {
+    "frame": 4,
+    "text": "33"
+   },
+   {
+    "frame": 5,
+    "text": "33"
+   },
+   {
+    "frame": 6,
+    "text": "33"
+   },
+   {
+    "frame": 7,
+    "text": "33"
+   }
+  ],
+  "34": [
+   {
+    "frame": 0,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 1,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 2,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 3,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 4,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 5,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 6,
+    "text": "enum eMaxDrawdownAction {"
+   },
+   {
+    "frame": 7,
+    "text": "enum eMaxDrawdownAction {"
+   }
+  ],
+  "35": [
+   {
+    "frame": 0,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 1,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 2,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 3,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 4,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 5,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 6,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   },
+   {
+    "frame": 7,
+    "text": "IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart"
+   }
+  ],
+  "36": [
+   {
+    "frame": 0,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 1,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 2,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 3,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 4,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 5,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 6,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   },
+   {
+    "frame": 7,
+    "text": "IgnoreNewSignals = 2, //Prohibit opening new grids"
+   }
+  ],
+  "37": [
+   {
+    "frame": 0,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 1,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 2,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 3,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 4,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 5,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 6,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   },
+   {
+    "frame": 7,
+    "text": "CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart"
+   }
+  ],
+  "38": [
+   {
+    "frame": 0,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 1,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 2,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 3,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 4,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 5,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 6,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   },
+   {
+    "frame": 7,
+    "text": "CloseStopTradingFor24h = @ //Close trades & stop trading for 24h"
+   }
+  ],
+  "39": [
+   {
+    "frame": 0,
+    "text": "3;"
+   },
+   {
+    "frame": 1,
+    "text": "3;"
+   },
+   {
+    "frame": 2,
+    "text": "33"
+   },
+   {
+    "frame": 3,
+    "text": "33"
+   },
+   {
+    "frame": 4,
+    "text": "33"
+   },
+   {
+    "frame": 5,
+    "text": "33"
+   },
+   {
+    "frame": 6,
+    "text": "33"
+   },
+   {
+    "frame": 7,
+    "text": "33"
+   }
+  ],
+  "41": [
+   {
+    "frame": 0,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 1,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 2,
+    "text": "enum eDrawdownCalculattion {"
+   },
+   {
+    "frame": 3,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 4,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 5,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 6,
+    "text": "enum eDrawdownCalculation {"
+   },
+   {
+    "frame": 7,
+    "text": "enum eDrawdownCalculation {"
+   }
+  ],
+  "42": [
+   {
+    "frame": 0,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 1,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 2,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 3,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 4,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 5,
+    "text": "ThisStrategy = 1, //This strategy"
+   },
+   {
+    "frame": 6,
+    "text": "ThisStrategy =| 1, //This strategy"
+   },
+   {
+    "frame": 7,
+    "text": "ThisStrategy =| 1, //This strategy"
+   }
+  ],
+  "43": [
+   {
+    "frame": 0,
+    "text": "TheAccount = 8 //The account"
+   },
+   {
+    "frame": 1,
+    "text": "TheAccount = 8 //The account"
+   },
+   {
+    "frame": 2,
+    "text": "TheAccount = 8 //The account"
+   },
+   {
+    "frame": 3,
+    "text": "TheAccount = @ //The account"
+   },
+   {
+    "frame": 4,
+    "text": "TheAccount = @ //The account"
+   },
+   {
+    "frame": 5,
+    "text": "TheAccount = @ //The account"
+   },
+   {
+    "frame": 6,
+    "text": "TheAccount = @ //The account"
+   },
+   {
+    "frame": 7,
+    "text": "TheAccount = @ //The account"
+   }
+  ],
+  "44": [
+   {
+    "frame": 0,
+    "text": "}s"
+   },
+   {
+    "frame": 1,
+    "text": "}s"
+   },
+   {
+    "frame": 2,
+    "text": "}s"
+   },
+   {
+    "frame": 3,
+    "text": "i"
+   },
+   {
+    "frame": 4,
+    "text": "};"
+   },
+   {
+    "frame": 5,
+    "text": "};"
+   },
+   {
+    "frame": 6,
+    "text": "};"
+   },
+   {
+    "frame": 7,
+    "text": "};"
+   }
+  ],
+  "48": [
+   {
+    "frame": 0,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 1,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 2,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 3,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 4,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 5,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 6,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 7,
+    "text": "int OnInit() {"
+   }
+  ]
+ },
+ "unanchored_count": 26,
+ "per_frame": [
+  {
+   "t": 452.0,
+   "raw": [
+    [
+     "=a) | Ry + | A OX yl \u2014ine | \\\u00a52} Compile I | Ww & \\o | 5 Cfo | =P History =|~ Realtime | ft, | ae ae | > Welcome",
+     49.598
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * {ot",
+     76.311
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     94.645
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.42
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.437
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.09
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.516
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.697
+    ],
+    [
+     "26 33",
+     74.169
+    ],
+    [
+     "27",
+     96.172
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     80.87
+    ],
+    [
+     "29 AllowSell2 = 2, //Sell only",
+     81.625
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     91.73
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     90.556
+    ],
+    [
+     "32 33",
+     69.286
+    ],
+    [
+     "33",
+     92.414
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     84.624
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.281
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     95.32
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     91.054
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     93.058
+    ],
+    [
+     "39 3;",
+     76.353
+    ],
+    [
+     "4e",
+     48.284
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     85.188
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.336
+    ],
+    [
+     "43 TheAccount = 8 //The account",
+     85.185
+    ],
+    [
+     "44 }s",
+     47.707
+    ],
+    [
+     "45",
+     96.771
+    ],
+    [
+     "46",
+     96.57
+    ],
+    [
+     "47",
+     95.738
+    ],
+    [
+     "48 int OnInit() {",
+     84.036
+    ],
+    [
+     "q >",
+     78.89
+    ]
+   ]
+  },
+  {
+   "t": 453.0,
+   "raw": [
+    [
+     "=a) | Gry + | A OX yl \u2014ine | \\\u00a52} Compile I | Ww & \\o | 5 Cfo | =P History =|~ Realtime | ft, | ae ae | > Welcome",
+     50.69
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * {ot",
+     76.803
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     94.53
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.153
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.437
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.09
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.486
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.866
+    ],
+    [
+     "26 33",
+     74.169
+    ],
+    [
+     "27",
+     96.172
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     80.87
+    ],
+    [
+     "29 AllowSell2 = 2, //Sell only",
+     81.625
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     91.73
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     90.556
+    ],
+    [
+     "32 33",
+     69.286
+    ],
+    [
+     "33",
+     92.414
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     84.624
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.281
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     95.247
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     86.9
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     93.153
+    ],
+    [
+     "39 3;",
+     76.353
+    ],
+    [
+     "4e",
+     48.284
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     80.02
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.333
+    ],
+    [
+     "43 TheAccount = 8 //The account",
+     85.185
+    ],
+    [
+     "44 }s",
+     47.707
+    ],
+    [
+     "45",
+     96.771
+    ],
+    [
+     "46",
+     96.57
+    ],
+    [
+     "47",
+     95.738
+    ],
+    [
+     "48 int OnInit() {",
+     84.036
+    ],
+    [
+     "q >",
+     78.89
+    ]
+   ]
+  },
+  {
+   "t": 454.0,
+   "raw": [
+    [
+     "=a) | Gry + | A OX yl \u2014ine | \\\u00a52} Compile I | Ww & \\o | 5 Cfo | =P History =|~ Realtime | ft, | ae ae | > Welcome",
+     50.815
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * {ot",
+     76.803
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     94.53
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.153
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.437
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.09
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.486
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.866
+    ],
+    [
+     "26 33",
+     74.169
+    ],
+    [
+     "27",
+     96.172
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     80.87
+    ],
+    [
+     "29 AllowSell2 = 2, //Sell only",
+     81.625
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     91.73
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     90.556
+    ],
+    [
+     "32 33",
+     69.286
+    ],
+    [
+     "33",
+     92.414
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     82.574
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.552
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     94.853
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     94.717
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     93.044
+    ],
+    [
+     "39 33",
+     68.492
+    ],
+    [
+     "48",
+     36.788
+    ],
+    [
+     "41 enum eDrawdownCalculattion {",
+     74.993
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.781
+    ],
+    [
+     "43 TheAccount = 8 //The account",
+     85.183
+    ],
+    [
+     "44 }s",
+     47.546
+    ],
+    [
+     "45",
+     96.771
+    ],
+    [
+     "46",
+     96.656
+    ],
+    [
+     "47",
+     95.738
+    ],
+    [
+     "48 int OnInit() {",
+     84.036
+    ],
+    [
+     "q >",
+     78.89
+    ]
+   ]
+  },
+  {
+   "t": 455.0,
+   "raw": [
+    [
+     "=a) | Gry + | aA OX yl \u2014ine | \\\u00a52} Compile I | ww & \\o | 5 Cfo | =P History =|~ Realtime | te, | FS Pp tah | > Welcome",
+     49.347
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * At",
+     77.726
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     94.53
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.153
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.443
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.095
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.486
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.866
+    ],
+    [
+     "26 33",
+     74.14
+    ],
+    [
+     "27",
+     96.416
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     80.87
+    ],
+    [
+     "29 AllowSell2 = 2, //Sell only",
+     81.625
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     91.611
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     90.508
+    ],
+    [
+     "32 33",
+     69.282
+    ],
+    [
+     "33",
+     92.414
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     82.574
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.552
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     94.853
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     94.733
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     93.04
+    ],
+    [
+     "39 33",
+     68.492
+    ],
+    [
+     "40",
+     33.466
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     81.134
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     84.733
+    ],
+    [
+     "43 TheAccount = @ //The account",
+     88.928
+    ],
+    [
+     "44 i",
+     47.84
+    ],
+    [
+     "45",
+     96.771
+    ],
+    [
+     "46",
+     96.656
+    ],
+    [
+     "47",
+     95.738
+    ],
+    [
+     "48 int OnInit() {",
+     84.036
+    ],
+    [
+     "q >",
+     78.89
+    ]
+   ]
+  },
+  {
+   "t": 456.0,
+   "raw": [
+    [
+     "=| Grr ve Say a | GJ Compile |v | & (e) C | ter | = History = Realtime | ) ~& |= ?p La) | tn Welcome",
+     53.577
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * ot",
+     74.783
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.292
+    ],
+    [
+     "PAA) ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     88.596
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.455
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.376
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.426
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     91.244
+    ],
+    [
+     "26 33",
+     69.707
+    ],
+    [
+     "27",
+     96.368
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     84.844
+    ],
+    [
+     "29 AllowSell12 = 2, //Sel1l only",
+     75.111
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     90.812
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     92.892
+    ],
+    [
+     "32 33",
+     73.772
+    ],
+    [
+     "33",
+     95.836
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     88.077
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.526
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     94.762
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     94.86
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     94.189
+    ],
+    [
+     "39 33",
+     75.774
+    ],
+    [
+     "40",
+     52.528
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     82.599
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.845
+    ],
+    [
+     "43 TheAccount = @ //The account",
+     91.572
+    ],
+    [
+     "44 };",
+     64.742
+    ],
+    [
+     "45",
+     96.623
+    ],
+    [
+     "46",
+     96.75
+    ],
+    [
+     "47",
+     96.135
+    ],
+    [
+     "48 int OnInit() {",
+     84.286
+    ],
+    [
+     "4 >",
+     75.965
+    ]
+   ]
+  },
+  {
+   "t": 457.0,
+   "raw": [
+    [
+     "=| Grr ve Tay | a | G3 Compile | | & (e) C | qe | = History = Realtime | ) ~& |e 5p LQ) | an Welcome",
+     52.964
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * ot",
+     75.188
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.191
+    ],
+    [
+     "PAA) ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     88.763
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.573
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.376
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.43
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     91.463
+    ],
+    [
+     "26 le",
+     65.123
+    ],
+    [
+     "27",
+     96.368
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     81.525
+    ],
+    [
+     "29 AllowSell12 = 2, //Sel1l only",
+     75.111
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     90.812
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     92.829
+    ],
+    [
+     "32 33",
+     71.748
+    ],
+    [
+     "33",
+     95.836
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     88.077
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.473
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     95.108
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     95.033
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     94.22
+    ],
+    [
+     "39 33",
+     72.657
+    ],
+    [
+     "40",
+     48.014
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     79.523
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.938
+    ],
+    [
+     "43 TheAccount = @ //The account",
+     91.88
+    ],
+    [
+     "44 };",
+     64.742
+    ],
+    [
+     "45",
+     96.623
+    ],
+    [
+     "46",
+     96.75
+    ],
+    [
+     "47",
+     96.135
+    ],
+    [
+     "48 int OnInit() {",
+     85.558
+    ],
+    [
+     "4 >",
+     75.965
+    ]
+   ]
+  },
+  {
+   "t": 458.0,
+   "raw": [
+    [
+     "=| Grr v7 Tay | a | G3 Compile | | & (e) C | qe | = History = Realtime | ) ~& |e 5p LQ) | an Welcome",
+     53.182
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * ot",
+     74.602
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.216
+    ],
+    [
+     "zal ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     90.809
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.579
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.376
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.43
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     91.461
+    ],
+    [
+     "26 le",
+     65.175
+    ],
+    [
+     "27",
+     96.368
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     81.525
+    ],
+    [
+     "29 AllowSell12 = 2, //Sel1l only",
+     75.111
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     90.812
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     92.892
+    ],
+    [
+     "32 33",
+     73.538
+    ],
+    [
+     "33",
+     95.836
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     88.077
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.565
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     95.11
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     95.033
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     94.22
+    ],
+    [
+     "39 33",
+     72.657
+    ],
+    [
+     "40",
+     55.682
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     82.448
+    ],
+    [
+     "42 ThisStrategy =| 1, //This strategy",
+     89.875
+    ],
+    [
+     "43 TheAccount = @ //The account",
+     91.627
+    ],
+    [
+     "44 };",
+     64.742
+    ],
+    [
+     "45",
+     96.623
+    ],
+    [
+     "46",
+     96.75
+    ],
+    [
+     "47",
+     96.135
+    ],
+    [
+     "48 int OnInit() {",
+     85.558
+    ],
+    [
+     "4 >",
+     75.965
+    ]
+   ]
+  },
+  {
+   "t": 459.0,
+   "raw": [
+    [
+     "=| Grr ve. Ee] (a | G3 Compile |v | & (e) C | qe | = History = Realtime | ) ~& |e 5p LQ) | an Welcome",
+     52.653
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * ot",
+     74.714
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.07
+    ],
+    [
+     "PA) ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     85.785
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.581
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.376
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.526
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.143
+    ],
+    [
+     "26 33",
+     75.282
+    ],
+    [
+     "27",
+     96.368
+    ],
+    [
+     "28 enum AllowBuySellEnum {",
+     82.565
+    ],
+    [
+     "29 AllowSell12 = 2, //Sel1l only",
+     75.111
+    ],
+    [
+     "30 AllowBuy1 = 1, //Buy only",
+     90.812
+    ],
+    [
+     "31 AllowBuySell = @ //Buy and Sell",
+     92.892
+    ],
+    [
+     "32 33",
+     74.841
+    ],
+    [
+     "33",
+     95.836
+    ],
+    [
+     "34 enum eMaxDrawdownAction {",
+     88.077
+    ],
+    [
+     "35 IgnoreNewUntilRestart = 3, //Prohibit opening new grids until restart",
+     95.544
+    ],
+    [
+     "36 IgnoreNewSignals = 2, //Prohibit opening new grids",
+     95.23
+    ],
+    [
+     "37 CloseStopTradingUntilRestart = 1, //Close trades & stop trading until restart",
+     94.885
+    ],
+    [
+     "38 CloseStopTradingFor24h = @ //Close trades & stop trading for 24h",
+     94.212
+    ],
+    [
+     "39 33",
+     66.734
+    ],
+    [
+     "40",
+     55.661
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     82.759
+    ],
+    [
+     "42 ThisStrategy =| 1, //This strategy",
+     91.135
+    ],
+    [
+     "43 TheAccount = @ //The account",
+     91.717
+    ],
+    [
+     "44 };",
+     64.742
+    ],
+    [
+     "45",
+     96.623
+    ],
+    [
+     "46",
+     96.75
+    ],
+    [
+     "47",
+     96.135
+    ],
+    [
+     "48 int OnInit() {",
+     79.229
+    ],
+    [
+     "4 >",
+     75.965
+    ]
+   ]
+  }
+ ]
+}

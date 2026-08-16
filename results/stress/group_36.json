@@ -1,0 +1,11 @@
+{
+  "group": 36,
+  "n_frames": 5,
+  "t_start": 475.0,
+  "t_end": 479.0,
+  "source": "paddle+tesseract (consensus x5)",
+  "valid": false,
+  "text": "WakaWaka by MrCapFree.mq5 * * ;\nHighRiskPreset = 3,\nExtremeRiskPreset = 7,\nLotsEquity = 2,\nLotsbalance = 1.\nLotsDepositLoad = 6,\nFixedLots = 0\n};\nenum A1lowBuySe11Enum {\nAllowSell2 = 2,\nAllowBuy1 = 1,\nAllowBuySell = 0\n};\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3,\nIgnoreNewSignals = 2,\nCloseStopTradingUntilRestart = 1,\nc1oseStopTradingFor24h = 0\n};\nenum eDrawdowncalculation{\nThisStrategy = 1,\nTheAccount = 0\n};\n48int OnInit() {",
+  "error": null,
+  "secs": 47.3
+}

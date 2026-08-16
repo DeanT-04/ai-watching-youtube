@@ -71,6 +71,81 @@ def select_keyframes(frames: list[Frame], cfg: Config) -> list[Frame]:
     return keyframes
 
 
+def _split_into_runs(frames: list[Frame], cfg: Config) -> list[list[Frame]]:
+    """Partition frames into consecutive runs of mutually-similar frames.
+
+    Same boundary logic as :func:`select_keyframes` (a run ends wherever
+    consecutive-frame similarity drops below ``cfg.similarity_threshold``),
+    but returns every frame in each run instead of collapsing it to one.
+    """
+    if not frames:
+        return []
+    runs: list[list[Frame]] = []
+    current: list[Frame] = [frames[0]]
+    for i in range(len(frames) - 1):
+        if (
+            frame_similarity(frames[i].image, frames[i + 1].image)
+            < cfg.similarity_threshold
+        ):
+            runs.append(current)
+            current = []
+        current.append(frames[i + 1])
+    runs.append(current)
+    return runs
+
+
+def _subsample(run: list[Frame], max_frames: int) -> list[Frame]:
+    """Evenly thin a run down to at most ``max_frames``, keeping the ends.
+
+    Used to bound OCR cost on runs where a code region sits on screen for a
+    long time (many sampled frames): consensus reconstruction only needs
+    enough redundancy to out-vote occasional misreads, not every frame.
+    """
+    if max_frames <= 0 or len(run) <= max_frames:
+        return run
+    if max_frames == 1:
+        return [run[-1]]
+    step = (len(run) - 1) / (max_frames - 1)
+    indices = sorted({round(i * step) for i in range(max_frames)})
+    return [run[i] for i in indices]
+
+
+def group_stable_runs(frames: list[Frame], cfg: Config) -> list[list[Frame]]:
+    """Group frames into per-region runs, preserving redundancy for consensus.
+
+    Unlike :func:`select_keyframes` (which keeps exactly one frame per
+    stable run and discards the rest), this keeps every frame of each run
+    -- up to ``cfg.consensus_max_frames_per_group``, evenly subsampled if
+    the run is longer than that -- so that
+    :func:`ytextract.consensus.reconstruct` has multiple independent reads
+    of the same on-screen text to merge. A run of length 1 (nothing to
+    merge, e.g. a single sampled frame before the next scene change) is
+    returned as-is; downstream code should treat that as a plain
+    single-frame OCR pass.
+    """
+    runs = _split_into_runs(frames, cfg)
+    groups = [_subsample(run, cfg.consensus_max_frames_per_group) for run in runs]
+    logger.info(
+        "grouped %d sampled frames into %d stable runs (avg %.1f frames/run)",
+        len(frames),
+        len(groups),
+        (sum(len(g) for g in groups) / len(groups)) if groups else 0.0,
+    )
+    return groups
+
+
+def sample_and_select(video_path: str, cfg: Config) -> list[Frame]:
+    """Convenience: sample at the configured rate, then keep one frame per stable run."""
+    sampled = sample_frames(video_path, cfg.sample_rate_fps)
+    return select_keyframes(sampled, cfg)
+
+
+def sample_and_group(video_path: str, cfg: Config) -> list[list[Frame]]:
+    """Convenience: sample at the configured rate, then group into stable runs."""
+    sampled = sample_frames(video_path, cfg.sample_rate_fps)
+    return group_stable_runs(sampled, cfg)
+
+
 def sample_frames(video_path: str, sample_rate_fps: float) -> list[Frame]:
     """Open ``video_path`` and sample one frame every ``1/sample_rate_fps`` seconds."""
     cap = cv2.VideoCapture(video_path)

@@ -1,0 +1,11 @@
+{
+  "group": 20,
+  "n_frames": 8,
+  "t_start": 452.0,
+  "t_end": 459.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": ">\nHighRiskPreset = 3,\nExtremeRiskPreset = 7,\nLotsEquity = 2,\nLotsBalance = 1.\nLotsDepositLoad = 6,\nFixedLots = 0\n};\nenum A11owBuySe11Enum {\nAllowSell2 = 2,\nAllowBuy1 = 1,\nAllowBuySell = 0\n}:\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3,\nIgnoreNewSignals = 2,\nCloseStopTradingUntilRestart = 1,\nc1oseStopTradingFor24h = 0\n};\nenum eDrawdownCalculation {\nThisStrategy = 1,\nTheAccount = 0\n}:\n48int OnInit() {\nint OnInit() {",
+  "error": null,
+  "secs": 102.1
+}

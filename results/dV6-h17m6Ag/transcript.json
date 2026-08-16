@@ -1,0 +1,4309 @@
+{
+  "video_id": "dV6-h17m6Ag",
+  "title": "Build This $2800 Forex Trading Bot From Scratch (Full Code) – Part 3 || LotSizes and Creating Grids",
+  "uploader": "Mr. CapFree",
+  "webpage_url": "https://www.youtube.com/watch?v=dV6-h17m6Ag",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.56,
+      "text": " we're building this amazing great management system."
+    },
+    {
+      "start": 2.56,
+      "end": 6.0,
+      "text": " It is inspired by this trading robot on the MQL marketplace,"
+    },
+    {
+      "start": 6.0,
+      "end": 8.0,
+      "text": " and it has been therefore quite a long time now."
+    },
+    {
+      "start": 8.88,
+      "end": 10.8,
+      "text": " It sells for $2,800,"
+    },
+    {
+      "start": 10.8,
+      "end": 12.88,
+      "text": " boasts quite a bit of profit,"
+    },
+    {
+      "start": 12.88,
+      "end": 14.72,
+      "text": " consecutive months in profit,"
+    },
+    {
+      "start": 14.72,
+      "end": 16.96,
+      "text": " and comes with a full documentation included,"
+    },
+    {
+      "start": 16.96,
+      "end": 18.16,
+      "text": " features, how to install,"
+    },
+    {
+      "start": 18.16,
+      "end": 19.52,
+      "text": " requirement, risks, settings,"
+    },
+    {
+      "start": 19.52,
+      "end": 21.6,
+      "text": " strategy and all that good stuff."
+    },
+    {
+      "start": 21.6,
+      "end": 23.28,
+      "text": " But we will build it ourselves,"
+    },
+    {
+      "start": 23.28,
+      "end": 25.6,
+      "text": " step by step with all the functionality,"
+    },
+    {
+      "start": 25.6,
+      "end": 27.12,
+      "text": " and this pretty looking panel."
+    },
+    {
+      "start": 27.12,
+      "end": 28.72,
+      "text": " In the very first video in the series,"
+    },
+    {
+      "start": 28.72,
+      "end": 30.32,
+      "text": " we dissected the entire e,"
+    },
+    {
+      "start": 30.32,
+      "end": 32.32,
+      "text": " trying to understand how it exactly works,"
+    },
+    {
+      "start": 32.32,
+      "end": 33.28,
+      "text": " how does it open trade,"
+    },
+    {
+      "start": 33.28,
+      "end": 34.72,
+      "text": " how does it form greats,"
+    },
+    {
+      "start": 34.72,
+      "end": 36.4,
+      "text": " how does it manage lot sizes,"
+    },
+    {
+      "start": 36.4,
+      "end": 38.239999999999995,
+      "text": " how does it manage TPNSL,"
+    },
+    {
+      "start": 38.239999999999995,
+      "end": 40.56,
+      "text": " and what are the small nuances where?"
+    },
+    {
+      "start": 40.56,
+      "end": 43.76,
+      "text": " And what we discovered were quite a lot of the smart features"
+    },
+    {
+      "start": 43.76,
+      "end": 44.56,
+      "text": " built into this."
+    },
+    {
+      "start": 44.56,
+      "end": 46.0,
+      "text": " Be it the lot sizing,"
+    },
+    {
+      "start": 46.0,
+      "end": 47.44,
+      "text": " be it the TP management,"
+    },
+    {
+      "start": 47.44,
+      "end": 48.8,
+      "text": " be it's SL management,"
+    },
+    {
+      "start": 48.8,
+      "end": 50.0,
+      "text": " be it the great management,"
+    },
+    {
+      "start": 50.0,
+      "end": 51.28,
+      "text": " there were always something"
+    },
+    {
+      "start": 51.28,
+      "end": 53.92,
+      "text": " which either had to do with the volatility in the market,"
+    },
+    {
+      "start": 53.92,
+      "end": 56.879999999999995,
+      "text": " or it gave the user quite a lot of flexibility,"
+    },
+    {
+      "start": 56.88,
+      "end": 59.440000000000005,
+      "text": " in terms of how does he manage the entire grid system."
+    },
+    {
+      "start": 59.440000000000005,
+      "end": 60.480000000000004,
+      "text": " And then in the second video,"
+    },
+    {
+      "start": 60.480000000000004,
+      "end": 63.120000000000005,
+      "text": " we started building the base structure for the coding,"
+    },
+    {
+      "start": 63.120000000000005,
+      "end": 65.12,
+      "text": " including all the input parameters,"
+    },
+    {
+      "start": 65.12,
+      "end": 66.48,
+      "text": " the input variables,"
+    },
+    {
+      "start": 66.48,
+      "end": 67.68,
+      "text": " the global variables,"
+    },
+    {
+      "start": 67.68,
+      "end": 69.44,
+      "text": " and the base structure in itself."
+    },
+    {
+      "start": 69.44,
+      "end": 71.76,
+      "text": " And we wrote the code until this part in the settings,"
+    },
+    {
+      "start": 71.76,
+      "end": 73.44,
+      "text": " which was the RSI value,"
+    },
+    {
+      "start": 73.44,
+      "end": 77.68,
+      "text": " which determines where the base trades are going to open for both by MSL."
+    },
+    {
+      "start": 77.68,
+      "end": 79.6,
+      "text": " And today what we're going to start to look at"
+    },
+    {
+      "start": 79.6,
+      "end": 81.12,
+      "text": " is the lot sizing method."
+    },
+    {
+      "start": 81.12,
+      "end": 83.2,
+      "text": " We're going to build the entire methodology"
+    },
+    {
+      "start": 83.2,
+      "end": 84.80000000000001,
+      "text": " around the low risk profile,"
+    },
+    {
+      "start": 84.80000000000001,
+      "end": 86.16,
+      "text": " the medium risk profile,"
+    },
+    {
+      "start": 86.16,
+      "end": 88.0,
+      "text": " significant risk, higher risk,"
+    },
+    {
+      "start": 88.0,
+      "end": 90.08,
+      "text": " based on either equity or balance,"
+    },
+    {
+      "start": 90.08,
+      "end": 92.39999999999999,
+      "text": " or on deposit load or fixed loss."
+    },
+    {
+      "start": 92.39999999999999,
+      "end": 95.36,
+      "text": " And then we will also handle the function around auto splitting."
+    },
+    {
+      "start": 95.36,
+      "end": 98.96,
+      "text": " In case your lot size becomes bigger than what the broker allows,"
+    },
+    {
+      "start": 98.96,
+      "end": 101.75999999999999,
+      "text": " then how do we split it into many different orders"
+    },
+    {
+      "start": 101.75999999999999,
+      "end": 103.92,
+      "text": " and then send them one after the other."
+    },
+    {
+      "start": 103.92,
+      "end": 105.84,
+      "text": " We will include the handling of the spreads and"
+    },
+    {
+      "start": 105.84,
+      "end": 107.84,
+      "text": " slippages when we're sending the orders."
+    },
+    {
+      "start": 107.84,
+      "end": 110.08,
+      "text": " And then we will continue with the development of"
+    },
+    {
+      "start": 110.08,
+      "end": 110.64,
+      "text": " grids."
+    },
+    {
+      "start": 110.64,
+      "end": 111.92,
+      "text": " How do we open them?"
+    },
+    {
+      "start": 111.92,
+      "end": 112.96,
+      "text": " At what distances?"
+    },
+    {
+      "start": 112.96,
+      "end": 116.08,
+      "text": " And then do we or do we not apply a smart gridding?"
+    },
+    {
+      "start": 116.24,
+      "end": 117.84,
+      "text": " Which is if it is false,"
+    },
+    {
+      "start": 117.84,
+      "end": 122.0,
+      "text": " then your grid levels are open at a fixed distance from each other,"
+    },
+    {
+      "start": 122.0,
+      "end": 124.0,
+      "text": " always defined by the user."
+    },
+    {
+      "start": 124.0,
+      "end": 126.96,
+      "text": " But in case you select the smart distance to be true,"
+    },
+    {
+      "start": 126.96,
+      "end": 131.2,
+      "text": " then in that case it's not just this 35 that determines the distance and the grid."
+    },
+    {
+      "start": 131.2,
+      "end": 133.68,
+      "text": " It is also based on ATR values,"
+    },
+    {
+      "start": 133.68,
+      "end": 135.6,
+      "text": " the short period and the long period."
+    },
+    {
+      "start": 135.6,
+      "end": 139.2,
+      "text": " And then we look at the short period to determine the volatility in the market."
+    },
+    {
+      "start": 139.2,
+      "end": 142.0,
+      "text": " If there's more volatility in the market in the short run,"
+    },
+    {
+      "start": 142.0,
+      "end": 143.28,
+      "text": " then the longer run,"
+    },
+    {
+      "start": 143.28,
+      "end": 146.48,
+      "text": " then we increase the size of the distance in the grid."
+    },
+    {
+      "start": 146.48,
+      "end": 148.0,
+      "text": " Quite a smart feature."
+    },
+    {
+      "start": 148.0,
+      "end": 150.96,
+      "text": " Then we will build the coding around the trade multipliers."
+    },
+    {
+      "start": 150.96,
+      "end": 152.96,
+      "text": " So when you're using the straight multipliers,"
+    },
+    {
+      "start": 152.96,
+      "end": 155.76,
+      "text": " your opening trade is open at a certain lot,"
+    },
+    {
+      "start": 155.76,
+      "end": 158.72,
+      "text": " but then the lot size continues to increase,"
+    },
+    {
+      "start": 158.72,
+      "end": 161.6,
+      "text": " depending on what you have selected here."
+    },
+    {
+      "start": 161.6,
+      "end": 164.16,
+      "text": " So for the second trade, it's going to be a multiplier."
+    },
+    {
+      "start": 164.16,
+      "end": 167.04,
+      "text": " So if you're starting from a lot size one as the base trade,"
+    },
+    {
+      "start": 167.04,
+      "end": 170.8,
+      "text": " then you have the option for the second trade to either go the same lot size"
+    },
+    {
+      "start": 170.8,
+      "end": 171.92000000000002,
+      "text": " or increase it."
+    },
+    {
+      "start": 171.92000000000002,
+      "end": 174.96,
+      "text": " And then you have the flexibility for the third to the fifth trade"
+    },
+    {
+      "start": 174.96,
+      "end": 176.96,
+      "text": " to define a different multiplier."
+    },
+    {
+      "start": 176.96,
+      "end": 181.04000000000002,
+      "text": " And then from the sixth trade on what you have an even different multiplier"
+    },
+    {
+      "start": 181.04000000000002,
+      "end": 181.92000000000002,
+      "text": " that you can use."
+    },
+    {
+      "start": 181.92000000000002,
+      "end": 185.52,
+      "text": " And in the subsequent video we will add a custom multiplier as well,"
+    },
+    {
+      "start": 185.52,
+      "end": 187.92000000000002,
+      "text": " where you can actually define for level one, level two,"
+    },
+    {
+      "start": 187.92000000000002,
+      "end": 189.84000000000003,
+      "text": " level three, level four, level five,"
+    },
+    {
+      "start": 189.84000000000003,
+      "end": 192.4,
+      "text": " all of them separately custom multipliers."
+    },
+    {
+      "start": 192.4,
+      "end": 196.48000000000002,
+      "text": " And then we will also start on the grid level to start functionality,"
+    },
+    {
+      "start": 196.48000000000002,
+      "end": 198.64000000000001,
+      "text": " which is a very smart feature."
+    },
+    {
+      "start": 198.64000000000001,
+      "end": 201.84,
+      "text": " Now the idea is the entire grid management system"
+    },
+    {
+      "start": 201.84,
+      "end": 206.4,
+      "text": " works on this RSI value, which is from the mean of 50,"
+    },
+    {
+      "start": 206.4,
+      "end": 210.8,
+      "text": " 15 above and 15 below, that's where you open the buy and the sell trade."
+    },
+    {
+      "start": 210.8,
+      "end": 214.72000000000003,
+      "text": " And then you're greeting is managed with trade distances and the smart distancing."
+    },
+    {
+      "start": 214.72000000000003,
+      "end": 218.8,
+      "text": " But what if you didn't want to start trading from the very first level,"
+    },
+    {
+      "start": 218.8,
+      "end": 222.8,
+      "text": " in a stronger momentum where you're expecting the price to go against you,"
+    },
+    {
+      "start": 222.8,
+      "end": 226.16000000000003,
+      "text": " for quite some time, why start at the base level."
+    },
+    {
+      "start": 226.16,
+      "end": 229.52,
+      "text": " So what this very cunning grid level to start system does"
+    },
+    {
+      "start": 229.52,
+      "end": 233.28,
+      "text": " is if you put here a three, then that basically means"
+    },
+    {
+      "start": 233.28,
+      "end": 235.35999999999999,
+      "text": " because we're starting at level three,"
+    },
+    {
+      "start": 235.35999999999999,
+      "end": 238.32,
+      "text": " that for the first two trade, we're going to put a dummy trade"
+    },
+    {
+      "start": 238.32,
+      "end": 243.84,
+      "text": " or a bookmark trade, if you will, the minimum lot sizes here and here."
+    },
+    {
+      "start": 243.84,
+      "end": 249.28,
+      "text": " And then only start our grading from level three, which is quite a smart actually."
+    },
+    {
+      "start": 249.28,
+      "end": 252.32,
+      "text": " Now within that, you have two different possibilities,"
+    },
+    {
+      "start": 252.32,
+      "end": 256.71999999999997,
+      "text": " which is to keep or not keep the original profit level and lot sizes."
+    },
+    {
+      "start": 256.71999999999997,
+      "end": 258.71999999999997,
+      "text": " Which if you selected to be false,"
+    },
+    {
+      "start": 258.71999999999997,
+      "end": 262.48,
+      "text": " your first two trades are going to be dummy trades with the minimum lot size."
+    },
+    {
+      "start": 262.48,
+      "end": 264.32,
+      "text": " But when you open the third trade,"
+    },
+    {
+      "start": 264.32,
+      "end": 268.15999999999997,
+      "text": " is going to open as the first lot size calculation,"
+    },
+    {
+      "start": 268.15999999999997,
+      "end": 270.71999999999997,
+      "text": " based on the profile that you have selected here."
+    },
+    {
+      "start": 270.71999999999997,
+      "end": 275.52,
+      "text": " But if you actually change it to true and that's where it gets even more clever."
+    },
+    {
+      "start": 275.52,
+      "end": 278.0,
+      "text": " Now we're going to place dummy trades,"
+    },
+    {
+      "start": 278.0,
+      "end": 282.64,
+      "text": " the bookmark trades of minimum values for the first two trades, yes."
+    },
+    {
+      "start": 282.64,
+      "end": 286.8,
+      "text": " But we will in the background store the value of those lot sizing,"
+    },
+    {
+      "start": 286.8,
+      "end": 290.8,
+      "text": " as if those two trades were open with the proper lot sizing."
+    },
+    {
+      "start": 290.8,
+      "end": 295.6,
+      "text": " When we open the third trade, we open it as if these two"
+    },
+    {
+      "start": 295.6,
+      "end": 299.84,
+      "text": " were also properly open and were not just bookmarked."
+    },
+    {
+      "start": 299.84,
+      "end": 301.52,
+      "text": " That's very clever as well."
+    },
+    {
+      "start": 301.52,
+      "end": 303.68,
+      "text": " That is what we're going to cover in this video."
+    },
+    {
+      "start": 304.24,
+      "end": 307.68,
+      "text": " And then in the next video, we will start to look at all of the"
+    },
+    {
+      "start": 307.68,
+      "end": 310.56,
+      "text": " T.P settings, including the weighted take profit,"
+    },
+    {
+      "start": 310.56,
+      "end": 313.92,
+      "text": " that's Montake profit, whether or not to hide the take profit."
+    },
+    {
+      "start": 313.92,
+      "end": 318.88,
+      "text": " And if we hide the take profit then to use the OPO method to actually realize the T.P's."
+    },
+    {
+      "start": 318.88,
+      "end": 320.72,
+      "text": " Look at the stop loss settings."
+    },
+    {
+      "start": 320.72,
+      "end": 324.24,
+      "text": " Once again, whether or not to hide it from the broker and in case hidden,"
+    },
+    {
+      "start": 324.24,
+      "end": 325.84000000000003,
+      "text": " then use the OPO method."
+    },
+    {
+      "start": 325.84000000000003,
+      "end": 329.84000000000003,
+      "text": " And then we will also look at all of the drawdown controls as well."
+    },
+    {
+      "start": 329.84000000000003,
+      "end": 332.16,
+      "text": " So basically by the end of the next video,"
+    },
+    {
+      "start": 332.16,
+      "end": 335.84000000000003,
+      "text": " we should be able to build up all of this B settings."
+    },
+    {
+      "start": 335.92,
+      "end": 339.36,
+      "text": " And then in the last video, we will build up the entire panel."
+    },
+    {
+      "start": 339.36,
+      "end": 341.20000000000005,
+      "text": " If you're joining us from here,"
+    },
+    {
+      "start": 341.20000000000005,
+      "end": 345.92,
+      "text": " I would strongly urge you to start from the first video because trying to build something without"
+    },
+    {
+      "start": 345.92,
+      "end": 350.48,
+      "text": " fully understanding what it is that we're trying to build is probably not the best idea."
+    },
+    {
+      "start": 350.48,
+      "end": 354.48,
+      "text": " Now obviously these scores are going to be available in the store as a reference,"
+    },
+    {
+      "start": 354.48,
+      "end": 356.08000000000004,
+      "text": " but please do understand."
+    },
+    {
+      "start": 356.08000000000004,
+      "end": 359.44000000000005,
+      "text": " I do not emphasize enough being the importance of taking the time,"
+    },
+    {
+      "start": 359.44000000000005,
+      "end": 362.72,
+      "text": " following these videos and actually coding these for yourself."
+    },
+    {
+      "start": 362.8,
+      "end": 366.40000000000003,
+      "text": " This way you will learn about the idea and it's intricacies as well."
+    },
+    {
+      "start": 366.40000000000003,
+      "end": 368.8,
+      "text": " And you will also learn how to do these kind of things."
+    },
+    {
+      "start": 368.8,
+      "end": 370.96000000000004,
+      "text": " So if you have a strategy of your own,"
+    },
+    {
+      "start": 370.96000000000004,
+      "end": 374.88000000000005,
+      "text": " you can let it build it yourself and that will make me very happy."
+    },
+    {
+      "start": 374.88000000000005,
+      "end": 376.32000000000005,
+      "text": " So with no machine arrogance,"
+    },
+    {
+      "start": 376.32000000000005,
+      "end": 379.04,
+      "text": " let's start coding the calculation of the lot sizing."
+    },
+    {
+      "start": 379.04,
+      "end": 382.88000000000005,
+      "text": " Now before we start writing the calculation of the lot size functions,"
+    },
+    {
+      "start": 384.08000000000004,
+      "end": 390.32000000000005,
+      "text": " one thing which people forget and MQL does not like it is the denitialization function."
+    },
+    {
+      "start": 390.32,
+      "end": 394.32,
+      "text": " Because all of these calculations and the indicators was all loaded into the memory"
+    },
+    {
+      "start": 394.32,
+      "end": 396.64,
+      "text": " and then they stuck there until you release them."
+    },
+    {
+      "start": 396.64,
+      "end": 398.64,
+      "text": " So we're going to do three things here."
+    },
+    {
+      "start": 398.64,
+      "end": 401.76,
+      "text": " The first one is we're going to go through the array of M in hand,"
+    },
+    {
+      "start": 401.76,
+      "end": 406.64,
+      "text": " because that's going to equal the number of indexes as the symbols."
+    },
+    {
+      "start": 406.64,
+      "end": 409.92,
+      "text": " So we're going to go through this and they're going to be the same for everyone."
+    },
+    {
+      "start": 409.92,
+      "end": 412.96,
+      "text": " And then we're going to release these indicators by using the eye."
+    },
+    {
+      "start": 412.96,
+      "end": 417.92,
+      "text": " So loop through the three iterations and release for all three symbols,"
+    },
+    {
+      "start": 417.92,
+      "end": 419.2,
+      "text": " these indicators."
+    },
+    {
+      "start": 419.68,
+      "end": 423.44,
+      "text": " And then we're going to be writing an on-timers function where we're going to update every five"
+    },
+    {
+      "start": 423.44,
+      "end": 426.4,
+      "text": " seconds. This is what we have done here in the initialization."
+    },
+    {
+      "start": 427.28,
+      "end": 431.44,
+      "text": " Even set timer. So let's release that even time. Even kill timer."
+    },
+    {
+      "start": 432.15999999999997,
+      "end": 436.24,
+      "text": " And then if it is not the tester and it's not the optimization."
+    },
+    {
+      "start": 436.88,
+      "end": 441.03999999999996,
+      "text": " So it's life trading. So delete all of the objects on the chart as well."
+    },
+    {
+      "start": 441.03999999999996,
+      "end": 443.28,
+      "text": " And in the end, I mean when we're going to create the panel,"
+    },
+    {
+      "start": 443.84,
+      "end": 445.68,
+      "text": " we're going to create a lot of objects."
+    },
+    {
+      "start": 445.76,
+      "end": 450.96,
+      "text": " So at the end of it, or demitialization, remove all of the stuff from the chart as well."
+    },
+    {
+      "start": 450.96,
+      "end": 456.0,
+      "text": " So delete all objects. If you still want to continue having the panel even when you close the"
+    },
+    {
+      "start": 456.0,
+      "end": 463.12,
+      "text": " year, just remove this part. I'm going to hit compile. And it's fine. So let's go down to our calculation"
+    },
+    {
+      "start": 463.12,
+      "end": 468.24,
+      "text": " of the lot size function. And let's start building it. So we get a lot of information from our"
+    },
+    {
+      "start": 468.24,
+      "end": 473.52,
+      "text": " broker. So we get the volume steps, the minimum volume, the maximum volume and the volume limit."
+    },
+    {
+      "start": 473.52,
+      "end": 478.4,
+      "text": " And if the step is less than 0.001, which is going to be a very funny step,"
+    },
+    {
+      "start": 478.4,
+      "end": 484.88,
+      "text": " most brokers have 0.01. Then in that case, we set it to 0.001. So I think in case of Bitcoin is where"
+    },
+    {
+      "start": 484.88,
+      "end": 491.59999999999997,
+      "text": " you can have 0.001 as well on certain brokers. Then we also get the value of the margin,"
+    },
+    {
+      "start": 491.59999999999997,
+      "end": 497.76,
+      "text": " the balance and the activity. And then in the tester, if the user has selected to use"
+    },
+    {
+      "start": 497.76,
+      "end": 502.4,
+      "text": " fixed initial deposit and the initial balance is greater than epsilon, meaning the checking that"
+    },
+    {
+      "start": 502.40000000000003,
+      "end": 511.04,
+      "text": " it's of valid value here, 6 initial deposit. And for the initial balance, we come back up here"
+    },
+    {
+      "start": 511.04,
+      "end": 518.4000000000001,
+      "text": " in the initialization function. And before that in succeed, we write initial balance is equal to"
+    },
+    {
+      "start": 518.4000000000001,
+      "end": 525.36,
+      "text": " account balance. So in tester, this is going to be equal to whatever you put as the initial deposit."
+    },
+    {
+      "start": 525.36,
+      "end": 530.72,
+      "text": " So if this is greater than epsilon, so it is a valid value. And the fixed initial deposit is true,"
+    },
+    {
+      "start": 530.8000000000001,
+      "end": 535.9200000000001,
+      "text": " which is basically the user is asking that run the tester as if whatever profit is made,"
+    },
+    {
+      "start": 535.9200000000001,
+      "end": 540.64,
+      "text": " I'm going to take it out and I'm always going to have the initial deposit in initial balance."
+    },
+    {
+      "start": 541.28,
+      "end": 547.2,
+      "text": " This 10,000 always in the tester. Then in that case, free margin becomes initial balance,"
+    },
+    {
+      "start": 547.2,
+      "end": 552.0,
+      "text": " balance becomes initial balance, activity becomes initial balance, because that's never going to change."
+    },
+    {
+      "start": 552.0,
+      "end": 555.52,
+      "text": " But that's only in the tester. Then we're going to get the margin requirement."
+    },
+    {
+      "start": 556.48,
+      "end": 560.56,
+      "text": " We're going to write a function, get margin required, sending it the symbol, and get leverage,"
+    },
+    {
+      "start": 561.52,
+      "end": 567.68,
+      "text": " sending it the symbol. And then we start with a logic equals 0. So let's go down again to the bottom,"
+    },
+    {
+      "start": 567.68,
+      "end": 571.36,
+      "text": " where we're going to have our helper functions. And here we're going to have"
+    },
+    {
+      "start": 572.0,
+      "end": 577.4399999999999,
+      "text": " get margin required for the symbol, where we're going to start with the margin 0, attempt 0. And then"
+    },
+    {
+      "start": 577.4399999999999,
+      "end": 582.88,
+      "text": " while the margin remains less than epsilon, so as long as it remains 0. And the attempt is less than"
+    },
+    {
+      "start": 583.52,
+      "end": 589.12,
+      "text": " 3. And the symbol is not equal to question mark question mark. I mean, normally in m2l5 with the"
+    },
+    {
+      "start": 589.12,
+      "end": 596.56,
+      "text": " symbol is blank, then it comes back as blank. But it's more valid for mt4, where sometimes the symbol"
+    },
+    {
+      "start": 596.56,
+      "end": 601.68,
+      "text": " value can actually come back to be question mark question mark question mark. So as long as less than 3 attempts,"
+    },
+    {
+      "start": 601.68,
+      "end": 606.08,
+      "text": " and the margin is 0, we increase the number of attempts, so that the next time it's attempt 2."
+    },
+    {
+      "start": 607.0400000000001,
+      "end": 612.32,
+      "text": " So if it's attempt 1, slip for 100 seconds, attempt 2, it's for 1,000 seconds, attempt 3,"
+    },
+    {
+      "start": 612.32,
+      "end": 619.44,
+      "text": " it's for 2,000 seconds. And then we're going to calculate order margin by sending by type order for the"
+    },
+    {
+      "start": 619.44,
+      "end": 627.0400000000001,
+      "text": " symbol, one lot size on ask and store the value into this variable margin. But because we're saying"
+    },
+    {
+      "start": 627.0400000000001,
+      "end": 633.36,
+      "text": " not, meaning if it fails, if you were able to put it in the margin here, great, but if it fails,"
+    },
+    {
+      "start": 633.36,
+      "end": 638.72,
+      "text": " then margin equals 0. So that the next time the margin is still below the epsilon and we do."
+    },
+    {
+      "start": 638.72,
+      "end": 643.6,
+      "text": " Now if the attempt becomes 3 and the margin is still below epsilon, then fail to get the margin."
+    },
+    {
+      "start": 644.0,
+      "end": 649.36,
+      "text": " After 3 attempts, otherwise return the margin. And then we're going to do the same thing for leverage,"
+    },
+    {
+      "start": 649.36,
+      "end": 653.84,
+      "text": " so we start with leverage. We get the leverage because here we had to calculate and here we can just"
+    },
+    {
+      "start": 653.84,
+      "end": 658.4,
+      "text": " simply get the leverage. But if the leverage turns out to be less than epsilon, then we do exactly the same"
+    },
+    {
+      "start": 658.56,
+      "end": 663.6,
+      "text": " thing 3 attempts. So exactly the same thing and set kind to set the leverage to account leverage."
+    },
+    {
+      "start": 664.4,
+      "end": 668.64,
+      "text": " And after 3 attempts, if it's still below epsilon, then we fail to get the account"
+    },
+    {
+      "start": 668.64,
+      "end": 675.84,
+      "text": " level after 3 attempts, otherwise return leverage. So we go back to our calculate lot size function."
+    },
+    {
+      "start": 675.84,
+      "end": 680.3199999999999,
+      "text": " So now we have this and we have this. We got the leverage and we got the margin. And then we're going to"
+    },
+    {
+      "start": 680.3199999999999,
+      "end": 687.1999999999999,
+      "text": " switch through lot size method, which is going to look through the members from this enum. So it's going"
+    },
+    {
+      "start": 687.2,
+      "end": 692.72,
+      "text": " to look through all of these 3, 3, 6, 8 different possibilities. So we need to look through all"
+    },
+    {
+      "start": 692.72,
+      "end": 697.36,
+      "text": " these 8 different possibilities. So we're going to start with switch lot size method, switch through"
+    },
+    {
+      "start": 697.36,
+      "end": 703.44,
+      "text": " all of the possibilities. Now if the case is fixed lots, then in that case, lots become the lot size"
+    },
+    {
+      "start": 703.44,
+      "end": 709.6,
+      "text": " 6 value, which the user has provided. If it is lots balance, then we're going to calculate"
+    },
+    {
+      "start": 709.6,
+      "end": 716.8000000000001,
+      "text": " from value by sending the balance value, margin required leverage and step. If it is based on equity,"
+    },
+    {
+      "start": 716.8000000000001,
+      "end": 722.2400000000001,
+      "text": " then we're going to calculate from value. But sending the equity, then if it's deposit load,"
+    },
+    {
+      "start": 722.96,
+      "end": 729.0400000000001,
+      "text": " then we're going to calculate from deposit load, sending 3 margin margin requirement level in step."
+    },
+    {
+      "start": 729.0400000000001,
+      "end": 735.2800000000001,
+      "text": " And then if it is based on risk percentage, 1.5 percent load, we're going to create a function,"
+    },
+    {
+      "start": 735.2800000000001,
+      "end": 739.5200000000001,
+      "text": " which we're going to call calculate from risk, sending it the 3 margin margin required leverage,"
+    },
+    {
+      "start": 739.5200000000001,
+      "end": 746.2400000000001,
+      "text": " and 1.5. If it is high, then we're going to send 1. If it's mid, then we're going to send 0.5."
+    },
+    {
+      "start": 746.24,
+      "end": 752.16,
+      "text": " And if it's low, then we're going to send 0.25. This is what we had put in the enn here."
+    },
+    {
+      "start": 752.16,
+      "end": 757.6,
+      "text": " 0.25 percent load, 0.5 percent load, 1.5 percent load, and 1.5 percent load. We're going to create"
+    },
+    {
+      "start": 757.6,
+      "end": 762.64,
+      "text": " all of these functions. So let's come down here and we're going to create the first one, which is"
+    },
+    {
+      "start": 763.2,
+      "end": 769.12,
+      "text": " the calculate lot from value, either balance or equity. We come down here outside the loop,"
+    },
+    {
+      "start": 769.12,
+      "end": 773.76,
+      "text": " and then we create this function. And we're going to send to it the account value from here,"
+    },
+    {
+      "start": 773.84,
+      "end": 779.36,
+      "text": " which we have already calculated, the balance, the equity. So we can send the balance or the equity,"
+    },
+    {
+      "start": 779.36,
+      "end": 785.36,
+      "text": " the divisor, which is going to be the lot size dynamic values. So up here, the user defines"
+    },
+    {
+      "start": 785.36,
+      "end": 793.52,
+      "text": " lot-sizing dynamic values, a dynamic lot. So balance equity based, meaning for $10,000, you open one lot."
+    },
+    {
+      "start": 793.52,
+      "end": 799.2,
+      "text": " So that's the divisor, then the margin required, which we calculated, get margin required,"
+    },
+    {
+      "start": 799.2800000000001,
+      "end": 805.6800000000001,
+      "text": " and then the leverage that we also got here, and then the step, the value that we got from the"
+    },
+    {
+      "start": 805.6800000000001,
+      "end": 811.9200000000001,
+      "text": " broker. So we're going to send all of these values. So in case of lots of balance, we're going to send"
+    },
+    {
+      "start": 811.9200000000001,
+      "end": 818.1600000000001,
+      "text": " the balance, and then we take the divisor and make it absolute, because in case of equity, it might be"
+    },
+    {
+      "start": 818.1600000000001,
+      "end": 823.44,
+      "text": " a negative value. So we need one, an absolute number. And then the lot's are going to become"
+    },
+    {
+      "start": 823.44,
+      "end": 830.1600000000001,
+      "text": " account value divided by the absolute divisor. So if the account value is 1000, then divided by 10,000,"
+    },
+    {
+      "start": 830.1600000000001,
+      "end": 838.4000000000001,
+      "text": " that the user has input. So if we get 1, and then we multiply it by 0.01, because that is the lot size that"
+    },
+    {
+      "start": 838.4000000000001,
+      "end": 843.6,
+      "text": " we're going to get for everyone, every 10,000, every 10,000 balance. And then divide by step,"
+    },
+    {
+      "start": 843.6,
+      "end": 848.4000000000001,
+      "text": " multiply by step and then route it, and then return the lots. So this is how we're going to calculate"
+    },
+    {
+      "start": 848.4,
+      "end": 854.72,
+      "text": " the lots from value, whether equity or balance. Then the next function, we're going to write is"
+    },
+    {
+      "start": 854.72,
+      "end": 865.36,
+      "text": " from deposit load, that the user can specify here himself of what that load is. So we write that formula."
+    },
+    {
+      "start": 865.36,
+      "end": 871.68,
+      "text": " Once again, we're going to check, margin required is not less than 0.001. So it is a definite value."
+    },
+    {
+      "start": 871.68,
+      "end": 876.4,
+      "text": " This is a definite value, and this is a definite value, that the user has provided. Otherwise,"
+    },
+    {
+      "start": 876.4,
+      "end": 884.16,
+      "text": " we cannot calculate and we return 0. Otherwise, what we do is, we take the free margin divided by"
+    },
+    {
+      "start": 884.16,
+      "end": 891.28,
+      "text": " margin, which is going to give us the maximum number of lots one can open, because if the margin required"
+    },
+    {
+      "start": 891.28,
+      "end": 898.9599999999999,
+      "text": " is 500, and you have 1000, every margin you can open two lots. But the margin required depends on leverage."
+    },
+    {
+      "start": 900.0799999999999,
+      "end": 905.1999999999999,
+      "text": " This is why we're going to normalize for leverage, and because you're multiplying these two together,"
+    },
+    {
+      "start": 905.2,
+      "end": 910.8000000000001,
+      "text": " so these will cancel each other out. So in case of 500 leverage, your margin rate, why it is"
+    },
+    {
+      "start": 910.8000000000001,
+      "end": 918.4000000000001,
+      "text": " going to be smaller? But so will your normalizer, that will also be smaller. So the multiplication of that."
+    },
+    {
+      "start": 918.4000000000001,
+      "end": 924.72,
+      "text": " So for example, let me give you a very quick example. So let's say you have 100 leverage, and you have"
+    },
+    {
+      "start": 924.72,
+      "end": 930.48,
+      "text": " 500 leverage. Now, free margin divided by margin required, in case of 100 leverage, you're going to"
+    },
+    {
+      "start": 930.48,
+      "end": 935.84,
+      "text": " require more margin. So let's suppose the maximum trades that you can open is two. And in case of"
+    },
+    {
+      "start": 935.84,
+      "end": 942.64,
+      "text": " 500 leverage, the maximum number of trades that you can open is 10, because you have more leverage. So your"
+    },
+    {
+      "start": 942.64,
+      "end": 948.88,
+      "text": " margin requirement is smaller. Then this 100 divided by leverage is going to be equals to one,"
+    },
+    {
+      "start": 948.88,
+      "end": 954.48,
+      "text": " but this 100 divided by leverage in case of a 500 leverage is going to be 0.2. So your actual is going"
+    },
+    {
+      "start": 954.48,
+      "end": 961.6,
+      "text": " to turn out to be this normalizer multiplied by the maximum loss that you can open. So two multiplied"
+    },
+    {
+      "start": 961.6,
+      "end": 970.64,
+      "text": " by 1 will equal 2. And in this case, 10 multiplied by 0.2 is also going to equal 2. Because we are calculating"
+    },
+    {
+      "start": 970.64,
+      "end": 977.36,
+      "text": " for deposit load. So we need to cancel out the effect of the margin and the leverage. So leverage"
+    },
+    {
+      "start": 977.36,
+      "end": 982.32,
+      "text": " is going to impact the margin. And 5 times the margin is basically means that you can open 5 times"
+    },
+    {
+      "start": 982.32,
+      "end": 988.96,
+      "text": " the number of trades. If with 1 to 100, you could open 2 trades, but then if you have a 5 times"
+    },
+    {
+      "start": 988.96,
+      "end": 995.12,
+      "text": " leverage 500, then you can open 5 times the trade. But that is the normalize by 100 divided by the"
+    },
+    {
+      "start": 995.12,
+      "end": 1001.84,
+      "text": " leverage, because 100 divided by 100 is going to be 1, 100 divided by 500 is going to be 0.2, which is"
+    },
+    {
+      "start": 1001.84,
+      "end": 1007.9200000000001,
+      "text": " 5 times less. So 5 times higher because of the margin required, but 5 times smaller because of the"
+    },
+    {
+      "start": 1008.5600000000001,
+      "end": 1014.8800000000001,
+      "text": " leverage normalizer will give you exactly the same result. So this is where we are neutralizing"
+    },
+    {
+      "start": 1015.5200000000001,
+      "end": 1022.5600000000001,
+      "text": " the leverage. And then it is just down to lot size deposit load divided by 100. So if the user has"
+    },
+    {
+      "start": 1022.5600000000001,
+      "end": 1030.16,
+      "text": " set 2.5, so 2.5 divided by 100 to get a 2.5 percent. And then we divide by step multiply by step to"
+    },
+    {
+      "start": 1030.16,
+      "end": 1036.64,
+      "text": " round it up to do 2 a proper rounding. And then we match flow rate. So we always round it down"
+    },
+    {
+      "start": 1037.2,
+      "end": 1042.48,
+      "text": " because we don't want to over leverage. So this is the calculation of the lot from deposit load."
+    },
+    {
+      "start": 1042.48,
+      "end": 1049.3600000000001,
+      "text": " And then we can create a calculation from risk. So calculation from risk. Once again, we're going to check"
+    },
+    {
+      "start": 1049.3600000000001,
+      "end": 1056.16,
+      "text": " if this is a valid value, a valid value. Otherwise, once again, this is the leverage normalizer,"
+    },
+    {
+      "start": 1056.64,
+      "end": 1060.88,
+      "text": " this is the maximum number of trades you can open based on the margin required."
+    },
+    {
+      "start": 1061.44,
+      "end": 1066.0800000000002,
+      "text": " But this time, instead of the lot size deposit that the user can specify, we are sending"
+    },
+    {
+      "start": 1067.1200000000001,
+      "end": 1073.52,
+      "text": " preset risk settings. And then doing exactly the same divide by 100 to convert it into a percentage"
+    },
+    {
+      "start": 1073.52,
+      "end": 1078.48,
+      "text": " and then divide by step multiply by step and match flow. So these two formulas are practically the"
+    },
+    {
+      "start": 1078.48,
+      "end": 1084.4,
+      "text": " same. The only thing is here we're sending the values. And here we're not sending a value. So the"
+    },
+    {
+      "start": 1084.4,
+      "end": 1090.88,
+      "text": " it comes from lot sizing, lot size deposit load that the user can specify. So these are the"
+    },
+    {
+      "start": 1090.88,
+      "end": 1098.96,
+      "text": " functions that we are using here. And then we're going to do a quick check that our maximum multiplier on"
+    },
+    {
+      "start": 1098.96,
+      "end": 1106.0,
+      "text": " any of the symbol run all the way to the maximum number of trades that you can have in a grid is not going"
+    },
+    {
+      "start": 1106.0,
+      "end": 1112.8000000000002,
+      "text": " to exceed the brokers maximum number of lots allowed. I mean for now type this. But then once we have"
+    },
+    {
+      "start": 1112.8799999999999,
+      "end": 1117.12,
+      "text": " written all the function, then I'll come back and explain what is happening here. So that the"
+    },
+    {
+      "start": 1117.12,
+      "end": 1123.52,
+      "text": " lot size throughout the entire grid all together cannot exceed the maximum number of loads that you can have."
+    },
+    {
+      "start": 1124.1599999999999,
+      "end": 1131.36,
+      "text": " So this max grid multiplier, let's go down in our helper functions. And we write it here,"
+    },
+    {
+      "start": 1131.36,
+      "end": 1136.56,
+      "text": " the total function, which is basically we're going to move through the symbol arrays, all three of them,"
+    },
+    {
+      "start": 1136.56,
+      "end": 1142.56,
+      "text": " or all four of them, however many currencies. And then we are trying to get the maximum"
+    },
+    {
+      "start": 1142.6399999999999,
+      "end": 1149.12,
+      "text": " multiplier between those three symbols. So if symbol one has a multiplier of x, but"
+    },
+    {
+      "start": 1149.76,
+      "end": 1156.1599999999999,
+      "text": " symbol two has a multiplier which is larger than x, then we want to get the maximum multiplier. So what we're"
+    },
+    {
+      "start": 1156.1599999999999,
+      "end": 1160.72,
+      "text": " going to do is we're going to loop through the symbol arrays, all currencies. And then we're going to check"
+    },
+    {
+      "start": 1161.12,
+      "end": 1167.36,
+      "text": " we start with a zero value. And then if the max lot multiplier max grid lot multiplier on that symbol"
+    },
+    {
+      "start": 1168.0800000000002,
+      "end": 1174.0000000000002,
+      "text": " is bigger than whatever is currently stored in max multiplier, then we increase it or we change"
+    },
+    {
+      "start": 1174.0000000000002,
+      "end": 1183.1200000000001,
+      "text": " the max multiplier to the higher multiplier. And we loop through all of the currencies. So in the end,"
+    },
+    {
+      "start": 1183.1200000000001,
+      "end": 1189.6000000000001,
+      "text": " the max multiplier is going to be the max grid lot multiplier of whichever currency has the biggest value"
+    },
+    {
+      "start": 1189.6000000000001,
+      "end": 1195.8400000000001,
+      "text": " and then we return that max multiplier. So that's how we're going to get the max grid multiplier."
+    },
+    {
+      "start": 1195.84,
+      "end": 1200.8799999999999,
+      "text": " And then we're going to calculate, this is just to get it. But then we're also going to calculate"
+    },
+    {
+      "start": 1201.4399999999998,
+      "end": 1209.1999999999998,
+      "text": " the grid lot multiplier. So we're going to start with a starting lot of 0.1 where total loss is also 0.1."
+    },
+    {
+      "start": 1210.08,
+      "end": 1215.84,
+      "text": " And then we're going to go through from level one to level maximum number of trade that the user has"
+    },
+    {
+      "start": 1215.84,
+      "end": 1221.84,
+      "text": " allowed in a grid minus one because it always starts at zero. And then what we're going to do is we're"
+    },
+    {
+      "start": 1221.84,
+      "end": 1228.8,
+      "text": " going to calculate the grid lot size for that level, starting at the starting lot going all the way"
+    },
+    {
+      "start": 1228.8,
+      "end": 1235.4399999999998,
+      "text": " up to the level that we're going to that we are checking here. And then add it to the total lots of 0.1 because"
+    },
+    {
+      "start": 1235.4399999999998,
+      "end": 1241.1999999999998,
+      "text": " that is our starting lot. And then if we divide the total loss that we're going to get here by the starting"
+    },
+    {
+      "start": 1241.1999999999998,
+      "end": 1247.6,
+      "text": " lot, that's going to give us the multiplier. So for example, if the starting lot is 0.1 and looping through"
+    },
+    {
+      "start": 1247.6000000000001,
+      "end": 1253.7600000000002,
+      "text": " all of the levels and adding it to the total lots, we're starting at 0.1 but then we're adding after"
+    },
+    {
+      "start": 1253.7600000000002,
+      "end": 1259.44,
+      "text": " calculating for the next level what the lot size should be. So in the end the total loss is going to be"
+    },
+    {
+      "start": 1259.44,
+      "end": 1266.4,
+      "text": " the total sum of the lots for all the levels hypothetically all of them were placed. So we get that total"
+    },
+    {
+      "start": 1266.4,
+      "end": 1271.8400000000001,
+      "text": " and if we divide it by the start lot, then we're going to get the multiplier. So this is how we're going to"
+    },
+    {
+      "start": 1271.8400000000001,
+      "end": 1276.4,
+      "text": " calculate the multiplier for the currency pair that we're sending to this function. So this is how we"
+    },
+    {
+      "start": 1276.4,
+      "end": 1282.3200000000002,
+      "text": " will calculate and store the value of the max lot multiplier and this function we're going to use to"
+    },
+    {
+      "start": 1282.3200000000002,
+      "end": 1288.3200000000002,
+      "text": " get the value that we have stored in these through this function. Now in order to calculate the max"
+    },
+    {
+      "start": 1288.3200000000002,
+      "end": 1294.0800000000002,
+      "text": " grid lot multiplier, we're using this function where we're going to be sending the value of the start"
+    },
+    {
+      "start": 1294.0800000000002,
+      "end": 1302.0800000000002,
+      "text": " lot and what level that we are getting it for to get the lot size back. So we need to create that"
+    },
+    {
+      "start": 1302.08,
+      "end": 1309.6799999999998,
+      "text": " function as well but for now I will just stop it at the end that calculate the grid lot and by the"
+    },
+    {
+      "start": 1309.6799999999998,
+      "end": 1322.48,
+      "text": " way these three functions we can take them from here I'm going to cut it and we put probably the best"
+    },
+    {
+      "start": 1322.48,
+      "end": 1330.0,
+      "text": " place for them is going to be in the section of lot size functions because these are related to lot"
+    },
+    {
+      "start": 1330.64,
+      "end": 1336.16,
+      "text": " even the multiplier so I'm going to paste it here. So for now I'm just going to stop it at 0.1 but"
+    },
+    {
+      "start": 1336.16,
+      "end": 1340.96,
+      "text": " what this function is supposed to do later on is that we're going to send to it a level and we're going"
+    },
+    {
+      "start": 1340.96,
+      "end": 1347.44,
+      "text": " to get back for that level what the lot size should be and this is what we're going to use here in the"
+    },
+    {
+      "start": 1347.44,
+      "end": 1354.8,
+      "text": " Calgary max grid lot is starting at 0.1 but then looping through the levels from level one all the way"
+    },
+    {
+      "start": 1354.8,
+      "end": 1360.8799999999999,
+      "text": " to the maximum trace minus one and then getting the lot size of what that level lot size should be"
+    },
+    {
+      "start": 1361.44,
+      "end": 1366.8799999999999,
+      "text": " adding it back to the total lots which is the same value as lots starting so that we get the total"
+    },
+    {
+      "start": 1366.8799999999999,
+      "end": 1374.24,
+      "text": " lot for the entire grid to the maximum and then we divide one by the other to get the multiplier. Then"
+    },
+    {
+      "start": 1374.24,
+      "end": 1380.6399999999999,
+      "text": " we're going to store the multiplier into that simple currencies max grid lot multiplier max grid lot"
+    },
+    {
+      "start": 1380.64,
+      "end": 1387.3600000000001,
+      "text": " multiplier for every currency and then we will be able to get the max grid multiplier across the"
+    },
+    {
+      "start": 1387.3600000000001,
+      "end": 1393.2800000000002,
+      "text": " year for all the currencies by looping through all of the currencies comparing their max grid lot"
+    },
+    {
+      "start": 1393.2800000000002,
+      "end": 1399.92,
+      "text": " multiplier and then getting whatever is the highest of the old those multipliers. So for now let's go back"
+    },
+    {
+      "start": 1399.92,
+      "end": 1406.96,
+      "text": " to our Calculate lot size function which we are writing but before that now that we have written this"
+    },
+    {
+      "start": 1406.96,
+      "end": 1411.92,
+      "text": " function even though it is a stop for now but this is first time going to be called in the"
+    },
+    {
+      "start": 1411.92,
+      "end": 1420.08,
+      "text": " parts and initialize symbols so after this line we're going to also assign the max lot grid multiplier"
+    },
+    {
+      "start": 1420.96,
+      "end": 1426.4,
+      "text": " to the functions while we are parsing and initializing them by using the Calculate max grid lot"
+    },
+    {
+      "start": 1426.4,
+      "end": 1431.44,
+      "text": " multiplier that we have created we haven't written the codes within it but at least now we have"
+    },
+    {
+      "start": 1431.6000000000001,
+      "end": 1437.44,
+      "text": " created that function and that functions job is to calculate for the symbol what is the max grid"
+    },
+    {
+      "start": 1437.44,
+      "end": 1443.8400000000001,
+      "text": " lot's multiplier is and then store that value into the symbol array and this we should also do here"
+    },
+    {
+      "start": 1443.8400000000001,
+      "end": 1449.28,
+      "text": " so in after initializing the symbol data we're going to do the same as well so if it is not a"
+    },
+    {
+      "start": 1449.28,
+      "end": 1454.72,
+      "text": " tester then it's live environment so we're doing this but if it is the tester then it's just one symbol"
+    },
+    {
+      "start": 1454.72,
+      "end": 1459.76,
+      "text": " so we're going to send that symbol. Now back again to calculate lot size after doing this check we're"
+    },
+    {
+      "start": 1459.84,
+      "end": 1466.08,
+      "text": " going to do another check which is the grid level to start remember we had an option for the user"
+    },
+    {
+      "start": 1466.08,
+      "end": 1471.76,
+      "text": " to say grid level to start is one or what I mean one is a default value but the user might also say it's like"
+    },
+    {
+      "start": 1471.76,
+      "end": 1477.36,
+      "text": " okay well the normally with the RSI value the grid should open here and then the first level should be"
+    },
+    {
+      "start": 1477.36,
+      "end": 1481.68,
+      "text": " here and the second level should be here and the third level should be here but I don't want to trade the"
+    },
+    {
+      "start": 1481.68,
+      "end": 1486.96,
+      "text": " level 0 level 1 and level 2 I want to start from level 3 because I'm in any case expecting the"
+    },
+    {
+      "start": 1486.96,
+      "end": 1493.3600000000001,
+      "text": " price to go against me so I would rather start opening the trades later but in order to calculate all"
+    },
+    {
+      "start": 1493.3600000000001,
+      "end": 1500.56,
+      "text": " of the lot's size improperly we will still have to stop a 0.01 the minimum lot size at the base at the"
+    },
+    {
+      "start": 1500.56,
+      "end": 1507.44,
+      "text": " level 1 and level 2 before this level that the user has defined has hit and this is why here in our calculation"
+    },
+    {
+      "start": 1507.44,
+      "end": 1513.52,
+      "text": " of the lot sizes if the grid level 2 start is greater than 1 meaning the user has specified that we should"
+    },
+    {
+      "start": 1513.6,
+      "end": 1520.16,
+      "text": " actually start lot sizing like from level 3 or level 4 then level 0 1 and 2 we need to set the lot"
+    },
+    {
+      "start": 1520.16,
+      "end": 1526.32,
+      "text": " size to minimum lot to just place a trade so that we have a grid but not with the actual lots but just a"
+    },
+    {
+      "start": 1526.32,
+      "end": 1532.16,
+      "text": " placeholder with the minimum amount possible and then we normalize the lot size by creating a function"
+    },
+    {
+      "start": 1532.16,
+      "end": 1538.48,
+      "text": " normalize lot size sending it to it the symbol and the lot size because it can be different digits or"
+    },
+    {
+      "start": 1538.48,
+      "end": 1543.12,
+      "text": " different requirements for the steps and then we just return the lot size so this is our"
+    },
+    {
+      "start": 1543.1200000000001,
+      "end": 1548.96,
+      "text": " calculated lot size function and now we need to write this normalize the lot size function so let's"
+    },
+    {
+      "start": 1548.96,
+      "end": 1556.16,
+      "text": " maybe come down here before the cat multiplier this is where we can create this function which is again"
+    },
+    {
+      "start": 1556.16,
+      "end": 1561.6000000000001,
+      "text": " we're going to get the step in the minimum volume and the lot size is going to be lot size divided by"
+    },
+    {
+      "start": 1561.6000000000001,
+      "end": 1566.64,
+      "text": " staff multiplier by steps that's just rounding and math round and then if the lot size turns out to be"
+    },
+    {
+      "start": 1566.64,
+      "end": 1571.92,
+      "text": " less than the minimum lot acceptable by the broker then in that case lot size become minimum lot"
+    },
+    {
+      "start": 1572.0,
+      "end": 1576.8000000000002,
+      "text": " and then we get the digits and then we normalize the lot size to the number of digits so this is how"
+    },
+    {
+      "start": 1576.8000000000002,
+      "end": 1583.2,
+      "text": " we will normalize the lot size let's compile we seem to be okay now we can run and check whether or not"
+    },
+    {
+      "start": 1583.2,
+      "end": 1599.04,
+      "text": " our lot sizing is working and now you can see that our lot sizes are now being calculated"
+    },
+    {
+      "start": 1599.76,
+      "end": 1606.24,
+      "text": " based on the values that we have selected in our input. But by the way let's go back again"
+    },
+    {
+      "start": 1606.24,
+      "end": 1613.92,
+      "text": " and we're going to remove the commented out tester height indicators so that we don't end up seeing the"
+    },
+    {
+      "start": 1613.92,
+      "end": 1619.28,
+      "text": " indicators so if I run now we see that the lot sizes are working for the initial grid we still haven't"
+    },
+    {
+      "start": 1619.28,
+      "end": 1627.28,
+      "text": " it in the grid so it's 0.03 coming out here but if I go back to the input and I let suppose change it"
+    },
+    {
+      "start": 1627.28,
+      "end": 1642.24,
+      "text": " to higher setting then we get a different lot size and then if I go fixed lots then that is"
+    },
+    {
+      "start": 1642.24,
+      "end": 1652.08,
+      "text": " we getting fixed lots if I go based on balance but let's change this to 1000 is 0.1 lot per 1000"
+    },
+    {
+      "start": 1652.08,
+      "end": 1663.84,
+      "text": " and our balance is 1000 so we should be getting a 0.1 if it was based on every I don't know"
+    },
+    {
+      "start": 1663.84,
+      "end": 1674.08,
+      "text": " 500 can we should be getting 0.2 and we're getting 0.2 at this point we have written opening of"
+    },
+    {
+      "start": 1674.08,
+      "end": 1683.12,
+      "text": " the first trade based on RSI and we have written the calculation of the lot sizes for the first trade"
+    },
+    {
+      "start": 1683.12,
+      "end": 1688.8799999999999,
+      "text": " and now in the next section we will start to write grid related functions where we're going to open"
+    },
+    {
+      "start": 1688.8799999999999,
+      "end": 1695.76,
+      "text": " up the grids based on the distances that the user has specified and then also do the calculation of"
+    },
+    {
+      "start": 1695.76,
+      "end": 1702.56,
+      "text": " the lot sizes for the next layers in the grid so now we're going to continue with our grid management"
+    },
+    {
+      "start": 1702.56,
+      "end": 1707.36,
+      "text": " so we're going to open up the grids and manage all the levels for the lot size and everything remember"
+    },
+    {
+      "start": 1707.36,
+      "end": 1712.6399999999999,
+      "text": " we wrote a special magic number for every trade so now we need a helper function for us to be"
+    },
+    {
+      "start": 1712.6399999999999,
+      "end": 1718.56,
+      "text": " able to decode it as well so we're going to go up and just below the structure we're going to create"
+    },
+    {
+      "start": 1719.6,
+      "end": 1726.72,
+      "text": " a class and there are going to be four elements of the class which is mds, uid, magic case and"
+    },
+    {
+      "start": 1726.72,
+      "end": 1732.24,
+      "text": " digits when we will be calling as functions magic helpers we're going to be sending it the base value"
+    },
+    {
+      "start": 1732.24,
+      "end": 1737.6,
+      "text": " and then uid value and we're going to assign the base value to m on the score days the one that we've"
+    },
+    {
+      "start": 1737.6,
+      "end": 1745.44,
+      "text": " created here, uid to uid and magic days is going to be equal to base plus the uid because uid is the"
+    },
+    {
+      "start": 1745.44,
+      "end": 1754.24,
+      "text": " instance so if we have 84570 and 84570 plus 1 and then and digits is the number of digits in this magic"
+    },
+    {
+      "start": 1754.24,
+      "end": 1758.72,
+      "text": " case so we're going to convert it to a string and then we're going to get the length of that string"
+    },
+    {
+      "start": 1759.28,
+      "end": 1764.24,
+      "text": " and store it here and then we're going to write a few helper functions within this class which we"
+    },
+    {
+      "start": 1764.24,
+      "end": 1771.76,
+      "text": " can call upon so the first one is get base so whenever we will call get base we are basically asking for the"
+    },
+    {
+      "start": 1771.76,
+      "end": 1777.28,
+      "text": " magic numbers of base plus uid so just return the magic days and then the second function we're going to"
+    },
+    {
+      "start": 1777.28,
+      "end": 1785.44,
+      "text": " create is get direction magic meaning get base only or get the direction plus the base and we're"
+    },
+    {
+      "start": 1785.44,
+      "end": 1789.92,
+      "text": " going to send it the direction so whether it's a buy or it's a sell and in that case return in the"
+    },
+    {
+      "start": 1789.92,
+      "end": 1798.3200000000002,
+      "text": " 10 raise to the power 7 because m digit is equal to 5 our case is 84570 so it's 5 digits plus 2 times the"
+    },
+    {
+      "start": 1798.3200000000002,
+      "end": 1805.3600000000001,
+      "text": " direction so whatever we're going to send either we're going to send 1 or 2 and then plus 2 it the magic base"
+    },
+    {
+      "start": 1805.3600000000001,
+      "end": 1813.92,
+      "text": " times 100 meaning this number so for buy it's going to become 1 10 raise to the power 5 times the"
+    },
+    {
+      "start": 1813.92,
+      "end": 1826.5600000000002,
+      "text": " direction so times 1 and plus the 84570 times 100 so it's going to be 1 84570 so we're getting a"
+    },
+    {
+      "start": 1826.5600000000002,
+      "end": 1833.04,
+      "text": " magic number with direction like this without the levels so the levels are going to be 0 then get level"
+    },
+    {
+      "start": 1833.04,
+      "end": 1839.2,
+      "text": " magic meaning this time around we're asking for the level as well so we're going to send direction"
+    },
+    {
+      "start": 1839.2,
+      "end": 1846.32,
+      "text": " and the level so now our calculation is going to be this plus this but then plus the level as well"
+    },
+    {
+      "start": 1846.32,
+      "end": 1852.4,
+      "text": " let's say is the level is 2 then what we're going to get in the end is this number so now we have the direction"
+    },
+    {
+      "start": 1852.4,
+      "end": 1858.24,
+      "text": " the base magic number including the uid and the level it is exactly the same way but here we're"
+    },
+    {
+      "start": 1858.24,
+      "end": 1864.56,
+      "text": " including the level as well then another function we're going to create that we can call upon is is our order"
+    },
+    {
+      "start": 1865.2,
+      "end": 1869.52,
+      "text": " and we're going to send the magic number I mean when we get from the position the magic number we can"
+    },
+    {
+      "start": 1869.52,
+      "end": 1875.28,
+      "text": " send it here to check if it is our order and then we start with if the magic number is less than or equal to 0 then"
+    },
+    {
+      "start": 1875.28,
+      "end": 1880.8,
+      "text": " just return false that it's not ours it might be a manual trade and then the prefix is going to be"
+    },
+    {
+      "start": 1880.8,
+      "end": 1886.48,
+      "text": " magic number divided by 100 because for example if this is the magic number that comes back if this was the"
+    },
+    {
+      "start": 1886.48,
+      "end": 1893.2,
+      "text": " magic number then we're basically saying this divided by 100 and it will return 1 8 4 5 7 0"
+    },
+    {
+      "start": 1893.2,
+      "end": 1900.24,
+      "text": " so it will be without the level the prefix so dividing it by 100 as we are creating is that end so it's"
+    },
+    {
+      "start": 1900.24,
+      "end": 1906.32,
+      "text": " going to be rounded down so you're going to get 1 8 4 5 7 0 and that's going to be over by prefix and then"
+    },
+    {
+      "start": 1906.32,
+      "end": 1913.28,
+      "text": " by prefix is magic days plus the 10 raise to the power 5 the number of digits so the by prefix"
+    },
+    {
+      "start": 1913.28,
+      "end": 1922.08,
+      "text": " becomes the magic number base so 8 4 5 7 0 plus 10 0 0 0 0 10 raise to the power 5 so it's going to"
+    },
+    {
+      "start": 1922.08,
+      "end": 1929.2,
+      "text": " become 1 8 4 5 7 0 and that will always be our prefix for by no matter what magic number we can"
+    },
+    {
+      "start": 1929.2,
+      "end": 1936.3999999999999,
+      "text": " create because of the way we create the magic numbers here for example the prefix is always going to be"
+    },
+    {
+      "start": 1936.4,
+      "end": 1943.52,
+      "text": " for the by 1 8 4 5 7 0 because the last two digits are level so this is our by prefix and in case of"
+    },
+    {
+      "start": 1943.52,
+      "end": 1955.1200000000001,
+      "text": " cell we multiply the 10 raise to the power 5 by 2 so then it becomes 8 4 5 7 0 plus 1 10 raise to the power 5"
+    },
+    {
+      "start": 1955.1200000000001,
+      "end": 1962.48,
+      "text": " but this one is times 2 so this is going to become 2 8 4 5 7 0 so this is always going to be our"
+    },
+    {
+      "start": 1962.48,
+      "end": 1967.68,
+      "text": " prefix for a cell trade our cell trade will always have this number and our by trade is going to have"
+    },
+    {
+      "start": 1967.68,
+      "end": 1972.24,
+      "text": " this number depending on the UID, the name stands but the UID is going to become a constant so it's"
+    },
+    {
+      "start": 1972.24,
+      "end": 1978.88,
+      "text": " ether going to be 8 7 0 or 8 7 1 8 7 2 up to 9 but this is how we will be able to create the magic number"
+    },
+    {
+      "start": 1978.88,
+      "end": 1984.16,
+      "text": " so now we can read the magic number exactly the same way as well so when we send the magic number we"
+    },
+    {
+      "start": 1984.16,
+      "end": 1991.28,
+      "text": " divided by 100 to get the prefix and then we can check it against the prefix so if the prefix is equal"
+    },
+    {
+      "start": 1991.84,
+      "end": 1996.8799999999999,
+      "text": " this prefix or the prefix that we are getting from the magic number is equal to this prefix"
+    },
+    {
+      "start": 1996.8799999999999,
+      "end": 2003.76,
+      "text": " then it is our order so in that case ether or in that case this is our order so we can return a true"
+    },
+    {
+      "start": 2003.76,
+      "end": 2009.36,
+      "text": " so this is how we will check the magic numbers. Now if we get the magic number from a position and we"
+    },
+    {
+      "start": 2009.36,
+      "end": 2014.0,
+      "text": " want to check the direction from the magic number we're going to send to it the magic number"
+    },
+    {
+      "start": 2014.0,
+      "end": 2018.96,
+      "text": " then we're going to check if it is our magic number by running this function and if it is not then"
+    },
+    {
+      "start": 2018.96,
+      "end": 2024.32,
+      "text": " and then we return 0, but if it is 10 prefix is equals to magic divided by 100 that we have"
+    },
+    {
+      "start": 2024.32,
+      "end": 2029.04,
+      "text": " done here as well. So, you basically remove the last two digits and then it is the prefix."
+    },
+    {
+      "start": 2029.76,
+      "end": 2034.72,
+      "text": " Then if it is the bi-prefix or the cell prefix. So, we create the bi- and cell prefix again"
+    },
+    {
+      "start": 2034.72,
+      "end": 2040.64,
+      "text": " exactly the same way as we have done here. If the prefix equals bi-prefix then we turn 1 meaning"
+    },
+    {
+      "start": 2040.64,
+      "end": 2045.2,
+      "text": " it is a bi because we are trying to get the direction from the magic. And if the prefix equals"
+    },
+    {
+      "start": 2045.2,
+      "end": 2051.76,
+      "text": " cell prefix meaning this prefix then return 2. So, we can send the magic number, remove the"
+    },
+    {
+      "start": 2051.76,
+      "end": 2057.76,
+      "text": " two digits and then it is going to be either this or this. So, we can check versus the bi-prefix"
+    },
+    {
+      "start": 2057.76,
+      "end": 2063.76,
+      "text": " and cell prefix whether it is this number or this number. If it is this number then we know"
+    },
+    {
+      "start": 2063.76,
+      "end": 2068.08,
+      "text": " that it is a bias. So, we return 1. If it is this number then we know that it is a cell"
+    },
+    {
+      "start": 2068.08,
+      "end": 2074.32,
+      "text": " so, we return 2. So, this way by using this function and sending to it the magic number we can check whether or"
+    },
+    {
+      "start": 2074.32,
+      "end": 2080.4,
+      "text": " not it is our magic first and then if it is our magic number then we can check what is the direction"
+    },
+    {
+      "start": 2080.4,
+      "end": 2085.04,
+      "text": " whether it is a bi or it is a cell. And then the last thing we are going to create here is to get the level"
+    },
+    {
+      "start": 2085.04,
+      "end": 2089.76,
+      "text": " from the magic number which is very simple we are going to send to it the magic number. We are going to first"
+    },
+    {
+      "start": 2089.76,
+      "end": 2094.4,
+      "text": " check whether or not this magic number which is coming is our order by using this function."
+    },
+    {
+      "start": 2095.28,
+      "end": 2102.56,
+      "text": " And then it is basically magic percentage 2 which is get the last two digits of the magic number."
+    },
+    {
+      "start": 2102.64,
+      "end": 2107.84,
+      "text": " So, whatever is the magic number the percentage 2 basically means an mql that get the last two"
+    },
+    {
+      "start": 2107.84,
+      "end": 2113.04,
+      "text": " digits. So, get this these two. So, this is how we going to get the level numbers as well. So, these are"
+    },
+    {
+      "start": 2113.04,
+      "end": 2118.72,
+      "text": " all the functions that we have created in this helper class magic helper which we can use and then we close"
+    },
+    {
+      "start": 2118.72,
+      "end": 2124.08,
+      "text": " the class and because it is a class so, you do not just close it with the curly bracket you all support"
+    },
+    {
+      "start": 2124.08,
+      "end": 2131.2,
+      "text": " a semicolon just like a coding statement. So, this is our class let me compile and everything is fine."
+    },
+    {
+      "start": 2131.2799999999997,
+      "end": 2137.7599999999998,
+      "text": " Now, that we have created this class we need to initialize it in a way and we can do it here just after"
+    },
+    {
+      "start": 2137.7599999999998,
+      "end": 2143.52,
+      "text": " we have written all of these global variables we are going to initiate this here by sending to it"
+    },
+    {
+      "start": 2144.16,
+      "end": 2150.48,
+      "text": " the magic number base and uid. And why we are writing writing it here is because this is after the magic"
+    },
+    {
+      "start": 2150.48,
+      "end": 2156.72,
+      "text": " number base and the uid value. So, once we have established these two values this is very initialized"
+    },
+    {
+      "start": 2157.0400000000004,
+      "end": 2162.2400000000002,
+      "text": " so that these values can be sent back to this magic helper because that is what we said we are"
+    },
+    {
+      "start": 2162.2400000000002,
+      "end": 2168.1600000000003,
+      "text": " going to send it to base and we are going to send it to uid. So, here we can send it because we have already"
+    },
+    {
+      "start": 2168.1600000000003,
+      "end": 2175.6800000000003,
+      "text": " established them here and here. I will compile it again just to make sure and it is fine and now we can"
+    },
+    {
+      "start": 2175.6800000000003,
+      "end": 2181.84,
+      "text": " go back down to our grades part because now we are going to start creating all the functions which are"
+    },
+    {
+      "start": 2182.56,
+      "end": 2187.2000000000003,
+      "text": " related to opening of the grades and management of the grades. So, the first one,"
+    },
+    {
+      "start": 2187.2000000000003,
+      "end": 2194.48,
+      "text": " grade exists. What we are going to send to it is the symbol the level and the direction and we are basically"
+    },
+    {
+      "start": 2194.48,
+      "end": 2202.1600000000003,
+      "text": " asking if the grade exists at this level for this direction. Now, if we send minus one is going to be"
+    },
+    {
+      "start": 2202.1600000000003,
+      "end": 2208.0,
+      "text": " asking for a cell if we are sending it a plus one then we are asking for a pi. So, what we are going to do"
+    },
+    {
+      "start": 2208.0,
+      "end": 2213.04,
+      "text": " is we are going to loop through all of the positions looping through all positions total and then we say"
+    },
+    {
+      "start": 2213.04,
+      "end": 2219.44,
+      "text": " if position by select sales then bring it to this that order selects it. Otherwise, you have selected"
+    },
+    {
+      "start": 2219.44,
+      "end": 2224.96,
+      "text": " the first position we are going from zero all the way to the total number of positions minus one"
+    },
+    {
+      "start": 2224.96,
+      "end": 2230.4,
+      "text": " because we are saying less than position total. Then we are sending it a symbol ourselves so we can check"
+    },
+    {
+      "start": 2230.4,
+      "end": 2236.16,
+      "text": " if the position enforceable. So, the position we selected if the symbol of that position is not equal"
+    },
+    {
+      "start": 2236.16,
+      "end": 2241.12,
+      "text": " to our symbol then it is not a position that we are interested in. So, continue to go to the next"
+    },
+    {
+      "start": 2241.12,
+      "end": 2246.08,
+      "text": " position, don't do anything below, just go to the next iteration. Then we are going to get the magic number"
+    },
+    {
+      "start": 2246.08,
+      "end": 2250.72,
+      "text": " so we create a magic number and we say position in for magic number. So, we get that and store it into"
+    },
+    {
+      "start": 2250.72,
+      "end": 2255.7599999999998,
+      "text": " this variable and then using our helper class we can check whether or not it is our magic number."
+    },
+    {
+      "start": 2255.7599999999998,
+      "end": 2260.3199999999997,
+      "text": " So, this helper class that we have created is our order that is what we are going to use here"
+    },
+    {
+      "start": 2260.96,
+      "end": 2266.0,
+      "text": " is our order and send it the magic number. So, if the return value is false so it is not our"
+    },
+    {
+      "start": 2266.0,
+      "end": 2271.52,
+      "text": " magic number then it is not a position open by this instance of the year. So, we are not interested"
+    },
+    {
+      "start": 2271.52,
+      "end": 2277.6,
+      "text": " in this. So, continue we need to go to the next position but if it is our magic number then get the"
+    },
+    {
+      "start": 2277.6,
+      "end": 2283.84,
+      "text": " direction from magic remember we just created the helper class to get the direction from the magic number."
+    },
+    {
+      "start": 2283.84,
+      "end": 2288.64,
+      "text": " So, get the direction whether it is a by or it is a cell and we store it into order direction"
+    },
+    {
+      "start": 2288.64,
+      "end": 2294.88,
+      "text": " and then we say that the direction that we are sending here if that is one and the direction that we"
+    },
+    {
+      "start": 2294.88,
+      "end": 2301.6,
+      "text": " got from the magic number is not one then it is also what we are not interested in go to the next position"
+    },
+    {
+      "start": 2301.6,
+      "end": 2307.92,
+      "text": " then if the direction is minus one what we are sending here because we are going to send one for by"
+    },
+    {
+      "start": 2307.92,
+      "end": 2315.12,
+      "text": " and minus one for cell if we are sending the direction as cell minus one and what has returned from"
+    },
+    {
+      "start": 2315.12,
+      "end": 2320.8,
+      "text": " get the direction of the magic is not two because for the cell the value that returns here is two"
+    },
+    {
+      "start": 2320.8,
+      "end": 2326.0,
+      "text": " look back at the magic function that we created. So, when we get the direction if it is a cell"
+    },
+    {
+      "start": 2326.0,
+      "end": 2330.88,
+      "text": " prefix then return two. So, when we are asking here we are going to send minus one if it is a cell"
+    },
+    {
+      "start": 2331.6800000000003,
+      "end": 2338.4,
+      "text": " we are checking for a cell grid plus one if we are checking for a by grid and 0 if we are checking for any"
+    },
+    {
+      "start": 2338.4,
+      "end": 2344.7200000000003,
+      "text": " grid cell or by. So, if it is not equal to then continue as well continuing to go to the next position"
+    },
+    {
+      "start": 2344.7200000000003,
+      "end": 2349.1200000000003,
+      "text": " and then we are going to check for the order level once again by using our helper function we are going"
+    },
+    {
+      "start": 2349.2,
+      "end": 2354.08,
+      "text": " to send to it the magic and we are going to ask for the level that is also something we created"
+    },
+    {
+      "start": 2354.08,
+      "end": 2359.7599999999998,
+      "text": " in the helper function here to get the level from the magic we are going to send the magic number"
+    },
+    {
+      "start": 2359.7599999999998,
+      "end": 2365.44,
+      "text": " and ask for the level and then we say if the level is greater than 0 meaning it is a valid value"
+    },
+    {
+      "start": 2365.44,
+      "end": 2370.56,
+      "text": " but the order level is in the level that we are sending to be checked then we leave this position"
+    },
+    {
+      "start": 2370.56,
+      "end": 2376.48,
+      "text": " in go next as well and if all of that matches then in that case return true that there is a"
+    },
+    {
+      "start": 2376.48,
+      "end": 2381.92,
+      "text": " grid that exists with that level with that direction and if you move through all of the positions"
+    },
+    {
+      "start": 2381.92,
+      "end": 2387.04,
+      "text": " and you have not returned true which means you couldn't find a position for that level and direction"
+    },
+    {
+      "start": 2387.04,
+      "end": 2394.64,
+      "text": " in that case return false. So, now with this function for any symbol we can send a specific level number"
+    },
+    {
+      "start": 2394.64,
+      "end": 2400.48,
+      "text": " or we can send minus one with basically means we are not interested in the levels with just interested"
+    },
+    {
+      "start": 2400.56,
+      "end": 2406.56,
+      "text": " in if the grid exists up to whatever level and we can send the direction by saying minus one"
+    },
+    {
+      "start": 2406.56,
+      "end": 2412.56,
+      "text": " if you are only looking for cell if it exists plus one if you are only looking for a bi grid if it"
+    },
+    {
+      "start": 2412.56,
+      "end": 2419.52,
+      "text": " exists or 0 if we are looking for any grid exists whether it is a bi or cell and then we can run through"
+    },
+    {
+      "start": 2419.52,
+      "end": 2425.68,
+      "text": " this loop and it is going to return true if our condition is on that. So, this is of a grid exists function"
+    },
+    {
+      "start": 2425.7599999999998,
+      "end": 2430.3199999999997,
+      "text": " let us compile to see everything is fine and yes we are okay and now we are going to go back to"
+    },
+    {
+      "start": 2430.3199999999997,
+      "end": 2436.96,
+      "text": " our on tick function and here after the symbol updates we are going to check that if trading is allowed"
+    },
+    {
+      "start": 2436.96,
+      "end": 2442.72,
+      "text": " which is the first function that we created in the helper function if trading is allowed then in that case"
+    },
+    {
+      "start": 2443.7599999999998,
+      "end": 2449.6,
+      "text": " run this function check and open grid orders for the index that we are currently on. So, this is where"
+    },
+    {
+      "start": 2449.68,
+      "end": 2456.56,
+      "text": " we are going to start writing the course for opening of the grid orders. So, let us go back to our"
+    },
+    {
+      "start": 2456.56,
+      "end": 2462.64,
+      "text": " grid related functions and we are going to create a function by the name check and open grid orders"
+    },
+    {
+      "start": 2462.64,
+      "end": 2467.12,
+      "text": " and we are only going to send to it the symbol index. The first thing we are going to do is we are going"
+    },
+    {
+      "start": 2467.12,
+      "end": 2471.44,
+      "text": " to convert the symbol index into the proper symbol name by getting the symbol name for that index"
+    },
+    {
+      "start": 2471.44,
+      "end": 2476.7999999999997,
+      "text": " from that structure of variables that we have created and we have looked at many many times and then"
+    },
+    {
+      "start": 2476.88,
+      "end": 2481.04,
+      "text": " we are going to do a quick validation that if the maximum number of trades is less than 1 which"
+    },
+    {
+      "start": 2481.04,
+      "end": 2487.92,
+      "text": " basically means that is the maximum number of trade on a symbol allowed is just 1 or less so you can"
+    },
+    {
+      "start": 2487.92,
+      "end": 2494.8,
+      "text": " not open a grid or the trade multiplier third is less than or equal to 0 which means that the user has"
+    },
+    {
+      "start": 2494.8,
+      "end": 2502.4,
+      "text": " not provided valid value for the trade multiplier or the trade distance is 0 which is less than the"
+    },
+    {
+      "start": 2503.36,
+      "end": 2508.08,
+      "text": " which means the trade distance is not there so in that is written as well just exit the function"
+    },
+    {
+      "start": 2508.08,
+      "end": 2512.8,
+      "text": " because the values are not correct and then we are going to get the spread the point and the radius"
+    },
+    {
+      "start": 2512.8,
+      "end": 2518.96,
+      "text": " from the broker for our symbol and then we are going to do a check grid direction so we are going to write"
+    },
+    {
+      "start": 2518.96,
+      "end": 2524.56,
+      "text": " this function and we are going to send to it symbol index to order type by because we are going to check"
+    },
+    {
+      "start": 2524.56,
+      "end": 2530.2400000000002,
+      "text": " for a by grid and then open a by grid if we need to open up another level we are going to send to it"
+    },
+    {
+      "start": 2530.2400000000002,
+      "end": 2534.88,
+      "text": " the stretch which we are getting here we are going to send to it the point that we are getting here"
+    },
+    {
+      "start": 2534.88,
+      "end": 2539.84,
+      "text": " and we are going to send to it the digits that we are getting here and we are going to do the same for the"
+    },
+    {
+      "start": 2539.84,
+      "end": 2544.8,
+      "text": " cell as well because we do not want to to complicate everything within this function so now we are going to go"
+    },
+    {
+      "start": 2544.8,
+      "end": 2552.0800000000004,
+      "text": " for a check grid direction for my and for cell separately into separate functions so we will start with"
+    },
+    {
+      "start": 2552.0800000000004,
+      "end": 2557.76,
+      "text": " check grid direction we only going to write one function and we can run it twice for by and for cell"
+    },
+    {
+      "start": 2558.0,
+      "end": 2564.5600000000004,
+      "text": " so we are sending to it in symbol index order type spread point and digits so as always we are going"
+    },
+    {
+      "start": 2564.5600000000004,
+      "end": 2572.0,
+      "text": " to convert the symbol index to symbol mean then we are going to set the direction because we are sending this"
+    },
+    {
+      "start": 2572.0,
+      "end": 2578.5600000000004,
+      "text": " value here as order type so if order type is order type by so the value sent to this function is order type by"
+    },
+    {
+      "start": 2578.5600000000004,
+      "end": 2586.0800000000004,
+      "text": " then the direction is 1 otherwise is minus 1 so for cell it is minus 1 by it is 1 and now we can check"
+    },
+    {
+      "start": 2586.16,
+      "end": 2592.96,
+      "text": " if the grid exists so if we have sent a by order then in that case this is going to be by so we get"
+    },
+    {
+      "start": 2592.96,
+      "end": 2600.08,
+      "text": " a grid exists check for current symbol level 0 meaning we don't really care for the levels and then sending"
+    },
+    {
+      "start": 2600.08,
+      "end": 2608.24,
+      "text": " it the direction 1 meaning check if a by grid exists for level 0 that we don't care I mean there"
+    },
+    {
+      "start": 2608.24,
+      "end": 2615.92,
+      "text": " needs to be just 1 trade and if nothing exists there is no trade at all a by trade and in that"
+    },
+    {
+      "start": 2615.92,
+      "end": 2621.92,
+      "text": " case just simply return and if we are sending the next time as cell then order type is going to be"
+    },
+    {
+      "start": 2621.92,
+      "end": 2628.64,
+      "text": " cell so it is going to be minus 1 so we are going to be sending minus 1 here so we are checking if the grid"
+    },
+    {
+      "start": 2628.64,
+      "end": 2636.08,
+      "text": " exists for cell even if there is one position for cell and this is by saying 0 and if 0 positions are"
+    },
+    {
+      "start": 2636.08,
+      "end": 2642.08,
+      "text": " there then in that case not even the first position is there so what are we going to build the grid on"
+    },
+    {
+      "start": 2642.08,
+      "end": 2648.48,
+      "text": " so we don't need to do anything just return meaning exit dysfunction but if the grid does exist"
+    },
+    {
+      "start": 2648.48,
+      "end": 2655.12,
+      "text": " whether it's just the initial position or there is a grid with one or two levels or three levels or"
+    },
+    {
+      "start": 2655.12,
+      "end": 2662.16,
+      "text": " whatever number of levels so we come down here and then we get the total lots by getting the total lots"
+    },
+    {
+      "start": 2662.16,
+      "end": 2669.04,
+      "text": " in the grid by sending it the symbol level 0 direction and this falls and when we will create the"
+    },
+    {
+      "start": 2669.04,
+      "end": 2674.56,
+      "text": " function we will see what this falls is and the current price is equal to from the symbol array"
+    },
+    {
+      "start": 2674.56,
+      "end": 2680.72,
+      "text": " we get the close price remember we set the close price I think in the update symbol information"
+    },
+    {
+      "start": 2680.72,
+      "end": 2687.7599999999998,
+      "text": " we set the close price here to the last candle close and that's what we are getting here as well"
+    },
+    {
+      "start": 2687.7599999999998,
+      "end": 2692.88,
+      "text": " so get that value back for the symbol index and then for the average price we can create a function"
+    },
+    {
+      "start": 2692.88,
+      "end": 2699.92,
+      "text": " get weighted average price by sending it a symbol level and direction so for now I'm going to come"
+    },
+    {
+      "start": 2699.92,
+      "end": 2706.4,
+      "text": " down so let's close this function so we close down this function and then below this I'm going to create"
+    },
+    {
+      "start": 2707.04,
+      "end": 2713.44,
+      "text": " the get weighted average price we're going to send to its symbol level and direction and for now I'm just"
+    },
+    {
+      "start": 2713.44,
+      "end": 2720.08,
+      "text": " saying return 0 and the get total loss in grid function that we have already stopped before so that's"
+    },
+    {
+      "start": 2720.08,
+      "end": 2724.4,
+      "text": " the function that we're going to get here we're using here we're going to write this function later"
+    },
+    {
+      "start": 2724.4,
+      "end": 2731.44,
+      "text": " we're going to check for what levels are already there so that we can know that the next one that we are"
+    },
+    {
+      "start": 2731.44,
+      "end": 2738.08,
+      "text": " creating is going to be level last plus 1 so we're going to start at level 1 and we're going to do"
+    },
+    {
+      "start": 2739.04,
+      "end": 2744.96,
+      "text": " every time increasing the value of the level by 1 until the next one creates minus 1 so the first thing"
+    },
+    {
+      "start": 2744.96,
+      "end": 2750.16,
+      "text": " we're going to do is we're going to check whether that level already exists and we can check it in the"
+    },
+    {
+      "start": 2750.16,
+      "end": 2756.96,
+      "text": " grid exists by this time sending the symbol and the actual value of the level because now we're going to"
+    },
+    {
+      "start": 2756.96,
+      "end": 2763.68,
+      "text": " check that this level exists so level 1 exists level 2 exists and sending it the direction that we have so"
+    },
+    {
+      "start": 2763.68,
+      "end": 2770.88,
+      "text": " if it's a by order we send the by direction so if grid exists meaning this level already exists or we"
+    },
+    {
+      "start": 2770.88,
+      "end": 2779.92,
+      "text": " actually check for this bar if the grid is already open because remember we wrote in our open market"
+    },
+    {
+      "start": 2779.92,
+      "end": 2789.2000000000003,
+      "text": " order we wrote that for the symbol index after opening the trade grid open becomes true so if on this bar"
+    },
+    {
+      "start": 2789.2000000000003,
+      "end": 2794.7200000000003,
+      "text": " if the grid has already been open on this bar then we don't want to do it again we don't want to open another"
+    },
+    {
+      "start": 2794.7200000000003,
+      "end": 2801.76,
+      "text": " grid on the same bar so if this is true or if this is true that the grid already exists for this level"
+    },
+    {
+      "start": 2801.76,
+      "end": 2808.0000000000005,
+      "text": " then in that case continue meaning check the next level then so we're going to continue looping until"
+    },
+    {
+      "start": 2808.0000000000005,
+      "end": 2813.28,
+      "text": " let's say if there are already two grid two levels open then level 1 we're going to continue go back to"
+    },
+    {
+      "start": 2813.28,
+      "end": 2820.0800000000004,
+      "text": " level 2 and continue and then it's going to be level 3 and level 3 doesn't exist so if level 3 doesn't"
+    },
+    {
+      "start": 2820.08,
+      "end": 2825.36,
+      "text": " exist we're going to come down to this line and we're going to start putting together the data which"
+    },
+    {
+      "start": 2825.36,
+      "end": 2830.24,
+      "text": " is required for opening the trade level 3 so first we're going to get the required distance which is"
+    },
+    {
+      "start": 2830.24,
+      "end": 2838.08,
+      "text": " going to be the trade distance times the level so for level 0 it was 0 but the next level 1 is going to"
+    },
+    {
+      "start": 2838.08,
+      "end": 2846.24,
+      "text": " be 35 times 1 then level 2 is going to be 35 times 2 then 35 times 3 for level 3 so how far it needs to"
+    },
+    {
+      "start": 2846.2400000000002,
+      "end": 2851.6000000000004,
+      "text": " be based on what the user has defined in the trade distance times the number of level which we're"
+    },
+    {
+      "start": 2851.6000000000004,
+      "end": 2856.8,
+      "text": " going to create that's the required distance and then we're going to actually change this required"
+    },
+    {
+      "start": 2856.8,
+      "end": 2863.92,
+      "text": " distance into the prize distance by saying required distance times 0 then get the multiplier so whether"
+    },
+    {
+      "start": 2863.92,
+      "end": 2870.96,
+      "text": " is 5 digits or 3 digits then it's 10 otherwise is 1 and multiplier in by the smart distance multiplier"
+    },
+    {
+      "start": 2870.96,
+      "end": 2878.48,
+      "text": " so that if the volatility is 1.2 we take the 35 and we actually multiply it by 1.2 as well"
+    },
+    {
+      "start": 2878.48,
+      "end": 2885.52,
+      "text": " to create the additional distance remember we stopped it between 1 and 1.5 and then the prize difference"
+    },
+    {
+      "start": 2885.52,
+      "end": 2889.84,
+      "text": " variable is going to be current price minus the average price and the average price we're going to"
+    },
+    {
+      "start": 2889.84,
+      "end": 2895.28,
+      "text": " get from this function and the current price we're going to get from the close of the last bar on this symbol so"
+    },
+    {
+      "start": 2895.28,
+      "end": 2900.88,
+      "text": " now we know what is the price difference between the average price of our grid which we're going to"
+    },
+    {
+      "start": 2900.88,
+      "end": 2906.5600000000004,
+      "text": " get from here and what the current price is in the market so then we can create a bull that has the"
+    },
+    {
+      "start": 2906.5600000000004,
+      "end": 2912.7200000000003,
+      "text": " price reached the level that we want to and then if it's the order type by then the price reach is going"
+    },
+    {
+      "start": 2912.7200000000003,
+      "end": 2919.6000000000004,
+      "text": " to be if the price difference is less than minus price distance and if it's the cell then it's"
+    },
+    {
+      "start": 2919.6,
+      "end": 2926.4,
+      "text": " greater than the price distance because cell trades the levels are going to be above and for the"
+    },
+    {
+      "start": 2926.4,
+      "end": 2933.12,
+      "text": " buy the levels are going to be below and in this case it needs to be smaller than the negative price distance"
+    },
+    {
+      "start": 2933.12,
+      "end": 2939.8399999999997,
+      "text": " so negative 35 negative 42 if the price has dropped negative 42 then it has definitely passed"
+    },
+    {
+      "start": 2939.8399999999997,
+      "end": 2945.7599999999998,
+      "text": " minus 35 so this is why we're checking that it is smaller than the negative price distance and in"
+    },
+    {
+      "start": 2945.76,
+      "end": 2951.76,
+      "text": " case of the cell we're going to be putting the levels above so it is from the whatever last level"
+    },
+    {
+      "start": 2951.76,
+      "end": 2960.7200000000003,
+      "text": " plus 35 is the price distance that needs to be there and if the price has gone even above so it is above"
+    },
+    {
+      "start": 2960.7200000000003,
+      "end": 2968.88,
+      "text": " the price distance and then if it's not priced reached then in that case just continue because we haven't reached"
+    },
+    {
+      "start": 2968.88,
+      "end": 2975.6,
+      "text": " the level so what's the point so we discontinue and then we have this special function of grid level to"
+    },
+    {
+      "start": 2975.6,
+      "end": 2984.7200000000003,
+      "text": " start where we work on a port 0.010.010.01 until whatever the user has specified that this is the"
+    },
+    {
+      "start": 2984.7200000000003,
+      "end": 2991.6800000000003,
+      "text": " level from which to start the actual grading so this is why we say initial stop loss is 0 we create a variable"
+    },
+    {
+      "start": 2991.6800000000003,
+      "end": 2997.12,
+      "text": " and then if the grid level to start is greater than 1 and in that case initial lot is going to be"
+    },
+    {
+      "start": 2997.12,
+      "end": 3004.4,
+      "text": " get total loss for the symbol starting at grid level to start minus 1 because that's where the actual"
+    },
+    {
+      "start": 3004.4,
+      "end": 3010.88,
+      "text": " lot sizing starts sending it the direction and then saying false we are still to create this function"
+    },
+    {
+      "start": 3010.88,
+      "end": 3015.2799999999997,
+      "text": " so we're going to come back to it as well and then we say that the lot size is going to be equal to"
+    },
+    {
+      "start": 3015.2799999999997,
+      "end": 3021.92,
+      "text": " calculate the grid lot size sending to its symbol total loss level and the initial lot and then from"
+    },
+    {
+      "start": 3021.92,
+      "end": 3027.12,
+      "text": " this function if the lot size turns back to get 0 that basically we couldn't calculate the lot size"
+    },
+    {
+      "start": 3027.12,
+      "end": 3032.96,
+      "text": " so continue go to the next level and then if everything has been successful so far then in that case"
+    },
+    {
+      "start": 3032.96,
+      "end": 3038.32,
+      "text": " open the grid order of another function we will create by sending to it the symbol index or the"
+    },
+    {
+      "start": 3038.32,
+      "end": 3044.8,
+      "text": " type level and lot size and then that case again the grid open is going to turn to true and the"
+    },
+    {
+      "start": 3044.8,
+      "end": 3050.6400000000003,
+      "text": " OP or triggered is going to be equal to true as well and then sleep for 5,000 seconds so this is"
+    },
+    {
+      "start": 3050.6400000000003,
+      "end": 3055.84,
+      "text": " if everything checks out we actually open the grid order by calling upon this function that we"
+    },
+    {
+      "start": 3055.84,
+      "end": 3060.8,
+      "text": " want to create so now we're going to start creating the function that we need to create so let's"
+    },
+    {
+      "start": 3060.8,
+      "end": 3066.6400000000003,
+      "text": " start with calculate grid lot size which is going to be the lot size for the grids we already have"
+    },
+    {
+      "start": 3066.6400000000003,
+      "end": 3071.04,
+      "text": " one for the calculate lot size which is for the initial trade and now we're going to write one for"
+    },
+    {
+      "start": 3071.04,
+      "end": 3074.88,
+      "text": " the grid so let's write it and what we're going to be sending to it we're going to need to send to"
+    },
+    {
+      "start": 3074.88,
+      "end": 3081.92,
+      "text": " it the symbol the current total loss which are already on the grid so if it is at level 3 how many"
+    },
+    {
+      "start": 3081.92,
+      "end": 3088.88,
+      "text": " lots are there in the grid already what is the level and what is the initial lot because remember here"
+    },
+    {
+      "start": 3088.88,
+      "end": 3094.0,
+      "text": " in the grid distance multiplier so you had the multiplier so depending on which level it is we're going"
+    },
+    {
+      "start": 3094.0,
+      "end": 3099.84,
+      "text": " to have to multiply it by the lot multiplier so we create this function and we're going to get the value"
+    },
+    {
+      "start": 3099.84,
+      "end": 3105.6000000000004,
+      "text": " of the step minimum volume maximum volume and volume limit for the symbol from the broker and then"
+    },
+    {
+      "start": 3105.6000000000004,
+      "end": 3112.96,
+      "text": " we're going to check if the step from the broker turns out to be 0.001 then we change it to 0.001 which"
+    },
+    {
+      "start": 3112.96,
+      "end": 3118.48,
+      "text": " is the grid point logo step just to streamline the stepping and then we're going to create two variables"
+    },
+    {
+      "start": 3118.48,
+      "end": 3122.7200000000003,
+      "text": " one is the result and we're going to start it with the minimum lot and the base lot is whatever"
+    },
+    {
+      "start": 3122.7200000000003,
+      "end": 3127.2000000000003,
+      "text": " loss we've sent here as total loss so this is going to be the base on which we're going to do our"
+    },
+    {
+      "start": 3127.92,
+      "end": 3133.1200000000003,
+      "text": " and then we're going to have to do the special function grid level to start if the user has put it as"
+    },
+    {
+      "start": 3133.1200000000003,
+      "end": 3140.7200000000003,
+      "text": " more than one then if the initial lot that we're sending here is less than 0.099 then in that case we"
+    },
+    {
+      "start": 3140.7200000000003,
+      "end": 3147.76,
+      "text": " calculate the lot size by sending the symbol to calculate lot size as falls based on if it is an initial"
+    },
+    {
+      "start": 3147.76,
+      "end": 3153.84,
+      "text": " order or not and come down here if the grid level to start was greater than one and initial order"
+    },
+    {
+      "start": 3153.84,
+      "end": 3158.1600000000003,
+      "text": " then the loss size will minimum lot but because here we're sending the next level in the grid so"
+    },
+    {
+      "start": 3158.1600000000003,
+      "end": 3163.52,
+      "text": " it's not an initial order so we're going to go falls for the if it is initial order because it is not"
+    },
+    {
+      "start": 3163.52,
+      "end": 3168.08,
+      "text": " an initial order so we're going to send to it the falls and then we're going to check if the current"
+    },
+    {
+      "start": 3168.08,
+      "end": 3172.56,
+      "text": " level for which we are because we're going to be sending this from here the level number of the checking"
+    },
+    {
+      "start": 3172.56,
+      "end": 3178.7200000000003,
+      "text": " here how many levels have been achieved or already are there in the grid we're creating the next level"
+    },
+    {
+      "start": 3178.7200000000003,
+      "end": 3184.8,
+      "text": " so the level value is going to come here and then if that level is still below where to start"
+    },
+    {
+      "start": 3184.8,
+      "end": 3190.7200000000003,
+      "text": " the grid level properly then in that case we take the base lot which is the current lot time the"
+    },
+    {
+      "start": 3190.7200000000003,
+      "end": 3196.6400000000003,
+      "text": " multiplier and the multiplier we're going to get it from multiplier for the level function otherwise if we"
+    },
+    {
+      "start": 3196.6400000000003,
+      "end": 3202.0000000000005,
+      "text": " are saying keep original profit lot size and it's not order straight then if the level is grid level"
+    },
+    {
+      "start": 3202.0000000000005,
+      "end": 3207.84,
+      "text": " to start minus one meaning we have reached the level where we are going to start creating the lots"
+    },
+    {
+      "start": 3208.4,
+      "end": 3214.2400000000002,
+      "text": " then the result is going to be initial lots otherwise we get the multiplier for the level grid level"
+    },
+    {
+      "start": 3214.2400000000002,
+      "end": 3219.36,
+      "text": " to start minus one and then level multiplier is for that level we get the multiplier of the level"
+    },
+    {
+      "start": 3219.36,
+      "end": 3224.7200000000003,
+      "text": " from there and then the result is going to become initial lot divided by the start multiplier times the"
+    },
+    {
+      "start": 3224.7200000000003,
+      "end": 3231.84,
+      "text": " level multiplier otherwise the level start is level minus the grid start of minus one and then double"
+    },
+    {
+      "start": 3231.84,
+      "end": 3237.76,
+      "text": " multiplier is going to be equal to get the multiplier for level from start and then the result"
+    },
+    {
+      "start": 3237.76,
+      "end": 3244.4,
+      "text": " is going to be initial lot times the multiplier and then we close this L slope then we close this L"
+    },
+    {
+      "start": 3244.4,
+      "end": 3252.0800000000004,
+      "text": " slope and then we close the if the grid level to start. So, if you have changed this from one to"
+    },
+    {
+      "start": 3252.0800000000004,
+      "end": 3257.36,
+      "text": " maybe two, maybe three, maybe four, this is what we are accounting for here. I suppose that this is"
+    },
+    {
+      "start": 3257.36,
+      "end": 3263.84,
+      "text": " a complex one. So, maybe what I will do is I will make a separate video to explain the working of"
+    },
+    {
+      "start": 3263.92,
+      "end": 3271.04,
+      "text": " if you were wanting to start the grid level from more than one what exactly every step is doing."
+    },
+    {
+      "start": 3271.6800000000003,
+      "end": 3277.04,
+      "text": " For now, if you don't understand it, just write it like this and then we will come back in another"
+    },
+    {
+      "start": 3277.04,
+      "end": 3282.32,
+      "text": " video because this one is probably going to take half an hour to an hour just to explain this function."
+    },
+    {
+      "start": 3282.32,
+      "end": 3287.92,
+      "text": " Because if you are not changing this value, if you are using the year as a normal grid which is"
+    },
+    {
+      "start": 3287.92,
+      "end": 3294.96,
+      "text": " start wherever you start, but not like start from level three level four. Then this L is what we are"
+    },
+    {
+      "start": 3294.96,
+      "end": 3299.92,
+      "text": " more interested in. The get the multiplier for this is specifically level that we are going to"
+    },
+    {
+      "start": 3299.92,
+      "end": 3306.4,
+      "text": " pre it and then the result becomes a day slot forever is the lot side from the days times that multiplier"
+    },
+    {
+      "start": 3306.4,
+      "end": 3311.6,
+      "text": " for that level and then we close the function. So, we can get the multiplier for the level and then we"
+    },
+    {
+      "start": 3311.6,
+      "end": 3315.92,
+      "text": " have an multiplied with the day slot because that is what we are supposed to be doing here which is"
+    },
+    {
+      "start": 3315.92,
+      "end": 3321.44,
+      "text": " you get whatever is the base slot and then the second time the multiplier is on every one, then from there"
+    },
+    {
+      "start": 3321.44,
+      "end": 3326.56,
+      "text": " it is going to be multiplied by two. So, get the multiplier for that particular level and then we are going"
+    },
+    {
+      "start": 3326.56,
+      "end": 3332.4,
+      "text": " to do the multiplication of the lot size. So, let us write that function get multiplier for level. So,"
+    },
+    {
+      "start": 3332.4,
+      "end": 3336.7200000000003,
+      "text": " what we are going to send to it is the level. So, we are just going to send to it the level and then we are"
+    },
+    {
+      "start": 3336.7200000000003,
+      "end": 3342.96,
+      "text": " going to try and get what should be the multiplier for that level. So, now if the level is less than or equal"
+    },
+    {
+      "start": 3342.96,
+      "end": 3348.16,
+      "text": " to 0 then just return 1 because then the multiplier is simply 1 you do not make any change to the actual"
+    },
+    {
+      "start": 3348.16,
+      "end": 3354.96,
+      "text": " lot size but then we go double a multiplier equals 1. So, we start with a value of 1 and then we are going to"
+    },
+    {
+      "start": 3354.96,
+      "end": 3361.2,
+      "text": " loop through from i until whatever number of level which has been sent. So, we are going to loop through it"
+    },
+    {
+      "start": 3361.2,
+      "end": 3369.28,
+      "text": " then if i equals 1. So, if it is level 1 then the multiplier is equal to trade multiplier 2 times the"
+    },
+    {
+      "start": 3369.36,
+      "end": 3375.92,
+      "text": " multiplier 1 which is this one. So, second trade multiplier whatever the user has chosen here that"
+    },
+    {
+      "start": 3375.92,
+      "end": 3380.5600000000004,
+      "text": " is going to be the multiplier which we are going to multiply with 1 which is basically mean multiplied by"
+    },
+    {
+      "start": 3380.5600000000004,
+      "end": 3388.0800000000004,
+      "text": " 1 means that number itself. If it is between 2 and 4 which is here from third to fifth trade and"
+    },
+    {
+      "start": 3388.0800000000004,
+      "end": 3394.96,
+      "text": " why we are saying 2 to 4 is because the first trade that we open is level 0. Second trade that we open"
+    },
+    {
+      "start": 3395.04,
+      "end": 3401.04,
+      "text": " it is level 1. So, the third to fifth trade is actually level 2 to 3. In that case we are going to"
+    },
+    {
+      "start": 3401.04,
+      "end": 3408.48,
+      "text": " use the trade multiplier third which is this one otherwise which means it is bigger than 5 which is this one"
+    },
+    {
+      "start": 3408.48,
+      "end": 3414.64,
+      "text": " is a sixth trade onward we are going to use this multiplier. So, we are sending this multiplier back we"
+    },
+    {
+      "start": 3414.64,
+      "end": 3422.2400000000002,
+      "text": " close the forward loop and then we return the multiplier. So, once again level 0 is like the first time"
+    },
+    {
+      "start": 3422.32,
+      "end": 3427.0400000000004,
+      "text": " the trade opens and that we calculate in the calculate lot size. But when it comes down to the"
+    },
+    {
+      "start": 3427.0400000000004,
+      "end": 3431.36,
+      "text": " level we can get the multiplier for the level by sending the level. We are going to loop through all the"
+    },
+    {
+      "start": 3431.36,
+      "end": 3438.6400000000003,
+      "text": " levels and if it is 1 then it is the multiplier. Second this one between the third and the fifth trade"
+    },
+    {
+      "start": 3438.6400000000003,
+      "end": 3445.44,
+      "text": " once again the index starts at 0. So, it is third to fifth trade is this one and then sixth trade onward."
+    },
+    {
+      "start": 3445.44,
+      "end": 3450.2400000000002,
+      "text": " So, this is why else it is this one. So, this is what we are doing to get the multiplier for level. So,"
+    },
+    {
+      "start": 3450.2400000000002,
+      "end": 3460.0800000000004,
+      "text": " now we can go back to calculate grid lot size and we were here. We can around the result to the step size."
+    },
+    {
+      "start": 3460.0800000000004,
+      "end": 3464.88,
+      "text": " So, we basically result divided by step multi-clab by step. We are going to apply the limit. So,"
+    },
+    {
+      "start": 3464.88,
+      "end": 3470.5600000000004,
+      "text": " if the results turns out to be less than the minimum lot allowed by the broker then results becomes the minimum"
+    },
+    {
+      "start": 3470.5600000000004,
+      "end": 3475.6800000000003,
+      "text": " lot. So, these are validation checks and then if the result is greater than the max lot and it is not"
+    },
+    {
+      "start": 3475.76,
+      "end": 3481.6000000000004,
+      "text": " auto-split. We are not allowed to split the lots into 2. Then in that trade result becomes the max lot."
+    },
+    {
+      "start": 3481.6000000000004,
+      "end": 3487.76,
+      "text": " If the result is bigger than the limit lot then result becomes limit lot. So, these are all the validation"
+    },
+    {
+      "start": 3487.76,
+      "end": 3493.36,
+      "text": " that we are doing against these values that we got from the broker for the symbol. And then we basically"
+    },
+    {
+      "start": 3493.36,
+      "end": 3501.1200000000003,
+      "text": " do this where we are saying that if the step is very close to 0.01 meaning it is between this value and this"
+    },
+    {
+      "start": 3501.2,
+      "end": 3504.7999999999997,
+      "text": " value it is very close to 0.01 then normalize the three decimal places."
+    },
+    {
+      "start": 3504.7999999999997,
+      "end": 3511.8399999999997,
+      "text": " If it is close to 0.1 meaning it is between this number and this number then normalize to two decimal"
+    },
+    {
+      "start": 3511.8399999999997,
+      "end": 3518.72,
+      "text": " places. If it is very close to 0.1 then normalize to one decimal place. And if the step is very close to one."
+    },
+    {
+      "start": 3519.2799999999997,
+      "end": 3524.48,
+      "text": " So, it is between this number and this number then normalize to 0. Because on certain brokers you might"
+    },
+    {
+      "start": 3524.48,
+      "end": 3533.68,
+      "text": " get the value of the step not exactly a 0.01 but you get 0.01 0.000001. I mean sometime there is"
+    },
+    {
+      "start": 3533.68,
+      "end": 3540.32,
+      "text": " a very small decimal because it is not written to the specific digits. So, this is why we are normalizing"
+    },
+    {
+      "start": 3540.32,
+      "end": 3546.32,
+      "text": " based on digits that if the step is very close to one 0.01 then normalize to three otherwise too otherwise"
+    },
+    {
+      "start": 3546.4,
+      "end": 3555.04,
+      "text": " one otherwise 0. So, now from here we go down to our get weighted average price function and now"
+    },
+    {
+      "start": 3555.04,
+      "end": 3559.52,
+      "text": " we are going to write that function as well. So, we are going to start but with two variables total"
+    },
+    {
+      "start": 3559.52,
+      "end": 3562.8,
+      "text": " lots and total price because we are going to get weighted average price. So, we are going to get the"
+    },
+    {
+      "start": 3562.8,
+      "end": 3567.92,
+      "text": " total price and then divided by total lots to get the average price. Now, when we are going to recall"
+    },
+    {
+      "start": 3567.92,
+      "end": 3572.48,
+      "text": " in this function we will have the ability to ask for direction. So, whether we want for the biigrate"
+    },
+    {
+      "start": 3572.56,
+      "end": 3577.68,
+      "text": " or for the cell graded. So, we need to take that direction and then store the direction into"
+    },
+    {
+      "start": 3577.68,
+      "end": 3584.32,
+      "text": " a target direction. If the function is being called for biorders then the target direction is one"
+    },
+    {
+      "start": 3584.32,
+      "end": 3590.96,
+      "text": " by otherwise it is to sell. So, this gives us the flexibility of using the same function for both"
+    },
+    {
+      "start": 3590.96,
+      "end": 3596.8,
+      "text": " by and sell to get the weighted average price for the biigrate or for the cell graded. Now, we are going"
+    },
+    {
+      "start": 3596.8,
+      "end": 3600.64,
+      "text": " to start looping through all of the positions. So, we are going to loop through all of the positions"
+    },
+    {
+      "start": 3600.72,
+      "end": 3605.52,
+      "text": " total then we are going to try to select and if we not able to select the position then we"
+    },
+    {
+      "start": 3605.52,
+      "end": 3611.12,
+      "text": " say well order select failed. But if we are able to select the position then we are basically going"
+    },
+    {
+      "start": 3611.12,
+      "end": 3615.92,
+      "text": " to loop through exactly the same as before. So, we are going to get the position symbol info and check"
+    },
+    {
+      "start": 3615.92,
+      "end": 3622.24,
+      "text": " it what is the symbol that we are sending. If it is not matching then that position is not what we are"
+    },
+    {
+      "start": 3622.24,
+      "end": 3627.3599999999997,
+      "text": " interested in. So, continue go to the next position then get the magic number from position in"
+    },
+    {
+      "start": 3628.2400000000002,
+      "end": 3633.2000000000003,
+      "text": " form magic. So, from this position get the magic number and compare that magic number by using"
+    },
+    {
+      "start": 3633.2000000000003,
+      "end": 3640.08,
+      "text": " our is our order function to see whether or not this is our trade and if it is not our trade and continue"
+    },
+    {
+      "start": 3640.08,
+      "end": 3645.28,
+      "text": " to the next position because we are not interested in this position then get the direction and"
+    },
+    {
+      "start": 3645.28,
+      "end": 3651.52,
+      "text": " check the direction by sending the magic number of the position and with check it versus our target"
+    },
+    {
+      "start": 3651.52,
+      "end": 3657.1200000000003,
+      "text": " direction. If it is not matching if the user has called this function for bi, but the actual position"
+    },
+    {
+      "start": 3657.2,
+      "end": 3661.8399999999997,
+      "text": " that we are currently looping is cell then we are going to drop that position and go to the next"
+    },
+    {
+      "start": 3661.8399999999997,
+      "end": 3667.2,
+      "text": " position to see and then check the level if it is not equal to our level then in that case continue as"
+    },
+    {
+      "start": 3667.2,
+      "end": 3672.16,
+      "text": " well. And this is why we are saying if level is greater than zero so the user or whoever is calling"
+    },
+    {
+      "start": 3672.16,
+      "end": 3677.52,
+      "text": " the function is interested in getting the level then in that case get the level from the magic"
+    },
+    {
+      "start": 3677.52,
+      "end": 3682.88,
+      "text": " and check it versus the level and if it is not matching then continue meaning go to the next position"
+    },
+    {
+      "start": 3683.6,
+      "end": 3689.6800000000003,
+      "text": " and if all of this is fine then in that case for this position that we are currently in get the volume"
+    },
+    {
+      "start": 3689.6800000000003,
+      "end": 3696.2400000000002,
+      "text": " add it into the total lots variable get the price times a lot and add it to the total price."
+    },
+    {
+      "start": 3696.96,
+      "end": 3702.2400000000002,
+      "text": " So, we are getting the total price times the lot because it is rated price so that we can later divide"
+    },
+    {
+      "start": 3702.2400000000002,
+      "end": 3708.6400000000003,
+      "text": " it by the total lots and then we say if we not allow to do splitting then in that case break break this"
+    },
+    {
+      "start": 3709.3599999999997,
+      "end": 3714.48,
+      "text": " only just take the first order and then we can calculate the average if the total loss is"
+    },
+    {
+      "start": 3714.48,
+      "end": 3718.7999999999997,
+      "text": " greater than epsilon so we are just doing a validation that it is a valid number then total"
+    },
+    {
+      "start": 3718.7999999999997,
+      "end": 3724.64,
+      "text": " price divided by the total loss is going to be our average so then we turn that. So, this is how we"
+    },
+    {
+      "start": 3724.64,
+      "end": 3730.0,
+      "text": " can calculate the weighted average price and this is weighted average price we are multiplying the"
+    },
+    {
+      "start": 3730.0,
+      "end": 3736.3199999999997,
+      "text": " lots into the open price every time when we are adding the total price for every position which matches"
+    },
+    {
+      "start": 3736.32,
+      "end": 3743.2000000000003,
+      "text": " our symbol our magic our direction and our level. So, if we have a valid total loss then we return"
+    },
+    {
+      "start": 3743.2000000000003,
+      "end": 3750.6400000000003,
+      "text": " the value of the average price otherwise we just return 0. So, now we can go ahead and open the"
+    },
+    {
+      "start": 3750.6400000000003,
+      "end": 3756.32,
+      "text": " grid order so I am going to come down here and here we are going to actually open the grid order. So,"
+    },
+    {
+      "start": 3756.32,
+      "end": 3761.2000000000003,
+      "text": " we are going to create a function open grid order we are going to send to it the symbol index what type of"
+    },
+    {
+      "start": 3761.2000000000003,
+      "end": 3766.7200000000003,
+      "text": " order we are sending what is the level and what is the lot size from here. So, we calculated all of"
+    },
+    {
+      "start": 3766.7200000000003,
+      "end": 3772.8,
+      "text": " this the lots getting the total lots in the grid. So, first we are going to take our symbol index and"
+    },
+    {
+      "start": 3772.8,
+      "end": 3779.0400000000004,
+      "text": " change it into a symbol name by getting the symbol name from our index versus the symbol array"
+    },
+    {
+      "start": 3779.84,
+      "end": 3784.32,
+      "text": " member symbol name then like the first trade we are going to check for the spreads and if the"
+    },
+    {
+      "start": 3784.32,
+      "end": 3789.28,
+      "text": " spreads are bigger than the maximum spread then we say spread or to high for the grid order"
+    },
+    {
+      "start": 3790.0,
+      "end": 3796.48,
+      "text": " and then return false that we couldn't open and then like the first time we opened the base trade"
+    },
+    {
+      "start": 3796.48,
+      "end": 3802.7200000000003,
+      "text": " here again we are going to check the margins starting the margin using the order calculate margin"
+    },
+    {
+      "start": 3803.28,
+      "end": 3810.0800000000004,
+      "text": " based on either ask or bit depending on whether it is an order type by or sell and store it into the margin."
+    },
+    {
+      "start": 3810.6400000000003,
+      "end": 3818.0,
+      "text": " Now, if that function fails or the margin return is 0 or the margin return is bigger than what is"
+    },
+    {
+      "start": 3818.08,
+      "end": 3824.0,
+      "text": " available as free margin and in that case there is not enough money. We did that before as well"
+    },
+    {
+      "start": 3824.0,
+      "end": 3829.36,
+      "text": " then we are going to handle the auto splitting if auto split is allowed and the lot size turns out to be"
+    },
+    {
+      "start": 3829.36,
+      "end": 3834.8,
+      "text": " bigger than the maximum load allowed by the broker on the symbol then in that case we are going to"
+    },
+    {
+      "start": 3834.8,
+      "end": 3839.52,
+      "text": " write another function where we are going to split and open the order otherwise we are just going to send"
+    },
+    {
+      "start": 3839.52,
+      "end": 3844.72,
+      "text": " the single order send grid order and we are going to send the level lot side and everything. So, we are going"
+    },
+    {
+      "start": 3844.7200000000003,
+      "end": 3850.88,
+      "text": " to open the order and now we are going to send the order before this is splitting let us go down to"
+    },
+    {
+      "start": 3850.88,
+      "end": 3857.44,
+      "text": " our helper function section and let us stop it for now there we need to come back to it for now just return"
+    },
+    {
+      "start": 3857.44,
+      "end": 3862.8,
+      "text": " false okay let us come back for here we were and now we are going to send the grid order. So, let us"
+    },
+    {
+      "start": 3862.8,
+      "end": 3867.0400000000004,
+      "text": " create that function and once again we are going to take the symbol index and what it will symbol"
+    },
+    {
+      "start": 3867.84,
+      "end": 3872.5600000000004,
+      "text": " then we are going to calculate the magic number but this time we are going to calculate the magic number"
+    },
+    {
+      "start": 3872.56,
+      "end": 3877.84,
+      "text": " for the grid so we are going to create another function where we are going to calculate the grid"
+    },
+    {
+      "start": 3877.84,
+      "end": 3884.32,
+      "text": " magic number because here we need to also put the level in the first train the base trade we didn't"
+    },
+    {
+      "start": 3884.32,
+      "end": 3890.0,
+      "text": " have to calculate for the level we only had to just add a double zero in the end because that was the"
+    },
+    {
+      "start": 3890.0,
+      "end": 3895.44,
+      "text": " base trade. Before we continue let us write that function there is a very small function to write"
+    },
+    {
+      "start": 3895.44,
+      "end": 3899.7599999999998,
+      "text": " which is we are going to send to it the level and the order type we are going to start with magic"
+    },
+    {
+      "start": 3899.76,
+      "end": 3906.96,
+      "text": " base which is going to be equal to magic number base 84570 plus UID let us suppose the UID is 0 so"
+    },
+    {
+      "start": 3906.96,
+      "end": 3914.8,
+      "text": " it equals 84570 then we are going to get the digits which are 5 in the magic base then we are going to"
+    },
+    {
+      "start": 3914.8,
+      "end": 3923.6000000000004,
+      "text": " get the direction so if we are asking to create a pi order then it is 1 otherwise 2 so it is 1 or 2 and"
+    },
+    {
+      "start": 3923.6000000000004,
+      "end": 3929.6000000000004,
+      "text": " then exactly like before we are going to do this which is we are going to take 10 raise to the power"
+    },
+    {
+      "start": 3929.6,
+      "end": 3937.68,
+      "text": " 7 so 7 0 times the direction so in case of pi is going to be 1 plus the magic base times 100 so"
+    },
+    {
+      "start": 3937.68,
+      "end": 3945.7599999999998,
+      "text": " 84 570 but double zero plus the level that we are sending here so if the level was 2 so it is going to"
+    },
+    {
+      "start": 3945.7599999999998,
+      "end": 3955.92,
+      "text": " become 2 so then the magic number we are going to get is 1 845702 so this is for the pi and for the"
+    },
+    {
+      "start": 3956.7200000000003,
+      "end": 3968.56,
+      "text": " it is going to be 1 these 0 times 2 plus 84570 double zero and then plus 2 if the level is 2 so"
+    },
+    {
+      "start": 3968.56,
+      "end": 3976.8,
+      "text": " it will become 845702 so we are creating a magic number simply sending the level number and the order type"
+    },
+    {
+      "start": 3976.8,
+      "end": 3984.56,
+      "text": " and then using our magic number and UID if it is the order type by it is going to return this with the"
+    },
+    {
+      "start": 3984.56,
+      "end": 3989.92,
+      "text": " level number that we send otherwise if it is cell that is going to create this with the level number that"
+    },
+    {
+      "start": 3989.92,
+      "end": 3997.52,
+      "text": " we send for this is just creating the create magic number so we create that unique magic number for that order"
+    },
+    {
+      "start": 3997.52,
+      "end": 4003.2,
+      "text": " for that level number and then like before we create the comment which is equal to trade comment and then"
+    },
+    {
+      "start": 4003.2,
+      "end": 4009.2799999999997,
+      "text": " if level is greater than 0 then the comment is going to add to it a hash and the level number so that we can"
+    },
+    {
+      "start": 4009.28,
+      "end": 4015.6000000000004,
+      "text": " see it in the comment that it is open the trade hash 1 hash 2 and just like before set the"
+    },
+    {
+      "start": 4015.6000000000004,
+      "end": 4021.84,
+      "text": " expert magic number to this magic number that we just calculated set the standard deviation in points with"
+    },
+    {
+      "start": 4021.84,
+      "end": 4028.48,
+      "text": " a slippage times get the multiplier so for 5 and 3 decimal points get 10 for everything else is 1"
+    },
+    {
+      "start": 4029.52,
+      "end": 4035.76,
+      "text": " and then try to open if it is the pi order that we are sending then in that case trade dot by sending the"
+    },
+    {
+      "start": 4036.5600000000004,
+      "end": 4044.4,
+      "text": " symbol current price no stop loss no tp and the comment from here if it is not order type by then in"
+    },
+    {
+      "start": 4044.4,
+      "end": 4051.92,
+      "text": " that case is order type cell once again send the trade dot cell and then like before if it is a success"
+    },
+    {
+      "start": 4051.92,
+      "end": 4058.4,
+      "text": " then we say grid order open level this and if the order type was order type why then the last grid time"
+    },
+    {
+      "start": 4058.4,
+      "end": 4065.84,
+      "text": " last by a grid time is set to current time which is whenever was the last trade opened on disimbo"
+    },
+    {
+      "start": 4065.84,
+      "end": 4071.6800000000003,
+      "text": " and if it was cell then we update the last cell grid time to time current and then we return true that this"
+    },
+    {
+      "start": 4071.6800000000003,
+      "end": 4079.28,
+      "text": " function was successful which is comes here and then we return the bull open grid back here so that we can"
+    },
+    {
+      "start": 4079.28,
+      "end": 4085.92,
+      "text": " check if the open grid returns are true in that case a grid open is true an ok trigger is true but if it"
+    },
+    {
+      "start": 4085.92,
+      "end": 4093.28,
+      "text": " fails then we print failed to open the grid get the red code and the red code description and return"
+    },
+    {
+      "start": 4093.28,
+      "end": 4101.52,
+      "text": " false so that this returns a false here which then returns a false back here and now we can go back to the"
+    },
+    {
+      "start": 4101.52,
+      "end": 4109.84,
+      "text": " bottom where we wrote this split and open orders and we are going to write it so we are going to be sending"
+    },
+    {
+      "start": 4109.84,
+      "end": 4114.32,
+      "text": " it the symbol index the order type the level in the total lot size and then we are going to get the"
+    },
+    {
+      "start": 4114.32,
+      "end": 4119.5199999999995,
+      "text": " symbol it is actually the same way and then we are going to get the max lot by using the get max lot"
+    },
+    {
+      "start": 4119.5199999999995,
+      "end": 4124.24,
+      "text": " for this symbol function that we created earlier and then we are going to look at the number of ceilings"
+    },
+    {
+      "start": 4124.24,
+      "end": 4129.599999999999,
+      "text": " so we are going to look at what is the total lot size that we are trying to open divided by the max lot"
+    },
+    {
+      "start": 4130.4,
+      "end": 4136.88,
+      "text": " so what is allowed by the broker so if our lot size turns out to be 230 lots for example which I hope"
+    },
+    {
+      "start": 4136.88,
+      "end": 4144.16,
+      "text": " never happens but the broker allows 100 so the number of orders that we will have to send is"
+    },
+    {
+      "start": 4144.16,
+      "end": 4151.44,
+      "text": " 230 divided by 100 and take it rounded up by using mass healing so it is going to be 3 orders that"
+    },
+    {
+      "start": 4151.44,
+      "end": 4156.96,
+      "text": " we are going to have to send for a starter we are going to set the remaining lots equals total"
+    },
+    {
+      "start": 4156.96,
+      "end": 4162.72,
+      "text": " lots that we are sending are 230 and we set all success to true and then we are going to start"
+    },
+    {
+      "start": 4162.72,
+      "end": 4169.04,
+      "text": " looping through the total number of orders that we need to send so starting at 0 going 0 1 and 2 and then"
+    },
+    {
+      "start": 4169.04,
+      "end": 4174.32,
+      "text": " we are going to take the lot size is the math min of max lots versus the remaining lots so the"
+    },
+    {
+      "start": 4174.32,
+      "end": 4179.92,
+      "text": " meaning lots is 230 the max lots allowed is 100 so the lot size will become 100 so because we are"
+    },
+    {
+      "start": 4179.92,
+      "end": 4185.92,
+      "text": " going to math minimum so select the lesser of the true so it is going to be 100 then we normalize it"
+    },
+    {
+      "start": 4186.48,
+      "end": 4191.92,
+      "text": " by using our normalize lot size function and then we send this to our send grid order function"
+    },
+    {
+      "start": 4192.88,
+      "end": 4197.92,
+      "text": " sending this lots 100 lots if it is not successful then all success becomes false"
+    },
+    {
+      "start": 4198.8,
+      "end": 4204.96,
+      "text": " otherwise if we are able to send this then remove the order that we have that lot size from the"
+    },
+    {
+      "start": 4204.96,
+      "end": 4212.56,
+      "text": " remaining lots of 230 lots we have already opened a trade of 100 lots so now the remaining lots is 130"
+    },
+    {
+      "start": 4212.56,
+      "end": 4219.28,
+      "text": " now let us close the loop so then it is going to come back again for the second order and now we have 130"
+    },
+    {
+      "start": 4219.28,
+      "end": 4224.24,
+      "text": " remaining lots 100 maximum lots so once again it is meant minimum so 100 lot is going to become the"
+    },
+    {
+      "start": 4225.04,
+      "end": 4230.5599999999995,
+      "text": " and then we are going to send another order for 100 lots and then we are going to remove these 100"
+    },
+    {
+      "start": 4230.5599999999995,
+      "end": 4235.76,
+      "text": " lots from the remaining lots so the remaining lots will become 30 and then we are going to come back again"
+    },
+    {
+      "start": 4235.76,
+      "end": 4243.76,
+      "text": " for the third order and now this is 100 but this is now 30 so the lot size becomes 30 and then we send"
+    },
+    {
+      "start": 4243.76,
+      "end": 4251.12,
+      "text": " a 30 lot size to send grid order and then we come down here and then we remove 30 from 30 which will"
+    },
+    {
+      "start": 4251.599999999999,
+      "end": 4255.92,
+      "text": " make it 0 so remaining lot becomes 0 but in any case the total number of what has"
+    },
+    {
+      "start": 4255.92,
+      "end": 4261.5199999999995,
+      "text": " have already been run and we are sleeping in between so that we do not bombard all three orders one after"
+    },
+    {
+      "start": 4261.5199999999995,
+      "end": 4268.16,
+      "text": " the other to the broker so we take 500 seconds before we send the next order and then if all goes"
+    },
+    {
+      "start": 4268.16,
+      "end": 4274.0,
+      "text": " take a reboot then we say return all success that it was successful so this is how we are going to do"
+    },
+    {
+      "start": 4274.0,
+      "end": 4281.04,
+      "text": " the split and open orders as well but I realize that here we are calling the function get max"
+    },
+    {
+      "start": 4281.04,
+      "end": 4287.04,
+      "text": " lots for the symbol but we didn't write that function so let's write that function we are going to send to"
+    },
+    {
+      "start": 4287.04,
+      "end": 4292.56,
+      "text": " it the symbol and then the max lot is equal to the max lot we get it from the broker and then the limit"
+    },
+    {
+      "start": 4292.56,
+      "end": 4300.56,
+      "text": " volume now if the limit max is greater than 0 and the limit max is less than max then max is equal"
+    },
+    {
+      "start": 4300.64,
+      "end": 4308.240000000001,
+      "text": " to limit max and then we send between the maximum lot that the user has specified and the max lot"
+    },
+    {
+      "start": 4308.240000000001,
+      "end": 4314.8,
+      "text": " so what we are doing here is we are getting the max value and this is the max value per order and this is"
+    },
+    {
+      "start": 4314.8,
+      "end": 4321.68,
+      "text": " the max value that the broker allows for symbol so what is the limit that you can have on this symbol"
+    },
+    {
+      "start": 4321.68,
+      "end": 4327.360000000001,
+      "text": " and what is the maximum volume that you can send in one lot so we are going to return back the max"
+    },
+    {
+      "start": 4328.32,
+      "end": 4334.96,
+      "text": " that is allowed per order and the maximum lot that the user has specified because it might also"
+    },
+    {
+      "start": 4334.96,
+      "end": 4343.839999999999,
+      "text": " be the user has put 100 and the broker has the limit of 200 in which case the users restriction"
+    },
+    {
+      "start": 4343.839999999999,
+      "end": 4348.08,
+      "text": " supersedes and this is why we are creating a separate function otherwise we could have just simply"
+    },
+    {
+      "start": 4348.08,
+      "end": 4354.0,
+      "text": " got in this we send back the minimum between the max lot allowed by the broker and the max lot"
+    },
+    {
+      "start": 4354.0,
+      "end": 4360.56,
+      "text": " allowed by the user of the year by in between we are going to do this check which is if which is going to"
+    },
+    {
+      "start": 4360.56,
+      "end": 4368.24,
+      "text": " be funny that the maximum value per symbol is less than maximum value per order in that case max lot becomes"
+    },
+    {
+      "start": 4369.44,
+      "end": 4375.04,
+      "text": " the limit because if this is smaller than this then the max lot needs to be this and not that"
+    },
+    {
+      "start": 4375.68,
+      "end": 4381.2,
+      "text": " which is not going to happen but just in case if there is a stupid broker so this is how we are going"
+    },
+    {
+      "start": 4381.2,
+      "end": 4387.28,
+      "text": " to get the max lot value which we are going to use here max lot for the symbol and if I compile"
+    },
+    {
+      "start": 4387.28,
+      "end": 4394.88,
+      "text": " now we created this stop function already and now we have created this function again is the one where we"
+    },
+    {
+      "start": 4394.88,
+      "end": 4403.2,
+      "text": " have already written and this one is the one which we stopped but never came back to write so if I delete"
+    },
+    {
+      "start": 4403.2,
+      "end": 4415.44,
+      "text": " this one and combine then we are looking for here yeah calculate grid lot size we calculated everything"
+    },
+    {
+      "start": 4415.44,
+      "end": 4420.48,
+      "text": " for after normalizing the results we should have sent the result back so we return the results"
+    },
+    {
+      "start": 4422.88,
+      "end": 4428.48,
+      "text": " with the calculate grid lot size so once we have calculated the grid row side we should return it"
+    },
+    {
+      "start": 4429.120000000001,
+      "end": 4437.4400000000005,
+      "text": " now if I compile everything seems fine and now we go get the total lots in grid which is still"
+    },
+    {
+      "start": 4437.4400000000005,
+      "end": 4445.92,
+      "text": " stopped as 0 so let us start writing it and we are going to start by creating two variables total equal 0"
+    },
+    {
+      "start": 4445.92,
+      "end": 4451.6,
+      "text": " and base lot equal 0 and then the direction which is going to be sent to this is either going to be a pi or a"
+    },
+    {
+      "start": 4451.6,
+      "end": 4458.4800000000005,
+      "text": " cell so we are going to convert this so if the direction is by or it is any direction then in that case"
+    },
+    {
+      "start": 4458.4800000000005,
+      "end": 4465.4400000000005,
+      "text": " it is by otherwise it is minus 1 for any direction otherwise if the direction sent here is minus 1 which is"
+    },
+    {
+      "start": 4465.4400000000005,
+      "end": 4473.68,
+      "text": " cell or 0 which is every grid then in that case it is going to be cell otherwise it is minus 1 and then"
+    },
+    {
+      "start": 4473.68,
+      "end": 4478.96,
+      "text": " if we are using the original profit lot sizing or the grid level start is greater than 1 and it is not"
+    },
+    {
+      "start": 4478.96,
+      "end": 4484.72,
+      "text": " automatically then we need to find the base lot for the grid which is back again to this function"
+    },
+    {
+      "start": 4484.72,
+      "end": 4492.88,
+      "text": " to start instead of at the level 1 we start at level 3 or 4 so we are only placing a marker for"
+    },
+    {
+      "start": 4493.68,
+      "end": 4499.84,
+      "text": " base level and the level 1 and the level 2 until the actual I mean if that value is 3 then we only start"
+    },
+    {
+      "start": 4499.84,
+      "end": 4506.4800000000005,
+      "text": " from level 3 onwards to create actual values so in that case we are going to find the base for the grid"
+    },
+    {
+      "start": 4506.4800000000005,
+      "end": 4512.000000000001,
+      "text": " by sending the symbol in direction and for now I am just going to stop it to 0 and then we are"
+    },
+    {
+      "start": 4512.000000000001,
+      "end": 4517.4400000000005,
+      "text": " going to come back up here and then we are going to loop through all of the positions which are currently"
+    },
+    {
+      "start": 4517.4400000000005,
+      "end": 4522.88,
+      "text": " open again selected by index if you are not able to select it by index and go to the next position"
+    },
+    {
+      "start": 4523.52,
+      "end": 4528.56,
+      "text": " then check that this is a symbol matches if they do not match them go to the next position then get the"
+    },
+    {
+      "start": 4528.56,
+      "end": 4534.000000000001,
+      "text": " magic number check if it is our magic number if it is not our magic number then go to the next position"
+    },
+    {
+      "start": 4534.48,
+      "end": 4539.92,
+      "text": " then check the direction based on the direct target direction that we have put here if it doesn't match"
+    },
+    {
+      "start": 4539.92,
+      "end": 4544.72,
+      "text": " then go to the next position then check for the level if it doesn't match and go to the next position"
+    },
+    {
+      "start": 4545.36,
+      "end": 4551.92,
+      "text": " but if all of that matches then in that case get the lots from this position because this position is our"
+    },
+    {
+      "start": 4551.92,
+      "end": 4557.6,
+      "text": " position and it is in the same direction that we want to check and at the same level that we want to check"
+    },
+    {
+      "start": 4557.6,
+      "end": 4563.12,
+      "text": " and then once again if we are using the original lot sizes or in the base lot it is in 0 then"
+    },
+    {
+      "start": 4563.68,
+      "end": 4569.2,
+      "text": " used this function we can create calculate lots from the base based on the order level that we are"
+    },
+    {
+      "start": 4569.2,
+      "end": 4575.2,
+      "text": " going to be sending and using the base lot and then add these lots to the total variable that we have"
+    },
+    {
+      "start": 4575.2,
+      "end": 4581.28,
+      "text": " initiated here as 0 so loop through all of the position continue adding this and then if it is if the"
+    },
+    {
+      "start": 4581.28,
+      "end": 4586.0,
+      "text": " order split is not allowed and the level is greater than or equal to 0 then in that case break meaning"
+    },
+    {
+      "start": 4586.0,
+      "end": 4591.84,
+      "text": " just take the first trade and then return the total and this function calculate a lot from base by sending"
+    },
+    {
+      "start": 4591.84,
+      "end": 4597.12,
+      "text": " the order level let's create that one as well so we're going to send the base if the base is"
+    },
+    {
+      "start": 4597.12,
+      "end": 4604.4800000000005,
+      "text": " less than 0 then return 0 because there is no base otherwise take the base lot and multiply it by the"
+    },
+    {
+      "start": 4604.4800000000005,
+      "end": 4611.92,
+      "text": " multiplier for this level and you remember we created the get multiplier get multiplier for the level"
+    },
+    {
+      "start": 4611.92,
+      "end": 4618.400000000001,
+      "text": " which was again going through these so for the second trade it's one for third to fifth trade is two"
+    },
+    {
+      "start": 4618.400000000001,
+      "end": 4623.4400000000005,
+      "text": " and for sixth trade onwards it's one and a half so this is what we created here and now we are"
+    },
+    {
+      "start": 4623.4400000000005,
+      "end": 4628.64,
+      "text": " basically getting that multiplier and multiplying it with the base lot and returning it based on what"
+    },
+    {
+      "start": 4628.64,
+      "end": 4636.64,
+      "text": " level we are creating so now if I compile again we don't have any errors and now if I run the test"
+    },
+    {
+      "start": 4636.64,
+      "end": 4642.320000000001,
+      "text": " what we're going to see here is that our grid are now going to be opening at the distance that we"
+    },
+    {
+      "start": 4642.32,
+      "end": 4653.2,
+      "text": " wanted so this is our first trade and then here is our first grid and it is open at exactly the same"
+    },
+    {
+      "start": 4653.2,
+      "end": 4660.16,
+      "text": " value because for the second trade the multiplier is one so it follows the same logic and then for the next"
+    },
+    {
+      "start": 4660.16,
+      "end": 4666.88,
+      "text": " one it's multiplied by two multiplied by two because that is the multiplier for the trade third to fifth"
+    },
+    {
+      "start": 4666.96,
+      "end": 4672.0,
+      "text": " and then we have a by trade in between so I'm going to speed it up a little until we have"
+    },
+    {
+      "start": 4672.0,
+      "end": 4678.32,
+      "text": " more trades so if I look through all of the cell trades the first trade was 0.3 the second trade was 0.3"
+    },
+    {
+      "start": 4678.32,
+      "end": 4683.2,
+      "text": " because the second trade multiplier is one then from third to fifth it should be multiplied by two"
+    },
+    {
+      "start": 4684.32,
+      "end": 4691.12,
+      "text": " so here it's multiplied by two then multiplied by two and then multiplied by two and then from the"
+    },
+    {
+      "start": 4691.12,
+      "end": 4695.68,
+      "text": " sixth trade onwards it should be multiplied by one and a half so we're seeing that from here it is"
+    },
+    {
+      "start": 4695.68,
+      "end": 4699.84,
+      "text": " multiplied by one and a half multiplied by one and a half multiplied by one and a half and"
+    },
+    {
+      "start": 4699.84,
+      "end": 4705.52,
+      "text": " multiplied by one and a half so we now have our grid functions done with the proper lot sizing"
+    },
+    {
+      "start": 4706.16,
+      "end": 4712.72,
+      "text": " with the comments with grid levels and the grid levels actually happening at the distance that we want"
+    },
+    {
+      "start": 4712.72,
+      "end": 4720.72,
+      "text": " the 35 or the smart distance if the smart distance is enabled so with that done now we can start looking at"
+    },
+    {
+      "start": 4721.360000000001,
+      "end": 4727.92,
+      "text": " adding the TPs and his stop losses so we go back up to the on-take function and after the check"
+    },
+    {
+      "start": 4727.92,
+      "end": 4735.4400000000005,
+      "text": " and open the grits we're going to add to it modify grid Tp and stop loss function which we're going"
+    },
+    {
+      "start": 4735.4400000000005,
+      "end": 4742.0,
+      "text": " to come down here in the segment that we have created for his stop loss and Tp and this is where we're"
+    },
+    {
+      "start": 4742.0,
+      "end": 4750.0,
+      "text": " going to start writing the modify grid Tp NSL so by the way I see I'll have this function"
+    },
+    {
+      "start": 4750.0,
+      "end": 4756.72,
+      "text": " empty so let's write that one as well which is find the base for the grid which is again we're going to take"
+    },
+    {
+      "start": 4756.72,
+      "end": 4762.0,
+      "text": " the direction and we're going to convert the direction so if the direction is one then it's by"
+    },
+    {
+      "start": 4762.0,
+      "end": 4766.64,
+      "text": " otherwise it's self and then we're going to loop through all of the position exactly the same way"
+    },
+    {
+      "start": 4766.64,
+      "end": 4770.88,
+      "text": " so select and if you're not able to select the position then continue to go to the next position"
+    },
+    {
+      "start": 4770.88,
+      "end": 4777.92,
+      "text": " check the symbols get the magic number check if it's our magic number check that the direction match"
+    },
+    {
+      "start": 4779.2,
+      "end": 4786.400000000001,
+      "text": " get the level from the magic number and then if the level is equal to grid level to start minus one"
+    },
+    {
+      "start": 4786.400000000001,
+      "end": 4793.68,
+      "text": " which is coming back here if the user has selected grid level to start s5 so the first four trades are"
+    },
+    {
+      "start": 4793.68,
+      "end": 4804.240000000001,
+      "text": " going to be dummy trades 0.10101010101010101011 so then we're going to start at the level"
+    },
+    {
+      "start": 4804.240000000001,
+      "end": 4814.56,
+      "text": " which is grid level to start minus one because it always start as 0 so 01234 is 5 so start at 0.1 and"
+    },
+    {
+      "start": 4814.56,
+      "end": 4822.0,
+      "text": " if the level matches then in that case get the lots of that position get the multiplier for that level"
+    },
+    {
+      "start": 4822.4,
+      "end": 4828.72,
+      "text": " and then if the multiplier irrigator then 0 return the lot divided by the multiplier otherwise just return 0"
+    },
+    {
+      "start": 4828.72,
+      "end": 4836.32,
+      "text": " and then close the loop and return 0 if we couldn't find any position then we just simply return a 0."
+    },
+    {
+      "start": 4836.32,
+      "end": 4841.52,
+      "text": " Let's compile again to see everything is fine so now we have filled out this stop function as well"
+    },
+    {
+      "start": 4842.56,
+      "end": 4846.32,
+      "text": " and now we can start writing our modified grid tt NSR."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "group": 29,
+  "n_frames": 1,
+  "t_start": 468.0,
+  "t_end": 468.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "a\n- > ~ , st iy /\n\u201d % -\n, 3\n7 . 4\n4 P .\n\u00bb. \u2014-\n- -f \u2018 ~\n; .. 4\n| eh",
+  "error": null,
+  "secs": 2.4
+}

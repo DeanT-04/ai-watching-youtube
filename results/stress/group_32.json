@@ -1,0 +1,11 @@
+{
+  "group": 32,
+  "n_frames": 1,
+  "t_start": 471.0,
+  "t_end": 471.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "+ - ,\n. /~ a\nPy.\n. a",
+  "error": null,
+  "secs": 2.3
+}

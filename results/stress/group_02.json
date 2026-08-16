@@ -1,0 +1,11 @@
+{
+  "group": 2,
+  "n_frames": 8,
+  "t_start": 250.0,
+  "t_end": 278.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert\nCompile\n>\n[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t\n#property link \u201chttps: //www.MrCapFree.com\u201d\u2122\n#property version \"1.66\"\n#property strikt\n#property description \u201cWaka Waka EA\"|\nint OnInit() {\n#include <Trade\\Trade.mgh>\nCTrade\nCPositionInfo\nreturn(INIT_SUCCEEDED);\n17int OnInit() {\nint OnInit() {\n20void OnDeinit(const int reason) {\nreturn(INIT_SUCCEEDED);\n23}\nreturn(INIT_SUCCEEDED);\n26}\nvoid OnDeinit(const int reason) {\n28|\n29}\n}",
+  "error": null,
+  "secs": 75.6
+}

@@ -1,0 +1,324 @@
+{
+ "group": 7,
+ "n_frames": 1,
+ "t_start": 290.0,
+ "t_end": 290.0,
+ "consensus_lines": {
+  "211": {
+   "text": "+}",
+   "votes": 1
+  },
+  "213": {
+   "text": "//| Get the order type as string |",
+   "votes": 1
+  },
+  "214": {
+   "text": "//+------------------------------------------------ +--+ +--+ = +--+",
+   "votes": 1
+  },
+  "215": {
+   "text": "string CTrade: :RequestTypeDescription(void) const |",
+   "votes": 1
+  },
+  "216": {
+   "text": "{",
+   "votes": 1
+  },
+  "217": {
+   "text": "string str;",
+   "votes": 1
+  },
+  "218": {
+   "text": "//---",
+   "votes": 1
+  },
+  "219": {
+   "text": "FormatOrderType(str, (uint)m_request.order) ;",
+   "votes": 1
+  },
+  "221": {
+   "text": "return(str);",
+   "votes": 1
+  },
+  "224": {
+   "text": "//| Get the order type filling as string |",
+   "votes": 1
+  },
+  "226": {
+   "text": "string CTrade: :RequestTypeFillingDescription(void) const",
+   "votes": 1
+  },
+  "228": {
+   "text": "string str;",
+   "votes": 1
+  },
+  "230": {
+   "text": "FormatOrderTypeFilling(str,m_request.type filling);",
+   "votes": 1
+  },
+  "232": {
+   "text": "return(str);",
+   "votes": 1
+  },
+  "234": {
+   "text": "/ /+-------------------------------------------------------------- +--+",
+   "votes": 1
+  },
+  "235": {
+   "text": "//| Get the order type time as string |",
+   "votes": 1
+  },
+  "237": {
+   "text": "string CTrade::RequestTypeTimeDescription(void) const",
+   "votes": 1
+  },
+  "238": {
+   "text": "{",
+   "votes": 1
+  },
+  "239": {
+   "text": "string str;",
+   "votes": 1
+  }
+ },
+ "support": {
+  "211": [
+   {
+    "frame": 0,
+    "text": "+}"
+   }
+  ],
+  "213": [
+   {
+    "frame": 0,
+    "text": "//| Get the order type as string |"
+   }
+  ],
+  "214": [
+   {
+    "frame": 0,
+    "text": "//+------------------------------------------------ +--+ +--+ = +--+"
+   }
+  ],
+  "215": [
+   {
+    "frame": 0,
+    "text": "string CTrade: :RequestTypeDescription(void) const |"
+   }
+  ],
+  "216": [
+   {
+    "frame": 0,
+    "text": "{"
+   }
+  ],
+  "217": [
+   {
+    "frame": 0,
+    "text": "string str;"
+   }
+  ],
+  "218": [
+   {
+    "frame": 0,
+    "text": "//---"
+   }
+  ],
+  "219": [
+   {
+    "frame": 0,
+    "text": "FormatOrderType(str, (uint)m_request.order) ;"
+   }
+  ],
+  "221": [
+   {
+    "frame": 0,
+    "text": "return(str);"
+   }
+  ],
+  "224": [
+   {
+    "frame": 0,
+    "text": "//| Get the order type filling as string |"
+   }
+  ],
+  "226": [
+   {
+    "frame": 0,
+    "text": "string CTrade: :RequestTypeFillingDescription(void) const"
+   }
+  ],
+  "228": [
+   {
+    "frame": 0,
+    "text": "string str;"
+   }
+  ],
+  "230": [
+   {
+    "frame": 0,
+    "text": "FormatOrderTypeFilling(str,m_request.type filling);"
+   }
+  ],
+  "232": [
+   {
+    "frame": 0,
+    "text": "return(str);"
+   }
+  ],
+  "234": [
+   {
+    "frame": 0,
+    "text": "/ /+-------------------------------------------------------------- +--+"
+   }
+  ],
+  "235": [
+   {
+    "frame": 0,
+    "text": "//| Get the order type time as string |"
+   }
+  ],
+  "237": [
+   {
+    "frame": 0,
+    "text": "string CTrade::RequestTypeTimeDescription(void) const"
+   }
+  ],
+  "238": [
+   {
+    "frame": 0,
+    "text": "{"
+   }
+  ],
+  "239": [
+   {
+    "frame": 0,
+    "text": "string str;"
+   }
+  ]
+ },
+ "unanchored_count": 10,
+ "per_frame": [
+  {
+   "t": 290.0,
+   "raw": [
+    [
+     "=a | Urvy + | ya Ape | <n, | \\%=} Compile I] Dw Oo | oo elgnulats | => History = Realtime lJ | Ww) | ee | | YS Welcome",
+     51.955
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * | Trade.mgh X ss",
+     70.236
+    ],
+    [
+     "211 +}",
+     49.723
+    ],
+    [
+     "lian | [$a = 2 sso ease nn anes sass sses cesses ess sssessssesssssesesesssssess}",
+     17.007
+    ],
+    [
+     "213 //| Get the order type as string |",
+     92.938
+    ],
+    [
+     "214 //+------------------------------------------------ +--+ +--+ = +--+",
+     28.366
+    ],
+    [
+     "215 string CTrade: :RequestTypeDescription(void) const |",
+     81.982
+    ],
+    [
+     "216 {",
+     50.365
+    ],
+    [
+     "217 string str;",
+     96.36
+    ],
+    [
+     "218 //---",
+     77.596
+    ],
+    [
+     "219 FormatOrderType(str, (uint)m_request.order) ;",
+     92.451
+    ],
+    [
+     "226) //---",
+     60.916
+    ],
+    [
+     "221 return(str);",
+     91.889
+    ],
+    [
+     "232}",
+     62.585
+    ],
+    [
+     "224 //| Get the order type filling as string |",
+     84.495
+    ],
+    [
+     "226 string CTrade: :RequestTypeFillingDescription(void) const",
+     67.398
+    ],
+    [
+     "2a7, {",
+     37.384
+    ],
+    [
+     "228 string str;",
+     96.515
+    ],
+    [
+     "Be: | / ===",
+     37.098
+    ],
+    [
+     "230 FormatOrderTypeFilling(str,m_request.type filling);",
+     73.668
+    ],
+    [
+     "Bate //---",
+     26.234
+    ],
+    [
+     "232 return(str);",
+     92.948
+    ],
+    [
+     "233}",
+     58.256
+    ],
+    [
+     "234 / /+-------------------------------------------------------------- +--+",
+     32.975
+    ],
+    [
+     "235 //| Get the order type time as string |",
+     85.618
+    ],
+    [
+     "Baty | [pi = ss - 23355 soe en ss acs asses ecees esses scsssessesessesenssessesssss$",
+     15.917
+    ],
+    [
+     "237 string CTrade::RequestTypeTimeDescription(void) const",
+     87.889
+    ],
+    [
+     "238 {",
+     44.53
+    ],
+    [
+     "239 string str;",
+     96.445
+    ]
+   ]
+  }
+ ]
+}

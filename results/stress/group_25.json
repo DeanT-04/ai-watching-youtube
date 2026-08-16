@@ -1,0 +1,11 @@
+{
+  "group": 25,
+  "n_frames": 1,
+  "t_start": 464.0,
+  "t_end": 464.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "~ hg ;\n= \u2018 7\nj , : \u00e9 -\naf i",
+  "error": null,
+  "secs": 2.2
+}

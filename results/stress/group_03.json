@@ -1,0 +1,11 @@
+{
+  "group": 3,
+  "n_frames": 7,
+  "t_start": 279.0,
+  "t_end": 285.0,
+  "source": "paddle+tesseract (consensus x7)",
+  "valid": false,
+  "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert\nss\n[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t\n#property 1ink\n#property version \"1.6\"\n#property description \u201cWaka Waka EA\"\n#include <Trade\\Trade.mqh>\nTrade;\nCPositionInfo\ncOrderInfo\n20int OnInit() {\nreturn(INIT_SUCCEEDED);\n26}\n}\nvoid OnDeinit(const int reason) {",
+  "error": null,
+  "secs": 64.7
+}

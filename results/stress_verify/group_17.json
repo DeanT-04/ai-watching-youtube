@@ -1,0 +1,1203 @@
+{
+ "group": 17,
+ "n_frames": 8,
+ "t_start": 362.0,
+ "t_end": 379.0,
+ "consensus_lines": {
+  "1": {
+   "text": "Wo ao | Pl ll a fj\u2014o",
+   "votes": 1
+  },
+  "3": {
+   "text": "bed EVRUSD,H1: Euro vs US Dollar \\Waka Waka by Mr CapFree - Calendar updated [@",
+   "votes": 8
+  },
+  "4": {
+   "text": "Pi et | : 1.14850",
+   "votes": 1
+  }
+ },
+ "support": {
+  "1": [
+   {
+    "frame": 2,
+    "text": "Wo ao | Pl ll a fj\u2014o"
+   }
+  ],
+  "3": [
+   {
+    "frame": 0,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 1,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 2,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 3,
+    "text": "kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 4,
+    "text": "kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 5,
+    "text": "kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 6,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar \\Waka Waka by Mr CapFree - Calendar updated [@"
+   },
+   {
+    "frame": 7,
+    "text": "bed EVRUSD,H1: Euro vs US Dollar \\Waka Waka by Mr CapFree - Calendar updated [@"
+   }
+  ],
+  "4": [
+   {
+    "frame": 4,
+    "text": "Pi et | : 1.14850"
+   }
+  ]
+ },
+ "unanchored_count": 263,
+ "per_frame": [
+  {
+   "t": 362.0,
+   "raw": [
+    [
+     "&> &\u00ae) U AlgotTrading () New Order WU AX A po 4 WIS | ice) M1 MS M15 M30} H1 H4 D1 W1 MN :) \\ UY OS owl",
+     55.125
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     73.164
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     77.357
+    ],
+    [
+     "Ty ay, Time In Currencylmpact News Event i] | :",
+     64.234
+    ],
+    [
+     "VSattes 22:13 2d 10h CAD Med BoC Senior Deputy Governor Ragers|Speech | / | | | _",
+     58.703
+    ],
+    [
+     "- +8:00\u20143d-Gh- -CAB\u2014Low\u2014 Budget Balance\u2014 tg} \u2014 os ee Pek \u20141 |} eee)",
+     14.285
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, ibchl Mode i. | a ! | \u00bb ll CT .",
+     56.033
+    ],
+    [
+     "xpected lot: 0.07 22:30 3d10h AUD Med CFTCAUD Non-Commercial N tions n| it",
+     57.935
+    ],
+    [
+     "currency pairs: 22:30 3d10h CAD Low CFTCCAD Nort\u00a2ommercial Net Pasit ] Um, \u2014",
+     48.666
+    ],
+    [
+     "everage: 1:500 22:30 3d10h 4 =NZD Low CFTCNZD Non-Commercial Net Posie. Jb 7) 7 a TRO\u201d a ee ae 1.15540",
+     35.467
+    ],
+    [
+     "ots opened: 0.00 03:00 6d 15h NZD Low ANZ Business|Confidence | [JEac | :",
+     58.781
+    ],
+    [
+     "loating PnL: 0.00 03:00 6d15h NZD Low ANZ Activity Oltlook 4} \u2018ae | |",
+     58.519
+    ],
+    [
+     "comment = Waka Wakall 93:30 6d1Sh AUD Low RBAHobsingCredit mm mu \u00bb| -",
+     29.575
+    ],
+    [
+     "MT offpet: +3 (Updated}] 93:30 6d15h AUD Low RBAPrivete Sector Credit m/m | co",
+     55.686
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     69.818
+    ],
+    [
+     "lesen oe 14m Label Label Label Label Label) 7",
+     59.873
+    ],
+    [
+     "| sat Label Label Label Label Label]",
+     78.542
+    ],
+    [
+     ". Label Label Label Label Label \u00a2 E",
+     65.479
+    ],
+    [
+     "Label Label Label Label Li bel 2 i",
+     74.952
+    ],
+    [
+     "az i ell y 1.14850",
+     45.771
+    ],
+    [
+     "ae | _o (i, jmC) ]",
+     29.518
+    ],
+    [
+     "1D al 1.14505",
+     35.141
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     74.372
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. ses seve .01 0.00 0.00%",
+     50.786
+    ],
+    [
+     "DCAD Q0:00/23:59 uf. on cove 0) 0.90 0.00%",
+     54.595
+    ],
+    [
+     "A2DAD ONAN P59 H Oi f in a na%",
+     19.922
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.853
+    ],
+    [
+     "v View previous single test results",
+     83.252
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.771
+    ],
+    [
+     "dices or Crypto) Pct_of Price Profile | _ v | Fixed_pips_profil Pct_of_Price Profile |",
+     81.012
+    ],
+    [
+     "Pct_of_Balance Fixed_Lots Pct_of_Free_Margin",
+     91.713
+    ],
+    [
+     "0.01 0.01 0.001 0.1",
+     96.493
+    ],
+    [
+     "NA; Oo mirrant 4 KMAnth",
+     43.563
+    ]
+   ]
+  },
+  {
+   "t": 364.0,
+   "raw": [
+    [
+     "S&S & Algo Trading [7 New Order Wu Ce & Fle Hy \u2018fe) \u00a9 M1 MS M15 M30| H1 H4 D1 W1 MN i ee. Se wm i",
+     55.505
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     73.337
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     76.922
+    ],
+    [
+     "Ts Time In Currencylmpact News Event | Lit. |",
+     73.354
+    ],
+    [
+     "Veen 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | [] | |",
+     67.807
+    ],
+    [
+     "WAKA 4] -18:88-3e- 6h \u2014_CAD\u2014Low\u2014\u2014Budget Balanee\u2014-t ge = a i $$ Ses e\u2014elS 5) 1.15880 |",
+     38.17
+    ],
+    [
+     "; 18:00 3d 6h CAD Low Budget Balance, a | 1 am \" ll \"mCi :",
+     54.141
+    ],
+    [
+     "xpected lot 0.01 22:30 3d10h AUD Med CFTCAUD Nor-Commercial Nl tions | ,",
+     52.807
+    ],
+    [
+     "urrency pairs: 22:30 3d10h 4=CAD \u00ab= Low = CFTC CAD Nort Commercial Net PSH ie PAL. [l see.",
+     50.603
+    ],
+    [
+     "everage: 1:500 22:30 3d10h =NZD Low CFTCNZD Noncommercial NetPasftiome. Lr) 7 i TRO a fee aul 4.45540",
+     34.271
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NZD Low ANZ Businegs|Confidence a | | my [JEac :",
+     66.474
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook ih ree a | |",
+     62.69
+    ],
+    [
+     "comment = =WakaWakall 93:30 6d1Sh AUD Low RBAHobsingCredit m/m a \u00bb! a",
+     48.287
+    ],
+    [
+     "MT offset: +3 (Updated}] 93:30 6d15h AUD Low RBAPrivetd Sector Credit m/m | ce",
+     51.634
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label . 1.15195",
+     59.847
+    ],
+    [
+     "lees oe 1am Label Label Label Label Labbll [5",
+     55.95
+    ],
+    [
+     "radihg Disabla Label Label Label Label Label",
+     65.207
+    ],
+    [
+     "- Label Label Label Label Label \u2014 |",
+     68.631
+    ],
+    [
+     "Label Label Label Label A bel '\u00a7",
+     64.775
+    ],
+    [
+     "; [ = 1.14850",
+     74.75
+    ],
+    [
+     "ee _= 7H, aC]",
+     26.477
+    ],
+    [
+     "1.0 it ae : | \\",
+     47.564
+    ],
+    [
+     "SS : 1.14505",
+     49.781
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     69.603
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. ses seve 0.01 0.00 0.00%",
+     55.367
+    ],
+    [
+     "DCAD Q0:00/23:59 uf. ane end 0 0.90 0.00%",
+     57.378
+    ],
+    [
+     "ADTAD ON N/P5 AG H Oi fin a nn%",
+     15.753
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.738
+    ],
+    [
+     "Vv View previous single test results Vv",
+     78.282
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.734
+    ],
+    [
+     "dices or Crypto) Pct_of Price Profile v | Fixed_pips_profile Pct_of_Price_Profile |",
+     74.203
+    ],
+    [
+     "Fixed_pips_ profile",
+     90.072
+    ],
+    [
+     "Pct_of Price Profile ls Fixed_Lots Pct_of_Free_Margir",
+     85.403
+    ]
+   ]
+  },
+  {
+   "t": 367.0,
+   "raw": [
+    [
+     "> | U AlgoTrading [7% New Order WU aH bo || WIS | igo) 2 M1 MS M15 M30} H1 H4 D1 Wi MN UY OS owl",
+     53.846
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     73.337
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     76.922
+    ],
+    [
+     "Tal A TZ Time In Currencylmpact News Event i Lu |",
+     64.224
+    ],
+    [
+     "Wlattes 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | i | | | | n",
+     64.369
+    ],
+    [
+     "\u2014 4800-3 6h CAD Low Budget Balen) gg} | Oe |__|] \"EEE",
+     38.131
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, bch Mod ; | 1 | | 7 ec :",
+     60.325
+    ],
+    [
+     "xpected lot 0.01 22:30 3d10h AUD Med CFTCAUD Nor-Commercial Nl tions | i",
+     59.057
+    ],
+    [
+     "urrency pairs: 22:30 3d10h CAD Low CFTCCAD Nor\u00a2ommercial Net Pasi er WEL, i",
+     59.206
+    ],
+    [
+     "everage: 1:500 22:30 3d10h =NZD Low CFTCNZD Non-Commercial NetPosttiomet. ry 7 [] TRO aa ae tL 1.15540",
+     36.748
+    ],
+    [
+     "ots opened: 0.00 03:00 6d 15h NZD Low ANZ Businesgs|Confidence : u | | 1 [JEac | ;",
+     53.933
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook a alae | ,",
+     62.891
+    ],
+    [
+     "comment = Waka Wakal) 93:30 6d1Sh AUD Low RBAHobsing-Credit m/m a ml =",
+     41.915
+    ],
+    [
+     "MT offpet: +3 (Updated]) 93:30 6d15h AUD Low RBA Private Sector Credit m/m mo",
+     62.436
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label . 1.15195",
+     65.951
+    ],
+    [
+     "lees oe 1am Label Label Label Label Label T\u00b0",
+     60.134
+    ],
+    [
+     "i Label Label Label Label Label",
+     81.297
+    ],
+    [
+     ". Label Label Label Label Label \u2014 |",
+     68.279
+    ],
+    [
+     "Label Label Label Label A bel : i |",
+     63.008
+    ],
+    [
+     "H ; | ' 1.14850",
+     24.963
+    ],
+    [
+     "1 Wo ao | Pl ll a fj\u2014o",
+     34.722
+    ],
+    [
+     "1.0 Lt 0 d I |",
+     47.612
+    ],
+    [
+     "SSS SS\u20140000 : 1.14505",
+     33.39
+    ],
+    [
+     "urr Pair Trading time NextPrice/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     79.056
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. ses seve 0.01 0.00 0.00%",
+     56.572
+    ],
+    [
+     "DCAD Q0:00/23:59 uf. ane end 0 0.90 0.00%",
+     55.206
+    ],
+    [
+     "ADTAD OO NsP 5A H Oi fin a nn%",
+     13.447
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.767
+    ],
+    [
+     "Vv View previous single test results Vv",
+     76.499
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.734
+    ],
+    [
+     "dices or Crypto) |Pct_of Price Profile v | Fixed_pips_profile Pct_of Price Profile |",
+     93.236
+    ],
+    [
+     "Pct_of_Balance Fixed_Lots Pct_of_Free_Margin",
+     91.75
+    ],
+    [
+     "0.01 0.01 0.001 0.1",
+     96.426
+    ],
+    [
+     "2.0 2.0 0.2 20.0",
+     95.529
+    ],
+    [
+     "NA; A urrarn 4 Manth",
+     62.929
+    ]
+   ]
+  },
+  {
+   "t": 369.0,
+   "raw": [
+    [
+     "\u2014& & Algo Trading [* New Order Wu Ce SH Fy le My \u2018fe) 5 M1 MS M15 M30| H1 H4 D1 W1 MN Wa = OS wi",
+     51.903
+    ],
+    [
+     "3 kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     71.052
+    ],
+    [
+     "ka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     81.751
+    ],
+    [
+     "T. Tire In Currency lmpact News Event I | 1",
+     55.649
+    ],
+    [
+     "ans. 22:13 2d10h CAD Med BoC Senior Deputy Governor Rogers|Speech | ' | | n",
+     70.596
+    ],
+    [
+     "- \u20141+8:00\u20143e-Gh- -CAD\u2014\\Leow\u2014 Budget Balanee\u2014- ++ a oe oo {j= 5) 1.15880 |",
+     49.084
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, ibchl Mody | 1 | | 7 ,",
+     69.296
+    ],
+    [
+     "xpected lot: 0.01 2230 3d10h AUD Med CFTCAUD Nor-Commercial Net Agpettions oT ae",
+     59.184
+    ],
+    [
+     "currency pairs: 22:30 3d10h =CAD Low CFTCCAD Nor-Commercial Net i | , | | |} ja :",
+     42.784
+    ],
+    [
+     "everage: \u2014 1:500 22:30 3d10h 4 =NZD Low CFTCNZD Noncommercial NetPosttio@e ry 7 [] (Teo a aL 1.15540",
+     44.556
+    ],
+    [
+     "ats opened: 0.00 03:00 6d15h NZD Low ANZ Business|Cbnfidence | | [JBac",
+     72.001
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook ah | r I ;",
+     63.758
+    ],
+    [
+     "comment = WakaWakall 93:30 6d1Sh AUD Low RBAHobsingCredit mm s ml -",
+     33.707
+    ],
+    [
+     "MT offpet: +3 (Updated]) 93:30 6d15h AUD Low RBA Private Sector Credit m/m mc",
+     60.627
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     64.981
+    ],
+    [
+     "lesen oe 14m Label Label Label Label Label [>",
+     53.232
+    ],
+    [
+     "rhdihg Disable Label Label Label Label Label]",
+     65.826
+    ],
+    [
+     "Label Label Label Label Label ~",
+     78.182
+    ],
+    [
+     "Label Label Label Label Li bel : I",
+     70.013
+    ],
+    [
+     "| 1.14850",
+     56.622
+    ],
+    [
+     "ee _o Oe a0)",
+     45.498
+    ],
+    [
+     "piped ety PL",
+     22.481
+    ],
+    [
+     "1.0 it ae \" ; 1 _|",
+     37.86
+    ],
+    [
+     "SS Taare i 1.14505",
+     33.84
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     75.38
+    ],
+    [
+     "UDNZD 00:00/23:59 sssseifisaiss asus vee O.01 0.00 0.00%",
+     51.16
+    ],
+    [
+     "UDCAD G0:00/23:59 ssaseifisasss os ween P.O 0.00 0.00%",
+     35.847
+    ],
+    [
+     "A2DAD OOP 5 AG H Oi fin nn,",
+     17.756
+    ],
+    [
+     "Jar 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     94.183
+    ],
+    [
+     "Vv View previous single test results v",
+     73.676
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.857
+    ],
+    [
+     "dices or Crypto) Pct_of_Price_ Profile Fixed_pips_profile Pct_of_Price_ Profile |",
+     87.067
+    ],
+    [
+     "| Pct_of_Balance.. v | Fixed_Lots Pct_of_Free_Margin",
+     73.256
+    ],
+    [
+     "Fixed_Lots : 0.01 0.001 0.1",
+     76.787
+    ],
+    [
+     "Pct_of_Balance 2.0 0.2 20.0",
+     93.873
+    ],
+    [
+     "Pct_of_Equity \u2014 4) RARE",
+     51.395
+    ]
+   ]
+  },
+  {
+   "t": 372.0,
+   "raw": [
+    [
+     "&> | U AlgoTrading (3%) New Order WU a & oF WIS | ice) M1 MS M15 M30} H1 H4 D1 Wi MN U OS mw tl",
+     54.322
+    ],
+    [
+     "3 kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     71.247
+    ],
+    [
+     "aka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     80.006
+    ],
+    [
+     "Ts ro Time In Currencylmpact News Event I | |",
+     74.825
+    ],
+    [
+     "VS ate - 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech a F | | | | 0",
+     59.288
+    ],
+    [
+     "\u2014WAKA\u2014}} 18:80-3c- 6h \u2014CAB\u2014Low\u2014 Budget Batance\u2014 3g} +S A _|_|\"_* Sd 5 \u2014 fe\" EZ",
+     23.536
+    ],
+    [
+     "W ; 18:00 3d 6h CAD Low Budget Balance, ibcal Mowe 1 | | 1] . |",
+     62.154
+    ],
+    [
+     "xpected lot 0.01 22:30 3d10h 4 AUD Med = CFTCAUD Nor-Commercial Nl tions Tl os",
+     55.539
+    ],
+    [
+     "currency pairs: 22:30 3d10h CAD Low CFTCCAD NortGommercial Net Pasi ] \u201cg(i\u00ae \u2014_\u2014",
+     51.733
+    ],
+    [
+     "everage: 1:500 22:30 3d 10h NZD Low = CFTCNZD Non-Commercial Net Pos|tioMe. Lr)\" (] \u2018|TeO P 1.15540",
+     32.712
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NZD Low ANZ Busineds|Cbnfidence | | [JBac",
+     65.771
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook qq\" rm | ;",
+     64.94
+    ],
+    [
+     "\u2018omment: Waka Wakal] 93:30 6d15h AUD Low RBAHobising Credit m\u00e9m | ml - ao |",
+     47.439
+    ],
+    [
+     "MT offpet: +3 (Updated]} 93:30 6d15h AUD Low RBA Private Sector Credit m/m mo",
+     60.611
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     69.428
+    ],
+    [
+     "lereevnin sae 14m Label Label Label Label Labbll [5",
+     56.764
+    ],
+    [
+     "] sat Label Label Label Label Label]",
+     83.216
+    ],
+    [
+     "Label Label Label Label Label ~",
+     78.577
+    ],
+    [
+     ", Label Label Label Label Li bel : I",
+     66.151
+    ],
+    [
+     "4 Pi et | : 1.14850",
+     42.603
+    ],
+    [
+     "\" oe) ee [eh",
+     29.84
+    ],
+    [
+     "1.0 a 0 : 1 \\",
+     35.255
+    ],
+    [
+     "\u2014\u2014S\u2014eE 1.14505",
+     47.534
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating Pn Dep load",
+     69.332
+    ],
+    [
+     "UDNZD 00:00/23:59 af... = eef.04 0.00 0.00%",
+     57.217
+    ],
+    [
+     "DCAD Q0:00/23:59 wf. _ ond .0 0.90 0.00%",
+     49.821
+    ],
+    [
+     "A2DAD O00 #?5\u00b0A9 pit fil 0 in Ann, I I !",
+     22.017
+    ],
+    [
+     "ar 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     94.252
+    ],
+    [
+     "Vv View previous single test results v",
+     70.735
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.781
+    ],
+    [
+     "dices or Crypto) Pct_of_Price_ Profile Fixed_pips_profile Pct_of_Price_ Profile |",
+     87.08
+    ],
+    [
+     "|Pct_of Balance v | Fixed_Lot Pct_of_Free_Margir",
+     83.044
+    ],
+    [
+     "| Fixed_Lots 0.01 0.001 0.1",
+     94.445
+    ],
+    [
+     "|Pct_of Balance 20 0.2 20.0",
+     84.777
+    ],
+    [
+     "|Pct_of_Equity \u2014\u2014\u2014 4) wack",
+     40.301
+    ]
+   ]
+  },
+  {
+   "t": 374.0,
+   "raw": [
+    [
+     "&> | U AlgoTrading (3%) New Order Wu a & oF WIS | ice) M1 MS M15 M30} H1 H4 D1 Wi MN U OS mw tl",
+     54.392
+    ],
+    [
+     "3 kew@ EVRUSD,H1: Euro vs US Dollar (Waka Waka by Mr CapFree - Calendar updated [@",
+     71.247
+    ],
+    [
+     "aka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     81.205
+    ],
+    [
+     "Ts ro Time In Currencylmpact News Event I | |",
+     74.825
+    ],
+    [
+     "Vi ate - 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | ' | | | _ A",
+     53.46
+    ],
+    [
+     "\u2014r7 7 \u2014\u2014\u2014}-18:86-3 Gh \u2014\u2014_GABD\u2014Low\u2014Burlget Batance\u2014-cr ge} > Ht it oe | 1.15887",
+     28.332
+    ],
+    [
+     "WAKA 18:00 3d 6h CAD Low Budget Balance, ibcal Moda | | | er 1) ,",
+     60.813
+    ],
+    [
+     "xpected lot: 0.07 22:30 3d10h AUD Med CFTCAUD Non-Commercial N tions i at",
+     54.185
+    ],
+    [
+     "currency pairs: 22:30 3d10h CAD Low CFTCCAD NortGommercial Net Pasi ] \u201cg(i\u00ae \u2014_\u2014",
+     52.314
+    ],
+    [
+     "everage: 1:500 22:30 3d 10h NZD Low \u00a9 CFTCNZD Non-Commercial Net Posie. Lr\" (] \u2018|TeO P 1.15540",
+     32.016
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NZD Low ANZ Busineds|Cbnfidence | | [JBac",
+     65.771
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook qq\" rm | ;",
+     64.94
+    ],
+    [
+     "\u2018omment: = Waka Wakal) 93:30 6d15h AUD Low RBAHobising Credit m\u00e9m | ml - ao |",
+     45.544
+    ],
+    [
+     "MT offpet: +3 (Updated]} 93:30 6d15h AUD Low RBA Privete Sector Credit m/m mo",
+     59.431
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     61.314
+    ],
+    [
+     "lees 46 13m Label Label Label Label Labbll [5",
+     61.153
+    ],
+    [
+     "] sat Label Label Label Label Label]",
+     83.216
+    ],
+    [
+     "Label Label Label Label Label ~",
+     77.746
+    ],
+    [
+     ", Label Label Label Label Li bel : I",
+     65.032
+    ],
+    [
+     "Pi et Tit : 1.14850",
+     49.116
+    ],
+    [
+     "a oo) ee fe",
+     32.77
+    ],
+    [
+     "SO ooo ; 1.14505",
+     54.048
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating Pn Dep load",
+     68.987
+    ],
+    [
+     "UDNZD 00:00/23:59 af... a eef.04 0.00 0.00%",
+     55.335
+    ],
+    [
+     "UDCAD Q0:00/23:59 wf. _ ond .0 0.90 0.00%",
+     51.303
+    ],
+    [
+     "A2DAD O00 #?5\u00b0A9 pit fil 0 in Ann, I I !",
+     22.017
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     94.183
+    ],
+    [
+     "Vv View previous single test results v",
+     70.353
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.765
+    ],
+    [
+     "dices or Crypto) Pct_of_Price_ Profile Fixed_pips_profile Pct_of_Price_ Profile |",
+     86.939
+    ],
+    [
+     "NA; a rran 41 Manth",
+     49.326
+    ]
+   ]
+  },
+  {
+   "t": 377.0,
+   "raw": [
+    [
+     "> Ke | U AlgoTrading [7 New Order WU a & oe WIS | ge) M1 MS M15 M30) H1 H4 D1 W1 MN :) | UY JS mi",
+     53.957
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar \\Waka Waka by Mr CapFree - Calendar updated [@",
+     80.528
+    ],
+    [
+     "aka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     74.48
+    ],
+    [
+     "i . Time In Currency Impact News Event ] lL",
+     52.772
+    ],
+    [
+     "Ulatie: 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech \u2018E | | | | n EEE",
+     57.604
+    ],
+    [
+     "= \u2014\u2014}18:88-3c-6h \u2014CaB\u2014tow\u2014Budget Batance\u2014 cr} J -\u2014<--- _ +} ia rt ot",
+     21.215
+    ],
+    [
+     ": WAKA 18:00 3d 6h CAD Low Budget Balance, ical Mose | | : , mc ,",
+     56.711
+    ],
+    [
+     "xpected lot 0.01 22:30 3d10h AUD Med CFTCAUD Nor-Commercial Nl tions aT",
+     67.024
+    ],
+    [
+     "currency pairs: 22:30 3d10h CAD Low CFTCCAD Nort\u00a2ommercial Net Paki | Um, ll sees",
+     59.878
+    ],
+    [
+     "everage: 1:500 22:30 3d 10h 4 =NZD Low CFTCNZD Non-Commercial Net Posie. 7) 7 i (Teo ae en H 4.15540",
+     28.335
+    ],
+    [
+     "ots opened: 0.00 03:00 6d15h NzZD Low ANZ Business|Confidence : | | | ) re F",
+     70.213
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook BL oe I",
+     67.72
+    ],
+    [
+     "omment = Waka Wakal) 93:30 6d1Sh AUD Low RBAHobsingCredit mm s - ia",
+     41.72
+    ],
+    [
+     "MT offset: +3 (Updated|] 93:30 6d15h AUD Low RBAPrivete Sector Credit m/m mc",
+     57.314
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     64.499
+    ],
+    [
+     "lesen oe 13m Label Label Label Label Label T\u00b0",
+     62.424
+    ],
+    [
+     "t Label Label Label Label Label]",
+     63.192
+    ],
+    [
+     ". Label Label Label Label Label ~",
+     74.185
+    ],
+    [
+     "Label Label Label Label i bel \u2018|",
+     69.372
+    ],
+    [
+     "\u2018 | 1.14850",
+     45.33
+    ],
+    [
+     "a | _= Te, | a",
+     48.541
+    ],
+    [
+     "1.0 | LL 1 _|",
+     66.536
+    ],
+    [
+     "tc caoaa>sa\u2014m\u2014m>\u00bbn) 1.14505",
+     45.353
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     73.514
+    ],
+    [
+     "UDNZD 00:00/23:59 ssasesfsaiss saa vee O.0 0.00 0.00%",
+     50.767
+    ],
+    [
+     "UDCAD G0:00/23:59 saaseiftsaiss aaa ween 0 0.00 0.00%",
+     33.826
+    ],
+    [
+     "dzDhan loos? 3-69 fo nin ana,",
+     22.256
+    ],
+    [
+     "Jar 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.879
+    ],
+    [
+     "Vv View previous single test results Y",
+     70.435
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.747
+    ],
+    [
+     "dices or Crypto) Pct_of_Price_ Profile Fixed_pips_profile Pct_of_Price Profile |",
+     92.057
+    ],
+    [
+     "0.01 ~ 0.01 0.001 0.1",
+     88.18
+    ],
+    [
+     "NA; Oo urrarn 1 Manth",
+     42.903
+    ]
+   ]
+  },
+  {
+   "t": 379.0,
+   "raw": [
+    [
+     "S> (@\u00ae) U AlgoTrading (7) New Order Wu Ke S Ep i|- My \u2018fe) 5 M1 MS M15 M30| H1 H4 D1 W1 MN i iS. Siw",
+     51.596
+    ],
+    [
+     "3 bed EVRUSD,H1: Euro vs US Dollar \\Waka Waka by Mr CapFree - Calendar updated [@",
+     80.528
+    ],
+    [
+     "aka Waka by Mr. CapFree: www. youtube.com#@MrCapFree) | 1.16230",
+     74.48
+    ],
+    [
+     "Ts. Tire In Currencylmpact News Event | |",
+     72.758
+    ],
+    [
+     "wee : 22:13 2d 10h CAD Med BoC Senior Deputy Governor Rogers|Speech | | [] | | : =",
+     65.208
+    ],
+    [
+     "; _ : sae \u2014 Badger Setence\u2014 or b | oH wy mb a 1 15G02",
+     27.817
+    ],
+    [
+     "WAKA +8:00-3c-6h \u2014\u2014CAD\u2014 BudgetBatance- ti 1.15892)",
+     54.265
+    ],
+    [
+     "; 18:00 3d 6h CAD Low Budget Balance, ibchl Mog : | 1 | \"mci ,",
+     57.34
+    ],
+    [
+     "xpected lot: 0.07 22:30 3d10h AUD Med CFTCAUD Non-Commercial tions aT",
+     58.812
+    ],
+    [
+     "currency pairs: 22:30 3d10h CAD Low CFTCCAD Nort\u00a2ommercial Net Pasi (] a ee \u2014_\u2014, s",
+     38.988
+    ],
+    [
+     "everage: \u2014 1:500 22:30 3d 10h 4 =NZD Low CFTCNZD Non-Commercial Net Posie. 7) 7 ( TEU a ; 4.15540",
+     25.46
+    ],
+    [
+     "ats opened: 0.00 03:00 6d 15h NZD Low ANZ Business |Confidence | | | i Lo | ;",
+     73.443
+    ],
+    [
+     "loating Pn: 0.00 03:00 6d15h NZD Low ANZ Activity Outlook fa oe I |",
+     68.572
+    ],
+    [
+     "omment = Waka Wakal) 93:30 6d1Sh AUD Low RBAHobsingCredit mm s - ia",
+     41.72
+    ],
+    [
+     "MT offpet: +3 (Updated]} 93:30 6d15h AUD Low RBA Private Sector Credit m/m mcs",
+     57.854
+    ],
+    [
+     "vents fbund:10 Label Label Label Label Label ' 1.15195",
+     64.499
+    ],
+    [
+     "lesen oe 13m Label Label Label Label Label T\u00b0",
+     62.424
+    ],
+    [
+     "radihg Disabl Label Label Label Label Label]",
+     75.995
+    ],
+    [
+     "Label Label Label Label Label ~",
+     77.345
+    ],
+    [
+     "Label Label Label Label Li bel \u2018|",
+     69.722
+    ],
+    [
+     ", Fa 1.14850",
+     56.77
+    ],
+    [
+     "ee _H On mC)",
+     54.98
+    ],
+    [
+     "et med |",
+     57.714
+    ],
+    [
+     "1.0 I LL |= 1 |",
+     54.726
+    ],
+    [
+     "Er 1.14505",
+     63.357
+    ],
+    [
+     "urr Pair Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load",
+     75.501
+    ],
+    [
+     "UDNZD 00:00/23:59 fu. a seve 0.01 0.00 0.00%",
+     51.364
+    ],
+    [
+     "UDCAD QO:00/23:59 uf. ses erin 0.90 0.00%",
+     48.562
+    ],
+    [
+     "A2DTAD OO N P59 H Oi fin a na%",
+     14.097
+    ],
+    [
+     "far 2026 18 Mar 22:00 19 Mar 06:00 19 Mar 14:00 19 Mar 22:00 20 Mar 06:00 20 Mar 14:00 20 Mar 22:00 23 Mar 06:00 23 Mar 14:00 23 Mar 22:00 24 Mar 06:00",
+     93.768
+    ],
+    [
+     "v View previous single test results Y",
+     67.477
+    ],
+    [
+     "Value Start Step Stop Steps",
+     96.661
+    ],
+    [
+     "dices or Crypto) Pct_of_Price_ Profile Fixed_pips_profile Pct_of_Price_ Profile |",
+     91.419
+    ],
+    [
+     "| Pct_of_Balance v | Fixed_Lots Pct_of_Free_Margin",
+     87.685
+    ],
+    [
+     "Fixed_Lots 0.01 0.001 0.1",
+     94.668
+    ],
+    [
+     "Pct_of_Balance 2.0 0.2 20.0",
+     79.268
+    ],
+    [
+     "Pct_of_Equity ee a Riamacdh",
+     33.179
+    ]
+   ]
+  }
+ ]
+}

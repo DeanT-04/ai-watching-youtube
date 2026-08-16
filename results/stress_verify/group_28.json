@@ -1,0 +1,24 @@
+{
+ "group": 28,
+ "n_frames": 1,
+ "t_start": 467.0,
+ "t_end": 467.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 2,
+ "per_frame": [
+  {
+   "t": 467.0,
+   "raw": [
+    [
+     "~ : . -",
+     14.167
+    ],
+    [
+     "e . ap",
+     24.196
+    ]
+   ]
+  }
+ ]
+}

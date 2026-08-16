@@ -1,0 +1,40 @@
+{
+ "group": 33,
+ "n_frames": 1,
+ "t_start": 472.0,
+ "t_end": 472.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 6,
+ "per_frame": [
+  {
+   "t": 472.0,
+   "raw": [
+    [
+     ". = en hoi: ie a",
+     18.636
+    ],
+    [
+     ", a \u00bb | |",
+     47.564
+    ],
+    [
+     "Pa oe 7a ae",
+     23.767
+    ],
+    [
+     "\u00ab i \u201ca",
+     80.38
+    ],
+    [
+     "haat *",
+     21.296
+    ],
+    [
+     "ww",
+     38.111
+    ]
+   ]
+  }
+ ]
+}

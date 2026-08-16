@@ -1,0 +1,11 @@
+{
+  "group": 10,
+  "n_frames": 1,
+  "t_start": 345.0,
+  "t_end": 345.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "3 Compile\nE> History\n> Realtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\n1//+\n2//\nWakaWaka by MrCapFree.mq5\n3//l\nMr CapFree\n4//I\nhttps://www.MrCapFree.com\n5//\n6#property copyright\n\"Mr CapFree'\n7#property link\n\"https://www.MrCapFree.com\"\n8#property version\n\"1.00\"\n9#property strict\n10 #property description \"Waka Waka EA\".\n11\n12 #include <Trade\\Trade.mqh>\n13\ncTrade\nTrade;\n14\nCPositionInfo\nposInfo;\n15\ncorderInfo\nordInfo;\n16\n17\nenum LotsizingEnum\n{\n18\nLowRiskPreset = 5,\n//Low Risk Set 20% annual 0.25% load\n19\nMidRiskPreset = 4,\n//Mid Risk Set 40% annual (0.5% load)\n20\nHighRiskPreset = 3,\n//Significant Risk Set 80% annual (1.0% load)\n21\nExtremeRiskPreset = 7,\n//High Risk Set 120% annual 1.5% load)\n22\nLotsEquity = 2,\n//Dynamic Lot based on Equity\n23\nLotsBalance = 1,\n//Dynamic Lot based on Balance\n24\nLotsDepositLoad = 6,\n//Lots based on Deposit load\n25\nFixedLots = 0\n//Fixed Lot\n26\n};\n27\n28|\n29\n-\nV | [tenn nnn nnn rr nnn rrr rrr rn nnn rn nn rn nnn nn ncn c cnc n crn nant\n2A) / | WakaWaka by MrCapFree.mg5 |\nBf [tern rrr rrr rrr rn nnn cnr n cnc n ccc cnc ccc ccc nent\n7 #property link \u201chttps: //www.MrCapFree.com\"\u2122\n8 #property version \"1.606\"\n10 #property description \u201cWaka Waka EA\"\n12 #include <Trade\\Trade.mgh>\n28 |\nq D",
+  "error": null,
+  "secs": 10.7
+}

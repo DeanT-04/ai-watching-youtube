@@ -1,0 +1,11 @@
+{
+  "group": 12,
+  "n_frames": 5,
+  "t_start": 351.0,
+  "t_end": 355.0,
+  "source": "paddle+tesseract (consensus x5)",
+  "valid": false,
+  "text": "0.00%\nMar 14:00\nMar 06:00\nMT offset\n1.15882\n1.15560\n18Mar 22:00",
+  "error": null,
+  "secs": 59.8
+}

@@ -1,0 +1,11 @@
+{
+  "group": 39,
+  "n_frames": 1,
+  "t_start": 485.0,
+  "t_end": 485.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "fx\nCompile\nE> History\n> Realtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\n47\nstring\nSymbo1Name;\n48\ndatetime\nLastMainTFUpdate;\n49\ndatetime\nLastOPoTFUpdate;\n50\nint\nUpdateCounter;\n51\nbool\nCanBuy;\n52\nbool\nCanSel1;\n53\ndatetime\nCurrentBarTime;\n54\ndatetime\nPreviousBarTime;\n55\nclosePrice;\ndouble\n56\nboo1\nGridOpened;\n57\nbool\nOPOTriggered;\n58\ndouble\nSmartDistanceMultiplier;\nBBWidth;\n59\ndouble\n60\nint\nLastBarIndex;\n61\nint\nCurrentBarIndex;\n62\nlong\nPatternValue;\n63\ndouble\nPatternPrice;\n64\nbool\nPatternSearchActive;\n65\nbool\nTradingAllowedToday;\n66\nbool\nPreviousDayTradingAllowed;\nint\n67\nLastDayOfWeek;\n68\ndouble\nMaxGridLotMultiplier;\n69\ndouble\nLastBuyAvgPrice;\n70\ndouble\nLastSellAvgPrice;\n71\nLastBuyTP;\ndouble\n72\ndouble\nLastSelltp;\n73\ndatetime\nLastBuyGridTime;\n74\ndatetime\nLastSellgridTime;\n75\n};\nWakaWaka by MrCapFree.mq5 * *\n4 b",
+  "error": null,
+  "secs": 9.7
+}

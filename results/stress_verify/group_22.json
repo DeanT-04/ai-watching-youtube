@@ -1,0 +1,32 @@
+{
+ "group": 22,
+ "n_frames": 1,
+ "t_start": 461.0,
+ "t_end": 461.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 4,
+ "per_frame": [
+  {
+   "t": 461.0,
+   "raw": [
+    [
+     "_S \u201cJ oe",
+     37.282
+    ],
+    [
+     "i i \u2018 , :",
+     32.909
+    ],
+    [
+     "foe , a",
+     34.853
+    ],
+    [
+     "- op",
+     21.032
+    ]
+   ]
+  }
+ ]
+}

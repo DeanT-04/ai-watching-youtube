@@ -1,0 +1,11 @@
+{
+  "group": 26,
+  "n_frames": 1,
+  "t_start": 465.0,
+  "t_end": 465.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "<= we a -\n\u2019 a ,\n7 * \\'\n\u00a5\n= E\n\u00e9\u2018 ; =. * |",
+  "error": null,
+  "secs": 2.8
+}

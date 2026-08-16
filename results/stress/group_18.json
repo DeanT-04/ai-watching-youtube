@@ -1,0 +1,11 @@
+{
+  "group": 18,
+  "n_frames": 8,
+  "t_start": 380.0,
+  "t_end": 413.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "Compile\nb\n#property copyright \"Mr CapFree\".\n#property link \u201chttps: //www.MrCapFree.com\"\n#property description \u201cWaka Waka EA\"\n12#include <Trade\\Trade.mqh>\n#include <Trade\\Trade.mqh>\nCTrade\nCPositionInfo\nordInfo;\nenum LotsizingEnum\nLowRiskPreset = 5,\nMidRiskPreset = 4,\nHighRiskPreset = 3,\nExtremeRiskPreset = 7,\nLotsEquity = 2,\nLotsBalance = 1,\nLotsDepositLoad = 6,\nFixedLots = 0\n};\n31int OnInit() {\nint OnInit() {\nWakaWaka by MrCapFree.mq5 * * vt",
+  "error": null,
+  "secs": 87.3
+}
