@@ -1,0 +1,1717 @@
+{
+ "group": 18,
+ "n_frames": 8,
+ "t_start": 380.0,
+ "t_end": 413.0,
+ "consensus_lines": {
+  "2": {
+   "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+   "votes": 1
+  },
+  "4": {
+   "text": "b",
+   "votes": 8
+  },
+  "7": {
+   "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122",
+   "votes": 8
+  },
+  "10": {
+   "text": "#property description \u201cWaka Waka EA\"",
+   "votes": 6
+  },
+  "12": {
+   "text": "#include <Trade\\Trade.mgh>",
+   "votes": 8
+  },
+  "13": {
+   "text": "CTrade Trade;",
+   "votes": 7
+  },
+  "14": {
+   "text": "CPositionInfo posInfo;",
+   "votes": 8
+  },
+  "15": {
+   "text": "COrderInfo ordinfo;",
+   "votes": 7
+  },
+  "16": {
+   "text": "17. enum LotSizingEnum {",
+   "votes": 6
+  },
+  "17": {
+   "text": "enum LotSizingEnum| {",
+   "votes": 2
+  },
+  "18": {
+   "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)",
+   "votes": 7
+  },
+  "19": {
+   "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+   "votes": 7
+  },
+  "20": {
+   "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+   "votes": 8
+  },
+  "21": {
+   "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+   "votes": 4
+  },
+  "22": {
+   "text": "LotsEquity = 2, //Dynamic Lot based on Equity",
+   "votes": 3
+  },
+  "23": {
+   "text": "LotsBalance = 1, //Dynamic Lot based on Balance",
+   "votes": 8
+  },
+  "24": {
+   "text": "LotsDepositLoad = 6, //Lots based on Deposit load",
+   "votes": 8
+  },
+  "25": {
+   "text": "FixedLots = @ //Fixed Lot",
+   "votes": 8
+  },
+  "26": {
+   "text": "33",
+   "votes": 8
+  },
+  "28": {
+   "text": "|",
+   "votes": 2
+  },
+  "30": {
+   "text": "31int OnInit() {",
+   "votes": 1
+  },
+  "31": {
+   "text": "int OnInit() {",
+   "votes": 7
+  }
+ },
+ "support": {
+  "2": [
+   {
+    "frame": 6,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   }
+  ],
+  "4": [
+   {
+    "frame": 0,
+    "text": "b"
+   },
+   {
+    "frame": 1,
+    "text": ">"
+   },
+   {
+    "frame": 2,
+    "text": "b"
+   },
+   {
+    "frame": 3,
+    "text": "b"
+   },
+   {
+    "frame": 4,
+    "text": ">"
+   },
+   {
+    "frame": 5,
+    "text": ">"
+   },
+   {
+    "frame": 6,
+    "text": "b"
+   },
+   {
+    "frame": 7,
+    "text": "d"
+   }
+  ],
+  "7": [
+   {
+    "frame": 0,
+    "text": "#property link \"https: //www.MrCapFree.com\"\u201d"
+   },
+   {
+    "frame": 1,
+    "text": "#property link \u201chttps: //www.MrCapFree. com\""
+   },
+   {
+    "frame": 2,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122"
+   },
+   {
+    "frame": 3,
+    "text": "#property link \"https: //www.MrCapFree.com\"\u2122"
+   },
+   {
+    "frame": 4,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122"
+   },
+   {
+    "frame": 5,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122"
+   },
+   {
+    "frame": 6,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 7,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   }
+  ],
+  "10": [
+   {
+    "frame": 0,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 1,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 3,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 4,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 6,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 7,
+    "text": "#property description \u201cWaka Waka EA\""
+   }
+  ],
+  "12": [
+   {
+    "frame": 0,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 1,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 2,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 3,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 4,
+    "text": "#include <Trade\\Trade.mqh>"
+   },
+   {
+    "frame": 5,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 6,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 7,
+    "text": "#include <Trade\\Trade.mgh>"
+   }
+  ],
+  "13": [
+   {
+    "frame": 1,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 2,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 3,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 4,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 5,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 6,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 7,
+    "text": "CTrade Trade;"
+   }
+  ],
+  "14": [
+   {
+    "frame": 0,
+    "text": "CPositionInfo posiInfo;"
+   },
+   {
+    "frame": 1,
+    "text": "CPositionInfo posinfo;"
+   },
+   {
+    "frame": 2,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 3,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 4,
+    "text": "CPositionInfo posiInfo;"
+   },
+   {
+    "frame": 5,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 6,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 7,
+    "text": "CPositionInfo posInfo;"
+   }
+  ],
+  "15": [
+   {
+    "frame": 0,
+    "text": "COrderInfo ordiInfo;"
+   },
+   {
+    "frame": 1,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 2,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 3,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 5,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 6,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 7,
+    "text": "COrderInfo ordinfo;"
+   }
+  ],
+  "16": [
+   {
+    "frame": 0,
+    "text": "17. enum LotSizingEnum {"
+   },
+   {
+    "frame": 2,
+    "text": "17. enum LotSizingEnum {"
+   },
+   {
+    "frame": 3,
+    "text": "17. enum LotSizingEnum {"
+   },
+   {
+    "frame": 4,
+    "text": "17. enum LotSizingEnum {"
+   },
+   {
+    "frame": 6,
+    "text": "17. enum LotSizingEnum {"
+   },
+   {
+    "frame": 7,
+    "text": "17. enum LotSizingEnum {"
+   }
+  ],
+  "17": [
+   {
+    "frame": 1,
+    "text": "enum LotSizingEnum {"
+   },
+   {
+    "frame": 5,
+    "text": "enum LotSizingEnum| {"
+   }
+  ],
+  "18": [
+   {
+    "frame": 0,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)"
+   },
+   {
+    "frame": 1,
+    "text": "LowRiskPreset = 5, /Low Risk Set 20% annual (@.25% load"
+   },
+   {
+    "frame": 2,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)"
+   },
+   {
+    "frame": 3,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)"
+   },
+   {
+    "frame": 5,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)"
+   },
+   {
+    "frame": 6,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)"
+   },
+   {
+    "frame": 7,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)"
+   }
+  ],
+  "19": [
+   {
+    "frame": 0,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   },
+   {
+    "frame": 1,
+    "text": "MidRiskPreset = 4, Nid Risk Se 9% annual % loa"
+   },
+   {
+    "frame": 2,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   },
+   {
+    "frame": 3,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   },
+   {
+    "frame": 5,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   },
+   {
+    "frame": 6,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   },
+   {
+    "frame": 7,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)"
+   }
+  ],
+  "20": [
+   {
+    "frame": 0,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 1,
+    "text": "HighRiskPreset = 3, Significant Risk Set 80% ual (1.0% loa"
+   },
+   {
+    "frame": 2,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 3,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 4,
+    "text": "HighRiskPreset = 3, Significant Risk Set 80% annual (1.0% load"
+   },
+   {
+    "frame": 5,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 6,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   },
+   {
+    "frame": 7,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   }
+  ],
+  "21": [
+   {
+    "frame": 0,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 2,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 5,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   },
+   {
+    "frame": 7,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   }
+  ],
+  "22": [
+   {
+    "frame": 0,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 2,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   },
+   {
+    "frame": 7,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   }
+  ],
+  "23": [
+   {
+    "frame": 0,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 1,
+    "text": "LotsBalknce = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 2,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 3,
+    "text": "LotsBalance = 1, //Dynfmic Lot based on Balance"
+   },
+   {
+    "frame": 4,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 5,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 6,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   },
+   {
+    "frame": 7,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 1,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 2,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 3,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 4,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 5,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 6,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   },
+   {
+    "frame": 7,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   }
+  ],
+  "25": [
+   {
+    "frame": 0,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 1,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 2,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 3,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 4,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 5,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 6,
+    "text": "FixedLots = @ //Fixed Lot"
+   },
+   {
+    "frame": 7,
+    "text": "FixedLots = @ //Fixed Lot"
+   }
+  ],
+  "26": [
+   {
+    "frame": 0,
+    "text": "33"
+   },
+   {
+    "frame": 1,
+    "text": "a:"
+   },
+   {
+    "frame": 2,
+    "text": "i;"
+   },
+   {
+    "frame": 3,
+    "text": "33"
+   },
+   {
+    "frame": 4,
+    "text": "i:"
+   },
+   {
+    "frame": 5,
+    "text": "33"
+   },
+   {
+    "frame": 6,
+    "text": "33"
+   },
+   {
+    "frame": 7,
+    "text": "33"
+   }
+  ],
+  "28": [
+   {
+    "frame": 1,
+    "text": "PAS)"
+   },
+   {
+    "frame": 7,
+    "text": "|"
+   }
+  ],
+  "30": [
+   {
+    "frame": 6,
+    "text": "31int OnInit() {"
+   }
+  ],
+  "31": [
+   {
+    "frame": 0,
+    "text": "int OnInit() { lS"
+   },
+   {
+    "frame": 1,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 2,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 3,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 4,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 5,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 7,
+    "text": "int OnInit() {"
+   }
+  ]
+ },
+ "unanchored_count": 70,
+ "per_frame": [
+  {
+   "t": 380.0,
+   "raw": [
+    [
+     "\u2014 | Urv + | Al IK \u2122 | ae | \\\u00a5=} Compile I] we we | 0 \u2018fo | =\u201d History = Realtime | Wy) | FS PP tag | > Welcome",
+     57.085
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * 1",
+     80.325
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     92.126
+    ],
+    [
+     "CO al al al lalallala aaah atatatatatatatatatatatatatatatatatatatatetetataatatetateatatetataatan f",
+     8.881
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     88.193
+    ],
+    [
+     "7 #property link \"https: //www.MrCapFree.com\"\u201d",
+     61.883
+    ],
+    [
+     "8#property version \u201c1.e0\"",
+     68.269
+    ],
+    [
+     "9#property strict",
+     94.054
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     65.144
+    ],
+    [
+     "11",
+     93.706
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     80.357
+    ],
+    [
+     "ale! CTrade Trade;",
+     79.034
+    ],
+    [
+     "14 CPositionInfo posiInfo;",
+     78.548
+    ],
+    [
+     "15 COrderInfo ordiInfo;",
+     67.237
+    ],
+    [
+     "16",
+     96.83
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     74.993
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)",
+     94.291
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     94.496
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     88.919
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.873
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.448
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.197
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.577
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     90.244
+    ],
+    [
+     "26 33",
+     70.006
+    ],
+    [
+     "27",
+     96.047
+    ],
+    [
+     "28",
+     96.142
+    ],
+    [
+     "29",
+     96.195
+    ],
+    [
+     "30",
+     73.338
+    ],
+    [
+     "31 int OnInit() { lS",
+     75.706
+    ],
+    [
+     "32",
+     96.847
+    ],
+    [
+     "4 b",
+     90.957
+    ]
+   ]
+  },
+  {
+   "t": 385.0,
+   "raw": [
+    [
+     "=| Gv | a TEX | Ser nr | J Compile | ~ | @ () W \u00a9 | 0 fo 0 | = History = Realtime |\u2014 | J = |e ws Ge) | \u201cmn Welcome",
+     50.648
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     88.043
+    ],
+    [
+     "4//| https: //www.MrCapFree.com |",
+     57.887
+    ],
+    [
+     "EY / [banana aa aa sees anes n ass ss ss sscsssssscsssssssesssesssesssesssssssssssst",
+     18.674
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     89.048
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree. com\"",
+     49.004
+    ],
+    [
+     "8#property version \u201c1.e0e\"",
+     70.245
+    ],
+    [
+     "9#property strict",
+     89.168
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     80.984
+    ],
+    [
+     "dial",
+     36.779
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     78.832
+    ],
+    [
+     "13 CTrade Trade;",
+     94.892
+    ],
+    [
+     "14 CPositionInfo posinfo;",
+     75.158
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     75.063
+    ],
+    [
+     "16",
+     95.637
+    ],
+    [
+     "17 enum LotSizingEnum {",
+     55.785
+    ],
+    [
+     "18 LowRiskPreset = 5, /Low Risk Set 20% annual (@.25% load",
+     91.33
+    ],
+    [
+     "19 MidRiskPreset = 4, Nid Risk Se 9% annual % loa",
+     77.449
+    ],
+    [
+     "20 HighRiskPreset = 3, Significant Risk Set 80% ual (1.0% loa",
+     83.499
+    ],
+    [
+     "23 LotsBalknce = 1, //Dynamic Lot based on Balance",
+     92.155
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.366
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     93.655
+    ],
+    [
+     "26 a:",
+     77.23
+    ],
+    [
+     "27.",
+     47.093
+    ],
+    [
+     "28",
+     96.154
+    ],
+    [
+     "PAS)",
+     38.493
+    ],
+    [
+     "30",
+     80.861
+    ],
+    [
+     "31 int OnInit() {",
+     61.336
+    ],
+    [
+     "32",
+     96.628
+    ],
+    [
+     "4 >",
+     92.891
+    ]
+   ]
+  },
+  {
+   "t": 389.0,
+   "raw": [
+    [
+     "\u2014 | Urv Y\u2014 | Zi De \u00a5 | \u2018ST ar | \\\u00a5} Compile (al wove | 0 fo \u00ab\u00a2 | =P History =\\~ Realtime \u2014 | WW) | FS RKP tah | > Welcome",
+     49.959
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u2018",
+     74.194
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     75.25
+    ],
+    [
+     "CTF be allele alata alatatatatatatatatatatatatatatatetatatetatatatatetatatatatatatatatatatatateatatetataatateatetatatatant",
+     7.482
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     83.785
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"\u2122",
+     58.318
+    ],
+    [
+     "8#property version \"1.00\"",
+     61.12
+    ],
+    [
+     "9#property strict",
+     93.512
+    ],
+    [
+     "1@ #property description \u201cWaka Waka EA\"",
+     80.288
+    ],
+    [
+     "all",
+     22.572
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     83.237
+    ],
+    [
+     "13 CTrade Trade;",
+     94.74
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     90.007
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     87.972
+    ],
+    [
+     "16",
+     96.711
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     81.273
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)",
+     86.707
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     89.607
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.047
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     90.102
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     94.508
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.033
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.42
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.471
+    ],
+    [
+     "26 i;",
+     62.904
+    ],
+    [
+     "27",
+     95.781
+    ],
+    [
+     "28",
+     96.141
+    ],
+    [
+     "29",
+     96.311
+    ],
+    [
+     "30",
+     77.274
+    ],
+    [
+     "31 int OnInit() {",
+     56.676
+    ],
+    [
+     "32",
+     96.596
+    ],
+    [
+     "4 b",
+     74.479
+    ]
+   ]
+  },
+  {
+   "t": 394.0,
+   "raw": [
+    [
+     "=i} | Urry + | A Ix \u00bb | \u2018= az | (z) Compile |~ | Ww & J | \u00b0 ~ | =P History =! Realtime | | py) A | FS Paty | > Welcome",
+     52.272
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * tL",
+     75.265
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     93.081
+    ],
+    [
+     "OF lalallala etal atatatatattatatetateatateatatatateatatatatatatataatetatataatatetataatatetatetatan t",
+     1.101
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     82.122
+    ],
+    [
+     "7 #property link \"https: //www.MrCapFree.com\"\u2122",
+     60.403
+    ],
+    [
+     "8#property version \"1.00\"",
+     75.473
+    ],
+    [
+     "9#property strict",
+     93.913
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     82.539
+    ],
+    [
+     "11",
+     93.279
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     86.933
+    ],
+    [
+     "13 CTrade Trade;",
+     94.325
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.56
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     83.933
+    ],
+    [
+     "16",
+     96.689
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     80.232
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)",
+     90.379
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     93.789
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     91.402
+    ],
+    [
+     "2a ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     91.14
+    ],
+    [
+     "Pap LotsEquity = 2, //Dynamic Lot based on Equity",
+     88.528
+    ],
+    [
+     "23 LotsBalance = 1, //Dynfmic Lot based on Balance",
+     89.042
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.574
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     90.883
+    ],
+    [
+     "26 33",
+     78.059
+    ],
+    [
+     "27",
+     96.038
+    ],
+    [
+     "28",
+     94.857
+    ],
+    [
+     "29",
+     96.285
+    ],
+    [
+     "30",
+     50.575
+    ],
+    [
+     "31 int OnInit() {",
+     56.668
+    ],
+    [
+     "32",
+     96.642
+    ],
+    [
+     "4 b",
+     60.286
+    ]
+   ]
+  },
+  {
+   "t": 399.0,
+   "raw": [
+    [
+     "| Grr 7 | 4 cp. | SS a7 | J Compile | v | WD & Ww Oo | o fo o | = History = Realtime \u2014 | oJ io 9 ail O Ge) | \u2018tn Welcome",
+     53.644
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab}",
+     77.694
+    ],
+    [
+     "4//| https: //www.MrCapFree.com |",
+     47.189
+    ],
+    [
+     "BY / [Fama aaa nanan sass e sca ssssssssssssssssssssssessessesssssssssassssssssh",
+     19.035
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     76.004
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"\u2122",
+     67.663
+    ],
+    [
+     "8#property version \"1.00\"",
+     65.47
+    ],
+    [
+     "9#property strict",
+     89.558
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     78.987
+    ],
+    [
+     "ilat",
+     0.0
+    ],
+    [
+     "12 #include <Trade\\Trade.mqh>",
+     87.911
+    ],
+    [
+     "13 CTrade Trade;",
+     95.066
+    ],
+    [
+     "14 CPositionInfo posiInfo;",
+     79.196
+    ],
+    [
+     "AES COrderInfo ordinfo;",
+     54.358
+    ],
+    [
+     "16",
+     94.693
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     75.422
+    ],
+    [
+     "20 HighRiskPreset = 3, Significant Risk Set 80% annual (1.0% load",
+     93.294
+    ],
+    [
+     "22: LotsEquity = 2, //Dynamic Lot based on Equity",
+     85.512
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.233
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.51
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     93.326
+    ],
+    [
+     "26 i:",
+     70.381
+    ],
+    [
+     "PAS",
+     19.529
+    ],
+    [
+     "28",
+     96.233
+    ],
+    [
+     "29",
+     96.886
+    ],
+    [
+     "30",
+     79.068
+    ],
+    [
+     "31 int OnInit() {",
+     68.712
+    ],
+    [
+     "32",
+     96.524
+    ],
+    [
+     "4 >",
+     78.67
+    ]
+   ]
+  },
+  {
+   "t": 404.0,
+   "raw": [
+    [
+     "=| Grr sg (ee Jay |< 7 | i} Compile |v | @ vw Ye | 0 fo | = History = Realtime oe =. ||| a wp LQ) | tn Welcome",
+     54.668
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * fo.",
+     77.604
+    ],
+    [
+     "4//| https: //www.MrCapFree.com |",
+     27.62
+    ],
+    [
+     "CO be lalate alata atatatatatatatatatatataiatatatattatatetatetatatatatatatateatatetataatataatatatataatatetataatateatetatan t",
+     8.412
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     82.713
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"\u2122",
+     66.07
+    ],
+    [
+     "8#property version \u201c1.@0\"",
+     66.822
+    ],
+    [
+     "9#property strict",
+     93.435
+    ],
+    [
+     "1@ #property description \u201cWaka Waka EA\"",
+     78.621
+    ],
+    [
+     "11",
+     94.541
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     73.663
+    ],
+    [
+     "13 CTrade Trade;",
+     94.309
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     88.752
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     87.48
+    ],
+    [
+     "16",
+     96.792
+    ],
+    [
+     "17 enum LotSizingEnum| {",
+     79.62
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)",
+     94.334
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     93.268
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.006
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     90.802
+    ],
+    [
+     "Pap LotsEquity = 2, //Dynamic Lot based on Equity",
+     88.783
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     94.882
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.487
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     93.486
+    ],
+    [
+     "26 33",
+     71.661
+    ],
+    [
+     "27",
+     96.474
+    ],
+    [
+     "28",
+     94.752
+    ],
+    [
+     "29",
+     96.544
+    ],
+    [
+     "30",
+     74.075
+    ],
+    [
+     "31 int OnInit() {",
+     62.701
+    ],
+    [
+     "32",
+     96.692
+    ],
+    [
+     "4 >",
+     64.75
+    ]
+   ]
+  },
+  {
+   "t": 408.0,
+   "raw": [
+    [
+     "__| | Urey \u2014 | yal alee ~| Sy | \\\u00a53} Compile (eal WO & WwW | 0 6 6fo0~\u2014 | =P History =l~ Realtime \u2014 | i | SE XK tah | > Welcome",
+     48.964
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * vt",
+     76.831
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     84.262
+    ],
+    [
+     "Cy he alataietataiataiatataiatalatatatatatatatatatatetatalatatetatatatatetatatetataatatetatatatatetatatatatatatatatetatatatatatatataatans",
+     15.983
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     85.551
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     68.002
+    ],
+    [
+     "8#property version \"1.00\"",
+     72.532
+    ],
+    [
+     "9#property strict",
+     94.348
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     84.418
+    ],
+    [
+     "11",
+     94.446
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     84.416
+    ],
+    [
+     "13 CTrade Trade;",
+     83.125
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     87.526
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     86.825
+    ],
+    [
+     "16",
+     96.888
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     80.487
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)",
+     86.699
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     94.208
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.164
+    ],
+    [
+     "2 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     85.961
+    ],
+    [
+     "7p LotsEquity = 2, //Dynamic Lot based on Equity",
+     88.608
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.435
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.403
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     93.005
+    ],
+    [
+     "26 33",
+     71.094
+    ],
+    [
+     "27",
+     96.539
+    ],
+    [
+     "28",
+     95.452
+    ],
+    [
+     "29",
+     96.735
+    ],
+    [
+     "30",
+     89.089
+    ],
+    [
+     "31int OnInit() {",
+     84.91
+    ],
+    [
+     "32",
+     96.712
+    ],
+    [
+     "4 b",
+     71.729
+    ]
+   ]
+  },
+  {
+   "t": 413.0,
+   "raw": [
+    [
+     "=| Gy el I~ | Sa 7 | J Compile |v | & (e) WW | 0) (fo | = History = Realtime \u2014 | * |e 5p LG) | ten Welcome",
+     57.909
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * i",
+     75.619
+    ],
+    [
+     "4//| https: //www.MrCapFree.com |",
+     55.721
+    ],
+    [
+     "CO al a alla ala aaa alata aaa alatatatatatatatatatatetatatatatiatatatatatatatatataatatetatatatateatatatatatan a",
+     11.923
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     85.415
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     58.644
+    ],
+    [
+     "8#property version \u201c1.e0\"",
+     72.287
+    ],
+    [
+     "9#property strict",
+     92.825
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     85.057
+    ],
+    [
+     "11",
+     94.636
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     74.55
+    ],
+    [
+     "13 CTrade Trade;",
+     94.493
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.316
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     85.308
+    ],
+    [
+     "16",
+     96.805
+    ],
+    [
+     "17. enum LotSizingEnum {",
+     72.901
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)",
+     89.401
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (@.5% load)",
+     93.974
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     95.047
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.276
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.618
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.005
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.363
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     91.671
+    ],
+    [
+     "26 33",
+     73.474
+    ],
+    [
+     "27",
+     96.711
+    ],
+    [
+     "28 |",
+     57.582
+    ],
+    [
+     "29",
+     96.781
+    ],
+    [
+     "30",
+     77.486
+    ],
+    [
+     "31 int OnInit() {",
+     60.4
+    ],
+    [
+     "32",
+     96.693
+    ],
+    [
+     "4 d",
+     29.923
+    ]
+   ]
+  }
+ ]
+}

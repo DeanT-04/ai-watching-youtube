@@ -1,0 +1,475 @@
+{
+ "group": 38,
+ "n_frames": 2,
+ "t_start": 483.0,
+ "t_end": 484.0,
+ "consensus_lines": {
+  "4": {
+   "text": "b",
+   "votes": 2
+  },
+  "41": {
+   "text": "enum eDrawdownCalculation {",
+   "votes": 1
+  },
+  "42": {
+   "text": "ThisStrategy = 1, //This strategy",
+   "votes": 1
+  },
+  "43": {
+   "text": "TheAccount = 8 //The account",
+   "votes": 1
+  },
+  "44": {
+   "text": "}s",
+   "votes": 2
+  },
+  "45": {
+   "text": "46|",
+   "votes": 1
+  },
+  "46": {
+   "text": "|",
+   "votes": 1
+  },
+  "48": {
+   "text": "int OnInit() {",
+   "votes": 2
+  },
+  "52": {
+   "text": "return(INIT_SUCCEEDED) ;",
+   "votes": 2
+  },
+  "53": {
+   "text": "54}",
+   "votes": 1
+  },
+  "54": {
+   "text": "}",
+   "votes": 1
+  },
+  "57": {
+   "text": "void OnDeinit(const int reason) {",
+   "votes": 2
+  },
+  "59": {
+   "text": "68}",
+   "votes": 1
+  },
+  "60": {
+   "text": "}",
+   "votes": 1
+  },
+  "63": {
+   "text": "void OnTick() {",
+   "votes": 2
+  },
+  "66": {
+   "text": "67}",
+   "votes": 1
+  },
+  "67": {
+   "text": "}",
+   "votes": 1
+  },
+  "68": {
+   "text": "//+-------------------- 2-2 - o-oo nn nnn nen nnn net",
+   "votes": 2
+  }
+ },
+ "support": {
+  "4": [
+   {
+    "frame": 0,
+    "text": "b"
+   },
+   {
+    "frame": 1,
+    "text": "b"
+   }
+  ],
+  "41": [
+   {
+    "frame": 0,
+    "text": "enum eDrawdownCalculation {"
+   }
+  ],
+  "42": [
+   {
+    "frame": 0,
+    "text": "ThisStrategy = 1, //This strategy"
+   }
+  ],
+  "43": [
+   {
+    "frame": 0,
+    "text": "TheAccount = 8 //The account"
+   }
+  ],
+  "44": [
+   {
+    "frame": 0,
+    "text": "}s"
+   },
+   {
+    "frame": 1,
+    "text": "}s"
+   }
+  ],
+  "45": [
+   {
+    "frame": 0,
+    "text": "46|"
+   }
+  ],
+  "46": [
+   {
+    "frame": 1,
+    "text": "|"
+   }
+  ],
+  "48": [
+   {
+    "frame": 0,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 1,
+    "text": "int OnInit() {"
+   }
+  ],
+  "52": [
+   {
+    "frame": 0,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 1,
+    "text": "return(INIT_SUCCEEDED) ;"
+   }
+  ],
+  "53": [
+   {
+    "frame": 1,
+    "text": "54}"
+   }
+  ],
+  "54": [
+   {
+    "frame": 0,
+    "text": "}"
+   }
+  ],
+  "57": [
+   {
+    "frame": 0,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 1,
+    "text": "void OnDeinit(const int reason) {"
+   }
+  ],
+  "59": [
+   {
+    "frame": 1,
+    "text": "68}"
+   }
+  ],
+  "60": [
+   {
+    "frame": 0,
+    "text": "}"
+   }
+  ],
+  "63": [
+   {
+    "frame": 0,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 1,
+    "text": "void OnTick() {"
+   }
+  ],
+  "66": [
+   {
+    "frame": 1,
+    "text": "67}"
+   }
+  ],
+  "67": [
+   {
+    "frame": 0,
+    "text": "}"
+   }
+  ],
+  "68": [
+   {
+    "frame": 0,
+    "text": "//+-------------- 22-2 oo nr nnn nnn nn nnn nn nnn nent"
+   },
+   {
+    "frame": 1,
+    "text": "//+-------------------- 2-2 - o-oo nn nnn nen nnn net"
+   }
+  ]
+ },
+ "unanchored_count": 4,
+ "per_frame": [
+  {
+   "t": 483.0,
+   "raw": [
+    [
+     "mi Gey wl 7 yxy) SS 7 | Compile |v) OO S| \u00a9 fo o | = History Realtime Ei | Raye) eS | em Welcome",
+     40.844
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c ?",
+     67.165
+    ],
+    [
+     "41 enum eDrawdownCalculation {",
+     86.733
+    ],
+    [
+     "42 ThisStrategy = 1, //This strategy",
+     94.944
+    ],
+    [
+     "43 TheAccount = 8 //The account",
+     85.899
+    ],
+    [
+     "44 }s",
+     47.181
+    ],
+    [
+     "45",
+     96.8
+    ],
+    [
+     "46|",
+     85.915
+    ],
+    [
+     "47",
+     95.609
+    ],
+    [
+     "48 int OnInit() {",
+     72.772
+    ],
+    [
+     "49",
+     96.419
+    ],
+    [
+     "50",
+     75.441
+    ],
+    [
+     "51",
+     95.903
+    ],
+    [
+     "52 return(INIT_SUCCEEDED) ;",
+     93.883
+    ],
+    [
+     "53",
+     96.768
+    ],
+    [
+     "54 }",
+     89.535
+    ],
+    [
+     "55",
+     96.623
+    ],
+    [
+     "56",
+     96.794
+    ],
+    [
+     "57 void OnDeinit(const int reason) {",
+     93.032
+    ],
+    [
+     "58",
+     96.703
+    ],
+    [
+     "59",
+     96.954
+    ],
+    [
+     "60 }",
+     80.522
+    ],
+    [
+     "61",
+     96.138
+    ],
+    [
+     "62",
+     96.628
+    ],
+    [
+     "63 void OnTick() {",
+     92.069
+    ],
+    [
+     "64",
+     95.009
+    ],
+    [
+     "65",
+     96.431
+    ],
+    [
+     "66",
+     96.562
+    ],
+    [
+     "67 }",
+     91.736
+    ],
+    [
+     "68 //+-------------- 22-2 oo nr nnn nnn nn nnn nn nnn nent",
+     27.126
+    ],
+    [
+     "69",
+     95.728
+    ],
+    [
+     "4 b",
+     79.149
+    ]
+   ]
+  },
+  {
+   "t": 484.0,
+   "raw": [
+    [
+     "=) | Urv Y\u2014 | Pu ale | Se | \\\u00a53} Compile I | Ww & WwW Oo | 0 fo 600 | =P History =l> Realtime \u2014 | a) | eae | YS Welcome",
+     52.79
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * fi",
+     80.912
+    ],
+    [
+     "44 }s",
+     50.949
+    ],
+    [
+     "45",
+     96.654
+    ],
+    [
+     "46 |",
+     34.223
+    ],
+    [
+     "47",
+     96.286
+    ],
+    [
+     "48 int OnInit() {",
+     63.493
+    ],
+    [
+     "49",
+     96.429
+    ],
+    [
+     "508",
+     70.977
+    ],
+    [
+     "51",
+     96.247
+    ],
+    [
+     "52 return(INIT_SUCCEEDED) ;",
+     86.933
+    ],
+    [
+     "53",
+     96.762
+    ],
+    [
+     "54}",
+     87.779
+    ],
+    [
+     "55",
+     96.909
+    ],
+    [
+     "56",
+     96.719
+    ],
+    [
+     "57 void OnDeinit(const int reason) {",
+     93.709
+    ],
+    [
+     "53",
+     71.442
+    ],
+    [
+     "59",
+     96.859
+    ],
+    [
+     "68}",
+     56.864
+    ],
+    [
+     "61",
+     96.182
+    ],
+    [
+     "62",
+     96.269
+    ],
+    [
+     "63 void OnTick() {",
+     91.753
+    ],
+    [
+     "64",
+     95.941
+    ],
+    [
+     "65",
+     96.192
+    ],
+    [
+     "66",
+     95.987
+    ],
+    [
+     "67}",
+     86.156
+    ],
+    [
+     "68 //+-------------------- 2-2 - o-oo nn nnn nen nnn net",
+     29.206
+    ],
+    [
+     "69",
+     96.98
+    ],
+    [
+     "4 b",
+     74.769
+    ]
+   ]
+  }
+ ]
+}

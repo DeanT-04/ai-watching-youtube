@@ -1,0 +1,336 @@
+{
+ "group": 10,
+ "n_frames": 1,
+ "t_start": 345.0,
+ "t_end": 345.0,
+ "consensus_lines": {
+  "7": {
+   "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122",
+   "votes": 1
+  },
+  "8": {
+   "text": "#property version \"1.606\"",
+   "votes": 1
+  },
+  "10": {
+   "text": "#property description \u201cWaka Waka EA\"",
+   "votes": 1
+  },
+  "12": {
+   "text": "#include <Trade\\Trade.mgh>",
+   "votes": 1
+  },
+  "13": {
+   "text": "CTrade Trade;",
+   "votes": 1
+  },
+  "14": {
+   "text": "CPositionInfo posInfo;",
+   "votes": 1
+  },
+  "15": {
+   "text": "COrderInfo ordinfo;",
+   "votes": 1
+  },
+  "17": {
+   "text": "enum LotSizingEnum {",
+   "votes": 1
+  },
+  "18": {
+   "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)",
+   "votes": 1
+  },
+  "19": {
+   "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)",
+   "votes": 1
+  },
+  "20": {
+   "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+   "votes": 1
+  },
+  "21": {
+   "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+   "votes": 1
+  },
+  "22": {
+   "text": "LotsEquity = 2, //Dynamic Lot based on Equity",
+   "votes": 1
+  },
+  "23": {
+   "text": "LotsBalance = 1, //Dynamic Lot based on Balance",
+   "votes": 1
+  },
+  "24": {
+   "text": "LotsDepositLoad = 6, //Lots based on Deposit load",
+   "votes": 1
+  },
+  "25": {
+   "text": "FixedLots = @ //Fixed Lot",
+   "votes": 1
+  },
+  "26": {
+   "text": "33",
+   "votes": 1
+  },
+  "28": {
+   "text": "|",
+   "votes": 1
+  },
+  "29": {
+   "text": "q D",
+   "votes": 1
+  }
+ },
+ "support": {
+  "7": [
+   {
+    "frame": 0,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122"
+   }
+  ],
+  "8": [
+   {
+    "frame": 0,
+    "text": "#property version \"1.606\""
+   }
+  ],
+  "10": [
+   {
+    "frame": 0,
+    "text": "#property description \u201cWaka Waka EA\""
+   }
+  ],
+  "12": [
+   {
+    "frame": 0,
+    "text": "#include <Trade\\Trade.mgh>"
+   }
+  ],
+  "13": [
+   {
+    "frame": 0,
+    "text": "CTrade Trade;"
+   }
+  ],
+  "14": [
+   {
+    "frame": 0,
+    "text": "CPositionInfo posInfo;"
+   }
+  ],
+  "15": [
+   {
+    "frame": 0,
+    "text": "COrderInfo ordinfo;"
+   }
+  ],
+  "17": [
+   {
+    "frame": 0,
+    "text": "enum LotSizingEnum {"
+   }
+  ],
+  "18": [
+   {
+    "frame": 0,
+    "text": "LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)"
+   }
+  ],
+  "19": [
+   {
+    "frame": 0,
+    "text": "MidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)"
+   }
+  ],
+  "20": [
+   {
+    "frame": 0,
+    "text": "HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)"
+   }
+  ],
+  "21": [
+   {
+    "frame": 0,
+    "text": "ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)"
+   }
+  ],
+  "22": [
+   {
+    "frame": 0,
+    "text": "LotsEquity = 2, //Dynamic Lot based on Equity"
+   }
+  ],
+  "23": [
+   {
+    "frame": 0,
+    "text": "LotsBalance = 1, //Dynamic Lot based on Balance"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "LotsDepositLoad = 6, //Lots based on Deposit load"
+   }
+  ],
+  "25": [
+   {
+    "frame": 0,
+    "text": "FixedLots = @ //Fixed Lot"
+   }
+  ],
+  "26": [
+   {
+    "frame": 0,
+    "text": "33"
+   }
+  ],
+  "28": [
+   {
+    "frame": 0,
+    "text": "|"
+   }
+  ],
+  "29": [
+   {
+    "frame": 0,
+    "text": "q D"
+   }
+  ]
+ },
+ "unanchored_count": 9,
+ "per_frame": [
+  {
+   "t": 345.0,
+   "raw": [
+    [
+     "__| | x >~ | Zi ix | ST | \\\u00a5=] Compile | WO &Y WwW CG | 0 'o 0 | = History = Realtime \u2014 | WwW) QS | FS PP tan | Y> Welcome",
+     52.611
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * A",
+     73.332
+    ],
+    [
+     "V | [tenn nnn nnn rr nnn rrr rrr rn nnn rn nn rn nnn nn ncn c cnc n crn nant",
+     21.999
+    ],
+    [
+     "2A) / | WakaWaka by MrCapFree.mg5 |",
+     72.568
+    ],
+    [
+     "3)//| Mr CapFree |",
+     78.102
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     80.164
+    ],
+    [
+     "Bf [tern rrr rrr rrr rn nnn cnr n cnc n ccc cnc ccc ccc nent",
+     13.385
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.315
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"\u2122",
+     72.343
+    ],
+    [
+     "8 #property version \"1.606\"",
+     82.059
+    ],
+    [
+     "9#property strict",
+     92.67
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.264
+    ],
+    [
+     "17",
+     83.955
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     76.042
+    ],
+    [
+     "13 CTrade Trade;",
+     94.398
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     86.751
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     72.906
+    ],
+    [
+     "16",
+     96.829
+    ],
+    [
+     "17 enum LotSizingEnum {",
+     78.976
+    ],
+    [
+     "18 LowRiskPreset = 5, //Low Risk Set 20% annual (@.25% load)",
+     94.416
+    ],
+    [
+     "19 MidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)",
+     89.793
+    ],
+    [
+     "20 HighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)",
+     94.919
+    ],
+    [
+     "21 ExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)",
+     94.308
+    ],
+    [
+     "22 LotsEquity = 2, //Dynamic Lot based on Equity",
+     95.26
+    ],
+    [
+     "23 LotsBalance = 1, //Dynamic Lot based on Balance",
+     95.368
+    ],
+    [
+     "24 LotsDepositLoad = 6, //Lots based on Deposit load",
+     95.545
+    ],
+    [
+     "25 FixedLots = @ //Fixed Lot",
+     92.514
+    ],
+    [
+     "26 33",
+     73.14
+    ],
+    [
+     "27",
+     96.672
+    ],
+    [
+     "28 |",
+     54.98
+    ],
+    [
+     "29",
+     96.315
+    ],
+    [
+     "q D",
+     41.721
+    ]
+   ]
+  }
+ ]
+}

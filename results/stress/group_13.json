@@ -1,0 +1,11 @@
+{
+  "group": 13,
+  "n_frames": 2,
+  "t_start": 356.0,
+  "t_end": 357.0,
+  "source": "paddle+tesseract (consensus x2)",
+  "valid": false,
+  "text": "Mar 22:00\nvents\n15h\n18Mar22:00",
+  "error": null,
+  "secs": 21.5
+}

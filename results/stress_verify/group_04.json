@@ -1,0 +1,298 @@
+{
+ "group": 4,
+ "n_frames": 1,
+ "t_start": 286.0,
+ "t_end": 286.0,
+ "consensus_lines": {
+  "22": {
+   "text": "//| Appointment: Class trade operations. |",
+   "votes": 1
+  },
+  "23": {
+   "text": "//| D\u00e9rives from class CObject. |",
+   "votes": 1
+  },
+  "24": {
+   "text": "| /+-------------------------------------------------------- +--+ ---- == 4+",
+   "votes": 1
+  },
+  "25": {
+   "text": "class CTrade : public CObject",
+   "votes": 1
+  },
+  "26": {
+   "text": "{",
+   "votes": 2
+  },
+  "27": {
+   "text": "protected:",
+   "votes": 1
+  },
+  "28": {
+   "text": "MqlTradeRequest m_request; // request data",
+   "votes": 1
+  },
+  "32": {
+   "text": "ulong m_magic; // @xpert magic number",
+   "votes": 1
+  },
+  "33": {
+   "text": "public:",
+   "votes": 2
+  },
+  "34": {
+   "text": "bool m_async_mode; // tvade mode",
+   "votes": 2
+  },
+  "38": {
+   "text": "ENUM_ACCOUNT_MARGIN_MODE m_margin_mode;",
+   "votes": 1
+  },
+  "41": {
+   "text": "xCTrade(void);",
+   "votes": 1
+  },
+  "43": {
+   "text": "CTrade(void);",
+   "votes": 2
+  },
+  "46": {
+   "text": "atring RequestActionDescription(void) const;",
+   "votes": 1
+  }
+ },
+ "support": {
+  "22": [
+   {
+    "frame": 0,
+    "text": "//| Appointment: Class trade operations. |"
+   }
+  ],
+  "23": [
+   {
+    "frame": 0,
+    "text": "//| D\u00e9rives from class CObject. |"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "| /+-------------------------------------------------------- +--+ ---- == 4+"
+   }
+  ],
+  "25": [
+   {
+    "frame": 0,
+    "text": "class CTrade : public CObject"
+   }
+  ],
+  "26": [
+   {
+    "frame": 0,
+    "text": "[ [t- nnn nn rrr rrr rn nr nnn nnn co rrr rr cs cern n ces rant i"
+   },
+   {
+    "frame": 0,
+    "text": "{"
+   }
+  ],
+  "27": [
+   {
+    "frame": 0,
+    "text": "protected:"
+   }
+  ],
+  "28": [
+   {
+    "frame": 0,
+    "text": "MqlTradeRequest m_request; // request data"
+   }
+  ],
+  "32": [
+   {
+    "frame": 0,
+    "text": "ulong m_magic; // @xpert magic number"
+   }
+  ],
+  "33": [
+   {
+    "frame": 0,
+    "text": "ulong m_deviation; // seviation default"
+   },
+   {
+    "frame": 0,
+    "text": "public:"
+   }
+  ],
+  "34": [
+   {
+    "frame": 0,
+    "text": "bool m_async_mode; // tvade mode"
+   },
+   {
+    "frame": 0,
+    "text": "ENUM_ORDER_TYPE_FILLING mitype_filling;"
+   }
+  ],
+  "38": [
+   {
+    "frame": 0,
+    "text": "ENUM_ACCOUNT_MARGIN_MODE m_margin_mode;"
+   }
+  ],
+  "41": [
+   {
+    "frame": 0,
+    "text": "xCTrade(void);"
+   }
+  ],
+  "43": [
+   {
+    "frame": 0,
+    "text": "CTrade(void);"
+   },
+   {
+    "frame": 0,
+    "text": "/f---- methods of groess toe oratest\u00e9d data"
+   }
+  ],
+  "46": [
+   {
+    "frame": 0,
+    "text": "atring RequestActionDescription(void) const;"
+   }
+  ]
+ },
+ "unanchored_count": 12,
+ "per_frame": [
+  {
+   "t": 286.0,
+   "raw": [
+    [
+     "_| | Urvyv Y\u2014 | A aX ~| = 2 | \\\u00a5=} Compile I~ | BD & Ww | o \u201cen 6 | => History = Realtime UW | WW) A | KE Wp {any | \\S Welcome",
+     51.893
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * X | Trade.mgh X \u2018",
+     74.413
+    ],
+    [
+     "1};",
+     47.982
+    ],
+    [
+     "26 [ [t- nnn nn rrr rrr rn nr nnn nnn co rrr rr cs cern n ces rant i",
+     19.677
+    ],
+    [
+     "21//| Class CTrade. |",
+     86.864
+    ],
+    [
+     "22 //| Appointment: Class trade operations. |",
+     79.604
+    ],
+    [
+     "23 //| D\u00e9rives from class CObject. |",
+     85.812
+    ],
+    [
+     "24 | /+-------------------------------------------------------- +--+ ---- == 4+",
+     39.093
+    ],
+    [
+     "25 class CTrade : public CObject",
+     90.135
+    ],
+    [
+     "26 {",
+     83.16
+    ],
+    [
+     "27 protected:",
+     94.895
+    ],
+    [
+     "28 MqlTradeRequest m_request; // request data",
+     83.659
+    ],
+    [
+     "28) = MglTradeResult m_result; // result data",
+     69.77
+    ],
+    [
+     "3B MqlTradeCcheckResult m_check_result; // result check data",
+     84.237
+    ],
+    [
+     "34 bool m_async_mode; // tvade mode",
+     90.418
+    ],
+    [
+     "32 ulong m_magic; // @xpert magic number",
+     83.123
+    ],
+    [
+     "33 ulong m_deviation; // seviation default",
+     63.3
+    ],
+    [
+     "34 ENUM_ORDER_TYPE_FILLING mitype_filling;",
+     82.132
+    ],
+    [
+     "38 ENUM_ACCOUNT_MARGIN_MODE m_margin_mode;",
+     83.667
+    ],
+    [
+     "3g (f---",
+     65.059
+    ],
+    [
+     "3? ENUM_LOG LEVELS m_log level;",
+     65.505
+    ],
+    [
+     "33",
+     77.768
+    ],
+    [
+     "33 public:",
+     86.45
+    ],
+    [
+     "43 CTrade(void);",
+     88.863
+    ],
+    [
+     "41 xCTrade(void);",
+     69.051
+    ],
+    [
+     "43 /f---- methods of groess toe oratest\u00e9d data",
+     44.27
+    ],
+    [
+     "aB void LogLlevel(const ENUM_LOG_LEVELS log level) { m_log_level=log level; }",
+     80.022
+    ],
+    [
+     "4g void Request(MgiTradeRequest &request) const;",
+     71.531
+    ],
+    [
+     "a5 ENUM_TRADE_REQUEST_ACTIONS RequestAction(void) const { return(m_request.action); }",
+     82.998
+    ],
+    [
+     "46 atring RequestActionDescription(void) const;",
+     93.311
+    ],
+    [
+     "AT ulong RequestMagic(void) const { return(m_request.magic); }",
+     84.872
+    ]
+   ]
+  }
+ ]
+}

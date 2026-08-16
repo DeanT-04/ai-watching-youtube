@@ -1,0 +1,11 @@
+{
+  "group": 28,
+  "n_frames": 1,
+  "t_start": 467.0,
+  "t_end": 467.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "~ : . -\ne . ap",
+  "error": null,
+  "secs": 2.1
+}

@@ -1,0 +1,11 @@
+{
+  "group": 4,
+  "n_frames": 1,
+  "t_start": 286.0,
+  "t_end": 286.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "J Compile\nHistory\nRealtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\nTrade.mqh\n19}\n28//+\n21// Class CTrade.\n22//\nAppointment: class trade operatians.\n23//\nDerives from class cobject.\n24//\n25 class CTrade : public cObject.\n20\n27protected:\n28\nMq1TradeRequest\nm_request;\n//request deta\n29\nMqlTradeResult\nm_result;\n// result data\n3B\nMq1TradeCheckResult m_check_result;\n// result check data\n31\nbool\nm_async_mode;\n// trade mode\n32\nulong\nm_magic;\n//expert magic number\n35\nulong\nm_deviation;\n//deyiationdefault\n34\nENUM_ORDER_TYPE_FILLING m_type_fi11ing:\n38\nENUM_ACCOUNT_MARGIN_MODE m_margin_mode;\n30\n37\nENUM_LOG_LEVELS\nm_log_level;\n30\n39publicr\n43\nCTrade(void);\n41\n~CTrade(void);\n43\n//---.methods of ecaess to ongtested data\n36\nvoid\nLogLeVel(const ENUM_LOG_LEVELS log_level) { m_log_level=log_level;}\n46\nvoid\nRequest(MqlTradeRequest &request) const;\n33\nENUM_TRADE_REQUEST_ACTIONS RequestAction(void)\nconst { return(m_request.action);\n}\n40\natring\nRequestActionDescription(void) const;\n47\nulong\nRequestMagic(void)\nconst{return(m_request.magic);\n}\n26 [ [t- nnn nn rrr rrr rn nr nnn nnn co rrr rr cs cern n ces rant i\n21//| Class CTrade. |\n22 //| Appointment: Class trade operations. |\n23 //| D\u00e9rives from class CObject. |\n24 | /+-------------------------------------------------------- +--+ ---- == 4+\n26 {\n27 protected:\n3g (f---\n3? ENUM_LOG LEVELS m_log level;",
+  "error": null,
+  "secs": 12.7
+}

@@ -1,0 +1,1372 @@
+{
+ "group": 3,
+ "n_frames": 7,
+ "t_start": 279.0,
+ "t_end": 285.0,
+ "consensus_lines": {
+  "1": {
+   "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert",
+   "votes": 2
+  },
+  "4": {
+   "text": ">",
+   "votes": 7
+  },
+  "5": {
+   "text": "[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t",
+   "votes": 2
+  },
+  "7": {
+   "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+   "votes": 7
+  },
+  "8": {
+   "text": "#property version \"1.6\"",
+   "votes": 7
+  },
+  "10": {
+   "text": "#property description \u201cWaka Waka EA\"",
+   "votes": 7
+  },
+  "12": {
+   "text": "#include <Trade\\Trade.mgh>",
+   "votes": 7
+  },
+  "13": {
+   "text": "CTrade Trade;",
+   "votes": 7
+  },
+  "14": {
+   "text": "CPositionInfo posInfo;",
+   "votes": 7
+  },
+  "15": {
+   "text": "COrderInfo ordinfo;",
+   "votes": 5
+  },
+  "19": {
+   "text": "2@int OnInit() {",
+   "votes": 7
+  },
+  "24": {
+   "text": "return(INIT_SUCCEEDED) ;",
+   "votes": 7
+  },
+  "26": {
+   "text": "}",
+   "votes": 7
+  },
+  "29": {
+   "text": "void OnDeinit(const int reason) {",
+   "votes": 7
+  }
+ },
+ "support": {
+  "1": [
+   {
+    "frame": 0,
+    "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert"
+   },
+   {
+    "frame": 1,
+    "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert"
+   }
+  ],
+  "4": [
+   {
+    "frame": 0,
+    "text": "p"
+   },
+   {
+    "frame": 1,
+    "text": "p"
+   },
+   {
+    "frame": 2,
+    "text": ">"
+   },
+   {
+    "frame": 3,
+    "text": ">"
+   },
+   {
+    "frame": 4,
+    "text": ">"
+   },
+   {
+    "frame": 5,
+    "text": ">"
+   },
+   {
+    "frame": 6,
+    "text": ">"
+   }
+  ],
+  "5": [
+   {
+    "frame": 0,
+    "text": "[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t"
+   },
+   {
+    "frame": 1,
+    "text": "[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t"
+   }
+  ],
+  "7": [
+   {
+    "frame": 0,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 1,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 2,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122"
+   },
+   {
+    "frame": 3,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122"
+   },
+   {
+    "frame": 4,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122"
+   },
+   {
+    "frame": 5,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122"
+   },
+   {
+    "frame": 6,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\u201d\u2122"
+   }
+  ],
+  "8": [
+   {
+    "frame": 0,
+    "text": "#property version \"1.68\""
+   },
+   {
+    "frame": 1,
+    "text": "#property version \"1.68\""
+   },
+   {
+    "frame": 2,
+    "text": "#property version \"1.6\""
+   },
+   {
+    "frame": 3,
+    "text": "#property version \"1.6\""
+   },
+   {
+    "frame": 4,
+    "text": "#property version \"1.6\""
+   },
+   {
+    "frame": 5,
+    "text": "#property version \"1.6\""
+   },
+   {
+    "frame": 6,
+    "text": "#property version \"1.6\""
+   }
+  ],
+  "10": [
+   {
+    "frame": 0,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 1,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 2,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 3,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 4,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 5,
+    "text": "#property description \u201cWaka Waka EA\""
+   },
+   {
+    "frame": 6,
+    "text": "#property description \u201cWaka Waka EA\""
+   }
+  ],
+  "12": [
+   {
+    "frame": 0,
+    "text": "#include <Trade\\Trade.mqh>"
+   },
+   {
+    "frame": 1,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 2,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 3,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 4,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 5,
+    "text": "#include <Trade\\Trade.mgh>"
+   },
+   {
+    "frame": 6,
+    "text": "#include <Trade\\Trade.mgh>"
+   }
+  ],
+  "13": [
+   {
+    "frame": 0,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 1,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 2,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 3,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 4,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 5,
+    "text": "CTrade Trade;"
+   },
+   {
+    "frame": 6,
+    "text": "CTrade Trade;"
+   }
+  ],
+  "14": [
+   {
+    "frame": 0,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 1,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 2,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 3,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 4,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 5,
+    "text": "CPositionInfo posInfo;"
+   },
+   {
+    "frame": 6,
+    "text": "CPositionInfo posInfo;"
+   }
+  ],
+  "15": [
+   {
+    "frame": 2,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 3,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 4,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 5,
+    "text": "COrderInfo ordinfo;"
+   },
+   {
+    "frame": 6,
+    "text": "COrderInfo ordinfo;"
+   }
+  ],
+  "19": [
+   {
+    "frame": 0,
+    "text": "2@ int OnInit() {"
+   },
+   {
+    "frame": 1,
+    "text": "2@ int OnInit() {"
+   },
+   {
+    "frame": 2,
+    "text": "2@int OnInit() {"
+   },
+   {
+    "frame": 3,
+    "text": "2@int OnInit() {"
+   },
+   {
+    "frame": 4,
+    "text": "2@int OnInit() {"
+   },
+   {
+    "frame": 5,
+    "text": "2@int OnInit() {"
+   },
+   {
+    "frame": 6,
+    "text": "2@int OnInit() {"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 1,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 2,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 3,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 4,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 5,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 6,
+    "text": "return(INIT_SUCCEEDED) ;"
+   }
+  ],
+  "26": [
+   {
+    "frame": 0,
+    "text": "}"
+   },
+   {
+    "frame": 1,
+    "text": "}"
+   },
+   {
+    "frame": 2,
+    "text": "}"
+   },
+   {
+    "frame": 3,
+    "text": "}"
+   },
+   {
+    "frame": 4,
+    "text": "}"
+   },
+   {
+    "frame": 5,
+    "text": "}"
+   },
+   {
+    "frame": 6,
+    "text": "}"
+   }
+  ],
+  "29": [
+   {
+    "frame": 0,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 1,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 2,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 3,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 4,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 5,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 6,
+    "text": "void OnDeinit(const int reason) {"
+   }
+  ]
+ },
+ "unanchored_count": 61,
+ "per_frame": [
+  {
+   "t": 279.0,
+   "raw": [
+    [
+     "mi Sey V7 ux y| SS 7 | Compile |v) OOO) \u00a9 fe o | History > Reatime Ee) A PS | ae Welcome",
+     46.539
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * oo",
+     78.597
+    ],
+    [
+     "1 //+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert",
+     28.215
+    ],
+    [
+     "2i/ / | WakaWaka by MrCapFree.mg5 |",
+     73.835
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.931
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     79.413
+    ],
+    [
+     "5 [| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t",
+     23.037
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     89.246
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     79.214
+    ],
+    [
+     "8 #property version \"1.68\"",
+     72.453
+    ],
+    [
+     "9#property strict",
+     93.543
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     82.771
+    ],
+    [
+     "11",
+     93.689
+    ],
+    [
+     "12 #include <Trade\\Trade.mqh>",
+     82.064
+    ],
+    [
+     "13 CTrade Trade;",
+     95.327
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     69.824
+    ],
+    [
+     "aS COrderInfo ordinfo;",
+     66.864
+    ],
+    [
+     "16",
+     96.796
+    ],
+    [
+     "17",
+     96.815
+    ],
+    [
+     "18",
+     95.245
+    ],
+    [
+     "19",
+     96.297
+    ],
+    [
+     "2@ int OnInit() {",
+     91.421
+    ],
+    [
+     "2",
+     0.0
+    ],
+    [
+     "22",
+     96.271
+    ],
+    [
+     "23",
+     96.916
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     93.171
+    ],
+    [
+     "25",
+     96.467
+    ],
+    [
+     "26 }",
+     83.045
+    ],
+    [
+     "27",
+     74.13
+    ],
+    [
+     "28",
+     96.095
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.656
+    ],
+    [
+     "4 p",
+     46.822
+    ]
+   ]
+  },
+  {
+   "t": 280.0,
+   "raw": [
+    [
+     "mi Sey 7 ux y| SS 7 | Compile |v) OO Oo fe o | History > Reatime Ee) A PS | ae Welcome",
+     45.89
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * oo",
+     78.597
+    ],
+    [
+     "1 //+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert",
+     28.215
+    ],
+    [
+     "2i/ / | WakaWaka by MrCapFree.mg5 |",
+     73.835
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.931
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     79.413
+    ],
+    [
+     "5 [| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t",
+     23.037
+    ],
+    [
+     "6#property copyright \u201cMr CapFree\"",
+     87.436
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     79.214
+    ],
+    [
+     "8 #property version \"1.68\"",
+     72.453
+    ],
+    [
+     "9#property strict",
+     93.108
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.205
+    ],
+    [
+     "11",
+     93.689
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     86.589
+    ],
+    [
+     "13 CTrade Trade;",
+     95.213
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     73.852
+    ],
+    [
+     "aS COrderInfo ordinfo;",
+     66.864
+    ],
+    [
+     "16",
+     96.796
+    ],
+    [
+     "17",
+     96.663
+    ],
+    [
+     "18",
+     95.034
+    ],
+    [
+     "19",
+     96.297
+    ],
+    [
+     "2@ int OnInit() {",
+     91.092
+    ],
+    [
+     "2",
+     0.0
+    ],
+    [
+     "22",
+     96.401
+    ],
+    [
+     "23",
+     96.916
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     93.171
+    ],
+    [
+     "25",
+     96.467
+    ],
+    [
+     "26 }",
+     80.689
+    ],
+    [
+     "27",
+     74.13
+    ],
+    [
+     "28",
+     96.095
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.313
+    ],
+    [
+     "4 p",
+     46.822
+    ]
+   ]
+  },
+  {
+   "t": 281.0,
+   "raw": [
+    [
+     "=| Gy neal Je | 7 | J Compile |v | & eh WwW EG | 0 Ufo Ce | = History = Realtime | c) = | 5p LQ) | \u2018en Welcome",
+     51.449
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c",
+     73.709
+    ],
+    [
+     "ss",
+     5.844
+    ],
+    [
+     "2) / | WakaWaka by MrCapFree.mg5 |",
+     73.6
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.568
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     76.285
+    ],
+    [
+     "a a",
+     24.739
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.18
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+     71.665
+    ],
+    [
+     "8 #property version \"1.6\"",
+     72.741
+    ],
+    [
+     "9#property strict",
+     93.079
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.302
+    ],
+    [
+     "11",
+     93.893
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     88.751
+    ],
+    [
+     "13 CTrade Trade;",
+     94.286
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.053
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     76.321
+    ],
+    [
+     "16",
+     96.801
+    ],
+    [
+     "17",
+     94.416
+    ],
+    [
+     "18",
+     95.849
+    ],
+    [
+     "19",
+     96.829
+    ],
+    [
+     "2@int OnInit() {",
+     79.127
+    ],
+    [
+     "21",
+     95.561
+    ],
+    [
+     "22",
+     96.527
+    ],
+    [
+     "23",
+     96.679
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     73.852
+    ],
+    [
+     "25",
+     96.198
+    ],
+    [
+     "26 }",
+     89.156
+    ],
+    [
+     "27",
+     96.01
+    ],
+    [
+     "28",
+     95.606
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.75
+    ],
+    [
+     "4 >",
+     60.943
+    ]
+   ]
+  },
+  {
+   "t": 282.0,
+   "raw": [
+    [
+     "=| Gy neal Je |S 7 | J Compile |v | & eh WwW EG | 0 Ufo Ce | = History = Realtime | c) = | 5p LQ) | \u2018en Welcome",
+     51.977
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c",
+     72.757
+    ],
+    [
+     "ss",
+     5.844
+    ],
+    [
+     "2) / | WakaWaka by MrCapFree.mg5 |",
+     73.6
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.568
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     76.285
+    ],
+    [
+     "a a",
+     24.739
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.18
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+     71.665
+    ],
+    [
+     "8 #property version \"1.6\"",
+     72.741
+    ],
+    [
+     "9#property strict",
+     93.079
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.302
+    ],
+    [
+     "11",
+     93.893
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     87.716
+    ],
+    [
+     "13 CTrade Trade;",
+     94.248
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.053
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     76.321
+    ],
+    [
+     "16",
+     96.801
+    ],
+    [
+     "17",
+     94.416
+    ],
+    [
+     "18",
+     95.849
+    ],
+    [
+     "19",
+     96.829
+    ],
+    [
+     "2@int OnInit() {",
+     79.127
+    ],
+    [
+     "21",
+     95.561
+    ],
+    [
+     "22",
+     96.527
+    ],
+    [
+     "23",
+     96.679
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     73.852
+    ],
+    [
+     "25",
+     96.198
+    ],
+    [
+     "26 }",
+     89.156
+    ],
+    [
+     "27",
+     96.01
+    ],
+    [
+     "28",
+     95.606
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.707
+    ],
+    [
+     "4 >",
+     60.943
+    ]
+   ]
+  },
+  {
+   "t": 283.0,
+   "raw": [
+    [
+     "=| Gy neal Je |S 7 | J Compile |v | & eh WwW EG | 0 Ufo Ce | = History = Realtime | c) = | 5p LQ) | \u2018en Welcome",
+     51.977
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c",
+     72.757
+    ],
+    [
+     "ss",
+     5.844
+    ],
+    [
+     "2) / | WakaWaka by MrCapFree.mg5 |",
+     73.6
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.568
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     76.285
+    ],
+    [
+     "a a",
+     24.739
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.18
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+     71.665
+    ],
+    [
+     "8 #property version \"1.6\"",
+     72.741
+    ],
+    [
+     "9#property strict",
+     93.079
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.302
+    ],
+    [
+     "11",
+     93.893
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     88.751
+    ],
+    [
+     "13 CTrade Trade;",
+     94.286
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.053
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     76.321
+    ],
+    [
+     "16",
+     96.697
+    ],
+    [
+     "17",
+     94.416
+    ],
+    [
+     "18",
+     96.176
+    ],
+    [
+     "19",
+     96.609
+    ],
+    [
+     "2@int OnInit() {",
+     79.127
+    ],
+    [
+     "21",
+     95.561
+    ],
+    [
+     "22",
+     96.527
+    ],
+    [
+     "23",
+     96.573
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     73.852
+    ],
+    [
+     "25",
+     96.198
+    ],
+    [
+     "26 }",
+     89.156
+    ],
+    [
+     "27",
+     96.01
+    ],
+    [
+     "28",
+     95.606
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.707
+    ],
+    [
+     "4 >",
+     60.943
+    ]
+   ]
+  },
+  {
+   "t": 284.0,
+   "raw": [
+    [
+     "=| Gy neal Je | 7 | J Compile |v | & eh WwW EG | 0 Ufo Ce | = History = Realtime | c) = | 5p LQ) | \u2018en Welcome",
+     53.107
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c",
+     73.672
+    ],
+    [
+     "ss",
+     5.844
+    ],
+    [
+     "2) / | WakaWaka by MrCapFree.mg5 |",
+     73.6
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.568
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     76.285
+    ],
+    [
+     "a a",
+     24.739
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.18
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+     71.665
+    ],
+    [
+     "8 #property version \"1.6\"",
+     72.741
+    ],
+    [
+     "9#property strict",
+     93.079
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.302
+    ],
+    [
+     "11",
+     93.893
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     88.751
+    ],
+    [
+     "13 CTrade Trade;",
+     94.286
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.053
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     76.321
+    ],
+    [
+     "16",
+     96.751
+    ],
+    [
+     "17",
+     94.416
+    ],
+    [
+     "18",
+     96.176
+    ],
+    [
+     "19",
+     96.609
+    ],
+    [
+     "2@int OnInit() {",
+     79.127
+    ],
+    [
+     "21",
+     95.561
+    ],
+    [
+     "22",
+     96.527
+    ],
+    [
+     "23",
+     96.573
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     73.852
+    ],
+    [
+     "25",
+     96.198
+    ],
+    [
+     "26 }",
+     89.156
+    ],
+    [
+     "27",
+     96.01
+    ],
+    [
+     "28",
+     95.606
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.707
+    ],
+    [
+     "4 >",
+     60.943
+    ]
+   ]
+  },
+  {
+   "t": 285.0,
+   "raw": [
+    [
+     "=| Gy neal Je | 7 | J Compile |v | & eh WwW EG | 0 Ufo Ce | = History = Realtime | c) = | 5p LQ) | \u2018en Welcome",
+     53.107
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * c",
+     73.672
+    ],
+    [
+     "ss",
+     5.844
+    ],
+    [
+     "2) / | WakaWaka by MrCapFree.mg5 |",
+     73.6
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.568
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     76.285
+    ],
+    [
+     "a a",
+     24.739
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     91.18
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\u201d\u2122",
+     71.665
+    ],
+    [
+     "8 #property version \"1.6\"",
+     72.741
+    ],
+    [
+     "9#property strict",
+     93.079
+    ],
+    [
+     "10 #property description \u201cWaka Waka EA\"",
+     81.302
+    ],
+    [
+     "11",
+     93.893
+    ],
+    [
+     "12 #include <Trade\\Trade.mgh>",
+     88.751
+    ],
+    [
+     "13 CTrade Trade;",
+     94.286
+    ],
+    [
+     "14 CPositionInfo posInfo;",
+     89.053
+    ],
+    [
+     "15 COrderInfo ordinfo;",
+     76.321
+    ],
+    [
+     "16",
+     96.741
+    ],
+    [
+     "17",
+     94.416
+    ],
+    [
+     "18",
+     95.467
+    ],
+    [
+     "19",
+     96.609
+    ],
+    [
+     "2@int OnInit() {",
+     79.127
+    ],
+    [
+     "21",
+     95.561
+    ],
+    [
+     "22",
+     96.527
+    ],
+    [
+     "23",
+     96.573
+    ],
+    [
+     "24 return(INIT_SUCCEEDED) ;",
+     73.852
+    ],
+    [
+     "25",
+     96.198
+    ],
+    [
+     "26 }",
+     89.156
+    ],
+    [
+     "27",
+     96.01
+    ],
+    [
+     "28",
+     95.606
+    ],
+    [
+     "29 void OnDeinit(const int reason) {",
+     93.707
+    ],
+    [
+     "4 >",
+     60.943
+    ]
+   ]
+  }
+ ]
+}

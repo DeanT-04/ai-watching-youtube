@@ -1,0 +1,11 @@
+{
+  "group": 31,
+  "n_frames": 1,
+  "t_start": 470.0,
+  "t_end": 470.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "\u2019 \u2014 = | |\n- \u2014 = >\n9 a - pe ae -\n\u00a5 .",
+  "error": null,
+  "secs": 2.2
+}

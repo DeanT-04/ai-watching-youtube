@@ -1,0 +1,11 @@
+{
+  "group": 23,
+  "n_frames": 1,
+  "t_start": 462.0,
+  "t_end": 462.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": ": $ r 4 \u2018\nSE\n, \"",
+  "error": null,
+  "secs": 2.8
+}

@@ -1,0 +1,28 @@
+{
+ "group": 24,
+ "n_frames": 1,
+ "t_start": 463.0,
+ "t_end": 463.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 3,
+ "per_frame": [
+  {
+   "t": 463.0,
+   "raw": [
+    [
+     "i> < \\",
+     44.868
+    ],
+    [
+     ". . \u00a5",
+     29.955
+    ],
+    [
+     "? Pi \u2018= 7 M 7",
+     31.31
+    ]
+   ]
+  }
+ ]
+}

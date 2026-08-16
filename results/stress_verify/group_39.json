@@ -1,0 +1,404 @@
+{
+ "group": 39,
+ "n_frames": 1,
+ "t_start": 485.0,
+ "t_end": 485.0,
+ "consensus_lines": {
+  "47": {
+   "text": "string SymbolName;",
+   "votes": 1
+  },
+  "48": {
+   "text": "datetime LastMainTFUpdate;",
+   "votes": 1
+  },
+  "49": {
+   "text": "datetime LastOPOTFUpdate;",
+   "votes": 1
+  },
+  "51": {
+   "text": "bool CanBuy;",
+   "votes": 1
+  },
+  "53": {
+   "text": "datetime CurrentBarTime;",
+   "votes": 1
+  },
+  "54": {
+   "text": "datetime PreviousBarTime;",
+   "votes": 1
+  },
+  "55": {
+   "text": "double ClosePrice;",
+   "votes": 1
+  },
+  "56": {
+   "text": "bool GridOpened;",
+   "votes": 1
+  },
+  "57": {
+   "text": "bool OPOTriggered;",
+   "votes": 1
+  },
+  "58": {
+   "text": "double SmartDistanceMultiplier;",
+   "votes": 2
+  },
+  "59": {
+   "text": "double BBWidth;",
+   "votes": 1
+  },
+  "61": {
+   "text": "int CurrentBarIndex;",
+   "votes": 1
+  },
+  "62": {
+   "text": "long PatternValue;",
+   "votes": 2
+  },
+  "63": {
+   "text": "double PatternPrice;",
+   "votes": 1
+  },
+  "64": {
+   "text": "bool PatternSearchActive;",
+   "votes": 1
+  },
+  "65": {
+   "text": "bool TradingAllowedToday;",
+   "votes": 1
+  },
+  "66": {
+   "text": "bool PreviousDayTradingAllowed;",
+   "votes": 1
+  },
+  "67": {
+   "text": "int LastDayOfWeek;",
+   "votes": 1
+  },
+  "68": {
+   "text": "double MaxGridLotMultiplier;",
+   "votes": 1
+  },
+  "69": {
+   "text": "double LastBuyAvgPrice;",
+   "votes": 1
+  },
+  "72": {
+   "text": "double LastSellTP;",
+   "votes": 2
+  },
+  "73": {
+   "text": "datetime LastBuyGridTime;",
+   "votes": 1
+  },
+  "74": {
+   "text": "datetime LastSellGridTime;",
+   "votes": 1
+  },
+  "75": {
+   "text": "|",
+   "votes": 1
+  }
+ },
+ "support": {
+  "4": [
+   {
+    "frame": 0,
+    "text": "b"
+   }
+  ],
+  "47": [
+   {
+    "frame": 0,
+    "text": "string SymbolName;"
+   }
+  ],
+  "48": [
+   {
+    "frame": 0,
+    "text": "datetime LastMainTFUpdate;"
+   }
+  ],
+  "49": [
+   {
+    "frame": 0,
+    "text": "datetime LastOPOTFUpdate;"
+   }
+  ],
+  "51": [
+   {
+    "frame": 0,
+    "text": "bool CanBuy;"
+   }
+  ],
+  "53": [
+   {
+    "frame": 0,
+    "text": "datetime CurrentBarTime;"
+   }
+  ],
+  "54": [
+   {
+    "frame": 0,
+    "text": "datetime PreviousBarTime;"
+   }
+  ],
+  "55": [
+   {
+    "frame": 0,
+    "text": "double ClosePrice;"
+   }
+  ],
+  "56": [
+   {
+    "frame": 0,
+    "text": "bool GridOpened;"
+   }
+  ],
+  "57": [
+   {
+    "frame": 0,
+    "text": "bool OPOTriggered;"
+   }
+  ],
+  "58": [
+   {
+    "frame": 0,
+    "text": "int UpdateCounter;"
+   },
+   {
+    "frame": 0,
+    "text": "double SmartDistanceMultiplier;"
+   }
+  ],
+  "59": [
+   {
+    "frame": 0,
+    "text": "double BBWidth;"
+   }
+  ],
+  "61": [
+   {
+    "frame": 0,
+    "text": "int CurrentBarIndex;"
+   }
+  ],
+  "62": [
+   {
+    "frame": 0,
+    "text": "int LastBarIndex;"
+   },
+   {
+    "frame": 0,
+    "text": "long PatternValue;"
+   }
+  ],
+  "63": [
+   {
+    "frame": 0,
+    "text": "double PatternPrice;"
+   }
+  ],
+  "64": [
+   {
+    "frame": 0,
+    "text": "bool PatternSearchActive;"
+   }
+  ],
+  "65": [
+   {
+    "frame": 0,
+    "text": "bool TradingAllowedToday;"
+   }
+  ],
+  "66": [
+   {
+    "frame": 0,
+    "text": "bool PreviousDayTradingAllowed;"
+   }
+  ],
+  "67": [
+   {
+    "frame": 0,
+    "text": "int LastDayOfWeek;"
+   }
+  ],
+  "68": [
+   {
+    "frame": 0,
+    "text": "double MaxGridLotMultiplier;"
+   }
+  ],
+  "69": [
+   {
+    "frame": 0,
+    "text": "double LastBuyAvgPrice;"
+   }
+  ],
+  "72": [
+   {
+    "frame": 0,
+    "text": "double LastSellAvgPrice;"
+   },
+   {
+    "frame": 0,
+    "text": "double LastSellTP;"
+   }
+  ],
+  "73": [
+   {
+    "frame": 0,
+    "text": "datetime LastBuyGridTime;"
+   }
+  ],
+  "74": [
+   {
+    "frame": 0,
+    "text": "datetime LastSellGridTime;"
+   }
+  ],
+  "75": [
+   {
+    "frame": 0,
+    "text": "|"
+   }
+  ]
+ },
+ "unanchored_count": 4,
+ "per_frame": [
+  {
+   "t": 485.0,
+   "raw": [
+    [
+     "_| | Urv + | ~A Ixy | GS | \\\u00a5=} Compile | v | oO & | | =P History =l> Realtime | | eae | YS Welcome",
+     68.187
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * *",
+     88.167
+    ],
+    [
+     "47 string SymbolName;",
+     89.068
+    ],
+    [
+     "48 datetime LastMainTFUpdate;",
+     95.043
+    ],
+    [
+     "49 datetime LastOPOTFUpdate;",
+     95.124
+    ],
+    [
+     "58 int UpdateCounter;",
+     83.11
+    ],
+    [
+     "51 bool CanBuy;",
+     87.061
+    ],
+    [
+     "El bool CanSell;",
+     73.817
+    ],
+    [
+     "53 datetime CurrentBarTime;",
+     94.949
+    ],
+    [
+     "54 datetime PreviousBarTime;",
+     95.058
+    ],
+    [
+     "55 double ClosePrice;",
+     95.23
+    ],
+    [
+     "56 bool GridOpened;",
+     94.036
+    ],
+    [
+     "57 bool OPOTriggered;",
+     93.446
+    ],
+    [
+     "58 double SmartDistanceMultiplier;",
+     93.403
+    ],
+    [
+     "59 double BBWidth;",
+     95.016
+    ],
+    [
+     "62 int LastBarIndex;",
+     79.031
+    ],
+    [
+     "61 int CurrentBarIndex;",
+     87.464
+    ],
+    [
+     "62 long PatternValue;",
+     94.895
+    ],
+    [
+     "63 double PatternPrice;",
+     95.394
+    ],
+    [
+     "64 bool PatternSearchActive;",
+     94.978
+    ],
+    [
+     "65 bool TradingAllowedToday;",
+     95.053
+    ],
+    [
+     "66 bool PreviousDayTradingAllowed;",
+     94.924
+    ],
+    [
+     "67 int LastDayOfWeek;",
+     84.279
+    ],
+    [
+     "68 double MaxGridLotMultiplier;",
+     94.293
+    ],
+    [
+     "69 double LastBuyAvgPrice;",
+     94.615
+    ],
+    [
+     "72 double LastSellAvgPrice;",
+     81.459
+    ],
+    [
+     "wal double LastBuyTP;",
+     72.087
+    ],
+    [
+     "72 double LastSellTP;",
+     91.603
+    ],
+    [
+     "73 datetime LastBuyGridTime;",
+     95.195
+    ],
+    [
+     "74 datetime LastSellGridTime;",
+     93.646
+    ],
+    [
+     "75 |",
+     68.487
+    ],
+    [
+     "4 b",
+     86.681
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "group": 6,
+  "n_frames": 2,
+  "t_start": 288.0,
+  "t_end": 289.0,
+  "source": "paddle+tesseract (consensus x2)",
+  "valid": false,
+  "text": "m_type_fi11ing(ORDER_FILLING_FOK),\nm_1og_1eVe1(LOG_LEVEL_ERRORS)\nSetMarginMode();\n//--- initialize protected data\nclearStructures();\n//--- check programm mode\nif(MQLInfoInteger(ENUM_MQL_INFO_INTEGER::MQL_TESTER))\nm_1og_leve1=LOG_LEVEL_ALL;\nif(MQLInfoInteger(ENUM_MQL_INFO_INTEGER::MQL_OPTIMIZATION))\nm_1og_leve1=LOG_LEVEL_NO;\n172//+\n//+------------------------------------------------------------------+\n//| Destructor |\n/ /+------------------------------------ +--+ = 2-2 oot\nCTrade: :~CTrade(void)\n{\n178//+\nm_log_level=LOG_LEVEL_NO;\n//| Get the request structure |\n//+------------------------------------------------------------------+\nvoid cTrade::Request(MqlTradeRequest &request) const\n{\nrequest.action\nrequest.magic\nrequest.order\nrequest.symbol\nrequest.volume\nrequest.price",
+  "error": null,
+  "secs": 19.5
+}

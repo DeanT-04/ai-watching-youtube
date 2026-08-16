@@ -1,0 +1,11 @@
+{
+  "group": 33,
+  "n_frames": 1,
+  "t_start": 472.0,
+  "t_end": 472.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": ". = en hoi: ie a\n, a \u00bb | |\nPa oe 7a ae\n\u00ab i \u201ca\nhaat *\nww",
+  "error": null,
+  "secs": 2.3
+}

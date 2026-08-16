@@ -1,0 +1,11 @@
+{
+  "group": 22,
+  "n_frames": 1,
+  "t_start": 461.0,
+  "t_end": 461.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "_S \u201cJ oe\ni i \u2018 , :\nfoe , a\n- op",
+  "error": null,
+  "secs": 2.4
+}

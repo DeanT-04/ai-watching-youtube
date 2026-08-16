@@ -1,0 +1,11 @@
+{
+  "group": 8,
+  "n_frames": 3,
+  "t_start": 291.0,
+  "t_end": 293.0,
+  "source": "paddle+tesseract (consensus x3)",
+  "valid": false,
+  "text": "//| Get the order type time as string |\nstring CTrade::RequestTypeTimeDescription(void) const\nstring str;\n//--- l\nFormatOrderTypeTime(str,m_request.type_time);\nreturn(str);\n}\n//| Get the result structure |\n//+---------------- == oo en nnn nn enn ene nent\nvoid CTrade: :Result(MqlTradeResult &result) const\n{\nresult.retcode\nresult.deal\nresult.order\nresult.volume\nresult.price\nresult.bid\nresult.ask\nresult.comment\nresult.request_id=m_result.request_id;\nresult.retcode_external=m_result.retcode_externa1;\n}\n//+--------------------------------------------------------------- +--+\n//| Get the retcode value as string |",
+  "error": null,
+  "secs": 40.2
+}

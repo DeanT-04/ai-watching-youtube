@@ -1,0 +1,44 @@
+{
+ "group": 31,
+ "n_frames": 1,
+ "t_start": 470.0,
+ "t_end": 470.0,
+ "consensus_lines": {
+  "9": {
+   "text": "a - pe ae -",
+   "votes": 1
+  }
+ },
+ "support": {
+  "9": [
+   {
+    "frame": 0,
+    "text": "a - pe ae -"
+   }
+  ]
+ },
+ "unanchored_count": 3,
+ "per_frame": [
+  {
+   "t": 470.0,
+   "raw": [
+    [
+     "\u2019 \u2014 = | |",
+     31.105
+    ],
+    [
+     "- \u2014 = >",
+     40.905
+    ],
+    [
+     "9 a - pe ae -",
+     31.283
+    ],
+    [
+     "\u00a5 .",
+     35.748
+    ]
+   ]
+  }
+ ]
+}

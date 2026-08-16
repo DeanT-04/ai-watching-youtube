@@ -1,0 +1,1322 @@
+{
+ "group": 0,
+ "n_frames": 7,
+ "t_start": 223.0,
+ "t_end": 229.0,
+ "consensus_lines": {
+  "1": {
+   "text": "//+------------- 2-2-2 2-22 nn nn nn nn nn nnn nee eet",
+   "votes": 1
+  },
+  "4": {
+   "text": "\u00bb",
+   "votes": 2
+  },
+  "7": {
+   "text": "#property link \u201chttps: //www.MrCapFree.com\"",
+   "votes": 8
+  },
+  "10": {
+   "text": ";",
+   "votes": 1
+  },
+  "11": {
+   "text": "int OnInit() {",
+   "votes": 7
+  },
+  "12": {
+   "text": "al} return(INIT_SUCCEEDED) ;",
+   "votes": 3
+  },
+  "13": {
+   "text": "return(INIT_SUCCEEDED) ;",
+   "votes": 4
+  },
+  "14": {
+   "text": "15}",
+   "votes": 4
+  },
+  "15": {
+   "text": "}",
+   "votes": 3
+  },
+  "17": {
+   "text": "}",
+   "votes": 1
+  },
+  "18": {
+   "text": "void OnDeinit(const int reason) {",
+   "votes": 7
+  },
+  "20": {
+   "text": "21}",
+   "votes": 5
+  },
+  "21": {
+   "text": "Pap",
+   "votes": 1
+  },
+  "24": {
+   "text": "void OnTick() {",
+   "votes": 6
+  },
+  "26": {
+   "text": "27,",
+   "votes": 5
+  },
+  "27": {
+   "text": "23}",
+   "votes": 2
+  },
+  "28": {
+   "text": "}",
+   "votes": 5
+  },
+  "29": {
+   "text": "< >",
+   "votes": 1
+  }
+ },
+ "support": {
+  "1": [
+   {
+    "frame": 1,
+    "text": "//+------------- 2-2-2 2-22 nn nn nn nn nn nnn nee eet"
+   }
+  ],
+  "4": [
+   {
+    "frame": 0,
+    "text": "\u00bb"
+   },
+   {
+    "frame": 1,
+    "text": "\u00bb"
+   }
+  ],
+  "7": [
+   {
+    "frame": 0,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\"\u2122"
+   },
+   {
+    "frame": 1,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 1,
+    "text": "a a ae"
+   },
+   {
+    "frame": 2,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 3,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 4,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 5,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   },
+   {
+    "frame": 6,
+    "text": "#property link \u201chttps: //www.MrCapFree.com\""
+   }
+  ],
+  "10": [
+   {
+    "frame": 3,
+    "text": ";"
+   }
+  ],
+  "11": [
+   {
+    "frame": 0,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 1,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 2,
+    "text": "int OnInit\\() {"
+   },
+   {
+    "frame": 3,
+    "text": "int OnInit()] {"
+   },
+   {
+    "frame": 4,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 5,
+    "text": "int OnInit() {"
+   },
+   {
+    "frame": 6,
+    "text": "int OnInit() {"
+   }
+  ],
+  "12": [
+   {
+    "frame": 0,
+    "text": "al} return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 1,
+    "text": "al} return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 6,
+    "text": "13,"
+   }
+  ],
+  "13": [
+   {
+    "frame": 2,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 3,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 4,
+    "text": "return(INIT_SUCCEEDED) ;"
+   },
+   {
+    "frame": 5,
+    "text": "return(INIT_SUCCEEDED) ;"
+   }
+  ],
+  "14": [
+   {
+    "frame": 0,
+    "text": "15}"
+   },
+   {
+    "frame": 1,
+    "text": "15}"
+   },
+   {
+    "frame": 2,
+    "text": "15}"
+   },
+   {
+    "frame": 3,
+    "text": "15}"
+   }
+  ],
+  "15": [
+   {
+    "frame": 4,
+    "text": "}"
+   },
+   {
+    "frame": 5,
+    "text": "}"
+   },
+   {
+    "frame": 6,
+    "text": "return(INIT_SUCCEEDED) ;"
+   }
+  ],
+  "17": [
+   {
+    "frame": 6,
+    "text": "}"
+   }
+  ],
+  "18": [
+   {
+    "frame": 0,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 1,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 2,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 3,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 4,
+    "text": ";"
+   },
+   {
+    "frame": 4,
+    "text": "void OnDeinit(const int reason) {"
+   },
+   {
+    "frame": 5,
+    "text": "void OnDeinit(const int reason) {"
+   }
+  ],
+  "20": [
+   {
+    "frame": 1,
+    "text": "Bil}"
+   },
+   {
+    "frame": 2,
+    "text": "21}"
+   },
+   {
+    "frame": 3,
+    "text": "21}"
+   },
+   {
+    "frame": 4,
+    "text": "21}"
+   },
+   {
+    "frame": 5,
+    "text": "21}"
+   }
+  ],
+  "21": [
+   {
+    "frame": 6,
+    "text": "Pap"
+   }
+  ],
+  "24": [
+   {
+    "frame": 0,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 1,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 2,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 3,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 4,
+    "text": "void OnTick() {"
+   },
+   {
+    "frame": 5,
+    "text": "void OnTick() {"
+   }
+  ],
+  "26": [
+   {
+    "frame": 2,
+    "text": "27,"
+   },
+   {
+    "frame": 3,
+    "text": "27,"
+   },
+   {
+    "frame": 4,
+    "text": "27,"
+   },
+   {
+    "frame": 5,
+    "text": "27,"
+   },
+   {
+    "frame": 6,
+    "text": "void OnTick() {"
+   }
+  ],
+  "27": [
+   {
+    "frame": 0,
+    "text": "23}"
+   },
+   {
+    "frame": 1,
+    "text": "23}"
+   }
+  ],
+  "28": [
+   {
+    "frame": 2,
+    "text": "}"
+   },
+   {
+    "frame": 3,
+    "text": "}"
+   },
+   {
+    "frame": 4,
+    "text": "}"
+   },
+   {
+    "frame": 5,
+    "text": "}"
+   },
+   {
+    "frame": 6,
+    "text": "void OnDeinit(const int reason) {"
+   }
+  ],
+  "29": [
+   {
+    "frame": 6,
+    "text": "< >"
+   }
+  ],
+  "208": [
+   {
+    "frame": 0,
+    "text": "iy}"
+   }
+  ]
+ },
+ "unanchored_count": 77,
+ "per_frame": [
+  {
+   "t": 223.0,
+   "raw": [
+    [
+     "=| Gav + | dp =< || Sy | \\\u00a5=} Compile ~ | WD & WW O | o \u2018oo o | =\u201d History = Realtime \u2014 | 2) a | FS KP tah | YS Welcome",
+     49.375
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u2018 >",
+     76.14
+    ],
+    [
+     "es",
+     12.953
+    ],
+    [
+     "Za/ / | WakaWaka by MrCapFree.mq5 |",
+     65.499
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.861
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     72.453
+    ],
+    [
+     "BY / [ba maaan asses esas nanan ens ss ase ssssesssssssssssssssssssssssssesssssssst",
+     20.007
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     86.752
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"\u2122",
+     76.223
+    ],
+    [
+     "8#property version \"1.00\"",
+     78.266
+    ],
+    [
+     "9",
+     95.826
+    ],
+    [
+     "10",
+     86.185
+    ],
+    [
+     "11 int OnInit() {",
+     44.8
+    ],
+    [
+     "12",
+     96.553
+    ],
+    [
+     "al} return(INIT_SUCCEEDED) ;",
+     78.413
+    ],
+    [
+     "14",
+     95.962
+    ],
+    [
+     "15}",
+     87.339
+    ],
+    [
+     "16",
+     96.714
+    ],
+    [
+     "17",
+     93.296
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.481
+    ],
+    [
+     "19",
+     96.547
+    ],
+    [
+     "208",
+     73.065
+    ],
+    [
+     "iy}",
+     25.622
+    ],
+    [
+     "22",
+     96.289
+    ],
+    [
+     "23",
+     96.899
+    ],
+    [
+     "24 void OnTick() {",
+     37.227
+    ],
+    [
+     "25",
+     96.288
+    ],
+    [
+     "26",
+     96.477
+    ],
+    [
+     "27",
+     95.949
+    ],
+    [
+     "23}",
+     62.115
+    ],
+    [
+     "BO | [ $= 3 = sn a sea ssa ass a ss essa se sess sses ase sescs sess ssssasssessssssssh",
+     14.588
+    ],
+    [
+     "4 \u00bb",
+     80.274
+    ]
+   ]
+  },
+  {
+   "t": 224.0,
+   "raw": [
+    [
+     "=| Gav + | ap.\u00a2 =< || Sy | \\\u00a5=} Compile ~ | WD & WwW O | 0 fo\u2014CO | =\u201d History = Realtime \u2014 | 2) m8 | FS RP tah | > Welcome",
+     47.286
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u2018 >",
+     67.964
+    ],
+    [
+     "1 //+------------- 2-2-2 2-22 nn nn nn nn nn nnn nee eet",
+     30.137
+    ],
+    [
+     "ZA/ / | WakaWaka by MrCapFree.mq5 |",
+     69.78
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.674
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     75.988
+    ],
+    [
+     "By / [ba aaa a a ass seca sss s sss n sss a se ssssesssssssssssssssssssssssesssssssssst",
+     19.657
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     86.752
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     83.056
+    ],
+    [
+     "8#property version \"1.00\"",
+     73.688
+    ],
+    [
+     "9",
+     96.182
+    ],
+    [
+     "10",
+     87.113
+    ],
+    [
+     "11 int OnInit() {",
+     50.797
+    ],
+    [
+     "12",
+     96.625
+    ],
+    [
+     "al} return(INIT_SUCCEEDED) ;",
+     76.477
+    ],
+    [
+     "14",
+     95.704
+    ],
+    [
+     "15}",
+     87.299
+    ],
+    [
+     "16",
+     96.682
+    ],
+    [
+     "17",
+     94.645
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.535
+    ],
+    [
+     "19",
+     96.479
+    ],
+    [
+     "20",
+     93.354
+    ],
+    [
+     "Bil}",
+     25.556
+    ],
+    [
+     "22",
+     96.39
+    ],
+    [
+     "23",
+     96.932
+    ],
+    [
+     "24 void OnTick() {",
+     46.974
+    ],
+    [
+     "25",
+     96.168
+    ],
+    [
+     "26",
+     96.806
+    ],
+    [
+     "27",
+     96.357
+    ],
+    [
+     "23}",
+     62.573
+    ],
+    [
+     "7 a a ae",
+     30.541
+    ],
+    [
+     "4 \u00bb",
+     80.274
+    ]
+   ]
+  },
+  {
+   "t": 225.0,
+   "raw": [
+    [
+     "= | Urnv Y\u2014 | SS ~ || Saez | (Z| Compile ly | OY Ww @ | 0 fo 0 | =\u00bb History = Realtime \u2014 | Ww) SY | FS Ptah | Y> Welcome",
+     57.054
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab >",
+     72.863
+    ],
+    [
+     "D | [tenn nnn nnn rrr rrr rrr rrr nn nnn nn nnn ncn cnn cnc cnc nn nt",
+     19.59
+    ],
+    [
+     "2//| WakaWaka by MrCapFree.mg5 |",
+     85.922
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.726
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     77.194
+    ],
+    [
+     "Bf [penn rrr rrr rrr rrr rrr rn rrr rr rn crc n cc ccc crn cc ccc cc ccc nnt",
+     16.998
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     88.124
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     63.605
+    ],
+    [
+     "8#property version \"1.e0e\"",
+     69.666
+    ],
+    [
+     "9",
+     96.234
+    ],
+    [
+     "10",
+     90.336
+    ],
+    [
+     "11 int OnInit\\() {",
+     41.371
+    ],
+    [
+     "12",
+     96.611
+    ],
+    [
+     "13 return(INIT_SUCCEEDED) ;",
+     93.261
+    ],
+    [
+     "14",
+     96.136
+    ],
+    [
+     "15}",
+     87.542
+    ],
+    [
+     "16",
+     96.741
+    ],
+    [
+     "17",
+     96.897
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.339
+    ],
+    [
+     "19",
+     96.829
+    ],
+    [
+     "20",
+     93.71
+    ],
+    [
+     "21}",
+     86.169
+    ],
+    [
+     "Pap",
+     58.769
+    ],
+    [
+     "23",
+     96.881
+    ],
+    [
+     "24 void OnTick() {",
+     86.712
+    ],
+    [
+     "25",
+     46.652
+    ],
+    [
+     "26",
+     96.885
+    ],
+    [
+     "27,",
+     81.331
+    ],
+    [
+     "28 }",
+     91.458
+    ],
+    [
+     "12) be lalate aati aia aiatat etait atatatatatatatatatatatatataatatatatatatateatatetatetatatatatatatatetatatataaatatatataatans",
+     8.455
+    ],
+    [
+     "< >",
+     72.258
+    ]
+   ]
+  },
+  {
+   "t": 226.0,
+   "raw": [
+    [
+     "= | Urv Y\u2014 | Za IS * | So ze | (| Compile I~ | OY WwW @ | o fo 00 | =\u00bb History = Realtime \u2014 | WwW) SY | FS Ptah | > Welcome",
+     51.198
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab >",
+     72.43
+    ],
+    [
+     "DM / [ tenn nnn nnn nnn rrr nnn rrr nn nnn nr nnn nn cnn cnr c nena nt",
+     19.441
+    ],
+    [
+     "2//| WakaWaka by MrCapFree.mg5 |",
+     85.672
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.726
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     77.194
+    ],
+    [
+     "Bf [penn rrr rrr rrr rrr rrr rn rrr rr rn crc n cc ccc crn cc ccc cc ccc nnt",
+     16.998
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     87.848
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     57.774
+    ],
+    [
+     "8#property version \"1.e0e\"",
+     76.438
+    ],
+    [
+     "9",
+     96.234
+    ],
+    [
+     "10 ;",
+     55.512
+    ],
+    [
+     "11 int OnInit()] {",
+     78.613
+    ],
+    [
+     "12",
+     96.611
+    ],
+    [
+     "13 return(INIT_SUCCEEDED) ;",
+     93.238
+    ],
+    [
+     "14",
+     96.518
+    ],
+    [
+     "15}",
+     87.87
+    ],
+    [
+     "16",
+     96.809
+    ],
+    [
+     "17",
+     96.923
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.312
+    ],
+    [
+     "19",
+     96.681
+    ],
+    [
+     "20",
+     94.747
+    ],
+    [
+     "21}",
+     82.47
+    ],
+    [
+     "Pap",
+     58.769
+    ],
+    [
+     "23",
+     96.881
+    ],
+    [
+     "24 void OnTick() {",
+     86.712
+    ],
+    [
+     "25",
+     46.652
+    ],
+    [
+     "26",
+     96.885
+    ],
+    [
+     "27,",
+     81.331
+    ],
+    [
+     "28 }",
+     92.094
+    ],
+    [
+     "12) be lalate aati aia aiatat etait atatatatatatatatatatatatataatatatatatatateatatetatetatatatatatatatetatatataaatatatataatans",
+     8.455
+    ],
+    [
+     "< >",
+     72.258
+    ]
+   ]
+  },
+  {
+   "t": 227.0,
+   "raw": [
+    [
+     "= | Urnv Y\u2014 | a IS ~ || Saez | (Z| Compile ly | OY Ww @ | 0 fo 0 | =\u00bb History = Realtime \u2014 | Ww) SY | FS Ptah | Y> Welcome",
+     56.206
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab >",
+     73.233
+    ],
+    [
+     "DM / [ tenn nnn nnn nnn rrr nnn rrr nn nnn nr nnn nn cnn cnr c nena nt",
+     19.441
+    ],
+    [
+     "2//| WakaWaka by MrCapFree.mg5 |",
+     85.672
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.726
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     77.194
+    ],
+    [
+     "Bf [penn rrr rrr rrr rrr rrr rn rrr rr rn crc n cc ccc crn cc ccc cc ccc nnt",
+     16.998
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     87.848
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     57.774
+    ],
+    [
+     "8#property version \"1.e0e\"",
+     76.438
+    ],
+    [
+     "9",
+     96.234
+    ],
+    [
+     "18 ;",
+     37.572
+    ],
+    [
+     "11 int OnInit() {",
+     46.527
+    ],
+    [
+     "12",
+     96.611
+    ],
+    [
+     "13 return(INIT_SUCCEEDED) ;",
+     93.238
+    ],
+    [
+     "14",
+     96.374
+    ],
+    [
+     "15 }",
+     91.742
+    ],
+    [
+     "16",
+     96.859
+    ],
+    [
+     "17",
+     96.91
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.537
+    ],
+    [
+     "19",
+     96.829
+    ],
+    [
+     "20",
+     93.488
+    ],
+    [
+     "21}",
+     24.99
+    ],
+    [
+     "Pap",
+     58.769
+    ],
+    [
+     "23",
+     96.881
+    ],
+    [
+     "24 void OnTick() {",
+     86.712
+    ],
+    [
+     "25",
+     46.652
+    ],
+    [
+     "26",
+     96.885
+    ],
+    [
+     "27,",
+     81.331
+    ],
+    [
+     "28 }",
+     91.762
+    ],
+    [
+     "12) be lalate aati aia aiatat etait atatatatatatatatatatatatataatatatatatatateatatetatetatatatatatatatetatatataaatatatataatans",
+     8.455
+    ],
+    [
+     "< >",
+     72.258
+    ]
+   ]
+  },
+  {
+   "t": 228.0,
+   "raw": [
+    [
+     "= | Urnv Y\u2014 | a IS ~ || Saez | (Z| Compile ly | OY Ww @ | 0 fo 0 | =\u00bb History = Realtime \u2014 | Ww) SY | FS Ptah | Y> Welcome",
+     56.206
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab >",
+     73.233
+    ],
+    [
+     "DM / [ tenn nnn nnn nnn rrr nnn rrr nn nnn nr nnn nn cnn cnr c nena nt",
+     19.441
+    ],
+    [
+     "2//| WakaWaka by MrCapFree.mg5 |",
+     85.672
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.726
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     77.194
+    ],
+    [
+     "Bf [penn rrr rrr rrr rrr rrr rn rrr rr rn crc n cc ccc crn cc ccc cc ccc nnt",
+     16.998
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     87.848
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     57.774
+    ],
+    [
+     "8#property version \"1.e0e\"",
+     76.438
+    ],
+    [
+     "9",
+     96.234
+    ],
+    [
+     "10",
+     90.336
+    ],
+    [
+     "11 int OnInit() {",
+     60.119
+    ],
+    [
+     "12",
+     96.646
+    ],
+    [
+     "13 return(INIT_SUCCEEDED) ;",
+     93.057
+    ],
+    [
+     "14",
+     96.374
+    ],
+    [
+     "15 }",
+     89.141
+    ],
+    [
+     "16",
+     96.859
+    ],
+    [
+     "17",
+     96.91
+    ],
+    [
+     "18 void OnDeinit(const int reason) {",
+     93.56
+    ],
+    [
+     "19",
+     96.829
+    ],
+    [
+     "20",
+     93.488
+    ],
+    [
+     "21}",
+     85.442
+    ],
+    [
+     "Pap",
+     58.769
+    ],
+    [
+     "23",
+     96.881
+    ],
+    [
+     "24 void OnTick() {",
+     86.712
+    ],
+    [
+     "25",
+     46.652
+    ],
+    [
+     "26",
+     96.885
+    ],
+    [
+     "27,",
+     81.331
+    ],
+    [
+     "28 }",
+     91.305
+    ],
+    [
+     "12) be lalate aati aia aiatat etait atatatatatatatatatatatatataatatatatatatateatatetatetatatatatatatatetatatataaatatatataatans",
+     8.455
+    ],
+    [
+     "< >",
+     72.258
+    ]
+   ]
+  },
+  {
+   "t": 229.0,
+   "raw": [
+    [
+     "= | Urnv Y\u2014 | a IS ~ || Saez | (Z| Compile ly | OY Ww @ | 0 fo 0 | =\u00bb History = Realtime \u2014 | Ww) SY | FS Ptah | Y> Welcome",
+     56.206
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * \u00ab >",
+     73.233
+    ],
+    [
+     "DM / [ tenn nnn nnn nnn rrr nnn rrr nn nnn nr nnn nn cnn cnr c nena nt",
+     19.441
+    ],
+    [
+     "2//| WakaWaka by MrCapFree.mg5 |",
+     85.672
+    ],
+    [
+     "3//| Mr CapFree |",
+     92.726
+    ],
+    [
+     "4//| https://www.MrCapFree.com |",
+     77.194
+    ],
+    [
+     "Bf [penn rrr rrr rrr rrr rrr rn rrr rr rn crc n cc ccc crn cc ccc cc ccc nnt",
+     16.998
+    ],
+    [
+     "6#property copyright \"Mr CapFree\"",
+     87.848
+    ],
+    [
+     "7 #property link \u201chttps: //www.MrCapFree.com\"",
+     57.774
+    ],
+    [
+     "8#property version \"1.e0e\"",
+     76.438
+    ],
+    [
+     "9",
+     96.234
+    ],
+    [
+     "10",
+     90.336
+    ],
+    [
+     "11 int OnInit() {",
+     68.76
+    ],
+    [
+     "12",
+     96.676
+    ],
+    [
+     "13,",
+     67.498
+    ],
+    [
+     "14",
+     96.523
+    ],
+    [
+     "15 return(INIT_SUCCEEDED) ;",
+     93.408
+    ],
+    [
+     "16",
+     96.815
+    ],
+    [
+     "17 }",
+     78.755
+    ],
+    [
+     "18",
+     95.951
+    ],
+    [
+     "19",
+     96.862
+    ],
+    [
+     "28 void OnDeinit(const int reason) {",
+     81.838
+    ],
+    [
+     "21",
+     90.788
+    ],
+    [
+     "Pap",
+     58.769
+    ],
+    [
+     "23}",
+     81.419
+    ],
+    [
+     "24",
+     96.948
+    ],
+    [
+     "25",
+     46.389
+    ],
+    [
+     "26 void OnTick() {",
+     91.915
+    ],
+    [
+     "27,",
+     81.331
+    ],
+    [
+     "28",
+     95.481
+    ],
+    [
+     "29",
+     96.537
+    ],
+    [
+     "< >",
+     72.258
+    ]
+   ]
+  }
+ ]
+}

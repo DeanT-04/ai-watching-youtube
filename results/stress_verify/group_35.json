@@ -1,0 +1,36 @@
+{
+ "group": 35,
+ "n_frames": 1,
+ "t_start": 474.0,
+ "t_end": 474.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 5,
+ "per_frame": [
+  {
+   "t": 474.0,
+   "raw": [
+    [
+     "KP AS t",
+     24.381
+    ],
+    [
+     "J = \u20184 * if ay)",
+     52.837
+    ],
+    [
+     "\u00a2 & a ;",
+     23.98
+    ],
+    [
+     "as \u2014\\) |",
+     59.493
+    ],
+    [
+     "ly\u00bb , | s -_ -",
+     36.521
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3304 @@
+{
+  "video_id": "ruk3gkZGNkc",
+  "title": "Build This $2800 Forex Trading Bot From Scratch (Full Code) – Part 4 | Closing Trades & Finalization",
+  "uploader": "Mr. CapFree",
+  "webpage_url": "https://www.youtube.com/watch?v=ruk3gkZGNkc",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.4,
+      "text": " We're working on this beautiful grid management system."
+    },
+    {
+      "start": 2.4,
+      "end": 5.6000000000000005,
+      "text": " It sells on the MQL marketplace for $2,800."
+    },
+    {
+      "start": 5.6000000000000005,
+      "end": 9.040000000000001,
+      "text": " It boasts quite a strong profit, comes a good month in profit,"
+    },
+    {
+      "start": 9.040000000000001,
+      "end": 11.84,
+      "text": " and comes with a full documentation, including features,"
+    },
+    {
+      "start": 11.84,
+      "end": 14.8,
+      "text": " how to install, requirements, risk settings, strategy,"
+    },
+    {
+      "start": 14.8,
+      "end": 17.12,
+      "text": " grid settings, and all the other good stuff."
+    },
+    {
+      "start": 17.12,
+      "end": 18.48,
+      "text": " But we are building it ourselves."
+    },
+    {
+      "start": 18.48,
+      "end": 21.6,
+      "text": " In the first video in the series, we downloaded the demo version of the year,"
+    },
+    {
+      "start": 21.6,
+      "end": 24.400000000000002,
+      "text": " we ran a backtest, and then through the indicators and other stuff,"
+    },
+    {
+      "start": 24.400000000000002,
+      "end": 27.12,
+      "text": " we tried to figure out how to execute the crates, how does it form?"
+    },
+    {
+      "start": 27.12,
+      "end": 29.68,
+      "text": " The grates, how does it set the TPs and stop losses,"
+    },
+    {
+      "start": 29.68,
+      "end": 31.520000000000003,
+      "text": " and how does the entire mechanism work?"
+    },
+    {
+      "start": 31.520000000000003,
+      "end": 34.8,
+      "text": " We also look through all of the settings, trying to figure out"
+    },
+    {
+      "start": 34.8,
+      "end": 36.56,
+      "text": " what does every setting do?"
+    },
+    {
+      "start": 36.56,
+      "end": 38.64,
+      "text": " What can we figure out from all of these settings?"
+    },
+    {
+      "start": 38.64,
+      "end": 42.08,
+      "text": " And then if we are to build it ourselves, how will we build it?"
+    },
+    {
+      "start": 42.08,
+      "end": 46.08,
+      "text": " And in the second video in the series, we started writing all of the fundamental"
+    },
+    {
+      "start": 46.08,
+      "end": 49.92,
+      "text": " structure of the year so that we can build everything upon it."
+    },
+    {
+      "start": 49.92,
+      "end": 52.88,
+      "text": " We covered until the point where we opened up the first trade."
+    },
+    {
+      "start": 52.88,
+      "end": 55.84,
+      "text": " And in the third video in the series, we continued the coding with the"
+    },
+    {
+      "start": 55.84,
+      "end": 59.28,
+      "text": " lot-sized functions, and all of the functions which are related to grid,"
+    },
+    {
+      "start": 59.28,
+      "end": 62.720000000000006,
+      "text": " including some smart grid management systems that were based on slow"
+    },
+    {
+      "start": 62.720000000000006,
+      "end": 66.0,
+      "text": " ATR and fast ATR to determine the volatility in the market,"
+    },
+    {
+      "start": 66.0,
+      "end": 67.76,
+      "text": " and adjusting the grid accordingly."
+    },
+    {
+      "start": 67.76,
+      "end": 71.28,
+      "text": " We also looked at the lot-sizing for the base trade and the grates."
+    },
+    {
+      "start": 71.28,
+      "end": 75.36,
+      "text": " And in today's video, we will finish the rest of the coding until the point where we are"
+    },
+    {
+      "start": 75.36,
+      "end": 79.44,
+      "text": " taking the trades, we are building the grates, we are using the management of the TPs and"
+    },
+    {
+      "start": 79.44,
+      "end": 83.76,
+      "text": " stop losses, lot-sizing based on various different methods that the user can select."
+    },
+    {
+      "start": 83.76,
+      "end": 86.72,
+      "text": " And in the entirety of the year, except for the panel."
+    },
+    {
+      "start": 86.72,
+      "end": 90.48,
+      "text": " And in the last video, we will look at how to build this beautiful panel"
+    },
+    {
+      "start": 90.48,
+      "end": 92.24000000000001,
+      "text": " and completely finish the year."
+    },
+    {
+      "start": 92.24000000000001,
+      "end": 94.88000000000001,
+      "text": " Once again, all of these codes are available in the store,"
+    },
+    {
+      "start": 94.88000000000001,
+      "end": 98.88000000000001,
+      "text": " and as and when I will update even for the features, I will be updating the store as well."
+    },
+    {
+      "start": 98.88000000000001,
+      "end": 103.84,
+      "text": " But I cannot emphasize the importance of taking the time and writing these codes yourself,"
+    },
+    {
+      "start": 103.84,
+      "end": 107.92,
+      "text": " and only use the codes if you choose to download them as a reference file,"
+    },
+    {
+      "start": 107.92,
+      "end": 111.28,
+      "text": " because you need to understand the tools that you are trying to use."
+    },
+    {
+      "start": 111.28,
+      "end": 115.44,
+      "text": " I will in the future come back with another video where I will go through all of the trading robots"
+    },
+    {
+      "start": 115.44,
+      "end": 121.44,
+      "text": " I have shared so far, sharing my opinions on how I would use them, in which markets on what pairs"
+    },
+    {
+      "start": 121.44,
+      "end": 126.08,
+      "text": " and what timings went to use them, but more importantly, when not to use them."
+    },
+    {
+      "start": 126.08,
+      "end": 129.92000000000002,
+      "text": " But those are only my opinions and my views, so take them with a grain of salt."
+    },
+    {
+      "start": 129.92000000000002,
+      "end": 132.16,
+      "text": " Take them with a full kilogram of salt."
+    },
+    {
+      "start": 132.16,
+      "end": 133.68,
+      "text": " But that's for a later video."
+    },
+    {
+      "start": 133.68,
+      "end": 137.36,
+      "text": " So let's make a flask of coffee, gather our laptops, close the door,"
+    },
+    {
+      "start": 138.0,
+      "end": 140.4,
+      "text": " and with no machine and hands, let's start coding."
+    },
+    {
+      "start": 140.48000000000002,
+      "end": 145.68,
+      "text": " So we'll start again by the same way, assigning the symbol value based on the symbol index,"
+    },
+    {
+      "start": 145.68,
+      "end": 150.8,
+      "text": " and then in the position total is 0, then just return exit the function, because if there are no position,"
+    },
+    {
+      "start": 150.8,
+      "end": 154.0,
+      "text": " then what are we changing this top TPN stop loss off."
+    },
+    {
+      "start": 154.0,
+      "end": 157.6,
+      "text": " Then just like the helper function, we're going to create the prefixes."
+    },
+    {
+      "start": 157.6,
+      "end": 160.8,
+      "text": " I'm not going to explain it again, so it's the magic number plus YD,"
+    },
+    {
+      "start": 160.8,
+      "end": 164.0,
+      "text": " and then we get the digits, and then the bi prefix is going to be"
+    },
+    {
+      "start": 164.88,
+      "end": 167.6,
+      "text": " magic base plus 10 raise to the power 5."
+    },
+    {
+      "start": 167.6,
+      "end": 174.88,
+      "text": " So it's going to result in 1, 8, 4, 4, 5, 7, 0, and cell is going to result in"
+    },
+    {
+      "start": 176.72,
+      "end": 180.16,
+      "text": " 2, 8, 4, 5, 7, 0. So these are our prefixes."
+    },
+    {
+      "start": 180.16,
+      "end": 184.4,
+      "text": " Now if the drawdown is triggered, then we just return, we don't change anything,"
+    },
+    {
+      "start": 184.4,
+      "end": 188.24,
+      "text": " because we disable the trading completely, when the drawdown is triggered,"
+    },
+    {
+      "start": 188.24,
+      "end": 192.64,
+      "text": " and there are four options for the user to select from, so depending on what he has selected,"
+    },
+    {
+      "start": 192.72000000000003,
+      "end": 196.32000000000002,
+      "text": " we're going to do that, and not be changing the TPs and stop losses."
+    },
+    {
+      "start": 196.32000000000002,
+      "end": 200.4,
+      "text": " And then we're going to loop through both position types, first start with bi, then go to cell,"
+    },
+    {
+      "start": 200.96,
+      "end": 205.12,
+      "text": " by using position type plus plus. So we're going to loop through all the bi position,"
+    },
+    {
+      "start": 205.12,
+      "end": 209.04000000000002,
+      "text": " and then the cell position, and then we start looping through all of the positions."
+    },
+    {
+      "start": 209.04000000000002,
+      "end": 215.12,
+      "text": " So let's select it by index, the first position, and then if it's not selected, then we print that we fail to"
+    },
+    {
+      "start": 215.12,
+      "end": 219.60000000000002,
+      "text": " select. But if it is selected, then we're going to get the ticket, the type symbol,"
+    },
+    {
+      "start": 219.68,
+      "end": 225.04,
+      "text": " log, magic, TPs, SL, time, open, opening, price, commission, and so on."
+    },
+    {
+      "start": 225.04,
+      "end": 228.48,
+      "text": " These are the values that we're going to get from the position that we have selected."
+    },
+    {
+      "start": 228.48,
+      "end": 233.04,
+      "text": " This is what we're going to be using to then calculate if there is a division of TPs."
+    },
+    {
+      "start": 233.04,
+      "end": 237.68,
+      "text": " And then we're going to calculate the commission, adjustments are starting with 0."
+    },
+    {
+      "start": 237.68,
+      "end": 241.04,
+      "text": " We get the tick value times lot. If that is bigger than the epsilon,"
+    },
+    {
+      "start": 242.16,
+      "end": 246.88,
+      "text": " then we get the digits. We get the commission soaps, so commission plus the swap."
+    },
+    {
+      "start": 247.51999999999998,
+      "end": 253.12,
+      "text": " And then divide it by the tick value times lot to get the value into price equivalent numbers."
+    },
+    {
+      "start": 254.07999999999998,
+      "end": 260.0,
+      "text": " And then we get the point value, and then the commission soaps becomes commission times point."
+    },
+    {
+      "start": 260.0,
+      "end": 266.96,
+      "text": " So basically converting it to the decimal place is for the current symbol. And then we normalize it"
+    },
+    {
+      "start": 266.96,
+      "end": 272.56,
+      "text": " to the level of digits for the symbol. And then we're going to try to modify the bi position."
+    },
+    {
+      "start": 272.56,
+      "end": 278.08,
+      "text": " So we're going to say if the position type is by and the type is by and the order symbol is"
+    },
+    {
+      "start": 278.08,
+      "end": 283.2,
+      "text": " the symbol and the magic divided by 100 is our bi prefix because when you divide by 100,"
+    },
+    {
+      "start": 283.2,
+      "end": 289.6,
+      "text": " then you get rid of the levels so then it matches the bi prefix. Then in that case we will modify the order."
+    },
+    {
+      "start": 289.6,
+      "end": 294.4,
+      "text": " So we're going to send this to modified bi order where we're going to do all the operations."
+    },
+    {
+      "start": 294.4,
+      "end": 301.04,
+      "text": " If we are trying to modify the cell position, so if the position is self and the prefix is self prefix,"
+    },
+    {
+      "start": 301.04,
+      "end": 305.84000000000003,
+      "text": " so if you remove from the magic number, the last two digits, then it is matching the self prefix."
+    },
+    {
+      "start": 305.84000000000003,
+      "end": 310.56,
+      "text": " Then in that case we're going to initiate the modified cell order function."
+    },
+    {
+      "start": 311.6,
+      "end": 318.88,
+      "text": " We close the fall loop and then we close the other fall loop. So here the only thing in this function"
+    },
+    {
+      "start": 318.88,
+      "end": 323.92,
+      "text": " what we have done is we have calculated the commission adjustment and we selected the position that"
+    },
+    {
+      "start": 323.92,
+      "end": 328.32000000000005,
+      "text": " need to be changed. And if there is a position that matches everything that we need to"
+    },
+    {
+      "start": 328.64,
+      "end": 334.08,
+      "text": " then we initiate for that position, the modified bi order. Or if it is a cell type,"
+    },
+    {
+      "start": 334.08,
+      "end": 341.28,
+      "text": " then we initiate for it, the modified cell order. We haven't changed anything here. We'll just look"
+    },
+    {
+      "start": 341.28,
+      "end": 348.32,
+      "text": " through all the position, identify whether it's a position that needs to be checked for modification."
+    },
+    {
+      "start": 348.32,
+      "end": 353.44,
+      "text": " And then if it is, then we initiate the modified bi order and we initiate the modified cell order."
+    },
+    {
+      "start": 353.44,
+      "end": 358.64,
+      "text": " Which are going to be almost exactly the same just the reverse in logic. So whatever we're going"
+    },
+    {
+      "start": 358.64,
+      "end": 364.16,
+      "text": " to write for the bi order modification, the cell is just going to be the reverse of that logic."
+    },
+    {
+      "start": 365.2,
+      "end": 371.36,
+      "text": " So let's start by creating the modified bi order and these are the pieces of information that we're"
+    },
+    {
+      "start": 371.36,
+      "end": 378.96,
+      "text": " going to be sending here in order to check, validate and then modify the TPs and stop losses."
+    },
+    {
+      "start": 378.96,
+      "end": 382.8,
+      "text": " These are the variables that we're going to create within the function to help us do all the"
+    },
+    {
+      "start": 383.76,
+      "end": 389.36,
+      "text": " some temple levels and temp points, which I don't think we need all of these temp points, but when"
+    },
+    {
+      "start": 389.36,
+      "end": 395.12,
+      "text": " I was writing it in the rough draft, this is how I wrote it. So I'm going to keep it like this for now."
+    },
+    {
+      "start": 395.12,
+      "end": 404.96000000000004,
+      "text": " So we start with checking if if the do not are just TPs unless the new grid is on and the time"
+    },
+    {
+      "start": 404.96000000000004,
+      "end": 412.0,
+      "text": " current minus the last time when we opened up a new position is greater than five minutes. Then just"
+    },
+    {
+      "start": 412.0,
+      "end": 418.56,
+      "text": " return don't change anything because most likely because in those five minutes we have already adjusted"
+    },
+    {
+      "start": 418.56,
+      "end": 424.72,
+      "text": " the TPs. So we don't want to adjust the TPs again and again until the next time there is a new trade"
+    },
+    {
+      "start": 424.72,
+      "end": 430.64,
+      "text": " open on the grid and then using the same calculation that we have done before, we take the magic number"
+    },
+    {
+      "start": 431.52,
+      "end": 438.88,
+      "text": " and we get from it the bi prefix because we are trying to change the bi order, we get the bi prefix"
+    },
+    {
+      "start": 438.96,
+      "end": 445.76,
+      "text": " and we also get the level, take the total magic number, remove from it the bi prefix and then"
+    },
+    {
+      "start": 445.76,
+      "end": 451.6,
+      "text": " times it 100 which is going to give you the level. The other way you can do it is by calling the get"
+    },
+    {
+      "start": 451.6,
+      "end": 457.36,
+      "text": " level from magic by passing on the magic number, but here we just calculate it again and then we start"
+    },
+    {
+      "start": 457.36,
+      "end": 462.56,
+      "text": " with the average price equals to the open price that we have sent with the position here, whatever was"
+    },
+    {
+      "start": 462.56,
+      "end": 468.72,
+      "text": " it's open price, we're going to start with average price equals to that and in any case if there is only one"
+    },
+    {
+      "start": 468.72,
+      "end": 473.92,
+      "text": " trade on the grid then the average price is actually going to be the open price and we said the average"
+    },
+    {
+      "start": 473.92,
+      "end": 479.04,
+      "text": " price with commission also equals to the open price then we're going to check that if the maximum number"
+    },
+    {
+      "start": 479.04,
+      "end": 485.52,
+      "text": " of trade minus one equals is greater than zero the the three validation that the maximum trade has of"
+    },
+    {
+      "start": 486.32,
+      "end": 492.56,
+      "text": " the third multiplier has a value and the trade distance has a value and then if the grid exists"
+    },
+    {
+      "start": 492.56,
+      "end": 499.59999999999997,
+      "text": " for direction one which is the bi because we're trying to change the bi order so we check if there is a"
+    },
+    {
+      "start": 499.59999999999997,
+      "end": 506.64,
+      "text": " grid on this symbol in the direction of bi then in that case the average price becomes get the weighted"
+    },
+    {
+      "start": 506.64,
+      "end": 513.36,
+      "text": " average price for that symbol for direction one the bi direction we don't care about the levels get the"
+    },
+    {
+      "start": 513.36,
+      "end": 518.88,
+      "text": " weighted average price and then normalize it to the symbol digits and then we also update the last"
+    },
+    {
+      "start": 518.88,
+      "end": 524.88,
+      "text": " bi average price to this average price because that is the average price for that symbol after the last"
+    },
+    {
+      "start": 524.88,
+      "end": 531.92,
+      "text": " bi otherwise if the last bi average is greater than epsilon so we had a stored of value I mean if we"
+    },
+    {
+      "start": 531.92,
+      "end": 538.48,
+      "text": " couldn't find the grid then whatever was the last time that we updated the value into the last average"
+    },
+    {
+      "start": 538.48,
+      "end": 544.32,
+      "text": " price get that value and that becomes the average price because in case while we were looping through"
+    },
+    {
+      "start": 544.32,
+      "end": 549.28,
+      "text": " it for some reason I mean the drawdown hits something happens and the grid disappears then whatever"
+    },
+    {
+      "start": 549.28,
+      "end": 554.72,
+      "text": " every that that is there in the last bi average price in one of the other function that we had calculated"
+    },
+    {
+      "start": 554.72,
+      "end": 560.24,
+      "text": " we're going to use that and set the average price to that and then the average price with commission"
+    },
+    {
+      "start": 560.24,
+      "end": 566.8000000000001,
+      "text": " is get weighted average price with commission and that is a function that we will have to write"
+    },
+    {
+      "start": 566.8000000000001,
+      "end": 574.32,
+      "text": " and then we're going to normalize it again to the symbol digits for now I will close this function"
+    },
+    {
+      "start": 574.32,
+      "end": 579.44,
+      "text": " and then here I'm going to create that function and for now I'm just going to put it as written as 0"
+    },
+    {
+      "start": 580.0000000000001,
+      "end": 585.9200000000001,
+      "text": " so stop it and then if he put in a profit lot size and grid level to start his data then one once again"
+    },
+    {
+      "start": 585.9200000000001,
+      "end": 592.1600000000001,
+      "text": " that complex function that I will come back in a separate video to explain the entire thing about"
+    },
+    {
+      "start": 592.16,
+      "end": 598.7199999999999,
+      "text": " if the grid level to start is from level four or level five then in that case how exactly are we"
+    },
+    {
+      "start": 598.7199999999999,
+      "end": 603.68,
+      "text": " accounting for it if I went through that in this video the video is going to become five hours long so I"
+    },
+    {
+      "start": 603.68,
+      "end": 612.16,
+      "text": " don't want to do that for now you can just take this you can just copy this function I'll put this here"
+    },
+    {
+      "start": 612.16,
+      "end": 621.1999999999999,
+      "text": " so that you can see and then we close the loop of maximum grid minus one so we close this loop"
+    },
+    {
+      "start": 621.2,
+      "end": 626.24,
+      "text": " and then we come down here and then we say that the new tip is going to be calculate take profit function"
+    },
+    {
+      "start": 626.96,
+      "end": 634.72,
+      "text": " and new SL is going to be calculated through a calculated stop loss function so let's come down here"
+    },
+    {
+      "start": 635.5200000000001,
+      "end": 642.0,
+      "text": " and we're going to calculate the take profit this function we get the symbol by using the index"
+    },
+    {
+      "start": 642.0,
+      "end": 648.0,
+      "text": " then get the digit point and take size and then we get the paper multiplier so if it's five digits or three"
+    },
+    {
+      "start": 648.0,
+      "end": 654.56,
+      "text": " digits and it's ten otherwise one so normal currencies USGP Y and everything else and then we start"
+    },
+    {
+      "start": 654.56,
+      "end": 662.0,
+      "text": " the TP distance of zero meaning the break even and then we create a variable use grid tps false and then"
+    },
+    {
+      "start": 662.0,
+      "end": 668.08,
+      "text": " if it is a grid order which we're sending here is grid order through or false if it's a grid order"
+    },
+    {
+      "start": 668.08,
+      "end": 674.72,
+      "text": " and it's not weighted TP then in that case get the grid lots to level one so as long as the level one"
+    },
+    {
+      "start": 675.36,
+      "end": 680.1600000000001,
+      "text": " and we send it the direction whether we're looking for a buy or a sell now if there are grid lots"
+    },
+    {
+      "start": 680.88,
+      "end": 686.48,
+      "text": " meaning the grid exists then in that case we're going to use the grid tp so that becomes true"
+    },
+    {
+      "start": 686.48,
+      "end": 694.08,
+      "text": " and then if it is true and the grid tp value is bigger than zero because the user needs to provide this"
+    },
+    {
+      "start": 695.0400000000001,
+      "end": 701.6800000000001,
+      "text": " take profit for grid if it is bigger than zero then we calculate the tp distance to be grid tp times point"
+    },
+    {
+      "start": 701.6800000000001,
+      "end": 708.32,
+      "text": " times multiplier otherwise it is the initial tp times point times multiplier so if the user"
+    },
+    {
+      "start": 708.32,
+      "end": 713.6,
+      "text": " specifies something here then we use this otherwise we default back to the default mistake profit"
+    },
+    {
+      "start": 714.48,
+      "end": 719.5200000000001,
+      "text": " and then if the tp distance has come down to be zero meaning either the user has not provided this"
+    },
+    {
+      "start": 719.5200000000001,
+      "end": 726.24,
+      "text": " or this or he has put a zero or the calculation has gone wrong then in that case we default to 1000"
+    },
+    {
+      "start": 727.12,
+      "end": 732.88,
+      "text": " and then we go if the they keep in after this level is greater than zero this setting if the user"
+    },
+    {
+      "start": 732.88,
+      "end": 739.36,
+      "text": " provides if the grid has opened four layers then in that case set it to break even then in that case we're"
+    },
+    {
+      "start": 739.36,
+      "end": 745.76,
+      "text": " going to check if the lot exists up until break even after this level that the user specified minus one"
+    },
+    {
+      "start": 745.76,
+      "end": 751.92,
+      "text": " because base trade level starts at zero and then one then two then four three ten four so if he's"
+    },
+    {
+      "start": 751.92,
+      "end": 757.1999999999999,
+      "text": " seeing after this level four then we need to to subtract one from it send the direction"
+    },
+    {
+      "start": 758.0799999999999,
+      "end": 764.7199999999999,
+      "text": " and if the break even lots come back to be a positive value meaning that yes the grid exists"
+    },
+    {
+      "start": 765.28,
+      "end": 771.68,
+      "text": " and the grid exists up to break even after this level then in that case we set the tp distance to break even"
+    },
+    {
+      "start": 771.68,
+      "end": 777.5999999999999,
+      "text": " which is zero and now we can calculate the tp base in price so tp distance is going to become base price"
+    },
+    {
+      "start": 777.6800000000001,
+      "end": 783.6,
+      "text": " last the tp distance whatever it is and for the cell trade it's going to be base price minus the"
+    },
+    {
+      "start": 783.6,
+      "end": 790.32,
+      "text": " tp distance and base price in this case is the weighted average because here base price we are sending"
+    },
+    {
+      "start": 790.32,
+      "end": 797.76,
+      "text": " as average price with commission so add the tp distance to it for by and subtract the tp distance"
+    },
+    {
+      "start": 797.76,
+      "end": 803.76,
+      "text": " for cell because the tp is going to be below the price and then we rounded by dividing it by"
+    },
+    {
+      "start": 803.76,
+      "end": 810.48,
+      "text": " tp size then math round and then multiply it back with a tp size and then we normalize and now we can"
+    },
+    {
+      "start": 810.48,
+      "end": 816.48,
+      "text": " go write our calculated stop loss function so we'll start once again get the symbol get the"
+    },
+    {
+      "start": 816.48,
+      "end": 822.16,
+      "text": " digits point and tp size and then get the multiplier whether it's based on five or three digits is going"
+    },
+    {
+      "start": 822.16,
+      "end": 828.0,
+      "text": " to be ten other by just one get the stop loss distance which is simply the grid as cell times point"
+    },
+    {
+      "start": 828.08,
+      "end": 836.24,
+      "text": " time for multiplier what the user has provided here and 1000 pps if it's zero so 1000 points"
+    },
+    {
+      "start": 836.24,
+      "end": 841.6,
+      "text": " if the SL distance comes out to be less than epsilon then exactly the same way base price is"
+    },
+    {
+      "start": 841.6,
+      "end": 847.52,
+      "text": " divided average price with commission so for by the stop loss price is going to become base price minus"
+    },
+    {
+      "start": 847.52,
+      "end": 852.8,
+      "text": " the stop loss distance and for cell is going to be above so is going to be base price plus the stop loss"
+    },
+    {
+      "start": 853.5200000000001,
+      "end": 860.2400000000001,
+      "text": " and then we round it again and then we normalize exactly the same way as for the calculate"
+    },
+    {
+      "start": 860.8000000000001,
+      "end": 865.36,
+      "text": " take profit now we have both of these functions so we can come back here and now the next thing we're"
+    },
+    {
+      "start": 865.36,
+      "end": 872.8000000000001,
+      "text": " going to check is that if it is weighted tp so the user is taking weighted tp then from the new tp"
+    },
+    {
+      "start": 872.8000000000001,
+      "end": 880.6400000000001,
+      "text": " that we have gotten here we converted back to the tp distance by taking that new tp and removing from"
+    },
+    {
+      "start": 881.1999999999999,
+      "end": 888.08,
+      "text": " the weighted average price and then if a grid exists for by on a symbol then take the total"
+    },
+    {
+      "start": 888.08,
+      "end": 895.76,
+      "text": " lots in the grid by sending for getting it for all levels and for by and the here we're saying that"
+    },
+    {
+      "start": 896.8,
+      "end": 904.0,
+      "text": " use the original lot size as false but if it was keep the original profit lot size and again"
+    },
+    {
+      "start": 904.0,
+      "end": 910.24,
+      "text": " the same stuff with the grid level to start if it's greater than one and not auto split this one"
+    },
+    {
+      "start": 911.52,
+      "end": 916.88,
+      "text": " in that case we run the same formula but this time sending the value as true that we want to use the"
+    },
+    {
+      "start": 916.88,
+      "end": 922.48,
+      "text": " original lot size so we get the total lots in grits either ways and now we check that if the total"
+    },
+    {
+      "start": 922.48,
+      "end": 928.64,
+      "text": " grid so what we got back if it is a valid value by checking it against epsilon then we set the start"
+    },
+    {
+      "start": 928.64,
+      "end": 934.0,
+      "text": " level to 0 once again if the grid to start level was greater than one then the start level is going to"
+    },
+    {
+      "start": 934.08,
+      "end": 940.08,
+      "text": " be greater to start minus one because normally we're going to start at one one minus one is going"
+    },
+    {
+      "start": 940.08,
+      "end": 945.44,
+      "text": " to be 0 but if the user has put five here in that case the grid level to start is going to be"
+    },
+    {
+      "start": 945.44,
+      "end": 951.04,
+      "text": " grid level to start minus one when we get the start level lots so at the starting point what was"
+    },
+    {
+      "start": 951.04,
+      "end": 957.36,
+      "text": " the level of the lots so get total again using the same formula but this time sending to it"
+    },
+    {
+      "start": 957.36,
+      "end": 963.36,
+      "text": " the level here we got it for everything by here we're sending this specific level what is"
+    },
+    {
+      "start": 963.36,
+      "end": 970.16,
+      "text": " the lot size for this specific level for our biigrates and here we're saying do not use the original"
+    },
+    {
+      "start": 970.16,
+      "end": 979.2,
+      "text": " lot size by in case if it is the grid level to start is greater than one then in that case we do want to"
+    },
+    {
+      "start": 979.2,
+      "end": 986.0,
+      "text": " use the user in the lot size so we send it as true and now the start level lots becomes the start level"
+    },
+    {
+      "start": 986.0,
+      "end": 991.2,
+      "text": " lots divided by the total lots in the grid and the tp distance becomes a start level lots that we"
+    },
+    {
+      "start": 991.2,
+      "end": 997.36,
+      "text": " calculate here times the tp distance so this is how we're doing the weighing and getting a weighted"
+    },
+    {
+      "start": 997.36,
+      "end": 1005.9200000000001,
+      "text": " average so now we can create the new tp based on weighted average as tp distance plus average"
+    },
+    {
+      "start": 1005.9200000000001,
+      "end": 1014.24,
+      "text": " price with commission and normalizing it to the level of digits so we get the tp distance here"
+    },
+    {
+      "start": 1014.64,
+      "end": 1022.4,
+      "text": " and then we add it back to our base price and normalize it and then we close this if"
+    },
+    {
+      "start": 1024.48,
+      "end": 1034.4,
+      "text": " this if and this if and then we're going to check for the smart tp smart take profit so now if this is true"
+    },
+    {
+      "start": 1034.4,
+      "end": 1042.64,
+      "text": " which means that we are now not doing the tp's based on the values here but we're going to be looking at"
+    },
+    {
+      "start": 1042.64,
+      "end": 1049.76,
+      "text": " the bullinger band width so then we check if it is true the user has selected smart tp then we need to"
+    },
+    {
+      "start": 1049.76,
+      "end": 1057.92,
+      "text": " check that for the symbol the the bullinger band width is greater than 0 and that the grid exists"
+    },
+    {
+      "start": 1059.44,
+      "end": 1066.72,
+      "text": " and that the grid level to start is one so the user has not changed it to any other value then this one"
+    },
+    {
+      "start": 1066.8,
+      "end": 1073.1200000000001,
+      "text": " then we start with a smart tp level setting it to 2 and then the smart tp factor becomes"
+    },
+    {
+      "start": 1073.1200000000001,
+      "end": 1082.4,
+      "text": " initial tp divided by 100 so we take this 10 and divided by 100 and now we're going to check how many"
+    },
+    {
+      "start": 1082.4,
+      "end": 1089.92,
+      "text": " levels have opened so we ask if not the grid I mean here we've already checked that there is a grid on"
+    },
+    {
+      "start": 1089.92,
+      "end": 1101.28,
+      "text": " the by so there is a grid so now we check if the grid does not exist at level 2 meaning there's only the original"
+    },
+    {
+      "start": 1103.76,
+      "end": 1111.04,
+      "text": " position and the first level because original position is level 0 the first position is level 1 which"
+    },
+    {
+      "start": 1111.04,
+      "end": 1119.52,
+      "text": " goes back to these so first and the second trade is going to be this so second trade is this the third"
+    },
+    {
+      "start": 1120.16,
+      "end": 1125.6,
+      "text": " is going to be this multiplier and then 6 to 6 onwards is 1 and a half multiplier"
+    },
+    {
+      "start": 1126.4,
+      "end": 1132.24,
+      "text": " so we check whether or not the grid exists as level 2 but if it is not meaning 3 positions have not"
+    },
+    {
+      "start": 1132.24,
+      "end": 1139.36,
+      "text": " opened there is a grid so it's just the base trade and the first trade then in that case the average"
+    },
+    {
+      "start": 1139.36,
+      "end": 1143.76,
+      "text": " price with commission is the open price and then we set the new tp to the smart tp factor"
+    },
+    {
+      "start": 1144.56,
+      "end": 1152.4,
+      "text": " which is 10 percent times the level from magic minus 2 which we calculated here level from magic"
+    },
+    {
+      "start": 1152.4,
+      "end": 1157.76,
+      "text": " whatever is the current position level number minus 2 multiplied with the bullinger bandwidth"
+    },
+    {
+      "start": 1158.56,
+      "end": 1165.84,
+      "text": " and then the price opens so we set it to basically 10 percent of the bullinger bandwidth so level 1"
+    },
+    {
+      "start": 1165.84,
+      "end": 1173.6,
+      "text": " equals 10 percent of the bullinger bandwidth otherwise we're going to check that if the grid does not"
+    },
+    {
+      "start": 1173.6000000000001,
+      "end": 1184.0000000000002,
+      "text": " exist to level 3 we're starting at tp level 2 so that plus 3 because here we check for 2 so now this"
+    },
+    {
+      "start": 1184.0000000000002,
+      "end": 1191.8400000000001,
+      "text": " 2 plus 3 meaning the next 3 trades third fourth and fifth if it does not exist so the sixth trade"
+    },
+    {
+      "start": 1191.8400000000001,
+      "end": 1200.4800000000002,
+      "text": " does not exist because remember the trade level is started 0 1 2 3 4 so these are already 5 so the sixth"
+    },
+    {
+      "start": 1200.48,
+      "end": 1206.16,
+      "text": " level does not exist then in that case we are here between the third and the fifth trade so we're"
+    },
+    {
+      "start": 1206.16,
+      "end": 1212.64,
+      "text": " going to set the tp to smart factor the 10 percent times the bullinger bandwidth plus the average oh by the"
+    },
+    {
+      "start": 1212.64,
+      "end": 1222.56,
+      "text": " way sorry my mistake this is true here so we're setting it to level 3 to fifth we are setting it to"
+    },
+    {
+      "start": 1222.56,
+      "end": 1229.28,
+      "text": " 10 percent of the bullinger bandwidth and here we're basically going tp is equal to 10 percent"
+    },
+    {
+      "start": 1229.28,
+      "end": 1236.32,
+      "text": " the smart tp factor coming out of the initial tp and then level minus 2 so whatever level exists"
+    },
+    {
+      "start": 1236.32,
+      "end": 1245.04,
+      "text": " however deep we have gone otherwise which is if we are here then in that case we're going to divide it by 2"
+    },
+    {
+      "start": 1245.04,
+      "end": 1251.12,
+      "text": " and multiply it with the bullinger bandwidth and add the commission to it which basically means"
+    },
+    {
+      "start": 1251.12,
+      "end": 1256.8799999999999,
+      "text": " that once the grid has become large then we pull this back to 5 percent of the bullinger bandwidth"
+    },
+    {
+      "start": 1257.7600000000002,
+      "end": 1263.8400000000001,
+      "text": " which is pulling the tp closer so we can close it so here is where we expand it to 10 percent"
+    },
+    {
+      "start": 1263.8400000000001,
+      "end": 1271.5200000000002,
+      "text": " but as we get deeper and deeper to the sixth level and seventh level then we start to bring it closer"
+    },
+    {
+      "start": 1271.5200000000002,
+      "end": 1280.8000000000002,
+      "text": " to the bullinger bandwidth by setting it to 5 percent of the bullinger bandwidth so we take the"
+    },
+    {
+      "start": 1280.8,
+      "end": 1285.36,
+      "text": " new tp normalize it to the level of digits and that becomes of a new tp in case of a smart tp"
+    },
+    {
+      "start": 1293.12,
+      "end": 1300.32,
+      "text": " and then we store the new tp that we have calculated to the last by tp member of our symbol array"
+    },
+    {
+      "start": 1300.32,
+      "end": 1306.32,
+      "text": " and then we start our modification attempts so we're going to try to modify the tp and the stop"
+    },
+    {
+      "start": 1306.3999999999999,
+      "end": 1314.24,
+      "text": " was 5 times we start by creating a temp level this temp level and temp point I don't think I'm"
+    },
+    {
+      "start": 1314.24,
+      "end": 1318.8,
+      "text": " going to need this so I'm going to delete and I'm not going to need the stop level as well so I'm going to delete"
+    },
+    {
+      "start": 1318.8,
+      "end": 1327.6799999999998,
+      "text": " that as well so these temporary point and level variables that I created here so we're going to set"
+    },
+    {
+      "start": 1327.6799999999998,
+      "end": 1334.8799999999999,
+      "text": " the level stop levels to temp level and the temp point to the point and then the stop level price becomes"
+    },
+    {
+      "start": 1334.88,
+      "end": 1339.92,
+      "text": " the temp level times the temp point so we're converting it to the true decimal points and then we"
+    },
+    {
+      "start": 1339.92,
+      "end": 1345.68,
+      "text": " change the value of the temp level to freeze level and then we get the value of the freeze level price"
+    },
+    {
+      "start": 1345.68,
+      "end": 1351.1200000000001,
+      "text": " by once again multiplying the temp level at the temp point so first it was stop level so we can"
+    },
+    {
+      "start": 1351.1200000000001,
+      "end": 1355.7600000000002,
+      "text": " convert it into stop level price then we change it to freeze level so we get the freeze level price so"
+    },
+    {
+      "start": 1355.7600000000002,
+      "end": 1362.0800000000002,
+      "text": " we'll start with the with the stop loss so if the new stop loss has a value so it's bigger than 0.0"
+    },
+    {
+      "start": 1362.08,
+      "end": 1368.8799999999999,
+      "text": " 0.0 is 0.1 so it has a value then we're going to check if there is a stop level required by the broker"
+    },
+    {
+      "start": 1368.8799999999999,
+      "end": 1374.8799999999999,
+      "text": " because if our stop level price is bigger than epsilon meaning it's a valid value is bigger than 0 so in"
+    },
+    {
+      "start": 1374.8799999999999,
+      "end": 1380.1599999999999,
+      "text": " that case we will take bit minus the stop loss price because we again we are modifying the buy order so"
+    },
+    {
+      "start": 1380.1599999999999,
+      "end": 1385.52,
+      "text": " it needs to be below so then we're going to take whatever is the price in the market minus the stop"
+    },
+    {
+      "start": 1385.52,
+      "end": 1390.8,
+      "text": " level price so however much the broker requires the distance from the bit we're going to take that"
+    },
+    {
+      "start": 1391.44,
+      "end": 1398.72,
+      "text": " and our new stop loss that has come here and whichever one of them is lower met minimum whichever one"
+    },
+    {
+      "start": 1398.72,
+      "end": 1405.68,
+      "text": " of them is lower we set the new stop loss to that and if no stop level is required then we don't need to do"
+    },
+    {
+      "start": 1405.68,
+      "end": 1411.44,
+      "text": " this step we just simply go take the bid and take our new stop loss whichever one is lower that is"
+    },
+    {
+      "start": 1411.44,
+      "end": 1418.32,
+      "text": " of a new stop loss we're going to do the same for the tp so as long as there is a tp bigger than 0"
+    },
+    {
+      "start": 1418.32,
+      "end": 1423.36,
+      "text": " can be going to check if there is a stop level requirement and if there is a stop level requirement"
+    },
+    {
+      "start": 1423.36,
+      "end": 1430.32,
+      "text": " then we're going to add that stop level requirement to the bid and then compare that versus our new tp"
+    },
+    {
+      "start": 1430.32,
+      "end": 1438.8799999999999,
+      "text": " and whichever one is higher because now the tp tp because tp needs to be above so whichever one is higher"
+    },
+    {
+      "start": 1438.8799999999999,
+      "end": 1445.84,
+      "text": " that becomes of a new tp if there is no stop level requirement by the broker then in that case we just check"
+    },
+    {
+      "start": 1445.84,
+      "end": 1452.24,
+      "text": " between the bid and our new tp whichever one is higher that becomes of a new tp and then in case the"
+    },
+    {
+      "start": 1452.24,
+      "end": 1458.9599999999998,
+      "text": " user has decided to hide the stop loss in tp then in that case new stop loss becomes 0 because we're not"
+    },
+    {
+      "start": 1458.9599999999998,
+      "end": 1463.12,
+      "text": " going to send it to the broker we're going to keep it internally and we're going to do and we're going to close"
+    },
+    {
+      "start": 1463.12,
+      "end": 1470.1599999999999,
+      "text": " the positions by checking inside of the year rather than sending it to the broker and then if it is high tp"
+    },
+    {
+      "start": 1471.1200000000001,
+      "end": 1477.2,
+      "text": " then the new tp becomes 0 and while we're saying use opium method because for the open price"
+    },
+    {
+      "start": 1477.2,
+      "end": 1482.5600000000002,
+      "text": " only closing method we're again not going to send anything to the broker we're going to we're going to close"
+    },
+    {
+      "start": 1482.5600000000002,
+      "end": 1488.4,
+      "text": " the positions internally through the year ourselves and then we're going to assign the value of has"
+    },
+    {
+      "start": 1488.4,
+      "end": 1497.1200000000001,
+      "text": " valid tp or SL to true so we're going to start with that that we have a valid tp or SL but if"
+    },
+    {
+      "start": 1497.1200000000001,
+      "end": 1504.16,
+      "text": " new tp is 0 and it's not high tp and it's not the opium method then in that case this becomes false"
+    },
+    {
+      "start": 1504.96,
+      "end": 1511.6000000000001,
+      "text": " if it is 0 in the new tp and it is a smart tp based on volunteer vans then it shouldn't be 0 so this"
+    },
+    {
+      "start": 1511.6000000000001,
+      "end": 1519.3600000000001,
+      "text": " becomes false or if it's a new SL is 0 but it's not high tp because this is where it'll be setting the"
+    },
+    {
+      "start": 1519.3600000000001,
+      "end": 1524.8000000000002,
+      "text": " new stop loss and the new tp to 0 and it's not high tp then this is also false we don't have a"
+    },
+    {
+      "start": 1524.8,
+      "end": 1531.68,
+      "text": " valid tp or stop loss and then we're going to check that if the current tp minus a tp is not more"
+    },
+    {
+      "start": 1531.68,
+      "end": 1537.6,
+      "text": " than 2 points meaning it hasn't really changed from the current tp the new tp that is arriving here"
+    },
+    {
+      "start": 1537.6,
+      "end": 1546.6399999999999,
+      "text": " or the current stop loss minus the new stop loss is not changing by more than 2 points or we have"
+    },
+    {
+      "start": 1546.6399999999999,
+      "end": 1554.56,
+      "text": " a false for has valid tp or SL in that case continue I mean go to the second attempt"
+    },
+    {
+      "start": 1554.56,
+      "end": 1560.8799999999999,
+      "text": " continue this for loop and not change anything and then we check that the current tp minus it"
+    },
+    {
+      "start": 1560.8799999999999,
+      "end": 1567.28,
+      "text": " the new tp is less than or equal to just 1 point then in that case set the new tp to current tp"
+    },
+    {
+      "start": 1569.52,
+      "end": 1574.3999999999999,
+      "text": " and same for the stop loss if the difference between the current stop loss and the new stop loss is less than or"
+    },
+    {
+      "start": 1574.3999999999999,
+      "end": 1581.2,
+      "text": " equal to just the point then in that case set the new stop loss to current stop loss as well and then we"
+    },
+    {
+      "start": 1581.2,
+      "end": 1586.32,
+      "text": " normalize the new tp and the new stop loss and now we're going to run another function which we're"
+    },
+    {
+      "start": 1586.32,
+      "end": 1590.72,
+      "text": " going to create where we're going to validate the order modification by sending to it the symbol"
+    },
+    {
+      "start": 1591.28,
+      "end": 1598.48,
+      "text": " the order type by open price current stop loss tp open price new stop loss and new tp and if that"
+    },
+    {
+      "start": 1598.48,
+      "end": 1603.68,
+      "text": " function succeeds then we are going to print that we are modifying the by trade attempt number this"
+    },
+    {
+      "start": 1604.24,
+      "end": 1610.16,
+      "text": " and then we will execute the modification and if the modification fails we're going to send the"
+    },
+    {
+      "start": 1610.16,
+      "end": 1615.28,
+      "text": " ticket number new stop loss and new tp and if the modification fails then we print that it failed"
+    },
+    {
+      "start": 1615.28,
+      "end": 1621.0400000000002,
+      "text": " we sleep for 5000 seconds and then we go for the next attempt otherwise if we say a by trade has been"
+    },
+    {
+      "start": 1621.0400000000002,
+      "end": 1627.68,
+      "text": " successfully modified the ticket number and then we sleep for 5000 seconds and then we close the bracket"
+    },
+    {
+      "start": 1629.28,
+      "end": 1638.8000000000002,
+      "text": " I'm going to give it a tab select all of it and give it a tab if I compile I will have the error"
+    },
+    {
+      "start": 1638.8,
+      "end": 1646.8,
+      "text": " because of this we still haven't written so I'm going to put two dash and compile and I still have"
+    },
+    {
+      "start": 1648.8,
+      "end": 1655.84,
+      "text": " think something has gone wrong here yeah we're missing a bracket here somewhere so this bracket opens here"
+    },
+    {
+      "start": 1655.84,
+      "end": 1662.0,
+      "text": " let's remove this one and let's remove this one so now we should be okay"
+    },
+    {
+      "start": 1662.96,
+      "end": 1674.8,
+      "text": " and we haven't written this function so let's at least stop it I'm going to come down here"
+    },
+    {
+      "start": 1677.36,
+      "end": 1681.36,
+      "text": " and we're going to stop it as just return true and if I compile"
+    },
+    {
+      "start": 1681.44,
+      "end": 1693.5200000000002,
+      "text": " this is something wrong here as well the joy is of writing mql so we're starting the if here"
+    },
+    {
+      "start": 1693.5200000000002,
+      "end": 1701.2800000000002,
+      "text": " and we're checking for this statement and this statement becomes here so we need one more bracket"
+    },
+    {
+      "start": 1701.2800000000002,
+      "end": 1711.0400000000002,
+      "text": " at the beginning so this bracket is closing here this is our first statement that we're checking"
+    },
+    {
+      "start": 1712.3200000000002,
+      "end": 1720.2400000000002,
+      "text": " and this is our second statement so if I compile now yeah it compiles properly so now I can go back"
+    },
+    {
+      "start": 1720.2400000000002,
+      "end": 1733.3600000000001,
+      "text": " up and here I'm going to remove the two hashes and then come back down here so now we only have that function"
+    },
+    {
+      "start": 1733.7600000000002,
+      "end": 1743.7600000000002,
+      "text": " modify cell order which we still haven't written so after the modify by order we come down and we"
+    },
+    {
+      "start": 1743.7600000000002,
+      "end": 1754.88,
+      "text": " write the modify cell order and if I compile again I'm okay so like in the modify by order"
+    },
+    {
+      "start": 1755.7600000000002,
+      "end": 1761.8400000000001,
+      "text": " we'll create these variables I don't need the stock level here so I'm going to remove it"
+    },
+    {
+      "start": 1763.44,
+      "end": 1768.72,
+      "text": " because we're going to use a temple level and temple point and once again just like the"
+    },
+    {
+      "start": 1768.72,
+      "end": 1776.0000000000002,
+      "text": " section that we created here for if to not adjust unless new tp and like we're giving a gray"
+    },
+    {
+      "start": 1776.0000000000002,
+      "end": 1782.16,
+      "text": " spirit so unless there is a new level that opens I mean if more than five minutes have passed since"
+    },
+    {
+      "start": 1782.16,
+      "end": 1787.8400000000001,
+      "text": " the time the last level of the new grid was open then in that case we just simply return so we're going"
+    },
+    {
+      "start": 1787.8400000000001,
+      "end": 1793.7600000000002,
+      "text": " to do exactly the same thing here the entire section which is if you're not adjust when we get the"
+    },
+    {
+      "start": 1793.7600000000002,
+      "end": 1801.5200000000002,
+      "text": " magic base I decent stuff just like here exactly the same function until the new tp calculation"
+    },
+    {
+      "start": 1802.5600000000002,
+      "end": 1809.3600000000001,
+      "text": " with the difference here is now we have minus one because we're now checking for cell rates you can pause"
+    },
+    {
+      "start": 1809.3600000000001,
+      "end": 1816.4800000000002,
+      "text": " the video here and write these codes once again the difference is the minus one that we're using"
+    },
+    {
+      "start": 1816.56,
+      "end": 1822.32,
+      "text": " now it's the cell since instead of by we're going to be doing it for cell and then the same"
+    },
+    {
+      "start": 1822.32,
+      "end": 1828.96,
+      "text": " stuff for weighted tp just like what we did here in the bias section for weighted tp we're doing exactly the"
+    },
+    {
+      "start": 1828.96,
+      "end": 1841.1200000000001,
+      "text": " same logic but now we're going to have cells instead of by so you can pause the video here if you want"
+    },
+    {
+      "start": 1841.68,
+      "end": 1848.16,
+      "text": " because I think this video is already 2 to 1.5 hours and then the smart tp exactly the same"
+    },
+    {
+      "start": 1848.16,
+      "end": 1855.1200000000001,
+      "text": " except this time we're looking for cells the entire modified cell order function is the reverse of"
+    },
+    {
+      "start": 1855.8400000000001,
+      "end": 1864.24,
+      "text": " logically it is exactly the same as the modified by order but just change for from by to cell"
+    },
+    {
+      "start": 1864.88,
+      "end": 1872.0,
+      "text": " and then from bit to ask and instead of setting the tp above we're going to set the tp below"
+    },
+    {
+      "start": 1872.0,
+      "end": 1877.2,
+      "text": " and instead of setting the stop loss below we're going to set the stop loss above and then if the"
+    },
+    {
+      "start": 1877.2,
+      "end": 1884.8,
+      "text": " great exists for cell then in that case we're setting the new tp back to the last cell tp and then we're"
+    },
+    {
+      "start": 1884.8,
+      "end": 1890.08,
+      "text": " going to try to modify once again getting the stop level getting the stop level price"
+    },
+    {
+      "start": 1890.8,
+      "end": 1895.6,
+      "text": " getting the freeze level getting the freeze level price and then running through the stop level"
+    },
+    {
+      "start": 1895.6,
+      "end": 1902.0,
+      "text": " prices so if the new stop loss has a price and if there is a stop level then we're going to take"
+    },
+    {
+      "start": 1902.0,
+      "end": 1909.76,
+      "text": " ask instead of bit plus the stop level price and we're going to take the math max between the new stop"
+    },
+    {
+      "start": 1909.76,
+      "end": 1917.12,
+      "text": " loss because stop losses are above for cell if there is no stop level then it's just the different"
+    },
+    {
+      "start": 1917.1200000000001,
+      "end": 1922.8000000000002,
+      "text": " between ask and the new cell whichever one is higher for the new tp once again checking the stop"
+    },
+    {
+      "start": 1922.8000000000002,
+      "end": 1930.0000000000002,
+      "text": " level using ask minus the stop level price and the new tp exactly the same stuff that we did here"
+    },
+    {
+      "start": 1933.5200000000002,
+      "end": 1939.2800000000002,
+      "text": " but just reversing it it's ask plus the stop level price because the stop loss needs to go above the"
+    },
+    {
+      "start": 1939.2800000000002,
+      "end": 1945.0400000000002,
+      "text": " price and the tp needs to go below the price then we do the same steps if height as stop loss"
+    },
+    {
+      "start": 1945.04,
+      "end": 1950.96,
+      "text": " the new stop loss becomes 0 new tp becomes 0 and then we start with valet tp or stop loss through"
+    },
+    {
+      "start": 1951.84,
+      "end": 1959.12,
+      "text": " then checking if the new tp is less than is a zero value then it falls if it's zero value and it"
+    },
+    {
+      "start": 1959.12,
+      "end": 1965.2,
+      "text": " used to be the bullinger band then it falls and then the new stop loss is zero and it's not high"
+    },
+    {
+      "start": 1965.2,
+      "end": 1970.1599999999999,
+      "text": " to stop loss so in that case it's also false and then once again the check for the two points"
+    },
+    {
+      "start": 1970.16,
+      "end": 1976.72,
+      "text": " and then checking again the math absolute what's the 10 point if it is less than 0.001 points"
+    },
+    {
+      "start": 1976.72,
+      "end": 1982.3200000000002,
+      "text": " so just one point then the new tp becomes current tp then checking for the stop loss if the current"
+    },
+    {
+      "start": 1982.3200000000002,
+      "end": 1987.44,
+      "text": " stop loss is less than the 10 point the new stop loss becomes the current stop loss and then we"
+    },
+    {
+      "start": 1987.44,
+      "end": 1992.5600000000002,
+      "text": " normalize the stop loss and tp's and then once again we're going to run that validate order"
+    },
+    {
+      "start": 1992.56,
+      "end": 2001.2,
+      "text": " modification function and if it returns a valet value then we're going to start the attempts to"
+    },
+    {
+      "start": 2001.2,
+      "end": 2008.8,
+      "text": " modify the trade if it modifies then we print this if it doesn't modify then we print this so the"
+    },
+    {
+      "start": 2008.8,
+      "end": 2020.56,
+      "text": " same stuff as here if I compile now I have one error somewhere I'm mistakenly put a two here so let's"
+    },
+    {
+      "start": 2020.56,
+      "end": 2029.76,
+      "text": " change it to 10 point and if I compile I do have 10 point here let's just start these as 0"
+    },
+    {
+      "start": 2031.76,
+      "end": 2040.3999999999999,
+      "text": " and 0 and we're okay and now we're going to go right this is validated the order modification function"
+    },
+    {
+      "start": 2040.3999999999999,
+      "end": 2046.3999999999999,
+      "text": " and here we start by saying that if the tick counter is 0 then in that case it unfold so that"
+    },
+    {
+      "start": 2046.4,
+      "end": 2050.96,
+      "text": " don't validate on the first tick modification during the very first minute of the new hour"
+    },
+    {
+      "start": 2050.96,
+      "end": 2058.1600000000003,
+      "text": " of the new day so we're going to start by creating an mq well date time variable put the time current"
+    },
+    {
+      "start": 2058.1600000000003,
+      "end": 2063.28,
+      "text": " into that so that we can get the hour in the minute and then if the current hour is 0 and the current"
+    },
+    {
+      "start": 2063.28,
+      "end": 2069.2000000000003,
+      "text": " time is less than 1 so start of a new day then in that case return falls we don't want to change"
+    },
+    {
+      "start": 2069.7599999999998,
+      "end": 2077.12,
+      "text": " the tip is and it's the start on Monday so we want to avoid that spike as well so it's 0"
+    },
+    {
+      "start": 2077.12,
+      "end": 2083.3599999999997,
+      "text": " and less than 5 minutes and the day is Monday and these values you can change yourself you can make them"
+    },
+    {
+      "start": 2083.3599999999997,
+      "end": 2089.9199999999996,
+      "text": " input values as well if you want so the user can change them then we're going to get all of the market"
+    },
+    {
+      "start": 2089.9199999999996,
+      "end": 2096.72,
+      "text": " information point ask bid get the spread ask minute the bid stop level 3 is level in the symbol"
+    },
+    {
+      "start": 2096.96,
+      "end": 2104.2400000000002,
+      "text": " digits then every price data that we have sent here price it a old tp old SL new SL new tp"
+    },
+    {
+      "start": 2105.76,
+      "end": 2113.84,
+      "text": " we normalize all of that to the level of digits then for the closing orders which is the modification type 1"
+    },
+    {
+      "start": 2113.84,
+      "end": 2122.4,
+      "text": " that we will send here modification type so one is modification type closing in case of high tp and"
+    },
+    {
+      "start": 2122.4,
+      "end": 2128.08,
+      "text": " stop losses we're going to be closing the orders ourselves so then we're going to be sending"
+    },
+    {
+      "start": 2128.08,
+      "end": 2133.6800000000003,
+      "text": " modification type 1 so then what we're going to do the validation is because we're going to be closing for"
+    },
+    {
+      "start": 2133.6800000000003,
+      "end": 2140.88,
+      "text": " for the buy order we're going to be closing at bid but if bid minus the open price is less than the stop"
+    },
+    {
+      "start": 2140.88,
+      "end": 2147.2000000000003,
+      "text": " level then in that case the broker is not going to allow us to do it so we return falls and for the"
+    },
+    {
+      "start": 2147.2,
+      "end": 2155.12,
+      "text": " sell order is going to be open price minus the ask if it is less than the stop level then the broker"
+    },
+    {
+      "start": 2155.12,
+      "end": 2161.2,
+      "text": " is not going to allow us to change so in that case we return falls otherwise we return true and then for"
+    },
+    {
+      "start": 2161.2,
+      "end": 2169.12,
+      "text": " the modification type 2 and 3 which is going to be tp and SL and then if it is buy order then if the bid"
+    },
+    {
+      "start": 2169.12,
+      "end": 2174.0,
+      "text": " minus the new stop loss is less than the stop level then the broker is not going to allow us to change"
+    },
+    {
+      "start": 2174.08,
+      "end": 2179.84,
+      "text": " the stop loss so in that case it falls as well and if the new stop loss is greater than the bid"
+    },
+    {
+      "start": 2180.56,
+      "end": 2186.0,
+      "text": " in case of buy order you can not play a stop loss above the price then in that case return falls as well"
+    },
+    {
+      "start": 2186.72,
+      "end": 2192.48,
+      "text": " and for the sell order it's going to be the reverse which is if the new stop loss minus the ask is less"
+    },
+    {
+      "start": 2192.48,
+      "end": 2197.92,
+      "text": " than the stop level so it's very close to the price so the broker is not going to allow it so in that"
+    },
+    {
+      "start": 2197.92,
+      "end": 2204.4,
+      "text": " bid it and falls if the new stop loss is below the ask for a sell order the stop loss needs to be"
+    },
+    {
+      "start": 2204.4,
+      "end": 2210.48,
+      "text": " above and if it's below then we return falls as well because the broker is not going to allow it and then"
+    },
+    {
+      "start": 2210.48,
+      "end": 2217.44,
+      "text": " in the same breadth for these modifications we check the stop loss let's check the tp as well so if tp"
+    },
+    {
+      "start": 2217.44,
+      "end": 2223.28,
+      "text": " has a valid value and it's buy order then if tp minus the ask is less than the stop level then the"
+    },
+    {
+      "start": 2223.28,
+      "end": 2228.88,
+      "text": " broker is not going to allow it so we turn falls and if the new tp is below the ask which it"
+    },
+    {
+      "start": 2228.88,
+      "end": 2233.84,
+      "text": " can't be because it needs to be above the ask and in that case return falls as well and then in case"
+    },
+    {
+      "start": 2233.84,
+      "end": 2240.48,
+      "text": " of order it's sell then if the bid minus the new tp is less than the stop level then the broker is not"
+    },
+    {
+      "start": 2240.48,
+      "end": 2246.2400000000002,
+      "text": " going to allow it so it falls and if the new tp is above the bid then also the broker is not going"
+    },
+    {
+      "start": 2246.2400000000002,
+      "end": 2251.76,
+      "text": " to allow it because the tp has to be below in case of sell so we return falls and then we check the"
+    },
+    {
+      "start": 2251.76,
+      "end": 2257.0400000000004,
+      "text": " freeze levels so if the freeze if there is a freeze level then we need to check again against the"
+    },
+    {
+      "start": 2257.0400000000004,
+      "end": 2262.88,
+      "text": " freeze level this time that for order type by that the bid minus the open price is above the freeze"
+    },
+    {
+      "start": 2262.88,
+      "end": 2269.5200000000004,
+      "text": " levels so we have moved from the price enough that now the broker is going to allow it otherwise we return"
+    },
+    {
+      "start": 2269.5200000000004,
+      "end": 2277.2000000000003,
+      "text": " falls and for the sell order ask minus the open price because I mean freeze level is the broker not allowing"
+    },
+    {
+      "start": 2277.2000000000003,
+      "end": 2282.6400000000003,
+      "text": " you to change a position until the price has changed from the opening price by a certain amount"
+    },
+    {
+      "start": 2283.28,
+      "end": 2289.84,
+      "text": " and that's what we are checking here that it has changed it has moved more than the freeze level"
+    },
+    {
+      "start": 2289.84,
+      "end": 2296.0800000000004,
+      "text": " otherwise it it unfolds so we close the if bracket here and then we close the if bracket for this"
+    },
+    {
+      "start": 2296.0800000000004,
+      "end": 2302.8,
+      "text": " mode we can type 2 and 3 and then we close the function but before we close the function we return true"
+    },
+    {
+      "start": 2302.88,
+      "end": 2313.04,
+      "text": " because the none of that has become falls then we are going to return true so for modi thing"
+    },
+    {
+      "start": 2313.04,
+      "end": 2317.76,
+      "text": " in type 1 we already send the true here but for modi pick it can type 2 or 3 it is going to go through"
+    },
+    {
+      "start": 2317.76,
+      "end": 2326.2400000000002,
+      "text": " all of this if it is not falls then return true and it compile one more time and we are still doing"
+    },
+    {
+      "start": 2327.2000000000003,
+      "end": 2334.4,
+      "text": " we are down to almost 2,000 lines of codes and now we go back now to our get weighted average price"
+    },
+    {
+      "start": 2335.36,
+      "end": 2341.5200000000004,
+      "text": " which is still stopped and we have used it in the functions so we need to write this fun as well so here"
+    },
+    {
+      "start": 2341.5200000000004,
+      "end": 2347.6000000000004,
+      "text": " we are going to get the weighted average price with the commission and this function will require symbol"
+    },
+    {
+      "start": 2347.6000000000004,
+      "end": 2355.76,
+      "text": " the direction include commission and if to use the original or size we start with these three variables"
+    },
+    {
+      "start": 2355.84,
+      "end": 2361.28,
+      "text": " we are going to convert the direction coming from here so if the direction coming from here is one"
+    },
+    {
+      "start": 2361.28,
+      "end": 2366.7200000000003,
+      "text": " then it is a buy otherwise it is a sell and then we are going to create an order type as well which is once again"
+    },
+    {
+      "start": 2366.7200000000003,
+      "end": 2372.88,
+      "text": " if this is one then it is order type buy otherwise it is order type sell now like before if we are using the original"
+    },
+    {
+      "start": 2372.88,
+      "end": 2378.6400000000003,
+      "text": " lot size and the grid level is more than one which again I am going to come back in a separate video to"
+    },
+    {
+      "start": 2378.6400000000003,
+      "end": 2385.6800000000003,
+      "text": " explain the entire working of the functions for grid level to start is more than one then in that case"
+    },
+    {
+      "start": 2385.8399999999997,
+      "end": 2391.04,
+      "text": " we are going to have to find the various lots for the grid with commission so let us write that function"
+    },
+    {
+      "start": 2391.04,
+      "end": 2396.24,
+      "text": " we are sending a direction to it so we are going to first take the direction if it is one then it is a buy"
+    },
+    {
+      "start": 2396.24,
+      "end": 2402.16,
+      "text": " otherwise it is a sell then we are going to loop through all the positions try to select it by index if not"
+    },
+    {
+      "start": 2402.16,
+      "end": 2407.2799999999997,
+      "text": " possible then go to the next position check that the position symbol is equal to our symbol if not"
+    },
+    {
+      "start": 2407.2799999999997,
+      "end": 2413.04,
+      "text": " then continue go to the next position then get the magic number check the magic number then get the"
+    },
+    {
+      "start": 2413.92,
+      "end": 2421.52,
+      "text": " check what is our direction and if all of that passes then get the level from get level from magic"
+    },
+    {
+      "start": 2421.52,
+      "end": 2427.68,
+      "text": " the helper function be created and now if the level is greater then the grid level to start minus one so"
+    },
+    {
+      "start": 2427.68,
+      "end": 2435.2799999999997,
+      "text": " if the user has put the grid level to start as 5 then there are 5 levels are 0 1 2 3 4 and this is why"
+    },
+    {
+      "start": 2435.2799999999997,
+      "end": 2442.88,
+      "text": " we say it is 4 so if the grid level is greater than or equal to this then in that case get the volume"
+    },
+    {
+      "start": 2442.88,
+      "end": 2447.84,
+      "text": " of the position because we are only going to start getting the lot sizes from where the user has"
+    },
+    {
+      "start": 2447.84,
+      "end": 2454.08,
+      "text": " now said the grid actually starts so only after this level we are going to say take the multiplier"
+    },
+    {
+      "start": 2454.08,
+      "end": 2459.76,
+      "text": " and if the multiplier is bigger then divide the lot by the multiplier to send us the base lot"
+    },
+    {
+      "start": 2459.76,
+      "end": 2468.48,
+      "text": " for the grid with commission otherwise just return 0 so coming back here we are going to loop through"
+    },
+    {
+      "start": 2468.48,
+      "end": 2474.48,
+      "text": " all the position again selecting by index if it is a wrong symbol escape if it get the magic number"
+    },
+    {
+      "start": 2474.48,
+      "end": 2480.56,
+      "text": " if it is not our magic number then escape is it the right direction if it is not the right direction then"
+    },
+    {
+      "start": 2480.56,
+      "end": 2489.52,
+      "text": " escape and if all of that passes then we take the lot from the position the open price of the position"
+    },
+    {
+      "start": 2489.52,
+      "end": 2496.64,
+      "text": " and then we get the level by using our helper function to get from the magic number the level then if using"
+    },
+    {
+      "start": 2496.72,
+      "end": 2501.12,
+      "text": " the original lot size and the base lot is bigger than 0 and the grid level to start is greater"
+    },
+    {
+      "start": 2501.12,
+      "end": 2508.48,
+      "text": " than 1 then if level equals to 0 then lots are the base lots and if the level is bigger then 1 then the"
+    },
+    {
+      "start": 2508.48,
+      "end": 2518.24,
+      "text": " lot are base lot multiplied by whatever is the grid multiplier for that level then in case the commission"
+    },
+    {
+      "start": 2518.24,
+      "end": 2524.4,
+      "text": " is requested then we start with the attestetize add the price open then we get the adjusted price"
+    },
+    {
+      "start": 2524.96,
+      "end": 2530.96,
+      "text": " calling our get price with commission function sending to it all of the information and then we take"
+    },
+    {
+      "start": 2530.96,
+      "end": 2538.08,
+      "text": " from this position the lot and add it to the total lots and we add to the price the adjusted price"
+    },
+    {
+      "start": 2538.08,
+      "end": 2545.52,
+      "text": " times the lots so we get the total price including multiplication with the lots so waiting it"
+    },
+    {
+      "start": 2545.52,
+      "end": 2550.7200000000003,
+      "text": " and now we can calculate the average so the average is going to be if the total loss has a value"
+    },
+    {
+      "start": 2550.7200000000003,
+      "end": 2556.0000000000005,
+      "text": " then total price divide by total loss normalize it to the level of digits otherwise"
+    },
+    {
+      "start": 2556.88,
+      "end": 2564.88,
+      "text": " returns 0 if this value is less than epsilon then returns 0 so this is our function for getting the"
+    },
+    {
+      "start": 2564.88,
+      "end": 2570.7200000000003,
+      "text": " weighted average price with commission and here when we are getting the adjusted price we call the"
+    },
+    {
+      "start": 2570.7200000000003,
+      "end": 2578.8,
+      "text": " function get price with commission we need to write that function as well so we write that function"
+    },
+    {
+      "start": 2578.8,
+      "end": 2584.0,
+      "text": " we start with digit point and tick value if the tick value times a lot is not a valid value"
+    },
+    {
+      "start": 2584.0,
+      "end": 2589.6000000000004,
+      "text": " then just return the open price otherwise we calculate the commission and so the total cost is going"
+    },
+    {
+      "start": 2589.6000000000004,
+      "end": 2594.1600000000003,
+      "text": " to be equals to commission plus so and then the price adjustment is going to be total cost"
+    },
+    {
+      "start": 2595.2000000000003,
+      "end": 2602.0800000000004,
+      "text": " divided by the tick value times lot into points and then if it is a buy order then we normalize it open"
+    },
+    {
+      "start": 2602.0800000000004,
+      "end": 2608.48,
+      "text": " price plus the point minus this adjustment that we have calculated otherwise it's open price minus point"
+    },
+    {
+      "start": 2608.8,
+      "end": 2615.84,
+      "text": " plus the price adjustment in case of self and then we close the function and I compile again"
+    },
+    {
+      "start": 2615.84,
+      "end": 2626.0,
+      "text": " I do not seem to have any errors if I run the test where we should see is that on the very first trade"
+    },
+    {
+      "start": 2626.0,
+      "end": 2632.8,
+      "text": " we have our initial tp so here is our initial tp set at 10 points but when the next trade is going to open"
+    },
+    {
+      "start": 2633.2000000000003,
+      "end": 2640.88,
+      "text": " we will adjust the tp to the average between the two but both have the same volume so it is"
+    },
+    {
+      "start": 2640.88,
+      "end": 2647.92,
+      "text": " right in the middle the average so the average price is going to be in between and then the initial tp is"
+    },
+    {
+      "start": 2647.92,
+      "end": 2654.5600000000004,
+      "text": " going to be moved to a distance from that average price now 5 points from there because now there are two"
+    },
+    {
+      "start": 2655.2,
+      "end": 2662.0,
+      "text": " rates and then when the third trade is one open we will see that now the tp has moved to the average"
+    },
+    {
+      "start": 2662.0,
+      "end": 2669.36,
+      "text": " but this time it's because of the waiting average this one the new trade has twice the rate so in a way"
+    },
+    {
+      "start": 2669.36,
+      "end": 2676.0,
+      "text": " it's 0.03 is four times there then you do the weighted average and then you get the average price which is"
+    },
+    {
+      "start": 2676.0,
+      "end": 2682.48,
+      "text": " probably which is very close to this and then depending on the number of lots the initial tp is going"
+    },
+    {
+      "start": 2682.88,
+      "end": 2689.12,
+      "text": " set from there and then the fourth one is going to open then it's going to be pulled even closer so"
+    },
+    {
+      "start": 2689.12,
+      "end": 2696.88,
+      "text": " this is how it goes because now we have 12 loss so this one is carrying 4 times the weight of this one"
+    },
+    {
+      "start": 2696.88,
+      "end": 2704.72,
+      "text": " so the average price is somewhere here and therefore the tp is set from that average price so our"
+    },
+    {
+      "start": 2704.7200000000003,
+      "end": 2712.0800000000004,
+      "text": " tp's are working as well compile again and now we're going to write our last section which is"
+    },
+    {
+      "start": 2712.0800000000004,
+      "end": 2720.0000000000005,
+      "text": " closing the grid in case the max drawdown has happened or if the user has hidden the tp and stop losses"
+    },
+    {
+      "start": 2721.5200000000004,
+      "end": 2730.0000000000005,
+      "text": " okay so now for our drawdown control parts we go back up to the on tick function and here after the"
+    },
+    {
+      "start": 2730.0,
+      "end": 2739.12,
+      "text": " modification for kp's and stop loss we're going to add the check and close grid so if it's a new bar"
+    },
+    {
+      "start": 2739.12,
+      "end": 2744.08,
+      "text": " update the symbol information and a straighting is allowed and run this which we have fully written run this"
+    },
+    {
+      "start": 2744.08,
+      "end": 2749.36,
+      "text": " which we fully written and now we're going to go and check and close the grid so let's go down"
+    },
+    {
+      "start": 2749.36,
+      "end": 2754.64,
+      "text": " closing the grid straight and drawdown section and here we're going to create our function check and close the"
+    },
+    {
+      "start": 2754.64,
+      "end": 2759.6,
+      "text": " grid and we're going to send to it the symbol now if the position total is 0 then in that case just"
+    },
+    {
+      "start": 2759.6,
+      "end": 2766.16,
+      "text": " simply return because there is no position so there is no grid there are no trades there is no drawdown"
+    },
+    {
+      "start": 2766.16,
+      "end": 2770.56,
+      "text": " then we're going to start by calculating the magic number prefixes which we have done before so you know"
+    },
+    {
+      "start": 2770.56,
+      "end": 2778.0,
+      "text": " how to do it which is getting the bi prefix and the cell prefix so 1 8 4 5 7 0 and 2 8 4 5 7 0"
+    },
+    {
+      "start": 2778.4,
+      "end": 2782.48,
+      "text": " and then we're going to run through both types of positions of position type by and position type"
+    },
+    {
+      "start": 2782.48,
+      "end": 2787.68,
+      "text": " cell so we'll start with position type by and then we're going to do a position type plus plus meaning"
+    },
+    {
+      "start": 2787.68,
+      "end": 2794.64,
+      "text": " port cell and then we're going to loop through all the positions so get the position total loop through"
+    },
+    {
+      "start": 2794.64,
+      "end": 2800.0,
+      "text": " all of that select if you're not able to select print that we fail to select the order otherwise"
+    },
+    {
+      "start": 2800.0,
+      "end": 2806.16,
+      "text": " if it is selected get all of this information and then for closing the bi orders we're going to go"
+    },
+    {
+      "start": 2806.16,
+      "end": 2814.0,
+      "text": " if the position type is by here and the type of the position that we have selected is also by and the"
+    },
+    {
+      "start": 2814.0,
+      "end": 2819.12,
+      "text": " order symbol is equal to the symbol and the magic y by one hundred is bi prefix so we're removing the"
+    },
+    {
+      "start": 2819.12,
+      "end": 2826.56,
+      "text": " last two digits the levels and comparing it versus the bi prefix if all of that is fine then we're going"
+    },
+    {
+      "start": 2826.56,
+      "end": 2833.04,
+      "text": " to initiate the close order and then we're going to do the same for the cell so if the position type is"
+    },
+    {
+      "start": 2833.04,
+      "end": 2839.68,
+      "text": " cell and the type is cell these two match order symbol match and removing from the magical levels"
+    },
+    {
+      "start": 2839.68,
+      "end": 2845.52,
+      "text": " matches the cell prefix then in that case we're going to start the close order process then we close"
+    },
+    {
+      "start": 2847.6,
+      "end": 2857.2,
+      "text": " this loop and then we close the four and then we close the function we're saying that if it's"
+    },
+    {
+      "start": 2857.2000000000003,
+      "end": 2862.0800000000004,
+      "text": " bi or cell then depending on whether it's bi or cell we're going to initiate the close order function"
+    },
+    {
+      "start": 2862.6400000000003,
+      "end": 2871.6000000000004,
+      "text": " by sending to it the bi or the cell so let's write that function now so we close order we're going to"
+    },
+    {
+      "start": 2871.6000000000004,
+      "end": 2876.88,
+      "text": " send all of this pieces of information order type everything and then we're going to send the order"
+    },
+    {
+      "start": 2876.88,
+      "end": 2883.36,
+      "text": " type as either cell or bi depending on which one we're trying to close let's get these pieces of"
+    },
+    {
+      "start": 2883.36,
+      "end": 2889.04,
+      "text": " information from the server then once again the pip multiplier if it's five or three then it's ten"
+    },
+    {
+      "start": 2889.04,
+      "end": 2897.1200000000003,
+      "text": " otherwise one calculate the slippage and the max is spread and now using the open time of this trade"
+    },
+    {
+      "start": 2897.6800000000003,
+      "end": 2904.0,
+      "text": " we're going to check which bar did we open the time so i bar shift providing it the open time"
+    },
+    {
+      "start": 2904.96,
+      "end": 2912.88,
+      "text": " of the trade and checking which bar did the trade open on and then store it into the current bar"
+    },
+    {
+      "start": 2913.6800000000003,
+      "end": 2919.28,
+      "text": " and then we're going to start which should be close as false and create these three variables"
+    },
+    {
+      "start": 2919.28,
+      "end": 2924.56,
+      "text": " now we're going to go through if the user has hidden the tp or hidden the stop loss or is he using the"
+    },
+    {
+      "start": 2924.56,
+      "end": 2929.6,
+      "text": " opium method we're going to start with the average price equals to open price and then we're going to"
+    },
+    {
+      "start": 2929.6,
+      "end": 2935.6800000000003,
+      "text": " get the average price from the grid if it's available so we check that the maximum trade number is"
+    },
+    {
+      "start": 2935.6800000000003,
+      "end": 2941.76,
+      "text": " greater than zero trade multiplier has a value trade distance has a valid value we translate the"
+    },
+    {
+      "start": 2942.32,
+      "end": 2951.1200000000003,
+      "text": " so if here it is open if it is ordered by then it's one otherwise minus one for cell and then for"
+    },
+    {
+      "start": 2951.1200000000003,
+      "end": 2956.32,
+      "text": " the grid exist we're going to send the direction to it to check whether or not this grid exists"
+    },
+    {
+      "start": 2957.36,
+      "end": 2964.6400000000003,
+      "text": " on our symbol for the direction that we are sending to this function and if it exists then we're going"
+    },
+    {
+      "start": 2964.6400000000003,
+      "end": 2971.5200000000004,
+      "text": " to get the weighted average price and normalize it to the digit we wrote this function already so"
+    },
+    {
+      "start": 2971.52,
+      "end": 2975.68,
+      "text": " we're going to send to it the symbol and the direction for any level we don't care about the levels"
+    },
+    {
+      "start": 2977.04,
+      "end": 2984.16,
+      "text": " and get the weighted average price now if the grid doesn't exist then it's just one trade in that"
+    },
+    {
+      "start": 2984.16,
+      "end": 2990.56,
+      "text": " case whatever we stored in the last by average price becomes the average price and whatever we stored in"
+    },
+    {
+      "start": 2990.56,
+      "end": 2996.4,
+      "text": " the last cell average price becomes the average price if it is cell or by and then we're going to"
+    },
+    {
+      "start": 2996.4,
+      "end": 3002.4,
+      "text": " calculate the stop loss price by triggering our calculate the stop loss function that we use to"
+    },
+    {
+      "start": 3002.4,
+      "end": 3007.76,
+      "text": " create the TP and the SL that we send to the broker and if we're doing it manually then it's going to"
+    },
+    {
+      "start": 3007.76,
+      "end": 3013.6,
+      "text": " be the same calculation as well so we're going to send to it if the order type is by then we're going to send"
+    },
+    {
+      "start": 3013.6,
+      "end": 3018.64,
+      "text": " the value one otherwise it'll send the value of minus one as cell to the calculate stop loss"
+    },
+    {
+      "start": 3019.2799999999997,
+      "end": 3026.7999999999997,
+      "text": " function and then the TP price we're just going to get it from the last by TP and the last"
+    },
+    {
+      "start": 3026.7999999999997,
+      "end": 3033.2,
+      "text": " cell TP depending on whether it's a by order or it's a cell order because we're just closing the"
+    },
+    {
+      "start": 3033.2,
+      "end": 3039.3599999999997,
+      "text": " position so let's get the TP back from whatever is the current TP and now we're going to check"
+    },
+    {
+      "start": 3039.3599999999997,
+      "end": 3047.52,
+      "text": " for the opium method that if the user has selected to use the opium method to handle the TP then we need to"
+    },
+    {
+      "start": 3048.32,
+      "end": 3054.64,
+      "text": " which time frame is it the same time frame or is it a different time frame so we're going to check"
+    },
+    {
+      "start": 3054.64,
+      "end": 3062.08,
+      "text": " for the opium time frame the i close value and restore it into the opium close meaning okay on the opium"
+    },
+    {
+      "start": 3062.08,
+      "end": 3069.84,
+      "text": " time frame the last close candle the closing price was opium close and then we're going to check if we"
+    },
+    {
+      "start": 3069.84,
+      "end": 3075.2,
+      "text": " should close the position so we're going to see if it's for order type by if that's the position"
+    },
+    {
+      "start": 3075.84,
+      "end": 3082.5600000000004,
+      "text": " then we say should close is equal to if the bar index is greater than the last bar index"
+    },
+    {
+      "start": 3083.92,
+      "end": 3091.44,
+      "text": " and the last bar index is not equal to zero or if the user has hidden the stop loss and now the"
+    },
+    {
+      "start": 3091.44,
+      "end": 3096.0800000000004,
+      "text": " bid is actually below the stop loss price so whatever we calculate it here at the stop loss price"
+    },
+    {
+      "start": 3096.0800000000004,
+      "end": 3104.88,
+      "text": " now the bid has gone below or if the user has hidden the TP and now the bid is above the TP price that we"
+    },
+    {
+      "start": 3105.28,
+      "end": 3111.92,
+      "text": " have created for that we have calculated and it's not using the opium method and it's not the smart"
+    },
+    {
+      "start": 3111.92,
+      "end": 3120.96,
+      "text": " TP and if or if he's using the opium method then in that place the opium close that we calculate here is"
+    },
+    {
+      "start": 3120.96,
+      "end": 3128.6400000000003,
+      "text": " now above the TP price and it's not smart TP and the grid open in false and the opium trigger"
+    },
+    {
+      "start": 3128.72,
+      "end": 3136.3199999999997,
+      "text": " is false or the drawdown is triggered in all of those cases the should close become true"
+    },
+    {
+      "start": 3137.6,
+      "end": 3144.48,
+      "text": " because we should close the position in those cases and the close price becomes bid otherwise for the"
+    },
+    {
+      "start": 3144.48,
+      "end": 3152.56,
+      "text": " cell we check the should close exactly the same way but in reverse logic so ask is greater than the stop"
+    },
+    {
+      "start": 3152.56,
+      "end": 3161.04,
+      "text": " close price ask is smaller than or equal to the TP and then equals ask after checking for"
+    },
+    {
+      "start": 3161.04,
+      "end": 3167.6,
+      "text": " should close if the should close turns out to be negative then in that case return for otherwise we are"
+    },
+    {
+      "start": 3167.6,
+      "end": 3174.16,
+      "text": " time to close so we plan that we are going to close the position this trade this ticket number and then"
+    },
+    {
+      "start": 3174.16,
+      "end": 3178.96,
+      "text": " before we close we check the spreads that if the spreads are less than maximum spread and the"
+    },
+    {
+      "start": 3178.96,
+      "end": 3185.36,
+      "text": " maximum spread has a value then in that case we proceed to close by closing by using the"
+    },
+    {
+      "start": 3185.36,
+      "end": 3190.8,
+      "text": " validate order modification function that we created for the normal TP and SL so we're going to"
+    },
+    {
+      "start": 3190.8,
+      "end": 3196.88,
+      "text": " loop through that again set the standard deviation in point if the validation turns out to be true"
+    },
+    {
+      "start": 3196.88,
+      "end": 3204.2400000000002,
+      "text": " and we close the trade position and we say successfully closed but if the closing of the position fails"
+    },
+    {
+      "start": 3204.2400000000002,
+      "end": 3210.96,
+      "text": " then we say fail to close this and then we three for 1000 seconds all of this is if the spreads are"
+    },
+    {
+      "start": 3210.96,
+      "end": 3217.0400000000004,
+      "text": " bid in the range but if they are outside of the range then we just simply bid that we can not close"
+    },
+    {
+      "start": 3217.0400000000004,
+      "end": 3222.2400000000002,
+      "text": " because the spreads are very high and then we three for 1000 seconds as well and otherwise we just"
+    },
+    {
+      "start": 3222.8,
+      "end": 3229.44,
+      "text": " false and we close the function and now we're going to write our check max drawn-on function"
+    },
+    {
+      "start": 3231.92,
+      "end": 3237.36,
+      "text": " so we're going to start with the draw-down 0 get the balance for the account and then for our first"
+    },
+    {
+      "start": 3237.36,
+      "end": 3244.32,
+      "text": " method which is if the draw-down calculation is 1 meaning we're only looking for this strategy this is"
+    },
+    {
+      "start": 3244.32,
+      "end": 3251.2000000000003,
+      "text": " strategy or the entire account so if it is 1 then it's just strategy only in that case we start with"
+    },
+    {
+      "start": 3251.28,
+      "end": 3256.7200000000003,
+      "text": " the profit of 0 then we loop through all the position selected by index get the magic number and"
+    },
+    {
+      "start": 3256.7200000000003,
+      "end": 3263.0400000000004,
+      "text": " if it is our if it's not our magic number then good skip and go to the next position but if it is our"
+    },
+    {
+      "start": 3263.0400000000004,
+      "end": 3270.32,
+      "text": " magic number then in that case add the position's profit position saw and position commission"
+    },
+    {
+      "start": 3270.32,
+      "end": 3276.1600000000003,
+      "text": " into the profit variable that we have calculated so by the end of this loop we're going to have the"
+    },
+    {
+      "start": 3276.16,
+      "end": 3282.72,
+      "text": " cumulative profit or loss now if it is profit turns out to be less than 0 which means it is"
+    },
+    {
+      "start": 3282.72,
+      "end": 3291.2799999999997,
+      "text": " a happy R in a loss then we change the sign of the loss and we call that the draw-down because let's say"
+    },
+    {
+      "start": 3291.2799999999997,
+      "end": 3298.08,
+      "text": " if the profit turns out be minus 200 dollars we are in a draw-down but what's the draw-down 200 so we"
+    },
+    {
+      "start": 3298.08,
+      "end": 3304.7999999999997,
+      "text": " reverse the sign but if the profit is not less than 0 meaning it's either 0 or greater then in that"
+    },
+    {
+      "start": 3304.8,
+      "end": 3312.96,
+      "text": " case there is no draw-down so we say 0 so this is for if the draw-down calculation is 1 but otherwise"
+    },
+    {
+      "start": 3312.96,
+      "end": 3317.76,
+      "text": " meaning the draw-down calculation is 0 then the entire account then we just simply get the balance"
+    },
+    {
+      "start": 3318.96,
+      "end": 3326.1600000000003,
+      "text": " we just simply take the balance that we have gotten here minus the equity which we can get from the"
+    },
+    {
+      "start": 3326.1600000000003,
+      "end": 3332.6400000000003,
+      "text": " broker now if the equity is bigger than the balance meaning we are in profit then in that case the"
+    },
+    {
+      "start": 3332.64,
+      "end": 3339.04,
+      "text": " draw-down is going to be less than 0 so in that case we are in profit so we set the draw-down to 0"
+    },
+    {
+      "start": 3339.8399999999997,
+      "end": 3345.68,
+      "text": " if the balance is bigger than the equity then we're going to get in any case the draw-down value as an"
+    },
+    {
+      "start": 3345.68,
+      "end": 3353.52,
+      "text": " absolute number anyway now that we have the draw-down calculated we can check the percentage draw-down so"
+    },
+    {
+      "start": 3353.52,
+      "end": 3358.16,
+      "text": " if the maximum draw-down is greater than epsilon so the user has put a maximum draw-down value"
+    },
+    {
+      "start": 3358.56,
+      "end": 3367.52,
+      "text": " here sorry maximum draw-down in percentage if he has put a value and the maximum draw-down is less than"
+    },
+    {
+      "start": 3367.52,
+      "end": 3375.04,
+      "text": " 99.99 because for 100 percent it basically means well you don't care about the draw-down it can go"
+    },
+    {
+      "start": 3375.04,
+      "end": 3381.68,
+      "text": " all the way to 100 percent so if if it is a valid value and it's less than 99.99 so the user has"
+    },
+    {
+      "start": 3381.68,
+      "end": 3386.64,
+      "text": " specified some sort of a floating draw-down in percentage then we're going to check for the percentage"
+    },
+    {
+      "start": 3386.64,
+      "end": 3394.08,
+      "text": " so we take if draw-down is greater than the max draw-down divided by 100 times the balance so we first"
+    },
+    {
+      "start": 3394.08,
+      "end": 3399.6,
+      "text": " convert it into a percentage and then multiply by the balance to get the actual amount and then if draw-down"
+    },
+    {
+      "start": 3399.6,
+      "end": 3405.3599999999997,
+      "text": " has become bigger than that then we will trigger this function which is handled the draw-down trigger"
+    },
+    {
+      "start": 3406.08,
+      "end": 3411.7599999999998,
+      "text": " and then we check the money draw-down which is if the user has put the floating draw-down in money"
+    },
+    {
+      "start": 3411.76,
+      "end": 3418.0,
+      "text": " tons instead of percentage then as long as it is bigger than zero then this one is triggered so"
+    },
+    {
+      "start": 3418.0,
+      "end": 3422.88,
+      "text": " we want to check if the draw-down has become bigger than that and if it has become bigger than that then"
+    },
+    {
+      "start": 3422.88,
+      "end": 3429.76,
+      "text": " we will also initiate the function handle draw-down trigger so we close the function here and now we need to"
+    },
+    {
+      "start": 3429.76,
+      "end": 3436.48,
+      "text": " write this handle draw-down trigger so let's create that function we're going to start with the last message"
+    },
+    {
+      "start": 3436.48,
+      "end": 3444.08,
+      "text": " as zero daytime and then if the time current is bigger then the last time we check by at least 60 minutes"
+    },
+    {
+      "start": 3444.08,
+      "end": 3450.48,
+      "text": " 3,600 seconds in that case we will print the message otherwise we don't want to print the message on every"
+    },
+    {
+      "start": 3450.48,
+      "end": 3456.4,
+      "text": " take or every new buck so at least 60 minutes and now we're going to switch through our four different"
+    },
+    {
+      "start": 3456.4,
+      "end": 3463.44,
+      "text": " types of maximum draw-down actions now if it is case zero which is close and stop the trading for 24 hours"
+    },
+    {
+      "start": 3463.44,
+      "end": 3470.08,
+      "text": " then in that case we're going to say draw-down is triggered is true cool-down hour is set to 24"
+    },
+    {
+      "start": 3470.08,
+      "end": 3475.92,
+      "text": " and then disable all the trading and that's a function we will write and then if it is case one which is close"
+    },
+    {
+      "start": 3475.92,
+      "end": 3482.48,
+      "text": " and stop the trading until we start again draw-down trigger becomes true stop trading until we start becomes true"
+    },
+    {
+      "start": 3482.48,
+      "end": 3487.36,
+      "text": " and then you disable all the trading and then in case it is case two which is ignored new signals"
+    },
+    {
+      "start": 3487.36,
+      "end": 3493.1200000000003,
+      "text": " then we just disable all trading and in case it is case three which is ignored new signals"
+    },
+    {
+      "start": 3493.1200000000003,
+      "end": 3499.6800000000003,
+      "text": " still restart then we say stop trading until we start is true and disable all the trading and then we"
+    },
+    {
+      "start": 3499.6800000000003,
+      "end": 3504.7200000000003,
+      "text": " close the function so here we're going to switch through this and then see what do we need to do"
+    },
+    {
+      "start": 3505.76,
+      "end": 3513.6,
+      "text": " set these variables and disable all trading and disable trading is a very simple one you remember we"
+    },
+    {
+      "start": 3513.6,
+      "end": 3519.44,
+      "text": " were doing the can buy and can sell so we're just going to set the can buy and can sell to false"
+    },
+    {
+      "start": 3520.24,
+      "end": 3524.72,
+      "text": " for all three symbols or for all four symbols whatever number of symbols that we have"
+    },
+    {
+      "start": 3525.2799999999997,
+      "end": 3531.52,
+      "text": " by moving through them and now if I compile I don't have any errors and if I run a test now"
+    },
+    {
+      "start": 3532.48,
+      "end": 3545.7599999999998,
+      "text": " so we have our tp it keeps moving until we come down and hit hit the tp now I'm going to do"
+    },
+    {
+      "start": 3545.7599999999998,
+      "end": 3554.32,
+      "text": " something else which is I'm going to change this to only sell we only see the sell trade and then"
+    },
+    {
+      "start": 3554.32,
+      "end": 3560.6400000000003,
+      "text": " we're going to check if the height tp is working so we should let's first do it without to see"
+    },
+    {
+      "start": 3561.44,
+      "end": 3570.0,
+      "text": " how it looks if the tp is sent to the broker so we have the tp here it goes up"
+    },
+    {
+      "start": 3572.0,
+      "end": 3577.76,
+      "text": " with the grids and the third layer is opened and the fourth layer is open and when it comes down"
+    },
+    {
+      "start": 3577.76,
+      "end": 3593.0400000000004,
+      "text": " now probably to hit the tp it should close here now if I go and I hide the tp's then we shouldn't"
+    },
+    {
+      "start": 3593.0400000000004,
+      "end": 3600.1600000000003,
+      "text": " be seeing the tp's anymore but the logic should still work the same ideally so we have the first one"
+    },
+    {
+      "start": 3600.1600000000003,
+      "end": 3606.1600000000003,
+      "text": " and we don't see any tp then the second level third level fourth level and now when it comes down here it"
+    },
+    {
+      "start": 3606.16,
+      "end": 3617.04,
+      "text": " should close the positions with the calculation of the tp internally so here it closes"
+    },
+    {
+      "start": 3618.64,
+      "end": 3625.7599999999998,
+      "text": " but it only closed one position instead of all four positions or something has gone a little bit wrong in"
+    },
+    {
+      "start": 3625.92,
+      "end": 3636.96,
+      "text": " our code let's go back and find where the problem is so we go back up to where we're saying it should close"
+    },
+    {
+      "start": 3637.5200000000004,
+      "end": 3645.0400000000004,
+      "text": " and then we send for the order modification just exactly like the tp and stop loss that we do for"
+    },
+    {
+      "start": 3646.6400000000003,
+      "end": 3654.0800000000004,
+      "text": " when we're sending the orders to to the broker but that might actually be the problem because once the first trade"
+    },
+    {
+      "start": 3654.16,
+      "end": 3661.12,
+      "text": " has closed the system is going to recalculate the tp value for the remaining positions"
+    },
+    {
+      "start": 3661.12,
+      "end": 3667.04,
+      "text": " and that changes the tp so the internally stored tp is going to be different then so we can't really"
+    },
+    {
+      "start": 3667.04,
+      "end": 3672.4,
+      "text": " do the validation of the order modification exactly the same way as we did for the tp and stop loss"
+    },
+    {
+      "start": 3672.4,
+      "end": 3677.52,
+      "text": " for when we were sending it to the broker because we're not sending it to the broker anymore before"
+    },
+    {
+      "start": 3677.52,
+      "end": 3683.2799999999997,
+      "text": " we just calculated the tp and stop loss and once we had the tp and stop loss we sent it to the broker"
+    },
+    {
+      "start": 3683.76,
+      "end": 3691.1200000000003,
+      "text": " we didn't iterate by here because we're iterating so after the first trade is closed the tp"
+    },
+    {
+      "start": 3691.1200000000003,
+      "end": 3697.44,
+      "text": " calculation is going to change and it's going to be a different tp so we can't really use this so I'm going to"
+    },
+    {
+      "start": 3697.44,
+      "end": 3709.84,
+      "text": " mark it as comments for now so we're still going to check for the spreads and if the spreads are less"
+    },
+    {
+      "start": 3709.84,
+      "end": 3716.56,
+      "text": " than the maximum spread then we're going to loop through all of the positions selecting it by index"
+    },
+    {
+      "start": 3716.56,
+      "end": 3722.32,
+      "text": " again getting the symbol if it matches our symbol then it's fine otherwise continue go to the next position"
+    },
+    {
+      "start": 3722.32,
+      "end": 3727.44,
+      "text": " get the magic number check for if it's our magic number if it's not then go to the next position otherwise"
+    },
+    {
+      "start": 3727.44,
+      "end": 3732.96,
+      "text": " continue we check the direction we get the direction and then we check if if it doesn't match"
+    },
+    {
+      "start": 3732.96,
+      "end": 3739.92,
+      "text": " if the order type we're sending to the function is this but the direction we're getting is not one"
+    },
+    {
+      "start": 3739.92,
+      "end": 3745.12,
+      "text": " then we skip to the next position and the same thing for the cell so we check whether or not"
+    },
+    {
+      "start": 3745.68,
+      "end": 3754.08,
+      "text": " the types match for cell and for by and then we set the slippage by saying trade dot set deviation in"
+    },
+    {
+      "start": 3754.08,
+      "end": 3760.64,
+      "text": " points we set the slippage and then we try to close the position and if the position closes"
+    },
+    {
+      "start": 3761.44,
+      "end": 3767.92,
+      "text": " then we say that the grid position is closed as part of the tp hit and if not then we say fail to close"
+    },
+    {
+      "start": 3767.92,
+      "end": 3776.7999999999997,
+      "text": " the position and we get the result the description and if we are able to close everything then we return true"
+    },
+    {
+      "start": 3777.12,
+      "end": 3786.64,
+      "text": " otherwise and this is where we can delete this so if the spread was smaller than the max spread we loop through"
+    },
+    {
+      "start": 3786.64,
+      "end": 3792.16,
+      "text": " all the positions if it matches our criteria then we close and we print that we close and then if we"
+    },
+    {
+      "start": 3792.16,
+      "end": 3800.64,
+      "text": " are able to close then we return true otherwise we print that the spreads are too high so we can not close"
+    },
+    {
+      "start": 3801.6,
+      "end": 3812.3199999999997,
+      "text": " and then we sleep for 1,000 seconds and return false let's compile and now if we go back and run the"
+    },
+    {
+      "start": 3812.32,
+      "end": 3818.6400000000003,
+      "text": " same test we have the first position open the second position open the third position open the"
+    },
+    {
+      "start": 3818.6400000000003,
+      "end": 3825.6000000000004,
+      "text": " port and when it comes down to close it at the tp yeah now we have closed all of the positions in one go"
+    },
+    {
+      "start": 3826.48,
+      "end": 3834.0,
+      "text": " so this then takes care of our hide the take profit and now we're going to give the finishing touches to"
+    },
+    {
+      "start": 3834.08,
+      "end": 3843.84,
+      "text": " our e a so let's go back up and we're going to write a function here before the symbol related functions"
+    },
+    {
+      "start": 3844.64,
+      "end": 3851.04,
+      "text": " which is going to be the periodic update and this is where we're getting the m2l data and variable"
+    },
+    {
+      "start": 3851.04,
+      "end": 3856.96,
+      "text": " we create one we put the time current into that so that we can get the minute and the hours the current"
+    },
+    {
+      "start": 3857.04,
+      "end": 3866.96,
+      "text": " time for it becomes minute plus hour times 100 so 1430 for example becomes 1430 like this and then"
+    },
+    {
+      "start": 3866.96,
+      "end": 3874.8,
+      "text": " if we are not in a tester or optimization then in that case we refresh both the time frames main time frame"
+    },
+    {
+      "start": 3874.8,
+      "end": 3881.6,
+      "text": " and the opio time frame and then we check for closing conditions on every periodic update then we check"
+    },
+    {
+      "start": 3881.68,
+      "end": 3887.7599999999998,
+      "text": " for check and close grid and then we check for the main update which is going to be only one so"
+    },
+    {
+      "start": 3887.7599999999998,
+      "end": 3893.2799999999997,
+      "text": " unless the last minute update it is not if if last minute update is not equal to the current time code"
+    },
+    {
+      "start": 3893.2799999999997,
+      "end": 3900.08,
+      "text": " then in that case we're going to check if the current time has become 60 seconds bigger than the last"
+    },
+    {
+      "start": 3900.08,
+      "end": 3905.52,
+      "text": " time or check and we're not in a tester we're not in the optimization so we set the last time or"
+    },
+    {
+      "start": 3905.52,
+      "end": 3910.8,
+      "text": " those two time current so that the next time it comes back able have to wait another 60 seconds"
+    },
+    {
+      "start": 3911.36,
+      "end": 3917.68,
+      "text": " and then we refresh and then we check the drawdowns and then we check that trading is allowed it's not a"
+    },
+    {
+      "start": 3917.68,
+      "end": 3924.48,
+      "text": " tester it's not optimization and trading is allowed then we're going to modif check and open the grid orders"
+    },
+    {
+      "start": 3924.48,
+      "end": 3934.32,
+      "text": " modify and then we're going to set the last update in minute to the current time code so that next time"
+    },
+    {
+      "start": 3934.7200000000003,
+      "end": 3940.32,
+      "text": " it needs to be 60 seconds before so only once per minute so this is our periodic update"
+    },
+    {
+      "start": 3940.96,
+      "end": 3948.7200000000003,
+      "text": " because our on tick function the first thing it does it checks if it is a new bar on the main time frame"
+    },
+    {
+      "start": 3948.7200000000003,
+      "end": 3955.84,
+      "text": " so it's every 15 minutes so this is our periodic update and then we come back to the on tick"
+    },
+    {
+      "start": 3955.92,
+      "end": 3964.56,
+      "text": " and here after closing this while we're still in the symbol we update for the opioid time frame as well"
+    },
+    {
+      "start": 3966.2400000000002,
+      "end": 3973.28,
+      "text": " so now here we were checking for the main time frame and now we're going to check for the opioid time"
+    },
+    {
+      "start": 3973.28,
+      "end": 3981.04,
+      "text": " frame as well if the new bar time is smaller than or equal to the opioid time frame update then in that"
+    },
+    {
+      "start": 3981.84,
+      "end": 3990.96,
+      "text": " the new opioid bar is false otherwise the new opioid is true and we set the last opioid time frame"
+    },
+    {
+      "start": 3990.96,
+      "end": 3998.88,
+      "text": " update to the current bars opening time from the opioid time frame now if it is true then we reset the"
+    },
+    {
+      "start": 3998.88,
+      "end": 4007.44,
+      "text": " opioid triggered to false and then we add periodic update so this is our on tick function now which was"
+    },
+    {
+      "start": 4007.44,
+      "end": 4013.92,
+      "text": " initially we were doing we were working with just the main time frame by here now we are adding"
+    },
+    {
+      "start": 4013.92,
+      "end": 4022.7200000000003,
+      "text": " the opioid time frame as well and then in the end after adding the opioid time frame then we add"
+    },
+    {
+      "start": 4022.7200000000003,
+      "end": 4033.2000000000003,
+      "text": " the periodic update and then here in the initialization we set the event timer to 5 seconds so let's"
+    },
+    {
+      "start": 4033.2000000000003,
+      "end": 4042.4,
+      "text": " write the on timer function as well which is not a complicated one we say if it is tester or"
+    },
+    {
+      "start": 4042.4,
+      "end": 4049.36,
+      "text": " optimization but not real trading then just return because there is no on timer otherwise last time"
+    },
+    {
+      "start": 4049.36,
+      "end": 4056.0000000000005,
+      "text": " magic becomes time current and then loop through the currencies and refresh the main time frame"
+    },
+    {
+      "start": 4056.0,
+      "end": 4064.64,
+      "text": " and refresh the opioid time frame and then I compile and we have an error here is new opioid bar"
+    },
+    {
+      "start": 4064.64,
+      "end": 4076.0,
+      "text": " because we did put initially the is new bar main time frame but we didn't add the is new bar opioid so"
+    },
+    {
+      "start": 4076.0,
+      "end": 4082.16,
+      "text": " now we're adding the new opioid bar refreshing as well so in that case we also need to write the"
+    },
+    {
+      "start": 4082.1600000000003,
+      "end": 4092.4800000000005,
+      "text": " bowl here create the variable by compile everything is fine now one last addition is that here"
+    },
+    {
+      "start": 4092.4800000000005,
+      "end": 4100.240000000001,
+      "text": " when you're going to be testing you will get the test on outcat so whatever currency you select here that is"
+    },
+    {
+      "start": 4100.240000000001,
+      "end": 4108.88,
+      "text": " the one which is going to run here but what if you wanted to test for all the currencies at the same time"
+    },
+    {
+      "start": 4108.88,
+      "end": 4117.28,
+      "text": " so let's go up to our sections on the global input and here we're going to add one more input group"
+    },
+    {
+      "start": 4117.28,
+      "end": 4125.68,
+      "text": " which is going to say test all currencies automatically as false but let's just say that this"
+    },
+    {
+      "start": 4125.68,
+      "end": 4134.24,
+      "text": " can slow down the tester and we can go create the header as tester settings so the user can"
+    },
+    {
+      "start": 4134.24,
+      "end": 4141.44,
+      "text": " select whether he wants to only run it on the currency he has selected or all the currencies"
+    },
+    {
+      "start": 4142.08,
+      "end": 4150.48,
+      "text": " which are here and then we go down to our parts and initialize the symbols and here we were checking that"
+    },
+    {
+      "start": 4150.48,
+      "end": 4157.28,
+      "text": " if the symbol count is greater than 0 and it is not mql tester then in that case we are in the live"
+    },
+    {
+      "start": 4157.28,
+      "end": 4164.639999999999,
+      "text": " environment so we do all of this but otherwise just use one symbol so now we're going to enhance this"
+    },
+    {
+      "start": 4165.28,
+      "end": 4170.96,
+      "text": " to so we're still checking that the symbol count is more than one otherwise is just one symbol but then"
+    },
+    {
+      "start": 4170.96,
+      "end": 4182.639999999999,
+      "text": " now we say that if and this has an end condition so the second condition to check is that it is not mql tester"
+    },
+    {
+      "start": 4183.200000000001,
+      "end": 4191.200000000001,
+      "text": " meaning it's live or it is test all currencies is true and it's not optimization so what's"
+    },
+    {
+      "start": 4191.200000000001,
+      "end": 4197.280000000001,
+      "text": " going to happen here is that if the symbol is more than 0 which it needs to be otherwise you're not doing"
+    },
+    {
+      "start": 4197.280000000001,
+      "end": 4203.76,
+      "text": " a multi currency test and then we check that if it is not the tester meaning it's a live environment"
+    },
+    {
+      "start": 4203.76,
+      "end": 4212.240000000001,
+      "text": " then do the parsing and initialization of the symbols otherwise if it is tester then check that"
+    },
+    {
+      "start": 4212.32,
+      "end": 4219.2,
+      "text": " all currencies are true and it's not optimization because in optimization is still we do not want"
+    },
+    {
+      "start": 4219.2,
+      "end": 4224.96,
+      "text": " to do it by all three currencies at the same time we only want to do it one currency at the time but if the"
+    },
+    {
+      "start": 4224.96,
+      "end": 4231.12,
+      "text": " test all currencies is true then we still need to check that it's not optimization so we write this here as"
+    },
+    {
+      "start": 4231.12,
+      "end": 4239.599999999999,
+      "text": " well so I'm going to comment this out let's compile and now if we go back we will see here that test all"
+    },
+    {
+      "start": 4239.68,
+      "end": 4246.320000000001,
+      "text": " currencies in the tester which if it is false then we should still see one currency which is the out"
+    },
+    {
+      "start": 4246.320000000001,
+      "end": 4255.4400000000005,
+      "text": " cat and the trades are opening but if it is turned to true now we should see all three currencies and"
+    },
+    {
+      "start": 4255.4400000000005,
+      "end": 4261.68,
+      "text": " this is what you're seeing so it's out cat our new Zealand and new Zealand cat all three currencies"
+    },
+    {
+      "start": 4261.76,
+      "end": 4268.64,
+      "text": " the cell trade on out cat now we have the position on new Zealand cat as well so let's look at"
+    },
+    {
+      "start": 4268.64,
+      "end": 4278.320000000001,
+      "text": " out new Zealand as well if we get a trade here as well and now we have a trade here as well so if I pause"
+    },
+    {
+      "start": 4278.320000000001,
+      "end": 4285.12,
+      "text": " it and go to the history then we have on Australian New Zealand dollar we have one new Zealand dollar"
+    },
+    {
+      "start": 4285.12,
+      "end": 4297.04,
+      "text": " and cat and the third one should be new seal or new Zealand dollar and here we have the out new"
+    },
+    {
+      "start": 4297.04,
+      "end": 4304.16,
+      "text": " Zealand as well so all three currencies are now interested at the same time so this is it"
+    },
+    {
+      "start": 4306.0,
+      "end": 4313.5199999999995,
+      "text": " and no it was a very long effort 2700 codes if you have written this then congrats you"
+    },
+    {
+      "start": 4314.4800000000005,
+      "end": 4320.240000000001,
+      "text": " relations and then first in the next video we're going to write the coding for the panel"
+    },
+    {
+      "start": 4320.8,
+      "end": 4326.8,
+      "text": " and then we're going to come back with another video to explain the great level to start"
+    },
+    {
+      "start": 4326.8,
+      "end": 4333.120000000001,
+      "text": " greater than one during your testing or my testing if you find anything which is still like it doesn't"
+    },
+    {
+      "start": 4333.120000000001,
+      "end": 4340.160000000001,
+      "text": " work put it in the comments below so that I take a look at that and then I'll share in another video"
+    },
+    {
+      "start": 4340.16,
+      "end": 4345.68,
+      "text": " if there are any modification for corrections that are required for the year I mean all together it's"
+    },
+    {
+      "start": 4345.68,
+      "end": 4354.24,
+      "text": " 2007 and it lines so the chances of something missing somewhere is still there but this is the functional"
+    },
+    {
+      "start": 4354.24,
+      "end": 4361.44,
+      "text": " year as it is and now in the next video we're going to look at writing the codes for the panel so until next"
+    },
+    {
+      "start": 4361.4400000000005,
+      "end": 4371.4400000000005,
+      "text": " time guys stay safe and trade safe"
+    }
+  ]
+}

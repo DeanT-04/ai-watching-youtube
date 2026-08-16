@@ -1,0 +1,830 @@
+{
+ "group": 8,
+ "n_frames": 3,
+ "t_start": 291.0,
+ "t_end": 293.0,
+ "consensus_lines": {
+  "235": {
+   "text": "//| Get the order type time as string |",
+   "votes": 3
+  },
+  "237": {
+   "text": "string CTrade: :RequestTypeTimeDescription(void) const",
+   "votes": 3
+  },
+  "238": {
+   "text": "{",
+   "votes": 2
+  },
+  "239": {
+   "text": "string str;",
+   "votes": 3
+  },
+  "240": {
+   "text": "//--- l",
+   "votes": 2
+  },
+  "241": {
+   "text": "FormatOrderTypeTime(str,m_request.type_time) ;",
+   "votes": 3
+  },
+  "243": {
+   "text": "return(str);",
+   "votes": 3
+  },
+  "244": {
+   "text": "}",
+   "votes": 3
+  },
+  "246": {
+   "text": "//| Get the result structure |",
+   "votes": 3
+  },
+  "247": {
+   "text": "//+---------------- == oo en nnn nn enn ene nent",
+   "votes": 3
+  },
+  "248": {
+   "text": "void CTrade: :Result(MqlTradeResult &result) const",
+   "votes": 3
+  },
+  "249": {
+   "text": "{",
+   "votes": 3
+  },
+  "250": {
+   "text": "result.retcode =m_result.retcode;",
+   "votes": 3
+  },
+  "251": {
+   "text": "result.deal =m_result.deal;",
+   "votes": 3
+  },
+  "252": {
+   "text": "result.order =m_result.order;",
+   "votes": 3
+  },
+  "253": {
+   "text": "result.volume =m_result.volume;",
+   "votes": 3
+  },
+  "254": {
+   "text": "result.price =m_result.price;",
+   "votes": 3
+  },
+  "255": {
+   "text": "result.bid =m_result.bid;",
+   "votes": 3
+  },
+  "256": {
+   "text": "result.ask =m_result.ask;",
+   "votes": 3
+  },
+  "257": {
+   "text": "result.comment =m_result.comment;",
+   "votes": 3
+  },
+  "258": {
+   "text": "result.request_id=m_result.request_id;",
+   "votes": 3
+  },
+  "259": {
+   "text": "result.retcode_external=m_result.retcode_external;",
+   "votes": 3
+  },
+  "261": {
+   "text": "//+--------------------------------------------------------------- +--+",
+   "votes": 3
+  },
+  "262": {
+   "text": "//| Get the retcode value as string |",
+   "votes": 3
+  },
+  "268": {
+   "text": "+}",
+   "votes": 1
+  }
+ },
+ "support": {
+  "235": [
+   {
+    "frame": 0,
+    "text": "//| Get the order type time as string |"
+   },
+   {
+    "frame": 1,
+    "text": "//| Get the order type time as string |"
+   },
+   {
+    "frame": 2,
+    "text": "//| Get the order type time as string |"
+   }
+  ],
+  "237": [
+   {
+    "frame": 0,
+    "text": "string CTrade: :RequestTypeTimeDescription(void) const"
+   },
+   {
+    "frame": 1,
+    "text": "string CTrade: :RequestTypeTimeDescription(void) const"
+   },
+   {
+    "frame": 2,
+    "text": "string CTrade::RequestTypeTimeDescription(void) const"
+   }
+  ],
+  "238": [
+   {
+    "frame": 0,
+    "text": "{"
+   },
+   {
+    "frame": 1,
+    "text": "{"
+   }
+  ],
+  "239": [
+   {
+    "frame": 0,
+    "text": "string str;"
+   },
+   {
+    "frame": 1,
+    "text": "string str;"
+   },
+   {
+    "frame": 2,
+    "text": "string str;"
+   }
+  ],
+  "240": [
+   {
+    "frame": 0,
+    "text": "//--- l"
+   },
+   {
+    "frame": 1,
+    "text": "//--- l"
+   }
+  ],
+  "241": [
+   {
+    "frame": 0,
+    "text": "FormatOrderTypeTime(str,m_request.type_time) ;"
+   },
+   {
+    "frame": 1,
+    "text": "FormatOrderTypeTime(str,m_request.type_ time) ;"
+   },
+   {
+    "frame": 2,
+    "text": "FormatOrderTypeTime(str,m_request.type_time) ;"
+   }
+  ],
+  "243": [
+   {
+    "frame": 0,
+    "text": "return(str);"
+   },
+   {
+    "frame": 1,
+    "text": "return(str);"
+   },
+   {
+    "frame": 2,
+    "text": "return(str);"
+   }
+  ],
+  "244": [
+   {
+    "frame": 0,
+    "text": "1}"
+   },
+   {
+    "frame": 1,
+    "text": "}"
+   },
+   {
+    "frame": 2,
+    "text": "}"
+   }
+  ],
+  "246": [
+   {
+    "frame": 0,
+    "text": "//| Get the result structure |"
+   },
+   {
+    "frame": 1,
+    "text": "//| Get the result structure |"
+   },
+   {
+    "frame": 2,
+    "text": "//| Get the result structure |"
+   }
+  ],
+  "247": [
+   {
+    "frame": 0,
+    "text": "//+---------------- == =o nn nnn nnn ene nen nt"
+   },
+   {
+    "frame": 1,
+    "text": "//+---------------- == oo en nnn nn enn ene nent"
+   },
+   {
+    "frame": 2,
+    "text": "| /+------------- =~ =o on nn nn nn nnn nen nnn en nnn nent"
+   }
+  ],
+  "248": [
+   {
+    "frame": 0,
+    "text": "void CTrade: :Result(MqlTradeResult &result) const"
+   },
+   {
+    "frame": 1,
+    "text": "void CTrade: :Result(MqlTradeResult &result) const"
+   },
+   {
+    "frame": 2,
+    "text": "void CTrade: :Result(MqlTradeResult &result) const"
+   }
+  ],
+  "249": [
+   {
+    "frame": 0,
+    "text": "{"
+   },
+   {
+    "frame": 1,
+    "text": "{"
+   },
+   {
+    "frame": 2,
+    "text": "{"
+   }
+  ],
+  "250": [
+   {
+    "frame": 0,
+    "text": "result.retcode =m_result.retcode;"
+   },
+   {
+    "frame": 1,
+    "text": "result.retcode =m_result.retcode;"
+   },
+   {
+    "frame": 2,
+    "text": "result.retcode =m_result.retcode;"
+   }
+  ],
+  "251": [
+   {
+    "frame": 0,
+    "text": "result.deal =m_result.deal;"
+   },
+   {
+    "frame": 1,
+    "text": "result.deal =m_result.deal;"
+   },
+   {
+    "frame": 2,
+    "text": "result.deal =m_result.deal;"
+   }
+  ],
+  "252": [
+   {
+    "frame": 0,
+    "text": "result.order =m_result.order;"
+   },
+   {
+    "frame": 1,
+    "text": "result.order =m_result.order;"
+   },
+   {
+    "frame": 2,
+    "text": "result.order =m_result.order;"
+   }
+  ],
+  "253": [
+   {
+    "frame": 0,
+    "text": "result.volume =m_result.volume;"
+   },
+   {
+    "frame": 1,
+    "text": "result.volume =m_result.volume;"
+   },
+   {
+    "frame": 2,
+    "text": "result.volume =m_result.volume;"
+   }
+  ],
+  "254": [
+   {
+    "frame": 0,
+    "text": "result.price =m_result.price;"
+   },
+   {
+    "frame": 1,
+    "text": "result.price =m_result.price;"
+   },
+   {
+    "frame": 2,
+    "text": "result.price =m_result.price;"
+   }
+  ],
+  "255": [
+   {
+    "frame": 0,
+    "text": "result.bid =m_result.bid;"
+   },
+   {
+    "frame": 1,
+    "text": "result.bid =m_result.bid;"
+   },
+   {
+    "frame": 2,
+    "text": "result.bid =m_result.bid;"
+   }
+  ],
+  "256": [
+   {
+    "frame": 0,
+    "text": "result.ask =m_result.ask;"
+   },
+   {
+    "frame": 1,
+    "text": "result.ask =m_result.ask;"
+   },
+   {
+    "frame": 2,
+    "text": "result.ask =m_result.ask;"
+   }
+  ],
+  "257": [
+   {
+    "frame": 0,
+    "text": "result.comment =m_result.comment;"
+   },
+   {
+    "frame": 1,
+    "text": "result.comment =m_result.comment;"
+   },
+   {
+    "frame": 2,
+    "text": "result.comment =m_result.comment;"
+   }
+  ],
+  "258": [
+   {
+    "frame": 0,
+    "text": "result.request_id=m_result.request_id;"
+   },
+   {
+    "frame": 1,
+    "text": "result.request_id=m_result.request_id;"
+   },
+   {
+    "frame": 2,
+    "text": "result.request_id=m_result.request_id;"
+   }
+  ],
+  "259": [
+   {
+    "frame": 0,
+    "text": "result.retcode_external=m_result.retcode_external;"
+   },
+   {
+    "frame": 1,
+    "text": "result.retcode_external=m_result.retcode_external;"
+   },
+   {
+    "frame": 2,
+    "text": "result.retcode_external=m_result.retcode_external;"
+   }
+  ],
+  "261": [
+   {
+    "frame": 0,
+    "text": "//+--------------------------------------------------------------- +--+"
+   },
+   {
+    "frame": 1,
+    "text": "//+--------------------------------------------------------------- +--+"
+   },
+   {
+    "frame": 2,
+    "text": "//+------------------------------------------------------------------4"
+   }
+  ],
+  "262": [
+   {
+    "frame": 0,
+    "text": "//| Get the retcode value as string |"
+   },
+   {
+    "frame": 1,
+    "text": "//| Get the retcode value as string |"
+   },
+   {
+    "frame": 2,
+    "text": "//| Get the retcode value as string |"
+   }
+  ],
+  "268": [
+   {
+    "frame": 2,
+    "text": "+}"
+   }
+  ]
+ },
+ "unanchored_count": 21,
+ "per_frame": [
+  {
+   "t": 291.0,
+   "raw": [
+    [
+     "=a | Urnv Y\u2014 | yw ax | a | \\\u00a5=} Compile I] : J | 4 \u00a2 | * History => Realtime | Ww) | SE WL (ahi | \\S Welcome",
+     53.634
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * * | Trade.mqh X st",
+     66.205
+    ],
+    [
+     "235 //| Get the order type time as string |",
+     88.9
+    ],
+    [
+     "Bey | [$2 == 252s sss ssc s scene ss esssssssessssessesesssssesssesssssssssssssst",
+     15.373
+    ],
+    [
+     "237 string CTrade: :RequestTypeTimeDescription(void) const",
+     85.476
+    ],
+    [
+     "238 {",
+     70.62
+    ],
+    [
+     "239 string str;",
+     96.679
+    ],
+    [
+     "240 //--- l",
+     73.97
+    ],
+    [
+     "241 FormatOrderTypeTime(str,m_request.type_time) ;",
+     87.932
+    ],
+    [
+     "242) / /---",
+     51.378
+    ],
+    [
+     "243 return(str);",
+     93.027
+    ],
+    [
+     "244 1}",
+     40.788
+    ],
+    [
+     "BAS | [possess snes sess sess sess sessssssssssssesssssssssscsssssssesesssssssh",
+     20.795
+    ],
+    [
+     "246 //| Get the result structure |",
+     92.008
+    ],
+    [
+     "247 //+---------------- == =o nn nnn nnn ene nen nt",
+     27.466
+    ],
+    [
+     "248 void CTrade: :Result(MqlTradeResult &result) const",
+     78.048
+    ],
+    [
+     "249 {",
+     78.417
+    ],
+    [
+     "250 result.retcode =m_result.retcode;",
+     84.458
+    ],
+    [
+     "251 result.deal =m_result.deal;",
+     91.83
+    ],
+    [
+     "252 result.order =m_result.order;",
+     93.071
+    ],
+    [
+     "253 result.volume =m_result.volume;",
+     93.332
+    ],
+    [
+     "254 result.price =m_result.price;",
+     92.151
+    ],
+    [
+     "255 result.bid =m_result.bid;",
+     93.196
+    ],
+    [
+     "256 result.ask =m_result.ask;",
+     92.256
+    ],
+    [
+     "257 result.comment =m_result.comment;",
+     86.313
+    ],
+    [
+     "258 result.request_id=m_result.request_id;",
+     93.795
+    ],
+    [
+     "259 result.retcode_external=m_result.retcode_external;",
+     94.089
+    ],
+    [
+     "26@ +}",
+     28.716
+    ],
+    [
+     "261 //+--------------------------------------------------------------- +--+",
+     30.898
+    ],
+    [
+     "262 //| Get the retcode value as string |",
+     92.401
+    ],
+    [
+     "Bey | | bo - = 2 os sass assess s esas ssee cscs secs escs cscs sssessssesesesessscssss}",
+     18.744
+    ]
+   ]
+  },
+  {
+   "t": 292.0,
+   "raw": [
+    [
+     "=a | Urnv Y\u2014 | yw ax | a | \\\u00a5=} Compile I] : J | 4 \u00a2 | * History => Realtime | Ww) | SE Lp (ahi | \\S Welcome",
+     54.136
+    ],
+    [
+     "235 //| Get the order type time as string |",
+     88.813
+    ],
+    [
+     "Bey | [$2 == 252s sss ssc s scene ss esssssssessssessesesssssesssesssssssssssssst",
+     15.373
+    ],
+    [
+     "237 string CTrade: :RequestTypeTimeDescription(void) const",
+     77.639
+    ],
+    [
+     "238 {",
+     74.336
+    ],
+    [
+     "239 string str;",
+     96.679
+    ],
+    [
+     "240 //--- l",
+     73.97
+    ],
+    [
+     "241 FormatOrderTypeTime(str,m_request.type_ time) ;",
+     51.062
+    ],
+    [
+     "242) / /---",
+     44.291
+    ],
+    [
+     "243 return(str);",
+     93.096
+    ],
+    [
+     "244 }",
+     62.173
+    ],
+    [
+     "BAS | [pom assoc snes sess sass ance sessssssssssssesssssesssscsssssssesssssssssh",
+     16.436
+    ],
+    [
+     "246 //| Get the result structure |",
+     91.175
+    ],
+    [
+     "247 //+---------------- == oo en nnn nn enn ene nent",
+     29.458
+    ],
+    [
+     "248 void CTrade: :Result(MqlTradeResult &result) const",
+     77.456
+    ],
+    [
+     "249 {",
+     78.417
+    ],
+    [
+     "250 result.retcode =m_result.retcode;",
+     84.729
+    ],
+    [
+     "251 result.deal =m_result.deal;",
+     91.876
+    ],
+    [
+     "252 result.order =m_result.order;",
+     93.071
+    ],
+    [
+     "253 result.volume =m_result.volume;",
+     93.377
+    ],
+    [
+     "254 result.price =m_result.price;",
+     92.384
+    ],
+    [
+     "255 result.bid =m_result.bid;",
+     93.189
+    ],
+    [
+     "256 result.ask =m_result.ask;",
+     92.238
+    ],
+    [
+     "257 result.comment =m_result.comment;",
+     85.188
+    ],
+    [
+     "258 result.request_id=m_result.request_id;",
+     93.673
+    ],
+    [
+     "259 result.retcode_external=m_result.retcode_external;",
+     93.883
+    ],
+    [
+     "26@ +}",
+     28.716
+    ],
+    [
+     "261 //+--------------------------------------------------------------- +--+",
+     30.898
+    ],
+    [
+     "262 //| Get the retcode value as string |",
+     91.877
+    ],
+    [
+     "Bey | | bo - = 2 oso sess sass s esas ssee cscs secs e ses sscssssessssesesesessscssss}",
+     17.38
+    ]
+   ]
+  },
+  {
+   "t": 293.0,
+   "raw": [
+    [
+     "=| | Urey + | A ax | Sa | \\\u00a5| Compile ly | y | | * History Realtime | | KE (a) | > Welcome",
+     54.951
+    ],
+    [
+     "WakaWaka by MrCapFree.mq5 * | Trade.mqh BS",
+     61.361
+    ],
+    [
+     "235 //| Get the order type time as string |",
+     82.794
+    ],
+    [
+     "BoeH | [$= == = 2 sass acces asses ssa cesses essa sess sa cesses sesssssssssssssssssst",
+     20.174
+    ],
+    [
+     "237 string CTrade::RequestTypeTimeDescription(void) const",
+     84.47
+    ],
+    [
+     "23a) {",
+     69.204
+    ],
+    [
+     "239 string str;",
+     95.202
+    ],
+    [
+     "Zoe | /=-- |",
+     35.612
+    ],
+    [
+     "241 FormatOrderTypeTime(str,m_request.type_time) ;",
+     91.109
+    ],
+    [
+     "242) / /---",
+     37.943
+    ],
+    [
+     "243 return(str);",
+     93.655
+    ],
+    [
+     "244 }",
+     68.814
+    ],
+    [
+     "Bas | [boas ss 2 osm a sass s sn ss sss e cesses sesssssesesssssesesssssssssssssessssss+",
+     8.394
+    ],
+    [
+     "246 //| Get the result structure |",
+     91.768
+    ],
+    [
+     "247 | /+------------- =~ =o on nn nn nn nnn nen nnn en nnn nent",
+     28.541
+    ],
+    [
+     "248 void CTrade: :Result(MqlTradeResult &result) const",
+     83.216
+    ],
+    [
+     "249 {",
+     83.064
+    ],
+    [
+     "250 result.retcode =m_result.retcode;",
+     74.584
+    ],
+    [
+     "251 result.deal =m_result.deal;",
+     79.469
+    ],
+    [
+     "252 result.order =m_result.order;",
+     92.478
+    ],
+    [
+     "253 result.volume =m_result.volume;",
+     93.105
+    ],
+    [
+     "254 result.price =m_result.price;",
+     92.404
+    ],
+    [
+     "255 result.bid =m_result.bid;",
+     93.4
+    ],
+    [
+     "256 result.ask =m_result.ask;",
+     90.963
+    ],
+    [
+     "257 result.comment =m_result.comment;",
+     83.628
+    ],
+    [
+     "258 result.request_id=m_result.request_id;",
+     93.49
+    ],
+    [
+     "259 result.retcode_external=m_result.retcode_external;",
+     93.777
+    ],
+    [
+     "268 +}",
+     29.272
+    ],
+    [
+     "261 //+------------------------------------------------------------------4",
+     64.924
+    ],
+    [
+     "262 //| Get the retcode value as string |",
+     83.89
+    ],
+    [
+     "PSS",
+     11.471
+    ]
+   ]
+  }
+ ]
+}

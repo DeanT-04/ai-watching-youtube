@@ -1,0 +1,11 @@
+{
+  "group": 37,
+  "n_frames": 3,
+  "t_start": 480.0,
+  "t_end": 482.0,
+  "source": "paddle+tesseract (consensus x3)",
+  "valid": false,
+  "text": ">\nLotsBalance = 1,\nLotsDepositLoad = 6,\nFixedLots = 0\n};\nenum A11owBuySe11Enum {\nAllowSell2 = 2,\nAllowBuy1 = 1,\nAllowBuySell = 0\n};\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3,\nIgnoreNewSignals = 2,\ncloseStopTradingUnti1Restart = 1,\nc1oseStopTradingFor24h = 0\n};\nenum eDrawdowncalculation {\nThisStrategy = 1,\nTheAccount = 0\n};\n48int OnInit() {\nint OnInit() {\nWakaWaka by MrCapFree.mq5 * *",
+  "error": null,
+  "secs": 29.5
+}

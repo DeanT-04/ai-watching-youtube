@@ -1,0 +1,11 @@
+{
+  "group": 21,
+  "n_frames": 1,
+  "t_start": 460.0,
+  "t_end": 460.0,
+  "source": "paddle+tesseract",
+  "valid": false,
+  "text": "\u2014\u2014\n_\n(ar = is\nJ = ws a\nmeat 7\n: ' Po |\noa\n7 ey",
+  "error": null,
+  "secs": 3.0
+}

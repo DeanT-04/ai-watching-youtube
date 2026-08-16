@@ -1,0 +1,28 @@
+{
+ "group": 23,
+ "n_frames": 1,
+ "t_start": 462.0,
+ "t_end": 462.0,
+ "consensus_lines": {},
+ "support": {},
+ "unanchored_count": 3,
+ "per_frame": [
+  {
+   "t": 462.0,
+   "raw": [
+    [
+     ": $ r 4 \u2018",
+     36.016
+    ],
+    [
+     "SE",
+     20.858
+    ],
+    [
+     ", \"",
+     29.477
+    ]
+   ]
+  }
+ ]
+}

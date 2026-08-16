@@ -1,0 +1,11 @@
+{
+  "group": 0,
+  "n_frames": 7,
+  "t_start": 223.0,
+  "t_end": 229.0,
+  "source": "paddle+tesseract (consensus x7)",
+  "valid": false,
+  "text": "Compile\n\u00bb\n#property link \u201chttps: //www.MrCapFree.com\"\n11int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n15}\n}\n17}\n}\nvoid OnDeinit(const int reason) {\n21}\n23}\n24void OnTick(){\nvoid OnTick() {\nvoid OnTick() {\n28}\n}\n//",
+  "error": null,
+  "secs": 90.9
+}

@@ -1,0 +1,11 @@
+{
+  "group": 17,
+  "n_frames": 8,
+  "t_start": 362.0,
+  "t_end": 379.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "Month\nPi et | : 1.14850\nMinutes\nLVL\nMar 22:00\nMar 06:00\nMar 06:00\n22:30\nxpected lot0.01\nMar2026",
+  "error": null,
+  "secs": 104.6
+}

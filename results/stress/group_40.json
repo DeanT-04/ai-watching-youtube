@@ -1,0 +1,11 @@
+{
+  "group": 40,
+  "n_frames": 8,
+  "t_start": 486.0,
+  "t_end": 522.0,
+  "source": "paddle+tesseract (consensus x8)",
+  "valid": false,
+  "text": "};\nstruct SymbolInformation\nstring\ndatetime\ndatetime\nint\nbool\nbool\ndatetime\ndatetime\ndouble\nbool\nbool\ndouble\ndouble\nint\nint\nPatternValue;\ndouble\nbool\nbool\nbool\nint\ndouble\ndouble\ndouble\ndouble\ndouble\nLastBuyGridTime;",
+  "error": null,
+  "secs": 78.1
+}
