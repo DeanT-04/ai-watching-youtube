@@ -1,0 +1,15 @@
+{
+  "condition": "short-dwell",
+  "frames": [
+    "t_0288.png",
+    "t_0289.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "CTrade constructor/destructor/Request, only 2 frames."
+}

@@ -1,0 +1,21 @@
+{
+  "condition": "long-static",
+  "frames": [
+    "t_0294.png",
+    "t_0301.png",
+    "t_0308.png",
+    "t_0315.png",
+    "t_0323.png",
+    "t_0330.png",
+    "t_0337.png",
+    "t_0344.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "File header (#property, includes, globals) + OnInit/OnDeinit, 8 frames."
+}

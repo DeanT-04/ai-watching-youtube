@@ -1,0 +1,21 @@
+{
+  "condition": "long-static",
+  "frames": [
+    "t_0414.png",
+    "t_0419.png",
+    "t_0425.png",
+    "t_0430.png",
+    "t_0435.png",
+    "t_0440.png",
+    "t_0446.png",
+    "t_0451.png"
+  ],
+  "crop": [
+    345,
+    90,
+    1575,
+    760
+  ],
+  "ground_truth": "ground_truth.mqh",
+  "note": "Four enums (LotSizingEnum, AllowBuySellEnum, eMaxDrawdownAction, eDrawdownCalculation), 8 frames."
+}

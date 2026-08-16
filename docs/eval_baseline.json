@@ -1,0 +1,132 @@
+{
+  "engines": [
+    "tesseract"
+  ],
+  "cases": {
+    "ctrade-init-destructor": {
+      "gt_lines": 24,
+      "out_lines": 25,
+      "recovered_lines": 22,
+      "silent_drops": 2,
+      "line_recovery": 0.9167,
+      "cer": 0.0246,
+      "wer": 0.4167,
+      "balanced_delimiters": {
+        "{}": "2 open vs 0 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x2)",
+      "pipeline_valid": false
+    },
+    "ctrade-request-type-time": {
+      "gt_lines": 20,
+      "out_lines": 25,
+      "recovered_lines": 20,
+      "silent_drops": 0,
+      "line_recovery": 1.0,
+      "cer": 0.0031,
+      "wer": 0.1583,
+      "balanced_delimiters": {},
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x3)",
+      "pipeline_valid": false
+    },
+    "enums-lotsizing": {
+      "gt_lines": 25,
+      "out_lines": 28,
+      "recovered_lines": 25,
+      "silent_drops": 0,
+      "line_recovery": 1.0,
+      "cer": 0.0856,
+      "wer": 0.1907,
+      "balanced_delimiters": {
+        "{}": "4 open vs 0 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x8)",
+      "pipeline_valid": false
+    },
+    "enums-scrolled": {
+      "gt_lines": 22,
+      "out_lines": 24,
+      "recovered_lines": 22,
+      "silent_drops": 0,
+      "line_recovery": 1.0,
+      "cer": 0.0056,
+      "wer": 0.0303,
+      "balanced_delimiters": {
+        "{}": "4 open vs 1 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x8)",
+      "pipeline_valid": false
+    },
+    "file-header-early": {
+      "gt_lines": 10,
+      "out_lines": 18,
+      "recovered_lines": 8,
+      "silent_drops": 2,
+      "line_recovery": 0.8,
+      "cer": 0.0114,
+      "wer": 0.3333,
+      "balanced_delimiters": {
+        "{}": "3 open vs 8 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x7)",
+      "pipeline_valid": false
+    },
+    "file-header-oninit": {
+      "gt_lines": 14,
+      "out_lines": 15,
+      "recovered_lines": 12,
+      "silent_drops": 2,
+      "line_recovery": 0.8571,
+      "cer": 0.0201,
+      "wer": 0.3083,
+      "balanced_delimiters": {
+        "{}": "2 open vs 1 close",
+        "[]": "1 open vs 0 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x8)",
+      "pipeline_valid": false
+    },
+    "struct-no-gutter": {
+      "gt_lines": 30,
+      "out_lines": 2,
+      "recovered_lines": 27,
+      "silent_drops": 3,
+      "line_recovery": 0.9,
+      "cer": 0.0,
+      "wer": 0.0,
+      "balanced_delimiters": {
+        "{}": "2 open vs 0 close"
+      },
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x8)",
+      "pipeline_valid": false
+    },
+    "struct-symbol-information": {
+      "gt_lines": 30,
+      "out_lines": 29,
+      "recovered_lines": 30,
+      "silent_drops": 0,
+      "line_recovery": 1.0,
+      "cer": 0.0313,
+      "wer": 0.0833,
+      "balanced_delimiters": {},
+      "keyword_near_misses": [],
+      "monotonic_line_numbers": true,
+      "pipeline_source": "tesseract (consensus x8)",
+      "pipeline_valid": false
+    }
+  }
+}
