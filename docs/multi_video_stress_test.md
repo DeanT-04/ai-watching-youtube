@@ -89,6 +89,21 @@ The docs' wiring verification explicitly used `create_engine('tesseract')`
 (consensus_eval.md "Follow-up" section), not the pipeline's actual engine list
 `[paddle, tesseract]`.
 
+### FIXED after this report (see `docs/consensus_eval.md` "Bug found by the
+multi-video stress test, fixed after the merge")
+
+`consensus.pair_line_numbers` now keeps the gutter number anchored across
+*all* consecutive content entries until the next standalone number, and joins
+them into one pair — so paddle word-boxes `("47", "string", "SymbolName;")`
+produce `(47, "string SymbolName;")` instead of dropping the tail. Verified
+against the real ensemble output on frame t_0520 (`47: string SymbolName;`,
+`48: datetime LastMainTFUpdate;`, … recovered) and by the full-suite
+regression tests (`test_pair_line_numbers_joins_paddle_word_boxes_under_one_number`
+et al.). The tables below were produced *before* this fix; re-run
+`scripts/stress_test.py` on the current `main` to see the post-fix numbers
+(the new results are in `docs/` — see the 300-frame re-run recorded after
+the fix).
+
 ## Step 3 — two additional videos (Mr. CapFree Parts 3 and 4)
 
 Both are the same MQL5/MetaEditor series as the first video. Both show gutter

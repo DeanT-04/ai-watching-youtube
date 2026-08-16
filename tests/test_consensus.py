@@ -33,6 +33,50 @@ def test_pair_line_numbers_handles_glued_number_and_content():
     ]
 
 
+def test_pair_line_numbers_joins_paddle_word_boxes_under_one_number():
+    """Real observed PaddleOCR shape from the pipeline's ensemble output:
+    the gutter number, the type, and the field name are separate OCR boxes
+    ('47', 'string', 'SymbolName;'). All content entries between two numbers
+    belong to the same gutter line and must be joined into one pair --
+    otherwise the field name is dropped as unanchored (the known bug found
+    in the multi-video stress test).
+    """
+    lines = _lines(
+        "47",
+        "string",
+        "SymbolName;",
+        "48",
+        "datetime",
+        "LastMainTFUpdate;",
+    )
+    paired = pair_line_numbers(lines)
+    assert paired == [
+        (47, OcrText(text="string SymbolName;", confidence=0.9)),
+        (48, OcrText(text="datetime LastMainTFUpdate;", confidence=0.9)),
+    ]
+
+
+def test_pair_line_numbers_joins_only_within_one_number():
+    """Joining must stop at the next standalone number: a fresh number resets
+    the current line, so content after it is not glued to the previous line."""
+    lines = _lines("10", "double", "a;", "11", "int", "b;")
+    paired = pair_line_numbers(lines)
+    assert paired == [
+        (10, OcrText(text="double a;", confidence=0.9)),
+        (11, OcrText(text="int b;", confidence=0.9)),
+    ]
+
+
+def test_reconstruct_paddle_word_boxes_recover_full_line():
+    """End-to-end: two frames whose paddle word-boxes split every line must
+    still recover the full 'type name;' lines after consensus."""
+    frame_a = _lines("47", "string", "SymbolName;", "48", "datetime", "LastMainTFUpdate;")
+    frame_b = _lines("47", "string", "SymbolName;", "48", "datetime", "LastOPOTFUpdate;")
+    result = reconstruct([frame_a, frame_b])
+    assert result.lines[47] == "string SymbolName;"
+    assert result.lines[48] == "datetime LastMainTFUpdate;"
+
+
 def test_pair_line_numbers_content_before_any_number_is_unanchored():
     lines = _lines("stray text", "6", "#property copyright \"Mr CapFree\"")
     paired = pair_line_numbers(lines)

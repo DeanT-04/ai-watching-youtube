@@ -102,6 +102,37 @@ Re-ran the real frames through the *actual* `cli._to_code_block_group`
 28/30-field result as the standalone consensus test, confirming the wiring
 itself, not just the merge algorithm, works against real data.
 
+### Bug found by the multi-video stress test, fixed after the merge
+
+The wiring verification above used tesseract-only (`create_engine('tesseract')`),
+but the **real pipeline runs the paddle+tesseract ensemble** (`cli.pipeline`
+builds `[create_engine('paddle'), create_engine('tesseract')]`). PaddleOCR
+emits word-level boxes: a source line `47 string SymbolName;` arrives as
+three separate OCR entries (`"47"`, `"string"`, `"SymbolName;"`). The original
+separate-shape pairing attached the gutter number to only the **first**
+following content entry and reset the anchor, so `"SymbolName;"` became
+*unanchored* and was dropped by `_to_code_block_group` — the field name
+silently vanished from every multi-frame struct/enum line.
+
+Verified against the real frames through the actual ensemble path (frame
+t_0520: 93 OCR entries → 34 unanchored, including every struct field name)
+and quantified on the full 300-frame batch in
+`docs/multi_video_stress_test.md`: group 40 recovered **0/26 fields with
+type+name intact** (25 bare-type lines) through the real pipeline, while
+tesseract-only consensus recovered 25/26 — proving the names were in the
+frames and the loss was in the pairing logic.
+
+**Fix (`pair_line_numbers`):** the gutter number now stays anchored across
+*all* consecutive content entries until the next standalone number resets it,
+and those entries are joined with a space into one `(number, text)` pair —
+so paddle word-boxes (`"47"`, `"string"`, `"SymbolName;"`) yield
+`(47, "string SymbolName;")` instead of dropping the tail. Added regression
+tests (`test_pair_line_numbers_joins_paddle_word_boxes_under_one_number`,
+`test_pair_line_numbers_joins_only_within_one_number`,
+`test_reconstruct_paddle_word_boxes_recover_full_line`). Re-run of the real
+ensemble path on t_0520 now recovers `47: string SymbolName;`,
+`48: datetime LastMainTFUpdate;`, etc.
+
 ### Mistake caught during this verification, fixed before commit
 
 First version of `_to_code_block_group` appended `merged.unanchored` (OCR

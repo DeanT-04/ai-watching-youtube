@@ -1,0 +1,417 @@
+{
+ "video": "aDWDJrACs7s",
+ "after_fix": true,
+ "total_secs": 1063.0103631019592,
+ "groups": [
+  {
+   "group": 0,
+   "n_frames": 7,
+   "t_start": 223.0,
+   "t_end": 229.0,
+   "source": "paddle+tesseract (consensus x7)",
+   "lines": 19,
+   "text": "Compile\n\u00bb\n#property link \u201chttps: //www.MrCapFree.com\"\n11int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n15}\n}\n17}\n}\nvoid OnDeinit(const int reason) {\n21}\n23}\n24void OnTick(){\nvoid OnTick() {\nvoid OnTick() {\n28} 29// By / [ba aaa a a ass seca sss s sss n sss a se ssssesssssssssssssssssssssssesssssssssst\n}\n//",
+   "error": null
+  },
+  {
+   "group": 1,
+   "n_frames": 8,
+   "t_start": 230.0,
+   "t_end": 249.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 17,
+   "text": "Compile\nb\n#property link \u201chttps: //www.MrCapFree.com\"\n11int OnInit() {.\nint OnInit() {\n14I\nreturn(INIT_SUCCEEDED);\n17}\n}\nvoid OnDeinit(const int reason) {\n23}\n}\n26void OnTick() {\nvoid OnTick()\n30} 31//+\n}\nWakaWaka by MrCapFree.mq5 * * \u20180 CY he allele ataiatalatatatatataiatatatatatatalatatatatatatatetatatetateatatetatatatatetatatatatatatatetatatatateatatetatatans",
+   "error": null
+  },
+  {
+   "group": 2,
+   "n_frames": 8,
+   "t_start": 250.0,
+   "t_end": 278.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 24,
+   "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert\nCompile\n>\n[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t\n#property link \u201chttps: //www.MrCapFree.com\u201d\u2122\n#property version \"1.66\"\n#property strikt\n#property description \u201cWaka Waka EA\"|\nint OnInit() {\n#include <Trade\\Trade.mgh>\nCTrade Trade;\nCPositionInfo posInfo;\nreturn(INIT_SUCCEEDED);\n17int OnInit() {\nint OnInit() {\n20void OnDeinit(const int reason) {\nreturn(INIT_SUCCEEDED);\n23}\nreturn(INIT_SUCCEEDED);\n26}\nvoid OnDeinit(const int reason) {\n28|\n29}\n}",
+   "error": null
+  },
+  {
+   "group": 3,
+   "n_frames": 7,
+   "t_start": 279.0,
+   "t_end": 285.0,
+   "source": "paddle+tesseract (consensus x7)",
+   "lines": 15,
+   "text": "//+----------- 2-2-2 2 enn nn nnn enn nnn nen nen en nn en ert\nss 2) / | WakaWaka by MrCapFree.mg5 | a a\n[| t---- n-ne nn nn nnn nnn en nnn nnn nn nn en nn enn neon t\n#property 1ink\n#property version \"1.6\"\n#property description \u201cWaka Waka EA\"\n#include <Trade\\Trade.mqh>\nTrade;\nCPositionInfo posInfo;\ncOrderInfo ordInfo;\n20int OnInit() {\nreturn(INIT_SUCCEEDED);\n26}\n}\nvoid OnDeinit(const int reason) {",
+   "error": null
+  },
+  {
+   "group": 4,
+   "n_frames": 1,
+   "t_start": 286.0,
+   "t_end": 286.0,
+   "source": "paddle+tesseract",
+   "lines": 83,
+   "text": "J Compile\nHistory\nRealtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\nTrade.mqh\n19}\n28//+\n21// Class CTrade.\n22//\nAppointment: class trade operatians.\n23//\nDerives from class cobject.\n24//\n25 class CTrade : public cObject.\n20\n27protected:\n28\nMq1TradeRequest\nm_request;\n//request deta\n29\nMqlTradeResult\nm_result;\n// result data\n3B\nMq1TradeCheckResult m_check_result;\n// result check data\n31\nbool\nm_async_mode;\n// trade mode\n32\nulong\nm_magic;\n//expert magic number\n35\nulong\nm_deviation;\n//deyiationdefault\n34\nENUM_ORDER_TYPE_FILLING m_type_fi11ing:\n38\nENUM_ACCOUNT_MARGIN_MODE m_margin_mode;\n30\n37\nENUM_LOG_LEVELS\nm_log_level;\n30\n39publicr\n43\nCTrade(void);\n41\n~CTrade(void);\n43\n//---.methods of ecaess to ongtested data\n36\nvoid\nLogLeVel(const ENUM_LOG_LEVELS log_level) { m_log_level=log_level;}\n46\nvoid\nRequest(MqlTradeRequest &request) const;\n33\nENUM_TRADE_REQUEST_ACTIONS RequestAction(void)\nconst { return(m_request.action);\n}\n40\natring\nRequestActionDescription(void) const;\n47\nulong\nRequestMagic(void)\nconst{return(m_request.magic);\n}\n26 [ [t- nnn nn rrr rrr rn nr nnn nnn co rrr rr cs cern n ces rant i\n21//| Class CTrade. |\n22 //| Appointment: Class trade operations. |\n23 //| D\u00e9rives from class CObject. |\n24 | /+-------------------------------------------------------- +--+ ---- == 4+\n26 {\n27 protected:\n3g (f---\n3? ENUM_LOG LEVELS m_log level;",
+   "error": null
+  },
+  {
+   "group": 5,
+   "n_frames": 1,
+   "t_start": 287.0,
+   "t_end": 287.0,
+   "source": "paddle+tesseract",
+   "lines": 98,
+   "text": "Compile\nHistory\nRealtime\nWelcome\nWakaWaka byMrCapFree.mq5 *X\nTrade.mqh\n89\ndouble\nCheckResultMargin(void)\nconst { return(m_check_result.margin);\n186\ndouble\nCheckResultMarginFree(void)\nconst { return(m_check_result.margin_free)j\n87\ndouble\nCheckResultMarginLeve1(void) const { return(m_check_result.margin_level);\n88\nbtring\nCheakResultComment(void)\nconst { return(m_check_result.comment);\n68\ntrade methods\n06\nvoid\nSetAtynsMode(const bool mode)\n{m_async_mode=mode\n191\nvoid\nSetExpertmagicNunber(adnst ulong magic)\n{m_megic=magic;\n182\nVoid\nSetDeriationInPoints(tonst ulong deviation) { m_deviation=deviation;\n193\nvond\n194\nbool\nSetTypehilbingBysymbol(donst string symbol)\n95\nvoid\nSetMginModevoid{cmnSargiqmode=(ENUM_ACcOUNT_MARGIN_MQDE)AccountInfoIntsgaDACOOUNT_MARGIN_MODE)}\n96\nvosking ibs Aeetrange\n97\nbool\nFesitionQpeoicnestostciaglsymbol,onnst ENur_oroer_TypE crden_type,const double volume,\n95\n--ncenstrdogblempricewnoast double s1,const double tp,const string comment= n)\n96\nboo1\nbool\nPositionpdityconst_inng cictet,const double sl,const ddoble tp);\n6\n195\nbaol\nPositionciosalconst ctbiag syobel,oontt iutoug deelastnnsuLoNg_MAx);\n560\nboo1\nPosstiontEose(constiulengitisrtyconst ulagg deviatton=UloHg_MAx);\n100\nbool\nPositioncioseoyscoasthulongrticket,const olong sichet_by)\n101\nbool\nPosationclosePestial(cgnttstring syobol,cons+ double volume,const ulong deviation=JLoNg_Ma)\n102\nbool\nto wethods\nPositionclosePonsiat(consr uiong.tiokst,conet devale wojume,coust ulong deviatian=lll dne_MAs);\n103\nRogltoeewcnpenom order9e\n107\nbool\nDederOpnat.cooatistnugetoymbolconst Etu_oRDer_Typa order_typecatst .double volune,\n109\nEy\nI ccosstddosble limit_pnics.dopat onsbid price,oonor donble sl,const donble tp\n106\nstring\n.ENUm_OpDeRcTYRe_TEmE,cype_time=ORnER_TIME_oTc,const datetine expiration=P,\n180\norders\n3coconstostnangtombent=t)goub\n181\nbeol\nOrderModify(cassttulagestirkatTconstnnoubleebrdde,const nouble blyconst nouble.tp,-\n=\n164\nstri\nF 1ller8conssEnum_Qroen_TrorsTlueutypeetime,const dacebimeetpinetionrcaoacadogbles3coplimit=GJol= z=\n110\nbaol\nOrdenDeletelcnsstlriong tacketo:\nEnst_n.ypeI.t\n=pe aaeo c\n39 a si 5 : :\nigs baal PosLtionClosel,const ctbiae syotel,oastt iulone deslatingauLONG_MAx);",
+   "error": null
+  },
+  {
+   "group": 6,
+   "n_frames": 2,
+   "t_start": 288.0,
+   "t_end": 289.0,
+   "source": "paddle+tesseract (consensus x2)",
+   "lines": 28,
+   "text": "m_type_fi11ing(ORDER_FILLING_FOK),\nm_1og_1eVe1(LOG_LEVEL_ERRORS)\nSetMarginMode(); 164//--- initialize protected data\n//--- initialize protected data\nClearStructures(); 166//- check programm mode\n//--- check programm mode\nif(MQLInfoInteger(ENUM_MQL_INFO_INTEGER::MQL_TESTER))\nm_1og_leve1=LOG_LEVEL_ALL;\nif(MQLInfoInteger(ENUM_MQL_INFO_INTEGER::MQL_OPTIMIZATION))\nm_1og_leve1=LOG_LEVEL_NO;\n172//+ 173//|Destructor 174//+- 175cTrade::~CTrade(void)\n//+------------------------------------------------------------------+\n//| Destructor |\n/ /+------------------------------------ +--+ = 2-2 oot\nCTrade: :~CTrade(void)\n{\n178//+ 180//+\nm_log_level=LOG_LEVEL_NO;\n//| Get the request structure |\n//+------------------------------------------------------------------+\nvoid cTrade::Request(MqlTradeRequest &request) const\n{\nrequest.action =m_request.action;\nrequest.magic =m_request.magic;\nrequest.order =m_request.order;\nrequest.symbol =m_request.symbo1;\nrequest.volume =m_request.volume;\nrequest.price =m_request.price;",
+   "error": null
+  },
+  {
+   "group": 7,
+   "n_frames": 1,
+   "t_start": 290.0,
+   "t_end": 290.0,
+   "source": "paddle+tesseract",
+   "lines": 54,
+   "text": "Compile\nHistory\nRealtime\nWelcome\nWakaWaka by MrCapFree.mq5 *X\nTrade.mqh X\n211\n212//+-\n213//l Get the order type as string\n214//+\n215 string CTrade::RequestTypeDescription(void) const\n216\n217\nstring str;\n218//--\n219\nFormatOrderType(str,(uint)m_request.order);\n220//\n221\nreturn(str);\n222\n223//+\n224//| Get the order type filling as string\n225//+\n226 string CTrade::RequestTypeFillingDescription(void) const\n227\nf\n228\nstring str;\n229//\n230\nFormatOrderTypeFi1ling(str,m_request.type_filling);\n231//-\n232\nreturn(str);\n233\n}\n234//\n235//| Get the order type time as string\n236//\n237 string CTrade::RequestTypeTimeDescription(void) const\n238\n239\nstring str;\n213 //| Get the order type as string |\n214 //+------------------------------------------------ +--+ +--+ = +--+\n215 string CTrade: :RequestTypeDescription(void) const |\n218 //---\n226) //---\n2a7, {\nBe: | / ===\nBate //---\n234 / /+-------------------------------------------------------------- +--+\n235 //| Get the order type time as string |",
+   "error": null
+  },
+  {
+   "group": 8,
+   "n_frames": 3,
+   "t_start": 291.0,
+   "t_end": 293.0,
+   "source": "paddle+tesseract (consensus x3)",
+   "lines": 24,
+   "text": "//| Get the order type time as string |\nstring CTrade::RequestTypeTimeDescription(void) const\nstring str; 240//\n//--- l\nFormatOrderTypeTime(str,m_request.type_time); 242//-\nreturn(str);\n} 245// 246//|Get the result structure 247//+\n//| Get the result structure |\n//+---------------- == oo en nnn nn enn ene nent\nvoid CTrade: :Result(MqlTradeResult &result) const\n{\nresult.retcode =m_result.retcode;\nresult.deal =m_result.deal;\nresult.order =m_result.order;\nresult.volume =m_result.volume;\nresult.price =m_result.price;\nresult.bid =m_result.bid;\nresult.ask =m_result.ask;\nresult.comment =m_result.comment;\nresult.request_id=m_result.request_id;\nresult.retcode_external=m_result.retcode_externa1;\n} 261//+ 262// Get the retcode value as string 263//+\n//+--------------------------------------------------------------- +--+\n//| Get the retcode value as string |",
+   "error": null
+  },
+  {
+   "group": 9,
+   "n_frames": 8,
+   "t_start": 294.0,
+   "t_end": 344.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 18,
+   "text": "//+----------- 2-2-2 nn nn nn nnn nn en nn nn nee eet\nCompile\n2i/ / | WakaWaka by MrCapFree.mg5 |\n/ [t---- nnn nn nnn nnn nnn nnn nn nnn rn rn nnn rn nnn nnn nn nn nn nnn enon t\n#property 1ink\n#property version \"1.606\"\n#property description \u201cWaka Waka EA\"\n#include <Trade\\Trade.mqh>\ncTrade Trade;\nCPositionInfo posInfo;\ncOrderInfo ordInfo;\n20int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n26}\n}\n29void OnDeinit(const int reason) {\nvoid OnDeinit(const int reason) {",
+   "error": null
+  },
+  {
+   "group": 10,
+   "n_frames": 1,
+   "t_start": 345.0,
+   "t_end": 345.0,
+   "source": "paddle+tesseract",
+   "lines": 75,
+   "text": "3 Compile\nE> History\n> Realtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\n1//+\n2//\nWakaWaka by MrCapFree.mq5\n3//l\nMr CapFree\n4//I\nhttps://www.MrCapFree.com\n5//\n6#property copyright\n\"Mr CapFree'\n7#property link\n\"https://www.MrCapFree.com\"\n8#property version\n\"1.00\"\n9#property strict\n10 #property description \"Waka Waka EA\".\n11\n12 #include <Trade\\Trade.mqh>\n13\ncTrade\nTrade;\n14\nCPositionInfo\nposInfo;\n15\ncorderInfo\nordInfo;\n16\n17\nenum LotsizingEnum\n{\n18\nLowRiskPreset = 5,\n//Low Risk Set 20% annual 0.25% load\n19\nMidRiskPreset = 4,\n//Mid Risk Set 40% annual (0.5% load)\n20\nHighRiskPreset = 3,\n//Significant Risk Set 80% annual (1.0% load)\n21\nExtremeRiskPreset = 7,\n//High Risk Set 120% annual 1.5% load)\n22\nLotsEquity = 2,\n//Dynamic Lot based on Equity\n23\nLotsBalance = 1,\n//Dynamic Lot based on Balance\n24\nLotsDepositLoad = 6,\n//Lots based on Deposit load\n25\nFixedLots = 0\n//Fixed Lot\n26\n};\n27\n28|\n29\n-\nV | [tenn nnn nnn rr nnn rrr rrr rn nnn rn nn rn nnn nn ncn c cnc n crn nant\n2A) / | WakaWaka by MrCapFree.mg5 |\nBf [tern rrr rrr rrr rn nnn cnr n cnc n ccc cnc ccc ccc nent\n7 #property link \u201chttps: //www.MrCapFree.com\"\u2122\n8 #property version \"1.606\"\n10 #property description \u201cWaka Waka EA\"\n12 #include <Trade\\Trade.mgh>\n28 |\nq D",
+   "error": null
+  },
+  {
+   "group": 11,
+   "n_frames": 5,
+   "t_start": 346.0,
+   "t_end": 350.0,
+   "source": "paddle+tesseract (consensus x5)",
+   "lines": 20,
+   "text": "Compile\n>\n#property link \u201chttps: //www.MrCapFree.com\u201d\n#property description \u201cWaka Waka EA\"\n#include <Trade\\Trade.mqh>\nCTrade Trade;\nCPositionInfo posInfo;\ncOrderInfo ordInfo;\nenum LotSizingEnum\nLowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)\nMidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)\nHighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)\nExtremeRiskPreset = 7, //High Risk Set 120% annua1 1.5% load\nLotsEquity = 2, //Dynamic Lot based on Equity\nLotsBalance = 1,. //Dynamic Lot based on Balance\nLotsDepositLoad = 6, //Lots based on Deposit load\nFixedLots = 0 //Fixed Lot\n};\n31int OnInit() {\nWakaWaka by MrCapFree.mq5 * * A EH be oll alatataiatatatatatatatatatatatatatatatatatetatalatatatatatatateatatetatatatatetatatatateatatatataatatatetatanataaatataatans",
+   "error": null
+  },
+  {
+   "group": 12,
+   "n_frames": 5,
+   "t_start": 351.0,
+   "t_end": 355.0,
+   "source": "paddle+tesseract (consensus x5)",
+   "lines": 7,
+   "text": "0.00% ZDCAD 00:0 0.00% 1.14870 1.14640 1.14410 ar2026 18Mar 22:00 19Mar 06:00 19Mar 14:00 19Mar 22:00 20Mar 06:00\nMar 14:00\nMar 06:00\nMT offset +3Updated) 5h RBA rivate tor Credit m/m vents found:10 Labe Lab entin:58h14m Labe\n1.15882 22:30 3di Oh NZD LOW CFTC NZDNon-Camm ial Net Postions 00:00 6di NZD LOw ANZ Business sCantidenge 03:00 1.15790 NZD Low ANZ Activity Outlgok omment 6d 15h AUD RBA Housing Credit m/m\n1.15560 Label Label rading Disal abe Label Labe Labe 1.15330 Next Price/Lot Bars Held tFloating PnL Ope Dep load 1.15100 DNZD 00/23:59 /0.0 0.00 0.00% CAD\n18Mar 22:00 19Mar 06:00 19Mar 14:00 19Mar 22:00",
+   "error": null
+  },
+  {
+   "group": 13,
+   "n_frames": 2,
+   "t_start": 356.0,
+   "t_end": 357.0,
+   "source": "paddle+tesseract (consensus x2)",
+   "lines": 4,
+   "text": "Mar 22:00\nvents fpund:10 La 1.15195 Labe 14m Label Labe -1.14850 1.14505 Trading time Next Price/Lot Bars Hel Open/Start Lot Floating PnL Pail Dep load UDNZD 00:00/23:59 /0.01 0.00 0.00% 00:00/23:59 % 19Mar 06:00 19Mar 22:00 20Mar 06:00 20Mar 14:00\n15h RBA Housmg Credit m/m MT.offset +3Updated 5h RB Sector Credit m/m\n18Mar22:00 19Mar14:00 20Mar 22:00 23Mar 06:00 23Mar 14:00 23Mar 22:00 24Mar 06:00 M15 2026.01.01 2026.03.22 2026.03.05 eal execution select a delay to emulate slippage and requotes during trade execution d on real ticks profit in pips for faster calculations. a on ae il \u2014 1.14850 a 3 a | Pl | aU) 1.0 LL ] : ] | ADAD OOP 5A H Oi 0 in ana",
+   "error": null
+  },
+  {
+   "group": 14,
+   "n_frames": 2,
+   "t_start": 358.0,
+   "t_end": 359.0,
+   "source": "paddle+tesseract (consensus x2)",
+   "lines": 8,
+   "text": "\"al 1.14505\nLVL EURUSDH1Euro vs US Dollar Waka Waka by Mr CapFree-Calendar updated ka Waka by Mr. CapFree: www.youtube.com/@MrCapFree) 1.16230 WAKA CurrencyImpact News Even 2d10h CAD Meo C.SeniorDeputy Governpr Rogers Speech WAKA 18:00 LOW 1.15879 abpng Balanee 18:00 19.6 LOW xpected lot0.01 3d\nPaleGreen MidnightBlue - ndices or Crypto) Pct_of_Price_Profile Fixed_pips_profile Pct_of_Price_Profile Pct of Balance Fixed Lots Margir\nMar 22:00\nMar 22:00\nMar 06:00\n22:30 LOW CFTC CAD Non-Commercial Ne 1:500 22:30 Oh NZD Low NED 1.15540 6d 15h Low ANZ Business Confidence 03:80 6d15h NED Low ANZ Activity Outlook mment p9 AUD RBA HousmgCredit m/m MT.offset 3Updated pg RBA ivate Sector Credit m/m vents fbund:10 Labe 1.15195 14m Labe ntin5 abe abe -1.14850 -1.14505 Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load urrPair UDNZD 00:00/23:59 /0.01 0.00 0.00% 00:00/23:59 0.00% EA6+d/2369+ ar2026\n\u00a9 _H Ol ao]",
+   "error": null
+  },
+  {
+   "group": 15,
+   "n_frames": 1,
+   "t_start": 360.0,
+   "t_end": 360.0,
+   "source": "paddle+tesseract",
+   "lines": 121,
+   "text": "Algo Trading\n+ New Order\nM1\nM5 M15 M30H1\nD1\nW1\nMN\nF\nQ\n6\nLVL\nEURUSDH1Euro vs US Dollar\nWaka Waka by Mr CapFree-Calendar updated\nka Waka by Mr. CapFree: www.youtube.com/@MrCapFree)\n1.16230\nWAKA\nCurrencyImpact\nNews Even\n22:13\n2d10h\nCAD\nMed\nC.SenigrDeputy Govempr Rogers Speech\nWAKA\n18:00\nLOw\n1.15879\nSudgetBalanee\n18:00\n861\nxpected lot0.01\n31\n22:30\nLOw\n1:500\n22:30\n3d1\nOh\nNZD\nLow\nNED\n1.15540\n15h\nLow\nANZ Business Contidence\n08:80\n6d15h\nNED\nLow\nmment\np9\nAUD\nRBA Housing Credit m/m\nMT.offset\n+3Updated\n3:3\nRBA\nSector Credit m/m\n31\nLabe\n-1.15195\n14m\nLabe\nntin8\nabe\nabe\n-1.14850\n-1.14505\nTrading time\nNext Price/Lot Bars Held\nOpen/Start Lot Floating PnL\nDep load\nurrPair\nUDNZD\n00:00/23:59\n/0.01\n0.00\n0.00%\n00:00/23:59\n0.00%\n2369\nar2026\n18 Mar 22:00\n19 Mar 06:00\n19Mar 14:00\n19 Mar 22:00\n20Mar 06:00\n20Mar 14:00\n20Mar 22:00\n23Mar 06:00\n23Mar 14:00\n23Mar 22:00\n24 Mar 06:00\nView previous single test results\nV\nStart\nStep\nStop\nValue\nSteps\nndices or Crypto)\nPct_of_Price_Profile\nFixed_pips_profile\nPct_of_Price_Profile\nPct_of_Balance\nFixed_Lots\nPct_of_Free_Margin\n0.01\n0.01\n0.001\n0.1\n2.0\n2.0\n0.2\n20.0\n5 Minutes\n1 Month\ncurrent\naz i ell y 1.14850\nae | Woe La\nrm! \u2018 a.___I. ; 1.14505",
+   "error": null
+  },
+  {
+   "group": 16,
+   "n_frames": 1,
+   "t_start": 361.0,
+   "t_end": 361.0,
+   "source": "paddle+tesseract",
+   "lines": 129,
+   "text": "Algo Trading\n+ New Order\nF\nM1\nM5 M15 M30H1\nH4\nD1\nW1\nMN\n6\nLVL\nEURUSDH1Euro vs US Dollar\nWaka Waka by Mr CapFree-Calendar updated\nka Waka by Mr. CapFree: www.youtube.com/@MrCapFree)\n1.16230\nWAKA\nCurrencyImpact\nNews Even\n2d10h\nCAD\nMeo\nC.SeniorDeputy Governpr Rogers Speech\nWAKA\n18:00\n4O\n1.15880\nabpng\nBalanee\n18:00\nLOW\nxpected lot0.01\n3d\n22:\n30\nLOW\nCFTC CAD Non-Commercial Ne\n1:500\n22:30\nOh\nNZD\nLow\nNED\n1.15540\n6d1\n15h\nLow\nANZ Business Confidence\n03:80\n6d15h\nNED\nLow\nANZ Activity Dutlook\nmment\np9\nAUD\nRBA Housng Credit m/m\nMT.offset\n3Updated\n3:3\npg\nRBA\nivate\nSector Credit m/m\n31\nventstound:10\nLabe\n-1.15195\n14m\nLabe\nntins\nabe\n-1.14850\n-1.14505\nTrading time\nNext Price/Lot Bars Held\nOpen/Start Lot Floating PnL\nDep load\nurrPair\nUDNZD\n00:00/23:59\n/0.01\n0.00\n0.00%\n00:00/23:59\n0.00%\nREA6++ dn2369+\nar2026\n18 Mar 22:00\n19 Mar 06:00\n19Mar 14:00\n19 Mar 22:00\n20Mar 06:00\n20Mar 14:00\n20Mar 22:00\n23Mar 06:00\n23Mar 14:00\n23Mar 22:00\n24 Mar 06:00\nView previous single test results\nJ\nV\nValue\nStep\nStop\nStart\nSteps\nndices or Crypto)\nPct_of_Price_Profile\nFixed_pips_profile\nPct_of_Price_Profile\nPct_of_Balance\nFixed_Lots\nPct_of_Free_Margin\n0.01\n0.01\n0.001\n0.1\n2.0\n2.0\n0.2\n20.0\n5 Minutec\n1 Month\ncurrent\ne@ \u00a9 _H Oe mol]\n| ot mel PT | |\n1.0 I ce : 4 ;\n1 al 1.14505\nN\\A; A sirrant 4 \\Adanth",
+   "error": null
+  },
+  {
+   "group": 17,
+   "n_frames": 8,
+   "t_start": 362.0,
+   "t_end": 379.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 10,
+   "text": "Month\nPi et | : 1.14850\nMinutes\nLVL EURUSDH1Euro vs US Dollar Waka Waka by Mr CapFree-Calendar updated ka Waka by Mr. CapFree: www.youtube.com/@MrCapFree) 1.16230 WAKA CurrencyImpact News Even 2:13 2d10h CAD Med C.SenigrDeputy Govempr Rogers Speech WAKA 18:00 LOw 1.15880 Sudget Balanee 18:00\nMar 22:00\nMar 06:00\nMar 06:00\nLow 1:500 22:30 3d1 Oh NZD Low NED 1.15540 6d 15h Low ANZ Business Contidence 03:80 6d15h NED Low ANZ Activity Dutlook mment p9 AUD RBA Housing Credit m/m MT.offset +3Updated RBA Sector Credit m/m vents found:10 Labe 1.15195 nting 14m abe abe -1.14850 -1.14505 Trading time Next Price/Lot Bars Held Open/Start Lot Floating PnL Dep load urrPair UDNZD 00:00/23:59 /0.0 0.00 0.00% 00:00/23:59 0.00%\nxpected lot0.01\nMar2026",
+   "error": null
+  },
+  {
+   "group": 18,
+   "n_frames": 8,
+   "t_start": 380.0,
+   "t_end": 413.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 23,
+   "text": "Compile\nb\n#property copyright \"Mr CapFree\".\n#property link \u201chttps: //www.MrCapFree.com\"\n#property description \u201cWaka Waka EA\"\n12#include <Trade\\Trade.mqh>\n#include <Trade\\Trade.mqh>\nCTrade Trade;\nCPositionInfo posInfo;\ncOrderInfo ordInfo;\nenum LotsizingEnum\nLowRiskPreset = 5, //Low Risk Set 20% annual (0.25% load)\nMidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)\nHighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)\nExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)\nLotsEquity = 2, //Dynamic Lot based on Equity\nLotsBalance = 1, //Dynamic Lot based on Balance\nLotsDepositLoad = 6, //Lots based on Deposit load\nFixedLots =_0 //Fixed Lot\n};\n31int OnInit() {\nint OnInit() {\nEY / [banana aa aa sees anes n ass ss ss sscsssssscsssssssesssesssesssesssssssssssst dial PAS)",
+   "error": null
+  },
+  {
+   "group": 19,
+   "n_frames": 8,
+   "t_start": 414.0,
+   "t_end": 451.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 26,
+   "text": ">\nenum LotsizingEnum\nLowRiskPreset = 5 //Low Risk Set 20% annual (0.25% load).\nMidRiskPreset = 4, //Mid Risk Set 40% annual (0.5% load)\nHighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)\nExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% load)\nLotsEquity = 2, //Dynamic Lot based on Equity.\nLotsBalance = 1, //Dynamic Lot based on Balance.\nLotsDepositLoad = 6, //Lots based on Deposit load.\nFixedLots = 0 //Fixed Lot\n};\nenum AllowBuySellEnum {\nAllowSell2 = 2, //Sell only\nAllowBuy1 = 1, //Buy only\nAllowBuySell = 0 //Buy and Sell\n};\nenum eMaxDrawdownAction\nIgnoreNewUnti1Restart = 3, //Prohibit opening new grids until restart\nIgnoreNewSignals = 2, //Prohibit opening new grids.\ncloseStopTradingUnti1Restart = 1, //close trades & stop trading until restart\ncloseStopTradingFor24h = 0 //close trades & stop trading for 24h\n};\nenum eDrawdowncalculation {\nThisStrategy = 1, //This strategy\nTheAccount = 0 //The account\n};",
+   "error": null
+  },
+  {
+   "group": 20,
+   "n_frames": 8,
+   "t_start": 452.0,
+   "t_end": 459.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 25,
+   "text": ">\nHighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)\nExtremeRiskPreset = 7, //High Risk Set 120% annual (1.5% 1oad)\nLotsEquity = 2, //Dynamic Lot based on Equity\nLotsBalance = 1. //Dynamic Lot based on Balance\nLotsDepositLoad = 6, //Lots based on Deposit load\nFixedLots = 0 //Fixed Lot\n};\nenum A11owBuySe11Enum {\nAllowSell2 = 2, //Sell only\nAllowBuy1 = 1, //Buy only\nAllowBuySell = 0 //Buy and Sell\n}:\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3, //Prohibit opening new grids until restart\nIgnoreNewSignals = 2, //Prohibit opening new grids\nCloseStopTradingUntilRestart = 1, //close trades & stop trading until restart\nc1oseStopTradingFor24h = 0 //close trades & stop trading for 24h\n};\nenum eDrawdownCalculation {\nThisStrategy = 1, //This strategy.\nTheAccount = 0 //The account\n}:\n48int OnInit() {\nint OnInit() {",
+   "error": null
+  },
+  {
+   "group": 21,
+   "n_frames": 1,
+   "t_start": 460.0,
+   "t_end": 460.0,
+   "source": "paddle+tesseract",
+   "lines": 8,
+   "text": "\u2014\u2014\n_\n(ar = is\nJ = ws a\nmeat 7\n: ' Po |\noa\n7 ey",
+   "error": null
+  },
+  {
+   "group": 22,
+   "n_frames": 1,
+   "t_start": 461.0,
+   "t_end": 461.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "_S \u201cJ oe\ni i \u2018 , :\nfoe , a\n- op",
+   "error": null
+  },
+  {
+   "group": 23,
+   "n_frames": 1,
+   "t_start": 462.0,
+   "t_end": 462.0,
+   "source": "paddle+tesseract",
+   "lines": 3,
+   "text": ": $ r 4 \u2018\nSE\n, \"",
+   "error": null
+  },
+  {
+   "group": 24,
+   "n_frames": 1,
+   "t_start": 463.0,
+   "t_end": 463.0,
+   "source": "paddle+tesseract",
+   "lines": 3,
+   "text": "i> < \\\n. . \u00a5\n? Pi \u2018= 7 M 7",
+   "error": null
+  },
+  {
+   "group": 25,
+   "n_frames": 1,
+   "t_start": 464.0,
+   "t_end": 464.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "~ hg ;\n= \u2018 7\nj , : \u00e9 -\naf i",
+   "error": null
+  },
+  {
+   "group": 26,
+   "n_frames": 1,
+   "t_start": 465.0,
+   "t_end": 465.0,
+   "source": "paddle+tesseract",
+   "lines": 6,
+   "text": "<= we a -\n\u2019 a ,\n7 * \\'\n\u00a5\n= E\n\u00e9\u2018 ; =. * |",
+   "error": null
+  },
+  {
+   "group": 27,
+   "n_frames": 1,
+   "t_start": 466.0,
+   "t_end": 466.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "ad 4\n\u2014) :\n| : <4 I\nVw @",
+   "error": null
+  },
+  {
+   "group": 28,
+   "n_frames": 1,
+   "t_start": 467.0,
+   "t_end": 467.0,
+   "source": "paddle+tesseract",
+   "lines": 2,
+   "text": "~ : . -\ne . ap",
+   "error": null
+  },
+  {
+   "group": 29,
+   "n_frames": 1,
+   "t_start": 468.0,
+   "t_end": 468.0,
+   "source": "paddle+tesseract",
+   "lines": 10,
+   "text": "a\n- > ~ , st iy /\n\u201d % -\n, 3\n7 . 4\n4 P .\n\u00bb. \u2014-\n- -f \u2018 ~\n; .. 4\n| eh",
+   "error": null
+  },
+  {
+   "group": 30,
+   "n_frames": 1,
+   "t_start": 469.0,
+   "t_end": 469.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "\u00b0 ee \u00e9\nDd ae \u2018\u2018 \u2014 +\n2 :\n\u201cwe &",
+   "error": null
+  },
+  {
+   "group": 31,
+   "n_frames": 1,
+   "t_start": 470.0,
+   "t_end": 470.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "\u2019 \u2014 = | |\n- \u2014 = >\n9 a - pe ae -\n\u00a5 .",
+   "error": null
+  },
+  {
+   "group": 32,
+   "n_frames": 1,
+   "t_start": 471.0,
+   "t_end": 471.0,
+   "source": "paddle+tesseract",
+   "lines": 4,
+   "text": "+ - ,\n. /~ a\nPy.\n. a",
+   "error": null
+  },
+  {
+   "group": 33,
+   "n_frames": 1,
+   "t_start": 472.0,
+   "t_end": 472.0,
+   "source": "paddle+tesseract",
+   "lines": 6,
+   "text": ". = en hoi: ie a\n, a \u00bb | |\nPa oe 7a ae\n\u00ab i \u201ca\nhaat *\nww",
+   "error": null
+  },
+  {
+   "group": 34,
+   "n_frames": 1,
+   "t_start": 473.0,
+   "t_end": 473.0,
+   "source": "paddle+tesseract",
+   "lines": 8,
+   "text": ". = - ; ;\n\u2018 ves > Sather J |\n; | > 3 : . 2\nJ] _ ;\nf \u00b0 % ; ~ Cs :\n> >\na ~ |\n\u00ab",
+   "error": null
+  },
+  {
+   "group": 35,
+   "n_frames": 1,
+   "t_start": 474.0,
+   "t_end": 474.0,
+   "source": "paddle+tesseract",
+   "lines": 5,
+   "text": "KP AS t\nJ = \u20184 * if ay)\n\u00a2 & a ;\nas \u2014\\) |\nly\u00bb , | s -_ -",
+   "error": null
+  },
+  {
+   "group": 36,
+   "n_frames": 5,
+   "t_start": 475.0,
+   "t_end": 479.0,
+   "source": "paddle+tesseract (consensus x5)",
+   "lines": 24,
+   "text": "WakaWaka by MrCapFree.mq5 * * ; stil AllowBuySell = @ //Buy and Sell q b\nHighRiskPreset = 3, //Significant Risk Set 80% annual (1.0% load)\nExtremeRiskPreset = 7, //High Risk Set 120% annual1.5% 1oad)\nLotsEquity = 2, //Dynamic Lot based on Equity\nLotsbalance = 1. //Dynamic Lot based on Balance\nLotsDepositLoad = 6, //Lots based on Deposit load\nFixedLots = 0 //Fixed Lot\n};\nenum A1lowBuySe11Enum {\nAllowSell2 = 2, //Sell only\nAllowBuy1 = 1, //Buy only\nAllowBuySell = 0 //Buy and Sel1\n};\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3, //Prohibit opening new grids until restart\nIgnoreNewSignals = 2, //Prohibit opening new grids\nCloseStopTradingUntilRestart = 1, //close trades & stop trading until restart.\nc1oseStopTradingFor24h = 0 //close trades & stop trading for 24h\n};\nenum eDrawdowncalculation{\nThisStrategy = 1, //This strategy\nTheAccount = 0 //The account\n};\n48int OnInit() {",
+   "error": null
+  },
+  {
+   "group": 37,
+   "n_frames": 3,
+   "t_start": 480.0,
+   "t_end": 482.0,
+   "source": "paddle+tesseract (consensus x3)",
+   "lines": 23,
+   "text": ">\nLotsBalance = 1, //Dynamic Lot based on Balance\nLotsDepositLoad = 6, //Lots based on Deposit load.\nFixedLots = 0 //Fixed Lot\n};\nenum A11owBuySe11Enum {\nAllowSell2 = 2, //Sell only\nAllowBuy1 = 1, //Buy only\nAllowBuySell = 0 //Buy and Sell\n};\nenum eMaxDrawdownAction {\nIgnoreNewUnti1Restart = 3, //Prohibit opening new grids until restart\nIgnoreNewSignals = 2, //Prohibit opening new grids.\ncloseStopTradingUnti1Restart = 1, //close trades & stop trading until restart\nc1oseStopTradingFor24h = 0 //close trades & stop trading for 24h.\n};\nenum eDrawdowncalculation {\nThisStrategy = 1, //This strategy\nTheAccount = 0 //The account\n};\n48int OnInit() {\nint OnInit() {\nWakaWaka by MrCapFree.mq5 * *",
+   "error": null
+  },
+  {
+   "group": 38,
+   "n_frames": 2,
+   "t_start": 483.0,
+   "t_end": 484.0,
+   "source": "paddle+tesseract (consensus x2)",
+   "lines": 21,
+   "text": "b\nenum eDrawdownCalculation {\nThisStrategy = 1, //This strategy\nTheAccount = 0 //The account\n};\n46|\n48int OnInit() {\nint OnInit() {\nreturn(INIT_SUCCEEDED);\n54}\n}\n57void OnDeinit(const int reason) {\nvoid OnDeinit(const int reason) {\n60}\n}\n63void OnTick() {\nvoid OnTick() {\n67} 68//+\n}\n//+-------------------- 2-2 - o-oo nn nnn nen nnn net\nWakaWaka by MrCapFree.mq5 * * fi",
+   "error": null
+  },
+  {
+   "group": 39,
+   "n_frames": 1,
+   "t_start": 485.0,
+   "t_end": 485.0,
+   "source": "paddle+tesseract",
+   "lines": 94,
+   "text": "fx\nCompile\nE> History\n> Realtime\nWelcome\nWakaWaka by MrCapFree.mq5 * X\n47\nstring\nSymbo1Name;\n48\ndatetime\nLastMainTFUpdate;\n49\ndatetime\nLastOPoTFUpdate;\n50\nint\nUpdateCounter;\n51\nbool\nCanBuy;\n52\nbool\nCanSel1;\n53\ndatetime\nCurrentBarTime;\n54\ndatetime\nPreviousBarTime;\n55\nclosePrice;\ndouble\n56\nboo1\nGridOpened;\n57\nbool\nOPOTriggered;\n58\ndouble\nSmartDistanceMultiplier;\nBBWidth;\n59\ndouble\n60\nint\nLastBarIndex;\n61\nint\nCurrentBarIndex;\n62\nlong\nPatternValue;\n63\ndouble\nPatternPrice;\n64\nbool\nPatternSearchActive;\n65\nbool\nTradingAllowedToday;\n66\nbool\nPreviousDayTradingAllowed;\nint\n67\nLastDayOfWeek;\n68\ndouble\nMaxGridLotMultiplier;\n69\ndouble\nLastBuyAvgPrice;\n70\ndouble\nLastSellAvgPrice;\n71\nLastBuyTP;\ndouble\n72\ndouble\nLastSelltp;\n73\ndatetime\nLastBuyGridTime;\n74\ndatetime\nLastSellgridTime;\n75\n};\nWakaWaka by MrCapFree.mq5 * *\n4 b",
+   "error": null
+  },
+  {
+   "group": 40,
+   "n_frames": 8,
+   "t_start": 486.0,
+   "t_end": 522.0,
+   "source": "paddle+tesseract (consensus x8)",
+   "lines": 29,
+   "text": "};\nstruct SymbolInformation\nstring Symbo1Name;\ndatetime LastMainTFUpdate;\ndatetime LastOPoTFUpdate;\nint UpdateCounter;\nbool CanBuy;\nbool CanSell;\ndatetime CurrentBarTime;\ndatetime PreviousBarTime;\ndouble closePrice;\nbool GridOpened;\nbool OPOTriggered;\ndouble SmartDistanceMultiplier;\ndouble BBWidth;\nint LastBarIndex;\nint CurrentBarIndex; long\nPatternValue;\ndouble PatternPrice;\nbool PatternSearchActive;\nbool TradingAllowedToday;\nbool PreviousDayTradingAllowed;\nint LastDayOfWeek;\ndouble MaxGridLotMultiplier;\ndouble LastBuyAvgPrice;\ndouble LastSellAvgPrice;\ndouble LastBuyTP;\ndouble LastSelltp;\nLastBuyGridTime; datetime sb! }3",
+   "error": null
+  }
+ ]
+}

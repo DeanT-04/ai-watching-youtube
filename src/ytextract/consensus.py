@@ -101,9 +101,12 @@ def pair_line_numbers(lines: Sequence[OcrText]) -> list[tuple[int | None, OcrTex
       ``(46, "struct SymbolInformation {")``, with the number itself
       stripped from the returned text.
     - **separate** (PaddleOCR-style box detection): a standalone number
-      entry ("47") followed by a separate content entry -- the number is
-      attached to whichever content entry follows it, until the next number
-      resets it.
+      entry ("47") followed by one or more separate content entries (paddle
+      word-boxes split ``"string SymbolName;"`` into ``"string"`` and
+      ``"SymbolName;"``). The number is attached to all consecutive content
+      entries that follow it, until the next number resets it — they are
+      joined with a space so a split line still yields one (number, text)
+      pair instead of dropping the tail as unanchored.
 
     A content line before any number is seen (or when the gutter wasn't
     captured at all) is paired with ``None``.
@@ -123,8 +126,24 @@ def pair_line_numbers(lines: Sequence[OcrText]) -> list[tuple[int | None, OcrTex
         if alone:
             current = int(alone.group(1))
             continue
+        if (
+            current is not None
+            and paired
+            and paired[-1][0] == current
+        ):
+            # Another word-box from the same gutter line (paddle split the
+            # line into type + name + ...). Join it onto the previous pair so
+            # the whole line votes as one candidate, not as competing texts.
+            prev_num, prev_text = paired[-1]
+            paired[-1] = (
+                prev_num,
+                OcrText(
+                    text=f"{prev_text.text} {item.text}".strip(),
+                    confidence=min(prev_text.confidence, item.confidence),
+                ),
+            )
+            continue
         paired.append((current, item))
-        current = None
     return paired
 
 
